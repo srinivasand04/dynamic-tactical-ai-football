@@ -28,3 +28,6 @@ ESILV Logo Sample.png
 /*.pptx
 /*.md
 !README.md
+
+# PowerPoint lock files
+~$*

@@ -1,35 +1,36 @@
 layer,quantifier,who,mean,ci_low,ci_high,matches,note
-Movement,"player error on an unseen match (m, lower is better)",network (ours),1.1133,1.0874,1.1391,7,baseline: everybody keeps his velocity
+Movement,"player error on an unseen match (m, lower is better)",network (ours),1.1116,1.0925,1.1336,7,baseline: everybody keeps his velocity
 Movement,"player error on an unseen match (m, lower is better)",keep your velocity,1.5107,1.4841,1.5434,7,baseline
-Movement,gain over keep-velocity (%),network (ours),26.2993,25.0593,27.65,7,
-Movement,"ball error on an unseen match (m, lower is better)",network (ours),3.2939,3.1421,3.4356,7,
+Movement,gain over keep-velocity (%),network (ours),26.4128,25.6456,27.1067,7,
+Movement,"ball error on an unseen match (m, lower is better)",network (ours),3.2767,3.2027,3.3684,7,
 Movement,"ball error on an unseen match (m, lower is better)",keep your velocity,6.1893,5.9386,6.4267,7,baseline
-Movement,player error: no graph (control) minus ours (m; negative = no graph (control) better),no graph (control) - ours,0.102,0.058,0.136,3,paired over the same held-out matches (few matches)
-Movement,player error: GCN minus ours (m; negative = GCN better),GCN - ours,-0.001,-0.049,0.039,3,paired over the same held-out matches (few matches)
-Movement,player error: GAT minus ours (m; negative = GAT better),GAT - ours,0.002,-0.031,0.03,3,paired over the same held-out matches (few matches)
-Movement,player error: ours + pass edges minus ours (m; negative = ours + pass edges better),ours + pass edges - ours,-0.0173,-0.04,0.006,3,paired over the same held-out matches (few matches)
-Passes,who the passer picks: top-1 (%),pass model (with movement),45.052,41.5904,48.8159,7,
-Passes,who the passer picks: top-1 (%),nearest teammate,27.4437,25.2917,29.635,7,baseline
+Movement,player error: no graph (control) minus ours (m; negative = no graph (control) better),no graph (control) - ours,0.0952,0.0673,0.114,3,paired over the same held-out matches (few matches)
+Movement,player error: GCN minus ours (m; negative = GCN better),GCN - ours,-0.0078,-0.0397,0.009,3,paired over the same held-out matches (few matches)
+Movement,player error: GAT minus ours (m; negative = GAT better),GAT - ours,-0.0048,-0.0217,0.009,3,paired over the same held-out matches (few matches)
+Movement,player error: ours + pass edges minus ours (m; negative = ours + pass edges better),ours + pass edges - ours,-0.0223,-0.0288,-0.0158,7,paired over the same held-out matches
+Movement,player error: ours + shuffled pass edges minus ours (m; negative = ours + shuffled pass edges better),ours + shuffled pass edges - ours,-0.014,-0.0193,-0.0083,7,paired over the same held-out matches
+Passes,who the passer picks: top-1 (%),pass model (with movement),45.052,41.5686,49.0022,7,
+Passes,who the passer picks: top-1 (%),nearest teammate,27.4437,25.3943,29.532,7,baseline
 Passes,who the passer picks: top-1 (%),chance,10.0956,10.0,10.2324,7,baseline
-Passes,who the passer picks: top-1 (%),still picture only,42.2864,39.5446,45.3174,7,baseline
-Passes,who the passer picks: top-3 (%),pass model (with movement),80.9853,78.8765,82.925,7,
-Passes,who the passer picks: top-3 (%),nearest teammate,64.902,62.3847,67.802,7,baseline
+Passes,who the passer picks: top-1 (%),still picture only,42.2864,39.5223,45.2689,7,baseline
+Passes,who the passer picks: top-3 (%),pass model (with movement),80.9853,78.8543,82.96,7,
+Passes,who the passer picks: top-3 (%),nearest teammate,64.902,62.4374,67.8187,7,baseline
 Passes,who the passer picks: top-3 (%),chance,30.2864,30.0,30.6967,7,baseline
-Passes,who the passer picks: top-3 (%),still picture only,79.6331,77.1179,81.4804,7,baseline
-Passes,who the passer picks: log-loss (lower is better),pass model (with movement),1.519,1.4606,1.5719,7,
-Passes,who the passer picks: log-loss (lower is better),nearest teammate,1.905,1.8489,1.9591,7,baseline
+Passes,who the passer picks: top-3 (%),still picture only,79.6331,77.1159,81.4994,7,baseline
+Passes,who the passer picks: log-loss (lower is better),pass model (with movement),1.519,1.464,1.5719,7,
+Passes,who the passer picks: log-loss (lower is better),nearest teammate,1.905,1.8507,1.9569,7,baseline
 Passes,who the passer picks: log-loss (lower is better),chance,2.2939,2.2807,2.303,7,baseline
-Passes,who the passer picks: log-loss (lower is better),still picture only,1.589,1.5331,1.6433,7,baseline
-Passes,will the pass arrive: AUC (0.5 = guessing),pass model (all numbers),0.8416,0.816,0.8716,7,
-Passes,will the pass arrive: AUC (0.5 = guessing),pass length only,0.6246,0.5918,0.6588,7,baseline
-Passes,will the pass arrive: Brier score (lower is better),pass model (all numbers),0.0843,0.0718,0.0993,7,
-Passes,will the pass arrive: Brier score (lower is better),always the average,0.0991,0.0844,0.114,7,baseline
-Passes,does a pass lead to a shot within 10 s: AUC,location + gain of the chosen pass,0.8671,0.8466,0.8881,7,
-Passes,does a pass lead to a shot within 10 s: AUC,location alone,0.8324,0.8026,0.8632,7,baseline
-Passes,is the ball kept for 10 s: AUC of the chance it arrives,chance it arrives,0.7172,0.6907,0.746,7,
+Passes,who the passer picks: log-loss (lower is better),still picture only,1.589,1.5327,1.6426,7,baseline
+Passes,will the pass arrive: AUC (0.5 = guessing),pass model (all numbers),0.8416,0.8159,0.8714,7,
+Passes,will the pass arrive: AUC (0.5 = guessing),pass length only,0.6246,0.5923,0.6579,7,baseline
+Passes,will the pass arrive: Brier score (lower is better),pass model (all numbers),0.0843,0.0716,0.0982,7,
+Passes,will the pass arrive: Brier score (lower is better),always the average,0.0991,0.0844,0.1149,7,baseline
+Passes,does a pass lead to a shot within 10 s: AUC,location + gain of the chosen pass,0.8671,0.8465,0.8881,7,
+Passes,does a pass lead to a shot within 10 s: AUC,location alone,0.8324,0.8023,0.8643,7,baseline
+Passes,is the ball kept for 10 s: AUC of the chance it arrives,chance it arrives,0.7172,0.6914,0.7456,7,
 Passes,is the ball kept for 10 s: AUC of the chance it arrives,guessing,0.5,0.5,0.5,7,baseline
-Tactics,does the tactical state predict a shot within 10 s: AUC,location + tactical state,0.8321,0.815,0.8507,7,Key States with a ball owner
-Tactics,does the tactical state predict a shot within 10 s: AUC,location alone,0.8356,0.8126,0.8584,7,baseline
+Tactics,does the tactical state predict a shot within 10 s: AUC,location + tactical state,0.8321,0.8149,0.8512,7,Key States with a ball owner
+Tactics,does the tactical state predict a shot within 10 s: AUC,location alone,0.8356,0.8114,0.8589,7,baseline
 Realism,"average gap to real football (%, lower is better)",simulator: competition,63.976,,,8,"descriptive, no interval"
 Realism,"average gap to real football (%, lower is better)",simulator: easy,66.651,,,8,"descriptive, no interval"
 Realism,"average gap to real football (%, lower is better)",simulator: stochastic,67.554,,,12,"descriptive, no interval"
