@@ -1,0 +1,8 @@
+match_id,home,away,score,date,pitch_m,raw_fps,frames_10fps,minutes,min_players_home,min_players_away,red_cards
+J03WMX,1. FC Köln,FC Bayern München,1-2,2023-05-27,105x68,25,58387,97.3,11,11,none
+J03WN1,VfL Bochum 1848,Bayer 04 Leverkusen,3-0,2023-05-27,105x68,25,56625,94.4,11,10,away 7' (half 1)
+J03WOH,Fortuna Düsseldorf,SSV Jahn Regensburg,4-0,2022-08-26,105x68,25,54886,91.5,11,11,none
+J03WOY,Fortuna Düsseldorf,F.C. Hansa Rostock,3-1,2022-09-10,105x68,25,57015,95.0,11,11,none
+J03WPY,Fortuna Düsseldorf,1. FC Nürnberg,0-1,2022-10-15,105x68,25,58485,97.5,11,11,none
+J03WQQ,Fortuna Düsseldorf,FC St. Pauli,1-0,2022-11-05,105x68,25,56938,94.9,11,10,away 13' (half 2)
+J03WR9,Fortuna Düsseldorf,1. FC Kaiserslautern,1-2,2022-11-11,105x68,25,58724,97.9,11,11,none

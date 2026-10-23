@@ -1,0 +1,8 @@
+method,top1_%,top3_%,rank
+chance,10.09,30.28,5.46
+nearest,27.5,65.03,3.17
+free,0.45,49.01,4.45
+goal,5.98,20.45,6.14
+lane,3.95,47.29,4.07
+weight (hand),35.34,68.61,3.01
+weight (learned),41.74,78.14,2.54

@@ -1,0 +1,10 @@
+﻿train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH'] | held-out real: none | windows: {'J03WMX': 3547, 'J03WN1': 3013, 'J03WPY': 3535, 'J03WOH': 3281}
+epoch  1  train loss 0.0680  (100s)
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+match_001  simulated      |           2.37   3.42   2.15   |        5.75   6.53   6.53
+match_002  simulated      |           2.65   3.62   2.46   |        5.67   6.42   6.42
+match_003  simulated      |           2.90   3.91   2.68   |        6.21   6.78   6.78
+match_004  simulated      |           2.55   3.53   2.42   |        5.67   6.47   6.47
+saved *_embeddings.npz for all matches

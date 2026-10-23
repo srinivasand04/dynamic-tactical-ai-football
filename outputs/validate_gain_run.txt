@@ -1,0 +1,34 @@
+3987 real passes, 7 matches; a shot follows within 10 s in 5.0% of passes, the ball is kept for 10 s in 51.3%
+
+HOW WELL EACH NUMBER PREDICTS WHAT HAPPENS NEXT (AUC, average over matches)
+
+outcome                        kept   shot
+predictor                                 
+danger of where the ball was  0.439  0.832
+danger of the arrival point   0.401  0.862
+chance it arrives             0.717  0.244
+gain of the chosen option     0.423  0.864
+gain of the best option       0.458  0.816
+regret (best - chosen)        0.551  0.467
+
+shot within 10 s, AUC with the place of the ball alone 0.832, with the gain of the chosen option added 0.867
+
+BY QUARTER OF THE GAIN OF THE CHOSEN OPTION
+
+         passes  shot_within_10s_pct  ball_kept_pct  arrives_pct
+quarter                                                         
+lowest      997                  0.3           53.0         92.3
+low         997                  0.7           61.4         93.2
+high        996                  2.8           56.2         91.0
+highest     997                 16.3           34.7         79.3
+
+BY QUARTER OF THE REGRET
+
+                shot_within_10s_pct  ball_kept_pct
+regret_quarter                                    
+smallest                        7.2           43.2
+small                           3.9           50.8
+large                           3.2           59.1
+largest                         5.8           52.2
+
+saved outputs/validate_gain.csv, outputs/validate_gain.png

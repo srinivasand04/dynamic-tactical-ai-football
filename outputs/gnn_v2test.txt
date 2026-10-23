@@ -1,0 +1,34 @@
+﻿train on: ['J03WMX', 'J03WN1', 'J03WPY'] | held-out real: J03WOH | simulated matches to evaluate: 12
+windows for training: 9084 | for early stopping: 1011
+epoch  1  train loss 0.0737  validation error 1.566 m  (22s)
+epoch  2  train loss 0.0457  validation error 1.405 m  (23s)
+epoch  3  train loss 0.0413  validation error 1.371 m  (25s)
+epoch  4  train loss 0.0392  validation error 1.305 m  (25s)
+epoch  5  train loss 0.0384  validation error 1.286 m  (26s)
+epoch  6  train loss 0.0374  validation error 1.237 m  (25s)
+epoch  7  train loss 0.0367  validation error 1.210 m  (33s)
+epoch  8  train loss 0.0364  validation error 1.219 m  (27s)
+epoch  9  train loss 0.0358  validation error 1.242 m  (23s)
+epoch 10  train loss 0.0355  validation error 1.199 m  (25s)
+epoch 11  train loss 0.0355  validation error 1.201 m  (25s)
+epoch 12  train loss 0.0350  validation error 1.202 m  (25s)
+epoch 13  train loss 0.0347  validation error 1.233 m  (24s)
+early stop: no improvement for 3 epochs; best was epoch 10
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOH     held-out real  |           1.13   2.94   1.50   |        3.42   6.44   5.67
+match_001  simulated      |           2.09   3.42   2.15   |        4.16   6.53   5.49
+match_002  simulated      |           2.38   3.62   2.46   |        4.34   6.42   5.79
+match_003  simulated      |           2.63   3.91   2.68   |        4.65   6.78   6.27
+match_004  simulated      |           2.28   3.53   2.42   |        4.40   6.47   6.28
+match_005  simulated      |           2.39   3.63   2.48   |        4.15   6.36   5.65
+match_006  simulated      |           2.81   4.10   2.86   |        4.87   6.70   6.88
+match_007  simulated      |           2.65   3.81   2.73   |        4.50   6.42   6.84
+match_008  simulated      |           2.22   3.45   2.30   |        4.88   6.56   6.42
+match_009  simulated      |           2.63   3.95   2.69   |        4.51   6.66   6.08
+match_010  simulated      |           2.10   3.28   2.20   |        4.33   6.52   6.22
+match_011  simulated      |           2.55   3.81   2.61   |        4.69   6.52   6.19
+match_012  simulated      |           2.54   3.89   2.58   |        4.69   6.67   6.46
+
+run finished in 5.7 min after 13 epochs; logged to outputs/run_log.csv

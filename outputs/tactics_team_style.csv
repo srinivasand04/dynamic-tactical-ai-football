@@ -1,0 +1,15 @@
+match,team,passes,length_m,forward_gain_m,chose_best_pct,regret_pct,arrives_chosen
+J03WMX,1. FC Köln,236,16.82,2.8,5.93,52.08,0.9
+J03WMX,FC Bayern München,318,16.1,1.98,5.66,51.52,0.92
+J03WN1,Bayer 04 Leverkusen,201,16.01,2.66,4.98,47.75,0.89
+J03WN1,VfL Bochum 1848,233,17.36,2.68,8.58,48.11,0.89
+J03WOH,Fortuna Düsseldorf,217,19.2,3.16,5.53,52.78,0.91
+J03WOH,SSV Jahn Regensburg,175,18.94,1.58,5.14,47.69,0.89
+J03WOY,F.C. Hansa Rostock,264,18.9,3.67,5.68,53.53,0.9
+J03WOY,Fortuna Düsseldorf,250,17.41,1.75,8.4,49.32,0.92
+J03WPY,1. FC Nürnberg,138,16.04,2.07,10.14,49.57,0.89
+J03WPY,Fortuna Düsseldorf,357,17.8,2.97,5.04,54.95,0.91
+J03WQQ,FC St. Pauli,385,17.54,2.88,7.01,49.33,0.9
+J03WQQ,Fortuna Düsseldorf,236,19.27,2.69,4.66,51.99,0.92
+J03WR9,1. FC Kaiserslautern,168,18.42,4.03,7.14,53.63,0.9
+J03WR9,Fortuna Düsseldorf,367,17.89,1.85,5.72,52.27,0.92

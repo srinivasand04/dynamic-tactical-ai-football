@@ -1,0 +1,57 @@
+held_out,method,top1_%,top3_%,log_loss
+J03WMX,chance,10.0,30.0,2.303
+J03WMX,nearest,31.769,70.036,
+J03WMX,weight (hand),43.502,73.105,1.805
+J03WMX,weight (learned),49.097,82.671,1.489
+J03WMX,learned without free,42.238,76.173,1.675
+J03WMX,learned without reach,33.755,64.079,1.987
+J03WMX,learned without goal,44.404,81.588,1.57
+J03WMX,learned without lane,45.848,81.949,1.543
+J03WN1,chance,10.479,31.436,2.257
+J03WN1,nearest,28.111,61.982,
+J03WN1,weight (hand),33.41,64.516,2.104
+J03WN1,weight (learned),36.866,71.889,1.782
+J03WN1,learned without free,32.258,62.673,1.916
+J03WN1,learned without reach,26.959,55.991,2.083
+J03WN1,learned without goal,35.484,70.737,1.853
+J03WN1,learned without lane,36.636,71.198,1.804
+J03WPY,chance,10.0,30.0,2.303
+J03WPY,nearest,31.048,70.161,
+J03WPY,weight (hand),40.726,70.766,1.892
+J03WPY,weight (learned),44.758,80.444,1.58
+J03WPY,learned without free,39.718,76.21,1.712
+J03WPY,learned without reach,32.258,62.903,1.998
+J03WPY,learned without goal,43.952,80.242,1.635
+J03WPY,learned without lane,43.952,79.032,1.621
+J03WOH,chance,10.0,30.0,2.303
+J03WOH,nearest,25.765,61.99,
+J03WOH,weight (hand),31.378,63.265,2.136
+J03WOH,weight (learned),41.071,77.551,1.628
+J03WOH,learned without free,35.714,70.408,1.8
+J03WOH,learned without reach,32.143,65.561,1.961
+J03WOH,learned without goal,39.541,74.49,1.714
+J03WOH,learned without lane,39.541,75.765,1.687
+J03WQQ,chance,10.19,30.569,2.285
+J03WQQ,nearest,27.214,62.319,
+J03WQQ,weight (hand),32.367,69.404,2.086
+J03WQQ,weight (learned),37.842,76.812,1.657
+J03WQQ,learned without free,32.206,74.879,1.787
+J03WQQ,learned without reach,34.783,63.446,2.012
+J03WQQ,learned without goal,37.52,75.201,1.721
+J03WQQ,learned without lane,36.232,76.006,1.699
+J03WOY,chance,10.0,30.0,2.303
+J03WOY,nearest,23.152,61.284,
+J03WOY,weight (hand),34.825,67.899,2.021
+J03WOY,weight (learned),40.856,78.016,1.662
+J03WOY,learned without free,30.739,69.261,1.833
+J03WOY,learned without reach,32.49,64.786,1.962
+J03WOY,learned without goal,38.716,75.681,1.751
+J03WOY,learned without lane,37.938,77.043,1.734
+J03WR9,chance,10.0,30.0,2.303
+J03WR9,nearest,25.047,66.542,
+J03WR9,weight (hand),30.28,68.972,1.871
+J03WR9,weight (learned),39.813,78.879,1.648
+J03WR9,learned without free,31.402,74.766,1.781
+J03WR9,learned without reach,33.645,65.047,1.995
+J03WR9,learned without goal,39.252,76.075,1.693
+J03WR9,learned without lane,37.944,77.383,1.676

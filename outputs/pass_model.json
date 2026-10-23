@@ -1,0 +1,91 @@
+{
+  "choice": {
+    "cols": [
+      "open_space",
+      "dist",
+      "dist2",
+      "goal",
+      "offside",
+      "lane",
+      "adv",
+      "open_space_f",
+      "goal_f",
+      "adv_f",
+      "margin",
+      "run_fwd",
+      "speed"
+    ],
+    "w": [
+      0.6865,
+      -0.7386,
+      -0.0079,
+      -0.1609,
+      -0.9323,
+      1.4338,
+      0.4785,
+      0.9022,
+      0.151,
+      0.8077,
+      0.7794,
+      -0.3391,
+      1.6641
+    ]
+  },
+  "completion": {
+    "cols": [
+      "open_space",
+      "dist",
+      "dist2",
+      "goal",
+      "lane",
+      "adv",
+      "open_space_f",
+      "goal_f",
+      "adv_f",
+      "margin",
+      "run_fwd",
+      "speed"
+    ],
+    "w": [
+      0.3119,
+      -0.1711,
+      0.0117,
+      0.2168,
+      0.334,
+      -0.0815,
+      0.4031,
+      0.2297,
+      -0.0856,
+      0.6912,
+      -0.0878,
+      0.0647
+    ],
+    "b": 0.7883
+  },
+  "value": {
+    "w": [
+      0.5788,
+      2.0147,
+      1.2761,
+      -1.267,
+      -1.0477,
+      0.5618,
+      0.3656
+    ],
+    "b": -3.7603
+  },
+  "cv": {
+    "choice_top1_%": {
+      "chance": 10.1,
+      "nearest teammate": 27.4,
+      "still picture": 42.3,
+      "+ arrival point": 41.9,
+      "+ time margin": 43.6,
+      "+ running (all)": 45.1,
+      "all, no arrival point": 44.8,
+      "all, no time margin": 44.0,
+      "all, no running": 43.6
+    },
+    "completion_auc": 0.842
+  }
+}

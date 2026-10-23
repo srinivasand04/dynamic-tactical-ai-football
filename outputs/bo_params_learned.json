@@ -1,0 +1,33 @@
+{
+  "scales": {
+    "free_m": 21.57,
+    "reach_m": 12.06,
+    "goal_m": 23.12,
+    "lane_width_m": 7.66,
+    "loft_m": 215.87
+  },
+  "importance": {
+    "free": 0.311,
+    "reach": 0.307,
+    "goal": 0.268,
+    "lane": 0.115
+  },
+  "sharpness": 4.481,
+  "offside_penalty": 1.17,
+  "passes": 3546,
+  "matches": [
+    "J03WMX",
+    "J03WN1",
+    "J03WPY",
+    "J03WOH",
+    "J03WQQ",
+    "J03WOY",
+    "J03WR9"
+  ],
+  "held_out_top1_%": {
+    "hand": 35.2,
+    "learned": 41.5,
+    "nearest": 27.4,
+    "chance": 10.1
+  }
+}

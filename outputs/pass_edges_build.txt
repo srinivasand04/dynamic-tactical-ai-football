@@ -1,0 +1,106 @@
+  J03WMX done
+  J03WN1 done
+  J03WPY done
+  J03WOH done
+  J03WQQ done
+  J03WOY done
+  J03WR9 done
+  match_001 done
+  match_002 done
+  match_003 done
+  match_004 done
+  match_005 done
+  match_006 done
+  match_007 done
+  match_008 done
+  match_009 done
+  match_010 done
+  match_011 done
+  match_012 done
+  easy_001 done
+  easy_002 done
+  easy_003 done
+  easy_004 done
+  easy_005 done
+  easy_006 done
+  easy_007 done
+  easy_008 done
+  hard_001 done
+  hard_002 done
+  hard_003 done
+  hard_004 done
+  hard_005 done
+  hard_006 done
+  hard_007 done
+  hard_008 done
+  competition_001 done
+  competition_002 done
+  competition_003 done
+  competition_004 done
+  competition_005 done
+  competition_006 done
+  competition_007 done
+  competition_008 done
+
+PASS EDGES PER MATCH
+
+                 key_states  with_pass_edges_%        group
+match                                                      
+J03WMX                 3550               57.0         real
+J03WN1                 3016               51.7         real
+J03WPY                 3538               54.7         real
+J03WOH                 3284               52.1         real
+J03WQQ                 3581               55.1         real
+J03WOY                 3441               52.7         real
+J03WR9                 3442               54.4         real
+match_001               368               28.5   stochastic
+match_002               357               35.6   stochastic
+match_003               369               35.2   stochastic
+match_004               342               29.2   stochastic
+match_005               348               33.0   stochastic
+match_006               361               42.4   stochastic
+match_007               347               35.2   stochastic
+match_008               366               34.7   stochastic
+match_009               364               32.4   stochastic
+match_010               358               26.5   stochastic
+match_011               357               35.6   stochastic
+match_012               366               36.3   stochastic
+easy_001                339               31.9         easy
+easy_002                373               22.5         easy
+easy_003                346               27.2         easy
+easy_004                342               33.3         easy
+easy_005                356               30.6         easy
+easy_006                364               27.7         easy
+easy_007                367               26.2         easy
+easy_008                367               28.6         easy
+hard_001                367               25.3         hard
+hard_002                334               29.3         hard
+hard_003                376               33.5         hard
+hard_004                355               36.6         hard
+hard_005                357               39.2         hard
+hard_006                377               30.2         hard
+hard_007                358               33.2         hard
+hard_008                365               33.7         hard
+competition_001         359               43.2  competition
+competition_002         369               28.5  competition
+competition_003         359               40.4  competition
+competition_004         358               34.9  competition
+competition_005         359               35.7  competition
+competition_006         352               44.3  competition
+competition_007         339               28.3  competition
+competition_008         357               41.7  competition
+
+PER GROUP
+
+group
+competition    37.1
+easy           28.5
+hard           32.6
+real           54.0
+stochastic     33.7
+
+saved <base>_passedges.npz per match
+
+real	1m32.948s
+user	0m0.015s
+sys	0m0.015s

@@ -1,0 +1,85 @@
+﻿
+>> scripts/save_meta.py J03WQQ
+{
+  "match_id": "J03WQQ",
+  "pitch_dimensions": "NormalizedPitchDimensions(x_dim=Dimension(min=0, max=1), y_dim=Dimension(min=0, max=1), standardized=False, unit=<Unit.NORMED: 'normed'>, goal_width=0.10764705882352942, goal_height=2.44, six_yard_width=0.26941176470588235, six_yard_length=0.05238095238095238, penalty_area_width=0.5929411764705882, penalty_area_length=0.15714285714285714, circle_radius=0.08714285714285715, corner_radius=0.009523809523809525, penalty_spot_distance=0.10476190476190476, penalty_arc_radius=0.08714285714285715, pitch_length=105.0, pitch_width=68.0)",
+  "coordinate_system": "<kloppy.domain.models.common.KloppyCoordinateSystem object at 0x0000029E32380F10>",
+  "orientation": "Orientation.AWAY_HOME",
+  "frame_rate": 25,
+  "pitch_length_m": 105.0,
+  "pitch_width_m": 68.0,
+  "date": "2022-11-05 12:01:27.800000+00:00",
+  "score": "Score(home=1, away=0)",
+  "score_home": 1,
+  "score_away": 0,
+  "teams": {
+    "DFL-CLU-00000P": "Fortuna D\u00fcsseldorf (home)",
+    "DFL-CLU-00000H": "FC St. Pauli (away)"
+  }
+}
+
+40 players saved
+
+>> scripts/download_real.py J03WOY
+meta      ok  (0 MB)
+event     ok  (1 MB)
+tracking  ok  (363 MB)
+frames: 142536  fps: 25
+teams: ['Fortuna Düsseldorf', 'F.C. Hansa Rostock']
+coords: <kloppy.domain.models.common.KloppyCoordinateSystem object at 0x000001BECAA63640>
+saved to data/real/raw/
+
+>> scripts/save_meta.py J03WOY
+{
+  "match_id": "J03WOY",
+  "pitch_dimensions": "NormalizedPitchDimensions(x_dim=Dimension(min=0, max=1), y_dim=Dimension(min=0, max=1), standardized=False, unit=<Unit.NORMED: 'normed'>, goal_width=0.10764705882352942, goal_height=2.44, six_yard_width=0.26941176470588235, six_yard_length=0.05238095238095238, penalty_area_width=0.5929411764705882, penalty_area_length=0.15714285714285714, circle_radius=0.08714285714285715, corner_radius=0.009523809523809525, penalty_spot_distance=0.10476190476190476, penalty_arc_radius=0.08714285714285715, pitch_length=105.0, pitch_width=68.0)",
+  "coordinate_system": "<kloppy.domain.models.common.KloppyCoordinateSystem object at 0x0000023739E30F10>",
+  "orientation": "Orientation.AWAY_HOME",
+  "frame_rate": 25,
+  "pitch_length_m": 105.0,
+  "pitch_width_m": 68.0,
+  "date": "2022-09-10 18:31:31.600000+00:00",
+  "score": "Score(home=3, away=1)",
+  "score_home": 3,
+  "score_away": 1,
+  "teams": {
+    "DFL-CLU-00000P": "Fortuna D\u00fcsseldorf (home)",
+    "DFL-CLU-00000Q": "F.C. Hansa Rostock (away)"
+  }
+}
+
+40 players saved
+
+>> scripts/download_real.py J03WR9
+meta      ok  (0 MB)
+event     ok  (1 MB)
+tracking  ok  (373 MB)
+frames: 146810  fps: 25
+teams: ['Fortuna Düsseldorf', '1. FC Kaiserslautern']
+coords: <kloppy.domain.models.common.KloppyCoordinateSystem object at 0x0000020334343640>
+saved to data/real/raw/
+
+>> scripts/save_meta.py J03WR9
+{
+  "match_id": "J03WR9",
+  "pitch_dimensions": "NormalizedPitchDimensions(x_dim=Dimension(min=0, max=1), y_dim=Dimension(min=0, max=1), standardized=False, unit=<Unit.NORMED: 'normed'>, goal_width=0.10764705882352942, goal_height=2.44, six_yard_width=0.26941176470588235, six_yard_length=0.05238095238095238, penalty_area_width=0.5929411764705882, penalty_area_length=0.15714285714285714, circle_radius=0.08714285714285715, corner_radius=0.009523809523809525, penalty_spot_distance=0.10476190476190476, penalty_arc_radius=0.08714285714285715, pitch_length=105.0, pitch_width=68.0)",
+  "coordinate_system": "<kloppy.domain.models.common.KloppyCoordinateSystem object at 0x0000021E724B0F10>",
+  "orientation": "Orientation.HOME_AWAY",
+  "frame_rate": 25,
+  "pitch_length_m": 105.0,
+  "pitch_width_m": 68.0,
+  "date": "2022-11-11 17:31:11.970000+00:00",
+  "score": "Score(home=1, away=2)",
+  "score_home": 1,
+  "score_away": 2,
+  "teams": {
+    "DFL-CLU-00000P": "Fortuna D\u00fcsseldorf (home)",
+    "DFL-CLU-00000I": "1. FC Kaiserslautern (away)"
+  }
+}
+
+40 players saved
+
+matches with a common-format file: 4 real, 12 simulated
+
+done. steps that ran: download

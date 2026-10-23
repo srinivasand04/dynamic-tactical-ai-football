@@ -1,0 +1,30 @@
+# Python environments and caches
+.venv/
+.venv-analysis/
+__pycache__/
+*.pyc
+
+# Data: ~1.7 GB, rebuilt by the scripts (python scripts/run_pipeline.py), never committed
+data/real/raw/
+data/real/raw_xml/
+data/real/processed/
+data/simulated/
+# ... except the small registry of the real matches
+!data/
+!data/real/
+!data/real/matches.csv
+
+# Large or personal working files
+*.pdf
+*.log
+*.ndjson
+.presentation_build*/
+progress_deck/
+presentations/
+deck_work/*
+!deck_work/build_deck.js
+!deck_work/build_project_map_deck.js
+ESILV Logo Sample.png
+/*.pptx
+/*.md
+!README.md

@@ -1,0 +1,7 @@
+predictor,kept,shot
+danger of where the ball was,0.439,0.832
+danger of the arrival point,0.401,0.862
+chance it arrives,0.717,0.244
+gain of the chosen option,0.423,0.864
+gain of the best option,0.458,0.816
+regret (best - chosen),0.551,0.467

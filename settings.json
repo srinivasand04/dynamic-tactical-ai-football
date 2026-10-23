@@ -1,0 +1,67 @@
+{
+  "_help": "One place for every number and every match list. Scripts read this file; command-line options still override it. Add a new dataset under 'datasets' (same shape) and its matches join every step.",
+
+  "datasets": {
+    "dfl": {
+      "kind": "real",
+      "source": "DFL / Sportec open data (via kloppy)",
+      "dir": "data/real/processed",
+      "file_ext": ".csv.gz",
+      "matches": ["J03WMX", "J03WN1", "J03WPY", "J03WOH", "J03WQQ", "J03WOY", "J03WR9"]
+    },
+    "grf": {
+      "kind": "simulated",
+      "variant": "stochastic",
+      "source": "Google Research Football (11_vs_11_stochastic, one random player, built-in AI)",
+      "dir": "data/simulated",
+      "file_ext": ".csv",
+      "matches": ["match_001", "match_002", "match_003", "match_004", "match_005", "match_006", "match_007", "match_008", "match_009", "match_010", "match_011", "match_012"]
+    },
+    "grf_easy": {
+      "kind": "simulated",
+      "variant": "easy",
+      "source": "GRF 11_vs_11_easy_stochastic (opponent AI difficulty 0.05)",
+      "dir": "data/simulated/easy",
+      "file_ext": ".csv",
+      "matches": ["easy_001", "easy_002", "easy_003", "easy_004", "easy_005", "easy_006", "easy_007", "easy_008"]
+    },
+    "grf_hard": {
+      "kind": "simulated",
+      "variant": "hard",
+      "source": "GRF 11_vs_11_hard_stochastic (opponent AI difficulty 0.95)",
+      "dir": "data/simulated/hard",
+      "file_ext": ".csv",
+      "matches": ["hard_001", "hard_002", "hard_003", "hard_004", "hard_005", "hard_006", "hard_007", "hard_008"]
+    },
+    "grf_competition": {
+      "kind": "simulated",
+      "variant": "competition",
+      "source": "GRF 11_vs_11_competition (both teams' AI difficulty 1.0)",
+      "dir": "data/simulated/competition",
+      "file_ext": ".csv",
+      "matches": ["competition_001", "competition_002", "competition_003", "competition_004", "competition_005", "competition_006", "competition_007", "competition_008"]
+    }
+  },
+
+  "outputs_dir": "outputs",
+
+  "key_states": { "theta_m": 3.0, "alpha_players": 0.4, "beta_arrangement": 0.4, "gamma_ball": 0.2 },
+
+  "sequences": { "window_s": 5.0, "peak_c": 0.5, "event_tolerance_s": 2.0 },
+
+  "types": { "clip": 3.0 },
+
+  "graph": { "mode": "radius", "opp_radius_m": 8.0, "ball_k": 3, "team_k": 5 },
+
+  "gnn": {
+    "window": 3,
+    "dim": 48,
+    "lr": 0.002,
+    "batch": 128,
+    "max_epochs": 30,
+    "min_epochs": 4,
+    "patience": 3,
+    "val_fraction": 0.1,
+    "augment_flips": true
+  }
+}

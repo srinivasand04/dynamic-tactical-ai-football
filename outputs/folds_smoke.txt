@@ -1,0 +1,74 @@
+﻿
+===== fold: hold out J03WOH =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY'] | held-out real: J03WOH | simulated matches to evaluate: 12
+windows for training: 9084 | for early stopping: 1011
+epoch  1  train loss 0.0737  validation error 1.566 m  (37s)
+epoch  2  train loss 0.0457  validation error 1.404 m  (25s)
+epoch  3  train loss 0.0412  validation error 1.374 m  (25s)
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOH     held-out real  |           1.31   2.94   1.50   |        3.67   6.44   5.67
+match_001  simulated      |           2.22   3.42   2.15   |        3.99   6.53   5.49
+match_002  simulated      |           2.52   3.62   2.46   |        4.07   6.42   5.79
+match_003  simulated      |           2.76   3.91   2.68   |        4.40   6.78   6.27
+match_004  simulated      |           2.41   3.53   2.42   |        4.19   6.47   6.28
+match_005  simulated      |           2.52   3.63   2.48   |        3.93   6.36   5.65
+match_006  simulated      |           2.92   4.10   2.86   |        4.60   6.70   6.88
+match_007  simulated      |           2.76   3.81   2.73   |        4.33   6.42   6.84
+match_008  simulated      |           2.36   3.45   2.30   |        4.59   6.56   6.42
+match_009  simulated      |           2.75   3.95   2.69   |        4.23   6.66   6.08
+match_010  simulated      |           2.24   3.28   2.20   |        4.15   6.52   6.22
+match_011  simulated      |           2.67   3.81   2.61   |        4.43   6.52   6.19
+match_012  simulated      |           2.65   3.89   2.58   |        4.45   6.67   6.46
+
+run finished in 1.7 min after 3 epochs; logged to outputs/run_log.csv
+saved *_embeddings_fold_J03WOH.npz for all matches
+
+===== fold: hold out J03WMX =====
+train on: ['J03WN1', 'J03WPY', 'J03WOH'] | held-out real: J03WMX | simulated matches to evaluate: 12
+windows for training: 8844 | for early stopping: 985
+epoch  1  train loss 0.0710  validation error 1.611 m  (21s)
+epoch  2  train loss 0.0459  validation error 1.375 m  (22s)
+epoch  3  train loss 0.0415  validation error 1.586 m  (22s)
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WMX     held-out real  |           1.30   2.84   1.46   |        4.04   6.70   6.66
+match_001  simulated      |           2.21   3.42   2.15   |        4.05   6.53   5.49
+match_002  simulated      |           2.50   3.62   2.46   |        4.20   6.42   5.79
+match_003  simulated      |           2.74   3.91   2.68   |        4.52   6.78   6.27
+match_004  simulated      |           2.41   3.53   2.42   |        4.30   6.47   6.28
+match_005  simulated      |           2.49   3.63   2.48   |        4.00   6.36   5.65
+match_006  simulated      |           2.92   4.10   2.86   |        4.75   6.70   6.88
+match_007  simulated      |           2.74   3.81   2.73   |        4.39   6.42   6.84
+match_008  simulated      |           2.34   3.45   2.30   |        4.67   6.56   6.42
+match_009  simulated      |           2.74   3.95   2.69   |        4.31   6.66   6.08
+match_010  simulated      |           2.21   3.28   2.20   |        4.26   6.52   6.22
+match_011  simulated      |           2.65   3.81   2.61   |        4.53   6.52   6.19
+match_012  simulated      |           2.64   3.89   2.58   |        4.50   6.67   6.46
+
+run finished in 1.3 min after 3 epochs; logged to outputs/run_log.csv
+saved *_embeddings_fold_J03WMX.npz for all matches
+
+ALL FOLDS (metres; gain = how much smaller the model's error is than the keep-velocity guess)
+
+holdout  epochs_run  real_player_model_m  real_player_keepvel_m  sim_player_model_m  sim_player_keepvel_m  real_ball_model_m  real_ball_keepvel_m  sim_ball_model_m  sim_ball_keepvel_m  minutes  real_gain_%  sim_gain_%
+ J03WOH           3                 1.31                   1.50                2.56                  2.51               3.67                 5.67              4.28                6.22      1.7        12.34       -2.03
+ J03WMX           3                 1.30                   1.46                2.55                  2.51               4.04                 6.66              4.37                6.22      1.3        10.84       -1.43
+
+MEAN OVER FOLDS (spread = standard deviation)
+
+                        mean  spread
+epochs_run              3.00    0.00
+real_player_model_m     1.31    0.01
+real_player_keepvel_m   1.48    0.03
+sim_player_model_m      2.56    0.01
+sim_player_keepvel_m    2.51    0.00
+real_ball_model_m       3.86    0.26
+real_ball_keepvel_m     6.17    0.70
+sim_ball_model_m        4.33    0.07
+sim_ball_keepvel_m      6.22    0.00
+minutes                 1.50    0.28
+real_gain_%            11.59    1.06
+sim_gain_%             -1.73    0.42

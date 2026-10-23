@@ -1,0 +1,71 @@
+7 real matches, 36 simulated matches in 4 settings
+
+  J03WMX           done
+  J03WN1           done
+  J03WPY           done
+  J03WOH           done
+  J03WQQ           done
+  J03WOY           done
+  J03WR9           done
+  match_001        done
+  match_002        done
+  match_003        done
+  match_004        done
+  match_005        done
+  match_006        done
+  match_007        done
+  match_008        done
+  match_009        done
+  match_010        done
+  match_011        done
+  match_012        done
+  easy_001         done
+  easy_002         done
+  easy_003         done
+  easy_004         done
+  easy_005         done
+  easy_006         done
+  easy_007         done
+  easy_008         done
+  hard_001         done
+  hard_002         done
+  hard_003         done
+  hard_004         done
+  hard_005         done
+  hard_006         done
+  hard_007         done
+  hard_008         done
+  competition_001  done
+  competition_002  done
+  competition_003  done
+  competition_004  done
+  competition_005  done
+  competition_006  done
+  competition_007  done
+  competition_008  done
+
+REALISM SCORECARD (group averages; the last column is the average gap to real football, lower = more realistic)
+
+             stoppage_scenes_%  ball_dead_%  player_speed_m/s  key_states_%  novelty  network_gain_%  pass_length_m  forward_gain_m  predicted_%  longest_gap_s  matches  gap_to_real_%
+group                                                                                                                                                                                  
+real                     31.54        44.89              1.46          5.95     2.11           26.30          17.72            2.62        45.05          29.67        7           0.00
+competition               0.00         4.19              3.46         11.88     2.82            2.50          11.93            2.87        36.59           3.28        8          63.98
+easy                      0.00         3.97              3.41         11.89     2.70            2.88          12.33            3.88        39.21           2.94        8          66.65
+stochastic                0.40         4.01              3.44         11.95     2.74            2.39          12.05            3.79        35.80           3.48       12          67.55
+hard                      0.00         4.46              3.50         12.04     2.83            1.84          12.24            3.93        38.52           2.91        8          68.09
+
+GAP PER MEASURE (% away from real)
+
+             stoppage_scenes_%  ball_dead_%  player_speed_m/s  key_states_%  novelty  network_gain_%  pass_length_m  forward_gain_m  predicted_%
+group                                                                                                                                           
+real                       0.0          0.0               0.0           0.0      0.0             0.0            0.0             0.0          0.0
+competition              100.0         91.0             100.0         100.0     34.0            90.0           33.0            10.0         19.0
+easy                     100.0         91.0             100.0         100.0     28.0            89.0           30.0            48.0         13.0
+stochastic                99.0         91.0             100.0         100.0     30.0            91.0           32.0            45.0         21.0
+hard                     100.0         90.0             100.0         100.0     34.0            93.0           31.0            50.0         14.0
+
+saved outputs/realism_scorecard.csv and outputs/realism_scorecard.png
+
+real	1m26.695s
+user	0m0.015s
+sys	0m0.015s

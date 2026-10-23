@@ -1,0 +1,64 @@
+held_out,model,top1_%,top3_%,log_loss
+J03WMX,chance,10.0,30.0,2.303
+J03WMX,nearest teammate,31.769,70.036,1.787
+J03WMX,still picture,49.458,82.852,1.455
+J03WMX,+ arrival point,48.736,82.852,1.459
+J03WMX,+ time margin,51.986,83.032,1.434
+J03WMX,+ running (all),54.693,84.657,1.395
+J03WMX,"all, no arrival point",54.874,83.394,1.394
+J03WMX,"all, no time margin",51.986,82.491,1.412
+J03WMX,"all, no running",51.986,83.032,1.434
+J03WN1,chance,10.479,31.436,2.257
+J03WN1,nearest teammate,28.111,61.982,1.975
+J03WN1,still picture,37.788,73.041,1.714
+J03WN1,+ arrival point,37.327,74.885,1.707
+J03WN1,+ time margin,38.249,74.654,1.688
+J03WN1,+ running (all),37.327,75.576,1.64
+J03WN1,"all, no arrival point",37.558,75.115,1.642
+J03WN1,"all, no time margin",39.862,75.346,1.652
+J03WN1,"all, no running",38.249,74.654,1.688
+J03WPY,chance,10.0,30.0,2.303
+J03WPY,nearest teammate,31.048,70.161,1.824
+J03WPY,still picture,46.371,82.056,1.525
+J03WPY,+ arrival point,47.379,80.847,1.52
+J03WPY,+ time margin,45.766,82.46,1.489
+J03WPY,+ running (all),47.379,83.669,1.443
+J03WPY,"all, no arrival point",47.177,83.468,1.445
+J03WPY,"all, no time margin",46.573,82.258,1.463
+J03WPY,"all, no running",45.766,82.46,1.489
+J03WOH,chance,10.0,30.0,2.303
+J03WOH,nearest teammate,25.765,61.99,1.959
+J03WOH,still picture,40.816,79.082,1.587
+J03WOH,+ arrival point,40.306,80.612,1.583
+J03WOH,+ time margin,43.878,79.847,1.554
+J03WOH,+ running (all),46.939,79.337,1.52
+J03WOH,"all, no arrival point",46.429,79.592,1.524
+J03WOH,"all, no time margin",45.918,80.357,1.541
+J03WOH,"all, no running",43.878,79.847,1.554
+J03WQQ,chance,10.19,30.569,2.285
+J03WQQ,nearest teammate,27.214,62.319,1.912
+J03WQQ,still picture,40.258,80.837,1.608
+J03WQQ,+ arrival point,40.097,80.837,1.599
+J03WQQ,+ time margin,41.385,79.388,1.581
+J03WQQ,+ running (all),44.122,80.676,1.538
+J03WQQ,"all, no arrival point",43.639,80.998,1.545
+J03WQQ,"all, no time margin",43.317,80.998,1.549
+J03WQQ,"all, no running",41.385,79.388,1.581
+J03WOY,chance,10.0,30.0,2.303
+J03WOY,nearest teammate,23.152,61.284,1.999
+J03WOY,still picture,42.996,79.377,1.62
+J03WOY,+ arrival point,41.051,80.545,1.611
+J03WOY,+ time margin,43.774,79.767,1.581
+J03WOY,+ running (all),43.969,80.739,1.56
+J03WOY,"all, no arrival point",42.412,80.934,1.565
+J03WOY,"all, no time margin",40.856,81.518,1.579
+J03WOY,"all, no running",43.774,79.767,1.581
+J03WR9,chance,10.0,30.0,2.303
+J03WR9,nearest teammate,25.047,66.542,1.879
+J03WR9,still picture,38.318,80.187,1.614
+J03WR9,+ arrival point,38.505,81.495,1.598
+J03WR9,+ time margin,39.813,80.0,1.578
+J03WR9,+ running (all),40.935,82.243,1.537
+J03WR9,"all, no arrival point",41.308,81.869,1.545
+J03WR9,"all, no time margin",39.252,82.056,1.55
+J03WR9,"all, no running",39.813,80.0,1.578

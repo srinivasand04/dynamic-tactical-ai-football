@@ -1,0 +1,65 @@
+3987 real passes (3546 completed) in 7 matches
+
+  choice, held out J03WMX: still 49.5%  all 54.7%
+  choice, held out J03WN1: still 37.8%  all 37.3%
+  choice, held out J03WPY: still 46.4%  all 47.4%
+  choice, held out J03WOH: still 40.8%  all 46.9%
+  choice, held out J03WQQ: still 40.3%  all 44.1%
+  choice, held out J03WOY: still 43.0%  all 44.0%
+  choice, held out J03WR9: still 38.3%  all 40.9%
+
+A  WHO WILL THE PASSER PICK?  (average over held-out matches; chance is about 10%)
+
+                       top1_%  top3_%  log_loss
+model                                          
+chance                  10.10   30.29      2.29
+nearest teammate        27.44   64.90      1.91
+still picture           42.29   79.63      1.59
++ arrival point         41.91   80.30      1.58
++ time margin           43.55   79.88      1.56
++ running (all)         45.05   80.99      1.52
+all, no arrival point   44.77   80.77      1.52
+all, no time margin     43.97   80.72      1.54
+all, no running         43.55   79.88      1.56
+
+  step-2 reference (static model with learned distances): top-1 41.5%, top-3 78.0%, log-loss 1.63
+
+B  WILL THE PASS ARRIVE?  (held-out matches)
+
+          AUC all numbers  AUC pass length only  completed_%  brier  brier_always_mean
+held_out                                                                              
+J03WMX              0.836                 0.701       89.789  0.078              0.092
+J03WN1              0.814                 0.588       83.946  0.119              0.135
+J03WPY              0.896                 0.663       91.513  0.061              0.078
+J03WOH              0.833                 0.642       87.305  0.090              0.111
+J03WQQ              0.796                 0.580       92.273  0.070              0.071
+J03WOY              0.818                 0.569       86.971  0.099              0.113
+J03WR9              0.898                 0.630       89.465  0.073              0.094
+
+  mean: {'AUC all numbers': 0.842, 'AUC pass length only': 0.625, 'completed_%': 88.752, 'brier': 0.084, 'brier_always_mean': 0.099}
+
+C  HOW DANGEROUS IS THE PLACE?  (22123 one-per-second samples, 4.8% are followed by a shot within 10 s)
+
+  chance of a shot within 10 s, by where the ball is (attacking left to right)
+            x= 10m  x= 30m  x= 50m  x= 70m  x= 85m  x= 95m  
+  centre       2.4%     3.2%     5.3%    10.9%    21.5%    34.5%  
+  half-wide    1.3%     1.8%     3.1%     7.0%    15.3%    26.7%  
+  wide         0.5%     0.8%     1.5%     3.7%     8.7%    16.7%  
+
+LEARNED CHOICE WEIGHTS (all real matches; positive = the passer likes it more)
+
+  speed          +1.66
+  lane           +1.43
+  offside        -0.93
+  open_space_f   +0.90
+  adv_f          +0.81
+  margin         +0.78
+  dist           -0.74
+  open_space     +0.69
+  adv            +0.48
+  run_fwd        -0.34
+  goal           -0.16
+  goal_f         +0.15
+  dist2          -0.01
+
+saved outputs/pass_model.json, outputs/pass_model.csv, outputs/pass_model.png

@@ -1,0 +1,99 @@
+match,predictor,outcome,AUC
+J03WMX,danger of where the ball was,shot,0.8416
+J03WN1,danger of where the ball was,shot,0.7887
+J03WOH,danger of where the ball was,shot,0.9072
+J03WOY,danger of where the ball was,shot,0.8276
+J03WPY,danger of where the ball was,shot,0.7775
+J03WQQ,danger of where the ball was,shot,0.8696
+J03WR9,danger of where the ball was,shot,0.8148
+J03WMX,danger of where the ball was,kept,0.414
+J03WN1,danger of where the ball was,kept,0.5499
+J03WOH,danger of where the ball was,kept,0.4108
+J03WOY,danger of where the ball was,kept,0.4732
+J03WPY,danger of where the ball was,kept,0.3729
+J03WQQ,danger of where the ball was,kept,0.4317
+J03WR9,danger of where the ball was,kept,0.4205
+J03WMX,danger of the arrival point,shot,0.8801
+J03WN1,danger of the arrival point,shot,0.8275
+J03WOH,danger of the arrival point,shot,0.8841
+J03WOY,danger of the arrival point,shot,0.8553
+J03WPY,danger of the arrival point,shot,0.8449
+J03WQQ,danger of the arrival point,shot,0.8867
+J03WR9,danger of the arrival point,shot,0.8532
+J03WMX,danger of the arrival point,kept,0.379
+J03WN1,danger of the arrival point,kept,0.4921
+J03WOH,danger of the arrival point,kept,0.3785
+J03WOY,danger of the arrival point,kept,0.4549
+J03WPY,danger of the arrival point,kept,0.3399
+J03WQQ,danger of the arrival point,kept,0.4031
+J03WR9,danger of the arrival point,kept,0.3615
+J03WMX,chance it arrives,shot,0.1945
+J03WN1,chance it arrives,shot,0.2978
+J03WOH,chance it arrives,shot,0.2585
+J03WOY,chance it arrives,shot,0.255
+J03WPY,chance it arrives,shot,0.2491
+J03WQQ,chance it arrives,shot,0.2221
+J03WR9,chance it arrives,shot,0.2303
+J03WMX,chance it arrives,kept,0.7318
+J03WN1,chance it arrives,kept,0.6853
+J03WOH,chance it arrives,kept,0.6958
+J03WOY,chance it arrives,kept,0.6792
+J03WPY,chance it arrives,kept,0.7621
+J03WQQ,chance it arrives,kept,0.6872
+J03WR9,chance it arrives,kept,0.7789
+J03WMX,gain of the chosen option,shot,0.8773
+J03WN1,gain of the chosen option,shot,0.8289
+J03WOH,gain of the chosen option,shot,0.8915
+J03WOY,gain of the chosen option,shot,0.8574
+J03WPY,gain of the chosen option,shot,0.8472
+J03WQQ,gain of the chosen option,shot,0.8886
+J03WR9,gain of the chosen option,shot,0.8537
+J03WMX,gain of the chosen option,kept,0.395
+J03WN1,gain of the chosen option,kept,0.5152
+J03WOH,gain of the chosen option,kept,0.4013
+J03WOY,gain of the chosen option,kept,0.474
+J03WPY,gain of the chosen option,kept,0.3635
+J03WQQ,gain of the chosen option,kept,0.4221
+J03WR9,gain of the chosen option,kept,0.387
+J03WMX,gain of the best option,shot,0.8259
+J03WN1,gain of the best option,shot,0.7124
+J03WOH,gain of the best option,shot,0.8511
+J03WOY,gain of the best option,shot,0.8642
+J03WPY,gain of the best option,shot,0.7695
+J03WQQ,gain of the best option,shot,0.8497
+J03WR9,gain of the best option,shot,0.838
+J03WMX,gain of the best option,kept,0.393
+J03WN1,gain of the best option,kept,0.585
+J03WOH,gain of the best option,kept,0.4323
+J03WOY,gain of the best option,kept,0.5347
+J03WPY,gain of the best option,kept,0.4124
+J03WQQ,gain of the best option,kept,0.4455
+J03WR9,gain of the best option,kept,0.4014
+J03WMX,regret (best - chosen),shot,0.5446
+J03WN1,regret (best - chosen),shot,0.4063
+J03WOH,regret (best - chosen),shot,0.3778
+J03WOY,regret (best - chosen),shot,0.482
+J03WPY,regret (best - chosen),shot,0.4283
+J03WQQ,regret (best - chosen),shot,0.5501
+J03WR9,regret (best - chosen),shot,0.4786
+J03WMX,regret (best - chosen),kept,0.4692
+J03WN1,regret (best - chosen),kept,0.6543
+J03WOH,regret (best - chosen),kept,0.5303
+J03WOY,regret (best - chosen),kept,0.5893
+J03WPY,regret (best - chosen),kept,0.5694
+J03WQQ,regret (best - chosen),kept,0.5009
+J03WR9,regret (best - chosen),kept,0.5437
+J03WMX,location alone,shot,0.8416
+J03WMX,location + gain,shot,0.8778
+J03WN1,location alone,shot,0.7887
+J03WN1,location + gain,shot,0.8267
+J03WPY,location alone,shot,0.7775
+J03WPY,location + gain,shot,0.8333
+J03WOH,location alone,shot,0.9072
+J03WOH,location + gain,shot,0.9095
+J03WQQ,location alone,shot,0.8696
+J03WQQ,location + gain,shot,0.8942
+J03WOY,location alone,shot,0.8276
+J03WOY,location + gain,shot,0.8744
+J03WR9,location alone,shot,0.8148
+J03WR9,location + gain,shot,0.8537

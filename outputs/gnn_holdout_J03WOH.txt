@@ -1,0 +1,21 @@
+﻿train on: ['J03WMX', 'J03WN1', 'J03WPY'] | held-out real: J03WOH | windows: {'J03WMX': 3547, 'J03WN1': 3013, 'J03WPY': 3535}
+epoch  1  train loss 0.0738  (65s)
+epoch  2  train loss 0.0487  (78s)
+epoch  3  train loss 0.0445  (74s)
+epoch  4  train loss 0.0425  (71s)  | held-out player error 1.23 m (nobody moves 2.94, keep velocity 1.50)
+epoch  5  train loss 0.0411  (75s)
+epoch  6  train loss 0.0404  (68s)
+epoch  7  train loss 0.0383  (69s)
+epoch  8  train loss 0.0378  (70s)  | held-out player error 1.13 m (nobody moves 2.94, keep velocity 1.50)
+epoch  9  train loss 0.0366  (72s)
+epoch 10  train loss 0.0362  (71s)
+epoch 11  train loss 0.0357  (72s)
+epoch 12  train loss 0.0350  (72s)  | held-out player error 1.12 m (nobody moves 2.94, keep velocity 1.50)
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOH     held-out real  |           1.12   2.94   1.50   |        3.96   6.44   6.44
+match_001  simulated      |           2.13   3.42   2.15   |        4.82   6.53   6.53
+match_002  simulated      |           2.43   3.62   2.46   |        4.96   6.42   6.42
+match_003  simulated      |           2.68   3.91   2.68   |        5.54   6.78   6.78
+match_004  simulated      |           2.33   3.53   2.42   |        4.92   6.47   6.47

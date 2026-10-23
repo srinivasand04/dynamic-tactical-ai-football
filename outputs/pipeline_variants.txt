@@ -1,0 +1,1398 @@
+﻿
+matches with a common-format file: 7 real, 36 simulated
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_001.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         339  11.3        0.1           0.8        1.3        3.1
+wrote data/simulated/easy/easy_001_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_002.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         373 12.43        0.2           0.7        1.2        2.9
+wrote data/simulated/easy/easy_002_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_003.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         346 11.53        0.1           0.8       1.26        3.2
+wrote data/simulated/easy/easy_003_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_004.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         342  11.4        0.2           0.8        1.2        3.3
+wrote data/simulated/easy/easy_004_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_005.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         356 11.87        0.1           0.8        1.2        3.1
+wrote data/simulated/easy/easy_005_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_006.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         364 12.13        0.1           0.8        1.2        2.2
+wrote data/simulated/easy/easy_006_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_007.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         367 12.23        0.1           0.8        1.2        2.5
+wrote data/simulated/easy/easy_007_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/easy/easy_008.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         367 12.23        0.1           0.8        1.2        3.2
+wrote data/simulated/easy/easy_008_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_001.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         367 12.23        0.1           0.7        1.2        2.6
+wrote data/simulated/hard/hard_001_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_002.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         334 11.13        0.1           0.8        1.4        3.1
+wrote data/simulated/hard/hard_002_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_003.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         376 12.53        0.1           0.8        1.1        3.1
+wrote data/simulated/hard/hard_003_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_004.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         355 11.83        0.1           0.8       1.37        2.9
+wrote data/simulated/hard/hard_004_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_005.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         357  11.9        0.1           0.8        1.2        3.0
+wrote data/simulated/hard/hard_005_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_006.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         377 12.57        0.1           0.7        1.1        3.4
+wrote data/simulated/hard/hard_006_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_007.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         358 11.93        0.1           0.8        1.3        2.4
+wrote data/simulated/hard/hard_007_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/hard/hard_008.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         365 12.17        0.1           0.8        1.2        2.8
+wrote data/simulated/hard/hard_008_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_001.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         359 11.97        0.1           0.8        1.2        3.1
+wrote data/simulated/competition/competition_001_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_002.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         369  12.3        0.1           0.8       1.13        2.5
+wrote data/simulated/competition/competition_002_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_003.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         359 11.97        0.1           0.8       1.23        3.1
+wrote data/simulated/competition/competition_003_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_004.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         358 11.93        0.1           0.8        1.3        2.9
+wrote data/simulated/competition/competition_004_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_005.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         359 11.97        0.1           0.8        1.2        3.1
+wrote data/simulated/competition/competition_005_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_006.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         352 11.73        0.2           0.8        1.3        2.1
+wrote data/simulated/competition/competition_006_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_007.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         339  11.3        0.1           0.8        1.3        3.0
+wrote data/simulated/competition/competition_007_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/simulated/competition/competition_008.csv
+3000 frames, 22 player ids, 5.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0         357  11.9        0.2           0.8        1.2        6.4
+wrote data/simulated/competition/competition_008_adaptive_ks.csv
+
+>> scripts/find_sequences.py
+shared threshold 0.681 (W = 5.0 s, c = 0.5)
+          match  per_min  sequences  dur_min_s  dur_median_s  dur_mean_s  dur_max_s
+         J03WMX     2.69        262        5.0          15.8        22.3      151.5
+         J03WN1     2.80        264        5.0          15.5        21.4      136.5
+         J03WPY     3.02        294        5.0          14.0        19.9      119.5
+         J03WOH     3.02        276        5.0          14.5        19.9      109.0
+         J03WQQ     3.41        323        5.0          13.5        17.6       78.0
+         J03WOY     3.19        303        5.0          15.5        18.8      101.5
+         J03WR9     2.81        275        5.0          14.0        21.3      174.5
+      match_001     4.20         21        5.0          10.5        14.3       82.0
+      match_002     4.61         23        5.0          11.5        13.0       37.0
+      match_003     5.01         25        5.0           8.5        12.0       25.0
+      match_004     4.20         21        4.8          14.0        14.3       32.0
+      match_005     4.01         20        5.0          12.8        15.0       31.8
+      match_006     5.21         26        5.0           8.2        11.5       45.5
+      match_007     4.41         22        5.0          10.8        13.6       46.5
+      match_008     4.01         20        5.0          11.0        15.0       41.0
+      match_009     4.61         23        5.0           9.0        13.0       39.5
+      match_010     3.00         15        7.0          12.5        20.0       41.0
+      match_011     4.40         22        4.8          10.5        13.6       31.5
+      match_012     3.82         19        5.0          10.0        15.7       40.0
+       easy_001     4.41         22        5.0          11.0        13.6       41.5
+       easy_002     3.60         18        5.0          13.0        16.7       42.5
+       easy_003     3.20         16        5.0          18.5        18.7       38.5
+       easy_004     3.80         19        5.0          10.0        15.8       53.0
+       easy_005     5.20         26        5.0           9.2        11.5       27.5
+       easy_006     3.81         19        5.5          12.0        15.8       41.9
+       easy_007     3.81         19        5.0           9.5        15.8       65.5
+       easy_008     2.41         12        6.0          13.8        24.9       64.7
+       hard_001     4.61         23        5.0           8.5        13.0       44.5
+       hard_002     4.60         23        5.0          11.5        13.0       33.7
+       hard_003     4.61         23        5.0           9.5        13.0       64.5
+       hard_004     4.40         22        5.0           8.5        13.6       35.0
+       hard_005     5.01         25        5.0           8.5        12.0       33.7
+       hard_006     5.21         26        4.9           9.0        11.5       28.5
+       hard_007     5.01         25        5.0           7.5        12.0       36.5
+       hard_008     3.61         18        5.0          11.5        16.6       49.5
+competition_001     4.61         23        5.0           7.5        13.0       52.0
+competition_002     3.00         15        5.5          10.5        20.0       87.7
+competition_003     6.43         32        5.0           7.5         9.3       29.5
+competition_004     4.01         20        5.0           9.4        15.0       45.0
+competition_005     4.81         24        5.0           8.8        12.5       38.0
+competition_006     4.61         23        5.0          10.5        13.0       34.0
+competition_007     3.81         19        5.0          10.0        15.8       56.5
+competition_008     4.01         20        5.0          13.2        15.0       43.5
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WMX.csv.gz --events data/real/raw/J03WMX_events.csv.gz
+boundaries            261.0
+explained_strong_%     41.0
+random_strong_%        20.0
+explained_any_%        63.0
+random_any_%           39.0
+strong_events         439.0
+recalled_strong_%      42.0
+random_recalled_%      16.0
+dead_ball_changes     205.0
+recalled_dead_%        44.0
+random_dead_%          16.0
+
+wrote data/real/processed/J03WMX_boundary_events.csv and data/real/processed/J03WMX_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                   96
+possession -> away                19
+play restarts                     14
+tackle                            10
+possession -> home                 9
+play restarts; free kick taken     7
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WN1.csv.gz --events data/real/raw/J03WN1_events.csv.gz
+boundaries            263.0
+explained_strong_%     45.0
+random_strong_%        21.0
+explained_any_%        61.0
+random_any_%           39.0
+strong_events         443.0
+recalled_strong_%      40.0
+random_recalled_%      17.0
+dead_ball_changes     209.0
+recalled_dead_%        49.0
+random_dead_%          17.0
+
+wrote data/real/processed/J03WN1_boundary_events.csv and data/real/processed/J03WN1_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby       103
+play restarts          14
+tackle                 10
+ball out                9
+possession -> home      8
+possession -> away      8
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WPY.csv.gz --events data/real/raw/J03WPY_events.csv.gz
+boundaries            293.0
+explained_strong_%     35.0
+random_strong_%        20.0
+explained_any_%        56.0
+random_any_%           36.0
+strong_events         420.0
+recalled_strong_%      38.0
+random_recalled_%      18.0
+dead_ball_changes     193.0
+recalled_dead_%        39.0
+random_dead_%          18.0
+
+wrote data/real/processed/J03WPY_boundary_events.csv and data/real/processed/J03WPY_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                   130
+tackle                             16
+play restarts; goal kick taken     13
+possession -> home                 12
+play restarts                      11
+possession -> away                 10
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WOH.csv.gz --events data/real/raw/J03WOH_events.csv.gz
+boundaries            275.0
+explained_strong_%     37.0
+random_strong_%        22.0
+explained_any_%        57.0
+random_any_%           40.0
+strong_events         435.0
+recalled_strong_%      37.0
+random_recalled_%      18.0
+dead_ball_changes     201.0
+recalled_dead_%        43.0
+random_dead_%          18.0
+
+wrote data/real/processed/J03WOH_boundary_events.csv and data/real/processed/J03WOH_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                   119
+play restarts                      21
+tackle                             11
+possession -> home                 11
+possession -> away                 10
+goal kick taken; play restarts      6
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WQQ.csv.gz --events data/real/raw/J03WQQ_events.csv.gz
+boundaries            322.0
+explained_strong_%     32.0
+random_strong_%        21.0
+explained_any_%        50.0
+random_any_%           40.0
+strong_events         428.0
+recalled_strong_%      34.0
+random_recalled_%      20.0
+dead_ball_changes     197.0
+recalled_dead_%        44.0
+random_dead_%          20.0
+
+wrote data/real/processed/J03WQQ_boundary_events.csv and data/real/processed/J03WQQ_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby       160
+play restarts          24
+tackle                 17
+possession -> home     14
+possession -> away      9
+ball out                8
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WOY.csv.gz --events data/real/raw/J03WOY_events.csv.gz
+boundaries            302.0
+explained_strong_%     38.0
+random_strong_%        21.0
+explained_any_%        58.0
+random_any_%           39.0
+strong_events         469.0
+recalled_strong_%      40.0
+random_recalled_%      19.0
+dead_ball_changes     224.0
+recalled_dead_%        42.0
+random_dead_%          19.0
+
+wrote data/real/processed/J03WOY_boundary_events.csv and data/real/processed/J03WOY_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                   126
+possession -> home                 17
+play restarts                      17
+possession -> away                 15
+ball out                           14
+free kick taken; play restarts      8
+
+>> scripts/describe_sequences.py --csv data/real/processed/J03WR9.csv.gz --events data/real/raw/J03WR9_events.csv.gz
+boundaries            274.0
+explained_strong_%     34.0
+random_strong_%        18.0
+explained_any_%        53.0
+random_any_%           34.0
+strong_events         398.0
+recalled_strong_%      36.0
+random_recalled_%      17.0
+dead_ball_changes     183.0
+recalled_dead_%        42.0
+random_dead_%          17.0
+
+wrote data/real/processed/J03WR9_boundary_events.csv and data/real/processed/J03WR9_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby       130
+possession -> home     15
+play restarts          13
+tackle                 10
+possession -> away     10
+ball out                8
+
+>> scripts/describe_sequences.py --csv data/simulated/match_001.csv
+boundaries            20.0
+explained_strong_%    35.0
+random_strong_%       21.0
+explained_any_%       55.0
+random_any_%          49.0
+strong_events         25.0
+recalled_strong_%     48.0
+random_recalled_%     23.0
+dead_ball_changes     24.0
+recalled_dead_%       46.0
+random_dead_%         23.0
+
+wrote data/simulated/match_001_boundary_events.csv and data/simulated/match_001_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             9
+free kick (set piece); play restarts                        2
+possession -> home                                          2
+possession -> home; possession -> away                      1
+throw in (set piece); play restarts                         1
+possession -> home; free kick (set piece); play restarts    1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_002.csv
+boundaries            22.0
+explained_strong_%    45.0
+random_strong_%       24.0
+explained_any_%       59.0
+random_any_%          49.0
+strong_events         28.0
+recalled_strong_%     61.0
+random_recalled_%     26.0
+dead_ball_changes     26.0
+recalled_dead_%       58.0
+random_dead_%         26.0
+
+wrote data/simulated/match_002_boundary_events.csv and data/simulated/match_002_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                                                 9
+free kick (set piece); play restarts                                            5
+possession -> home                                                              2
+possession -> away; possession -> home; free kick (set piece); play restarts    1
+goal kick (set piece); play restarts                                            1
+free kick (set piece)                                                           1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_003.csv
+boundaries            24.0
+explained_strong_%    46.0
+random_strong_%       26.0
+explained_any_%       62.0
+random_any_%          50.0
+strong_events         30.0
+recalled_strong_%     67.0
+random_recalled_%     29.0
+dead_ball_changes     26.0
+recalled_dead_%       65.0
+random_dead_%         28.0
+
+wrote data/simulated/match_003_boundary_events.csv and data/simulated/match_003_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                         9
+possession -> away                      3
+possession -> home; goal                3
+goal kick (set piece); play restarts    3
+free kick (set piece); play restarts    2
+corner (set piece); play restarts       1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_004.csv
+boundaries            20.0
+explained_strong_%    35.0
+random_strong_%       20.0
+explained_any_%       60.0
+random_any_%          48.0
+strong_events         22.0
+recalled_strong_%     45.0
+random_recalled_%     24.0
+dead_ball_changes     20.0
+recalled_dead_%       40.0
+random_dead_%         24.0
+
+wrote data/simulated/match_004_boundary_events.csv and data/simulated/match_004_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           8
+free kick (set piece); play restarts      2
+possession -> home                        2
+free kick (set piece)                     1
+possession -> home; possession -> away    1
+possession -> away                        1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_005.csv
+boundaries            19.0
+explained_strong_%    58.0
+random_strong_%       23.0
+explained_any_%       74.0
+random_any_%          49.0
+strong_events         29.0
+recalled_strong_%     72.0
+random_recalled_%     22.0
+dead_ball_changes     28.0
+recalled_dead_%       71.0
+random_dead_%         22.0
+
+wrote data/simulated/match_005_boundary_events.csv and data/simulated/match_005_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             5
+possession -> home; possession -> away                      2
+possession -> home; free kick (set piece); play restarts    2
+goal kick (set piece); play restarts                        2
+possession -> away; throw in (set piece); play restarts     2
+free kick (set piece); play restarts                        1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_006.csv
+boundaries            25.0
+explained_strong_%    48.0
+random_strong_%       27.0
+explained_any_%       72.0
+random_any_%          54.0
+strong_events         34.0
+recalled_strong_%     62.0
+random_recalled_%     28.0
+dead_ball_changes     30.0
+recalled_dead_%       57.0
+random_dead_%         28.0
+
+wrote data/simulated/match_006_boundary_events.csv and data/simulated/match_006_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             7
+possession -> away                                          3
+possession -> home; free kick (set piece); play restarts    2
+goal kick (set piece); play restarts                        2
+possession -> home                                          2
+possession -> home; possession -> away; goal                2
+
+>> scripts/describe_sequences.py --csv data/simulated/match_007.csv
+boundaries            21.0
+explained_strong_%    57.0
+random_strong_%       27.0
+explained_any_%       76.0
+random_any_%          52.0
+strong_events         34.0
+recalled_strong_%     65.0
+random_recalled_%     24.0
+dead_ball_changes     32.0
+recalled_dead_%       62.0
+random_dead_%         24.0
+
+wrote data/simulated/match_007_boundary_events.csv and data/simulated/match_007_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             5
+goal kick (set piece); play restarts                        4
+possession -> away                                          2
+goal                                                        2
+possession -> home; free kick (set piece); play restarts    2
+possession -> home; throw in (set piece); play restarts     1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_008.csv
+boundaries            19.0
+explained_strong_%    32.0
+random_strong_%       19.0
+explained_any_%       47.0
+random_any_%          48.0
+strong_events         23.0
+recalled_strong_%     39.0
+random_recalled_%     21.0
+dead_ball_changes     20.0
+recalled_dead_%       30.0
+random_dead_%         21.0
+
+wrote data/simulated/match_008_boundary_events.csv and data/simulated/match_008_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           10
+possession -> home; goal                   3
+free kick (set piece); play restarts       3
+possession -> away; possession -> home     1
+possession -> home                         1
+possession -> away                         1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_009.csv
+boundaries            22.0
+explained_strong_%    64.0
+random_strong_%       30.0
+explained_any_%       73.0
+random_any_%          54.0
+strong_events         38.0
+recalled_strong_%     68.0
+random_recalled_%     26.0
+dead_ball_changes     34.0
+recalled_dead_%       65.0
+random_dead_%         26.0
+
+wrote data/simulated/match_009_boundary_events.csv and data/simulated/match_009_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                                   6
+free kick (set piece); play restarts                              5
+possession -> home; goal                                          2
+possession -> away; throw in (set piece); play restarts           1
+possession -> away; goal; free kick (set piece); play restarts    1
+possession -> home; possession -> away                            1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_010.csv
+boundaries            14.0
+explained_strong_%    29.0
+random_strong_%       17.0
+explained_any_%       57.0
+random_any_%          54.0
+strong_events         22.0
+recalled_strong_%     36.0
+random_recalled_%     17.0
+dead_ball_changes     22.0
+recalled_dead_%       36.0
+random_dead_%         17.0
+
+wrote data/simulated/match_010_boundary_events.csv and data/simulated/match_010_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           6
+possession -> away                        2
+free kick (set piece); play restarts      2
+goal kick (set piece); play restarts      2
+possession -> home                        1
+possession -> home; possession -> away    1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_011.csv
+boundaries            21.0
+explained_strong_%    57.0
+random_strong_%       28.0
+explained_any_%       67.0
+random_any_%          47.0
+strong_events         31.0
+recalled_strong_%     55.0
+random_recalled_%     25.0
+dead_ball_changes     28.0
+recalled_dead_%       50.0
+random_dead_%         25.0
+
+wrote data/simulated/match_011_boundary_events.csv and data/simulated/match_011_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                            7
+free kick (set piece)                                      4
+possession -> home; goal                                   3
+possession -> home                                         1
+possession -> away                                         1
+possession -> away; throw in (set piece); play restarts    1
+
+>> scripts/describe_sequences.py --csv data/simulated/match_012.csv
+boundaries            18.0
+explained_strong_%    67.0
+random_strong_%       25.0
+explained_any_%       83.0
+random_any_%          44.0
+strong_events         29.0
+recalled_strong_%     69.0
+random_recalled_%     21.0
+dead_ball_changes     24.0
+recalled_dead_%       67.0
+random_dead_%         22.0
+
+wrote data/simulated/match_012_boundary_events.csv and data/simulated/match_012_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+free kick (set piece); play restarts            3
+no event nearby                                 3
+goal kick (set piece); play restarts            3
+possession -> away                              2
+possession -> home; possession -> away; goal    2
+possession -> home; goal                        2
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_001.csv
+boundaries            21.0
+explained_strong_%    38.0
+random_strong_%       21.0
+explained_any_%       62.0
+random_any_%          52.0
+strong_events         24.0
+recalled_strong_%     62.0
+random_recalled_%     26.0
+dead_ball_changes     24.0
+recalled_dead_%       62.0
+random_dead_%         26.0
+
+wrote data/simulated/easy/easy_001_boundary_events.csv and data/simulated/easy/easy_001_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           8
+free kick (set piece); play restarts      4
+possession -> away                        3
+goal kick (set piece); play restarts      2
+possession -> home; possession -> away    1
+possession -> away; possession -> home    1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_002.csv
+boundaries            17.0
+explained_strong_%    35.0
+random_strong_%       23.0
+explained_any_%       59.0
+random_any_%          55.0
+strong_events         29.0
+recalled_strong_%     38.0
+random_recalled_%     20.0
+dead_ball_changes     28.0
+recalled_dead_%       36.0
+random_dead_%         20.0
+
+wrote data/simulated/easy/easy_002_boundary_events.csv and data/simulated/easy/easy_002_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                                                7
+free kick (set piece); play restarts                                           3
+possession -> away                                                             2
+possession -> home; possession -> away; throw in (set piece); play restarts    1
+goal kick (set piece); play restarts                                           1
+possession -> away; possession -> home                                         1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_003.csv
+boundaries            15.0
+explained_strong_%    67.0
+random_strong_%       30.0
+explained_any_%       67.0
+random_any_%          58.0
+strong_events         36.0
+recalled_strong_%     53.0
+random_recalled_%     19.0
+dead_ball_changes     36.0
+recalled_dead_%       53.0
+random_dead_%         19.0
+
+wrote data/simulated/easy/easy_003_boundary_events.csv and data/simulated/easy/easy_003_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             5
+free kick (set piece); play restarts                        3
+throw in (set piece); play restarts                         1
+free kick (set piece)                                       1
+goal kick (set piece); play restarts                        1
+possession -> away; free kick (set piece); play restarts    1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_004.csv
+boundaries            18.0
+explained_strong_%    50.0
+random_strong_%       26.0
+explained_any_%       72.0
+random_any_%          48.0
+strong_events         29.0
+recalled_strong_%     52.0
+random_recalled_%     23.0
+dead_ball_changes     28.0
+recalled_dead_%       50.0
+random_dead_%         23.0
+
+wrote data/simulated/easy/easy_004_boundary_events.csv and data/simulated/easy/easy_004_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                            5
+free kick (set piece); play restarts                       3
+possession -> home                                         2
+possession -> home; throw in (set piece); play restarts    1
+throw in (set piece)                                       1
+corner (set piece); play restarts                          1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_005.csv
+boundaries            25.0
+explained_strong_%    36.0
+random_strong_%       19.0
+explained_any_%       68.0
+random_any_%          52.0
+strong_events         25.0
+recalled_strong_%     72.0
+random_recalled_%     28.0
+dead_ball_changes     24.0
+recalled_dead_%       75.0
+random_dead_%         28.0
+
+wrote data/simulated/easy/easy_005_boundary_events.csv and data/simulated/easy/easy_005_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           8
+possession -> away                        4
+free kick (set piece); play restarts      3
+possession -> home                        2
+goal kick (set piece); play restarts      2
+possession -> home; possession -> away    2
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_006.csv
+boundaries            18.0
+explained_strong_%    39.0
+random_strong_%       19.0
+explained_any_%       56.0
+random_any_%          50.0
+strong_events         22.0
+recalled_strong_%     59.0
+random_recalled_%     22.0
+dead_ball_changes     20.0
+recalled_dead_%       60.0
+random_dead_%         22.0
+
+wrote data/simulated/easy/easy_006_boundary_events.csv and data/simulated/easy/easy_006_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             8
+goal kick (set piece); play restarts                        3
+possession -> home; free kick (set piece); play restarts    2
+possession -> away                                          1
+possession -> home; throw in (set piece); play restarts     1
+possession -> home; possession -> away                      1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_007.csv
+boundaries            18.0
+explained_strong_%    56.0
+random_strong_%       28.0
+explained_any_%       78.0
+random_any_%          57.0
+strong_events         35.0
+recalled_strong_%     46.0
+random_recalled_%     22.0
+dead_ball_changes     32.0
+recalled_dead_%       41.0
+random_dead_%         22.0
+
+wrote data/simulated/easy/easy_007_boundary_events.csv and data/simulated/easy/easy_007_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                         4
+free kick (set piece); play restarts    4
+possession -> away                      2
+goal kick (set piece); play restarts    2
+possession -> home                      2
+goal                                    1
+
+>> scripts/describe_sequences.py --csv data/simulated/easy/easy_008.csv
+boundaries            11.0
+explained_strong_%    36.0
+random_strong_%       23.0
+explained_any_%       55.0
+random_any_%          48.0
+strong_events         29.0
+recalled_strong_%     24.0
+random_recalled_%     13.0
+dead_ball_changes     28.0
+recalled_dead_%       21.0
+random_dead_%         13.0
+
+wrote data/simulated/easy/easy_008_boundary_events.csv and data/simulated/easy/easy_008_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                 5
+goal kick (set piece); play restarts            2
+possession -> away                              1
+throw in (set piece); play restarts             1
+possession -> home; possession -> away; goal    1
+possession -> home; possession -> away          1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_001.csv
+boundaries            22.0
+explained_strong_%    68.0
+random_strong_%       34.0
+explained_any_%       77.0
+random_any_%          59.0
+strong_events         43.0
+recalled_strong_%     67.0
+random_recalled_%     25.0
+dead_ball_changes     42.0
+recalled_dead_%       67.0
+random_dead_%         25.0
+
+wrote data/simulated/hard/hard_001_boundary_events.csv and data/simulated/hard/hard_001_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+free kick (set piece); play restarts    6
+no event nearby                         5
+goal kick (set piece); play restarts    5
+corner (set piece); play restarts       2
+possession -> away                      1
+goal                                    1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_002.csv
+boundaries            22.0
+explained_strong_%    55.0
+random_strong_%       29.0
+explained_any_%       77.0
+random_any_%          50.0
+strong_events         36.0
+recalled_strong_%     56.0
+random_recalled_%     25.0
+dead_ball_changes     34.0
+recalled_dead_%       53.0
+random_dead_%         25.0
+
+wrote data/simulated/hard/hard_002_boundary_events.csv and data/simulated/hard/hard_002_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             5
+possession -> away                                          3
+free kick (set piece); play restarts                        2
+possession -> home                                          2
+play restarts; goal                                         1
+possession -> home; free kick (set piece); play restarts    1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_003.csv
+boundaries            22.0
+explained_strong_%    45.0
+random_strong_%       26.0
+explained_any_%       59.0
+random_any_%          47.0
+strong_events         29.0
+recalled_strong_%     55.0
+random_recalled_%     26.0
+dead_ball_changes     25.0
+recalled_dead_%       52.0
+random_dead_%         25.0
+
+wrote data/simulated/hard/hard_003_boundary_events.csv and data/simulated/hard/hard_003_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                         9
+free kick (set piece); play restarts    2
+possession -> home; goal                2
+goal kick (set piece); play restarts    2
+corner (set piece); play restarts       2
+possession -> away                      1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_004.csv
+boundaries            21.0
+explained_strong_%    48.0
+random_strong_%       27.0
+explained_any_%       52.0
+random_any_%          48.0
+strong_events         32.0
+recalled_strong_%     50.0
+random_recalled_%     24.0
+dead_ball_changes     29.0
+recalled_dead_%       45.0
+random_dead_%         24.0
+
+wrote data/simulated/hard/hard_004_boundary_events.csv and data/simulated/hard/hard_004_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           10
+free kick (set piece); play restarts       4
+possession -> away; goal                   2
+goal                                       1
+possession -> home; possession -> away     1
+corner (set piece); play restarts          1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_005.csv
+boundaries            24.0
+explained_strong_%    50.0
+random_strong_%       25.0
+explained_any_%       71.0
+random_any_%          51.0
+strong_events         28.0
+recalled_strong_%     68.0
+random_recalled_%     28.0
+dead_ball_changes     24.0
+recalled_dead_%       62.0
+random_dead_%         28.0
+
+wrote data/simulated/hard/hard_005_boundary_events.csv and data/simulated/hard/hard_005_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           7
+possession -> home; goal                  4
+free kick (set piece); play restarts      3
+goal kick (set piece); play restarts      3
+possession -> away                        3
+possession -> home; possession -> away    1
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_006.csv
+boundaries            25.0
+explained_strong_%    60.0
+random_strong_%       34.0
+explained_any_%       76.0
+random_any_%          58.0
+strong_events         37.0
+recalled_strong_%     59.0
+random_recalled_%     29.0
+dead_ball_changes     32.0
+recalled_dead_%       53.0
+random_dead_%         29.0
+
+wrote data/simulated/hard/hard_006_boundary_events.csv and data/simulated/hard/hard_006_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                         6
+goal kick (set piece); play restarts    3
+free kick (set piece); play restarts    3
+goal                                    3
+possession -> home                      2
+free kick (set piece)                   2
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_007.csv
+boundaries            24.0
+explained_strong_%    54.0
+random_strong_%       23.0
+explained_any_%       79.0
+random_any_%          45.0
+strong_events         26.0
+recalled_strong_%     81.0
+random_recalled_%     28.0
+dead_ball_changes     22.0
+recalled_dead_%       77.0
+random_dead_%         28.0
+
+wrote data/simulated/hard/hard_007_boundary_events.csv and data/simulated/hard/hard_007_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             5
+possession -> home                                          4
+free kick (set piece); play restarts                        3
+possession -> home; possession -> away; goal                2
+goal kick (set piece); play restarts                        2
+possession -> home; free kick (set piece); play restarts    2
+
+>> scripts/describe_sequences.py --csv data/simulated/hard/hard_008.csv
+boundaries            17.0
+explained_strong_%    41.0
+random_strong_%       24.0
+explained_any_%       65.0
+random_any_%          59.0
+strong_events         30.0
+recalled_strong_%     37.0
+random_recalled_%     20.0
+dead_ball_changes     26.0
+recalled_dead_%       27.0
+random_dead_%         20.0
+
+wrote data/simulated/hard/hard_008_boundary_events.csv and data/simulated/hard/hard_008_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                               6
+possession -> home                            3
+free kick (set piece); play restarts          2
+possession -> home; goal                      1
+possession -> home; throw in (set piece)      1
+free kick (set piece); play restarts; goal    1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_001.csv
+boundaries            22.0
+explained_strong_%    50.0
+random_strong_%       28.0
+explained_any_%       68.0
+random_any_%          51.0
+strong_events         31.0
+recalled_strong_%     61.0
+random_recalled_%     26.0
+dead_ball_changes     28.0
+recalled_dead_%       57.0
+random_dead_%         26.0
+
+wrote data/simulated/competition/competition_001_boundary_events.csv and data/simulated/competition/competition_001_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                         7
+goal kick (set piece); play restarts    4
+free kick (set piece); play restarts    3
+goal                                    2
+possession -> away                      2
+possession -> home                      1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_002.csv
+boundaries            14.0
+explained_strong_%    36.0
+random_strong_%       19.0
+explained_any_%       71.0
+random_any_%          52.0
+strong_events         23.0
+recalled_strong_%     35.0
+random_recalled_%     17.0
+dead_ball_changes     22.0
+recalled_dead_%       32.0
+random_dead_%         17.0
+
+wrote data/simulated/competition/competition_002_boundary_events.csv and data/simulated/competition/competition_002_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             4
+possession -> away                                          3
+free kick (set piece); play restarts                        2
+possession -> home                                          2
+possession -> home; goal kick (set piece); play restarts    1
+throw in (set piece)                                        1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_003.csv
+boundaries            31.0
+explained_strong_%    52.0
+random_strong_%       30.0
+explained_any_%       68.0
+random_any_%          51.0
+strong_events         38.0
+recalled_strong_%     76.0
+random_recalled_%     34.0
+dead_ball_changes     36.0
+recalled_dead_%       75.0
+random_dead_%         34.0
+
+wrote data/simulated/competition/competition_003_boundary_events.csv and data/simulated/competition/competition_003_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             10
+free kick (set piece); play restarts                         4
+possession -> away                                           3
+possession -> home; free kick (set piece); play restarts     3
+corner (set piece); play restarts                            2
+goal kick (set piece); play restarts                         2
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_004.csv
+boundaries            19.0
+explained_strong_%    58.0
+random_strong_%       26.0
+explained_any_%       84.0
+random_any_%          49.0
+strong_events         30.0
+recalled_strong_%     57.0
+random_recalled_%     23.0
+dead_ball_changes     28.0
+recalled_dead_%       54.0
+random_dead_%         23.0
+
+wrote data/simulated/competition/competition_004_boundary_events.csv and data/simulated/competition/competition_004_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                           3
+free kick (set piece); play restarts      3
+possession -> away                        2
+goal                                      2
+possession -> home; possession -> away    2
+free kick (set piece)                     1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_005.csv
+boundaries            23.0
+explained_strong_%    43.0
+random_strong_%       24.0
+explained_any_%       74.0
+random_any_%          56.0
+strong_events         27.0
+recalled_strong_%     63.0
+random_recalled_%     26.0
+dead_ball_changes     20.0
+recalled_dead_%       55.0
+random_dead_%         26.0
+
+wrote data/simulated/competition/competition_005_boundary_events.csv and data/simulated/competition/competition_005_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                                                 6
+possession -> home; possession -> away                                          4
+free kick (set piece); play restarts                                            2
+goal                                                                            2
+possession -> away                                                              2
+possession -> home; possession -> away; free kick (set piece); play restarts    1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_006.csv
+boundaries            22.0
+explained_strong_%    59.0
+random_strong_%       25.0
+explained_any_%       68.0
+random_any_%          49.0
+strong_events         28.0
+recalled_strong_%     75.0
+random_recalled_%     25.0
+dead_ball_changes     24.0
+recalled_dead_%       71.0
+random_dead_%         25.0
+
+wrote data/simulated/competition/competition_006_boundary_events.csv and data/simulated/competition/competition_006_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                 7
+goal kick (set piece); play restarts            4
+free kick (set piece); play restarts            3
+goal                                            2
+free kick (set piece)                           1
+possession -> home; possession -> away; goal    1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_007.csv
+boundaries            18.0
+explained_strong_%    61.0
+random_strong_%       25.0
+explained_any_%       61.0
+random_any_%          46.0
+strong_events         32.0
+recalled_strong_%     56.0
+random_recalled_%     22.0
+dead_ball_changes     30.0
+recalled_dead_%       53.0
+random_dead_%         22.0
+
+wrote data/simulated/competition/competition_007_boundary_events.csv and data/simulated/competition/competition_007_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                             7
+free kick (set piece); play restarts                        3
+goal                                                        2
+possession -> home; play restarts; free kick (set piece)    1
+throw in (set piece); play restarts                         1
+goal kick (set piece)                                       1
+
+>> scripts/describe_sequences.py --csv data/simulated/competition/competition_008.csv
+boundaries            19.0
+explained_strong_%    63.0
+random_strong_%       24.0
+explained_any_%       68.0
+random_any_%          50.0
+strong_events         26.0
+recalled_strong_%     73.0
+random_recalled_%     23.0
+dead_ball_changes     22.0
+recalled_dead_%       68.0
+random_dead_%         23.0
+
+wrote data/simulated/competition/competition_008_boundary_events.csv and data/simulated/competition/competition_008_sequence_desc.csv
+
+Most common descriptions at boundaries:
+football_description
+no event nearby                                            6
+free kick (set piece); play restarts                       5
+goal                                                       2
+possession -> home; possession -> away; goal               1
+possession -> home                                         1
+possession -> away; throw in (set piece); play restarts    1
+
+>> scripts/cluster_sequences.py
+.venv-analysis\Scripts\python : C:\Users\Srinivasan\grf-prototype\scripts\cluster_sequences.py:227: UserWarning: Tight 
+layout not applied. The bottom and top margins cannot be made large enough to accommodate all Axes decorations.
+At line:3 char:1
++ .venv-analysis\Scripts\python scripts\run_pipeline.py *>&1 | Tee-Obje ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\Sriniv...es decorations.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  plt.tight_layout()
+real matches: J03WMX (262 sequences), J03WN1 (264 sequences), J03WPY (294 sequences), J03WOH (276 sequences), J03WQQ (323 sequences), J03WOY (303 sequences), J03WR9 (275 sequences) 
+
+How many types? silhouette = how clearly they separate; stability = how well they repeat across matches
+(adjusted Rand index, mean over the real matches; 1 = identical grouping, about 0 = chance)
+ k  silhouette  own_clustering  leave_one_out
+ 2       0.286            0.91           0.99
+ 3       0.158            0.66           0.97
+ 4       0.163            0.58           0.92
+ 5       0.164            0.58           0.71
+ 6       0.167            0.59           0.86
+ 7       0.158            0.59           0.75
+ 8       0.159            0.57           0.77
+-> using k = 2  (the most types that still repeat across matches, unless --k is given)
+
+STABILITY of the k = 2 types, per match (adjusted Rand index)
+ match  own_clustering  leave_one_out
+J03WMX            0.97           0.98
+J03WN1            0.81           0.98
+J03WPY            0.96           1.00
+J03WOH            0.93           1.00
+J03WQQ            0.87           0.99
+J03WOY            0.93           0.99
+J03WR9            0.93           1.00 
+
+Share of each match's sequences in each type (%), and what the type looks like (real, pooled):
+ type  J03WMX_%  J03WN1_%  J03WPY_%  J03WOH_%  J03WQQ_%  J03WOY_%  J03WR9_%  match_001_%  match_002_%  match_003_%  match_004_%  match_005_%  match_006_%  match_007_%  match_008_%  match_009_%  match_010_%  match_011_%  match_012_%  easy_001_%  easy_002_%  easy_003_%  easy_004_%  easy_005_%  easy_006_%  easy_007_%  easy_008_%  hard_001_%  hard_002_%  hard_003_%  hard_004_%  hard_005_%  hard_006_%  hard_007_%  hard_008_%  competition_001_%  competition_002_%  competition_003_%  competition_004_%  competition_005_%  competition_006_%  competition_007_%  competition_008_%  dur_s  ball_m/s  player_m/s  width_m  ball_dead_%  advance_m
+    1      70.2      62.9      71.4      71.0      68.1      68.3      67.3         95.2        100.0        100.0        100.0        100.0        100.0        100.0        100.0        100.0        100.0        100.0        100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0       100.0              100.0              100.0              100.0              100.0              100.0              100.0              100.0              100.0   12.0       7.7         2.6       40            0         14
+    2      29.8      37.1      28.6      29.0      31.9      31.7      32.7          4.8          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0         0.0                0.0                0.0                0.0                0.0                0.0                0.0                0.0                0.0   24.0       0.6         1.4       37           92          3
+
+What starts and ends each type (real, football description):
+  type 1: starts after no event nearby (543), play restarts (426)  |  ends with no event nearby (699), tackle (210)
+  type 2: starts after no event nearby (321), ball out (96)  |  ends with play restarts (408), no event nearby (165)
+match_001: 19% of sequences are further from their type than 90% of real ones
+match_002: 30% of sequences are further from their type than 90% of real ones
+match_003: 20% of sequences are further from their type than 90% of real ones
+match_004: 24% of sequences are further from their type than 90% of real ones
+match_005: 30% of sequences are further from their type than 90% of real ones
+match_006: 38% of sequences are further from their type than 90% of real ones
+match_007: 14% of sequences are further from their type than 90% of real ones
+match_008: 20% of sequences are further from their type than 90% of real ones
+match_009: 22% of sequences are further from their type than 90% of real ones
+match_010: 13% of sequences are further from their type than 90% of real ones
+match_011: 27% of sequences are further from their type than 90% of real ones
+match_012: 32% of sequences are further from their type than 90% of real ones
+easy_001: 27% of sequences are further from their type than 90% of real ones
+easy_002: 28% of sequences are further from their type than 90% of real ones
+easy_003: 25% of sequences are further from their type than 90% of real ones
+easy_004: 26% of sequences are further from their type than 90% of real ones
+easy_005: 23% of sequences are further from their type than 90% of real ones
+easy_006: 16% of sequences are further from their type than 90% of real ones
+easy_007: 42% of sequences are further from their type than 90% of real ones
+easy_008: 0% of sequences are further from their type than 90% of real ones
+hard_001: 30% of sequences are further from their type than 90% of real ones
+hard_002: 35% of sequences are further from their type than 90% of real ones
+hard_003: 30% of sequences are further from their type than 90% of real ones
+hard_004: 32% of sequences are further from their type than 90% of real ones
+hard_005: 20% of sequences are further from their type than 90% of real ones
+hard_006: 38% of sequences are further from their type than 90% of real ones
+hard_007: 32% of sequences are further from their type than 90% of real ones
+hard_008: 17% of sequences are further from their type than 90% of real ones
+competition_001: 30% of sequences are further from their type than 90% of real ones
+competition_002: 20% of sequences are further from their type than 90% of real ones
+competition_003: 41% of sequences are further from their type than 90% of real ones
+competition_004: 40% of sequences are further from their type than 90% of real ones
+competition_005: 29% of sequences are further from their type than 90% of real ones
+competition_006: 30% of sequences are further from their type than 90% of real ones
+competition_007: 47% of sequences are further from their type than 90% of real ones
+competition_008: 30% of sequences are further from their type than 90% of real ones
+
+saved outputs/sequence_types_8matches.png and *_sequence_types.csv
+
+>> scripts/build_graphs.py
+wrote data/real/processed/J03WMX_graphs.npz  (3550 graphs, mode=radius)
+wrote data/real/processed/J03WN1_graphs.npz  (3016 graphs, mode=radius)
+wrote data/real/processed/J03WPY_graphs.npz  (3538 graphs, mode=radius)
+wrote data/real/processed/J03WOH_graphs.npz  (3284 graphs, mode=radius)
+wrote data/real/processed/J03WQQ_graphs.npz  (3581 graphs, mode=radius)
+wrote data/real/processed/J03WOY_graphs.npz  (3441 graphs, mode=radius)
+wrote data/real/processed/J03WR9_graphs.npz  (3442 graphs, mode=radius)
+wrote data/simulated/match_001_graphs.npz  (368 graphs, mode=radius)
+wrote data/simulated/match_002_graphs.npz  (357 graphs, mode=radius)
+wrote data/simulated/match_003_graphs.npz  (369 graphs, mode=radius)
+wrote data/simulated/match_004_graphs.npz  (342 graphs, mode=radius)
+wrote data/simulated/match_005_graphs.npz  (348 graphs, mode=radius)
+wrote data/simulated/match_006_graphs.npz  (361 graphs, mode=radius)
+wrote data/simulated/match_007_graphs.npz  (347 graphs, mode=radius)
+wrote data/simulated/match_008_graphs.npz  (366 graphs, mode=radius)
+wrote data/simulated/match_009_graphs.npz  (364 graphs, mode=radius)
+wrote data/simulated/match_010_graphs.npz  (358 graphs, mode=radius)
+wrote data/simulated/match_011_graphs.npz  (357 graphs, mode=radius)
+wrote data/simulated/match_012_graphs.npz  (366 graphs, mode=radius)
+wrote data/simulated/easy/easy_001_graphs.npz  (339 graphs, mode=radius)
+wrote data/simulated/easy/easy_002_graphs.npz  (373 graphs, mode=radius)
+wrote data/simulated/easy/easy_003_graphs.npz  (346 graphs, mode=radius)
+wrote data/simulated/easy/easy_004_graphs.npz  (342 graphs, mode=radius)
+wrote data/simulated/easy/easy_005_graphs.npz  (356 graphs, mode=radius)
+wrote data/simulated/easy/easy_006_graphs.npz  (364 graphs, mode=radius)
+wrote data/simulated/easy/easy_007_graphs.npz  (367 graphs, mode=radius)
+wrote data/simulated/easy/easy_008_graphs.npz  (367 graphs, mode=radius)
+wrote data/simulated/hard/hard_001_graphs.npz  (367 graphs, mode=radius)
+wrote data/simulated/hard/hard_002_graphs.npz  (334 graphs, mode=radius)
+wrote data/simulated/hard/hard_003_graphs.npz  (376 graphs, mode=radius)
+wrote data/simulated/hard/hard_004_graphs.npz  (355 graphs, mode=radius)
+wrote data/simulated/hard/hard_005_graphs.npz  (357 graphs, mode=radius)
+wrote data/simulated/hard/hard_006_graphs.npz  (377 graphs, mode=radius)
+wrote data/simulated/hard/hard_007_graphs.npz  (358 graphs, mode=radius)
+wrote data/simulated/hard/hard_008_graphs.npz  (365 graphs, mode=radius)
+wrote data/simulated/competition/competition_001_graphs.npz  (359 graphs, mode=radius)
+wrote data/simulated/competition/competition_002_graphs.npz  (369 graphs, mode=radius)
+wrote data/simulated/competition/competition_003_graphs.npz  (359 graphs, mode=radius)
+wrote data/simulated/competition/competition_004_graphs.npz  (358 graphs, mode=radius)
+wrote data/simulated/competition/competition_005_graphs.npz  (359 graphs, mode=radius)
+wrote data/simulated/competition/competition_006_graphs.npz  (352 graphs, mode=radius)
+wrote data/simulated/competition/competition_007_graphs.npz  (339 graphs, mode=radius)
+wrote data/simulated/competition/competition_008_graphs.npz  (357 graphs, mode=radius)
+
+          match  graphs  opp_edges  team_compact_m  nearest_opp_m  edge_churn  move_per_KS_m  speed_m/s
+         J03WMX    3550       11.5            18.0            8.2        0.28            2.8        2.3
+         J03WN1    3016       13.5            16.1            7.3        0.27            2.9        2.2
+         J03WPY    3538       12.9            17.2            7.6        0.26            2.9        2.4
+         J03WOH    3284       12.1            17.8            8.1        0.27            2.9        2.4
+         J03WQQ    3581       11.9            17.5            8.0        0.27            2.9        2.4
+         J03WOY    3441       12.5            17.3            7.8        0.26            2.9        2.3
+         J03WR9    3442       11.6            18.0            8.0        0.27            2.8        2.2
+      match_001     368       11.9            17.3            8.5        0.34            3.4        6.2
+      match_002     357       11.4            17.3            8.9        0.36            3.6        6.6
+      match_003     369       13.2            16.6            8.9        0.37            3.9        8.1
+      match_004     342       12.4            17.3            8.6        0.34            3.5        5.2
+      match_005     348       11.3            17.3            9.2        0.36            3.6        6.8
+      match_006     361       11.5            17.2            9.3        0.38            4.1        9.7
+      match_007     347       12.0            17.4            9.1        0.37            3.8        7.0
+      match_008     366       12.5            16.9            8.8        0.36            3.4        7.1
+      match_009     364       12.3            17.2            8.9        0.37            4.0        7.9
+      match_010     358       11.8            17.5            8.7        0.34            3.3        6.2
+      match_011     357       12.9            17.0            8.8        0.37            3.8        7.6
+      match_012     366       12.7            16.8            8.9        0.36            3.9        7.2
+       easy_001     339       11.6            17.4            8.8        0.35            3.4        6.0
+       easy_002     373       11.9            17.4            8.7        0.35            3.5        5.5
+       easy_003     346       11.8            17.4            8.9        0.37            3.7        7.4
+       easy_004     342       11.9            17.4            8.8        0.36            3.7        6.1
+       easy_005     356       11.7            17.9            8.9        0.35            3.5        7.0
+       easy_006     364       13.0            16.8            8.6        0.33            3.6        6.5
+       easy_007     367       12.4            17.0            8.9        0.34            3.6        6.8
+       easy_008     367       11.8            17.2            8.9        0.35            3.5        5.9
+       hard_001     367       11.7            17.7            9.2        0.35            3.8        6.6
+       hard_002     334       12.1            17.2            9.2        0.37            4.0        9.3
+       hard_003     376       13.3            16.5            8.7        0.35            4.0        7.9
+       hard_004     355       12.4            16.9            9.0        0.37            3.9        7.0
+       hard_005     357       12.6            16.8            9.1        0.36            3.9        9.2
+       hard_006     377       11.0            17.2            9.3        0.36            4.1        9.6
+       hard_007     358       12.8            17.0            8.8        0.36            3.8        8.6
+       hard_008     365       12.5            17.0            8.9        0.35            3.8        7.2
+competition_001     359       12.6            16.9            9.0        0.35            4.0        8.1
+competition_002     369       12.4            17.2            8.5        0.32            3.4        5.5
+competition_003     359       12.5            17.5            9.1        0.38            4.0        8.9
+competition_004     358       12.0            17.3            8.9        0.36            3.7        7.3
+competition_005     359       12.6            16.7            9.1        0.39            3.9        8.1
+competition_006     352       12.4            16.8            9.1        0.37            3.9        6.6
+competition_007     339       12.3            17.4            9.2        0.36            3.9        8.4
+competition_008     357       12.3            17.1            8.9        0.37            3.8        6.3
+
+done. steps that ran: download, convert, keystates, sequences, describe, types, graphs
