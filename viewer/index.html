@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Match Replay Viewer</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="view"></div>
+
+<header id="top">
+  <select id="file" title="Match or stretch (viewer/data/index.json)"></select>
+  <button id="togglePanel" title="Show / hide the side panel (H)">Panel</button>
+  <div id="board">
+    <span id="home" class="team home">Home</span>
+    <span id="score">0 - 0</span>
+    <span id="away" class="team away">Away</span>
+    <span id="clock">00:00</span>
+    <span id="live" class="pill">in play</span>
+  </div>
+</header>
+
+<aside id="panel">
+  <h2>Show</h2>
+  <label><input type="checkbox" id="optNumbers" checked> Shirt numbers</label>
+  <label><input type="checkbox" id="optNames"> Player names</label>
+  <label><input type="checkbox" id="optTrail" checked> Ball trail (3 s)</label>
+  <h2>Layers <span class="hint">(ghosts, same stretch)</span></h2>
+  <div id="layers"><p class="hint">This file has no layers.</p></div>
+  <h2>Keys</h2>
+  <p class="hint">Space play/pause &middot; &larr; &rarr; 1 s &middot; Shift+&larr; &rarr; 10 s &middot; , . one frame &middot; 1-5 cameras &middot; H panel &middot; drag/scroll in Free camera</p>
+</aside>
+
+<footer id="bar">
+  <button id="play" title="Play / pause (Space)">&#9654;</button>
+  <input id="seek" type="range" min="0" max="1" step="0.1" value="0">
+  <span id="tlabel">0:00 / 0:00</span>
+  <select id="speed" title="Playback speed">
+    <option value="0.25">0.25x</option><option value="0.5">0.5x</option><option value="1" selected>1x</option>
+    <option value="2">2x</option><option value="4">4x</option><option value="8">8x</option>
+  </select>
+  <div id="cams">
+    <button data-cam="broadcast" class="on">1 Broadcast</button>
+    <button data-cam="top">2 Top</button>
+    <button data-cam="behind">3 Behind goal</button>
+    <button data-cam="follow">4 Follow ball</button>
+    <button data-cam="free">5 Free</button>
+  </div>
+</footer>
+
+<div id="msg">Loading&hellip;</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

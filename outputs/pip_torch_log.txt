@@ -1,0 +1,63 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cpu
+Collecting torch==2.14.1
+  Obtaining dependency information for torch==2.14.1 from https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp310-cp310-win_amd64.whl.metadata
+  Using cached https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp310-cp310-win_amd64.whl.metadata (38 kB)
+Collecting jinja2
+  Obtaining dependency information for jinja2 from https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata
+  Using cached https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Discarding https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (from https://download.pytorch.org/whl/cpu/jinja2/): Requested jinja2 from https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (from torch==2.14.1) has inconsistent Name: expected 'jinja2', but metadata has 'Jinja2'
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     -------------------------------------- 134.9/134.9 kB 1.3 MB/s eta 0:00:00
+Collecting fsspec>=0.8.5
+  Obtaining dependency information for fsspec>=0.8.5 from https://files.pythonhosted.org/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl.metadata
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting networkx>=2.5.1
+  Obtaining dependency information for networkx>=2.5.1 from https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl.metadata
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting setuptools>=77.0.3
+  Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+     -------------------------------------- 876.3/876.3 kB 2.1 MB/s eta 0:00:00
+Collecting typing-extensions>=4.10.0
+  Obtaining dependency information for typing-extensions>=4.10.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Discarding https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl#sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8 (from https://download.pytorch.org/whl/cpu/typing-extensions/) (requires-python:>=3.9): Requested typing-extensions>=4.10.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl#sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8 (from torch==2.14.1) has inconsistent Name: expected 'typing-extensions', but metadata has 'typing_extensions'
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+     -------------------------------------- 45.6/45.6 kB 751.7 kB/s eta 0:00:00
+Collecting sympy>=1.13.3
+  Obtaining dependency information for sympy>=1.13.3 from https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl.metadata
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting filelock
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/ee/86/032133892a5de43b5a98200b01aadcad68cc255e274a762f08b8a76d2912/filelock-4.1.0-py3-none-any.whl.metadata
+  Downloading filelock-4.1.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting mpmath<1.4,>=1.1.0
+  Obtaining dependency information for mpmath<1.4,>=1.1.0 from https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl.metadata
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0
+  Downloading markupsafe-3.0.4-cp310-cp310-win_amd64.whl (14 kB)
+Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp310-cp310-win_amd64.whl (124.0 MB)
+   ---------------------------------------- 124.0/124.0 MB 1.6 MB/s eta 0:00:00
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+   -------------------------------------- 221.7/221.7 kB 903.8 kB/s eta 0:00:00
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ---------------------------------------- 1.7/1.7 MB 2.2 MB/s eta 0:00:00
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+   ---------------------------------------- 6.3/6.3 MB 2.1 MB/s eta 0:00:00
+Downloading filelock-4.1.0-py3-none-any.whl (133 kB)
+   ---------------------------------------- 133.0/133.0 kB 2.6 MB/s eta 0:00:00
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ---------------------------------------- 536.2/536.2 kB 2.4 MB/s eta 0:00:00
+Using cached https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp310-cp310-win_amd64.whl (124.0 MB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached filelock-4.1.0-py3-none-any.whl (133 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 65.5.0
+    Uninstalling setuptools-65.5.0:
+      Successfully uninstalled setuptools-65.5.0
+Successfully installed MarkupSafe-3.0.4 filelock-4.1.0 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.4.2 setuptools-84.2.1 sympy-1.14.0 torch-2.14.1+cpu typing-extensions-4.16.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.2
+[notice] To update, run: C:\Users\Srinivasan\grf-prototype\.venv\Scripts\python.exe -m pip install --upgrade pip

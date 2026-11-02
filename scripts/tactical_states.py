@@ -29,7 +29,7 @@ CSV = {m: settings.csv(m) for m in REALS + SIMS}
 
 
 def load(m):
-    g = np.load(PATH[m] + "_graphs.npz")
+    g = np.load(settings.graphs(m))
     emb = np.load(PATH[m] + "_embeddings.npz")["emb"]
     ok = ~np.isnan(emb).any(axis=1)                                         # the first Key States have no full window
     mode = pd.read_csv(CSV[m], usecols=["frame", "game_mode"]).drop_duplicates("frame").set_index("frame").loc[g["frame"], "game_mode"].to_numpy()

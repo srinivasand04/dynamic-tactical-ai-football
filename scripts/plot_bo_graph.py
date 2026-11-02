@@ -39,7 +39,7 @@ def pitch(ax):
 
 
 def load(match):
-    g = np.load(settings.base(match) + "_graphs.npz")
+    g = np.load(settings.graphs(match))
     c = pd.read_csv(settings.csv(match), usecols=["frame", "ball_owner_team", "game_mode"]).drop_duplicates("frame").set_index("frame").loc[g["frame"]]
     return g, c["ball_owner_team"].to_numpy(), (c["game_mode"] == "normal").to_numpy()
 

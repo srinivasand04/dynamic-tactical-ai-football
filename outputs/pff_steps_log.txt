@@ -1,0 +1,532 @@
+== conversion finished
+converted 63, failed 1; registry data/pff/matches.csv
+== redo 10504
+1 matches to convert, 0 already done
+{'match_id': '10504', 'home': 'France', 'away': 'Poland', 'score': '3-1', 'date': '2022-12-04', 'week': 4, 'raw_fps': 29.97, 'frames_10fps': 38367, 'minutes': 63.9, 'span_minutes': np.float64(101.2)}
+
+converted 1, failed 0; registry data/pff/matches.csv
+== step 2: key states + graphs
+pff: 64 matches with a common-format file
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10502.csv.gz
+38374 frames, 32 player ids, 97.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2874  7.49        0.1           1.2        2.4      178.0
+wrote data/pff/processed/10502_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10503.csv.gz
+39576 frames, 32 player ids, 99.4 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3067  7.75        0.1           1.2        2.3       83.8
+wrote data/pff/processed/10503_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10504.csv.gz
+38367 frames, 31 player ids, 100.6 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2756  7.18        0.1           1.2        2.6      135.6
+wrote data/pff/processed/10504_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10505.csv.gz
+36387 frames, 32 player ids, 97.6 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2777  7.63        0.1           1.2        2.4       94.3
+wrote data/pff/processed/10505_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10506.csv.gz
+47860 frames, 33 player ids, 128.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3598  7.52        0.1           1.2       2.44       96.9
+wrote data/pff/processed/10506_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10507.csv.gz
+37669 frames, 32 player ids, 98.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2945  7.82        0.1           1.2        2.2      127.0
+wrote data/pff/processed/10507_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10508.csv.gz
+48740 frames, 34 player ids, 129.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3685  7.56        0.1           1.2        2.3      107.0
+wrote data/pff/processed/10508_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10509.csv.gz
+34674 frames, 32 player ids, 97.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2707  7.81        0.1           1.1        2.3       93.5
+wrote data/pff/processed/10509_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10510.csv.gz
+38499 frames, 27 player ids, 94.7 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2810   7.3        0.1           1.2        2.5       84.9
+wrote data/pff/processed/10510_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10511.csv.gz
+36303 frames, 30 player ids, 108.7 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2760   7.6        0.2           1.2        2.4      118.2
+wrote data/pff/processed/10511_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10512.csv.gz
+35396 frames, 32 player ids, 100.6 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2623  7.41        0.2           1.2        2.7      124.2
+wrote data/pff/processed/10512_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10513.csv.gz
+35525 frames, 26 player ids, 105.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2596  7.31        0.1           1.2        2.6      216.7
+wrote data/pff/processed/10513_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10514.csv.gz
+35753 frames, 32 player ids, 99.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2835  7.93        0.1           1.2        2.3      133.3
+wrote data/pff/processed/10514_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10515.csv.gz
+37146 frames, 29 player ids, 98.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2710   7.3        0.1           1.2        2.4      121.1
+wrote data/pff/processed/10515_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10516.csv.gz
+36094 frames, 31 player ids, 98.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2713  7.52        0.2           1.2        2.4      105.5
+wrote data/pff/processed/10516_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/10517.csv.gz
+44338 frames, 35 player ids, 141.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3409  7.69        0.1           1.2        2.4      144.2
+wrote data/pff/processed/10517_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3812.csv.gz
+34592 frames, 30 player ids, 102.7 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2659  7.69        0.1           1.1        2.4      185.9
+wrote data/pff/processed/3812_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3813.csv.gz
+35807 frames, 33 player ids, 116.5 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2742  7.66        0.1           1.2        2.4      504.4
+wrote data/pff/processed/3813_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3814.csv.gz
+32615 frames, 28 player ids, 100.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2473  7.58        0.1           1.2        2.3      166.7
+wrote data/pff/processed/3814_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3815.csv.gz
+37844 frames, 31 player ids, 104.5 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2958  7.82        0.1           1.1        2.3      114.8
+wrote data/pff/processed/3815_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3816.csv.gz
+33521 frames, 31 player ids, 110.2 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2452  7.31        0.1           1.2        2.6      254.4
+wrote data/pff/processed/3816_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3817.csv.gz
+36743 frames, 31 player ids, 102.2 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2724  7.41        0.1           1.2        2.6      126.9
+wrote data/pff/processed/3817_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3818.csv.gz
+35106 frames, 28 player ids, 99.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2634   7.5        0.1           1.2        2.5      234.8
+wrote data/pff/processed/3818_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3819.csv.gz
+40923 frames, 32 player ids, 103.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3074  7.51        0.1           1.2        2.3      170.4
+wrote data/pff/processed/3819_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3820.csv.gz
+36830 frames, 30 player ids, 97.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2742  7.45        0.1           1.2        2.4      163.7
+wrote data/pff/processed/3820_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3821.csv.gz
+36908 frames, 32 player ids, 104.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2836  7.68        0.1           1.2       2.36      110.4
+wrote data/pff/processed/3821_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3822.csv.gz
+41827 frames, 32 player ids, 103.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3127  7.48        0.2           1.2        2.3       77.6
+wrote data/pff/processed/3822_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3823.csv.gz
+37144 frames, 31 player ids, 100.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2991  8.05        0.1           1.1        2.2      149.6
+wrote data/pff/processed/3823_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3824.csv.gz
+38994 frames, 31 player ids, 98.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2923   7.5        0.2           1.2        2.4       85.5
+wrote data/pff/processed/3824_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3825.csv.gz
+35789 frames, 29 player ids, 98.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2639  7.37        0.3           1.2        2.5      113.9
+wrote data/pff/processed/3825_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3826.csv.gz
+36221 frames, 32 player ids, 102.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2757  7.61        0.1           1.2        2.3      142.8
+wrote data/pff/processed/3826_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3827.csv.gz
+36307 frames, 32 player ids, 98.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2883  7.94        0.1           1.1        2.2      144.6
+wrote data/pff/processed/3827_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3828.csv.gz
+34953 frames, 31 player ids, 106.5 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2696  7.71        0.1           1.1        2.4      171.6
+wrote data/pff/processed/3828_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3829.csv.gz
+36724 frames, 31 player ids, 102.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2917  7.94        0.1           1.1        2.4      145.7
+wrote data/pff/processed/3829_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3830.csv.gz
+35189 frames, 29 player ids, 100.2 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2570   7.3        0.1           1.2        2.5      194.9
+wrote data/pff/processed/3830_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3831.csv.gz
+38052 frames, 29 player ids, 95.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2831  7.44        0.1           1.2        2.5      126.1
+wrote data/pff/processed/3831_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3832.csv.gz
+34014 frames, 31 player ids, 101.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2686   7.9        0.1           1.1        2.3       95.2
+wrote data/pff/processed/3832_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3833.csv.gz
+32473 frames, 29 player ids, 107.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2489  7.66        0.1           1.1        2.4      177.9
+wrote data/pff/processed/3833_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3834.csv.gz
+38127 frames, 30 player ids, 99.7 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2907  7.62        0.1           1.2        2.4      106.3
+wrote data/pff/processed/3834_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3835.csv.gz
+33189 frames, 31 player ids, 101.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2508  7.56        0.1           1.2        2.4      126.1
+wrote data/pff/processed/3835_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3836.csv.gz
+38240 frames, 31 player ids, 97.3 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2717  7.11        0.1           1.3        2.5      102.2
+wrote data/pff/processed/3836_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3837.csv.gz
+36033 frames, 32 player ids, 99.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2744  7.62        0.1           1.2        2.3      155.0
+wrote data/pff/processed/3837_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3838.csv.gz
+37241 frames, 32 player ids, 101.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2898  7.78        0.2           1.1        2.4      106.5
+wrote data/pff/processed/3838_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3839.csv.gz
+35422 frames, 31 player ids, 98.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2813  7.94        0.1           1.1        2.2      123.9
+wrote data/pff/processed/3839_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3840.csv.gz
+32777 frames, 32 player ids, 103.6 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2559  7.81        0.1           1.1        2.3      111.2
+wrote data/pff/processed/3840_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3841.csv.gz
+34851 frames, 31 player ids, 105.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2623  7.53        0.1           1.2        2.4      142.1
+wrote data/pff/processed/3841_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3842.csv.gz
+37905 frames, 32 player ids, 96.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2882   7.6        0.1           1.2        2.4      127.6
+wrote data/pff/processed/3842_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3843.csv.gz
+35071 frames, 32 player ids, 103.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2683  7.65        0.1           1.1        2.4      237.5
+wrote data/pff/processed/3843_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3844.csv.gz
+29529 frames, 29 player ids, 102.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2316  7.84        0.1           1.1        2.4      169.5
+wrote data/pff/processed/3844_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3845.csv.gz
+40050 frames, 32 player ids, 99.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2880  7.19        0.1           1.3        2.5      107.1
+wrote data/pff/processed/3845_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3846.csv.gz
+32721 frames, 32 player ids, 99.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2586   7.9        0.1           1.1        2.3      178.0
+wrote data/pff/processed/3846_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3847.csv.gz
+38409 frames, 32 player ids, 107.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3009  7.83        0.1           1.1        2.3      185.0
+wrote data/pff/processed/3847_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3848.csv.gz
+36937 frames, 31 player ids, 98.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2970  8.04        0.1           1.1        2.3       87.9
+wrote data/pff/processed/3848_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3849.csv.gz
+35515 frames, 30 player ids, 104.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2685  7.56        0.1           1.2        2.4      255.4
+wrote data/pff/processed/3849_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3850.csv.gz
+41419 frames, 32 player ids, 99.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2957  7.14        0.2           1.3        2.4      187.4
+wrote data/pff/processed/3850_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3851.csv.gz
+30583 frames, 31 player ids, 103.5 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2521  8.24        0.1           1.1        2.3      126.7
+wrote data/pff/processed/3851_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3852.csv.gz
+42531 frames, 30 player ids, 97.9 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        3209  7.55        0.2           1.2        2.4      208.9
+wrote data/pff/processed/3852_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3853.csv.gz
+34142 frames, 32 player ids, 99.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2672  7.83        0.1           1.1        2.4      127.5
+wrote data/pff/processed/3853_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3854.csv.gz
+41477 frames, 32 player ids, 98.2 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2997  7.23        0.1           1.2        2.4      195.9
+wrote data/pff/processed/3854_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3855.csv.gz
+38980 frames, 32 player ids, 101.0 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2997  7.69        0.1           1.2        2.3      192.0
+wrote data/pff/processed/3855_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3856.csv.gz
+33536 frames, 32 player ids, 107.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2527  7.54        0.1           1.2        2.5      308.7
+wrote data/pff/processed/3856_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3857.csv.gz
+36550 frames, 31 player ids, 99.1 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2766  7.57        0.1           1.1        2.5      134.6
+wrote data/pff/processed/3857_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3858.csv.gz
+34630 frames, 31 player ids, 102.8 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2705  7.81        0.1           1.1        2.4      148.4
+wrote data/pff/processed/3858_adaptive_ks.csv
+
+>> scripts/extract_keystates.py --csv data/pff/processed/3859.csv.gz
+34314 frames, 30 player ids, 103.5 min
+ theta  key_states  CR_%  gap_min_s  gap_median_s  gap_p90_s  gap_max_s
+   3.0        2625  7.65        0.1           1.2        2.5      110.5
+wrote data/pff/processed/3859_adaptive_ks.csv
+
+>> scripts/build_graphs.py --csv data/pff/processed/10502.csv.gz data/pff/processed/10503.csv.gz data/pff/processed/10504.csv.gz data/pff/processed/10505.csv.gz data/pff/processed/10506.csv.gz data/pff/processed/10507.csv.gz data/pff/processed/10508.csv.gz data/pff/processed/10509.csv.gz data/pff/processed/10510.csv.gz data/pff/processed/10511.csv.gz data/pff/processed/10512.csv.gz data/pff/processed/10513.csv.gz data/pff/processed/10514.csv.gz data/pff/processed/10515.csv.gz data/pff/processed/10516.csv.gz data/pff/processed/10517.csv.gz data/pff/processed/3812.csv.gz data/pff/processed/3813.csv.gz data/pff/processed/3814.csv.gz data/pff/processed/3815.csv.gz data/pff/processed/3816.csv.gz data/pff/processed/3817.csv.gz data/pff/processed/3818.csv.gz data/pff/processed/3819.csv.gz data/pff/processed/3820.csv.gz data/pff/processed/3821.csv.gz data/pff/processed/3822.csv.gz data/pff/processed/3823.csv.gz data/pff/processed/3824.csv.gz data/pff/processed/3825.csv.gz data/pff/processed/3826.csv.gz data/pff/processed/3827.csv.gz data/pff/processed/3828.csv.gz data/pff/processed/3829.csv.gz data/pff/processed/3830.csv.gz data/pff/processed/3831.csv.gz data/pff/processed/3832.csv.gz data/pff/processed/3833.csv.gz data/pff/processed/3834.csv.gz data/pff/processed/3835.csv.gz data/pff/processed/3836.csv.gz data/pff/processed/3837.csv.gz data/pff/processed/3838.csv.gz data/pff/processed/3839.csv.gz data/pff/processed/3840.csv.gz data/pff/processed/3841.csv.gz data/pff/processed/3842.csv.gz data/pff/processed/3843.csv.gz data/pff/processed/3844.csv.gz data/pff/processed/3845.csv.gz data/pff/processed/3846.csv.gz data/pff/processed/3847.csv.gz data/pff/processed/3848.csv.gz data/pff/processed/3849.csv.gz data/pff/processed/3850.csv.gz data/pff/processed/3851.csv.gz data/pff/processed/3852.csv.gz data/pff/processed/3853.csv.gz data/pff/processed/3854.csv.gz data/pff/processed/3855.csv.gz data/pff/processed/3856.csv.gz data/pff/processed/3857.csv.gz data/pff/processed/3858.csv.gz data/pff/processed/3859.csv.gz
+wrote data/pff/processed/10502_graphs_delaunay.npz  (2874 graphs, mode=delaunay)
+wrote data/pff/processed/10503_graphs_delaunay.npz  (3067 graphs, mode=delaunay)
+wrote data/pff/processed/10504_graphs_delaunay.npz  (2756 graphs, mode=delaunay)
+wrote data/pff/processed/10505_graphs_delaunay.npz  (2777 graphs, mode=delaunay)
+wrote data/pff/processed/10506_graphs_delaunay.npz  (3598 graphs, mode=delaunay)
+wrote data/pff/processed/10507_graphs_delaunay.npz  (2945 graphs, mode=delaunay)
+wrote data/pff/processed/10508_graphs_delaunay.npz  (3685 graphs, mode=delaunay)
+wrote data/pff/processed/10509_graphs_delaunay.npz  (2707 graphs, mode=delaunay)
+wrote data/pff/processed/10510_graphs_delaunay.npz  (2810 graphs, mode=delaunay)
+wrote data/pff/processed/10511_graphs_delaunay.npz  (2760 graphs, mode=delaunay)
+wrote data/pff/processed/10512_graphs_delaunay.npz  (2623 graphs, mode=delaunay)
+wrote data/pff/processed/10513_graphs_delaunay.npz  (2596 graphs, mode=delaunay)
+wrote data/pff/processed/10514_graphs_delaunay.npz  (2835 graphs, mode=delaunay)
+wrote data/pff/processed/10515_graphs_delaunay.npz  (2710 graphs, mode=delaunay)
+wrote data/pff/processed/10516_graphs_delaunay.npz  (2713 graphs, mode=delaunay)
+wrote data/pff/processed/10517_graphs_delaunay.npz  (3409 graphs, mode=delaunay)
+wrote data/pff/processed/3812_graphs_delaunay.npz  (2659 graphs, mode=delaunay)
+wrote data/pff/processed/3813_graphs_delaunay.npz  (2742 graphs, mode=delaunay)
+wrote data/pff/processed/3814_graphs_delaunay.npz  (2473 graphs, mode=delaunay)
+wrote data/pff/processed/3815_graphs_delaunay.npz  (2958 graphs, mode=delaunay)
+wrote data/pff/processed/3816_graphs_delaunay.npz  (2452 graphs, mode=delaunay)
+wrote data/pff/processed/3817_graphs_delaunay.npz  (2724 graphs, mode=delaunay)
+wrote data/pff/processed/3818_graphs_delaunay.npz  (2634 graphs, mode=delaunay)
+wrote data/pff/processed/3819_graphs_delaunay.npz  (3074 graphs, mode=delaunay)
+wrote data/pff/processed/3820_graphs_delaunay.npz  (2742 graphs, mode=delaunay)
+wrote data/pff/processed/3821_graphs_delaunay.npz  (2836 graphs, mode=delaunay)
+wrote data/pff/processed/3822_graphs_delaunay.npz  (3127 graphs, mode=delaunay)
+wrote data/pff/processed/3823_graphs_delaunay.npz  (2991 graphs, mode=delaunay)
+wrote data/pff/processed/3824_graphs_delaunay.npz  (2923 graphs, mode=delaunay)
+wrote data/pff/processed/3825_graphs_delaunay.npz  (2639 graphs, mode=delaunay)
+wrote data/pff/processed/3826_graphs_delaunay.npz  (2757 graphs, mode=delaunay)
+wrote data/pff/processed/3827_graphs_delaunay.npz  (2883 graphs, mode=delaunay)
+wrote data/pff/processed/3828_graphs_delaunay.npz  (2696 graphs, mode=delaunay)
+wrote data/pff/processed/3829_graphs_delaunay.npz  (2917 graphs, mode=delaunay)
+wrote data/pff/processed/3830_graphs_delaunay.npz  (2570 graphs, mode=delaunay)
+wrote data/pff/processed/3831_graphs_delaunay.npz  (2831 graphs, mode=delaunay)
+wrote data/pff/processed/3832_graphs_delaunay.npz  (2686 graphs, mode=delaunay)
+wrote data/pff/processed/3833_graphs_delaunay.npz  (2489 graphs, mode=delaunay)
+wrote data/pff/processed/3834_graphs_delaunay.npz  (2907 graphs, mode=delaunay)
+wrote data/pff/processed/3835_graphs_delaunay.npz  (2508 graphs, mode=delaunay)
+wrote data/pff/processed/3836_graphs_delaunay.npz  (2717 graphs, mode=delaunay)
+wrote data/pff/processed/3837_graphs_delaunay.npz  (2744 graphs, mode=delaunay)
+wrote data/pff/processed/3838_graphs_delaunay.npz  (2898 graphs, mode=delaunay)
+wrote data/pff/processed/3839_graphs_delaunay.npz  (2813 graphs, mode=delaunay)
+wrote data/pff/processed/3840_graphs_delaunay.npz  (2559 graphs, mode=delaunay)
+wrote data/pff/processed/3841_graphs_delaunay.npz  (2623 graphs, mode=delaunay)
+wrote data/pff/processed/3842_graphs_delaunay.npz  (2882 graphs, mode=delaunay)
+wrote data/pff/processed/3843_graphs_delaunay.npz  (2683 graphs, mode=delaunay)
+wrote data/pff/processed/3844_graphs_delaunay.npz  (2316 graphs, mode=delaunay)
+wrote data/pff/processed/3845_graphs_delaunay.npz  (2880 graphs, mode=delaunay)
+wrote data/pff/processed/3846_graphs_delaunay.npz  (2586 graphs, mode=delaunay)
+wrote data/pff/processed/3847_graphs_delaunay.npz  (3009 graphs, mode=delaunay)
+wrote data/pff/processed/3848_graphs_delaunay.npz  (2970 graphs, mode=delaunay)
+wrote data/pff/processed/3849_graphs_delaunay.npz  (2685 graphs, mode=delaunay)
+wrote data/pff/processed/3850_graphs_delaunay.npz  (2957 graphs, mode=delaunay)
+wrote data/pff/processed/3851_graphs_delaunay.npz  (2521 graphs, mode=delaunay)
+wrote data/pff/processed/3852_graphs_delaunay.npz  (3209 graphs, mode=delaunay)
+wrote data/pff/processed/3853_graphs_delaunay.npz  (2672 graphs, mode=delaunay)
+wrote data/pff/processed/3854_graphs_delaunay.npz  (2997 graphs, mode=delaunay)
+wrote data/pff/processed/3855_graphs_delaunay.npz  (2997 graphs, mode=delaunay)
+wrote data/pff/processed/3856_graphs_delaunay.npz  (2527 graphs, mode=delaunay)
+wrote data/pff/processed/3857_graphs_delaunay.npz  (2766 graphs, mode=delaunay)
+wrote data/pff/processed/3858_graphs_delaunay.npz  (2705 graphs, mode=delaunay)
+wrote data/pff/processed/3859_graphs_delaunay.npz  (2625 graphs, mode=delaunay)
+
+match  graphs  opp_edges  team_compact_m  nearest_opp_m  edge_churn  move_per_KS_m  speed_m/s
+10502    2874       27.3            16.0            8.6        0.22            2.9        2.1
+10503    3067       28.8            18.0            8.6        0.18            2.9        2.2
+10504    2756       27.6            17.0            8.7        0.19            2.8        1.9
+10505    2777       28.8            17.9            8.1        0.17            3.0        2.1
+10506    3598       28.0            16.8            8.4        0.20            3.1        2.4
+10507    2945       28.8            18.0            8.4        0.17            2.9        2.2
+10508    3685       28.5            17.4            8.6        0.17            3.0        2.2
+10509    2707       29.3            17.6            8.2        0.19            3.0        2.2
+10510    2810       28.0            17.7            8.6        0.19            2.9        2.1
+10511    2760       28.1            17.8            8.1        0.19            3.0        2.1
+10512    2623       27.3            15.8            8.8        0.24            3.0        2.0
+10513    2596       27.9            17.3            8.0        0.19            3.0        2.1
+10514    2835       27.4            16.7            8.7        0.21            2.9        2.1
+10515    2710       28.4            17.5            8.5        0.18            3.0        2.1
+10516    2713       28.3            17.1            8.6        0.21            2.9        2.0
+10517    3409       27.8            16.7            8.4        0.22            3.2        2.2
+ 3812    2659       28.8            17.4            8.0        0.20            3.1        2.2
+ 3813    2742       28.5            16.7            8.3        0.20            2.9        2.1
+ 3814    2473       29.3            18.1            8.6        0.16            3.0        2.1
+ 3815    2958       29.0            17.5            8.1        0.17            3.0        2.3
+ 3816    2452       28.0            16.5            8.1        0.20            3.0        2.0
+ 3817    2724       27.6            16.6            8.5        0.19            2.9        2.2
+ 3818    2634       28.0            17.1            8.1        0.18            3.1        2.2
+ 3819    3074       28.4            17.5            8.4        0.17            2.9        2.1
+ 3820    2742       28.6            17.3            8.5        0.19            2.8        2.0
+ 3821    2836       29.6            17.2            8.0        0.17            3.0        2.1
+ 3822    3127       28.6            17.5            8.4        0.16            2.8        2.0
+ 3823    2991       29.6            18.2            7.8        0.17            3.0        2.3
+ 3824    2923       29.1            17.6            7.9        0.18            2.9        2.2
+ 3825    2639       28.3            16.9            8.5        0.19            2.9        2.0
+ 3826    2757       28.0            16.3            8.4        0.21            2.9        2.1
+ 3827    2883       28.7            17.8            8.3        0.18            3.0        2.3
+ 3828    2696       29.0            17.6            8.1        0.18            3.0        2.2
+ 3829    2917       28.5            16.9            8.7        0.20            2.8        2.1
+ 3830    2570       28.6            17.2            7.9        0.20            2.9        2.0
+ 3831    2831       28.7            17.2            7.9        0.18            2.9        2.3
+ 3832    2686       28.8            16.5            8.0        0.19            3.1        2.2
+ 3833    2489       28.6            16.8            8.1        0.19            3.2        2.2
+ 3834    2907       28.2            17.5            8.6        0.18            2.9        2.2
+ 3835    2508       27.5            16.5            8.5        0.21            3.0        2.1
+ 3836    2717       28.0            16.7            8.5        0.20            2.8        1.9
+ 3837    2744       28.7            17.3            8.4        0.19            2.8        2.0
+ 3838    2898       29.2            17.4            8.0        0.19            3.0        2.3
+ 3839    2813       29.3            17.8            8.1        0.17            3.0        2.4
+ 3840    2559       28.9            17.2            8.0        0.19            3.1        2.3
+ 3841    2623       28.3            16.1            8.1        0.20            3.0        2.1
+ 3842    2882       29.0            17.5            8.1        0.18            3.0        2.3
+ 3843    2683       28.3            17.1            8.3        0.20            3.0        2.1
+ 3844    2316       29.5            17.2            7.8        0.18            3.3        2.2
+ 3845    2880       25.8            15.6            9.5        0.25            2.7        1.9
+ 3846    2586       29.4            17.6            8.4        0.19            2.8        2.0
+ 3847    3009       28.7            17.0            8.2        0.19            3.0        2.3
+ 3848    2970       29.0            17.3            8.0        0.18            3.1        2.3
+ 3849    2685       27.3            17.0            8.5        0.19            3.0        2.1
+ 3850    2957       27.3            16.8            8.6        0.17            2.8        2.0
+ 3851    2521       29.9            17.4            7.7        0.19            3.3        2.3
+ 3852    3209       27.3            16.4            8.8        0.21            2.8        2.2
+ 3853    2672       28.8            17.4            8.4        0.19            2.9        2.2
+ 3854    2997       28.2            17.0            8.2        0.15            2.8        2.0
+ 3855    2997       29.0            16.4            7.8        0.18            2.9        2.1
+ 3856    2527       29.3            16.8            7.9        0.20            3.2        2.2
+ 3857    2766       28.5            17.1            8.3        0.19            3.0        2.2
+ 3858    2705       29.5            17.8            7.8        0.17            3.1        2.3
+ 3859    2625       29.0            17.0            8.3        0.21            3.1        2.2
+
+done: 64 matches got Key States, graphs built for 64
+== step 3: quality
+  dfl J03WMX done
+  dfl J03WN1 done
+  dfl J03WPY done
+  dfl J03WOH done

@@ -1,0 +1,273 @@
+fold,model,test_team,test_match,error_m,still_m,keepvel_m,nodes
+0,pooled,Auckland FC,2017461,0.9192,2.907,1.1035,31240
+0,Auckland FC,Auckland FC,2017461,0.901,2.907,1.1035,31240
+0,control:Auckland FC,Auckland FC,2017461,0.8956,2.907,1.1035,31240
+0,CC Mariners,Auckland FC,2017461,0.9005,2.907,1.1035,31240
+0,control:CC Mariners,Auckland FC,2017461,0.8983,2.907,1.1035,31240
+0,Melbourne V FC,Auckland FC,2017461,0.9124,2.907,1.1035,31240
+0,control:Melbourne V FC,Auckland FC,2017461,0.9042,2.907,1.1035,31240
+0,Western United,Auckland FC,2017461,0.903,2.907,1.1035,31240
+0,control:Western United,Auckland FC,2017461,0.907,2.907,1.1035,31240
+0,Brisbane FC,Auckland FC,2017461,0.9061,2.907,1.1035,31240
+0,control:Brisbane FC,Auckland FC,2017461,0.9101,2.907,1.1035,31240
+0,Adelaide United,Auckland FC,2017461,0.9049,2.907,1.1035,31240
+0,control:Adelaide United,Auckland FC,2017461,0.9083,2.907,1.1035,31240
+0,Wellington P FC,Auckland FC,2017461,0.9084,2.907,1.1035,31240
+0,control:Wellington P FC,Auckland FC,2017461,0.9144,2.907,1.1035,31240
+0,Melbourne City,Auckland FC,2017461,0.9036,2.907,1.1035,31240
+0,control:Melbourne City,Auckland FC,2017461,0.9097,2.907,1.1035,31240
+0,pooled,CC Mariners,2010085,0.8494,2.745,1.0509,34122
+0,Auckland FC,CC Mariners,2010085,0.8348,2.745,1.0509,34122
+0,control:Auckland FC,CC Mariners,2010085,0.8283,2.745,1.0509,34122
+0,CC Mariners,CC Mariners,2010085,0.8324,2.745,1.0509,34122
+0,control:CC Mariners,CC Mariners,2010085,0.8282,2.745,1.0509,34122
+0,Melbourne V FC,CC Mariners,2010085,0.8436,2.745,1.0509,34122
+0,control:Melbourne V FC,CC Mariners,2010085,0.8369,2.745,1.0509,34122
+0,Western United,CC Mariners,2010085,0.8343,2.745,1.0509,34122
+0,control:Western United,CC Mariners,2010085,0.8384,2.745,1.0509,34122
+0,Brisbane FC,CC Mariners,2010085,0.8378,2.745,1.0509,34122
+0,control:Brisbane FC,CC Mariners,2010085,0.84,2.745,1.0509,34122
+0,Adelaide United,CC Mariners,2010085,0.8344,2.745,1.0509,34122
+0,control:Adelaide United,CC Mariners,2010085,0.8399,2.745,1.0509,34122
+0,Wellington P FC,CC Mariners,2010085,0.8399,2.745,1.0509,34122
+0,control:Wellington P FC,CC Mariners,2010085,0.8518,2.745,1.0509,34122
+0,Melbourne City,CC Mariners,2010085,0.8342,2.745,1.0509,34122
+0,control:Melbourne City,CC Mariners,2010085,0.8427,2.745,1.0509,34122
+0,pooled,Melbourne V FC,2011166,0.8912,2.781,1.1072,29755
+0,Auckland FC,Melbourne V FC,2011166,0.8801,2.781,1.1072,29755
+0,control:Auckland FC,Melbourne V FC,2011166,0.8621,2.781,1.1072,29755
+0,CC Mariners,Melbourne V FC,2011166,0.872,2.781,1.1072,29755
+0,control:CC Mariners,Melbourne V FC,2011166,0.8698,2.781,1.1072,29755
+0,Melbourne V FC,Melbourne V FC,2011166,0.8811,2.781,1.1072,29755
+0,control:Melbourne V FC,Melbourne V FC,2011166,0.8799,2.781,1.1072,29755
+0,Western United,Melbourne V FC,2011166,0.8761,2.781,1.1072,29755
+0,control:Western United,Melbourne V FC,2011166,0.8798,2.781,1.1072,29755
+0,Brisbane FC,Melbourne V FC,2011166,0.8728,2.781,1.1072,29755
+0,control:Brisbane FC,Melbourne V FC,2011166,0.8781,2.781,1.1072,29755
+0,Adelaide United,Melbourne V FC,2011166,0.87,2.781,1.1072,29755
+0,control:Adelaide United,Melbourne V FC,2011166,0.872,2.781,1.1072,29755
+0,Wellington P FC,Melbourne V FC,2011166,0.8728,2.781,1.1072,29755
+0,control:Wellington P FC,Melbourne V FC,2011166,0.8832,2.781,1.1072,29755
+0,Melbourne City,Melbourne V FC,2011166,0.872,2.781,1.1072,29755
+0,control:Melbourne City,Melbourne V FC,2011166,0.8813,2.781,1.1072,29755
+0,pooled,Western United,2016236,0.892,2.7976,1.0938,34529
+0,Auckland FC,Western United,2016236,0.8689,2.7976,1.0938,34529
+0,control:Auckland FC,Western United,2016236,0.8603,2.7976,1.0938,34529
+0,CC Mariners,Western United,2016236,0.871,2.7976,1.0938,34529
+0,control:CC Mariners,Western United,2016236,0.8656,2.7976,1.0938,34529
+0,Melbourne V FC,Western United,2016236,0.8787,2.7976,1.0938,34529
+0,control:Melbourne V FC,Western United,2016236,0.8682,2.7976,1.0938,34529
+0,Western United,Western United,2016236,0.8707,2.7976,1.0938,34529
+0,control:Western United,Western United,2016236,0.8833,2.7976,1.0938,34529
+0,Brisbane FC,Western United,2016236,0.8739,2.7976,1.0938,34529
+0,control:Brisbane FC,Western United,2016236,0.8732,2.7976,1.0938,34529
+0,Adelaide United,Western United,2016236,0.8879,2.7976,1.0938,34529
+0,control:Adelaide United,Western United,2016236,0.8717,2.7976,1.0938,34529
+0,Wellington P FC,Western United,2016236,0.876,2.7976,1.0938,34529
+0,control:Wellington P FC,Western United,2016236,0.8721,2.7976,1.0938,34529
+0,Melbourne City,Western United,2016236,0.877,2.7976,1.0938,34529
+0,control:Melbourne City,Western United,2016236,0.871,2.7976,1.0938,34529
+0,pooled,Brisbane FC,2007448,0.8689,2.8682,1.0427,32868
+0,Auckland FC,Brisbane FC,2007448,0.8546,2.8682,1.0427,32868
+0,control:Auckland FC,Brisbane FC,2007448,0.848,2.8682,1.0427,32868
+0,CC Mariners,Brisbane FC,2007448,0.8555,2.8682,1.0427,32868
+0,control:CC Mariners,Brisbane FC,2007448,0.8523,2.8682,1.0427,32868
+0,Melbourne V FC,Brisbane FC,2007448,0.8667,2.8682,1.0427,32868
+0,control:Melbourne V FC,Brisbane FC,2007448,0.8609,2.8682,1.0427,32868
+0,Western United,Brisbane FC,2007448,0.8606,2.8682,1.0427,32868
+0,control:Western United,Brisbane FC,2007448,0.8619,2.8682,1.0427,32868
+0,Brisbane FC,Brisbane FC,2007448,0.8565,2.8682,1.0427,32868
+0,control:Brisbane FC,Brisbane FC,2007448,0.8611,2.8682,1.0427,32868
+0,Adelaide United,Brisbane FC,2007448,0.8541,2.8682,1.0427,32868
+0,control:Adelaide United,Brisbane FC,2007448,0.8585,2.8682,1.0427,32868
+0,Wellington P FC,Brisbane FC,2007448,0.8611,2.8682,1.0427,32868
+0,control:Wellington P FC,Brisbane FC,2007448,0.8705,2.8682,1.0427,32868
+0,Melbourne City,Brisbane FC,2007448,0.8559,2.8682,1.0427,32868
+0,control:Melbourne City,Brisbane FC,2007448,0.8632,2.8682,1.0427,32868
+0,pooled,Adelaide United,1996435,0.8704,2.7941,1.0562,33825
+0,Auckland FC,Adelaide United,1996435,0.8596,2.7941,1.0562,33825
+0,control:Auckland FC,Adelaide United,1996435,0.8493,2.7941,1.0562,33825
+0,CC Mariners,Adelaide United,1996435,0.8533,2.7941,1.0562,33825
+0,control:CC Mariners,Adelaide United,1996435,0.8528,2.7941,1.0562,33825
+0,Melbourne V FC,Adelaide United,1996435,0.863,2.7941,1.0562,33825
+0,control:Melbourne V FC,Adelaide United,1996435,0.8603,2.7941,1.0562,33825
+0,Western United,Adelaide United,1996435,0.8561,2.7941,1.0562,33825
+0,control:Western United,Adelaide United,1996435,0.8601,2.7941,1.0562,33825
+0,Brisbane FC,Adelaide United,1996435,0.8577,2.7941,1.0562,33825
+0,control:Brisbane FC,Adelaide United,1996435,0.8617,2.7941,1.0562,33825
+0,Adelaide United,Adelaide United,1996435,0.8534,2.7941,1.0562,33825
+0,control:Adelaide United,Adelaide United,1996435,0.8602,2.7941,1.0562,33825
+0,Wellington P FC,Adelaide United,1996435,0.8598,2.7941,1.0562,33825
+0,control:Wellington P FC,Adelaide United,1996435,0.8681,2.7941,1.0562,33825
+0,Melbourne City,Adelaide United,1996435,0.856,2.7941,1.0562,33825
+0,control:Melbourne City,Adelaide United,1996435,0.8616,2.7941,1.0562,33825
+0,pooled,Wellington P FC,1927964,0.863,2.6635,1.0307,34254
+0,Auckland FC,Wellington P FC,1927964,0.8467,2.6635,1.0307,34254
+0,control:Auckland FC,Wellington P FC,1927964,0.8422,2.6635,1.0307,34254
+0,CC Mariners,Wellington P FC,1927964,0.8463,2.6635,1.0307,34254
+0,control:CC Mariners,Wellington P FC,1927964,0.8436,2.6635,1.0307,34254
+0,Melbourne V FC,Wellington P FC,1927964,0.8566,2.6635,1.0307,34254
+0,control:Melbourne V FC,Wellington P FC,1927964,0.8505,2.6635,1.0307,34254
+0,Western United,Wellington P FC,1927964,0.8479,2.6635,1.0307,34254
+0,control:Western United,Wellington P FC,1927964,0.8508,2.6635,1.0307,34254
+0,Brisbane FC,Wellington P FC,1927964,0.8493,2.6635,1.0307,34254
+0,control:Brisbane FC,Wellington P FC,1927964,0.8515,2.6635,1.0307,34254
+0,Adelaide United,Wellington P FC,1927964,0.8471,2.6635,1.0307,34254
+0,control:Adelaide United,Wellington P FC,1927964,0.8527,2.6635,1.0307,34254
+0,Wellington P FC,Wellington P FC,1927964,0.8502,2.6635,1.0307,34254
+0,control:Wellington P FC,Wellington P FC,1927964,0.8613,2.6635,1.0307,34254
+0,Melbourne City,Wellington P FC,1927964,0.8457,2.6635,1.0307,34254
+0,control:Melbourne City,Wellington P FC,1927964,0.8551,2.6635,1.0307,34254
+0,pooled,Melbourne City,2006229,0.8862,2.7731,1.0688,34595
+0,Auckland FC,Melbourne City,2006229,0.866,2.7731,1.0688,34595
+0,control:Auckland FC,Melbourne City,2006229,0.8607,2.7731,1.0688,34595
+0,CC Mariners,Melbourne City,2006229,0.8736,2.7731,1.0688,34595
+0,control:CC Mariners,Melbourne City,2006229,0.8648,2.7731,1.0688,34595
+0,Melbourne V FC,Melbourne City,2006229,0.8767,2.7731,1.0688,34595
+0,control:Melbourne V FC,Melbourne City,2006229,0.8665,2.7731,1.0688,34595
+0,Western United,Melbourne City,2006229,0.8681,2.7731,1.0688,34595
+0,control:Western United,Melbourne City,2006229,0.8791,2.7731,1.0688,34595
+0,Brisbane FC,Melbourne City,2006229,0.8711,2.7731,1.0688,34595
+0,control:Brisbane FC,Melbourne City,2006229,0.8742,2.7731,1.0688,34595
+0,Adelaide United,Melbourne City,2006229,0.879,2.7731,1.0688,34595
+0,control:Adelaide United,Melbourne City,2006229,0.8713,2.7731,1.0688,34595
+0,Wellington P FC,Melbourne City,2006229,0.8757,2.7731,1.0688,34595
+0,control:Wellington P FC,Melbourne City,2006229,0.8692,2.7731,1.0688,34595
+0,Melbourne City,Melbourne City,2006229,0.8746,2.7731,1.0688,34595
+0,control:Melbourne City,Melbourne City,2006229,0.8686,2.7731,1.0688,34595
+1,pooled,Auckland FC,2015213,0.8973,2.8943,1.0806,36135
+1,Auckland FC,Auckland FC,2015213,0.8742,2.8943,1.0806,36135
+1,control:Auckland FC,Auckland FC,2015213,0.8799,2.8943,1.0806,36135
+1,CC Mariners,Auckland FC,2015213,0.877,2.8943,1.0806,36135
+1,control:CC Mariners,Auckland FC,2015213,0.8728,2.8943,1.0806,36135
+1,Melbourne V FC,Auckland FC,2015213,0.8852,2.8943,1.0806,36135
+1,control:Melbourne V FC,Auckland FC,2015213,0.8797,2.8943,1.0806,36135
+1,Western United,Auckland FC,2015213,0.8755,2.8943,1.0806,36135
+1,control:Western United,Auckland FC,2015213,0.8816,2.8943,1.0806,36135
+1,Brisbane FC,Auckland FC,2015213,0.8795,2.8943,1.0806,36135
+1,control:Brisbane FC,Auckland FC,2015213,0.8799,2.8943,1.0806,36135
+1,Adelaide United,Auckland FC,2015213,0.8777,2.8943,1.0806,36135
+1,control:Adelaide United,Auckland FC,2015213,0.8753,2.8943,1.0806,36135
+1,Wellington P FC,Auckland FC,2015213,0.8923,2.8943,1.0806,36135
+1,control:Wellington P FC,Auckland FC,2015213,0.8867,2.8943,1.0806,36135
+1,Melbourne City,Auckland FC,2015213,0.8762,2.8943,1.0806,36135
+1,control:Melbourne City,Auckland FC,2015213,0.876,2.8943,1.0806,36135
+1,pooled,CC Mariners,2007721,0.8445,2.6866,1.0082,35244
+1,Auckland FC,CC Mariners,2007721,0.819,2.6866,1.0082,35244
+1,control:Auckland FC,CC Mariners,2007721,0.8256,2.6866,1.0082,35244
+1,CC Mariners,CC Mariners,2007721,0.8222,2.6866,1.0082,35244
+1,control:CC Mariners,CC Mariners,2007721,0.8172,2.6866,1.0082,35244
+1,Melbourne V FC,CC Mariners,2007721,0.8292,2.6866,1.0082,35244
+1,control:Melbourne V FC,CC Mariners,2007721,0.8233,2.6866,1.0082,35244
+1,Western United,CC Mariners,2007721,0.8192,2.6866,1.0082,35244
+1,control:Western United,CC Mariners,2007721,0.8285,2.6866,1.0082,35244
+1,Brisbane FC,CC Mariners,2007721,0.8234,2.6866,1.0082,35244
+1,control:Brisbane FC,CC Mariners,2007721,0.8212,2.6866,1.0082,35244
+1,Adelaide United,CC Mariners,2007721,0.8231,2.6866,1.0082,35244
+1,control:Adelaide United,CC Mariners,2007721,0.8196,2.6866,1.0082,35244
+1,Wellington P FC,CC Mariners,2007721,0.8379,2.6866,1.0082,35244
+1,control:Wellington P FC,CC Mariners,2007721,0.8292,2.6866,1.0082,35244
+1,Melbourne City,CC Mariners,2007721,0.8203,2.6866,1.0082,35244
+1,control:Melbourne City,CC Mariners,2007721,0.8231,2.6866,1.0082,35244
+1,pooled,Melbourne V FC,2011166,0.884,2.781,1.1072,29755
+1,Auckland FC,Melbourne V FC,2011166,0.8677,2.781,1.1072,29755
+1,control:Auckland FC,Melbourne V FC,2011166,0.8714,2.781,1.1072,29755
+1,CC Mariners,Melbourne V FC,2011166,0.866,2.781,1.1072,29755
+1,control:CC Mariners,Melbourne V FC,2011166,0.8646,2.781,1.1072,29755
+1,Melbourne V FC,Melbourne V FC,2011166,0.8773,2.781,1.1072,29755
+1,control:Melbourne V FC,Melbourne V FC,2011166,0.8706,2.781,1.1072,29755
+1,Western United,Melbourne V FC,2011166,0.865,2.781,1.1072,29755
+1,control:Western United,Melbourne V FC,2011166,0.8732,2.781,1.1072,29755
+1,Brisbane FC,Melbourne V FC,2011166,0.8704,2.781,1.1072,29755
+1,control:Brisbane FC,Melbourne V FC,2011166,0.8722,2.781,1.1072,29755
+1,Adelaide United,Melbourne V FC,2011166,0.8645,2.781,1.1072,29755
+1,control:Adelaide United,Melbourne V FC,2011166,0.8658,2.781,1.1072,29755
+1,Wellington P FC,Melbourne V FC,2011166,0.8767,2.781,1.1072,29755
+1,control:Wellington P FC,Melbourne V FC,2011166,0.8796,2.781,1.1072,29755
+1,Melbourne City,Melbourne V FC,2011166,0.8696,2.781,1.1072,29755
+1,control:Melbourne City,Melbourne V FC,2011166,0.8659,2.781,1.1072,29755
+1,pooled,Western United,2013725,0.8974,2.8379,1.083,33946
+1,Auckland FC,Western United,2013725,0.8809,2.8379,1.083,33946
+1,control:Auckland FC,Western United,2013725,0.8778,2.8379,1.083,33946
+1,CC Mariners,Western United,2013725,0.8836,2.8379,1.083,33946
+1,control:CC Mariners,Western United,2013725,0.8778,2.8379,1.083,33946
+1,Melbourne V FC,Western United,2013725,0.8827,2.8379,1.083,33946
+1,control:Melbourne V FC,Western United,2013725,0.883,2.8379,1.083,33946
+1,Western United,Western United,2013725,0.8842,2.8379,1.083,33946
+1,control:Western United,Western United,2013725,0.8837,2.8379,1.083,33946
+1,Brisbane FC,Western United,2013725,0.8818,2.8379,1.083,33946
+1,control:Brisbane FC,Western United,2013725,0.8842,2.8379,1.083,33946
+1,Adelaide United,Western United,2013725,0.8846,2.8379,1.083,33946
+1,control:Adelaide United,Western United,2013725,0.8831,2.8379,1.083,33946
+1,Wellington P FC,Western United,2013725,0.8917,2.8379,1.083,33946
+1,control:Wellington P FC,Western United,2013725,0.8868,2.8379,1.083,33946
+1,Melbourne City,Western United,2013725,0.8786,2.8379,1.083,33946
+1,control:Melbourne City,Western United,2013725,0.8807,2.8379,1.083,33946
+1,pooled,Brisbane FC,1925299,0.8521,2.7402,1.0104,36476
+1,Auckland FC,Brisbane FC,1925299,0.833,2.7402,1.0104,36476
+1,control:Auckland FC,Brisbane FC,1925299,0.8269,2.7402,1.0104,36476
+1,CC Mariners,Brisbane FC,1925299,0.8377,2.7402,1.0104,36476
+1,control:CC Mariners,Brisbane FC,1925299,0.8255,2.7402,1.0104,36476
+1,Melbourne V FC,Brisbane FC,1925299,0.8311,2.7402,1.0104,36476
+1,control:Melbourne V FC,Brisbane FC,1925299,0.8315,2.7402,1.0104,36476
+1,Western United,Brisbane FC,1925299,0.8401,2.7402,1.0104,36476
+1,control:Western United,Brisbane FC,1925299,0.8336,2.7402,1.0104,36476
+1,Brisbane FC,Brisbane FC,1925299,0.8316,2.7402,1.0104,36476
+1,control:Brisbane FC,Brisbane FC,1925299,0.8353,2.7402,1.0104,36476
+1,Adelaide United,Brisbane FC,1925299,0.8383,2.7402,1.0104,36476
+1,control:Adelaide United,Brisbane FC,1925299,0.8337,2.7402,1.0104,36476
+1,Wellington P FC,Brisbane FC,1925299,0.8458,2.7402,1.0104,36476
+1,control:Wellington P FC,Brisbane FC,1925299,0.8386,2.7402,1.0104,36476
+1,Melbourne City,Brisbane FC,1925299,0.8337,2.7402,1.0104,36476
+1,control:Melbourne City,Brisbane FC,1925299,0.8355,2.7402,1.0104,36476
+1,pooled,Adelaide United,1996435,0.879,2.7941,1.0562,33825
+1,Auckland FC,Adelaide United,1996435,0.8525,2.7941,1.0562,33825
+1,control:Auckland FC,Adelaide United,1996435,0.8565,2.7941,1.0562,33825
+1,CC Mariners,Adelaide United,1996435,0.8555,2.7941,1.0562,33825
+1,control:CC Mariners,Adelaide United,1996435,0.8496,2.7941,1.0562,33825
+1,Melbourne V FC,Adelaide United,1996435,0.8624,2.7941,1.0562,33825
+1,control:Melbourne V FC,Adelaide United,1996435,0.8569,2.7941,1.0562,33825
+1,Western United,Adelaide United,1996435,0.8512,2.7941,1.0562,33825
+1,control:Western United,Adelaide United,1996435,0.8647,2.7941,1.0562,33825
+1,Brisbane FC,Adelaide United,1996435,0.856,2.7941,1.0562,33825
+1,control:Brisbane FC,Adelaide United,1996435,0.8559,2.7941,1.0562,33825
+1,Adelaide United,Adelaide United,1996435,0.8538,2.7941,1.0562,33825
+1,control:Adelaide United,Adelaide United,1996435,0.853,2.7941,1.0562,33825
+1,Wellington P FC,Adelaide United,1996435,0.8718,2.7941,1.0562,33825
+1,control:Wellington P FC,Adelaide United,1996435,0.864,2.7941,1.0562,33825
+1,Melbourne City,Adelaide United,1996435,0.8559,2.7941,1.0562,33825
+1,control:Melbourne City,Adelaide United,1996435,0.8571,2.7941,1.0562,33825
+1,pooled,Wellington P FC,1927964,0.865,2.6635,1.0307,34254
+1,Auckland FC,Wellington P FC,1927964,0.8441,2.6635,1.0307,34254
+1,control:Auckland FC,Wellington P FC,1927964,0.8514,2.6635,1.0307,34254
+1,CC Mariners,Wellington P FC,1927964,0.8445,2.6635,1.0307,34254
+1,control:CC Mariners,Wellington P FC,1927964,0.8417,2.6635,1.0307,34254
+1,Melbourne V FC,Wellington P FC,1927964,0.8567,2.6635,1.0307,34254
+1,control:Melbourne V FC,Wellington P FC,1927964,0.8492,2.6635,1.0307,34254
+1,Western United,Wellington P FC,1927964,0.8429,2.6635,1.0307,34254
+1,control:Western United,Wellington P FC,1927964,0.8498,2.6635,1.0307,34254
+1,Brisbane FC,Wellington P FC,1927964,0.8482,2.6635,1.0307,34254
+1,control:Brisbane FC,Wellington P FC,1927964,0.8483,2.6635,1.0307,34254
+1,Adelaide United,Wellington P FC,1927964,0.8448,2.6635,1.0307,34254
+1,control:Adelaide United,Wellington P FC,1927964,0.8429,2.6635,1.0307,34254
+1,Wellington P FC,Wellington P FC,1927964,0.8594,2.6635,1.0307,34254
+1,control:Wellington P FC,Wellington P FC,1927964,0.8536,2.6635,1.0307,34254
+1,Melbourne City,Wellington P FC,1927964,0.8425,2.6635,1.0307,34254
+1,control:Melbourne City,Wellington P FC,1927964,0.844,2.6635,1.0307,34254
+1,pooled,Melbourne City,2006229,0.8921,2.7731,1.0688,34595
+1,Auckland FC,Melbourne City,2006229,0.8703,2.7731,1.0688,34595
+1,control:Auckland FC,Melbourne City,2006229,0.8665,2.7731,1.0688,34595
+1,CC Mariners,Melbourne City,2006229,0.8759,2.7731,1.0688,34595
+1,control:CC Mariners,Melbourne City,2006229,0.8646,2.7731,1.0688,34595
+1,Melbourne V FC,Melbourne City,2006229,0.8683,2.7731,1.0688,34595
+1,control:Melbourne V FC,Melbourne City,2006229,0.8712,2.7731,1.0688,34595
+1,Western United,Melbourne City,2006229,0.8713,2.7731,1.0688,34595
+1,control:Western United,Melbourne City,2006229,0.871,2.7731,1.0688,34595
+1,Brisbane FC,Melbourne City,2006229,0.8714,2.7731,1.0688,34595
+1,control:Brisbane FC,Melbourne City,2006229,0.8709,2.7731,1.0688,34595
+1,Adelaide United,Melbourne City,2006229,0.8774,2.7731,1.0688,34595
+1,control:Adelaide United,Melbourne City,2006229,0.8721,2.7731,1.0688,34595
+1,Wellington P FC,Melbourne City,2006229,0.8866,2.7731,1.0688,34595
+1,control:Wellington P FC,Melbourne City,2006229,0.8709,2.7731,1.0688,34595
+1,Melbourne City,Melbourne City,2006229,0.866,2.7731,1.0688,34595
+1,control:Melbourne City,Melbourne City,2006229,0.8718,2.7731,1.0688,34595

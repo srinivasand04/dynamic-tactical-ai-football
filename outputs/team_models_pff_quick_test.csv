@@ -1,0 +1,11 @@
+model,test_team,test_match,error_m,still_m,keepvel_m,nodes
+pooled,Argentina,10517,0.509,2.594,0.715,36256
+Argentina,Argentina,10517,0.421,2.594,0.715,36256
+control:Argentina,Argentina,10517,0.428,2.594,0.715,36256
+France,Argentina,10517,0.441,2.594,0.715,36256
+control:France,Argentina,10517,0.448,2.594,0.715,36256
+pooled,France,10515,0.56,2.5,0.783,29051
+Argentina,France,10515,0.497,2.5,0.783,29051
+control:Argentina,France,10515,0.498,2.5,0.783,29051
+France,France,10515,0.49,2.5,0.783,29051
+control:France,France,10515,0.484,2.5,0.783,29051

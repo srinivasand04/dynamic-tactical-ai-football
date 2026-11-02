@@ -50,7 +50,7 @@ def pct(x):
 def features(m, tag):
     ks = pd.read_csv(settings.base(m) + "_adaptive_ks.csv")
     e = np.load(settings.base(m) + f"_embeddings_{tag}.npz")["emb"]
-    g = np.load(settings.base(m) + "_graphs.npz")
+    g = np.load(settings.graphs(m))
     mode = pd.read_csv(settings.csv(m), usecols=["frame", "game_mode"]).drop_duplicates("frame").set_index("frame").loc[g["frame"], "game_mode"].to_numpy()
     z = e / (np.nanstd(e, axis=0) + 1e-6)
     learned = np.full(len(z), np.nan)

@@ -39,6 +39,8 @@ def finished():
         return set()
     log = log[(log["script"] == "train_gnn") & log["holdout"].notna() & (log["holdout"] != "none") & log["real_player_model_m"].notna()]
     log = log[~log["tag"].astype(str).str.contains("test|smoke", case=False)]
+    if "graphs" in log.columns:                    # only runs made with the graph type now set in settings.json count as done
+        log = log[log["graphs"].fillna("radius") == settings.get("graph", "mode", default="radius")]
     arch = log["arch"].fillna("ours") if "arch" in log.columns else pd.Series("ours", index=log.index)
     return set(zip(arch, log["holdout"], log["seed"].fillna(0).astype(int)))
 

@@ -42,13 +42,13 @@ import torch.nn as nn
 import runlog
 import settings
 
-REALS = [m for m in settings.available(settings.REAL) if os.path.exists(settings.base(m) + "_graphs.npz")]
-SIMS = [m for m in settings.available(settings.SIM) if os.path.exists(settings.base(m) + "_graphs.npz")]
+REALS = [m for m in settings.available(settings.REAL) if os.path.exists(settings.graphs(m))]
+SIMS = [m for m in settings.available(settings.SIM) if os.path.exists(settings.graphs(m))]
 PATH = {m: settings.base(m) for m in REALS + SIMS}
 N = 23
 L = settings.get("gnn", "window", default=3)
 D_MOVE = 5.0          # metres: scale of the movement we predict
-SUFFIX = ""           # "" = radius graphs (_graphs.npz)   "_delaunay" = Delaunay graphs (_graphs_delaunay.npz)
+SUFFIX = settings.graph_suffix()   # "" = radius graphs (_graphs.npz)   "_delaunay" = Delaunay graphs; set by graph.mode in settings.json
 PASS_KEY = None       # None = no pass edges;  "pscore" / "praw" = which numbers ride on the pass edges (build_pass_edges.py)
 PASS_ARCH = {"pass_score": "pscore", "pass_raw": "praw", "pass_shuffle": "praw"}
 PASS_SHUFFLE = False  # pass_shuffle: the same pass edges, but the numbers on them are shuffled between teammates and Key States of a match
@@ -301,7 +301,7 @@ def main():
     ap.add_argument("--no-mirror", action="store_true", help="switch off the random mirroring of training pictures")
     ap.add_argument("--save-embeddings", action="store_true")
     ap.add_argument("--tag", default="", help="name of this run; with --save-embeddings it is added to the file names")
-    ap.add_argument("--graphs", choices=["radius", "delaunay"], default="radius", help="which edge definition to use")
+    ap.add_argument("--graphs", choices=["radius", "delaunay"], default=settings.get("graph", "mode", default="radius"), help="which edge definition to use (default: graph.mode in settings.json)")
     ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
     a = ap.parse_args()
     global SUFFIX, PASS_KEY, PASS_SHUFFLE

@@ -1,0 +1,18 @@
+test matches: {'Argentina': ('10517', 'home'), 'France': ('10515', 'home'), 'Croatia': ('10516', 'home')}
+training on 61 matches, 170409 windows, 24 inputs per node
+  [team policy] epoch  1  loss 0.0249  validation 0.530 m  (449s)
+  [team policy] epoch  2  loss 0.0184  validation 0.545 m  (532s)
+  [team policy] epoch  3  loss 0.0172  validation 0.469 m  (536s)
+  [team policy] epoch  4  loss 0.0168  validation 0.478 m  (527s)
+
+ERROR (m) on each team's held-out match (column) when the model is told the team is ... (row); lower is better
+
+test_team       Argentina  Croatia  France
+identity_given                            
+Argentina          0.4365   0.4466  0.5040
+France             0.4544   0.4496  0.4984
+Croatia            0.4501   0.4565  0.5121
+other              0.4393   0.4429  0.4973
+
+the correct identity gives the lowest error for 1 of 3 teams; correct vs 'other': -0.0040 m better on average; keep-velocity 0.747 m
+finished in 35 min; wrote outputs/team_policy/pff_model.pt

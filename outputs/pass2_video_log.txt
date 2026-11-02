@@ -1,0 +1,2 @@
+wrote outputs/grf_pass_J03WOH_3500_shot.png
+wrote outputs/grf_pass_J03WOH_3500.mp4

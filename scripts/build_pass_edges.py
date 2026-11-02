@@ -39,7 +39,7 @@ def softmax(s):
 
 def build(m, models):
     w, comp, val = models
-    g = np.load(settings.base(m) + "_graphs.npz")
+    g = np.load(settings.graphs(m))
     c = pd.read_csv(settings.csv(m), usecols=["frame", "ball_owner_team", "game_mode"]).drop_duplicates("frame").set_index("frame").loc[g["frame"]]
     owner, live = c["ball_owner_team"].to_numpy(), (c["game_mode"] == "normal").to_numpy()
     xy, vel, present, team = g["xy"], g["vel"], g["present"], g["team"]
@@ -81,7 +81,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("matches", nargs="*")
     a = ap.parse_args()
-    todo = a.matches or [m for m in settings.available(settings.REAL + settings.SIM) if os.path.exists(settings.base(m) + "_graphs.npz")]
+    todo = a.matches or [m for m in settings.available(settings.REAL + settings.SIM) if os.path.exists(settings.graphs(m))]
     models = F.from_json()
     rows = []
     for m in todo:

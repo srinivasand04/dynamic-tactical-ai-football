@@ -1,0 +1,25 @@
+16 real kicks found in 180 s; 10 look like completed passes, 1 end in a goal
+   3504.4 s  kicker 19  flight  21.1 m  receiver  4 (opponent)  
+   3509.3 s  kicker  4  flight  16.6 m  receiver 14 (opponent)  
+   3513.8 s  kicker 14  flight  17.4 m  receiver 21 (same team)  
+   3532.9 s  kicker  4  flight  15.7 m  receiver  1 (same team)  
+   3535.7 s  kicker  1  flight  31.0 m  receiver  0 (same team)  
+   3547.8 s  kicker  0  flight  28.2 m  receiver  1 (same team)  
+   3551.1 s  kicker  1  flight  28.0 m  receiver  8 (same team)  
+   3553.2 s  kicker  8  flight  14.4 m  receiver 13 (opponent)  
+   3557.6 s  kicker 12  flight   8.0 m  receiver 14 (same team)  
+   3561.5 s  kicker 16  flight   9.4 m  receiver 18 (same team)  
+   3564.2 s  kicker  5  flight   4.3 m  receiver  8 (same team)  
+   3590.7 s  kicker 13  flight  32.6 m  receiver 11 (same team)  
+  window 0/101   3500.0 s
+  window 20/101   3535.0 s
+  window 40/101   3567.5 s
+  window 60/101   3602.5 s
+  goal window at 3611.5 s: GRF scores
+  window 80/101   3639.5 s
+  window 100/101   3679.5 s
+wrote outputs/pass_3min_GRF.mp4
+
+GRF vs the real stretch (179 s): players 0.85 m, ball 3.04 m mean error
+16 kicks scored: GRF ball 5.4 m median (6.2 m mean) from the real ball when it arrived; same receiver 50%, same team 75%
+wrote outputs/grf_pass_J03WOH_3500.npz

@@ -31,3 +31,14 @@ ESILV Logo Sample.png
 
 # PowerPoint lock files
 ~$*
+
+# external datasets (large, licensed by their owners)
+data/external/
+
+# converted PFF / SkillCorner tracking (~1.2 GB, rebuilt by convert_pff.py / convert_skillcorner.py); the registries stay
+data/pff/processed/
+data/skillcorner/processed/
+
+# videos (too large for git; rebuilt by the grf_*/team_league scripts) and smoke-test leftovers
+*.mp4
+outputs/team_policy/smoke_*

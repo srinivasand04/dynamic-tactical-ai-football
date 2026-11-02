@@ -1,0 +1,13 @@
+team,opponent,games,points_per_game,gd_per_game,gd_ci95,xg,shots
+Argentina,Croatia,12,0.917,-0.583,0.78,1.714,11.833
+Argentina,France,12,1.583,0.0,1.448,1.069,10.75
+Argentina,pooled,12,0.083,-1.75,0.768,0.359,5.167
+Croatia,Argentina,12,1.917,0.583,0.78,1.489,27.583
+Croatia,France,12,1.833,1.167,1.579,2.384,31.667
+Croatia,pooled,12,1.25,-0.333,1.307,1.628,19.333
+France,Argentina,12,1.333,0.0,1.448,2.151,22.667
+France,Croatia,12,1.083,-1.167,1.579,1.333,11.833
+France,pooled,12,1.083,-0.417,0.817,1.041,14.25
+pooled,Argentina,12,2.833,1.75,0.768,1.312,22.417
+pooled,Croatia,12,1.5,0.333,1.307,1.27,25.5
+pooled,France,12,1.583,0.417,0.817,1.519,21.0

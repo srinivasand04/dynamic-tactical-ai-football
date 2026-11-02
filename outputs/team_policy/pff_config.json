@@ -1,0 +1,29 @@
+{
+ "dataset": "pff",
+ "teams": [
+  "Argentina",
+  "France",
+  "Croatia",
+  "other"
+ ],
+ "f_in": 24,
+ "dim": 48,
+ "window": 3,
+ "d_move": 5.0,
+ "graph_mode": "delaunay",
+ "ball_k": 3,
+ "test_matches": {
+  "Argentina": [
+   "10517",
+   "home"
+  ],
+  "France": [
+   "10515",
+   "home"
+  ],
+  "Croatia": [
+   "10516",
+   "home"
+  ]
+ }
+}

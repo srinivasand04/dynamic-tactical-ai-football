@@ -1,0 +1,901 @@
+14 runs to do (7 already in the run log)
+
+===== run 1/14: pass_raw, hold out J03WMX, seed 0 =====
+train on: ['J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WMX | simulated matches to evaluate: 36
+windows for training: 18253 | for early stopping: 2031
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0546  validation error 1.364 m  (23s)
+epoch  2  train loss 0.0394  validation error 1.302 m  (25s)
+epoch  3  train loss 0.0381  validation error 1.278 m  (24s)
+epoch  4  train loss 0.0371  validation error 1.250 m  (27s)
+epoch  5  train loss 0.0363  validation error 1.257 m  (25s)
+epoch  6  train loss 0.0355  validation error 1.252 m  (27s)
+epoch  7  train loss 0.0347  validation error 1.234 m  (26s)
+epoch  8  train loss 0.0339  validation error 1.213 m  (27s)
+epoch  9  train loss 0.0334  validation error 1.201 m  (36s)
+epoch 10  train loss 0.0331  validation error 1.212 m  (25s)
+epoch 11  train loss 0.0327  validation error 1.237 m  (25s)
+epoch 12  train loss 0.0324  validation error 1.219 m  (25s)
+early stop: no improvement for 3 epochs; best was epoch 9
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WMX     held-out real  |           1.08   2.84   1.46   |        3.26   6.70   6.66
+match_001  simulated      |           2.11   3.42   2.15   |        4.13   6.53   5.49
+match_002  simulated      |           2.40   3.62   2.46   |        4.25   6.42   5.79
+match_003  simulated      |           2.64   3.91   2.68   |        4.46   6.78   6.27
+match_004  simulated      |           2.30   3.53   2.42   |        4.27   6.47   6.28
+match_005  simulated      |           2.41   3.63   2.48   |        4.14   6.36   5.65
+match_006  simulated      |           2.82   4.10   2.86   |        4.65   6.70   6.88
+match_007  simulated      |           2.67   3.81   2.73   |        4.33   6.42   6.84
+match_008  simulated      |           2.23   3.45   2.30   |        4.79   6.56   6.42
+match_009  simulated      |           2.64   3.95   2.69   |        4.27   6.66   6.08
+match_010  simulated      |           2.12   3.28   2.20   |        4.20   6.52   6.22
+match_011  simulated      |           2.55   3.81   2.61   |        4.46   6.52   6.19
+match_012  simulated      |           2.55   3.89   2.58   |        4.57   6.67   6.46
+easy_001   simulated      |           2.33   3.45   2.42   |        4.18   6.35   6.40
+easy_002   simulated      |           2.18   3.48   2.24   |        3.89   6.65   5.28
+easy_003   simulated      |           2.60   3.70   2.69   |        3.98   6.31   5.75
+easy_004   simulated      |           2.47   3.70   2.56   |        4.22   6.55   6.50
+easy_005   simulated      |           2.20   3.47   2.28   |        4.10   6.47   5.62
+easy_006   simulated      |           2.28   3.56   2.34   |        4.39   6.65   6.40
+easy_007   simulated      |           2.36   3.61   2.42   |        4.25   6.70   6.08
+easy_008   simulated      |           2.18   3.52   2.22   |        3.99   6.50   5.54
+hard_001   simulated      |           2.65   3.82   2.69   |        4.48   6.73   6.76
+hard_002   simulated      |           3.00   4.04   3.10   |        5.11   6.52   7.85
+hard_003   simulated      |           2.62   3.95   2.64   |        4.76   6.97   7.20
+hard_004   simulated      |           2.63   3.88   2.67   |        4.48   6.39   6.18
+hard_005   simulated      |           2.65   3.89   2.72   |        4.70   6.57   6.56
+hard_006   simulated      |           2.68   4.06   2.68   |        4.82   6.63   6.27
+hard_007   simulated      |           2.52   3.79   2.60   |        4.69   6.58   6.37
+hard_008   simulated      |           2.52   3.81   2.59   |        4.11   6.54   5.95
+competition_001 simulated      |           2.66   3.98   2.72   |        4.42   6.46   6.16
+competition_002 simulated      |           2.06   3.39   2.10   |        4.01   6.41   5.41
+competition_003 simulated      |           2.77   4.02   2.84   |        4.44   6.45   6.71
+competition_004 simulated      |           2.47   3.67   2.54   |        4.40   6.38   6.35
+competition_005 simulated      |           2.70   3.93   2.76   |        4.80   6.75   6.94
+competition_006 simulated      |           2.71   3.92   2.77   |        4.60   6.46   6.77
+competition_007 simulated      |           2.82   3.85   2.95   |        4.85   6.60   7.50
+competition_008 simulated      |           2.52   3.76   2.61   |        4.57   6.47   6.51
+
+run finished in 5.4 min after 12 epochs; logged to outputs/run_log.csv
+----- 1/14 done, 6 min so far, about 72 min to go
+
+===== run 2/14: pass_shuffle, hold out J03WMX, seed 0 =====
+train on: ['J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WMX | simulated matches to evaluate: 36
+windows for training: 18253 | for early stopping: 2031
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0546  validation error 1.366 m  (24s)
+epoch  2  train loss 0.0394  validation error 1.303 m  (26s)
+epoch  3  train loss 0.0381  validation error 1.285 m  (25s)
+epoch  4  train loss 0.0371  validation error 1.254 m  (26s)
+epoch  5  train loss 0.0363  validation error 1.256 m  (26s)
+epoch  6  train loss 0.0355  validation error 1.262 m  (26s)
+epoch  7  train loss 0.0349  validation error 1.230 m  (25s)
+epoch  8  train loss 0.0340  validation error 1.213 m  (25s)
+epoch  9  train loss 0.0336  validation error 1.206 m  (25s)
+epoch 10  train loss 0.0332  validation error 1.222 m  (26s)
+epoch 11  train loss 0.0328  validation error 1.237 m  (25s)
+epoch 12  train loss 0.0324  validation error 1.215 m  (24s)
+early stop: no improvement for 3 epochs; best was epoch 9
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WMX     held-out real  |           1.08   2.84   1.46   |        3.29   6.70   6.66
+match_001  simulated      |           2.12   3.42   2.15   |        4.07   6.53   5.49
+match_002  simulated      |           2.41   3.62   2.46   |        4.22   6.42   5.79
+match_003  simulated      |           2.65   3.91   2.68   |        4.40   6.78   6.27
+match_004  simulated      |           2.30   3.53   2.42   |        4.25   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        4.07   6.36   5.65
+match_006  simulated      |           2.83   4.10   2.86   |        4.66   6.70   6.88
+match_007  simulated      |           2.68   3.81   2.73   |        4.30   6.42   6.84
+match_008  simulated      |           2.24   3.45   2.30   |        4.74   6.56   6.42
+match_009  simulated      |           2.65   3.95   2.69   |        4.23   6.66   6.08
+match_010  simulated      |           2.13   3.28   2.20   |        4.16   6.52   6.22
+match_011  simulated      |           2.56   3.81   2.61   |        4.40   6.52   6.19
+match_012  simulated      |           2.55   3.89   2.58   |        4.59   6.67   6.46
+easy_001   simulated      |           2.33   3.45   2.42   |        4.18   6.35   6.40
+easy_002   simulated      |           2.19   3.48   2.24   |        3.86   6.65   5.28
+easy_003   simulated      |           2.61   3.70   2.69   |        3.97   6.31   5.75
+easy_004   simulated      |           2.47   3.70   2.56   |        4.21   6.55   6.50
+easy_005   simulated      |           2.21   3.47   2.28   |        4.10   6.47   5.62
+easy_006   simulated      |           2.29   3.56   2.34   |        4.40   6.65   6.40
+easy_007   simulated      |           2.37   3.61   2.42   |        4.18   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        3.96   6.50   5.54
+hard_001   simulated      |           2.66   3.82   2.69   |        4.49   6.73   6.76
+hard_002   simulated      |           3.00   4.04   3.10   |        5.10   6.52   7.85
+hard_003   simulated      |           2.63   3.95   2.64   |        4.70   6.97   7.20
+hard_004   simulated      |           2.63   3.88   2.67   |        4.44   6.39   6.18
+hard_005   simulated      |           2.66   3.89   2.72   |        4.65   6.57   6.56
+hard_006   simulated      |           2.68   4.06   2.68   |        4.77   6.63   6.27
+hard_007   simulated      |           2.52   3.79   2.60   |        4.66   6.58   6.37
+hard_008   simulated      |           2.52   3.81   2.59   |        4.08   6.54   5.95
+competition_001 simulated      |           2.66   3.98   2.72   |        4.34   6.46   6.16
+competition_002 simulated      |           2.07   3.39   2.10   |        3.96   6.41   5.41
+competition_003 simulated      |           2.77   4.02   2.84   |        4.47   6.45   6.71
+competition_004 simulated      |           2.48   3.67   2.54   |        4.31   6.38   6.35
+competition_005 simulated      |           2.70   3.93   2.76   |        4.81   6.75   6.94
+competition_006 simulated      |           2.72   3.92   2.77   |        4.59   6.46   6.77
+competition_007 simulated      |           2.82   3.85   2.95   |        4.89   6.60   7.50
+competition_008 simulated      |           2.53   3.76   2.61   |        4.54   6.47   6.51
+
+run finished in 5.2 min after 12 epochs; logged to outputs/run_log.csv
+----- 2/14 done, 11 min so far, about 65 min to go
+
+===== run 3/14: pass_raw, hold out J03WN1, seed 0 =====
+train on: ['J03WMX', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WN1 | simulated matches to evaluate: 36
+windows for training: 18734 | for early stopping: 2084
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0534  validation error 1.422 m  (25s)
+epoch  2  train loss 0.0382  validation error 1.328 m  (26s)
+epoch  3  train loss 0.0369  validation error 1.302 m  (25s)
+epoch  4  train loss 0.0358  validation error 1.275 m  (25s)
+epoch  5  train loss 0.0350  validation error 1.276 m  (25s)
+epoch  6  train loss 0.0341  validation error 1.251 m  (26s)
+epoch  7  train loss 0.0335  validation error 1.232 m  (30s)
+epoch  8  train loss 0.0332  validation error 1.249 m  (26s)
+epoch  9  train loss 0.0324  validation error 1.228 m  (27s)
+epoch 10  train loss 0.0320  validation error 1.230 m  (27s)
+early stop: no improvement for 3 epochs; best was epoch 9
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WN1     held-out real  |           1.21   2.92   1.60   |        3.38   6.35   6.46
+match_001  simulated      |           2.14   3.42   2.15   |        4.48   6.53   5.49
+match_002  simulated      |           2.42   3.62   2.46   |        4.72   6.42   5.79
+match_003  simulated      |           2.66   3.91   2.68   |        4.87   6.78   6.27
+match_004  simulated      |           2.32   3.53   2.42   |        4.78   6.47   6.28
+match_005  simulated      |           2.43   3.63   2.48   |        4.51   6.36   5.65
+match_006  simulated      |           2.83   4.10   2.86   |        5.12   6.70   6.88
+match_007  simulated      |           2.69   3.81   2.73   |        4.72   6.42   6.84
+match_008  simulated      |           2.26   3.45   2.30   |        5.17   6.56   6.42
+match_009  simulated      |           2.65   3.95   2.69   |        4.71   6.66   6.08
+match_010  simulated      |           2.16   3.28   2.20   |        4.63   6.52   6.22
+match_011  simulated      |           2.57   3.81   2.61   |        4.94   6.52   6.19
+match_012  simulated      |           2.57   3.89   2.58   |        4.95   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.51   6.35   6.40
+easy_002   simulated      |           2.21   3.48   2.24   |        4.34   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.42   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.63   6.55   6.50
+easy_005   simulated      |           2.23   3.47   2.28   |        4.54   6.47   5.62
+easy_006   simulated      |           2.31   3.56   2.34   |        4.79   6.65   6.40
+easy_007   simulated      |           2.39   3.61   2.42   |        4.68   6.70   6.08
+easy_008   simulated      |           2.22   3.52   2.22   |        4.41   6.50   5.54
+hard_001   simulated      |           2.67   3.82   2.69   |        5.00   6.73   6.76
+hard_002   simulated      |           3.00   4.04   3.10   |        5.47   6.52   7.85
+hard_003   simulated      |           2.65   3.95   2.64   |        5.13   6.97   7.20
+hard_004   simulated      |           2.64   3.88   2.67   |        4.90   6.39   6.18
+hard_005   simulated      |           2.68   3.89   2.72   |        5.04   6.57   6.56
+hard_006   simulated      |           2.69   4.06   2.68   |        5.25   6.63   6.27
+hard_007   simulated      |           2.54   3.79   2.60   |        4.97   6.58   6.37
+hard_008   simulated      |           2.54   3.81   2.59   |        4.48   6.54   5.95
+competition_001 simulated      |           2.67   3.98   2.72   |        4.75   6.46   6.16
+competition_002 simulated      |           2.09   3.39   2.10   |        4.37   6.41   5.41
+competition_003 simulated      |           2.78   4.02   2.84   |        4.85   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.83   6.38   6.35
+competition_005 simulated      |           2.73   3.93   2.76   |        5.32   6.75   6.94
+competition_006 simulated      |           2.73   3.92   2.77   |        5.03   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        5.41   6.60   7.50
+competition_008 simulated      |           2.55   3.76   2.61   |        4.89   6.47   6.51
+
+run finished in 4.6 min after 10 epochs; logged to outputs/run_log.csv
+----- 3/14 done, 15 min so far, about 57 min to go
+
+===== run 4/14: pass_shuffle, hold out J03WN1, seed 0 =====
+train on: ['J03WMX', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WN1 | simulated matches to evaluate: 36
+windows for training: 18734 | for early stopping: 2084
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0534  validation error 1.421 m  (23s)
+epoch  2  train loss 0.0382  validation error 1.333 m  (26s)
+epoch  3  train loss 0.0369  validation error 1.305 m  (25s)
+epoch  4  train loss 0.0358  validation error 1.270 m  (25s)
+epoch  5  train loss 0.0350  validation error 1.270 m  (26s)
+epoch  6  train loss 0.0342  validation error 1.252 m  (25s)
+epoch  7  train loss 0.0337  validation error 1.233 m  (26s)
+epoch  8  train loss 0.0335  validation error 1.261 m  (25s)
+epoch  9  train loss 0.0328  validation error 1.235 m  (27s)
+epoch 10  train loss 0.0324  validation error 1.241 m  (26s)
+early stop: no improvement for 3 epochs; best was epoch 7
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WN1     held-out real  |           1.22   2.92   1.60   |        3.38   6.35   6.46
+match_001  simulated      |           2.13   3.42   2.15   |        4.27   6.53   5.49
+match_002  simulated      |           2.42   3.62   2.46   |        4.42   6.42   5.79
+match_003  simulated      |           2.67   3.91   2.68   |        4.58   6.78   6.27
+match_004  simulated      |           2.32   3.53   2.42   |        4.44   6.47   6.28
+match_005  simulated      |           2.43   3.63   2.48   |        4.21   6.36   5.65
+match_006  simulated      |           2.85   4.10   2.86   |        4.82   6.70   6.88
+match_007  simulated      |           2.70   3.81   2.73   |        4.43   6.42   6.84
+match_008  simulated      |           2.27   3.45   2.30   |        4.92   6.56   6.42
+match_009  simulated      |           2.66   3.95   2.69   |        4.44   6.66   6.08
+match_010  simulated      |           2.15   3.28   2.20   |        4.37   6.52   6.22
+match_011  simulated      |           2.58   3.81   2.61   |        4.53   6.52   6.19
+match_012  simulated      |           2.58   3.89   2.58   |        4.74   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.26   6.35   6.40
+easy_002   simulated      |           2.21   3.48   2.24   |        4.03   6.65   5.28
+easy_003   simulated      |           2.63   3.70   2.69   |        4.12   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.42   6.55   6.50
+easy_005   simulated      |           2.23   3.47   2.28   |        4.23   6.47   5.62
+easy_006   simulated      |           2.31   3.56   2.34   |        4.51   6.65   6.40
+easy_007   simulated      |           2.39   3.61   2.42   |        4.35   6.70   6.08
+easy_008   simulated      |           2.21   3.52   2.22   |        4.06   6.50   5.54
+hard_001   simulated      |           2.67   3.82   2.69   |        4.60   6.73   6.76
+hard_002   simulated      |           3.02   4.04   3.10   |        5.18   6.52   7.85
+hard_003   simulated      |           2.65   3.95   2.64   |        4.93   6.97   7.20
+hard_004   simulated      |           2.66   3.88   2.67   |        4.62   6.39   6.18
+hard_005   simulated      |           2.69   3.89   2.72   |        4.85   6.57   6.56
+hard_006   simulated      |           2.70   4.06   2.68   |        4.96   6.63   6.27
+hard_007   simulated      |           2.55   3.79   2.60   |        4.90   6.58   6.37
+hard_008   simulated      |           2.55   3.81   2.59   |        4.26   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.53   6.46   6.16
+competition_002 simulated      |           2.09   3.39   2.10   |        4.21   6.41   5.41
+competition_003 simulated      |           2.79   4.02   2.84   |        4.64   6.45   6.71
+competition_004 simulated      |           2.50   3.67   2.54   |        4.46   6.38   6.35
+competition_005 simulated      |           2.74   3.93   2.76   |        5.04   6.75   6.94
+competition_006 simulated      |           2.75   3.92   2.77   |        4.78   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        5.03   6.60   7.50
+competition_008 simulated      |           2.56   3.76   2.61   |        4.82   6.47   6.51
+
+run finished in 4.4 min after 10 epochs; logged to outputs/run_log.csv
+----- 4/14 done, 20 min so far, about 50 min to go
+
+===== run 5/14: pass_raw, hold out J03WPY, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WPY | simulated matches to evaluate: 36
+windows for training: 18264 | for early stopping: 2032
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0537  validation error 1.445 m  (24s)
+epoch  2  train loss 0.0388  validation error 1.396 m  (27s)
+epoch  3  train loss 0.0374  validation error 1.349 m  (25s)
+epoch  4  train loss 0.0362  validation error 1.315 m  (25s)
+epoch  5  train loss 0.0354  validation error 1.310 m  (25s)
+epoch  6  train loss 0.0346  validation error 1.326 m  (28s)
+epoch  7  train loss 0.0340  validation error 1.290 m  (25s)
+epoch  8  train loss 0.0333  validation error 1.266 m  (24s)
+epoch  9  train loss 0.0330  validation error 1.292 m  (29s)
+epoch 10  train loss 0.0324  validation error 1.269 m  (26s)
+epoch 11  train loss 0.0322  validation error 1.306 m  (28s)
+early stop: no improvement for 3 epochs; best was epoch 8
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WPY     held-out real  |           1.10   2.86   1.49   |        3.23   6.67   6.07
+match_001  simulated      |           2.14   3.42   2.15   |        4.49   6.53   5.49
+match_002  simulated      |           2.43   3.62   2.46   |        4.71   6.42   5.79
+match_003  simulated      |           2.67   3.91   2.68   |        4.90   6.78   6.27
+match_004  simulated      |           2.33   3.53   2.42   |        4.69   6.47   6.28
+match_005  simulated      |           2.44   3.63   2.48   |        4.49   6.36   5.65
+match_006  simulated      |           2.85   4.10   2.86   |        5.19   6.70   6.88
+match_007  simulated      |           2.69   3.81   2.73   |        4.74   6.42   6.84
+match_008  simulated      |           2.25   3.45   2.30   |        5.22   6.56   6.42
+match_009  simulated      |           2.67   3.95   2.69   |        4.69   6.66   6.08
+match_010  simulated      |           2.13   3.28   2.20   |        4.56   6.52   6.22
+match_011  simulated      |           2.58   3.81   2.61   |        4.97   6.52   6.19
+match_012  simulated      |           2.58   3.89   2.58   |        5.05   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.55   6.35   6.40
+easy_002   simulated      |           2.22   3.48   2.24   |        4.26   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.27   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.66   6.55   6.50
+easy_005   simulated      |           2.23   3.47   2.28   |        4.50   6.47   5.62
+easy_006   simulated      |           2.30   3.56   2.34   |        4.79   6.65   6.40
+easy_007   simulated      |           2.39   3.61   2.42   |        4.64   6.70   6.08
+easy_008   simulated      |           2.22   3.52   2.22   |        4.28   6.50   5.54
+hard_001   simulated      |           2.68   3.82   2.69   |        4.97   6.73   6.76
+hard_002   simulated      |           3.01   4.04   3.10   |        5.58   6.52   7.85
+hard_003   simulated      |           2.65   3.95   2.64   |        5.27   6.97   7.20
+hard_004   simulated      |           2.66   3.88   2.67   |        4.88   6.39   6.18
+hard_005   simulated      |           2.68   3.89   2.72   |        5.02   6.57   6.56
+hard_006   simulated      |           2.71   4.06   2.68   |        5.22   6.63   6.27
+hard_007   simulated      |           2.55   3.79   2.60   |        5.17   6.58   6.37
+hard_008   simulated      |           2.54   3.81   2.59   |        4.46   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.86   6.46   6.16
+competition_002 simulated      |           2.09   3.39   2.10   |        4.43   6.41   5.41
+competition_003 simulated      |           2.80   4.02   2.84   |        4.94   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.83   6.38   6.35
+competition_005 simulated      |           2.72   3.93   2.76   |        5.31   6.75   6.94
+competition_006 simulated      |           2.73   3.92   2.77   |        5.14   6.46   6.77
+competition_007 simulated      |           2.83   3.85   2.95   |        5.37   6.60   7.50
+competition_008 simulated      |           2.54   3.76   2.61   |        5.05   6.47   6.51
+
+run finished in 5.0 min after 11 epochs; logged to outputs/run_log.csv
+----- 5/14 done, 25 min so far, about 45 min to go
+
+===== run 6/14: pass_shuffle, hold out J03WPY, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WOH', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WPY | simulated matches to evaluate: 36
+windows for training: 18264 | for early stopping: 2032
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0538  validation error 1.443 m  (23s)
+epoch  2  train loss 0.0388  validation error 1.400 m  (25s)
+epoch  3  train loss 0.0376  validation error 1.362 m  (24s)
+epoch  4  train loss 0.0363  validation error 1.319 m  (24s)
+epoch  5  train loss 0.0356  validation error 1.319 m  (24s)
+epoch  6  train loss 0.0348  validation error 1.336 m  (25s)
+epoch  7  train loss 0.0342  validation error 1.302 m  (24s)
+epoch  8  train loss 0.0336  validation error 1.267 m  (26s)
+epoch  9  train loss 0.0332  validation error 1.301 m  (24s)
+epoch 10  train loss 0.0326  validation error 1.277 m  (24s)
+epoch 11  train loss 0.0325  validation error 1.311 m  (25s)
+early stop: no improvement for 3 epochs; best was epoch 8
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WPY     held-out real  |           1.11   2.86   1.49   |        3.22   6.67   6.07
+match_001  simulated      |           2.13   3.42   2.15   |        4.60   6.53   5.49
+match_002  simulated      |           2.43   3.62   2.46   |        4.76   6.42   5.79
+match_003  simulated      |           2.67   3.91   2.68   |        4.96   6.78   6.27
+match_004  simulated      |           2.32   3.53   2.42   |        4.81   6.47   6.28
+match_005  simulated      |           2.43   3.63   2.48   |        4.52   6.36   5.65
+match_006  simulated      |           2.84   4.10   2.86   |        5.25   6.70   6.88
+match_007  simulated      |           2.70   3.81   2.73   |        4.79   6.42   6.84
+match_008  simulated      |           2.26   3.45   2.30   |        5.28   6.56   6.42
+match_009  simulated      |           2.67   3.95   2.69   |        4.76   6.66   6.08
+match_010  simulated      |           2.14   3.28   2.20   |        4.63   6.52   6.22
+match_011  simulated      |           2.58   3.81   2.61   |        5.00   6.52   6.19
+match_012  simulated      |           2.58   3.89   2.58   |        5.14   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.60   6.35   6.40
+easy_002   simulated      |           2.21   3.48   2.24   |        4.29   6.65   5.28
+easy_003   simulated      |           2.63   3.70   2.69   |        4.39   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.74   6.55   6.50
+easy_005   simulated      |           2.23   3.47   2.28   |        4.60   6.47   5.62
+easy_006   simulated      |           2.30   3.56   2.34   |        4.86   6.65   6.40
+easy_007   simulated      |           2.39   3.61   2.42   |        4.72   6.70   6.08
+easy_008   simulated      |           2.21   3.52   2.22   |        4.32   6.50   5.54
+hard_001   simulated      |           2.67   3.82   2.69   |        5.03   6.73   6.76
+hard_002   simulated      |           3.01   4.04   3.10   |        5.62   6.52   7.85
+hard_003   simulated      |           2.65   3.95   2.64   |        5.34   6.97   7.20
+hard_004   simulated      |           2.65   3.88   2.67   |        5.01   6.39   6.18
+hard_005   simulated      |           2.68   3.89   2.72   |        5.13   6.57   6.56
+hard_006   simulated      |           2.70   4.06   2.68   |        5.31   6.63   6.27
+hard_007   simulated      |           2.55   3.79   2.60   |        5.25   6.58   6.37
+hard_008   simulated      |           2.55   3.81   2.59   |        4.56   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.93   6.46   6.16
+competition_002 simulated      |           2.08   3.39   2.10   |        4.47   6.41   5.41
+competition_003 simulated      |           2.80   4.02   2.84   |        5.01   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.89   6.38   6.35
+competition_005 simulated      |           2.73   3.93   2.76   |        5.43   6.75   6.94
+competition_006 simulated      |           2.73   3.92   2.77   |        5.21   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        5.40   6.60   7.50
+competition_008 simulated      |           2.55   3.76   2.61   |        5.11   6.47   6.51
+
+run finished in 4.7 min after 11 epochs; logged to outputs/run_log.csv
+----- 6/14 done, 30 min so far, about 40 min to go
+
+===== run 7/14: pass_raw, hold out J03WOH, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WOH | simulated matches to evaluate: 36
+windows for training: 18493 | for early stopping: 2057
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0541  validation error 1.419 m  (26s)
+epoch  2  train loss 0.0391  validation error 1.350 m  (25s)
+epoch  3  train loss 0.0377  validation error 1.306 m  (24s)
+epoch  4  train loss 0.0367  validation error 1.310 m  (24s)
+epoch  5  train loss 0.0358  validation error 1.264 m  (23s)
+epoch  6  train loss 0.0352  validation error 1.262 m  (25s)
+epoch  7  train loss 0.0345  validation error 1.247 m  (24s)
+epoch  8  train loss 0.0339  validation error 1.274 m  (24s)
+epoch  9  train loss 0.0331  validation error 1.227 m  (30s)
+epoch 10  train loss 0.0328  validation error 1.240 m  (26s)
+epoch 11  train loss 0.0326  validation error 1.212 m  (25s)
+epoch 12  train loss 0.0321  validation error 1.228 m  (24s)
+epoch 13  train loss 0.0320  validation error 1.219 m  (25s)
+epoch 14  train loss 0.0318  validation error 1.215 m  (26s)
+early stop: no improvement for 3 epochs; best was epoch 11
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOH     held-out real  |           1.08   2.94   1.50   |        2.96   6.44   5.67
+match_001  simulated      |           2.12   3.42   2.15   |        4.08   6.53   5.49
+match_002  simulated      |           2.40   3.62   2.46   |        4.32   6.42   5.79
+match_003  simulated      |           2.65   3.91   2.68   |        4.57   6.78   6.27
+match_004  simulated      |           2.30   3.53   2.42   |        4.42   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        4.17   6.36   5.65
+match_006  simulated      |           2.83   4.10   2.86   |        4.78   6.70   6.88
+match_007  simulated      |           2.68   3.81   2.73   |        4.39   6.42   6.84
+match_008  simulated      |           2.24   3.45   2.30   |        4.86   6.56   6.42
+match_009  simulated      |           2.65   3.95   2.69   |        4.38   6.66   6.08
+match_010  simulated      |           2.13   3.28   2.20   |        4.31   6.52   6.22
+match_011  simulated      |           2.56   3.81   2.61   |        4.56   6.52   6.19
+match_012  simulated      |           2.55   3.89   2.58   |        4.67   6.67   6.46
+easy_001   simulated      |           2.33   3.45   2.42   |        4.19   6.35   6.40
+easy_002   simulated      |           2.19   3.48   2.24   |        3.95   6.65   5.28
+easy_003   simulated      |           2.61   3.70   2.69   |        4.05   6.31   5.75
+easy_004   simulated      |           2.47   3.70   2.56   |        4.34   6.55   6.50
+easy_005   simulated      |           2.21   3.47   2.28   |        4.08   6.47   5.62
+easy_006   simulated      |           2.29   3.56   2.34   |        4.44   6.65   6.40
+easy_007   simulated      |           2.36   3.61   2.42   |        4.27   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        4.02   6.50   5.54
+hard_001   simulated      |           2.66   3.82   2.69   |        4.62   6.73   6.76
+hard_002   simulated      |           2.99   4.04   3.10   |        5.20   6.52   7.85
+hard_003   simulated      |           2.63   3.95   2.64   |        4.82   6.97   7.20
+hard_004   simulated      |           2.64   3.88   2.67   |        4.57   6.39   6.18
+hard_005   simulated      |           2.67   3.89   2.72   |        4.80   6.57   6.56
+hard_006   simulated      |           2.68   4.06   2.68   |        4.97   6.63   6.27
+hard_007   simulated      |           2.52   3.79   2.60   |        4.77   6.58   6.37
+hard_008   simulated      |           2.53   3.81   2.59   |        4.23   6.54   5.95
+competition_001 simulated      |           2.67   3.98   2.72   |        4.53   6.46   6.16
+competition_002 simulated      |           2.07   3.39   2.10   |        3.99   6.41   5.41
+competition_003 simulated      |           2.78   4.02   2.84   |        4.54   6.45   6.71
+competition_004 simulated      |           2.47   3.67   2.54   |        4.41   6.38   6.35
+competition_005 simulated      |           2.72   3.93   2.76   |        4.94   6.75   6.94
+competition_006 simulated      |           2.71   3.92   2.77   |        4.79   6.46   6.77
+competition_007 simulated      |           2.82   3.85   2.95   |        5.07   6.60   7.50
+competition_008 simulated      |           2.53   3.76   2.61   |        4.65   6.47   6.51
+
+run finished in 6.1 min after 14 epochs; logged to outputs/run_log.csv
+----- 7/14 done, 36 min so far, about 36 min to go
+
+===== run 8/14: pass_shuffle, hold out J03WOH, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WQQ', 'J03WOY', 'J03WR9'] | held-out real: J03WOH | simulated matches to evaluate: 36
+windows for training: 18493 | for early stopping: 2057
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0541  validation error 1.425 m  (24s)
+epoch  2  train loss 0.0391  validation error 1.352 m  (23s)
+epoch  3  train loss 0.0377  validation error 1.305 m  (24s)
+epoch  4  train loss 0.0368  validation error 1.311 m  (25s)
+epoch  5  train loss 0.0359  validation error 1.264 m  (24s)
+epoch  6  train loss 0.0353  validation error 1.261 m  (25s)
+epoch  7  train loss 0.0345  validation error 1.253 m  (24s)
+epoch  8  train loss 0.0340  validation error 1.277 m  (25s)
+epoch  9  train loss 0.0331  validation error 1.232 m  (25s)
+epoch 10  train loss 0.0329  validation error 1.243 m  (25s)
+epoch 11  train loss 0.0326  validation error 1.213 m  (25s)
+epoch 12  train loss 0.0322  validation error 1.230 m  (24s)
+epoch 13  train loss 0.0321  validation error 1.227 m  (25s)
+epoch 14  train loss 0.0319  validation error 1.221 m  (25s)
+early stop: no improvement for 3 epochs; best was epoch 11
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOH     held-out real  |           1.09   2.94   1.50   |        3.01   6.44   5.67
+match_001  simulated      |           2.12   3.42   2.15   |        4.23   6.53   5.49
+match_002  simulated      |           2.40   3.62   2.46   |        4.47   6.42   5.79
+match_003  simulated      |           2.65   3.91   2.68   |        4.71   6.78   6.27
+match_004  simulated      |           2.29   3.53   2.42   |        4.52   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        4.25   6.36   5.65
+match_006  simulated      |           2.82   4.10   2.86   |        4.88   6.70   6.88
+match_007  simulated      |           2.67   3.81   2.73   |        4.42   6.42   6.84
+match_008  simulated      |           2.23   3.45   2.30   |        5.00   6.56   6.42
+match_009  simulated      |           2.65   3.95   2.69   |        4.47   6.66   6.08
+match_010  simulated      |           2.12   3.28   2.20   |        4.43   6.52   6.22
+match_011  simulated      |           2.55   3.81   2.61   |        4.72   6.52   6.19
+match_012  simulated      |           2.54   3.89   2.58   |        4.87   6.67   6.46
+easy_001   simulated      |           2.32   3.45   2.42   |        4.34   6.35   6.40
+easy_002   simulated      |           2.19   3.48   2.24   |        4.09   6.65   5.28
+easy_003   simulated      |           2.61   3.70   2.69   |        4.14   6.31   5.75
+easy_004   simulated      |           2.48   3.70   2.56   |        4.41   6.55   6.50
+easy_005   simulated      |           2.21   3.47   2.28   |        4.25   6.47   5.62
+easy_006   simulated      |           2.29   3.56   2.34   |        4.62   6.65   6.40
+easy_007   simulated      |           2.36   3.61   2.42   |        4.38   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        4.14   6.50   5.54
+hard_001   simulated      |           2.65   3.82   2.69   |        4.75   6.73   6.76
+hard_002   simulated      |           2.99   4.04   3.10   |        5.33   6.52   7.85
+hard_003   simulated      |           2.63   3.95   2.64   |        4.92   6.97   7.20
+hard_004   simulated      |           2.63   3.88   2.67   |        4.70   6.39   6.18
+hard_005   simulated      |           2.66   3.89   2.72   |        4.95   6.57   6.56
+hard_006   simulated      |           2.67   4.06   2.68   |        5.05   6.63   6.27
+hard_007   simulated      |           2.52   3.79   2.60   |        4.88   6.58   6.37
+hard_008   simulated      |           2.52   3.81   2.59   |        4.32   6.54   5.95
+competition_001 simulated      |           2.66   3.98   2.72   |        4.60   6.46   6.16
+competition_002 simulated      |           2.06   3.39   2.10   |        4.11   6.41   5.41
+competition_003 simulated      |           2.77   4.02   2.84   |        4.66   6.45   6.71
+competition_004 simulated      |           2.47   3.67   2.54   |        4.51   6.38   6.35
+competition_005 simulated      |           2.71   3.93   2.76   |        5.07   6.75   6.94
+competition_006 simulated      |           2.71   3.92   2.77   |        4.90   6.46   6.77
+competition_007 simulated      |           2.81   3.85   2.95   |        5.12   6.60   7.50
+competition_008 simulated      |           2.53   3.76   2.61   |        4.79   6.47   6.51
+
+run finished in 5.9 min after 14 epochs; logged to outputs/run_log.csv
+----- 8/14 done, 42 min so far, about 31 min to go
+
+===== run 9/14: pass_raw, hold out J03WQQ, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WOY', 'J03WR9'] | held-out real: J03WQQ | simulated matches to evaluate: 36
+windows for training: 18225 | for early stopping: 2028
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0539  validation error 1.394 m  (24s)
+epoch  2  train loss 0.0388  validation error 1.311 m  (25s)
+epoch  3  train loss 0.0374  validation error 1.273 m  (24s)
+epoch  4  train loss 0.0363  validation error 1.284 m  (27s)
+epoch  5  train loss 0.0358  validation error 1.264 m  (27s)
+epoch  6  train loss 0.0351  validation error 1.242 m  (27s)
+epoch  7  train loss 0.0342  validation error 1.246 m  (28s)
+epoch  8  train loss 0.0334  validation error 1.254 m  (27s)
+epoch  9  train loss 0.0330  validation error 1.260 m  (24s)
+early stop: no improvement for 3 epochs; best was epoch 6
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WQQ     held-out real  |           1.14   2.88   1.51   |        3.48   6.61   6.44
+match_001  simulated      |           2.14   3.42   2.15   |        4.56   6.53   5.49
+match_002  simulated      |           2.43   3.62   2.46   |        4.58   6.42   5.79
+match_003  simulated      |           2.67   3.91   2.68   |        4.83   6.78   6.27
+match_004  simulated      |           2.33   3.53   2.42   |        4.68   6.47   6.28
+match_005  simulated      |           2.44   3.63   2.48   |        4.51   6.36   5.65
+match_006  simulated      |           2.85   4.10   2.86   |        5.10   6.70   6.88
+match_007  simulated      |           2.69   3.81   2.73   |        4.82   6.42   6.84
+match_008  simulated      |           2.26   3.45   2.30   |        5.21   6.56   6.42
+match_009  simulated      |           2.67   3.95   2.69   |        4.79   6.66   6.08
+match_010  simulated      |           2.14   3.28   2.20   |        4.60   6.52   6.22
+match_011  simulated      |           2.58   3.81   2.61   |        4.94   6.52   6.19
+match_012  simulated      |           2.59   3.89   2.58   |        5.05   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.58   6.35   6.40
+easy_002   simulated      |           2.22   3.48   2.24   |        4.25   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.35   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.68   6.55   6.50
+easy_005   simulated      |           2.23   3.47   2.28   |        4.56   6.47   5.62
+easy_006   simulated      |           2.30   3.56   2.34   |        4.73   6.65   6.40
+easy_007   simulated      |           2.39   3.61   2.42   |        4.69   6.70   6.08
+easy_008   simulated      |           2.22   3.52   2.22   |        4.27   6.50   5.54
+hard_001   simulated      |           2.67   3.82   2.69   |        4.95   6.73   6.76
+hard_002   simulated      |           3.01   4.04   3.10   |        5.55   6.52   7.85
+hard_003   simulated      |           2.66   3.95   2.64   |        5.24   6.97   7.20
+hard_004   simulated      |           2.66   3.88   2.67   |        4.93   6.39   6.18
+hard_005   simulated      |           2.69   3.89   2.72   |        5.07   6.57   6.56
+hard_006   simulated      |           2.71   4.06   2.68   |        5.10   6.63   6.27
+hard_007   simulated      |           2.55   3.79   2.60   |        5.20   6.58   6.37
+hard_008   simulated      |           2.55   3.81   2.59   |        4.48   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.80   6.46   6.16
+competition_002 simulated      |           2.08   3.39   2.10   |        4.45   6.41   5.41
+competition_003 simulated      |           2.80   4.02   2.84   |        5.04   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.81   6.38   6.35
+competition_005 simulated      |           2.73   3.93   2.76   |        5.37   6.75   6.94
+competition_006 simulated      |           2.74   3.92   2.77   |        5.08   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        5.42   6.60   7.50
+competition_008 simulated      |           2.56   3.76   2.61   |        5.07   6.47   6.51
+
+run finished in 4.0 min after 9 epochs; logged to outputs/run_log.csv
+----- 9/14 done, 46 min so far, about 26 min to go
+
+===== run 10/14: pass_shuffle, hold out J03WQQ, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WOY', 'J03WR9'] | held-out real: J03WQQ | simulated matches to evaluate: 36
+windows for training: 18225 | for early stopping: 2028
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0540  validation error 1.386 m  (24s)
+epoch  2  train loss 0.0389  validation error 1.316 m  (25s)
+epoch  3  train loss 0.0374  validation error 1.279 m  (25s)
+epoch  4  train loss 0.0364  validation error 1.280 m  (24s)
+epoch  5  train loss 0.0359  validation error 1.265 m  (25s)
+epoch  6  train loss 0.0352  validation error 1.249 m  (24s)
+epoch  7  train loss 0.0343  validation error 1.245 m  (24s)
+epoch  8  train loss 0.0335  validation error 1.257 m  (25s)
+epoch  9  train loss 0.0331  validation error 1.255 m  (24s)
+early stop: no improvement for 3 epochs; best was epoch 7
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WQQ     held-out real  |           1.14   2.88   1.51   |        3.37   6.61   6.44
+match_001  simulated      |           2.12   3.42   2.15   |        4.57   6.53   5.49
+match_002  simulated      |           2.41   3.62   2.46   |        4.68   6.42   5.79
+match_003  simulated      |           2.66   3.91   2.68   |        4.94   6.78   6.27
+match_004  simulated      |           2.31   3.53   2.42   |        4.78   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        4.52   6.36   5.65
+match_006  simulated      |           2.83   4.10   2.86   |        5.20   6.70   6.88
+match_007  simulated      |           2.68   3.81   2.73   |        4.82   6.42   6.84
+match_008  simulated      |           2.25   3.45   2.30   |        5.27   6.56   6.42
+match_009  simulated      |           2.66   3.95   2.69   |        4.79   6.66   6.08
+match_010  simulated      |           2.13   3.28   2.20   |        4.61   6.52   6.22
+match_011  simulated      |           2.57   3.81   2.61   |        5.08   6.52   6.19
+match_012  simulated      |           2.57   3.89   2.58   |        5.05   6.67   6.46
+easy_001   simulated      |           2.33   3.45   2.42   |        4.55   6.35   6.40
+easy_002   simulated      |           2.20   3.48   2.24   |        4.23   6.65   5.28
+easy_003   simulated      |           2.61   3.70   2.69   |        4.34   6.31   5.75
+easy_004   simulated      |           2.48   3.70   2.56   |        4.72   6.55   6.50
+easy_005   simulated      |           2.22   3.47   2.28   |        4.51   6.47   5.62
+easy_006   simulated      |           2.29   3.56   2.34   |        4.78   6.65   6.40
+easy_007   simulated      |           2.38   3.61   2.42   |        4.69   6.70   6.08
+easy_008   simulated      |           2.20   3.52   2.22   |        4.31   6.50   5.54
+hard_001   simulated      |           2.66   3.82   2.69   |        5.02   6.73   6.76
+hard_002   simulated      |           2.99   4.04   3.10   |        5.62   6.52   7.85
+hard_003   simulated      |           2.64   3.95   2.64   |        5.31   6.97   7.20
+hard_004   simulated      |           2.63   3.88   2.67   |        4.94   6.39   6.18
+hard_005   simulated      |           2.66   3.89   2.72   |        5.20   6.57   6.56
+hard_006   simulated      |           2.69   4.06   2.68   |        5.21   6.63   6.27
+hard_007   simulated      |           2.54   3.79   2.60   |        5.20   6.58   6.37
+hard_008   simulated      |           2.53   3.81   2.59   |        4.53   6.54   5.95
+competition_001 simulated      |           2.66   3.98   2.72   |        4.87   6.46   6.16
+competition_002 simulated      |           2.07   3.39   2.10   |        4.46   6.41   5.41
+competition_003 simulated      |           2.78   4.02   2.84   |        4.98   6.45   6.71
+competition_004 simulated      |           2.48   3.67   2.54   |        4.84   6.38   6.35
+competition_005 simulated      |           2.71   3.93   2.76   |        5.39   6.75   6.94
+competition_006 simulated      |           2.72   3.92   2.77   |        5.12   6.46   6.77
+competition_007 simulated      |           2.82   3.85   2.95   |        5.43   6.60   7.50
+competition_008 simulated      |           2.54   3.76   2.61   |        5.11   6.47   6.51
+
+run finished in 3.9 min after 9 epochs; logged to outputs/run_log.csv
+----- 10/14 done, 50 min so far, about 20 min to go
+
+===== run 11/14: pass_raw, hold out J03WOY, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WR9'] | held-out real: J03WOY | simulated matches to evaluate: 36
+windows for training: 18351 | for early stopping: 2042
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0540  validation error 1.421 m  (24s)
+epoch  2  train loss 0.0389  validation error 1.338 m  (24s)
+epoch  3  train loss 0.0375  validation error 1.299 m  (24s)
+epoch  4  train loss 0.0362  validation error 1.295 m  (24s)
+epoch  5  train loss 0.0356  validation error 1.277 m  (24s)
+epoch  6  train loss 0.0348  validation error 1.314 m  (25s)
+epoch  7  train loss 0.0344  validation error 1.275 m  (24s)
+epoch  8  train loss 0.0335  validation error 1.275 m  (24s)
+early stop: no improvement for 3 epochs; best was epoch 7
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOY     held-out real  |           1.16   2.93   1.52   |        3.25   6.46   5.86
+match_001  simulated      |           2.13   3.42   2.15   |        4.12   6.53   5.49
+match_002  simulated      |           2.42   3.62   2.46   |        4.22   6.42   5.79
+match_003  simulated      |           2.67   3.91   2.68   |        4.45   6.78   6.27
+match_004  simulated      |           2.32   3.53   2.42   |        4.31   6.47   6.28
+match_005  simulated      |           2.44   3.63   2.48   |        4.05   6.36   5.65
+match_006  simulated      |           2.86   4.10   2.86   |        4.63   6.70   6.88
+match_007  simulated      |           2.69   3.81   2.73   |        4.33   6.42   6.84
+match_008  simulated      |           2.26   3.45   2.30   |        4.73   6.56   6.42
+match_009  simulated      |           2.67   3.95   2.69   |        4.30   6.66   6.08
+match_010  simulated      |           2.15   3.28   2.20   |        4.22   6.52   6.22
+match_011  simulated      |           2.58   3.81   2.61   |        4.50   6.52   6.19
+match_012  simulated      |           2.58   3.89   2.58   |        4.57   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.12   6.35   6.40
+easy_002   simulated      |           2.21   3.48   2.24   |        3.88   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.02   6.31   5.75
+easy_004   simulated      |           2.49   3.70   2.56   |        4.22   6.55   6.50
+easy_005   simulated      |           2.22   3.47   2.28   |        4.14   6.47   5.62
+easy_006   simulated      |           2.30   3.56   2.34   |        4.40   6.65   6.40
+easy_007   simulated      |           2.38   3.61   2.42   |        4.24   6.70   6.08
+easy_008   simulated      |           2.21   3.52   2.22   |        3.90   6.50   5.54
+hard_001   simulated      |           2.68   3.82   2.69   |        4.49   6.73   6.76
+hard_002   simulated      |           3.02   4.04   3.10   |        5.15   6.52   7.85
+hard_003   simulated      |           2.65   3.95   2.64   |        4.84   6.97   7.20
+hard_004   simulated      |           2.65   3.88   2.67   |        4.47   6.39   6.18
+hard_005   simulated      |           2.68   3.89   2.72   |        4.61   6.57   6.56
+hard_006   simulated      |           2.71   4.06   2.68   |        4.79   6.63   6.27
+hard_007   simulated      |           2.55   3.79   2.60   |        4.74   6.58   6.37
+hard_008   simulated      |           2.54   3.81   2.59   |        4.12   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.30   6.46   6.16
+competition_002 simulated      |           2.08   3.39   2.10   |        3.97   6.41   5.41
+competition_003 simulated      |           2.79   4.02   2.84   |        4.46   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.46   6.38   6.35
+competition_005 simulated      |           2.72   3.93   2.76   |        4.89   6.75   6.94
+competition_006 simulated      |           2.74   3.92   2.77   |        4.58   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        4.96   6.60   7.50
+competition_008 simulated      |           2.56   3.76   2.61   |        4.56   6.47   6.51
+
+run finished in 3.4 min after 8 epochs; logged to outputs/run_log.csv
+----- 11/14 done, 53 min so far, about 15 min to go
+
+===== run 12/14: pass_shuffle, hold out J03WOY, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WR9'] | held-out real: J03WOY | simulated matches to evaluate: 36
+windows for training: 18351 | for early stopping: 2042
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0540  validation error 1.418 m  (26s)
+epoch  2  train loss 0.0388  validation error 1.340 m  (26s)
+epoch  3  train loss 0.0375  validation error 1.307 m  (25s)
+epoch  4  train loss 0.0363  validation error 1.292 m  (25s)
+epoch  5  train loss 0.0358  validation error 1.293 m  (26s)
+epoch  6  train loss 0.0350  validation error 1.320 m  (26s)
+epoch  7  train loss 0.0347  validation error 1.274 m  (26s)
+epoch  8  train loss 0.0338  validation error 1.280 m  (25s)
+epoch  9  train loss 0.0334  validation error 1.293 m  (27s)
+epoch 10  train loss 0.0328  validation error 1.234 m  (26s)
+epoch 11  train loss 0.0325  validation error 1.230 m  (25s)
+epoch 12  train loss 0.0324  validation error 1.268 m  (26s)
+epoch 13  train loss 0.0321  validation error 1.251 m  (25s)
+early stop: no improvement for 3 epochs; best was epoch 11
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WOY     held-out real  |           1.11   2.93   1.52   |        3.17   6.46   5.86
+match_001  simulated      |           2.11   3.42   2.15   |        4.03   6.53   5.49
+match_002  simulated      |           2.40   3.62   2.46   |        4.23   6.42   5.79
+match_003  simulated      |           2.66   3.91   2.68   |        4.37   6.78   6.27
+match_004  simulated      |           2.30   3.53   2.42   |        4.26   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        3.96   6.36   5.65
+match_006  simulated      |           2.83   4.10   2.86   |        4.60   6.70   6.88
+match_007  simulated      |           2.67   3.81   2.73   |        4.22   6.42   6.84
+match_008  simulated      |           2.24   3.45   2.30   |        4.64   6.56   6.42
+match_009  simulated      |           2.65   3.95   2.69   |        4.20   6.66   6.08
+match_010  simulated      |           2.12   3.28   2.20   |        4.12   6.52   6.22
+match_011  simulated      |           2.56   3.81   2.61   |        4.31   6.52   6.19
+match_012  simulated      |           2.56   3.89   2.58   |        4.47   6.67   6.46
+easy_001   simulated      |           2.32   3.45   2.42   |        4.02   6.35   6.40
+easy_002   simulated      |           2.20   3.48   2.24   |        3.80   6.65   5.28
+easy_003   simulated      |           2.60   3.70   2.69   |        3.92   6.31   5.75
+easy_004   simulated      |           2.48   3.70   2.56   |        4.18   6.55   6.50
+easy_005   simulated      |           2.21   3.47   2.28   |        3.93   6.47   5.62
+easy_006   simulated      |           2.28   3.56   2.34   |        4.38   6.65   6.40
+easy_007   simulated      |           2.37   3.61   2.42   |        4.03   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        3.87   6.50   5.54
+hard_001   simulated      |           2.65   3.82   2.69   |        4.41   6.73   6.76
+hard_002   simulated      |           2.99   4.04   3.10   |        5.01   6.52   7.85
+hard_003   simulated      |           2.63   3.95   2.64   |        4.68   6.97   7.20
+hard_004   simulated      |           2.63   3.88   2.67   |        4.40   6.39   6.18
+hard_005   simulated      |           2.66   3.89   2.72   |        4.59   6.57   6.56
+hard_006   simulated      |           2.69   4.06   2.68   |        4.81   6.63   6.27
+hard_007   simulated      |           2.53   3.79   2.60   |        4.56   6.58   6.37
+hard_008   simulated      |           2.52   3.81   2.59   |        4.04   6.54   5.95
+competition_001 simulated      |           2.66   3.98   2.72   |        4.32   6.46   6.16
+competition_002 simulated      |           2.06   3.39   2.10   |        3.95   6.41   5.41
+competition_003 simulated      |           2.78   4.02   2.84   |        4.37   6.45   6.71
+competition_004 simulated      |           2.48   3.67   2.54   |        4.28   6.38   6.35
+competition_005 simulated      |           2.70   3.93   2.76   |        4.79   6.75   6.94
+competition_006 simulated      |           2.71   3.92   2.77   |        4.60   6.46   6.77
+competition_007 simulated      |           2.81   3.85   2.95   |        4.73   6.60   7.50
+competition_008 simulated      |           2.53   3.76   2.61   |        4.48   6.47   6.51
+
+run finished in 5.8 min after 13 epochs; logged to outputs/run_log.csv
+----- 12/14 done, 59 min so far, about 10 min to go
+
+===== run 13/14: pass_raw, hold out J03WR9, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY'] | held-out real: J03WR9 | simulated matches to evaluate: 36
+windows for training: 18350 | for early stopping: 2042
+architecture: pass_raw  (103,586 parameters)
+epoch  1  train loss 0.0532  validation error 1.326 m  (23s)
+epoch  2  train loss 0.0390  validation error 1.265 m  (24s)
+epoch  3  train loss 0.0377  validation error 1.245 m  (25s)
+epoch  4  train loss 0.0368  validation error 1.227 m  (23s)
+epoch  5  train loss 0.0360  validation error 1.201 m  (25s)
+epoch  6  train loss 0.0351  validation error 1.206 m  (24s)
+epoch  7  train loss 0.0344  validation error 1.186 m  (25s)
+epoch  8  train loss 0.0336  validation error 1.211 m  (26s)
+epoch  9  train loss 0.0333  validation error 1.174 m  (25s)
+epoch 10  train loss 0.0329  validation error 1.160 m  (27s)
+epoch 11  train loss 0.0326  validation error 1.157 m  (35s)
+epoch 12  train loss 0.0322  validation error 1.146 m  (26s)
+epoch 13  train loss 0.0319  validation error 1.152 m  (24s)
+epoch 14  train loss 0.0318  validation error 1.145 m  (25s)
+epoch 15  train loss 0.0316  validation error 1.188 m  (26s)
+early stop: no improvement for 3 epochs; best was epoch 14
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WR9     held-out real  |           1.12   2.84   1.51   |        3.06   6.48   6.17
+match_001  simulated      |           2.13   3.42   2.15   |        4.17   6.53   5.49
+match_002  simulated      |           2.42   3.62   2.46   |        4.46   6.42   5.79
+match_003  simulated      |           2.66   3.91   2.68   |        4.67   6.78   6.27
+match_004  simulated      |           2.31   3.53   2.42   |        4.45   6.47   6.28
+match_005  simulated      |           2.42   3.63   2.48   |        4.16   6.36   5.65
+match_006  simulated      |           2.84   4.10   2.86   |        4.90   6.70   6.88
+match_007  simulated      |           2.69   3.81   2.73   |        4.48   6.42   6.84
+match_008  simulated      |           2.25   3.45   2.30   |        4.82   6.56   6.42
+match_009  simulated      |           2.66   3.95   2.69   |        4.35   6.66   6.08
+match_010  simulated      |           2.14   3.28   2.20   |        4.32   6.52   6.22
+match_011  simulated      |           2.56   3.81   2.61   |        4.61   6.52   6.19
+match_012  simulated      |           2.57   3.89   2.58   |        4.79   6.67   6.46
+easy_001   simulated      |           2.35   3.45   2.42   |        4.27   6.35   6.40
+easy_002   simulated      |           2.20   3.48   2.24   |        4.01   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.10   6.31   5.75
+easy_004   simulated      |           2.50   3.70   2.56   |        4.39   6.55   6.50
+easy_005   simulated      |           2.22   3.47   2.28   |        4.16   6.47   5.62
+easy_006   simulated      |           2.30   3.56   2.34   |        4.49   6.65   6.40
+easy_007   simulated      |           2.37   3.61   2.42   |        4.31   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        4.07   6.50   5.54
+hard_001   simulated      |           2.66   3.82   2.69   |        4.65   6.73   6.76
+hard_002   simulated      |           3.01   4.04   3.10   |        5.34   6.52   7.85
+hard_003   simulated      |           2.64   3.95   2.64   |        4.91   6.97   7.20
+hard_004   simulated      |           2.66   3.88   2.67   |        4.71   6.39   6.18
+hard_005   simulated      |           2.68   3.89   2.72   |        4.88   6.57   6.56
+hard_006   simulated      |           2.69   4.06   2.68   |        5.08   6.63   6.27
+hard_007   simulated      |           2.54   3.79   2.60   |        4.87   6.58   6.37
+hard_008   simulated      |           2.54   3.81   2.59   |        4.26   6.54   5.95
+competition_001 simulated      |           2.68   3.98   2.72   |        4.55   6.46   6.16
+competition_002 simulated      |           2.07   3.39   2.10   |        4.09   6.41   5.41
+competition_003 simulated      |           2.79   4.02   2.84   |        4.61   6.45   6.71
+competition_004 simulated      |           2.49   3.67   2.54   |        4.54   6.38   6.35
+competition_005 simulated      |           2.72   3.93   2.76   |        4.94   6.75   6.94
+competition_006 simulated      |           2.73   3.92   2.77   |        4.83   6.46   6.77
+competition_007 simulated      |           2.84   3.85   2.95   |        5.13   6.60   7.50
+competition_008 simulated      |           2.56   3.76   2.61   |        4.82   6.47   6.51
+
+run finished in 6.6 min after 15 epochs; logged to outputs/run_log.csv
+----- 13/14 done, 66 min so far, about 5 min to go
+
+===== run 14/14: pass_shuffle, hold out J03WR9, seed 0 =====
+train on: ['J03WMX', 'J03WN1', 'J03WPY', 'J03WOH', 'J03WQQ', 'J03WOY'] | held-out real: J03WR9 | simulated matches to evaluate: 36
+windows for training: 18350 | for early stopping: 2042
+architecture: pass_shuffle  (103,586 parameters)
+epoch  1  train loss 0.0531  validation error 1.327 m  (24s)
+epoch  2  train loss 0.0391  validation error 1.273 m  (25s)
+epoch  3  train loss 0.0377  validation error 1.250 m  (24s)
+epoch  4  train loss 0.0368  validation error 1.225 m  (25s)
+epoch  5  train loss 0.0360  validation error 1.202 m  (27s)
+epoch  6  train loss 0.0352  validation error 1.214 m  (26s)
+epoch  7  train loss 0.0346  validation error 1.191 m  (25s)
+epoch  8  train loss 0.0338  validation error 1.214 m  (24s)
+epoch  9  train loss 0.0334  validation error 1.182 m  (28s)
+epoch 10  train loss 0.0332  validation error 1.166 m  (24s)
+epoch 11  train loss 0.0328  validation error 1.162 m  (26s)
+epoch 12  train loss 0.0324  validation error 1.154 m  (25s)
+epoch 13  train loss 0.0321  validation error 1.159 m  (26s)
+epoch 14  train loss 0.0321  validation error 1.154 m  (25s)
+epoch 15  train loss 0.0318  validation error 1.172 m  (26s)
+early stop: no improvement for 3 epochs; best was epoch 14
+
+Mean error in metres between predicted and actual movement to the next Key State (lower is better)
+match      kind           | players: model  still  keep-vel | ball: model  still  keep-vel
+J03WR9     held-out real  |           1.12   2.84   1.51   |        3.08   6.48   6.17
+match_001  simulated      |           2.12   3.42   2.15   |        4.22   6.53   5.49
+match_002  simulated      |           2.41   3.62   2.46   |        4.52   6.42   5.79
+match_003  simulated      |           2.65   3.91   2.68   |        4.69   6.78   6.27
+match_004  simulated      |           2.30   3.53   2.42   |        4.58   6.47   6.28
+match_005  simulated      |           2.41   3.63   2.48   |        4.25   6.36   5.65
+match_006  simulated      |           2.82   4.10   2.86   |        5.00   6.70   6.88
+match_007  simulated      |           2.68   3.81   2.73   |        4.53   6.42   6.84
+match_008  simulated      |           2.24   3.45   2.30   |        4.97   6.56   6.42
+match_009  simulated      |           2.64   3.95   2.69   |        4.42   6.66   6.08
+match_010  simulated      |           2.14   3.28   2.20   |        4.43   6.52   6.22
+match_011  simulated      |           2.56   3.81   2.61   |        4.71   6.52   6.19
+match_012  simulated      |           2.56   3.89   2.58   |        4.80   6.67   6.46
+easy_001   simulated      |           2.34   3.45   2.42   |        4.29   6.35   6.40
+easy_002   simulated      |           2.19   3.48   2.24   |        4.07   6.65   5.28
+easy_003   simulated      |           2.62   3.70   2.69   |        4.14   6.31   5.75
+easy_004   simulated      |           2.48   3.70   2.56   |        4.44   6.55   6.50
+easy_005   simulated      |           2.21   3.47   2.28   |        4.28   6.47   5.62
+easy_006   simulated      |           2.29   3.56   2.34   |        4.59   6.65   6.40
+easy_007   simulated      |           2.37   3.61   2.42   |        4.42   6.70   6.08
+easy_008   simulated      |           2.19   3.52   2.22   |        4.12   6.50   5.54
+hard_001   simulated      |           2.65   3.82   2.69   |        4.78   6.73   6.76
+hard_002   simulated      |           3.00   4.04   3.10   |        5.33   6.52   7.85
+hard_003   simulated      |           2.63   3.95   2.64   |        4.98   6.97   7.20
+hard_004   simulated      |           2.64   3.88   2.67   |        4.71   6.39   6.18
+hard_005   simulated      |           2.67   3.89   2.72   |        4.94   6.57   6.56
+hard_006   simulated      |           2.68   4.06   2.68   |        5.13   6.63   6.27
+hard_007   simulated      |           2.53   3.79   2.60   |        4.96   6.58   6.37
+hard_008   simulated      |           2.52   3.81   2.59   |        4.33   6.54   5.95
+competition_001 simulated      |           2.67   3.98   2.72   |        4.58   6.46   6.16
+competition_002 simulated      |           2.07   3.39   2.10   |        4.13   6.41   5.41
+competition_003 simulated      |           2.78   4.02   2.84   |        4.68   6.45   6.71
+competition_004 simulated      |           2.48   3.67   2.54   |        4.61   6.38   6.35
+competition_005 simulated      |           2.72   3.93   2.76   |        5.09   6.75   6.94
+competition_006 simulated      |           2.72   3.92   2.77   |        4.94   6.46   6.77
+competition_007 simulated      |           2.83   3.85   2.95   |        5.17   6.60   7.50
+competition_008 simulated      |           2.54   3.76   2.61   |        4.86   6.47   6.51
+
+run finished in 6.6 min after 15 epochs; logged to outputs/run_log.csv
+----- 14/14 done, 73 min so far, about 0 min to go
+
+runs per network and held-out match (seeds):
+arch     ours  pass_raw  pass_shuffle
+holdout                              
+J03WMX      1         1             1
+J03WN1      1         1             1
+J03WOH      1         1             1
+J03WOY      1         1             1
+J03WPY      1         1             1
+J03WQQ      1         1             1
+J03WR9      1         1             1
+
+7 matches with all three networks; seeds per network: {'ours': 1, 'pass_raw': 1, 'pass_shuffle': 1}
+
+== player error (m): error of each network (mean over seeds) ==
+arch      ours  pass_raw  pass_shuffle
+holdout                               
+J03WMX   1.093     1.076         1.081
+J03WN1   1.238     1.209         1.221
+J03WOH   1.088     1.085         1.086
+J03WOY   1.158     1.157         1.110
+J03WPY   1.124     1.105         1.108
+J03WQQ   1.152     1.142         1.141
+J03WR9   1.124     1.116         1.121
+
+== ball error (m): error of each network (mean over seeds) ==
+arch      ours  pass_raw  pass_shuffle
+holdout                               
+J03WMX   3.278     3.258         3.295
+J03WN1   3.785     3.376         3.379
+J03WOH   2.954     2.965         3.010
+J03WOY   3.463     3.254         3.170
+J03WPY   3.431     3.228         3.218
+J03WQQ   3.469     3.483         3.367
+J03WR9   3.106     3.060         3.081
+
+PAIRED DIFFERENCES (negative = the first network is better)
+
+          metric                               comparison  mean_diff  ci_low  ci_high better_in_matches  p_sign_flip
+player error (m)                B pass edges minus A ours     -0.012  -0.019   -0.006               7/7        0.016
+player error (m) B pass edges minus C shuffled pass edges      0.003  -0.006    0.018               5/7        0.984
+player error (m)       C shuffled pass edges minus A ours     -0.016  -0.027   -0.007               7/7        0.016
+  ball error (m)                B pass edges minus A ours     -0.123  -0.238   -0.028               5/7        0.078
+  ball error (m) B pass edges minus C shuffled pass edges      0.015  -0.024    0.058               4/7        0.547
+  ball error (m)       C shuffled pass edges minus A ours     -0.138  -0.259   -0.027               5/7        0.094
+
+VERDICT
+  player error (m)   B beats A but not the shuffled control: the gain is extra capacity, not pass information
+  ball error (m)     B beats A but not the shuffled control: the gain is extra capacity, not pass information
+
+saved outputs/prove_pass_edges.csv and outputs/prove_pass_edges.png

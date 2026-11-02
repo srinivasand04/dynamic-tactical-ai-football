@@ -1,0 +1,37 @@
+64 matches with graphs; teams: Argentina (7), France (7)
+test matches: {'Argentina': ('10517', 'home'), 'France': ('10515', 'home')} | training matches: 62
+
+POOLED model on 173119 windows of 62 matches
+  [pooled] epoch  1  loss 0.0237  validation 0.653 m  (476s)
+  [pooled] epoch  2  loss 0.0180  validation 0.531 m  (2614s)
+  [pooled] epoch  3  loss 0.0171  validation 1.098 m  (383s)
+
+TEAM model Argentina: 6 matches, 16561 windows | control: 7 matches of other teams
+  [Argentina] epoch  1  loss 0.0079  validation 0.467 m  (38s)
+  [Argentina] epoch  2  loss 0.0078  validation 0.452 m  (37s)
+  [control Argentina] epoch  1  loss 0.0078  validation 0.440 m  (36s)
+  [control Argentina] epoch  2  loss 0.0076  validation 0.451 m  (36s)
+
+TEAM model France: 5 matches, 14003 windows | control: 5 matches of other teams
+  [France] epoch  1  loss 0.0079  validation 0.468 m  (30s)
+  [France] epoch  2  loss 0.0077  validation 0.461 m  (30s)
+  [control France] epoch  1  loss 0.0081  validation 0.511 m  (31s)
+  [control France] epoch  2  loss 0.0080  validation 0.494 m  (33s)
+
+ERROR (m) of each model (row) on each team's test match (column); lower is better
+
+test_team          Argentina  France
+model                               
+Argentina              0.421   0.497
+France                 0.441   0.490
+control:Argentina      0.428   0.498
+control:France         0.448   0.484
+pooled                 0.509   0.560
+
+CHANGE versus the pooled model (m; negative = better)
+team           | own match: team model  control | other teams' matches: team model  control
+Argentina      |            -0.088  -0.081   |                          -0.063  -0.062
+France         |            -0.070  -0.076   |                          -0.068  -0.061
+
+mean: own match team model -0.079 (control -0.079), other teams -0.066 (control -0.062)
+finished in 63 min; wrote outputs/team_models_pff.csv

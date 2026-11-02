@@ -1,0 +1,24 @@
+goal replay at 3614.0 s (index 1140)
+   3500.0 s  (0/1800 frames)
+   3510.0 s  (100/1800 frames)
+   3520.0 s  (200/1800 frames)
+   3530.0 s  (300/1800 frames)
+   3540.0 s  (400/1800 frames)
+   3550.0 s  (500/1800 frames)
+   3560.0 s  (600/1800 frames)
+   3570.0 s  (700/1800 frames)
+   3580.0 s  (800/1800 frames)
+   3590.0 s  (900/1800 frames)
+   3600.0 s  (1000/1800 frames)
+   3610.0 s  (1100/1800 frames)
+  goal window: GOAL scored in GRF
+   3620.2 s  (1202/1800 frames)
+   3630.2 s  (1302/1800 frames)
+   3640.2 s  (1402/1800 frames)
+   3650.2 s  (1502/1800 frames)
+   3660.2 s  (1602/1800 frames)
+   3670.2 s  (1702/1800 frames)
+wrote outputs/goal_3min_GRF.mp4
+
+GRF vs the real stretch (180 s): players 0.54 m mean error (95% of players within 1.1 m), ball 1.43 m mean error
+wrote outputs/grf_match_J03WOH_3500.npz
