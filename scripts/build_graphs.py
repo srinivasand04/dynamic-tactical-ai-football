@@ -176,7 +176,7 @@ def main():
         dxy[1:][~(present[1:] & present[:-1])] = 0
         dist_ball = np.where(present, D[:, BALL, :], np.nan)
 
-        out = name + ("_graphs.npz" if a.mode == "radius" else "_graphs_delaunay.npz")
+        out = name + ("_graphs.npz" if a.mode == "radius" else "_graphs_delaunay.npz")   # settings.graphs(m) reads the same name
         np.savez_compressed(out, frame=ks["frame"].to_numpy(), ks_id=ks["ks_id"].to_numpy(),
                             time_s=ks["time_s"].to_numpy(), gap_s=ks["gap_s"].fillna(0).to_numpy(), seq_id=seq,
                             xy=xy, vel=vel, role=role, present=present, team=TEAM, dist_ball=dist_ball, dxy_prev=dxy,

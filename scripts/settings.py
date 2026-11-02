@@ -4,6 +4,7 @@
     settings.REAL            -> ['J03WMX', ...]   all real matches, from every dataset with kind 'real'
     settings.SIM             -> ['match_001', ...]
     settings.base(m)         -> 'data/real/processed/J03WMX'        (add '_adaptive_ks.csv', '_graphs.npz', ... to it)
+    settings.graphs(m)       -> '.../J03WMX_graphs_delaunay.npz'   (graph file of the mode set in settings.json)
     settings.csv(m)          -> 'data/real/processed/J03WMX.csv.gz' (the common-format file of that match)
     settings.get('gnn', 'dim')
     settings.dataset(m)      -> 'dfl'
@@ -19,9 +20,38 @@ with open(os.path.join(_ROOT, "settings.json"), encoding="utf-8") as f:
     S = json.load(f)
 
 _DATASETS = S["datasets"]
-REAL = [m for d in _DATASETS.values() if d["kind"] == "real" for m in d["matches"]]
-SIM = [m for d in _DATASETS.values() if d["kind"] == "simulated" for m in d["matches"]]
-_OWNER = {m: name for name, d in _DATASETS.items() for m in d["matches"]}
+
+
+def _matches(d):
+    """A dataset lists its matches in settings.json, or points to a registry csv (column match_id) written by its converter."""
+    if "matches" in d:
+        return d["matches"]
+    reg = os.path.join(_ROOT, d["registry"])
+    if not os.path.exists(reg):
+        return []
+    import csv as _csv
+    with open(reg, encoding="utf-8") as f:
+        return [r["match_id"] for r in _csv.DictReader(f)]
+
+
+_MATCHES = {name: _matches(d) for name, d in _DATASETS.items()}
+# 'pool': false keeps a dataset out of the pooled steps (the realism comparison, the DFL folds, the proof runs) so adding
+# a dataset never changes the numbers already reported. Its matches are used by dataset-wise steps (--dataset NAME).
+REAL = [m for n, d in _DATASETS.items() if d["kind"] == "real" and d.get("pool", True) for m in _MATCHES[n]]
+SIM = [m for n, d in _DATASETS.items() if d["kind"] == "simulated" and d.get("pool", True) for m in _MATCHES[n]]
+_OWNER = {m: name for name, ms in _MATCHES.items() for m in ms}
+
+
+def dataset_matches(name):
+    """Matches of one dataset (pooled or not) that have a common-format file on disk."""
+    return [m for m in _MATCHES[name] if exists(m)]
+
+
+def registry(name):
+    """pandas table of one dataset's matches (home, away, score, date, ...) when it has a registry csv, else None."""
+    import pandas as pd
+    reg = _DATASETS[name].get("registry")
+    return pd.read_csv(os.path.join(_ROOT, reg), dtype={"match_id": str}) if reg and os.path.exists(os.path.join(_ROOT, reg)) else None
 
 
 def dataset(m):
@@ -36,6 +66,16 @@ def variant(m):
 
 def base(m):
     return f"{_DATASETS[_OWNER[m]]['dir']}/{m}"
+
+
+def graph_suffix():
+    """'' for radius graphs, '_delaunay' for Delaunay graphs: set once in settings.json under graph.mode."""
+    return "" if S.get("graph", {}).get("mode", "radius") == "radius" else "_delaunay"
+
+
+def graphs(m):
+    """The graph file of match m for the graph mode chosen in settings.json."""
+    return f"{base(m)}_graphs{graph_suffix()}.npz"
 
 
 def csv(m):

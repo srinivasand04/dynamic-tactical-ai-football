@@ -9,6 +9,22 @@
       "file_ext": ".csv.gz",
       "matches": ["J03WMX", "J03WN1", "J03WPY", "J03WOH", "J03WQQ", "J03WOY", "J03WR9"]
     },
+    "pff": {
+      "kind": "real",
+      "pool": false,
+      "source": "PFF FC World Cup 2022 (broadcast-derived tracking, national teams; convert_pff.py)",
+      "dir": "data/pff/processed",
+      "file_ext": ".csv.gz",
+      "registry": "data/pff/matches.csv"
+    },
+    "skillcorner": {
+      "kind": "real",
+      "pool": false,
+      "source": "SkillCorner open data, A-League (broadcast-derived tracking, clubs; convert_skillcorner.py)",
+      "dir": "data/skillcorner/processed",
+      "file_ext": ".csv.gz",
+      "registry": "data/skillcorner/matches.csv"
+    },
     "grf": {
       "kind": "simulated",
       "variant": "stochastic",
@@ -51,7 +67,7 @@
 
   "types": { "clip": 3.0 },
 
-  "graph": { "mode": "radius", "opp_radius_m": 8.0, "ball_k": 3, "team_k": 5 },
+  "graph": { "mode": "delaunay", "opp_radius_m": 8.0, "ball_k": 3, "team_k": 5 },
 
   "gnn": {
     "window": 3,

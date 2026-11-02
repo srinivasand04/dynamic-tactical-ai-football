@@ -27,6 +27,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+import settings
+
 ARMS = {"ours": "A ours", "pass_raw": "B pass edges", "pass_shuffle": "C shuffled pass edges"}
 METRICS = {"real_player_model_m": "player error (m)", "real_ball_model_m": "ball error (m)"}
 COMPARE = [("pass_raw", "ours"), ("pass_raw", "pass_shuffle"), ("pass_shuffle", "ours")]
@@ -37,6 +39,8 @@ def load():
     log = pd.read_csv("outputs/run_log.csv")
     log = log[(log["script"] == "train_gnn") & log["holdout"].notna() & (log["holdout"] != "none") & log["real_player_model_m"].notna()].copy()
     log = log[~log["tag"].astype(str).str.contains("test|smoke", case=False)]
+    if "graphs" in log.columns:                    # compare only runs made with the graph type set in settings.json
+        log = log[log["graphs"].fillna("radius") == settings.get("graph", "mode", default="radius")]
     log["arch"] = log["arch"].fillna("ours") if "arch" in log.columns else "ours"
     log["seed"] = log["seed"].fillna(0).astype(int)
     log = log[log["arch"].isin(ARMS)].sort_values("time").drop_duplicates(["arch", "holdout", "seed"], keep="last")

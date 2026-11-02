@@ -1,0 +1,31 @@
+23 real kicks found in 180 s; 13 look like completed passes, 1 end in a goal
+   3504.4 s  kicker 19  flight  21.1 m  receiver  4 (opponent)  
+   3509.3 s  kicker  4  flight  16.6 m  receiver 14 (opponent)  
+   3513.8 s  kicker 14  flight  17.4 m  receiver 21 (same team)  
+   3532.9 s  kicker  4  flight  15.7 m  receiver  1 (same team)  
+   3535.7 s  kicker  1  flight  31.0 m  receiver  0 (same team)  
+   3547.8 s  kicker  0  flight  28.2 m  receiver  1 (same team)  
+   3551.1 s  kicker  1  flight  28.0 m  receiver  8 (same team)  
+   3553.2 s  kicker  8  flight   5.8 m  receiver  6 (same team)  
+   3554.6 s  kicker  6  flight  15.5 m  receiver 13 (opponent)  
+   3557.6 s  kicker 12  flight   8.0 m  receiver 14 (same team)  
+   3561.5 s  kicker 16  flight   9.4 m  receiver 18 (same team)  
+   3563.1 s  kicker 18  flight   5.8 m  receiver  5 (opponent)  
+  window 0   3500.0 s  (10 steps)
+  window 20   3523.1 s  (6 steps)
+  window 40   3540.4 s  (6 steps)
+  window 60   3565.9 s  (25 steps)
+  window 80   3582.2 s  (10 steps)
+  goal window at 3613.2 s: no goal in any try
+  window 100   3615.6 s  (10 steps)
+  window 120   3630.8 s  (6 steps)
+  window 140   3643.6 s  (6 steps)
+  window 160   3655.5 s  (6 steps)
+  window 180   3667.5 s  (6 steps)
+wrote outputs/pass2_3min_GRF.mp4
+
+197 windows, median length 0.6 s; the re-sync was invisible (ball < 2 m and players < 2 m) in 72% of them; ball jump at the other re-syncs: median 5.0 m, max 41 m
+
+GRF vs the real stretch (180 s): players 1.15 m, ball 3.94 m mean error
+23 kicks scored: GRF ball 6.7 m median (10.1 m mean) from the real ball when it arrived; same receiver 30%, same team 52%
+wrote outputs/grf_pass_J03WOH_3500.npz

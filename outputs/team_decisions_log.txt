@@ -1,0 +1,85 @@
+  3814 Qatar v Ecuador done
+  3813 England v Iran done
+  3815 United States v Wales done
+  3812 Senegal v Netherlands done
+  3818 Mexico v Poland done
+  3819 France v Australia done
+  3816 Argentina v Saudi Arabia done
+  3817 Denmark v Tunisia done
+  3823 Belgium v Canada done
+  3821 Germany v Japan done
+  3822 Spain v Costa Rica done
+  3820 Morocco v Croatia done
+  3826 Portugal v Ghana done
+  3825 Uruguay v South Korea done
+  3824 Switzerland v Cameroon done
+  3827 Brazil v Serbia done
+  3831 England v United States done
+  3830 Netherlands v Ecuador done
+  3828 Wales v Iran done
+  3829 Qatar v Senegal done
+  3835 Argentina v Mexico done
+  3833 Poland v Saudi Arabia done
+  3834 France v Denmark done
+  3832 Tunisia v Australia done
+  3839 Spain v Germany done
+  3838 Croatia v Canada done
+  3837 Belgium v Morocco done
+  3836 Japan v Costa Rica done
+  3841 South Korea v Ghana done
+  3840 Cameroon v Serbia done
+  3843 Portugal v Uruguay done
+  3844 Ecuador v Senegal done
+  3842 Brazil v Switzerland done
+  3846 Wales v England done
+  3847 Iran v United States done
+  3845 Netherlands v Qatar done
+  3851 Saudi Arabia v Mexico done
+  3850 Poland v Argentina done
+  3849 Tunisia v France done
+  3848 Australia v Denmark done
+  3855 Costa Rica v Germany done
+  3854 Japan v Spain done
+  3853 Canada v Morocco done
+  3856 Ghana v Uruguay done
+  3852 Croatia v Belgium done
+  3857 South Korea v Portugal done
+  3859 Cameroon v Brazil done
+  3858 Serbia v Switzerland done
+  10502 Netherlands v United States done
+  10503 Argentina v Australia done
+  10504 France v Poland done
+  10505 England v Senegal done
+  10507 Brazil v South Korea done
+  10506 Japan v Croatia done
+  10508 Morocco v Spain done
+  10509 Portugal v Switzerland done
+  10511 Netherlands v Argentina done
+  10510 Croatia v Brazil done
+  10512 Morocco v Portugal done
+  10513 England v France done
+  10514 Argentina v Croatia done
+  10515 France v Morocco done
+  10516 Croatia v Morocco done
+  10517 Argentina v France done
+
+RECEIVER CHOICE: top-1 accuracy on each team's held-out match (completed passes)
+team         passes | team weights  all-teams weights  nearest teammate  chance
+Argentina       383 |        0.26              0.25              0.21    0.10
+France          237 |        0.35              0.36              0.27    0.10
+Croatia         310 |        0.16              0.16              0.18    0.10
+
+STYLE NUMBERS
+           n_train_passes  hold_s  long_share  shot_dist_m  passes_per_min_possession    kicks
+Argentina          2394.0     1.2        0.25        27.20                      18.34   3404.0
+France             2194.0     1.2        0.24        29.12                      17.99   3015.0
+Croatia            2302.0     1.3        0.29        36.78                      17.89   3287.0
+other             32643.0     1.2        0.28        32.49                      17.84  41975.0
+
+RECEIVER WEIGHTS (forward_gain, distance, sideways, space, lane_open, height_up_pitch)
+  Argentina    +0.05 -0.67 +0.03 +0.44 +0.26 +0.00
+  France       +0.05 -0.69 -0.02 +0.48 +0.30 +0.00
+  Croatia      +0.01 -0.62 +0.04 +0.37 +0.22 +0.00
+  other        +0.02 -0.64 -0.00 +0.46 +0.28 +0.00
+
+wrote outputs/team_policy/pff_decisions.json

@@ -1,0 +1,14 @@
+teams with >= 3 matches: Auckland FC (7), Melbourne V FC (4), CC Mariners (4), Western United (4), Brisbane FC (3), Adelaide United (3), Melbourne City (3), Wellington P FC (3)
+  [all positions] 2007721
+  [only Key States with >= 8 of 10 players seen] 2007721
+
+RESULT
+
+all positions: 31 team-matches, 8 teams, 12 numbers
+  leave-one-match-out team recognition 42%  (chance 12%)
+  most team-specific numbers (ANOVA F, 1 = no difference between teams, bigger = more team-specific): line_own 6.0, width_opp 5.7, mean_x_own 4.8, width_own 4.5
+  mean key states per team-match 3100
+only Key States with >= 8 of 10 players seen: 31 team-matches, 8 teams, 12 numbers
+  leave-one-match-out team recognition 19%  (chance 12%)
+  most team-specific numbers (ANOVA F, 1 = no difference between teams, bigger = more team-specific): length_mid 3.5, line_mid 3.1, mean_x_mid 3.0, line_own 2.5
+  mean key states per team-match 1171

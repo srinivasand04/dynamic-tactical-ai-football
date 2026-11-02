@@ -1,0 +1,13 @@
+test_team,identity_given,error_m,still_m,keepvel_m
+Argentina,Argentina,0.4365,2.5941,0.7155
+Argentina,France,0.4544,2.5941,0.7155
+Argentina,Croatia,0.4501,2.5941,0.7155
+Argentina,other,0.4393,2.5941,0.7155
+France,Argentina,0.504,2.5002,0.7833
+France,France,0.4984,2.5002,0.7833
+France,Croatia,0.5121,2.5002,0.7833
+France,other,0.4973,2.5002,0.7833
+Croatia,Argentina,0.4466,2.4916,0.7416
+Croatia,France,0.4496,2.4916,0.7416
+Croatia,Croatia,0.4565,2.4916,0.7416
+Croatia,other,0.4429,2.4916,0.7416

@@ -35,8 +35,8 @@ import runlog
 import settings
 import train_gnn as T
 
-REAL = [m for m in settings.available(settings.REAL) if os.path.exists(settings.base(m) + "_graphs.npz")]
-SIM = [m for m in settings.available(settings.SIM) if os.path.exists(settings.base(m) + "_graphs.npz")
+REAL = [m for m in settings.available(settings.REAL) if os.path.exists(settings.graphs(m))]
+SIM = [m for m in settings.available(settings.SIM) if os.path.exists(settings.graphs(m))
        and os.path.exists(settings.base(m) + "_sequence_types.csv")]
 MEASURES = ["stoppage_scenes_%", "ball_dead_%", "player_speed_m/s", "key_states_%", "novelty", "network_gain_%"]
 PASS_MEASURES = ["pass_length_m", "forward_gain_m", "predicted_%"]

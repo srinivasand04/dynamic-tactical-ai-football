@@ -1,0 +1,88 @@
+wrote data/real/processed/J03WMX_graphs_delaunay.npz  (3550 graphs, mode=delaunay)
+wrote data/real/processed/J03WN1_graphs_delaunay.npz  (3016 graphs, mode=delaunay)
+wrote data/real/processed/J03WPY_graphs_delaunay.npz  (3538 graphs, mode=delaunay)
+wrote data/real/processed/J03WOH_graphs_delaunay.npz  (3284 graphs, mode=delaunay)
+wrote data/real/processed/J03WQQ_graphs_delaunay.npz  (3581 graphs, mode=delaunay)
+wrote data/real/processed/J03WOY_graphs_delaunay.npz  (3441 graphs, mode=delaunay)
+wrote data/real/processed/J03WR9_graphs_delaunay.npz  (3442 graphs, mode=delaunay)
+wrote data/simulated/match_001_graphs_delaunay.npz  (368 graphs, mode=delaunay)
+wrote data/simulated/match_002_graphs_delaunay.npz  (357 graphs, mode=delaunay)
+wrote data/simulated/match_003_graphs_delaunay.npz  (369 graphs, mode=delaunay)
+wrote data/simulated/match_004_graphs_delaunay.npz  (342 graphs, mode=delaunay)
+wrote data/simulated/match_005_graphs_delaunay.npz  (348 graphs, mode=delaunay)
+wrote data/simulated/match_006_graphs_delaunay.npz  (361 graphs, mode=delaunay)
+wrote data/simulated/match_007_graphs_delaunay.npz  (347 graphs, mode=delaunay)
+wrote data/simulated/match_008_graphs_delaunay.npz  (366 graphs, mode=delaunay)
+wrote data/simulated/match_009_graphs_delaunay.npz  (364 graphs, mode=delaunay)
+wrote data/simulated/match_010_graphs_delaunay.npz  (358 graphs, mode=delaunay)
+wrote data/simulated/match_011_graphs_delaunay.npz  (357 graphs, mode=delaunay)
+wrote data/simulated/match_012_graphs_delaunay.npz  (366 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_001_graphs_delaunay.npz  (339 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_002_graphs_delaunay.npz  (373 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_003_graphs_delaunay.npz  (346 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_004_graphs_delaunay.npz  (342 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_005_graphs_delaunay.npz  (356 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_006_graphs_delaunay.npz  (364 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_007_graphs_delaunay.npz  (367 graphs, mode=delaunay)
+wrote data/simulated/easy/easy_008_graphs_delaunay.npz  (367 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_001_graphs_delaunay.npz  (367 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_002_graphs_delaunay.npz  (334 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_003_graphs_delaunay.npz  (376 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_004_graphs_delaunay.npz  (355 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_005_graphs_delaunay.npz  (357 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_006_graphs_delaunay.npz  (377 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_007_graphs_delaunay.npz  (358 graphs, mode=delaunay)
+wrote data/simulated/hard/hard_008_graphs_delaunay.npz  (365 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_001_graphs_delaunay.npz  (359 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_002_graphs_delaunay.npz  (369 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_003_graphs_delaunay.npz  (359 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_004_graphs_delaunay.npz  (358 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_005_graphs_delaunay.npz  (359 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_006_graphs_delaunay.npz  (352 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_007_graphs_delaunay.npz  (339 graphs, mode=delaunay)
+wrote data/simulated/competition/competition_008_graphs_delaunay.npz  (357 graphs, mode=delaunay)
+
+          match  graphs  opp_edges  team_compact_m  nearest_opp_m  edge_churn  move_per_KS_m  speed_m/s
+         J03WMX    3550       29.1            18.0            8.2        0.20            2.8        2.3
+         J03WN1    3016       27.3            16.1            7.3        0.24            2.9        2.2
+         J03WPY    3538       29.5            17.2            7.6        0.21            2.9        2.4
+         J03WOH    3284       29.6            17.8            8.1        0.21            2.9        2.4
+         J03WQQ    3581       28.3            17.5            8.0        0.21            2.9        2.4
+         J03WOY    3441       29.0            17.3            7.8        0.21            2.9        2.3
+         J03WR9    3442       29.0            18.0            8.0        0.21            2.8        2.2
+      match_001     368       30.7            17.3            8.5        0.26            3.4        6.2
+      match_002     357       29.4            17.3            8.9        0.28            3.6        6.6
+      match_003     369       29.4            16.6            8.9        0.29            3.9        8.1
+      match_004     342       30.9            17.3            8.6        0.26            3.5        5.2
+      match_005     348       29.0            17.3            9.2        0.27            3.6        6.8
+      match_006     361       28.8            17.2            9.3        0.30            4.1        9.7
+      match_007     347       29.4            17.4            9.1        0.29            3.8        7.0
+      match_008     366       30.2            16.9            8.8        0.28            3.4        7.1
+      match_009     364       29.5            17.2            8.9        0.29            4.0        7.9
+      match_010     358       30.6            17.5            8.7        0.26            3.3        6.2
+      match_011     357       29.8            17.0            8.8        0.29            3.8        7.6
+      match_012     366       29.8            16.8            8.9        0.29            3.9        7.2
+       easy_001     339       30.5            17.4            8.8        0.26            3.4        6.0
+       easy_002     373       30.5            17.4            8.7        0.25            3.5        5.5
+       easy_003     346       29.9            17.4            8.9        0.28            3.7        7.4
+       easy_004     342       30.2            17.4            8.8        0.26            3.7        6.1
+       easy_005     356       30.5            17.9            8.9        0.25            3.5        7.0
+       easy_006     364       30.8            16.8            8.6        0.27            3.6        6.5
+       easy_007     367       29.3            17.0            8.9        0.27            3.6        6.8
+       easy_008     367       30.2            17.2            8.9        0.26            3.5        5.9
+       hard_001     367       29.2            17.7            9.2        0.27            3.8        6.6
+       hard_002     334       29.0            17.2            9.2        0.29            4.0        9.3
+       hard_003     376       29.9            16.5            8.7        0.29            4.0        7.9
+       hard_004     355       29.3            16.9            9.0        0.29            3.9        7.0
+       hard_005     357       29.8            16.8            9.1        0.28            3.9        9.2
+       hard_006     377       28.4            17.2            9.3        0.29            4.1        9.6
+       hard_007     358       30.2            17.0            8.8        0.29            3.8        8.6
+       hard_008     365       29.7            17.0            8.9        0.28            3.8        7.2
+competition_001     359       29.4            16.9            9.0        0.29            4.0        8.1
+competition_002     369       31.0            17.2            8.5        0.26            3.4        5.5
+competition_003     359       29.7            17.5            9.1        0.29            4.0        8.9
+competition_004     358       29.9            17.3            8.9        0.29            3.7        7.3
+competition_005     359       30.1            16.7            9.1        0.30            3.9        8.1
+competition_006     352       29.4            16.8            9.1        0.30            3.9        6.6
+competition_007     339       29.8            17.4            9.2        0.28            3.9        8.4
+competition_008     357       30.1            17.1            8.9        0.29            3.8        6.3

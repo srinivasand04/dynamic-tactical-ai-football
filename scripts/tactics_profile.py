@@ -104,7 +104,7 @@ def validity(real, models_by_match):
     val = F.from_json()[2]
     samples = {}
     for m in real:
-        g = np.load(settings.base(m) + "_graphs.npz")
+        g = np.load(settings.graphs(m))
         c = pd.read_csv(settings.csv(m), usecols=["frame", "ball_owner_team", "game_mode"]).drop_duplicates("frame").set_index("frame").loc[g["frame"]]
         st = state_of(m, g["time_s"])
         ok = (c["ball_owner_team"].isin(["home", "away"]).to_numpy() & (c["game_mode"] == "normal").to_numpy() & ~np.isnan(g["xy"][:, 22, 0]) & (st > 0))

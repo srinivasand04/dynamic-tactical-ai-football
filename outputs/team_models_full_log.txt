@@ -1,0 +1,242 @@
+64 matches with graphs; teams: France (7), Argentina (7), Morocco (7), Croatia (7), England (5), Netherlands (5), Portugal (5), Brazil (5)
+
+===== FOLD 0: test matches {'France': ('10517', 'away'), 'Argentina': ('10514', 'home'), 'Morocco': ('10516', 'away'), 'Croatia': ('10510', 'home'), 'England': ('10513', 'home'), 'Netherlands': ('10511', 'home'), 'Portugal': ('10512', 'away'), 'Brazil': ('10507', 'home')} | training matches 56
+POOLED model on 156565 windows
+  [f0 pooled] epoch  1  loss 0.0268  validation 0.557 m  (299s)
+  [f0 pooled] epoch  2  loss 0.0187  validation 0.534 m  (314s)
+  [f0 pooled] epoch  3  loss 0.0177  validation 0.484 m  (287s)
+  [f0 pooled] epoch  4  loss 0.0171  validation 0.478 m  (353s)
+  [f0 pooled] epoch  5  loss 0.0167  validation 0.467 m  (595s)
+  [f0 pooled] epoch  6  loss 0.0163  validation 0.460 m  (335s)
+TEAM model France: 5 matches, 14117 windows | control: 6 matches of other teams
+  [f0 France] epoch  1  loss 0.0077  validation 0.443 m  (28s)
+  [f0 France] epoch  2  loss 0.0077  validation 0.429 m  (28s)
+  [f0 France] epoch  3  loss 0.0076  validation 0.436 m  (32s)
+  [f0 France] epoch  4  loss 0.0075  validation 0.433 m  (28s)
+  [f0 control France] epoch  1  loss 0.0077  validation 0.490 m  (28s)
+  [f0 control France] epoch  2  loss 0.0076  validation 0.488 m  (28s)
+  [f0 control France] epoch  3  loss 0.0076  validation 0.491 m  (28s)
+TEAM model Argentina: 4 matches, 10972 windows | control: 4 matches of other teams
+  [f0 Argentina] epoch  1  loss 0.0077  validation 0.429 m  (22s)
+  [f0 Argentina] epoch  2  loss 0.0076  validation 0.439 m  (22s)
+  [f0 Argentina] epoch  3  loss 0.0075  validation 0.424 m  (22s)
+  [f0 control Argentina] epoch  1  loss 0.0082  validation 0.425 m  (22s)
+  [f0 control Argentina] epoch  2  loss 0.0081  validation 0.424 m  (21s)
+  [f0 control Argentina] epoch  3  loss 0.0081  validation 0.439 m  (22s)
+TEAM model Morocco: 5 matches, 14538 windows | control: 6 matches of other teams
+  [f0 Morocco] epoch  1  loss 0.0082  validation 0.442 m  (29s)
+  [f0 Morocco] epoch  2  loss 0.0081  validation 0.437 m  (29s)
+  [f0 Morocco] epoch  3  loss 0.0082  validation 0.437 m  (30s)
+  [f0 Morocco] epoch  4  loss 0.0080  validation 0.435 m  (29s)
+  [f0 control Morocco] epoch  1  loss 0.0082  validation 0.409 m  (29s)
+  [f0 control Morocco] epoch  2  loss 0.0082  validation 0.421 m  (28s)
+  [f0 control Morocco] epoch  3  loss 0.0081  validation 0.403 m  (30s)
+  [f0 control Morocco] epoch  4  loss 0.0080  validation 0.402 m  (29s)
+TEAM model Croatia: 4 matches, 12435 windows | control: 5 matches of other teams
+  [f0 Croatia] epoch  1  loss 0.0087  validation 0.463 m  (25s)
+  [f0 Croatia] epoch  2  loss 0.0086  validation 0.464 m  (24s)
+  [f0 Croatia] epoch  3  loss 0.0085  validation 0.436 m  (24s)
+  [f0 Croatia] epoch  4  loss 0.0084  validation 0.435 m  (25s)
+  [f0 control Croatia] epoch  1  loss 0.0082  validation 0.470 m  (24s)
+  [f0 control Croatia] epoch  2  loss 0.0081  validation 0.462 m  (25s)
+  [f0 control Croatia] epoch  3  loss 0.0081  validation 0.495 m  (25s)
+  [f0 control Croatia] epoch  4  loss 0.0080  validation 0.458 m  (25s)
+TEAM model England: 4 matches, 10924 windows | control: 4 matches of other teams
+  [f0 England] epoch  1  loss 0.0068  validation 0.400 m  (21s)
+  [f0 England] epoch  2  loss 0.0068  validation 0.388 m  (22s)
+  [f0 England] epoch  3  loss 0.0067  validation 0.384 m  (22s)
+  [f0 England] epoch  4  loss 0.0067  validation 0.392 m  (24s)
+  [f0 control England] epoch  1  loss 0.0067  validation 0.425 m  (22s)
+  [f0 control England] epoch  2  loss 0.0066  validation 0.425 m  (22s)
+  [f0 control England] epoch  3  loss 0.0065  validation 0.427 m  (22s)
+TEAM model Netherlands: 4 matches, 10971 windows | control: 4 matches of other teams
+  [f0 Netherlands] epoch  1  loss 0.0072  validation 0.424 m  (23s)
+  [f0 Netherlands] epoch  2  loss 0.0070  validation 0.446 m  (23s)
+  [f0 Netherlands] epoch  3  loss 0.0069  validation 0.422 m  (25s)
+  [f0 control Netherlands] epoch  1  loss 0.0083  validation 0.476 m  (27s)
+  [f0 control Netherlands] epoch  2  loss 0.0082  validation 0.482 m  (24s)
+  [f0 control Netherlands] epoch  3  loss 0.0081  validation 0.466 m  (22s)
+  [f0 control Netherlands] epoch  4  loss 0.0081  validation 0.472 m  (23s)
+TEAM model Portugal: 4 matches, 10901 windows | control: 4 matches of other teams
+  [f0 Portugal] epoch  1  loss 0.0078  validation 0.449 m  (25s)
+  [f0 Portugal] epoch  2  loss 0.0077  validation 0.452 m  (24s)
+  [f0 Portugal] epoch  3  loss 0.0075  validation 0.440 m  (25s)
+  [f0 Portugal] epoch  4  loss 0.0075  validation 0.445 m  (25s)
+  [f0 control Portugal] epoch  1  loss 0.0066  validation 0.410 m  (25s)
+  [f0 control Portugal] epoch  2  loss 0.0065  validation 0.403 m  (23s)
+  [f0 control Portugal] epoch  3  loss 0.0064  validation 0.394 m  (22s)
+  [f0 control Portugal] epoch  4  loss 0.0065  validation 0.391 m  (22s)
+TEAM model Brazil: 3 matches, 8381 windows | control: 3 matches of other teams
+  [f0 Brazil] epoch  1  loss 0.0075  validation 0.460 m  (19s)
+  [f0 Brazil] epoch  2  loss 0.0074  validation 0.452 m  (20s)
+  [f0 Brazil] epoch  3  loss 0.0072  validation 0.451 m  (19s)
+  [f0 Brazil] epoch  4  loss 0.0073  validation 0.447 m  (18s)
+  [f0 control Brazil] epoch  1  loss 0.0071  validation 0.443 m  (18s)
+  [f0 control Brazil] epoch  2  loss 0.0070  validation 0.434 m  (16s)
+  [f0 control Brazil] epoch  3  loss 0.0070  validation 0.462 m  (17s)
+  [f0 control Brazil] epoch  4  loss 0.0069  validation 0.431 m  (19s)
+fold 0 done after 66 min; saved outputs/team_models_pff.csv
+
+===== FOLD 1: test matches {'France': ('10515', 'home'), 'Argentina': ('10514', 'home'), 'Morocco': ('10512', 'home'), 'Croatia': ('10510', 'home'), 'England': ('10505', 'home'), 'Netherlands': ('10502', 'home'), 'Portugal': ('10509', 'home'), 'Brazil': ('10507', 'home')} | training matches 56
+POOLED model on 156975 windows
+  [f1 pooled] epoch  1  loss 0.0259  validation 0.530 m  (453s)
+  [f1 pooled] epoch  2  loss 0.0186  validation 0.553 m  (418s)
+  [f1 pooled] epoch  3  loss 0.0173  validation 0.481 m  (457s)
+  [f1 pooled] epoch  4  loss 0.0170  validation 0.488 m  (523s)
+  [f1 pooled] epoch  5  loss 0.0165  validation 0.479 m  (415s)
+TEAM model France: 6 matches, 17409 windows | control: 7 matches of other teams
+  [f1 France] epoch  1  loss 0.0083  validation 0.449 m  (41s)
+  [f1 France] epoch  2  loss 0.0082  validation 0.465 m  (40s)
+  [f1 France] epoch  3  loss 0.0081  validation 0.446 m  (48s)
+  [f1 control France] epoch  1  loss 0.0081  validation 0.427 m  (42s)
+  [f1 control France] epoch  2  loss 0.0081  validation 0.422 m  (41s)
+  [f1 control France] epoch  3  loss 0.0081  validation 0.429 m  (48s)
+  [f1 control France] epoch  4  loss 0.0080  validation 0.420 m  (43s)
+TEAM model Argentina: 6 matches, 17135 windows | control: 7 matches of other teams
+  [f1 Argentina] epoch  1  loss 0.0081  validation 0.466 m  (43s)
+  [f1 Argentina] epoch  2  loss 0.0081  validation 0.486 m  (45s)
+  [f1 Argentina] epoch  3  loss 0.0079  validation 0.462 m  (47s)
+  [f1 control Argentina] epoch  1  loss 0.0078  validation 0.469 m  (43s)
+  [f1 control Argentina] epoch  2  loss 0.0077  validation 0.464 m  (39s)
+  [f1 control Argentina] epoch  3  loss 0.0078  validation 0.465 m  (38s)
+TEAM model Morocco: 5 matches, 14541 windows | control: 6 matches of other teams
+  [f1 Morocco] epoch  1  loss 0.0083  validation 0.483 m  (38s)
+  [f1 Morocco] epoch  2  loss 0.0083  validation 0.441 m  (34s)
+  [f1 Morocco] epoch  3  loss 0.0083  validation 0.450 m  (33s)
+  [f1 Morocco] epoch  4  loss 0.0081  validation 0.443 m  (34s)
+  [f1 control Morocco] epoch  1  loss 0.0077  validation 0.494 m  (38s)
+  [f1 control Morocco] epoch  2  loss 0.0077  validation 0.472 m  (33s)
+  [f1 control Morocco] epoch  3  loss 0.0076  validation 0.503 m  (44s)
+  [f1 control Morocco] epoch  4  loss 0.0075  validation 0.479 m  (38s)
+TEAM model Croatia: 5 matches, 15145 windows | control: 6 matches of other teams
+  [f1 Croatia] epoch  1  loss 0.0087  validation 0.460 m  (45s)
+  [f1 Croatia] epoch  2  loss 0.0086  validation 0.466 m  (40s)
+  [f1 Croatia] epoch  3  loss 0.0085  validation 0.452 m  (39s)
+  [f1 Croatia] epoch  4  loss 0.0085  validation 0.460 m  (40s)
+  [f1 control Croatia] epoch  1  loss 0.0077  validation 0.428 m  (39s)
+  [f1 control Croatia] epoch  2  loss 0.0076  validation 0.430 m  (38s)
+  [f1 control Croatia] epoch  3  loss 0.0075  validation 0.424 m  (38s)
+TEAM model England: 4 matches, 10743 windows | control: 4 matches of other teams
+  [f1 England] epoch  1  loss 0.0073  validation 0.423 m  (26s)
+  [f1 England] epoch  2  loss 0.0073  validation 0.403 m  (27s)
+  [f1 England] epoch  3  loss 0.0072  validation 0.418 m  (23s)
+  [f1 England] epoch  4  loss 0.0072  validation 0.393 m  (23s)
+  [f1 control England] epoch  1  loss 0.0080  validation 0.457 m  (24s)
+  [f1 control England] epoch  2  loss 0.0079  validation 0.454 m  (25s)
+  [f1 control England] epoch  3  loss 0.0079  validation 0.475 m  (28s)
+TEAM model Netherlands: 4 matches, 10857 windows | control: 4 matches of other teams
+  [f1 Netherlands] epoch  1  loss 0.0079  validation 0.472 m  (29s)
+  [f1 Netherlands] epoch  2  loss 0.0078  validation 0.489 m  (31s)
+  [f1 Netherlands] epoch  3  loss 0.0077  validation 0.478 m  (30s)
+  [f1 control Netherlands] epoch  1  loss 0.0074  validation 0.426 m  (29s)
+  [f1 control Netherlands] epoch  2  loss 0.0073  validation 0.462 m  (28s)
+  [f1 control Netherlands] epoch  3  loss 0.0072  validation 0.424 m  (29s)
+TEAM model Portugal: 3 matches, 8197 windows | control: 4 matches of other teams
+  [f1 Portugal] epoch  1  loss 0.0078  validation 0.475 m  (21s)
+  [f1 Portugal] epoch  2  loss 0.0077  validation 0.475 m  (21s)
+  [f1 Portugal] epoch  3  loss 0.0077  validation 0.475 m  (23s)
+  [f1 control Portugal] epoch  1  loss 0.0087  validation 0.439 m  (21s)
+  [f1 control Portugal] epoch  2  loss 0.0087  validation 0.464 m  (22s)
+  [f1 control Portugal] epoch  3  loss 0.0086  validation 0.444 m  (24s)
+TEAM model Brazil: 3 matches, 8381 windows | control: 3 matches of other teams
+  [f1 Brazil] epoch  1  loss 0.0078  validation 0.468 m  (26s)
+  [f1 Brazil] epoch  2  loss 0.0077  validation 0.482 m  (18s)
+  [f1 Brazil] epoch  3  loss 0.0077  validation 0.463 m  (11s)
+  [f1 Brazil] epoch  4  loss 0.0076  validation 0.460 m  (10s)
+  [f1 control Brazil] epoch  1  loss 0.0077  validation 0.459 m  (26s)
+  [f1 control Brazil] epoch  2  loss 0.0077  validation 0.466 m  (17s)
+  [f1 control Brazil] epoch  3  loss 0.0076  validation 0.464 m  (17s)
+fold 1 done after 137 min; saved outputs/team_models_pff.csv
+
+===== FOLD 2: test matches {'France': ('10513', 'away'), 'Argentina': ('10511', 'away'), 'Morocco': ('10512', 'home'), 'Croatia': ('10510', 'home'), 'England': ('3846', 'away'), 'Netherlands': ('3845', 'home'), 'Portugal': ('3857', 'away'), 'Brazil': ('3859', 'away')} | training matches 56
+POOLED model on 157610 windows
+  [f2 pooled] epoch  1  loss 0.0256  validation 0.550 m  (324s)
+  [f2 pooled] epoch  2  loss 0.0187  validation 0.523 m  (323s)
+  [f2 pooled] epoch  3  loss 0.0177  validation 0.536 m  (321s)
+  [f2 pooled] epoch  4  loss 0.0168  validation 0.459 m  (246s)
+  [f2 pooled] epoch  5  loss 0.0164  validation 0.477 m  (264s)
+  [f2 pooled] epoch  6  loss 0.0160  validation 0.466 m  (225s)
+TEAM model France: 6 matches, 17523 windows | control: 7 matches of other teams
+  [f2 France] epoch  1  loss 0.0086  validation 0.448 m  (24s)
+  [f2 France] epoch  2  loss 0.0085  validation 0.450 m  (23s)
+  [f2 France] epoch  3  loss 0.0084  validation 0.441 m  (23s)
+  [f2 France] epoch  4  loss 0.0085  validation 0.443 m  (25s)
+  [f2 control France] epoch  1  loss 0.0083  validation 0.435 m  (24s)
+  [f2 control France] epoch  2  loss 0.0083  validation 0.436 m  (26s)
+  [f2 control France] epoch  3  loss 0.0082  validation 0.421 m  (24s)
+  [f2 control France] epoch  4  loss 0.0081  validation 0.424 m  (27s)
+TEAM model Argentina: 6 matches, 17210 windows | control: 7 matches of other teams
+  [f2 Argentina] epoch  1  loss 0.0082  validation 0.435 m  (29s)
+  [f2 Argentina] epoch  2  loss 0.0080  validation 0.439 m  (26s)
+  [f2 Argentina] epoch  3  loss 0.0080  validation 0.426 m  (31s)
+  [f2 Argentina] epoch  4  loss 0.0079  validation 0.427 m  (24s)
+  [f2 control Argentina] epoch  1  loss 0.0087  validation 0.482 m  (28s)
+  [f2 control Argentina] epoch  2  loss 0.0087  validation 0.491 m  (22s)
+  [f2 control Argentina] epoch  3  loss 0.0086  validation 0.485 m  (29s)
+TEAM model Morocco: 6 matches, 17248 windows | control: 7 matches of other teams
+  [f2 Morocco] epoch  1  loss 0.0086  validation 0.470 m  (28s)
+  [f2 Morocco] epoch  2  loss 0.0085  validation 0.461 m  (27s)
+  [f2 Morocco] epoch  3  loss 0.0084  validation 0.460 m  (24s)
+  [f2 Morocco] epoch  4  loss 0.0084  validation 0.450 m  (24s)
+  [f2 control Morocco] epoch  1  loss 0.0083  validation 0.456 m  (42s)
+  [f2 control Morocco] epoch  2  loss 0.0083  validation 0.464 m  (31s)
+  [f2 control Morocco] epoch  3  loss 0.0081  validation 0.446 m  (30s)
+  [f2 control Morocco] epoch  4  loss 0.0081  validation 0.446 m  (26s)
+TEAM model Croatia: 6 matches, 17977 windows | control: 7 matches of other teams
+  [f2 Croatia] epoch  1  loss 0.0086  validation 0.473 m  (27s)
+  [f2 Croatia] epoch  2  loss 0.0085  validation 0.457 m  (34s)
+  [f2 Croatia] epoch  3  loss 0.0085  validation 0.461 m  (44s)
+  [f2 Croatia] epoch  4  loss 0.0084  validation 0.456 m  (34s)
+  [f2 control Croatia] epoch  1  loss 0.0083  validation 0.447 m  (36s)
+  [f2 control Croatia] epoch  2  loss 0.0082  validation 0.445 m  (35s)
+  [f2 control Croatia] epoch  3  loss 0.0082  validation 0.436 m  (35s)
+  [f2 control Croatia] epoch  4  loss 0.0082  validation 0.442 m  (30s)
+TEAM model England: 3 matches, 8341 windows | control: 3 matches of other teams
+  [f2 England] epoch  1  loss 0.0075  validation 0.428 m  (22s)
+  [f2 England] epoch  2  loss 0.0075  validation 0.424 m  (16s)
+  [f2 England] epoch  3  loss 0.0074  validation 0.434 m  (13s)
+  [f2 control England] epoch  1  loss 0.0095  validation 0.479 m  (15s)
+  [f2 control England] epoch  2  loss 0.0094  validation 0.474 m  (13s)
+  [f2 control England] epoch  3  loss 0.0094  validation 0.462 m  (13s)
+  [f2 control England] epoch  4  loss 0.0094  validation 0.457 m  (14s)
+TEAM model Netherlands: 3 matches, 8094 windows | control: 3 matches of other teams
+  [f2 Netherlands] epoch  1  loss 0.0072  validation 0.431 m  (12s)
+  [f2 Netherlands] epoch  2  loss 0.0071  validation 0.433 m  (12s)
+  [f2 Netherlands] epoch  3  loss 0.0071  validation 0.452 m  (12s)
+  [f2 control Netherlands] epoch  1  loss 0.0073  validation 0.440 m  (13s)
+  [f2 control Netherlands] epoch  2  loss 0.0072  validation 0.433 m  (13s)
+  [f2 control Netherlands] epoch  3  loss 0.0072  validation 0.422 m  (11s)
+  [f2 control Netherlands] epoch  4  loss 0.0072  validation 0.420 m  (13s)
+TEAM model Portugal: 3 matches, 8138 windows | control: 3 matches of other teams
+  [f2 Portugal] epoch  1  loss 0.0080  validation 0.458 m  (12s)
+  [f2 Portugal] epoch  2  loss 0.0080  validation 0.459 m  (18s)
+  [f2 Portugal] epoch  3  loss 0.0078  validation 0.454 m  (11s)
+  [f2 control Portugal] epoch  1  loss 0.0085  validation 0.494 m  (11s)
+  [f2 control Portugal] epoch  2  loss 0.0084  validation 0.477 m  (12s)
+  [f2 control Portugal] epoch  3  loss 0.0084  validation 0.479 m  (12s)
+  [f2 control Portugal] epoch  4  loss 0.0083  validation 0.468 m  (13s)
+TEAM model Brazil: 3 matches, 8701 windows | control: 4 matches of other teams
+  [f2 Brazil] epoch  1  loss 0.0072  validation 0.453 m  (13s)
+  [f2 Brazil] epoch  2  loss 0.0071  validation 0.455 m  (12s)
+  [f2 Brazil] epoch  3  loss 0.0070  validation 0.445 m  (12s)
+  [f2 Brazil] epoch  4  loss 0.0070  validation 0.442 m  (12s)
+  [f2 control Brazil] epoch  1  loss 0.0091  validation 0.523 m  (12s)
+  [f2 control Brazil] epoch  2  loss 0.0089  validation 0.512 m  (12s)
+  [f2 control Brazil] epoch  3  loss 0.0089  validation 0.506 m  (12s)
+  [f2 control Brazil] epoch  4  loss 0.0089  validation 0.504 m  (14s)
+fold 2 done after 189 min; saved outputs/team_models_pff.csv
+
+PER TEAM (mean over folds, metres; negative = better than the pooled model)
+             own_team  own_ctl  other_team  other_ctl  style_effect
+team                                                               
+Argentina      -0.022   -0.013      -0.013     -0.012        -0.008
+Brazil         -0.009   -0.010      -0.014     -0.010         0.004
+Croatia        -0.018   -0.016      -0.018     -0.013         0.003
+England        -0.010   -0.008      -0.014     -0.014        -0.002
+France         -0.013   -0.009      -0.014     -0.011        -0.001
+Morocco        -0.018   -0.011      -0.014     -0.013        -0.006
+Netherlands    -0.019   -0.015      -0.012     -0.013        -0.005
+Portugal       -0.015   -0.007      -0.014     -0.010        -0.004
+
+STYLE EFFECT = (team model - control) on its own team minus the same on other teams: mean -0.0025 m (standard error 0.0013), negative in 16 of 24 team-folds
+finished in 189 min; wrote outputs/team_models_pff.csv and the _effects file

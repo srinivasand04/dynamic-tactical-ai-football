@@ -12,6 +12,10 @@ Steps, in order (each one only for the matches that still need it):
 Because the sequence step uses ONE scale and threshold for all matches, adding a match re-runs
 sequences, describe, types and graphs for everybody. The GNN training is not part of this (it is slow): see train_gnn.py.
 
+A dataset with "pool": false in settings.json (for example pff) is not part of those steps. Run it by itself; it needs only
+the Key States and graphs of its own matches, so nothing already reported changes:
+         python scripts/run_pipeline.py --dataset pff
+
 Usage :  python scripts\\run_pipeline.py
          python scripts\\run_pipeline.py --force            (redo everything)
          python scripts\\run_pipeline.py --only graphs      (just one or more steps)
@@ -38,7 +42,19 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true", help="redo every step for every match")
     ap.add_argument("--only", nargs="+", choices=STEPS, help="run only these steps")
+    ap.add_argument("--dataset", default=None, help="one dataset of settings.json that is kept out of the pool (keystates + graphs only)")
     a = ap.parse_args()
+    if a.dataset:
+        have = settings.dataset_matches(a.dataset)
+        print(f"{a.dataset}: {len(have)} matches with a common-format file")
+        todo = [m for m in have if a.force or not os.path.exists(settings.base(m) + "_adaptive_ks.csv")]
+        for m in todo:
+            run("scripts/extract_keystates.py", "--csv", settings.csv(m))
+        need = [m for m in have if a.force or todo or not os.path.exists(settings.graphs(m))]
+        if need:
+            run("scripts/build_graphs.py", "--csv", *[settings.csv(m) for m in have])
+        print(f"\ndone: {len(todo)} matches got Key States, graphs built for {len(have) if need else 0}")
+        return
     todo = a.only or STEPS
     ran = set()
 
@@ -81,7 +97,7 @@ def main():
         run("scripts/cluster_sequences.py")
         ran.add("types")
 
-    if "graphs" in todo and ("sequences" in ran or a.force or any(not os.path.exists(settings.base(m) + "_graphs.npz") for m in have)):
+    if "graphs" in todo and ("sequences" in ran or a.force or any(not os.path.exists(settings.graphs(m)) for m in have)):
         run("scripts/build_graphs.py")
         ran.add("graphs")
 
