@@ -32,11 +32,12 @@ def main():
     ap.add_argument("--fps", type=int, default=10)
     ap.add_argument("--step", type=int, default=1, help="draw every n-th frame")
     ap.add_argument("--mark-s", type=float, default=None, help="match time (s) of an event, e.g. a shot; also saves a still of it")
+    ap.add_argument("--right-title", default=None, help="title of the GRF panel (default: from the run file)")
     a = ap.parse_args()
 
     z = np.load(a.run, allow_pickle=True)
-    seg_path = re.sub(r"^grf_[a-z]+_", "", os.path.basename(a.run)).replace("_watch", "").replace(".npz", "")
-    seg_path = "data/real/processed/" + seg_path.replace("_", "_segment_", 1) + ".npz"
+    mm = re.match(r"(?:grf_[a-z]+_)?([A-Za-z0-9-]+)_(\d+)", os.path.basename(a.run))     # grf_<kind>_<match>_<start>[_anything]
+    seg_path = f"data/real/processed/{mm.group(1)}_segment_{mm.group(2)}.npz" if mm else ""
     seg = np.load(seg_path, allow_pickle=True) if os.path.exists(seg_path) else None
     nums = np.concatenate([seg["jersey_home"], seg["jersey_away"]]) if seg is not None and "jersey_home" in seg.files else None
     names = np.concatenate([seg["name_home"], seg["name_away"]]) if nums is not None else None
@@ -64,7 +65,8 @@ def main():
     who = ""
     if seg is not None and "name_home" in seg.files:
         who = f"  (red = home, blue = away; numbers = shirt numbers)"
-    pitch(axs[0], "REAL DATA (DFL tracking)" + who), pitch(axs[1], "GRF SIMULATION (same stretch)")
+    right = a.right_title or ("GRF WHAT-IF: " + str(z["what_changed"]) if "what_changed" in z.files else "GRF SIMULATION (same stretch)")
+    pitch(axs[0], "REAL DATA (DFL tracking)" + who), pitch(axs[1], right)
     sc = []
     for ax, arr, b in ((axs[0], real, br), (axs[1], grf, bg)):
         h = ax.scatter(arr[:11, 0, 0], arr[:11, 0, 1], c="#d62728", s=60, zorder=3)

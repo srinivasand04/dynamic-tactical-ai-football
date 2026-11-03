@@ -81,6 +81,7 @@ class Brain:
         self.carrier, self.hold, self.plan = None, 0, []
         self.stats = {"shots": 0, "xg": 0.0, "passes": 0, "passes_done": 0, "own_steps": 0, "opp_half_steps": 0}
         self.pending_pass = False
+        self.early_pass = False             # what-if: the first carrier passes at once to the most advanced teammate
 
     # ---- what the brain sees: its own team attacking towards x = 105, own players in slots 0-10 ----
     def view(self, lt, rt, ball):
@@ -152,7 +153,15 @@ class Brain:
             else:
                 goal = np.array([L, W / 2])
                 dg = float(np.linalg.norm(own[carrier] - goal))
-                if dg < self.shot_d and abs(own[carrier][1] - W / 2) < 20 and not set_piece:
+                if self.early_pass and not set_piece:
+                    self.early_pass = False
+                    j = max((k for k in range(1, 11) if k != carrier), key=lambda k: own[k][0])
+                    far = np.linalg.norm(own[j] - own[carrier]) > 25
+                    self.plan = [face_action(own[carrier], own[j])] * FACE + [LONG if far else SHORT]
+                    self.stats["passes"] += 1
+                    self.pending_pass = True
+                    self.hold = 0
+                elif dg < self.shot_d and abs(own[carrier][1] - W / 2) < 20 and not set_piece:
                     self.plan = [face_action(own[carrier], goal)] * FACE + [SHOT]
                     self.stats["shots"] += 1
                     self.stats["xg"] += xg_proxy(dg)

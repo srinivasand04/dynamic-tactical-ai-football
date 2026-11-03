@@ -9,7 +9,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const L = 105, W = 68, DM = 10;
 const HOME = 0xe0473c, AWAY = 0x3a7bd5, HOME_GK = 0xff9f1c, AWAY_GK = 0x8fd14f;
-const LAYER_COLORS = [0xf2c14e, 0xc77dff, 0x5ce1e6, 0xff7aa2];
+const LAYER_COLORS = [0xf2c14e, 0xc77dff, 0x5ce1e6, 0xff7aa2, 0x9be564, 0xff9f43, 0xffffff];
 
 const $ = (id) => document.getElementById(id);
 const S = { data: null, t: 0, t0: 0, t1: 1, playing: false, speed: 1, cam: 'broadcast', roster: null, rosterIdx: -1,
@@ -188,7 +188,7 @@ async function loadFile(name) {
     const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(23 * 2 * 3), 3));
     const links = new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: 0.7 }));
     scene.add(links);
-    return { d: ld, col, meshes, ball: b, links, show: true, showLinks: true, pair: null };
+    return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null };     // many layers: the first two shown
   });
   buildLayerPanel();
   msg(null);
@@ -199,7 +199,7 @@ function buildLayerPanel() {
   if (!S.layers.length) { box.innerHTML = '<p class="hint">This file has no layers.</p>'; return; }
   box.innerHTML = S.layers.map((l, i) => `
     <div class="layer">
-      <label><input type="checkbox" data-l="${i}" data-k="show" checked>
+      <label><input type="checkbox" data-l="${i}" data-k="show" ${l.show ? 'checked' : ''}>
         <span class="swatch" style="background:#${l.col.toString(16).padStart(6, '0')}"></span>${l.d.name}</label>
       <label><input type="checkbox" data-l="${i}" data-k="showLinks" checked> lines to the real player</label>
       <div class="err" id="err${i}">&nbsp;</div>
