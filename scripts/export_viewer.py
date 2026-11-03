@@ -117,8 +117,8 @@ def main():
         ok = ~np.isnan(g[0, :, 0]) & ~np.isnan(b[:, 0])
         idx = np.flatnonzero(ok)[:: a.every]
         # a run keeps the player order of its segment (keeper, then by role): its shirt numbers pair each ghost with the real player
-        seg = "data/real/processed/" + re.sub(r"^grf_[a-z]+_", "", os.path.basename(path)).replace("_watch", "").replace("_continuous", "") \
-            .replace(".npz", "").replace("_", "_segment_", 1) + ".npz"
+        mm = re.match(r"(?:grf_[a-z]+_)?([A-Za-z0-9-]+)_(\d+)", os.path.basename(path))       # grf_<kind>_<match>_<start>[_anything]
+        seg = f"data/real/processed/{mm.group(1)}_segment_{mm.group(2)}.npz" if mm else ""
         jl = []
         if os.path.exists(seg):
             sz = np.load(seg, allow_pickle=True)

@@ -1,0 +1,41 @@
+140 runs (7 scenarios x 20 seeds, 12 s each), 5 at a time
+  10/140 runs (2.8 min)
+  20/140 runs (3.7 min)
+  30/140 runs (4.6 min)
+  40/140 runs (5.6 min)
+  50/140 runs (6.6 min)
+  60/140 runs (7.6 min)
+  70/140 runs (8.2 min)
+  80/140 runs (9.2 min)
+  90/140 runs (10.1 min)
+  100/140 runs (11.1 min)
+  110/140 runs (12.3 min)
+  120/140 runs (13.4 min)
+  130/140 runs (14.1 min)
+  140/140 runs (14.3 min)
+
+WHAT-IF from 3610 s (20 runs each; d_ = change against 'no change' with the same seed, +- 95% interval)
+
+                  what_changed  goal_rate  shots   xg  furthest_m  d_goal  d_goal_ci95  d_xg  d_xg_ci95  d_furthest_m  d_furthest_m_ci95
+     attack plays as Argentina       0.15   4.05 0.33       96.43   -0.10         0.20  0.06       0.25         -0.84               2.99
+       attack plays as Croatia       0.30   4.95 0.15       98.99    0.05         0.22 -0.12       0.14          1.72               2.47
+        attack plays as France       0.30   4.35 0.27       98.39    0.05         0.22  0.01       0.18          1.12               2.78
+                     no change       0.25   5.00 0.26       97.27     NaN          NaN   NaN        NaN           NaN                NaN
+carrier passes forward at once       0.65   6.65 0.59      100.15    0.40         0.26  0.33       0.31          2.88               2.65
+          back four 3 m deeper       0.15   4.25 0.23       94.80   -0.10         0.24 -0.04       0.21         -2.46               5.06
+          back four 3 m higher       0.30   4.35 0.20       94.88    0.05         0.22 -0.07       0.15         -2.39               6.39
+
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_runs.csv and _summary.csv
+  baseline           seed 0: goal 0  shots 2  xG 0.036  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_baseline.npz
+  line_deeper        seed 0: goal 0  shots 2  xG 0.054  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_line_deeper.npz
+  line_higher        seed 0: goal 0  shots 9  xG 0.199  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_line_higher.npz
+  early_pass         seed 0: goal 1  shots 9  xG 0.782  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_early_pass.npz
+  att_as_Argentina   seed 0: goal 0  shots 6  xG 0.202  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_Argentina.npz
+  att_as_France      seed 0: goal 1  shots 4  xG 0.174  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_France.npz
+  att_as_Croatia     seed 0: goal 0  shots 5  xG 0.085  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_Croatia.npz
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_line_deeper_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_line_higher_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_early_pass_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_Argentina_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_France_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_Croatia_grf.mp4

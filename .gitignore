@@ -24,6 +24,8 @@ presentations/
 deck_work/*
 !deck_work/build_deck.js
 !deck_work/build_project_map_deck.js
+!deck_work/build_demo_deck.js
+!deck_work/build_demo_deck_esilv.js
 ESILV Logo Sample.png
 /*.pptx
 /*.md
