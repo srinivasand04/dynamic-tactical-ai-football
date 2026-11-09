@@ -164,6 +164,8 @@ def continuous(a, z, real, ball_real, kicks, t_s, grf, ball, video, show):
 
 
 def main():
+    import grf_names
+    grf_names.setup_from_args()                   # real player names in GRF's picture; before gfootball is imported
     ap = argparse.ArgumentParser()
     ap.add_argument("--segment", required=True)
     ap.add_argument("--goal-s", type=float, default=None, help="match time (s) of a real goal event inside the stretch")

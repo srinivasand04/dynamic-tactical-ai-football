@@ -151,12 +151,22 @@ def main():
         report(a.name)
         return
     if a.video:
+        import grf_names
+        grf_names.setup_from_args()                     # the teams' real players' names in GRF's picture
         import cv2, team_agent
         path = f"{OUT}/{a.video[0]}_vs_{a.video[1]}.mp4".replace(" ", "_")
         vw = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*"mp4v"), 10, (1280, 720))
-        r = team_agent.play_game(a.video[0], a.video[1], *team_agent.load_models(a.dataset), seed=a.seed, video=vw)
+        tr = []
+        r = team_agent.play_game(a.video[0], a.video[1], *team_agent.load_models(a.dataset), seed=a.seed, video=vw, tracks=tr)
         vw.release()
-        print(r, "\nwrote", path)
+        # the same match as positions, for the 3D viewer (export_viewer.py --grf-match)
+        lineup = [grf_names.team_lineup(t) if t in grf_names.LATEST else ([f"{t} {k + 1}" for k in range(11)], [k + 1 for k in range(11)])
+                  for t in a.video]
+        np.savez_compressed(path.replace(".mp4", ".npz"), players=np.array([x[0] for x in tr]), ball=np.array([x[1] for x in tr]),
+                            score=np.array([x[2] for x in tr]), game_mode=np.array([x[3] for x in tr]), teams=np.array(a.video),
+                            names_left=np.array(lineup[0][0]), shirts_left=np.array([int(x) for x in lineup[0][1]]),
+                            names_right=np.array(lineup[1][0]), shirts_right=np.array([int(x) for x in lineup[1][1]]), seed=a.seed)
+        print(r, "\nwrote", path, "and", path.replace(".mp4", ".npz"))
         return
     path = f"{OUT}/{a.name}_games.csv"
     done = pd.read_csv(path) if os.path.exists(path) else pd.DataFrame()

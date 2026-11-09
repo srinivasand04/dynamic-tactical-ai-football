@@ -12,6 +12,8 @@ Usage :  python scripts\\grf_match.py --segment data\\real\\processed\\J03WOH_se
          python scripts\\grf_match.py --segment ... --render     (GRF window per 3 s window: ~12 s to open each, slow)
 """
 import argparse, os
+import grf_names
+grf_names.setup_from_args()                   # real player names in GRF's picture; before gfootball is imported
 import cv2
 import numpy as np
 import grf_goal

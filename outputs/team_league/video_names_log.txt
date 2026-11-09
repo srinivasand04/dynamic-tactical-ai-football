@@ -1,0 +1,2 @@
+{'left': 'Argentina', 'right': 'France', 'seed': 7, 'steps': 3001, 'goals_left': 2, 'goals_right': 0, 'left_shots': 27, 'left_xg': 2.5, 'left_passes': 58, 'left_pass_completion': 0.759, 'left_possession': 0.611, 'left_opp_half': 0.557, 'right_shots': 15, 'right_xg': 0.914, 'right_passes': 34, 'right_pass_completion': 0.706, 'right_possession': 0.389, 'right_opp_half': 0.438} 
+wrote outputs/team_league/Argentina_vs_France.mp4 and outputs/team_league/Argentina_vs_France.npz

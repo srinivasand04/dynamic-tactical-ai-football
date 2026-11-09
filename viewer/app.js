@@ -239,7 +239,14 @@ function update() {
       p.userData.num.material.needsUpdate = p.userData.name.material.needsUpdate = true;
       p.children[0].material.color.setHex(k === 0 ? HOME_GK : k === 11 ? AWAY_GK : k < 11 ? HOME : AWAY);
     });
-    S.layers.forEach((l) => { l.pair = pairing(l, S.roster); });
+    S.layers.forEach((l) => {                       // each ghost carries the name of the real player it is paired with
+      l.pair = pairing(l, S.roster);
+      l.meshes.forEach((m, k) => {
+        const s = l.pair[k], n = s >= 0 ? S.roster[s] : -1;
+        m.userData.name.material.map = labelTexture(n >= 0 ? ((d.names[s < 11 ? 'home' : 'away'] || {})[String(n)] || '') : '', true);
+        m.userData.name.material.needsUpdate = true;
+      });
+    });
   }
   const real = [];
   for (let k = 0; k < 22; k++) {
@@ -295,7 +302,7 @@ function update() {
       const xx = lerp(ld.px[a], ld.px[b], gf) / DM, yy = lerp(ld.py[a], ld.py[b], gf) / DM;
       const m = l.meshes[k];
       m.visible = on; m.position.set(X(xx), 0, Z(yy));
-      m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = false;
+      m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = on && S.showNames;
       const s = l.pair ? l.pair[k] : k;
       if (s >= 0 && real[s]) {
         sum += Math.hypot(xx - real[s][0], yy - real[s][1]); cnt++;

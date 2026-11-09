@@ -11,6 +11,11 @@ Scenarios (attacking team = the team with the ball at the start, defending team 
   line_higher      the back four start --shift metres further up the pitch
   early_pass       the first ball carrier passes at once to his most advanced teammate
   att_as_<Team>    the attacking team plays with that team's model and style (e.g. att_as_Croatia)
+  move             one chosen player starts somewhere else (--move PLAYER FORWARD LEFT): the coach's "you should have been
+                   there". PLAYER = part of the name ('Klaus') or side:shirt ('home:11'); FORWARD = metres towards the goal
+                   his team attacks (negative = back), LEFT = metres towards the touchline on his left (negative = right).
+                   His last 2 s move with him, so he arrives at the new spot with his real speed. Results get their own
+                   files (..._move_<name>_...), the earlier results stay.
 
 Scores per run (attacking team's point of view, within --seconds): goal, shots, xG proxy, furthest point the ball reached,
 seconds until the defending team wins the ball.
@@ -23,6 +28,8 @@ Needs : the GRF environment with torch (.venv)
 
 Usage :  .venv\\Scripts\\python.exe scripts\\whatif.py --segment data\\real\\processed\\J03WOH_segment_3500.npz --start-s 3610 --seeds 20
          .venv\\Scripts\\python.exe scripts\\whatif.py ... --video-only --video-seed 0       (only the videos and run files)
+         .venv\\Scripts\\python.exe scripts\\whatif.py --start-s 3610 --move Klaus 5 -3 --seeds 20   (coach: Klaus 5 m forward, 3 m right)
+         .venv\\Scripts\\python.exe scripts\\whatif.py --list-players --start-s 3610                  (who is where at that moment)
 """
 import argparse
 import os
@@ -43,7 +50,29 @@ def flip(p):
     return np.stack([L - p[..., 0], W - p[..., 1]], axis=-1)
 
 
-def describe(name, shift):
+def find_player(z, who):
+    """Slot (0-10 home, 11-21 away) and name of a player given as part of his name or as side:shirt."""
+    if ":" in who:
+        side, shirt = who.split(":")
+        shirts = [int(x) for x in z[f"jersey_{side}"]]
+        assert int(shirt) in shirts, f"no {side} player with shirt {shirt}; shirts: {shirts}"
+        k = shirts.index(int(shirt))
+        return k + (11 if side == "away" else 0), str(z[f"name_{side}"][k])
+    names = [str(n) for n in z["name_home"]] + [str(n) for n in z["name_away"]]
+    hits = [k for k, n in enumerate(names) if who.lower() in n.lower()]
+    assert len(hits) == 1, f"'{who}' matches {[names[k] for k in hits] or 'nobody'}; use more of the name, or side:shirt"
+    return hits[0], names[hits[0]]
+
+
+def move_text(move):
+    _, name, fwd, left = move
+    parts = [f"{abs(fwd):g} m {'forward' if fwd >= 0 else 'back'}" if fwd else "", f"{abs(left):g} m {'left' if left >= 0 else 'right'}" if left else ""]
+    return f"{name} " + ", ".join(p for p in parts if p)
+
+
+def describe(name, shift, move=None):
+    if name == "move":
+        return move_text(move) if move else "one player moved"
     if name == "baseline":
         return "no change"
     if name == "line_deeper":
@@ -55,9 +84,9 @@ def describe(name, shift):
     return f"attack plays as {name[7:]}"
 
 
-def moment(seg, start_s, scen, shift):
+def moment(seg, start_s, scen, shift, move=None):
     """The real moment as GRF sees it (home team on the left, attacking right) with the scenario's change applied.
-    Returns positions (22, 3, 2) at start-2 s, start-1 s, start; ball (3, 2); velocities (22+1, 3, 2); attacking side; mirrored."""
+    move = (slot, name, forward_m, left_m) for the 'move' scenario. Returns positions (22, 3, 2) at start-2 s, start-1 s, start; ball (3, 2); velocities (22+1, 3, 2); attacking side; mirrored."""
     z = np.load(seg, allow_pickle=True)
     t = z["time_s"]
     i = int(np.argmin(abs(t - start_s)))
@@ -80,11 +109,17 @@ def moment(seg, start_s, scen, shift):
         sign = np.sign(own_goal_x - L / 2) * (1 if scen == "line_deeper" else -1)
         for arr in (pos, prev):
             arr[back, :, 0] = np.clip(arr[back, :, 0] + sign * shift, 0.5, L - 0.5)
+    if scen == "move":
+        k, _, fwd, left = move
+        d = 1.0 if k < 11 else -1.0                                        # home attacks +x here; y grows to the attacker's left
+        for arr in (pos, prev):
+            arr[k, :, 0] = np.clip(arr[k, :, 0] + d * fwd, 0.5, L - 0.5)
+            arr[k, :, 1] = np.clip(arr[k, :, 1] + d * left, 0.5, W - 0.5)
     vel = np.concatenate([(pos - prev) * FPS, ((ball - bprev) * FPS)[None]], axis=0)
     return pos, ball, vel, att, mirrored, i
 
 
-def play(seg, start_s, scen, shift, seed, seconds, models, video=None):
+def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None):
     """One GRF run of a scenario. Returns the scores and the tracks (22, T, 2), ball (T, 2) in GRF orientation."""
     import gfootball.env as football_env
     from grf_replay import register_scenario, to_metres
@@ -92,7 +127,7 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None):
     import cv2
 
     cfg, net, dec = models
-    pos, ball, vel, att, mirrored, _ = moment(seg, start_s, scen, shift)
+    pos, ball, vel, att, mirrored, _ = moment(seg, start_s, scen, shift, move)
     z = np.load(seg, allow_pickle=True)
     snap = {"ball": np.clip(ball[-1], [0.5, 0.5], [L - 0.5, W - 0.5]), "home": pos[:11, -1], "away": pos[11:, -1],
             "role_home": z["role_home"], "role_away": z["role_away"]}
@@ -177,9 +212,9 @@ def _init(dataset):
 
 
 def _job(j):
-    seg, start_s, scen, shift, seed, seconds = j
+    seg, start_s, scen, shift, seed, seconds, move = j
     try:
-        return play(seg, start_s, scen, shift, seed, seconds, _M["models"])[0]
+        return play(seg, start_s, scen, shift, seed, seconds, _M["models"], move=move)[0]
     except Exception as e:                                                # one broken run must not stop the rest
         return {"scenario": scen, "seed": seed, "error": repr(e)}
 
@@ -190,14 +225,14 @@ def ci(x):
     return 1.96 * x.std(ddof=1) / np.sqrt(len(x)) if len(x) > 1 else np.nan
 
 
-def summarise(df, shift):
+def summarise(df, shift, move=None):
     """Per scenario: means, and the paired difference to 'no change' (same seed) with its 95% interval."""
     df = df[df.get("error").isna()] if "error" in df else df
     base = df[df["scenario"] == "baseline"].set_index("seed")
     rows = []
     for scen, g in df.groupby("scenario", sort=False):
         g = g.set_index("seed")
-        r = {"scenario": scen, "what_changed": describe(scen, shift), "runs": len(g),
+        r = {"scenario": scen, "what_changed": describe(scen, shift, move), "runs": len(g),
              "goal_rate": g["goal"].mean(), "shots": g["shots"].mean(), "xg": g["xg"].mean(), "furthest_m": g["furthest_m"].mean(),
              "lost_ball_rate": g["lost_ball_s"].notna().mean()}
         if scen != "baseline":
@@ -249,12 +284,33 @@ def main():
     ap.add_argument("--video-only", action="store_true")
     ap.add_argument("--no-video", action="store_true")
     ap.add_argument("--report", action="store_true", help="only the chart of an earlier run (system Python, matplotlib)")
+    ap.add_argument("--move", nargs=3, metavar=("PLAYER", "FORWARD", "LEFT"),
+                    help="coach what-if: move one player (part of the name or side:shirt) FORWARD and LEFT metres; runs baseline + move")
+    ap.add_argument("--list-players", action="store_true", help="print every player's name, shirt and spot at --start-s, then stop")
     a = ap.parse_args()
     if not os.path.isabs(a.segment) and not os.path.exists(a.segment):     # started from the scripts folder
         a.segment = os.path.join(ROOT, a.segment)
     os.makedirs(OUT, exist_ok=True)
     base = os.path.basename(a.segment).replace("_segment_", "_").replace(".npz", "")
     key = f"{base}_{int(a.start_s)}"
+    z = np.load(a.segment, allow_pickle=True)
+    if a.list_players:
+        pos, ball, _, att, _, _ = moment(a.segment, a.start_s, "baseline", a.shift)
+        print(f"At {a.start_s:g} s ({att} team has the ball; metres, home attacking to the right, ball at {ball[-1].round(1)}):")
+        for k in range(22):
+            side, j = ("home", k) if k < 11 else ("away", k - 11)
+            print(f"  {side}:{int(z[f'jersey_{side}'][j]):<3d} {str(z[f'name_{side}'][j]):22s} x {pos[k, -1, 0]:5.1f}  y {pos[k, -1, 1]:5.1f}"
+                  f"  {np.hypot(*(pos[k, -1] - ball[-1])):5.1f} m from the ball")
+        return
+    move = None
+    if a.move:
+        k, name = find_player(z, a.move[0])
+        move = (k, name, float(a.move[1]), float(a.move[2]))
+        a.scenarios = ["baseline", "move"]
+        key += "_move_" + name.split(" ")[-1].replace(".", "") + f"_{a.move[1]}_{a.move[2]}"
+        pos, ball, *_ = moment(a.segment, a.start_s, "move", a.shift, move)
+        print(f"coach what-if: {move_text(move)} -> starts at x {pos[k, -1, 0]:.1f}, y {pos[k, -1, 1]:.1f} "
+              f"({np.hypot(*(pos[k, -1] - ball[-1])):.1f} m from the ball)", flush=True)
     if a.report:
         chart(key)
         return
@@ -262,7 +318,7 @@ def main():
         a.scenarios = ["baseline"] + a.scenarios
 
     if not a.video_only:
-        jobs = [(a.segment, a.start_s, s, a.shift, seed, a.seconds) for s in a.scenarios for seed in range(a.seeds)]
+        jobs = [(a.segment, a.start_s, s, a.shift, seed, a.seconds, move) for s in a.scenarios for seed in range(a.seeds)]
         print(f"{len(jobs)} runs ({len(a.scenarios)} scenarios x {a.seeds} seeds, {a.seconds:g} s each), {a.procs} at a time", flush=True)
         t0, rows = time.time(), []
         with Pool(a.procs, initializer=_init, initargs=(a.dataset,)) as pool:
@@ -272,7 +328,7 @@ def main():
                     print(f"  {k + 1}/{len(jobs)} runs ({(time.time() - t0) / 60:.1f} min)", flush=True)
         df = pd.DataFrame(rows).sort_values(["scenario", "seed"])
         df.to_csv(f"{OUT}/{key}_runs.csv", index=False)
-        sm = summarise(df, a.shift)
+        sm = summarise(df, a.shift, move)
         sm.round(3).to_csv(f"{OUT}/{key}_summary.csv", index=False)
         print(f"\nWHAT-IF from {a.start_s:g} s ({a.seeds} runs each; d_ = change against 'no change' with the same seed, +- 95% interval)\n")
         cols = ["what_changed", "goal_rate", "shots", "xg", "furthest_m", "d_goal", "d_goal_ci95", "d_xg", "d_xg_ci95", "d_furthest_m", "d_furthest_m_ci95"]
@@ -282,26 +338,27 @@ def main():
     if a.no_video:
         return
     # videos: every scenario with the same seed, GRF's own picture, next to the 'no change' run
+    import grf_names
+    grf_names.setup_from_args(["--segment", a.segment])     # the real players' names in GRF's picture
     import cv2
     import team_agent
     models = team_agent.load_models(a.dataset)
-    z = np.load(a.segment, allow_pickle=True)
     t_seg = z["time_s"]
     real = np.concatenate([z["home"], z["away"]], axis=1).transpose(1, 0, 2)
     _, _, _, _, _, i0 = moment(a.segment, a.start_s, "baseline", a.shift)
     frames, tracks = {}, {}
     for scen in a.scenarios:
         fr = []
-        res, pl, bl, mirrored = play(a.segment, a.start_s, scen, a.shift, a.video_seed, a.seconds, models, video=fr)
+        res, pl, bl, mirrored = play(a.segment, a.start_s, scen, a.shift, a.video_seed, a.seconds, models, video=fr, move=move)
         frames[scen] = fr
         if mirrored:
             pl, bl = flip(pl), flip(bl)
         n = pl.shape[1]
         sl = slice(i0, min(i0 + n, len(t_seg)))
         m = sl.stop - sl.start
-        path = f"{OUT}/grf_whatif_{base}_{scen}.npz"
+        path = f"{OUT}/grf_whatif_{base}_{scen}.npz" if scen != "move" else f"{OUT}/grf_whatif_{key}.npz"
         np.savez_compressed(path, grf=pl[:, :m], ball_grf=bl[:m], real=real[:, sl], ball_real=z["ball"][sl], time_s=t_seg[sl],
-                            live=z["live"][sl], scenario=scen, what_changed=describe(scen, a.shift), result=str(res))
+                            live=z["live"][sl], scenario=scen, what_changed=describe(scen, a.shift, move), result=str(res))
         tracks[scen] = path
         print(f"  {scen:18s} seed {a.video_seed}: goal {res['goal']}  shots {res['shots']}  xG {res['xg']}  -> {path}", flush=True)
 
@@ -319,7 +376,7 @@ def main():
         for k in range(n):
             pair = []
             for s, label, col in (("baseline", "NO CHANGE (team models from the real moment)", (230, 230, 230)),
-                                  (scen, "WHAT-IF: " + describe(scen, a.shift), (80, 200, 255))):
+                                  (scen, "WHAT-IF: " + describe(scen, a.shift, move), (80, 200, 255))):
                 f = frames[s][min(k, len(frames[s]) - 1)]
                 f = cv2.resize(f, (640, 360))
                 top = np.zeros((34, 640, 3), np.uint8)
