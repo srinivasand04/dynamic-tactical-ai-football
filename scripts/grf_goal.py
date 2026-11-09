@@ -13,6 +13,8 @@ Usage :  python scripts\\grf_goal.py --segment data\\real\\processed\\J03WOH_seg
          python scripts\\grf_goal.py --segment ... --shot-s 3612.6 --watch      (replay the winning run in a GRF window)
 """
 import argparse, os, time
+import grf_names
+grf_names.setup_from_args()                   # real player names in GRF's picture; before gfootball is imported
 import cv2
 import numpy as np
 import gfootball.env as football_env

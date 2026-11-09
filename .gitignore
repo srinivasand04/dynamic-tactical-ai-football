@@ -26,6 +26,9 @@ deck_work/*
 !deck_work/build_project_map_deck.js
 !deck_work/build_demo_deck.js
 !deck_work/build_demo_deck_esilv.js
+!deck_work/video/
+deck_work/video/*
+!deck_work/video/build_video.py
 ESILV Logo Sample.png
 /*.pptx
 /*.md
@@ -44,3 +47,6 @@ data/skillcorner/processed/
 # videos (too large for git; rebuilt by the grf_*/team_league scripts) and smoke-test leftovers
 *.mp4
 outputs/team_policy/smoke_*
+
+# GRF engine copies with real player names (scripts/grf_names.py)
+.grf_engine/

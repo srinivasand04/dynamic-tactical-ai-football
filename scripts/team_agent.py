@@ -201,8 +201,9 @@ class Brain:
         return out
 
 
-def play_game(left, right, cfg, net, dec, seed=0, video=None, steps=None):
-    """One GRF match, left team vs right team. Returns a dict of the result and both sides' statistics."""
+def play_game(left, right, cfg, net, dec, seed=0, video=None, steps=None, tracks=None):
+    """One GRF match, left team vs right team. Returns a dict of the result and both sides' statistics.
+    tracks: a list that gets one (players (22, 2) m, ball (3,), score (2,), game mode) per step, for the 3D viewer."""
     rng = np.random.default_rng(seed)
     ai_right = right == "GRF AI"
     env = football_env.create_environment(
@@ -224,6 +225,8 @@ def play_game(left, right, cfg, net, dec, seed=0, video=None, steps=None):
         if video is not None:
             import cv2
             video.write(cv2.cvtColor(o["frame"], cv2.COLOR_RGB2BGR))
+        if tracks is not None:
+            tracks.append((np.concatenate([lt, rt]), np.r_[ball, o["ball"][2]], tuple(o["score"]), int(o["game_mode"])))
         acts = []
         for side, br in brains.items():
             own, opp, bl = br.view(lt, rt, ball)

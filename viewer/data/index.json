@@ -4,10 +4,6 @@
   "title": "Auckland FC v Newcastle (1886347), full match"
  },
  {
-  "file": "10517_full.json",
-  "title": "Argentina v France (10517), full match"
- },
- {
   "file": "J03WOH_3500.json",
   "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 57' to 61' + GRF with real passes"
  },
@@ -18,5 +14,13 @@
  {
   "file": "J03WOH_whatif_3610.json",
   "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Models, no change, What-if: carrier passes forward at once, What-if: back four 3 m deeper, What-if: back four 3 m higher, What-if: attack plays as Croatia, What-if: attack plays as Argentina, What-if: attack plays as France"
+ },
+ {
+  "file": "10517_full.json",
+  "title": "Argentina v France (10517), full match"
+ },
+ {
+  "file": "Argentina_vs_France.json",
+  "title": "GRF model match: Argentina v France (2-0), team models, seed 7"
  }
 ]

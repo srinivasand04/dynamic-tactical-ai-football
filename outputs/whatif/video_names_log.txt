@@ -1,0 +1,13 @@
+  baseline           seed 0: goal 0  shots 2  xG 0.036  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_baseline.npz
+  line_deeper        seed 0: goal 0  shots 2  xG 0.054  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_line_deeper.npz
+  line_higher        seed 0: goal 0  shots 9  xG 0.199  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_line_higher.npz
+  early_pass         seed 0: goal 1  shots 9  xG 0.782  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_early_pass.npz
+  att_as_Argentina   seed 0: goal 0  shots 6  xG 0.202  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_Argentina.npz
+  att_as_France      seed 0: goal 1  shots 4  xG 0.174  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_France.npz
+  att_as_Croatia     seed 0: goal 0  shots 5  xG 0.085  -> C:\Users\Srinivasan\grf-prototype\outputs\whatif/grf_whatif_J03WOH_3500_att_as_Croatia.npz
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_line_deeper_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_line_higher_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_early_pass_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_Argentina_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_France_grf.mp4
+wrote C:\Users\Srinivasan\grf-prototype\outputs\whatif/J03WOH_3500_3610_att_as_Croatia_grf.mp4

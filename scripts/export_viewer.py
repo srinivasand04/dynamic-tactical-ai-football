@@ -45,8 +45,11 @@ def team_names(m):
     return "Home", "Away", ""
 
 
+PFF_ROSTERS = "data/external/pff_worldcup/raw/FIFA World Cup 2022/Rosters"
+
+
 def player_names(m, d):
-    """shirt -> name per side, from the DFL player list when there is one (other datasets: shirt numbers only)."""
+    """shirt -> name per side: the DFL player list, or the PFF match roster (SkillCorner: shirt numbers only)."""
     out = {"home": {}, "away": {}}
     pfile = f"data/real/raw/{m}_players.csv"
     if os.path.exists(pfile):
@@ -54,7 +57,35 @@ def player_names(m, d):
         for r in d.drop_duplicates("dfl_id").itertuples():
             if r.dfl_id in p:
                 out[r.team][str(int(r.jersey))] = p[r.dfl_id]
+    rfile = f"{PFF_ROSTERS}/{m}.json"
+    if settings.dataset(m) == "pff" and os.path.exists(rfile):
+        home, away, _ = team_names(m)
+        for p in json.load(open(rfile, encoding="utf-8")):
+            side = "home" if p["team"]["name"] == home else "away" if p["team"]["name"] == away else None
+            if side:
+                out[side][str(int(p["shirtNumber"]))] = p["player"]["nickname"]
     return out
+
+
+def grf_match(path, every, out_name):
+    """A model-vs-model GRF match (team_league.py --video ... writes <left>_vs_<right>.npz) as a viewer file of its own."""
+    z = np.load(path, allow_pickle=True)
+    P, B = z["players"][::every], z["ball"][::every]
+    left, right = [str(x) for x in z["teams"]]
+    F = len(P)
+    shirts = [int(x) for x in z["shirts_left"]] + [int(x) for x in z["shirts_right"]]
+    names = {"home": {str(int(s)): str(n) for s, n in zip(z["shirts_left"], z["names_left"])},
+             "away": {str(int(s)): str(n) for s, n in zip(z["shirts_right"], z["names_right"])}}
+    sc = z["score"][::every]
+    out = {"match": "GRF", "dataset": "grf model match", "home": f"{left} (model)", "away": f"{right} (model)",
+           "final_score": f"{int(z['score'][-1][0])}-{int(z['score'][-1][1])}", "fps": 10.0 / every,
+           "t": np.round(np.arange(F) * every / 10.0, 2).tolist(), "px": ints(P[:, :, 0]), "py": ints(P[:, :, 1]),
+           "bx": ints(B[:, 0]), "by": ints(B[:, 1]), "bz": ints(np.clip(B[:, 2], 0, None)),
+           "live": (z["game_mode"][::every] == 0).astype(int).tolist(), "sh": sc[:, 0].astype(int).tolist(), "sa": sc[:, 1].astype(int).tolist(),
+           "rosters": [[0, shirts]], "names": names, "clock": [[0.0, 0.0]], "layers": []}
+    name = out_name or os.path.basename(path).replace(".npz", ".json")
+    title = f"GRF model match: {left} v {right} ({out['final_score']}), team models, seed {int(z['seed'])}"
+    return out, name, title
 
 
 def ints(a):
@@ -64,13 +95,18 @@ def ints(a):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--match", required=True)
+    ap.add_argument("--match", default=None, help="a real match (not needed with --grf-match)")
     ap.add_argument("--start-s", type=float, default=None)
     ap.add_argument("--minutes", type=float, default=None)
     ap.add_argument("--every", type=int, default=1, help="keep every n-th frame (2 = 5 frames/s; the viewer interpolates)")
     ap.add_argument("--layer", action="append", default=[], help='"name=path.npz" of a run of the same stretch (repeatable)')
     ap.add_argument("--out", default=None, help="file name in viewer/data (default: built from the match and stretch)")
+    ap.add_argument("--grf-match", default=None, help="a model-vs-model GRF match .npz (team_league.py --video) instead of a real match")
     a = ap.parse_args()
+    if a.grf_match:
+        out, name, title = grf_match(a.grf_match, a.every, a.out)
+        write(out, name, title)
+        return
 
     cols = ["frame", "time_s", "team", "player_id", "x_m", "y_m", "ball_x_m", "ball_y_m", "ball_z", "game_mode",
             "score_home", "score_away", "period", "dfl_id", "jersey"]
@@ -127,19 +163,25 @@ def main():
         out["layers"].append({"name": name, "jerseys": jl, "t": np.round(lt[idx], 2).tolist(),
                               "px": ints(g[:, idx, 0].T), "py": ints(g[:, idx, 1].T), "bx": ints(b[idx, 0]), "by": ints(b[idx, 1])})
     name = a.out or (f"{a.match}" + (f"_{int(a.start_s)}" if a.start_s is not None else "_full") + ".json")
-    os.makedirs("viewer/data", exist_ok=True)
-    with open(f"viewer/data/{name}", "w", encoding="utf-8") as fh:
-        json.dump(out, fh, separators=(",", ":"))
-    idx_path = "viewer/data/index.json"
-    index = json.load(open(idx_path, encoding="utf-8")) if os.path.exists(idx_path) else []
     def m_clock(t):
         c = [x for x in clock if x[0] <= t] or clock[:1]
         return t - c[-1][0] + c[-1][1]
     title = (f"{home} v {away} ({a.match})" + (f", {int(m_clock(tt[0]) // 60)}' to {int(m_clock(tt[-1]) // 60) + 1}'" if a.start_s is not None else ", full match")
              + (f" + {', '.join(l['name'] for l in out['layers'])}" if out["layers"] else ""))
+    write(out, name, title)
+
+
+def write(out, name, title):
+    """viewer/data/<name> and its entry in the viewer's list of files."""
+    os.makedirs("viewer/data", exist_ok=True)
+    with open(f"viewer/data/{name}", "w", encoding="utf-8") as fh:
+        json.dump(out, fh, separators=(",", ":"))
+    idx_path = "viewer/data/index.json"
+    index = json.load(open(idx_path, encoding="utf-8")) if os.path.exists(idx_path) else []
     index = [e for e in index if e["file"] != name] + [{"file": name, "title": title}]
     json.dump(index, open(idx_path, "w", encoding="utf-8"), indent=1)
-    print(f"wrote viewer/data/{name}: {F} frames ({F / out['fps'] / 60:.1f} min), {len(rosters)} line-ups, {len(out['layers'])} layer(s), "
+    F = len(out["t"])
+    print(f"wrote viewer/data/{name}: {F} frames ({F / out['fps'] / 60:.1f} min), {len(out['rosters'])} line-ups, {len(out['layers'])} layer(s), "
           f"{os.path.getsize(f'viewer/data/{name}') / 1e6:.1f} MB")
 
 
