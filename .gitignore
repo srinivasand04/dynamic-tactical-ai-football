@@ -50,3 +50,4 @@ outputs/team_policy/smoke_*
 
 # GRF engine copies with real player names (scripts/grf_names.py)
 .grf_engine/
+outputs/tuning/preds/

@@ -1,0 +1,10 @@
+part,rung,folds,top1_%,vs_current,vs_current_ci95,better_in_folds,top3_%,log_loss,auc,brier
+choice,chance,7,10.0955,-34.9565,4.1527,0/7,,,,
+choice,nearest teammate,7,27.4437,-17.6083,3.4051,0/7,64.902,1.9052,,
+choice,linear (current),7,45.052,0.0,0.0,,80.9854,1.519,,
+choice,MLP,7,48.8272,3.7752,2.2683,6/7,82.4094,1.4379,,
+choice,5 MLPs averaged,7,49.4748,4.4228,2.2463,7/7,83.32,1.4145,,
+completion,pass length only,7,,-0.2171,0.0322,0/7,,,0.6246,0.0977
+completion,logistic (current),7,,0.0,0.0,,,,0.8416,0.0843
+completion,MLP,7,,0.0113,0.0136,5/7,,,0.853,0.0816
+completion,5 MLPs averaged,7,,0.014,0.0129,5/7,,,0.8556,0.0807

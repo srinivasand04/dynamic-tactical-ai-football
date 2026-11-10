@@ -47,6 +47,7 @@ SIMS = [m for m in settings.available(settings.SIM) if os.path.exists(settings.g
 PATH = {m: settings.base(m) for m in REALS + SIMS}
 N = 23
 L = settings.get("gnn", "window", default=3)
+EVAL_START = 4        # first Key State a window may end at: the same for every window length up to 5, so the rungs are scored on the same moments
 D_MOVE = 5.0          # metres: scale of the movement we predict
 SUFFIX = settings.graph_suffix()   # "" = radius graphs (_graphs.npz)   "_delaunay" = Delaunay graphs; set by graph.mode in settings.json
 PASS_KEY = None       # None = no pass edges;  "pscore" / "praw" = which numbers ride on the pass edges (build_pass_edges.py)
@@ -78,7 +79,7 @@ def load(match):
     gap_next = np.zeros(K)
     gap_next[:-1] = g["time_s"][1:] - g["time_s"][:-1]
     vel_ms = g["vel"].copy()                                               # real units for the keep-velocity baseline
-    idx = np.arange(L - 1, K - 1)                                          # windows that end at k and have a next Key State
+    idx = np.arange(max(L, EVAL_START + 1) - 1, K - 1)                     # windows that end at k and have a next Key State
     extra = {}
     if PASS_KEY:
         pe = np.load(PATH[match] + "_passedges.npz")
@@ -275,8 +276,9 @@ def errors(pred, b):
     return np.array([(err * ply).sum().item(), ply.sum().item(), (err * ball).sum().item(), ball.sum().item()])
 
 
-def evaluate(model, d, ks=None, bs=256):
-    """Returns (model, nobody-moves, keep-velocity), each as (player error, ball error) in metres."""
+def evaluate(model, d, ks=None, bs=256, keep=None):
+    """Returns (model, nobody-moves, keep-velocity), each as (player error, ball error) in metres.
+    keep: a list that receives (pred, target, ok) per batch in metres, for ensembles (tuning_ladder.py)."""
     model.eval()
     ks = d["idx"] if ks is None else ks
     tot, base0, basev = np.zeros(4), np.zeros(4), np.zeros(4)
@@ -284,6 +286,8 @@ def evaluate(model, d, ks=None, bs=256):
         for i in range(0, len(ks), bs):
             b = batch(d, ks[i:i + bs])
             pred, _ = model(b)
+            if keep is not None:
+                keep.append(((pred * D_MOVE).numpy(), (b["target"] * D_MOVE).numpy(), b["ok"].numpy()))
             tot += errors(pred, b)
             base0 += errors(torch.zeros_like(pred), b)
             basev += errors(b["vel"] * b["gap_next"][:, None, None] / D_MOVE, b)
@@ -300,11 +304,17 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--no-mirror", action="store_true", help="switch off the random mirroring of training pictures")
     ap.add_argument("--save-embeddings", action="store_true")
+    ap.add_argument("--window", type=int, default=settings.get("gnn", "window", default=3), help="how many Key States the GRU reads (1 = no time context)")
+    ap.add_argument("--no-sims", action="store_true", help="skip the simulated matches (faster; only the held-out real match is scored)")
+    ap.add_argument("--save-preds", default="", help="file (.npz) for the held-out match's predictions, targets and mask (for ensembles)")
     ap.add_argument("--tag", default="", help="name of this run; with --save-embeddings it is added to the file names")
     ap.add_argument("--graphs", choices=["radius", "delaunay"], default=settings.get("graph", "mode", default="radius"), help="which edge definition to use (default: graph.mode in settings.json)")
     ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
     a = ap.parse_args()
-    global SUFFIX, PASS_KEY, PASS_SHUFFLE
+    global SUFFIX, PASS_KEY, PASS_SHUFFLE, L, SIMS
+    L = a.window
+    if a.no_sims:
+        SIMS = []
     SUFFIX = "" if a.graphs == "radius" else "_delaunay"
     PASS_KEY = PASS_ARCH.get(a.arch)
     PASS_SHUFFLE = a.arch == "pass_shuffle"
@@ -366,7 +376,11 @@ def main():
     print("\nMean error in metres between predicted and actual movement to the next Key State (lower is better)")
     rows = []
     for m in ([a.holdout] if a.holdout != "none" else []) + SIMS:
-        (p, pb), (p0, pb0), (pv, pbv) = evaluate(model, data[m])
+        keep = [] if (a.save_preds and m == a.holdout) else None
+        (p, pb), (p0, pb0), (pv, pbv) = evaluate(model, data[m], keep=keep)
+        if keep:
+            np.savez_compressed(a.save_preds, pred=np.concatenate([k[0] for k in keep]), target=np.concatenate([k[1] for k in keep]),
+                                ok=np.concatenate([k[2] for k in keep]))
         rows.append((m, "held-out real" if m in REALS else "simulated", p, p0, pv, pb, pb0, pbv))
     print(f"{'match':10s} {'kind':14s} | players: model  still  keep-vel | ball: model  still  keep-vel")
     for r in rows:
@@ -375,12 +389,12 @@ def main():
     sims = [r for r in rows if r[1] == "simulated"]
     real = [r for r in rows if r[1] == "held-out real"]
     entry = {"script": "train_gnn", "tag": a.tag, "holdout": a.holdout, "graphs": a.graphs, "mirror": not a.no_mirror,
-             "arch": a.arch, "params": n_params,
+             "arch": a.arch, "params": n_params, "window": L,
              "team_k": settings.get("graph", "team_k"), "dim": a.dim, "seed": a.seed, "epochs_run": epochs_run, "best_epoch": best_ep,
              "best_validation_m": round(float(best), 3), "n_train_matches": len(train), "n_sim_matches": len(SIMS),
              "minutes": round((time.time() - t_start) / 60, 1),
-             "sim_player_model_m": round(float(np.mean([r[2] for r in sims])), 3), "sim_player_keepvel_m": round(float(np.mean([r[4] for r in sims])), 3),
-             "sim_ball_model_m": round(float(np.mean([r[5] for r in sims])), 3), "sim_ball_keepvel_m": round(float(np.mean([r[7] for r in sims])), 3)}
+             **({"sim_player_model_m": round(float(np.mean([r[2] for r in sims])), 3), "sim_player_keepvel_m": round(float(np.mean([r[4] for r in sims])), 3),
+                 "sim_ball_model_m": round(float(np.mean([r[5] for r in sims])), 3), "sim_ball_keepvel_m": round(float(np.mean([r[7] for r in sims])), 3)} if sims else {})}
     if real:
         entry.update({"real_player_model_m": round(real[0][2], 3), "real_player_keepvel_m": round(real[0][4], 3), "real_player_still_m": round(real[0][3], 3),
                       "real_ball_model_m": round(real[0][5], 3), "real_ball_keepvel_m": round(real[0][7], 3)})
