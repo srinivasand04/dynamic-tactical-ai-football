@@ -1,0 +1,85 @@
+rung,fold,player_m,ball_m,epochs,params
+no graph (mlp),J03WMX,1.1681,3.5337,8.0,22850.0
+GCN,J03WMX,1.1332,3.5926,8.0,22850.0
+GAT,J03WMX,1.1012,3.4507,12.0,22946.0
+"ours, no time (window 1)",J03WMX,1.1411,3.4885,12.0,83714.0
+ours (window 3) = current,J03WMX,1.0997,3.339,12.0,83714.0
+"ours, window 5",J03WMX,1.0732,3.2036,18.0,83714.0
+"ours, no mirroring",J03WMX,1.0797,3.3682,18.0,83714.0
+"ours, dim 96",J03WMX,1.0919,3.2237,14.0,328706.0
+ours seed 1,J03WMX,1.1259,3.4814,7.0,83714.0
+ours seed 2,J03WMX,1.1437,3.7743,6.0,83714.0
+ensemble of 3 seeds,J03WMX,1.0972,3.3897,,
+keep velocity (baseline),J03WMX,1.457,6.667,,
+no graph (mlp),J03WN1,1.2737,3.4542,11.0,22850.0
+GCN,J03WN1,1.2105,3.4246,15.0,22850.0
+GAT,J03WN1,1.2017,3.4162,12.0,22946.0
+"ours, no time (window 1)",J03WN1,1.2579,3.7468,9.0,83714.0
+ours (window 3) = current,J03WN1,1.1924,3.2919,17.0,83714.0
+"ours, window 5",J03WN1,1.2328,3.3591,8.0,83714.0
+"ours, no mirroring",J03WN1,1.207,3.3654,13.0,83714.0
+"ours, dim 96",J03WN1,1.1875,3.1974,12.0,328706.0
+ours seed 1,J03WN1,1.1908,3.2994,12.0,83714.0
+ours seed 2,J03WN1,1.2513,3.5829,6.0,83714.0
+ensemble of 3 seeds,J03WN1,1.1783,3.2626,,
+keep velocity (baseline),J03WN1,1.598,6.46,,
+no graph (mlp),J03WPY,1.17,3.3523,11.0,22850.0
+GCN,J03WPY,1.1316,3.3787,10.0,22850.0
+GAT,J03WPY,1.0772,3.1501,17.0,22946.0
+"ours, no time (window 1)",J03WPY,1.1409,3.2938,14.0,83714.0
+ours (window 3) = current,J03WPY,1.068,3.034,19.0,83714.0
+"ours, window 5",J03WPY,1.0688,2.9917,20.0,83714.0
+"ours, no mirroring",J03WPY,1.123,3.1746,9.0,83714.0
+"ours, dim 96",J03WPY,1.071,2.9668,15.0,328706.0
+ours seed 1,J03WPY,1.1083,3.2838,11.0,83714.0
+ours seed 2,J03WPY,1.0949,3.0641,11.0,83714.0
+ensemble of 3 seeds,J03WPY,1.0609,3.0006,,
+keep velocity (baseline),J03WPY,1.486,6.071,,
+no graph (mlp),J03WOH,1.1747,3.2864,12.0,22850.0
+GCN,J03WOH,1.1363,3.3708,10.0,22850.0
+GAT,J03WOH,1.1041,3.1875,14.0,22946.0
+"ours, no time (window 1)",J03WOH,1.1792,3.4017,9.0,83714.0
+ours (window 3) = current,J03WOH,1.1512,3.3618,8.0,83714.0
+"ours, window 5",J03WOH,1.1491,3.3065,8.0,83714.0
+"ours, no mirroring",J03WOH,1.1007,3.0677,14.0,83714.0
+"ours, dim 96",J03WOH,1.0973,2.9675,12.0,328706.0
+ours seed 1,J03WOH,1.0939,3.1164,13.0,83714.0
+ours seed 2,J03WOH,1.1569,3.4667,7.0,83714.0
+ensemble of 3 seeds,J03WOH,1.1013,3.1662,,
+keep velocity (baseline),J03WOH,1.499,5.668,,
+no graph (mlp),J03WQQ,1.1746,3.4297,13.0,22850.0
+GCN,J03WQQ,1.0915,3.2299,22.0,22850.0
+GAT,J03WQQ,1.1074,3.2408,16.0,22946.0
+"ours, no time (window 1)",J03WQQ,1.1804,3.4169,13.0,83714.0
+ours (window 3) = current,J03WQQ,1.0996,3.1832,14.0,83714.0
+"ours, window 5",J03WQQ,1.1212,3.1644,13.0,83714.0
+"ours, no mirroring",J03WQQ,1.1263,3.2291,13.0,83714.0
+"ours, dim 96",J03WQQ,1.1245,3.2279,11.0,328706.0
+ours seed 1,J03WQQ,1.1307,3.3993,12.0,83714.0
+ours seed 2,J03WQQ,1.0945,3.1039,16.0,83714.0
+ensemble of 3 seeds,J03WQQ,1.0814,3.1117,,
+keep velocity (baseline),J03WQQ,1.506,6.436,,
+no graph (mlp),J03WOY,1.2122,3.4452,7.0,22850.0
+GCN,J03WOY,1.1433,3.2207,11.0,22850.0
+GAT,J03WOY,1.1277,3.1519,13.0,22946.0
+"ours, no time (window 1)",J03WOY,1.2095,3.3749,9.0,83714.0
+ours (window 3) = current,J03WOY,1.1556,3.1336,9.0,83714.0
+"ours, window 5",J03WOY,1.1497,3.133,9.0,83714.0
+"ours, no mirroring",J03WOY,1.1589,3.2769,7.0,83714.0
+"ours, dim 96",J03WOY,1.1341,3.0679,10.0,328706.0
+ours seed 1,J03WOY,1.1166,3.0943,16.0,83714.0
+ours seed 2,J03WOY,1.1464,3.1723,9.0,83714.0
+ensemble of 3 seeds,J03WOY,1.1048,3.0323,,
+keep velocity (baseline),J03WOY,1.517,5.863,,
+no graph (mlp),J03WR9,1.2181,3.635,9.0,22850.0
+GCN,J03WR9,1.1444,3.2868,15.0,22850.0
+GAT,J03WR9,1.1325,3.233,19.0,22946.0
+"ours, no time (window 1)",J03WR9,1.1803,3.2618,14.0,83714.0
+ours (window 3) = current,J03WR9,1.165,3.4268,10.0,83714.0
+"ours, window 5",J03WR9,1.1687,3.3798,10.0,83714.0
+"ours, no mirroring",J03WR9,1.1912,3.6618,7.0,83714.0
+"ours, dim 96",J03WR9,1.1289,3.1588,14.0,328706.0
+ours seed 1,J03WR9,1.1048,3.0622,24.0,83714.0
+ours seed 2,J03WR9,1.1116,3.0423,24.0,83714.0
+ensemble of 3 seeds,J03WR9,1.0988,3.015,,
+keep velocity (baseline),J03WR9,1.515,6.163,,

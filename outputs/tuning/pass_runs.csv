@@ -1,0 +1,64 @@
+part,rung,fold,top1_%,top3_%,log_loss,auc,brier
+choice,chance,J03WMX,10.0,,,,
+choice,nearest teammate,J03WMX,31.769,70.0361,1.7875,,
+choice,linear (current),J03WMX,54.6931,84.657,1.3953,,
+choice,MLP,J03WMX,54.8736,85.5596,1.3161,,
+choice,5 MLPs averaged,J03WMX,55.5957,86.2816,1.266,,
+completion,pass length only,J03WMX,,,,0.7012,0.0852
+completion,logistic (current),J03WMX,,,,0.8363,0.078
+completion,MLP,J03WMX,,,,0.8701,0.0733
+completion,5 MLPs averaged,J03WMX,,,,0.8692,0.0723
+choice,chance,J03WN1,10.4788,,,,
+choice,nearest teammate,J03WN1,28.1106,61.9816,1.9753,,
+choice,linear (current),J03WN1,37.3272,75.576,1.6403,,
+choice,MLP,J03WN1,42.8571,79.2627,1.5737,,
+choice,5 MLPs averaged,J03WN1,41.0138,79.2627,1.5519,,
+completion,pass length only,J03WN1,,,,0.5878,0.1396
+completion,logistic (current),J03WN1,,,,0.8136,0.1191
+completion,MLP,J03WN1,,,,0.8178,0.1121
+completion,5 MLPs averaged,J03WN1,,,,0.8209,0.1114
+choice,chance,J03WPY,10.0,,,,
+choice,nearest teammate,J03WPY,31.0484,70.1613,1.8241,,
+choice,linear (current),J03WPY,47.379,83.6694,1.4427,,
+choice,MLP,J03WPY,54.8387,85.0806,1.3142,,
+choice,5 MLPs averaged,J03WPY,55.2419,86.2903,1.3012,,
+completion,pass length only,J03WPY,,,,0.6626,0.0746
+completion,logistic (current),J03WPY,,,,0.8964,0.0609
+completion,MLP,J03WPY,,,,0.9013,0.0605
+completion,5 MLPs averaged,J03WPY,,,,0.9044,0.0602
+choice,chance,J03WOH,10.0,,,,
+choice,nearest teammate,J03WOH,25.7653,61.9898,1.9594,,
+choice,linear (current),J03WOH,46.9388,79.3367,1.52,,
+choice,MLP,J03WOH,45.9184,78.3163,1.5208,,
+choice,5 MLPs averaged,J03WOH,47.1939,81.6327,1.4997,,
+completion,pass length only,J03WOH,,,,0.6416,0.1067
+completion,logistic (current),J03WOH,,,,0.8328,0.0905
+completion,MLP,J03WOH,,,,0.8192,0.0941
+completion,5 MLPs averaged,J03WOH,,,,0.8283,0.0919
+choice,chance,J03WQQ,10.1897,,,,
+choice,nearest teammate,J03WQQ,27.2142,62.3188,1.912,,
+choice,linear (current),J03WQQ,44.1224,80.6763,1.5378,,
+choice,MLP,J03WQQ,48.3092,83.4138,1.4281,,
+choice,5 MLPs averaged,J03WQQ,48.4702,83.5749,1.4121,,
+completion,pass length only,J03WQQ,,,,0.5797,0.0744
+completion,logistic (current),J03WQQ,,,,0.7963,0.0697
+completion,MLP,J03WQQ,,,,0.81,0.0704
+completion,5 MLPs averaged,J03WQQ,,,,0.8127,0.0696
+choice,chance,J03WOY,10.0,,,,
+choice,nearest teammate,J03WOY,23.1518,61.284,1.9991,,
+choice,linear (current),J03WOY,43.9689,80.7393,1.5601,,
+choice,MLP,J03WOY,48.6381,80.9339,1.477,,
+choice,5 MLPs averaged,J03WOY,50.5837,81.7121,1.4494,,
+completion,pass length only,J03WOY,,,,0.5688,0.1126
+completion,logistic (current),J03WOY,,,,0.818,0.0994
+completion,MLP,J03WOY,,,,0.8548,0.0906
+completion,5 MLPs averaged,J03WOY,,,,0.8591,0.0894
+choice,chance,J03WR9,10.0,,,,
+choice,nearest teammate,J03WR9,25.0467,66.5421,1.8792,,
+choice,linear (current),J03WR9,40.9346,82.243,1.537,,
+choice,MLP,J03WR9,46.3551,84.2991,1.4357,,
+choice,5 MLPs averaged,J03WR9,48.2243,84.486,1.4213,,
+completion,pass length only,J03WR9,,,,0.6304,0.0908
+completion,logistic (current),J03WR9,,,,0.8981,0.0726
+completion,MLP,J03WR9,,,,0.8976,0.0699
+completion,5 MLPs averaged,J03WR9,,,,0.8947,0.0704
