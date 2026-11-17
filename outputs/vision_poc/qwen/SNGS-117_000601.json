@@ -1,0 +1,139 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-117",
+ "frame": "000601.jpg",
+ "seconds": 398.9683470726013,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    833.28,
+    602.6400000000001,
+    900.4799999999999,
+    735.48
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "19"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    975.36,
+    481.68,
+    1029.1200000000001,
+    612.3599999999999
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    931.1999999999999,
+    413.64,
+    1006.08,
+    497.88
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    769.9200000000001,
+    386.64,
+    825.6,
+    469.8
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "10"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    875.52,
+    394.2,
+    912.0,
+    486.0
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    405.12,
+    597.24,
+    481.92,
+    735.48
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    0.0,
+    803.52,
+    99.83999999999999,
+    994.6800000000001
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1827.84,
+    394.2,
+    1864.32,
+    494.64000000000004
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "referee",
+   "box": [
+    7.68,
+    481.68,
+    65.28,
+    602.6400000000001
+   ],
+   "score": 1.0,
+   "shirt": "yellow",
+   "number": null
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    921.5999999999999,
+    372.59999999999997,
+    938.88,
+    390.96
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [434, 558, 469, 681], \"shirt\": \"red\", \"number\": \"19\"},\n\t{\"label\": \"player\", \"bbox_2d\": [508, 446, 536, 567], \"shirt\": \"red\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [485, 383, 524, 461], \"shirt\": \"red\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [401, 358, 430, 435], \"shirt\": \"red\", \"number\": \"10\"},\n\t{\"label\": \"player\", \"bbox_2d\": [456, 365, 475, 450], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [211, 553, 251, 681], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [0, 744, 52, 921], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [952, 365, 971, 458], \"shirt\": \"white\"},\n\t{\"label\": \"referee\", \"bbox_2d\": [4, 446, 34, 558], \"shirt\": \"yellow\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [480, 345, 489, 362]}\n]\n```"
+}

@@ -10,6 +10,24 @@ Scenarios (attacking team = the team with the ball at the start, defending team 
   line_deeper      the defending team's back four start --shift metres nearer their own goal
   line_higher      the back four start --shift metres further up the pitch
   early_pass       the first ball carrier passes at once to his most advanced teammate
+  press            the defending team's 3 players nearest the ball start 3 m closer to it
+  compact          the defending team starts 25% narrower (towards its own middle)
+  wide_attack      the attacking team's 2 widest players (not the carrier) start 5 m wider
+  striker_deeper   the attacking team's most advanced player starts 5 m deeper
+  extra_runner     the attacking midfielder nearest behind the ball starts 8 m further forward (a run)
+  shoot_early      the attacking team shoots from 6 m further out than its usual distance
+  patient          the attacking carrier keeps the ball twice as long before passing
+  quick_play       the attacking carrier passes twice as fast
+  team_press       every defending outfield player starts 3 m closer to the ball
+  low_block        the whole defending team starts 6 m nearer its own goal
+  man_marking      each defending outfield player starts halfway to the attacker nearest him
+  defence_wider    the defending team starts 25% wider
+  keeper_off_line  the defending keeper starts 4 m off his line
+  double_team      the 2 defenders nearest the carrier close him down to 1.5 m
+  overload_ball_side  the 2 attackers furthest from the ball's side come up to 8 m across towards it
+  fullbacks_overlap   the attacking team's full-backs (2 widest of its 4 deepest) start 10 m further forward
+  switch_play      the first carrier passes at once to the teammate furthest across the pitch
+  long_ball        the attacking team plays every pass long
   att_as_<Team>    the attacking team plays with that team's model and style (e.g. att_as_Croatia)
   move             one chosen player starts somewhere else (--move PLAYER FORWARD LEFT): the coach's "you should have been
                    there". PLAYER = part of the name ('Klaus') or side:shirt ('home:11'); FORWARD = metres towards the goal
@@ -17,7 +35,8 @@ Scenarios (attacking team = the team with the ball at the start, defending team 
                    His last 2 s move with him, so he arrives at the new spot with his real speed. Results get their own
                    files (..._move_<name>_...), the earlier results stay.
 
-Scores per run (attacking team's point of view, within --seconds): goal, shots, xG proxy, furthest point the ball reached,
+Scores per run (attacking team's point of view, within --seconds): goal, shots, xG (value_models.py), max xT the ball reached
+(before losing it), furthest point the ball reached,
 seconds until the defending team wins the ball.
 
 Input : data/real/processed/<match>_segment_<start>.npz (export_segment.py), the team models (team_policy.py, team_decisions.py)
@@ -81,7 +100,96 @@ def describe(name, shift, move=None):
         return f"back four {shift:g} m higher"
     if name == "early_pass":
         return "carrier passes forward at once"
+    if name in NEW_SCEN:
+        return NEW_SCEN[name]
     return f"attack plays as {name[7:]}"
+
+
+NEW_SCEN = {"press": "3 nearest defenders 3 m closer to the ball",
+            "compact": "defending team 25% narrower",
+            "wide_attack": "2 widest attackers 5 m wider",
+            "striker_deeper": "most advanced attacker 5 m deeper",
+            "extra_runner": "a midfielder behind the ball runs 8 m forward",
+            "shoot_early": "carrier shoots from 6 m further out",
+            "patient": "carrier keeps the ball twice as long",
+            "quick_play": "carrier passes twice as fast",
+            "team_press": "whole defending team 3 m closer to the ball",
+            "low_block": "whole defending team 6 m deeper",
+            "man_marking": "each defender halfway to his nearest attacker",
+            "defence_wider": "defending team 25% wider",
+            "keeper_off_line": "defending keeper 4 m off his line",
+            "double_team": "2 nearest defenders close the carrier to 1.5 m",
+            "overload_ball_side": "2 attackers 8 m towards the ball's side",
+            "fullbacks_overlap": "attacking full-backs 10 m forward",
+            "switch_play": "carrier switches play to the far side at once",
+            "long_ball": "attacking team always plays long passes"}
+SHAPE = ("press", "compact", "wide_attack", "striker_deeper", "extra_runner", "team_press", "low_block", "man_marking",
+         "defence_wider", "keeper_off_line", "double_team", "overload_ball_side", "fullbacks_overlap")
+DEFENCE = ("line_deeper", "line_higher", "press", "compact", "team_press", "low_block", "man_marking", "defence_wider",
+           "keeper_off_line", "double_team")          # changes made by the defending team (the rest: by the attacking team)
+
+
+def change_shape(pos, prev, ball, att, scen):
+    """The new position scenarios, on positions (22, T, 2) with home attacking +x; changes pos and prev in place."""
+    a0, d0 = (0, 11) if att == "home" else (11, 0)
+    s = 1.0 if att == "home" else -1.0                                     # attacking direction along x
+    b = ball[-1]
+    att_out, def_out = np.arange(a0 + 1, a0 + 11), np.arange(d0 + 1, d0 + 11)
+    carrier = att_out[np.argmin(np.hypot(*(pos[att_out, -1] - b).T))]
+    others = att_out[att_out != carrier]
+    shift = np.zeros((22, 2))
+    if scen == "press":
+        near = def_out[np.argsort(np.hypot(*(pos[def_out, -1] - b).T))[:3]]
+        for k in near:
+            v = b - pos[k, -1]
+            dist = np.hypot(*v)
+            shift[k] = v / max(dist, 1e-6) * min(3.0, max(dist - 1.0, 0.0))
+    elif scen == "compact":
+        mid = pos[def_out, -1, 1].mean()
+        shift[def_out, 1] = (mid - pos[def_out, -1, 1]) * 0.25
+    elif scen == "wide_attack":
+        wide = others[np.argsort(-abs(pos[others, -1, 1] - W / 2))[:2]]
+        shift[wide, 1] = np.sign(pos[wide, -1, 1] - W / 2) * 5.0
+    elif scen == "striker_deeper":
+        k = others[np.argmax(s * pos[others, -1, 0])]
+        shift[k, 0] = -s * 5.0
+    elif scen == "extra_runner":
+        behind = others[s * pos[others, -1, 0] < s * b[0]]
+        if len(behind):
+            k = behind[np.argmin(np.hypot(*(pos[behind, -1] - b).T))]
+            shift[k, 0] = s * 8.0
+    elif scen == "team_press":
+        for k in def_out:
+            v = b - pos[k, -1]
+            dist = np.hypot(*v)
+            shift[k] = v / max(dist, 1e-6) * min(3.0, max(dist - 1.0, 0.0))
+    elif scen == "low_block":
+        shift[def_out, 0] = s * 6.0                                        # towards the goal the defenders protect
+    elif scen == "man_marking":
+        for k in def_out:
+            j = att_out[np.argmin(np.hypot(*(pos[att_out, -1] - pos[k, -1]).T))]
+            shift[k] = (pos[j, -1] - pos[k, -1]) * 0.5
+    elif scen == "defence_wider":
+        mid = pos[def_out, -1, 1].mean()
+        shift[def_out, 1] = (pos[def_out, -1, 1] - mid) * 0.25
+    elif scen == "keeper_off_line":
+        shift[d0, 0] = -s * 4.0                                            # out of his goal, towards the play
+    elif scen == "double_team":
+        for k in def_out[np.argsort(np.hypot(*(pos[def_out, -1] - pos[carrier, -1]).T))[:2]]:
+            v = pos[carrier, -1] - pos[k, -1]
+            dist = np.hypot(*v)
+            shift[k] = v / max(dist, 1e-6) * max(dist - 1.5, 0.0)
+    elif scen == "overload_ball_side":
+        far = others[np.argsort(-abs(pos[others, -1, 1] - b[1]))[:2]]      # the two furthest from the ball's side come over
+        shift[far, 1] = np.sign(b[1] - pos[far, -1, 1]) * np.minimum(8.0, abs(b[1] - pos[far, -1, 1]))
+    elif scen == "fullbacks_overlap":
+        deep = others[np.argsort(s * pos[others, -1, 0])[:4]]              # the four deepest outfield players
+        fb = deep[np.argsort(-abs(pos[deep, -1, 1] - W / 2))[:2]]          # the two widest of them
+        shift[fb, 0] = s * 10.0
+    for arr in (pos, prev):
+        arr += shift[:, None, :]
+        arr[..., 0] = np.clip(arr[..., 0], 0.5, L - 0.5)
+        arr[..., 1] = np.clip(arr[..., 1], 0.5, W - 0.5)
 
 
 def moment(seg, start_s, scen, shift, move=None):
@@ -115,6 +223,8 @@ def moment(seg, start_s, scen, shift, move=None):
         for arr in (pos, prev):
             arr[k, :, 0] = np.clip(arr[k, :, 0] + d * fwd, 0.5, L - 0.5)
             arr[k, :, 1] = np.clip(arr[k, :, 1] + d * left, 0.5, W - 0.5)
+    if scen in SHAPE:
+        change_shape(pos, prev, ball, att, scen)
     vel = np.concatenate([(pos - prev) * FPS, ((ball - bprev) * FPS)[None]], axis=0)
     return pos, ball, vel, att, mirrored, i
 
@@ -144,7 +254,16 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
     brains = {"left": Brain(names["home"], names["away"], "left", cfg, net, dec, rng),
               "right": Brain(names["away"], names["home"], "right", cfg, net, dec, rng)}
     att_side = "left" if att == "home" else "right"
-    brains[att_side].early_pass = scen == "early_pass"
+    brains[att_side].early_pass = scen in ("early_pass", "switch_play")
+    brains[att_side].early_kind = "switch" if scen == "switch_play" else "advanced"
+    if scen == "long_ball":
+        brains[att_side].long_share = 10.0                                  # every pass is a long one
+    if scen == "shoot_early":
+        brains[att_side].shot_d += 6.0
+    elif scen == "patient":
+        brains[att_side].hold_steps *= 2
+    elif scen == "quick_play":
+        brains[att_side].hold_steps = max(3, brains[att_side].hold_steps // 2)
     o = obs[0]
     for side, br in brains.items():                                       # the brains remember the last 2 s of the real moment
         rown = np.array(o["left_team_roles"] if side == "left" else o["right_team_roles"])
@@ -197,6 +316,23 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
     env.close()
     s = brains[att_side].stats
     bx = np.array(balls)[:, 0]
+    bxy = np.array(balls)
+    bxy = bxy if att_side == "left" else np.c_[L - bxy[:, 0], W - bxy[:, 1]]       # attacking towards x = 105
+    keep = len(bxy) if np.isnan(res["lost_ball_s"]) else max(1, int(res["lost_ball_s"] * FPS))
+    try:
+        import value_models
+        xt_path = value_models.xt(bxy[:keep])
+        res["max_xt"] = round(float(xt_path.max()), 4)
+        res["xt_gain"] = round(float(xt_path.max() - xt_path[0]), 4)
+        P = np.array(players)[:keep]                                            # (T, 22, 2)
+        if att_side == "left":
+            A, D = P[:, :11], P[:, 11:]
+        else:
+            A, D = np.stack([L - P[:, 11:, 0], W - P[:, 11:, 1]], -1), np.stack([L - P[:, :11, 0], W - P[:, :11, 1]], -1)
+        th = [value_models.threat(bxy[t], A[t], D[t]) for t in range(0, keep, 5)]
+        res["max_threat"] = round(float(max(th)), 4) if th and value_models._load()["threat"] else np.nan
+    except (OSError, ImportError, TypeError):
+        res["max_xt"] = res["xt_gain"] = res["max_threat"] = np.nan
     res.update({"shots": s["shots"], "xg": round(s["xg"], 3), "passes": s["passes"],
                 "furthest_m": round(float(bx.max() if att_side == "left" else L - bx.min()), 1),
                 "end_ball_to_goal_m": round(float(np.hypot(balls[-1][0] - goal_x, balls[-1][1] - W / 2)), 1),
@@ -233,11 +369,15 @@ def summarise(df, shift, move=None):
     for scen, g in df.groupby("scenario", sort=False):
         g = g.set_index("seed")
         r = {"scenario": scen, "what_changed": describe(scen, shift, move), "runs": len(g),
-             "goal_rate": g["goal"].mean(), "shots": g["shots"].mean(), "xg": g["xg"].mean(), "furthest_m": g["furthest_m"].mean(),
+             "goal_rate": g["goal"].mean(), "shots": g["shots"].mean(), "xg": g["xg"].mean(), "max_xt": g["max_xt"].mean() if "max_xt" in g else np.nan,
+             "max_threat": g["max_threat"].mean() if "max_threat" in g else np.nan,
+             "furthest_m": g["furthest_m"].mean(),
              "lost_ball_rate": g["lost_ball_s"].notna().mean()}
         if scen != "baseline":
             common = g.index.intersection(base.index)
-            for k in ("goal", "shots", "xg", "furthest_m"):
+            for k in ("goal", "shots", "xg", "max_xt", "max_threat", "furthest_m"):
+                if k not in g:
+                    continue
                 d = g.loc[common, k] - base.loc[common, k]
                 r[f"d_{k}"], r[f"d_{k}_ci95"] = d.mean(), ci(d)
         rows.append(r)
@@ -255,7 +395,7 @@ def chart(key):
     fig, ax = plt.subplots(1, 3, figsize=(16, 4.6))
     y = np.arange(len(s))
     for a_, col, title, ref in ((ax[0], "goal", "Goals per run (change vs no change)", base["goal_rate"]),
-                                (ax[1], "xg", "xG proxy per run (change vs no change)", base["xg"]),
+                                (ax[1], "xg", "xG per run (change vs no change)", base["xg"]),
                                 (ax[2], "furthest_m", "Furthest the ball got (m, change vs no change)", base["furthest_m"])):
         d, e = s[f"d_{col}"].to_numpy(), s[f"d_{col}_ci95"].to_numpy()
         a_.barh(y, d, xerr=e, capsize=4, color=["#2a78d6" if v >= 0 else "#e34948" for v in d])
@@ -331,7 +471,8 @@ def main():
         sm = summarise(df, a.shift, move)
         sm.round(3).to_csv(f"{OUT}/{key}_summary.csv", index=False)
         print(f"\nWHAT-IF from {a.start_s:g} s ({a.seeds} runs each; d_ = change against 'no change' with the same seed, +- 95% interval)\n")
-        cols = ["what_changed", "goal_rate", "shots", "xg", "furthest_m", "d_goal", "d_goal_ci95", "d_xg", "d_xg_ci95", "d_furthest_m", "d_furthest_m_ci95"]
+        cols = ["what_changed", "goal_rate", "shots", "xg", "max_xt", "d_goal", "d_goal_ci95", "d_xg", "d_xg_ci95", "d_max_xt", "d_max_xt_ci95",
+                "d_furthest_m", "d_furthest_m_ci95"]
         print(sm[[c for c in cols if c in sm]].round(2).to_string(index=False))
         print(f"\nwrote {OUT}/{key}_runs.csv and _summary.csv")
 

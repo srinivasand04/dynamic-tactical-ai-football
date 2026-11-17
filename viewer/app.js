@@ -103,21 +103,63 @@ function makeSprite(big) {
 }
 
 // ---------- players, ball, ghosts ----------
-const bodyGeo = new THREE.CylinderGeometry(0.42, 0.42, 1.5, 16);
-const headGeo = new THREE.SphereGeometry(0.28, 16, 12);
+// Players are simple articulated people (no outside model files): shirt, shorts, socks, arms and legs that swing with
+// the player's real speed, turned to face the way he runs. Ghost (layer) players are the same people, see-through.
 const shadowGeo = new THREE.CircleGeometry(0.6, 16);
 const shadowMat = new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.35 });
+const G = {
+  torso: new THREE.CapsuleGeometry(0.2, 0.42, 4, 10), head: new THREE.SphereGeometry(0.13, 14, 10),
+  hair: new THREE.SphereGeometry(0.135, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2), shorts: new THREE.CylinderGeometry(0.22, 0.2, 0.22, 10),
+  thigh: new THREE.CapsuleGeometry(0.075, 0.3, 4, 8), shin: new THREE.CapsuleGeometry(0.06, 0.32, 4, 8), shoe: new THREE.BoxGeometry(0.11, 0.07, 0.24),
+  upper: new THREE.CapsuleGeometry(0.055, 0.24, 4, 8), fore: new THREE.CapsuleGeometry(0.045, 0.22, 4, 8),
+};
+const SKIN = 0xd9a77f, HAIR = 0x2b1d14, SHOE = 0x111111;
 function makePlayer(color, ghost) {
   const g = new THREE.Group();
-  const mat = ghost ? new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.45 }) : new THREE.MeshLambertMaterial({ color });
-  const body = new THREE.Mesh(bodyGeo, mat); body.position.y = 0.75; g.add(body);
-  const head = new THREE.Mesh(headGeo, ghost ? mat : new THREE.MeshLambertMaterial({ color: 0xf1c7a1 })); head.position.y = 1.78; g.add(head);
+  const M = (c) => ghost ? new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: 0.42, depthWrite: false }) : new THREE.MeshLambertMaterial({ color: c });
+  const shirt = M(color), skin = M(SKIN), dark = M(0x1a1a22), sock = M(color), shoe = M(SHOE), hair = M(HAIR);
+  const body = new THREE.Group(); g.add(body);                 // body leans forward with speed; legs stay under it
+  const mesh = (geo, mat, parent, x, y, z) => { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); parent.add(m); return m; };
+  mesh(G.torso, shirt, body, 0, 1.27, 0);
+  mesh(G.shorts, dark, body, 0, 0.98, 0);
+  mesh(G.head, skin, body, 0, 1.72, 0);
+  mesh(G.hair, hair, body, 0, 1.74, -0.01);
+  const limb = (side, isArm) => {
+    const top = new THREE.Group(); top.position.set(side * (isArm ? 0.27 : 0.1), isArm ? 1.5 : 0.92, 0); body.add(top);
+    mesh(isArm ? G.upper : G.thigh, isArm ? shirt : skin, top, 0, isArm ? -0.15 : -0.19, 0);
+    const joint = new THREE.Group(); joint.position.y = isArm ? -0.31 : -0.4; top.add(joint);
+    mesh(isArm ? G.fore : G.shin, isArm ? skin : sock, joint, 0, isArm ? -0.14 : -0.2, 0);
+    if (!isArm) mesh(G.shoe, shoe, joint, 0, -0.42, 0.05);
+    return { top, joint };
+  };
+  g.userData.legs = [limb(-1, false), limb(1, false)];
+  g.userData.arms = [limb(-1, true), limb(1, true)];
+  g.userData.body = body; g.userData.shirt = shirt.color; g.userData.sock = sock.color;
+  g.userData.phase = Math.random() * 6.28; g.userData.yaw = 0;
   if (!ghost) { const sh = new THREE.Mesh(shadowGeo, shadowMat); sh.rotation.x = -Math.PI / 2; sh.position.y = 0.02; g.add(sh); }
-  if (ghost) g.scale.setScalar(0.85);
-  g.userData.num = makeSprite(false); g.userData.num.position.y = 2.7; g.add(g.userData.num);
-  g.userData.name = makeSprite(true); g.userData.name.position.y = 3.6; g.add(g.userData.name);
+  g.userData.num = makeSprite(false); g.userData.num.position.y = 2.45; g.add(g.userData.num);
+  g.userData.name = makeSprite(true); g.userData.name.position.y = 3.2; g.add(g.userData.name);
+  body.scale.setScalar(1.3);                                    // a little larger than life, so players read well from the broadcast camera
   scene.add(g);
   return g;
+}
+// pose a person from his speed (m/s, on the pitch) and the time step: running legs, opposite arms, lean, facing direction
+function animate(p, vx, vy, dt) {
+  const u = p.userData, sp = Math.hypot(vx, vy);
+  if (sp > 0.4) {
+    const want = Math.atan2(X(vx) - X(0), Z(vy) - Z(0));
+    let dy = want - u.yaw; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+    u.yaw += dy * Math.min(1, dt * 8);
+  }
+  p.rotation.y = u.yaw;
+  u.phase += dt * (2.2 + sp * 1.25) * (sp > 0.3 ? 1 : 0.15);
+  const amp = Math.min(0.95, sp * 0.16), s = Math.sin(u.phase);
+  u.legs[0].top.rotation.x = amp * s; u.legs[1].top.rotation.x = -amp * s;
+  u.legs[0].joint.rotation.x = Math.max(0, amp * 1.3 * Math.sin(u.phase - 1.2)); u.legs[1].joint.rotation.x = Math.max(0, -amp * 1.3 * Math.sin(u.phase - 1.2));
+  u.arms[0].top.rotation.x = -amp * 0.9 * s; u.arms[1].top.rotation.x = amp * 0.9 * s;
+  u.arms[0].joint.rotation.x = u.arms[1].joint.rotation.x = -0.3 - amp * 0.7;
+  u.body.rotation.x = Math.min(0.22, sp * 0.03);
+  u.body.position.y = Math.abs(Math.cos(u.phase)) * amp * 0.06;
 }
 const players = Array.from({ length: 22 }, (_, k) => makePlayer(k < 11 ? HOME : AWAY, false));
 const ball = new THREE.Mesh(new THREE.SphereGeometry(0.35, 20, 14), new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0x333333 }));
@@ -237,7 +279,7 @@ function update() {
       const side = k < 11 ? 'home' : 'away';
       p.userData.name.material.map = labelTexture((d.names[side] || {})[String(n)] || '', true);
       p.userData.num.material.needsUpdate = p.userData.name.material.needsUpdate = true;
-      p.children[0].material.color.setHex(k === 0 ? HOME_GK : k === 11 ? AWAY_GK : k < 11 ? HOME : AWAY);
+      p.userData.shirt.setHex(k === 0 ? HOME_GK : k === 11 ? AWAY_GK : k < 11 ? HOME : AWAY);
     });
     S.layers.forEach((l) => {                       // each ghost carries the name of the real player it is paired with
       l.pair = pairing(l, S.roster);
@@ -257,6 +299,8 @@ function update() {
     p.visible = true;
     const xx = lerp(x, d.px[b], f) / DM, yy = lerp(y, d.py[b], f) / DM;
     p.position.set(X(xx), 0, Z(yy));
+    const dtd = d.t[j] - d.t[i];
+    animate(p, dtd > 0 && dtd < 1 && d.px[b] >= 0 ? (d.px[b] - x) / DM / dtd : 0, dtd > 0 && dtd < 1 && d.px[b] >= 0 ? (d.py[b] - y) / DM / dtd : 0, S.animDt);
     real.push([xx, yy]);
     p.userData.num.visible = S.showNumbers;
     p.userData.name.visible = S.showNames;
@@ -302,6 +346,8 @@ function update() {
       const xx = lerp(ld.px[a], ld.px[b], gf) / DM, yy = lerp(ld.py[a], ld.py[b], gf) / DM;
       const m = l.meshes[k];
       m.visible = on; m.position.set(X(xx), 0, Z(yy));
+      const gdt = ld.t[gj] - ld.t[gi];
+      if (on) animate(m, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
       m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = on && S.showNames;
       const s = l.pair ? l.pair[k] : k;
       if (s >= 0 && real[s]) {
@@ -394,6 +440,7 @@ function loop(now) {
     S.t += dt * S.speed;
     if (S.t >= S.t1) { S.t = S.t1; S.playing = false; setPlayIcon(); }
   }
+  S.animDt = S.playing ? dt * S.speed : 0;                 // limbs move only while the match plays
   const w0 = performance.now();
   update();
   placeCamera(dt, false);

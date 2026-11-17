@@ -1,0 +1,113 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-117",
+ "frame": "000676.jpg",
+ "seconds": 355.9097137451172,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    144.0,
+    689.04,
+    228.48,
+    869.4000000000001
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    591.36,
+    681.48,
+    658.5600000000001,
+    851.0400000000001
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    994.5600000000001,
+    493.56,
+    1044.48,
+    631.8
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1080.9599999999998,
+    396.36,
+    1132.8,
+    513.0
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    791.04,
+    351.0,
+    825.6,
+    444.96
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    917.76,
+    375.84,
+    963.84,
+    479.52
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "goalkeeper",
+   "box": [
+    1603.1999999999998,
+    393.12,
+    1651.2,
+    513.0
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    977.28,
+    396.36,
+    996.48,
+    410.4
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [75, 638, 119, 805], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [308, 631, 343, 788], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [518, 457, 544, 585], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [563, 367, 590, 475], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [412, 325, 430, 412], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [478, 348, 502, 444], \"shirt\": \"white\"},\n\t{\"label\": \"goalkeeper\", \"bbox_2d\": [835, 364, 860, 475], \"shirt\": \"white\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [509, 367, 519, 380]}\n]\n```"
+}

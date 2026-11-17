@@ -29,6 +29,10 @@ deck_work/*
 !deck_work/video/
 deck_work/video/*
 !deck_work/video/build_video.py
+!deck_work/build_update_deck.py
+!deck_work/video2/
+deck_work/video2/*
+!deck_work/video2/build_video_v2.py
 ESILV Logo Sample.png
 /*.pptx
 /*.md
@@ -51,3 +55,11 @@ outputs/team_policy/smoke_*
 # GRF engine copies with real player names (scripts/grf_names.py)
 .grf_engine/
 outputs/tuning/preds/
+
+# Phase A vision: local env, SoccerNet GSR data (licensed, re-fetched by fetch_gsr_sample.py), annotated frames
+.venv-vision/
+data/soccernet_gsr/
+data/soccernet_gsr_full/
+outputs/vision_poc/rfdetr/
+outputs/vision_poc/*/*.jpg
+outputs/vision_poc/*/*.png

@@ -9,7 +9,7 @@ On top of it:
     weights prefer (turn towards him for 2 steps, then short or long pass);
   * when the other team has the ball (or nobody has it) the player nearest to the ball goes for it;
   * a set piece (throw-in, free kick, corner, kick-off, goal kick) is taken by the team's player nearest to the ball.
-The game statistics of each side are counted on the way (shots, a distance-only xG proxy, passes and completed passes, possession,
+The game statistics of each side are counted on the way (shots, xG from value_models.py, passes and completed passes, possession,
 time with the ball in the opponent's half).
 
 play_game(left, right, ...) plays one GRF match (3000 steps = GRF's full match, about 5 minutes of play) and returns the numbers.
@@ -46,8 +46,18 @@ def face_action(frm, to):
 
 
 def xg_proxy(d):
-    """Distance-only chance quality (about 0.15 from 11 m, 0.04 from 20 m); a proxy for comparing models, not a real xG model."""
+    """Distance-only chance quality (about 0.15 from 11 m, 0.04 from 20 m); the score used before Phase 2, kept for comparison."""
     return float(0.8 * np.exp(-0.15 * d))
+
+
+def shot_xg(shooter, opp, d):
+    """Phase 2 xG (value_models.py: distance, angle, defenders in the way, keeper position; learned from World Cup shots).
+    Falls back to the distance proxy if the model file is missing."""
+    try:
+        import value_models
+        return value_models.xg_shot(shooter, opp)
+    except (OSError, ImportError):
+        return xg_proxy(d)
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +92,7 @@ class Brain:
         self.stats = {"shots": 0, "xg": 0.0, "passes": 0, "passes_done": 0, "own_steps": 0, "opp_half_steps": 0}
         self.pending_pass = False
         self.early_pass = False             # what-if: the first carrier passes at once to the most advanced teammate
+        self.early_kind = "advanced"        # "advanced" (most advanced teammate) or "switch" (teammate furthest across the pitch)
 
     # ---- what the brain sees: its own team attacking towards x = 105, own players in slots 0-10 ----
     def view(self, lt, rt, ball):
@@ -155,7 +166,10 @@ class Brain:
                 dg = float(np.linalg.norm(own[carrier] - goal))
                 if self.early_pass and not set_piece:
                     self.early_pass = False
-                    j = max((k for k in range(1, 11) if k != carrier), key=lambda k: own[k][0])
+                    if self.early_kind == "switch":
+                        j = max((k for k in range(1, 11) if k != carrier), key=lambda k: abs(own[k][1] - own[carrier][1]))
+                    else:
+                        j = max((k for k in range(1, 11) if k != carrier), key=lambda k: own[k][0])
                     far = np.linalg.norm(own[j] - own[carrier]) > 25
                     self.plan = [face_action(own[carrier], own[j])] * FACE + [LONG if far else SHORT]
                     self.stats["passes"] += 1
@@ -164,7 +178,7 @@ class Brain:
                 elif dg < self.shot_d and abs(own[carrier][1] - W / 2) < 20 and not set_piece:
                     self.plan = [face_action(own[carrier], goal)] * FACE + [SHOT]
                     self.stats["shots"] += 1
-                    self.stats["xg"] += xg_proxy(dg)
+                    self.stats["xg"] += shot_xg(own[carrier], opp, dg)
                 elif self.hold >= (3 if set_piece else self.hold_steps):
                     P = np.concatenate([own, opp])[:, None]
                     cands, X = candidate_features(P, 0, carrier)

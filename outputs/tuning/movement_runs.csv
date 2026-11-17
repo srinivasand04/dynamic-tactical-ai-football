@@ -9,7 +9,9 @@ ours (window 3) = current,J03WMX,1.0997,3.339,12.0,83714.0
 "ours, dim 96",J03WMX,1.0919,3.2237,14.0,328706.0
 ours seed 1,J03WMX,1.1259,3.4814,7.0,83714.0
 ours seed 2,J03WMX,1.1437,3.7743,6.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WMX,1.1303,3.2776,17.0,83714.0
 ensemble of 3 seeds,J03WMX,1.0972,3.3897,,
+ensemble: 3 seeds + more-data model,J03WMX,1.0916,3.2679,,
 keep velocity (baseline),J03WMX,1.457,6.667,,
 no graph (mlp),J03WN1,1.2737,3.4542,11.0,22850.0
 GCN,J03WN1,1.2105,3.4246,15.0,22850.0
@@ -21,7 +23,9 @@ ours (window 3) = current,J03WN1,1.1924,3.2919,17.0,83714.0
 "ours, dim 96",J03WN1,1.1875,3.1974,12.0,328706.0
 ours seed 1,J03WN1,1.1908,3.2994,12.0,83714.0
 ours seed 2,J03WN1,1.2513,3.5829,6.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WN1,1.2545,3.319,13.0,83714.0
 ensemble of 3 seeds,J03WN1,1.1783,3.2626,,
+ensemble: 3 seeds + more-data model,J03WN1,1.1796,3.2049,,
 keep velocity (baseline),J03WN1,1.598,6.46,,
 no graph (mlp),J03WPY,1.17,3.3523,11.0,22850.0
 GCN,J03WPY,1.1316,3.3787,10.0,22850.0
@@ -33,7 +37,9 @@ ours (window 3) = current,J03WPY,1.068,3.034,19.0,83714.0
 "ours, dim 96",J03WPY,1.071,2.9668,15.0,328706.0
 ours seed 1,J03WPY,1.1083,3.2838,11.0,83714.0
 ours seed 2,J03WPY,1.0949,3.0641,11.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WPY,1.1876,3.2034,11.0,83714.0
 ensemble of 3 seeds,J03WPY,1.0609,3.0006,,
+ensemble: 3 seeds + more-data model,J03WPY,1.0691,2.9629,,
 keep velocity (baseline),J03WPY,1.486,6.071,,
 no graph (mlp),J03WOH,1.1747,3.2864,12.0,22850.0
 GCN,J03WOH,1.1363,3.3708,10.0,22850.0
@@ -45,7 +51,9 @@ ours (window 3) = current,J03WOH,1.1512,3.3618,8.0,83714.0
 "ours, dim 96",J03WOH,1.0973,2.9675,12.0,328706.0
 ours seed 1,J03WOH,1.0939,3.1164,13.0,83714.0
 ours seed 2,J03WOH,1.1569,3.4667,7.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WOH,1.1829,3.284,10.0,83714.0
 ensemble of 3 seeds,J03WOH,1.1013,3.1662,,
+ensemble: 3 seeds + more-data model,J03WOH,1.1045,3.1201,,
 keep velocity (baseline),J03WOH,1.499,5.668,,
 no graph (mlp),J03WQQ,1.1746,3.4297,13.0,22850.0
 GCN,J03WQQ,1.0915,3.2299,22.0,22850.0
@@ -57,7 +65,9 @@ ours (window 3) = current,J03WQQ,1.0996,3.1832,14.0,83714.0
 "ours, dim 96",J03WQQ,1.1245,3.2279,11.0,328706.0
 ours seed 1,J03WQQ,1.1307,3.3993,12.0,83714.0
 ours seed 2,J03WQQ,1.0945,3.1039,16.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WQQ,1.223,3.2436,9.0,83714.0
 ensemble of 3 seeds,J03WQQ,1.0814,3.1117,,
+ensemble: 3 seeds + more-data model,J03WQQ,1.0921,3.0856,,
 keep velocity (baseline),J03WQQ,1.506,6.436,,
 no graph (mlp),J03WOY,1.2122,3.4452,7.0,22850.0
 GCN,J03WOY,1.1433,3.2207,11.0,22850.0
@@ -69,7 +79,9 @@ ours (window 3) = current,J03WOY,1.1556,3.1336,9.0,83714.0
 "ours, dim 96",J03WOY,1.1341,3.0679,10.0,328706.0
 ours seed 1,J03WOY,1.1166,3.0943,16.0,83714.0
 ours seed 2,J03WOY,1.1464,3.1723,9.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WOY,1.1981,3.2049,13.0,83714.0
 ensemble of 3 seeds,J03WOY,1.1048,3.0323,,
+ensemble: 3 seeds + more-data model,J03WOY,1.1104,3.0059,,
 keep velocity (baseline),J03WOY,1.517,5.863,,
 no graph (mlp),J03WR9,1.2181,3.635,9.0,22850.0
 GCN,J03WR9,1.1444,3.2868,15.0,22850.0
@@ -81,5 +93,7 @@ ours (window 3) = current,J03WR9,1.165,3.4268,10.0,83714.0
 "ours, dim 96",J03WR9,1.1289,3.1588,14.0,328706.0
 ours seed 1,J03WR9,1.1048,3.0622,24.0,83714.0
 ours seed 2,J03WR9,1.1116,3.0423,24.0,83714.0
+"ours + 20 more matches (12 World Cup, 8 A-League)",J03WR9,1.2499,3.3281,6.0,83714.0
 ensemble of 3 seeds,J03WR9,1.0988,3.015,,
+ensemble: 3 seeds + more-data model,J03WR9,1.1148,3.0465,,
 keep velocity (baseline),J03WR9,1.515,6.163,,

@@ -43,9 +43,12 @@ RUNGS = {
     "ours, dim 96": ["--dim", "96"],
     "ours seed 1": ["--seed", "1"],
     "ours seed 2": ["--seed", "2"],
+    "ours + 20 more matches (12 World Cup, 8 A-League)": ["--extra-train", "pff:12", "skillcorner:8"],
 }
 ENSEMBLE = ["ours (window 3) = current", "ours seed 1", "ours seed 2"]
-SHOW = list(RUNGS)[:8] + ["ensemble of 3 seeds"]
+MORE = "ours + 20 more matches (12 World Cup, 8 A-League)"
+ENSEMBLE2 = ENSEMBLE + [MORE]
+SHOW = list(RUNGS)[:8] + ["ensemble of 3 seeds", MORE, "ensemble: 3 seeds + more-data model"]
 
 
 def slug(rung):
@@ -95,6 +98,10 @@ def movement_tables():
         if len(ens) == len(ENSEMBLE):
             ply, ball = errors(np.mean([z["pred"] for z in ens], axis=0), ens[0]["target"], ens[0]["ok"])
             rows.append({"rung": "ensemble of 3 seeds", "fold": fold, "player_m": ply, "ball_m": ball})
+        ens2 = [np.load(f"{PREDS}/{slug(r)}_{fold}.npz") for r in ENSEMBLE2 if os.path.exists(f"{PREDS}/{slug(r)}_{fold}.npz")]
+        if len(ens2) == len(ENSEMBLE2):
+            ply, ball = errors(np.mean([z["pred"] for z in ens2], axis=0), ens2[0]["target"], ens2[0]["ok"])
+            rows.append({"rung": "ensemble: 3 seeds + more-data model", "fold": fold, "player_m": ply, "ball_m": ball})
         if kv:
             rows.append({"rung": "keep velocity (baseline)", "fold": fold, "player_m": kv[0], "ball_m": kv[1]})
     df = pd.DataFrame(rows)

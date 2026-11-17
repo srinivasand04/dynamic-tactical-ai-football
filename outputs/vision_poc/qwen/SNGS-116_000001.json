@@ -1,0 +1,243 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-116",
+ "frame": "000001.jpg",
+ "seconds": 2513.686845779419,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    140.16,
+    521.64,
+    190.08,
+    655.56
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    476.15999999999997,
+    585.36,
+    526.08,
+    706.32
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    564.48,
+    521.64,
+    604.8,
+    643.68
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    935.04,
+    548.64,
+    983.04,
+    685.8
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    983.04,
+    540.0,
+    1042.5600000000002,
+    682.5600000000001
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1059.8400000000001,
+    488.16,
+    1102.08,
+    612.3599999999999
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1107.84,
+    486.0,
+    1159.68,
+    612.3599999999999
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1290.24,
+    463.32,
+    1338.24,
+    571.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1390.08,
+    436.32000000000005,
+    1422.72,
+    544.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1422.72,
+    447.12,
+    1455.3600000000001,
+    544.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1455.3600000000001,
+    447.12,
+    1488.0,
+    571.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1488.0,
+    447.12,
+    1520.64,
+    571.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1520.64,
+    447.12,
+    1557.1200000000001,
+    571.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1534.0800000000002,
+    447.12,
+    1570.56,
+    571.32
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    468.48,
+    434.16,
+    508.8,
+    548.64
+   ],
+   "score": 1.0,
+   "shirt": "yellow",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "goalkeeper",
+   "box": [
+    556.8,
+    301.32000000000005,
+    589.4399999999999,
+    388.8
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "referee",
+   "box": [
+    468.48,
+    434.16,
+    508.8,
+    548.64
+   ],
+   "score": 1.0,
+   "shirt": "yellow",
+   "number": null
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    960.0,
+    548.64,
+    975.36,
+    558.36
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [73, 483, 99, 607], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [248, 542, 274, 654], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [294, 483, 315, 596], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [487, 508, 512, 635], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [512, 500, 543, 632], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [552, 452, 574, 567], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [577, 450, 604, 567], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [672, 429, 697, 529], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [724, 404, 741, 504], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [741, 414, 758, 504], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [758, 414, 775, 529], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [775, 414, 792, 529], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [792, 414, 811, 529], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [799, 414, 818, 529], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [244, 402, 265, 508], \"shirt\": \"yellow\"},\n\t{\"label\": \"goalkeeper\", \"bbox_2d\": [290, 279, 307, 360], \"shirt\": \"white\"},\n\t{\"label\": \"referee\", \"bbox_2d\": [244, 402, 265, 508], \"shirt\": \"yellow\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [500, 508, 508, 517], \"color\": \"white\"}\n]\n```"
+}

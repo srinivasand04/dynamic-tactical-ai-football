@@ -1,5 +1,25 @@
 [
  {
+  "file": "mode1_normal.json",
+  "title": "1. Normal match  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 57' to 61'"
+ },
+ {
+  "file": "mode2_model_vs_real.json",
+  "title": "2. Model vs real  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Our team models (no change)"
+ },
+ {
+  "file": "mode3_model_vs_model.json",
+  "title": "3. Model vs model  |  GRF model match: Argentina v France (2-0), team models, seed 7"
+ },
+ {
+  "file": "mode4_whatif_top5.json",
+  "title": "4. What-if top 5  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, #1 2 nearest close the carrier, #2 whole team 3 m closer, #3 3 nearest 3 m closer, #4 each defender marks his attacker, #5 keeper 4 m off his line"
+ },
+ {
+  "file": "mode5_coach.json",
+  "title": "5. Coach move  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Coach: Klaus 6 m forward, 8 m left"
+ },
+ {
   "file": "1886347_full.json",
   "title": "Auckland FC v Newcastle (1886347), full match"
  },

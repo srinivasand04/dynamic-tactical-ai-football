@@ -1,0 +1,165 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-117",
+ "frame": "000151.jpg",
+ "seconds": 421.4591634273529,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    264.96000000000004,
+    733.32,
+    372.48,
+    928.8
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    537.6,
+    616.68,
+    643.2,
+    793.8
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    524.1600000000001,
+    436.32000000000005,
+    579.84,
+    562.6800000000001
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    802.56,
+    339.12,
+    854.4,
+    436.32000000000005
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1019.5200000000001,
+    328.32,
+    1100.1599999999999,
+    419.04
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1422.72,
+    447.12,
+    1493.76,
+    585.36
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1351.6799999999998,
+    409.32,
+    1422.72,
+    531.36
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1440.0,
+    331.56,
+    1512.96,
+    436.32000000000005
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1455.3600000000001,
+    328.32,
+    1512.96,
+    419.04
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1455.3600000000001,
+    328.32,
+    1512.96,
+    419.04
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "referee",
+   "box": [
+    1589.76,
+    511.91999999999996,
+    1680.0,
+    657.72
+   ],
+   "score": 1.0,
+   "shirt": "yellow",
+   "number": null
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    1428.48,
+    393.12,
+    1445.76,
+    409.32
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [138, 679, 194, 860], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [280, 571, 335, 735], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [273, 404, 302, 521], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [418, 314, 445, 404], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [531, 304, 573, 388], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [741, 414, 778, 542], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [704, 379, 741, 492], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [750, 307, 788, 404], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [758, 304, 788, 388], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [758, 304, 788, 388], \"shirt\": \"white\"},\n\t{\"label\": \"referee\", \"bbox_2d\": [828, 474, 875, 609], \"shirt\": \"yellow\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [744, 364, 753, 379], \"color\": \"white\"}\n]\n```"
+}

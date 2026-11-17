@@ -1,0 +1,152 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-117",
+ "frame": "000526.jpg",
+ "seconds": 404.3854191303253,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    483.84000000000003,
+    664.2,
+    576.0,
+    860.76
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    474.24,
+    400.68,
+    528.0,
+    546.48
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    478.08,
+    257.03999999999996,
+    518.4000000000001,
+    357.48
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    802.56,
+    379.08,
+    867.84,
+    496.8
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1246.08,
+    289.44,
+    1280.64,
+    400.68
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1509.1200000000001,
+    454.68,
+    1584.0,
+    597.24
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1543.68,
+    223.56,
+    1587.84,
+    317.52
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1685.76,
+    317.52,
+    1749.1200000000001,
+    440.64
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1781.76,
+    403.92,
+    1845.12,
+    533.52
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": null
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1756.8000000000002,
+    479.52,
+    1820.1599999999999,
+    641.52
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": null
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    879.36,
+    483.84000000000003,
+    898.5600000000001,
+    504.36
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [252, 615, 300, 797], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [247, 371, 275, 506], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [249, 238, 270, 331], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [418, 351, 452, 460], \"shirt\": \"white\"},\n\t{\"label\": \"player\", \"bbox_2d\": [649, 268, 667, 371], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [786, 421, 825, 553], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [804, 207, 827, 294], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [878, 294, 911, 408], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [928, 374, 961, 494], \"shirt\": \"red\"},\n\t{\"label\": \"player\", \"bbox_2d\": [915, 444, 948, 594], \"shirt\": \"white\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [458, 448, 468, 467], \"color\": \"white\"}\n]\n```"
+}

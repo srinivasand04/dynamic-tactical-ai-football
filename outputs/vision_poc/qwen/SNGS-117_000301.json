@@ -1,0 +1,191 @@
+{
+ "model": "qwen",
+ "clip": "SNGS-117",
+ "frame": "000301.jpg",
+ "seconds": 491.66517448425293,
+ "detections": [
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    0.0,
+    573.48,
+    78.72,
+    748.4399999999999
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "10"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    280.32,
+    501.12,
+    349.44,
+    677.16
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    476.15999999999997,
+    359.64000000000004,
+    541.4399999999999,
+    479.52
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    506.88,
+    305.64,
+    566.4,
+    413.64
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    867.84,
+    381.23999999999995,
+    921.5999999999999,
+    439.55999999999995
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    979.2,
+    305.64,
+    1044.48,
+    396.36
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1059.8400000000001,
+    331.56,
+    1104.0,
+    413.64
+   ],
+   "score": 1.0,
+   "shirt": "red",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1324.8,
+    359.64000000000004,
+    1367.04,
+    473.04
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "8"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1367.04,
+    371.52,
+    1418.8799999999999,
+    479.52
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "8"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1461.1200000000001,
+    305.64,
+    1501.44,
+    413.64
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1512.96,
+    315.35999999999996,
+    1578.24,
+    413.64
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    1359.36,
+    473.04,
+    1409.28,
+    624.24
+   ],
+   "score": 1.0,
+   "shirt": "yellow",
+   "number": "11"
+  },
+  {
+   "label": "person",
+   "role": "player",
+   "box": [
+    435.84000000000003,
+    763.56,
+    495.36,
+    991.44
+   ],
+   "score": 1.0,
+   "shirt": "white",
+   "number": "36"
+  },
+  {
+   "label": "ball",
+   "role": "ball",
+   "box": [
+    969.6,
+    374.76,
+    992.64,
+    396.36
+   ],
+   "score": 1.0,
+   "shirt": null,
+   "number": null
+  }
+ ],
+ "raw": "```json\n[\n\t{\"label\": \"player\", \"bbox_2d\": [0, 531, 41, 693], \"shirt\": \"red\", \"number\": \"10\"},\n\t{\"label\": \"player\", \"bbox_2d\": [146, 464, 182, 627], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [248, 333, 282, 444], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [264, 283, 295, 383], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [452, 353, 480, 407], \"shirt\": \"red\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [510, 283, 544, 367], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [552, 307, 575, 383], \"shirt\": \"red\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [690, 333, 712, 438], \"shirt\": \"white\", \"number\": \"8\"},\n\t{\"label\": \"player\", \"bbox_2d\": [712, 344, 739, 444], \"shirt\": \"white\", \"number\": \"8\"},\n\t{\"label\": \"player\", \"bbox_2d\": [761, 283, 782, 383], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [788, 292, 822, 383], \"shirt\": \"white\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [708, 438, 734, 578], \"shirt\": \"yellow\", \"number\": \"11\"},\n\t{\"label\": \"player\", \"bbox_2d\": [227, 707, 258, 918], \"shirt\": \"white\", \"number\": \"36\"},\n\t{\"label\": \"ball\", \"bbox_2d\": [505, 347, 517, 367], \"color\": \"white\"}\n]\n```"
+}

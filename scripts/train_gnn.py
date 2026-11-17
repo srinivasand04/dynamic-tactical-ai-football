@@ -307,6 +307,10 @@ def main():
     ap.add_argument("--window", type=int, default=settings.get("gnn", "window", default=3), help="how many Key States the GRU reads (1 = no time context)")
     ap.add_argument("--no-sims", action="store_true", help="skip the simulated matches (faster; only the held-out real match is scored)")
     ap.add_argument("--save-preds", default="", help="file (.npz) for the held-out match's predictions, targets and mask (for ensembles)")
+    ap.add_argument("--save-model", default="", help="file (.pt) for the trained weights (noise_test.py loads them)")
+    ap.add_argument("--extra-train", nargs="*", default=[], metavar="DATASET:N",
+                    help="also train on the first N matches of another dataset (e.g. pff:12 skillcorner:8); they are never held out "
+                         "or scored, so the held-out score stays comparable")
     ap.add_argument("--tag", default="", help="name of this run; with --save-embeddings it is added to the file names")
     ap.add_argument("--graphs", choices=["radius", "delaunay"], default=settings.get("graph", "mode", default="radius"), help="which edge definition to use (default: graph.mode in settings.json)")
     ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
@@ -322,8 +326,15 @@ def main():
     np.random.seed(a.seed)
     t_start = time.time()
 
-    data = {m: load(m) for m in REALS + SIMS}
-    train = [m for m in REALS if m != a.holdout]
+    extra = []
+    for spec in a.extra_train:
+        name, n = spec.split(":") if ":" in spec else (spec, 10 ** 6)
+        ms = [m for m in settings.dataset_matches(name) if os.path.exists(settings.base(m) + f"_graphs{SUFFIX}.npz")][:int(n)]
+        for m in ms:
+            PATH[m] = settings.base(m)
+        extra += ms
+    data = {m: load(m) for m in REALS + SIMS + extra}
+    train = [m for m in REALS if m != a.holdout] + extra
     vf = settings.get("gnn", "val_fraction", default=0.1)
     tr_idx, va_idx = {}, {}
     for m in train:                                                        # the last part of each training match is for early stopping
@@ -372,6 +383,8 @@ def main():
             break
     model.load_state_dict(best_state)
     epochs_run = ep + 1
+    if a.save_model:
+        torch.save(model.state_dict(), a.save_model)
 
     print("\nMean error in metres between predicted and actual movement to the next Key State (lower is better)")
     rows = []
@@ -391,7 +404,7 @@ def main():
     entry = {"script": "train_gnn", "tag": a.tag, "holdout": a.holdout, "graphs": a.graphs, "mirror": not a.no_mirror,
              "arch": a.arch, "params": n_params, "window": L,
              "team_k": settings.get("graph", "team_k"), "dim": a.dim, "seed": a.seed, "epochs_run": epochs_run, "best_epoch": best_ep,
-             "best_validation_m": round(float(best), 3), "n_train_matches": len(train), "n_sim_matches": len(SIMS),
+             "best_validation_m": round(float(best), 3), "n_train_matches": len(train), "extra_train": " ".join(a.extra_train), "n_sim_matches": len(SIMS),
              "minutes": round((time.time() - t_start) / 60, 1),
              **({"sim_player_model_m": round(float(np.mean([r[2] for r in sims])), 3), "sim_player_keepvel_m": round(float(np.mean([r[4] for r in sims])), 3),
                  "sim_ball_model_m": round(float(np.mean([r[5] for r in sims])), 3), "sim_ball_keepvel_m": round(float(np.mean([r[7] for r in sims])), 3)} if sims else {})}
