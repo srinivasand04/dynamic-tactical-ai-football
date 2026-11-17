@@ -1,0 +1,6 @@
+metric,current,+ pressure,change,ci95,better_in_folds,wins_rule
+top1_%,45.052,45.3443,0.2923,0.7743,5/7,False
+top3_%,80.9854,81.2322,0.2468,0.4732,3/7,False
+log_loss,1.519,1.5138,-0.0053,0.0074,5/7,False
+auc,0.8417,0.8482,0.0065,0.0018,7/7,True
+brier,0.0843,0.0834,-0.0009,0.0006,6/7,True
