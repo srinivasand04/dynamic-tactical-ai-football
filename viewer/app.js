@@ -15,7 +15,8 @@ const LAYER_COLORS = [0xf2c14e, 0xc77dff, 0x5ce1e6, 0xff7aa2, 0x9be564, 0xff9f43
 const $ = (id) => document.getElementById(id);
 const pct = (p) => (100 * p).toFixed(p < 0.1 ? 1 : 0);
 const S = { data: null, t: 0, t0: 0, t1: 1, playing: false, speed: 1, cam: 'broadcast', roster: null, rosterIdx: -1,
-            showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {} };
+            showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {},
+            cb: { on: false, t: 0, team: 'home', board: 'defence', allowed: [], moves: {}, start: {}, drag: -1, threat0: null } };
 
 // ---------- scene ----------
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -196,12 +197,12 @@ function matchClock(t) {
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
 // ---------- data ----------
-async function loadIndex() {
+async function loadIndex(pick) {
   const r = await fetch('data/index.json', { cache: 'no-store' });
   if (!r.ok) throw new Error('viewer/data/index.json not found: run scripts/export_viewer.py first');
   const idx = await r.json();
   $('file').innerHTML = idx.map((e) => `<option value="${e.file}">${e.title}</option>`).join('');
-  const want = new URLSearchParams(location.search).get('file');
+  const want = (typeof pick === 'string' && pick) || new URLSearchParams(location.search).get('file');
   if (want && idx.some((e) => e.file === want)) $('file').value = want;
   await loadFile($('file').value);
 }
@@ -235,6 +236,7 @@ async function loadFile(name) {
     return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null, threatState: {} };     // many layers: the first two shown
   });
   buildLayerPanel();
+  boardOnLoad(d);
   msg(null);
 }
 
@@ -307,6 +309,7 @@ function update() {
     p.userData.num.visible = S.showNumbers;
     p.userData.name.visible = S.showNames;
   }
+  if (S.cb.on) boardOverride(real);
   const bx = lerp(d.bx[i], d.bx[j], f) / DM, by = lerp(d.by[i], d.by[j], f) / DM, bz = Math.max(0, lerp(d.bz[i], d.bz[j], f) / DM);
   ball.position.set(X(bx), 0.35 + bz, Z(by));
   ballShadow.position.set(X(bx), 0.02, Z(by));
@@ -337,7 +340,7 @@ function update() {
   S.layers.forEach((l, li) => {
     const ld = l.d;
     const inside = ld.t.length && S.t >= ld.t[0] - 0.05 && S.t <= ld.t[ld.t.length - 1] + 0.05;
-    const on = l.show && inside;
+    const on = l.show && inside && !S.cb.on;                 // the board shows the real players only
     l.meshes.forEach((m) => { m.visible = false; });
     l.ball.visible = false; l.links.visible = false;
     if (!inside) { $('err' + li).textContent = 'not in this part of the match'; return; }
@@ -408,6 +411,148 @@ function setCam(c) {
   else placeCamera(0, true);
 }
 
+// ---------- coach board: drag players, press Play, GRF plays it out (scripts/viewer_server.py + coach_board.py) ----------
+// Boards (as in coach_board.py): defence = keeper + 4 deepest outfield players, midfield = next 3, forward = 3 most advanced.
+const CB = S.cb;
+const cbRings = players.map((p) => {
+  const r = new THREE.Mesh(new THREE.RingGeometry(0.8, 1.05, 24), new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide, transparent: true, opacity: 0.9 }));
+  r.rotation.x = -Math.PI / 2; r.position.y = 0.05; r.visible = false; p.add(r);
+  return r;
+});
+const cbLinesGeo = new THREE.BufferGeometry(); cbLinesGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(22 * 2 * 3), 3));
+const cbLines = new THREE.LineSegments(cbLinesGeo, new THREE.LineDashedMaterial({ color: 0xffffff, dashSize: 0.8, gapSize: 0.5 }));
+cbLines.visible = false; scene.add(cbLines);
+const cbGhosts = players.map((p, k) => { const g = makePlayer(k < 11 ? HOME : AWAY, true); g.visible = false; return g; });   // where he really was
+
+function realNow() {                                   // real positions (m) at the board's frame, from the data
+  const d = S.data, [i] = frameAt(d.t, CB.t);
+  return Array.from({ length: 22 }, (_, k) => (d.px[i * 22 + k] < 0 ? null : [d.px[i * 22 + k] / DM, d.py[i * 22 + k] / DM]));
+}
+function boardUnits(pts, team) {
+  const s0 = team === 'home' ? 0 : 11, keeper = pts[s0];
+  const ownGoal = keeper && keeper[0] > L / 2 ? L : 0;
+  const out = []; for (let s = s0 + 1; s < s0 + 11; s++) if (pts[s]) out.push(s);
+  out.sort((a, b) => Math.abs(pts[a][0] - ownGoal) - Math.abs(pts[b][0] - ownGoal));
+  return { defence: [s0, ...out.slice(0, 4)], midfield: out.slice(4, 7), forward: out.slice(7) };
+}
+function boardAllowed() {
+  CB.allowed = boardUnits(realNow(), CB.team)[CB.board] || [];
+  for (const k of Object.keys(CB.moves)) if (!CB.allowed.includes(+k)) delete CB.moves[k];
+  cbRings.forEach((r, k) => { r.visible = CB.on && CB.allowed.includes(k); });
+  boardStatus();
+}
+function boardOverride(real) {
+  const lp = cbLinesGeo.attributes.position; let n = 0;
+  cbGhosts.forEach((g) => { g.visible = false; });
+  for (const [ks, xy] of Object.entries(CB.moves)) {
+    const k = +ks, p = players[k];
+    if (!real[k]) continue;
+    const [x0, y0] = real[k];
+    cbGhosts[k].visible = true; cbGhosts[k].position.set(X(x0), 0, Z(y0));
+    p.position.set(X(xy[0]), 0, Z(xy[1]));
+    real[k] = xy;
+    lp.setXYZ(n++, X(x0), 0.08, Z(y0)); lp.setXYZ(n++, X(xy[0]), 0.08, Z(xy[1]));
+  }
+  for (let m = n; m < 44; m++) lp.setXYZ(m, 0, -10, 0);
+  lp.needsUpdate = true; cbLinesGeo.setDrawRange(0, n); cbLines.computeLineDistances(); cbLines.visible = n > 0;
+}
+function boardStatus(extra) {
+  const moved = Object.keys(CB.moves).length;
+  const names = (S.data && S.data.names && S.data.names[CB.team]) || {};
+  const who = CB.allowed.map((k) => names[String(S.roster ? S.roster[k] : '')] || `#${S.roster ? S.roster[k] : k}`).join(', ');
+  let t = CB.on ? `Board at ${matchClock(CB.t)}: drag a ringed player (${who}). ${moved} moved.` : 'Pick a team and board, pause at the moment, then Start board here.';
+  if (CB.on && moved) {
+    const th = threatOf(realNow().map((p, k) => (CB.moves[k] || p)), ballNow(), { team: null });
+    if (CB.threat0 && th) t += ` Threat now ${pct(th.p)}% (was ${pct(CB.threat0.p)}%).`;
+  }
+  $('cbStatus').textContent = extra || t;
+  $('cbPlay').disabled = !(CB.on && moved);
+}
+function ballNow() { const d = S.data, [i] = frameAt(d.t, CB.t); return [d.bx[i] / DM, d.by[i] / DM]; }
+function boardStart() {
+  if (!S.data || !S.data.match) { boardStatus('The board needs a real match file (modes 1, 2, 4, 5 or a match).'); return; }
+  S.playing = false; setPlayIcon();
+  const [i] = frameAt(S.data.t, S.t);
+  CB.t = S.data.t[i]; CB.on = true; CB.moves = {};
+  CB.threat0 = threatOf(realNow(), ballNow(), { team: null });
+  setCam('top'); boardAllowed();
+}
+function boardReset() {
+  CB.on = false; CB.moves = {}; CB.drag = -1; cbLines.visible = false;
+  cbGhosts.forEach((g) => { g.visible = false; }); cbRings.forEach((r) => { r.visible = false; });
+  boardStatus();
+}
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2(), ground = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), hit = new THREE.Vector3();
+function pitchPoint(e) {
+  const r = renderer.domElement.getBoundingClientRect();
+  ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  if (!ray.ray.intersectPlane(ground, hit)) return null;
+  return [Math.min(Math.max(hit.x + L / 2, 0.5), L - 0.5), Math.min(Math.max(W / 2 - hit.z, 0.5), W - 0.5)];
+}
+renderer.domElement.addEventListener('pointerdown', (e) => {
+  if (!CB.on) return;
+  const p = pitchPoint(e); if (!p) return;
+  const now = realNow();
+  let best = -1, bd = 3.0;
+  for (const k of CB.allowed) {
+    const q = CB.moves[k] || now[k]; if (!q) continue;
+    const dd = Math.hypot(q[0] - p[0], q[1] - p[1]); if (dd < bd) { bd = dd; best = k; }
+  }
+  if (best >= 0) { CB.drag = best; renderer.domElement.setPointerCapture(e.pointerId); e.preventDefault(); }
+});
+renderer.domElement.addEventListener('pointermove', (e) => {
+  if (!CB.on || CB.drag < 0) return;
+  const p = pitchPoint(e); if (p) { CB.moves[CB.drag] = p; boardStatus(); }
+});
+renderer.domElement.addEventListener('pointerup', () => { CB.drag = -1; });
+async function boardPlay() {
+  const d = S.data;
+  const moves = Object.entries(CB.moves).map(([k, xy]) => ({ side: +k < 11 ? 'home' : 'away', shirt: S.roster[+k], x: +xy[0].toFixed(2), y: +xy[1].toFixed(2) }));
+  const board = { match: d.match, t: CB.t, board: CB.board, mode: $('cbMode').value, team: CB.team, moves };
+  let r;
+  try { r = await fetch('api/board', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(board) }); } catch (e) { r = null; }
+  if (!r || !r.ok) {                                   // plain http.server: save the board, run it by hand
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(board, null, 1)], { type: 'application/json' }));
+    a.download = 'coach_board.json'; a.click();
+    boardStatus('Saved coach_board.json (Downloads). Run: .venv\\Scripts\\python.exe scripts\\coach_board.py --board <that file>. Or start scripts\\viewer_server.py so Play runs it for you.');
+    return;
+  }
+  const { id } = await r.json();
+  $('cbPlay').disabled = true;
+  const poll = async () => {
+    const s = await (await fetch(`api/board/${id}`, { cache: 'no-store' })).json();
+    if (s.state === 'running') { boardStatus(`GRF is playing your board… ${s.line}`); setTimeout(poll, 2000); return; }
+    if (s.state === 'failed') { boardStatus(`GRF run failed: ${s.line} (see outputs/coach_board/${id}.log)`); return; }
+    boardReset();
+    await loadIndex(s.file);
+    setCam('broadcast');
+  };
+  poll();
+}
+function boardOnLoad(d) {
+  boardReset();
+  $('cbTeam').innerHTML = `<option value="home">${d.home || 'Home'}</option><option value="away">${d.away || 'Away'}</option>`;
+  $('cbTeam').value = CB.team;
+  const c = d.card;
+  if (!c) { $('cbCard').innerHTML = ''; return; }
+  const f = (r, v) => (r.what === 'Max threat' ? `${pct(v)}%` : r.what === 'Ball lost within 12 s' ? `${Math.round(v * 100)}%` : v.toFixed(2));
+  $('cbCard').innerHTML = `<div class="what">${c.what} · ${c.runs} runs each · ${c.team_on_board} on the board (${c.attacking ? 'attacking' : 'defending'})</div>
+    <table><tr><th></th><th>No change</th><th>Your board</th><th>Diff</th></tr>${c.rows.map((r) => `<tr><td>${r.what}</td><td>${f(r, r.no_change)}</td>
+    <td>${f(r, r.board)}</td><td class="${r.verdict === 'better' ? 'better' : r.verdict === 'worse' ? 'worse' : ''}">${r.diff >= 0 ? '+' : ''}${f(r, r.diff)} ${r.verdict === 'better' ? '✅' : r.verdict === 'worse' ? '❌' : '·'}</td></tr>`).join('')}</table>
+    <div class="hint">✅/❌ = sure at 95%; · = no clear effect. Ghosts: No change, Your board.</div>`;
+}
+$('cbTeam').addEventListener('change', (e) => { CB.team = e.target.value; if (CB.on) { CB.moves = {}; boardAllowed(); } });
+$('cbBoards').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+  CB.board = b.dataset.b;
+  $('cbBoards').querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
+  if (CB.on) boardAllowed();
+}));
+$('cbStart').addEventListener('click', boardStart);
+$('cbReset').addEventListener('click', boardReset);
+$('cbPlay').addEventListener('click', () => boardPlay().catch(fail));
+
 // ---------- UI ----------
 function msg(t) { $('msg').textContent = t || ''; $('msg').classList.toggle('hidden', !t); }
 function setPlayIcon() { $('play').innerHTML = S.playing ? '&#10074;&#10074;' : '&#9654;'; }
@@ -446,6 +591,7 @@ let last = performance.now();
 function loop(now) {
   const dt = Math.min((now - last) / 1000, 0.1);
   last = now;
+  if (S.cb.on) { S.t = S.cb.t; S.playing = false; }          // the board is a still picture of one moment
   if (S.playing && S.data) {
     S.t += dt * S.speed;
     if (S.t >= S.t1) { S.t = S.t1; S.playing = false; setPlayIcon(); }

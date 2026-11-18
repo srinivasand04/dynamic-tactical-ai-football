@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8765", "--directory", "viewer"],
       "port": 8765
+    },
+    {
+      "name": "viewer-board",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
+      "runtimeArgs": ["scripts/viewer_server.py", "8766"],
+      "port": 8766
     }
   ]
 }

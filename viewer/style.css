@@ -53,3 +53,15 @@ select option { background: #1b2420; }
   #top { flex-wrap: wrap; }
   #file { max-width: 100%; }
 }
+
+/* coach board */
+#panel { width: 280px; }
+.cbrow { display: flex; gap: 6px; margin: 6px 0; flex-wrap: wrap; }
+.cbrow button, .cbrow select { padding: 4px 8px; font-size: 13px; }
+#cbPlay:not([disabled]) { background: #2f7d4f; border-color: #2f7d4f; }
+button[disabled] { opacity: 0.45; cursor: default; }
+#cbCard table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 6px; font-variant-numeric: tabular-nums; }
+#cbCard th, #cbCard td { padding: 3px 4px; border-bottom: 1px solid var(--line); text-align: right; }
+#cbCard th:first-child, #cbCard td:first-child { text-align: left; }
+#cbCard .better { color: #6fdc8c; } #cbCard .worse { color: #ff7a6b; }
+#cbCard .what { color: var(--muted); font-size: 12px; margin-top: 6px; }

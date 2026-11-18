@@ -35,6 +35,18 @@
   <label><input type="checkbox" id="optTrail" checked> Ball trail (3 s)</label>
   <h2>Layers <span class="hint">(ghosts, same stretch)</span></h2>
   <div id="layers"><p class="hint">This file has no layers.</p></div>
+  <h2>Coach board <span class="hint">(drag players, then Play)</span></h2>
+  <div id="cb">
+    <div class="cbrow"><select id="cbTeam" title="Team on the board"></select>
+      <select id="cbMode" title="Move once: they start there. Hold: they keep the offset for the whole run">
+        <option value="once">Move once</option><option value="hold">Hold</option></select></div>
+    <div class="cbrow" id="cbBoards">
+      <button data-b="forward">Forward</button><button data-b="midfield">Midfield</button><button data-b="defence" class="on">Defence</button></div>
+    <div class="cbrow"><button id="cbStart">Start board here</button><button id="cbReset">Reset</button>
+      <button id="cbPlay" disabled>&#9654; Play board</button></div>
+    <div id="cbStatus" class="hint"></div>
+    <div id="cbCard"></div>
+  </div>
   <h2>Keys</h2>
   <p class="hint">Space play/pause &middot; &larr; &rarr; 1 s &middot; Shift+&larr; &rarr; 10 s &middot; , . one frame &middot; 1-5 cameras &middot; H panel &middot; drag/scroll in Free camera</p>
 </aside>

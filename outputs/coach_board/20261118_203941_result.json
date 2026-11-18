@@ -1,0 +1,57 @@
+{
+ "runs": 10,
+ "team_on_board": "away",
+ "attacking": false,
+ "rows": [
+  {
+   "what": "Max threat",
+   "no_change": 0.24299999999999997,
+   "board": 0.2593,
+   "diff": 0.01629999999999998,
+   "ci95": 0.0,
+   "verdict": "worse"
+  },
+  {
+   "what": "xG",
+   "no_change": 0.15930000000000002,
+   "board": 0.2627,
+   "diff": 0.1034,
+   "ci95": 0.10331313509262346,
+   "verdict": "worse"
+  },
+  {
+   "what": "Shots per run",
+   "no_change": 4.7,
+   "board": 4.5,
+   "diff": -0.2,
+   "ci95": 1.0853988514212949,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "Ball lost within 12 s",
+   "no_change": 1.0,
+   "board": 1.0,
+   "diff": 0.0,
+   "ci95": 0.0,
+   "verdict": "no clear effect"
+  }
+ ],
+ "id": "20261118_203941",
+ "what": "defence board (move once): Guwara 10 m",
+ "board": {
+  "match": "J03WOH",
+  "t": 3610,
+  "board": "defence",
+  "mode": "once",
+  "team": "away",
+  "moves": [
+   {
+    "side": "away",
+    "shirt": 20,
+    "x": 72.95,
+    "y": 34
+   }
+  ],
+  "id": "20261118_203941"
+ }
+}

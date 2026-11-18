@@ -1,0 +1,16 @@
+{
+ "match": "J03WOH",
+ "t": 3610,
+ "board": "defence",
+ "mode": "once",
+ "team": "away",
+ "moves": [
+  {
+   "side": "away",
+   "shirt": 20,
+   "x": 72.95,
+   "y": 34
+  }
+ ],
+ "id": "20261118_203941"
+}
