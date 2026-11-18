@@ -545,7 +545,7 @@ function boardOnLoad(d) {
   $('cbTeam').value = CB.team;
   const c = d.card;
   if (!c) { $('cbCard').innerHTML = ''; return; }
-  const f = (r, v) => (r.what === 'Max threat' ? `${pct(v)}%` : r.what === 'Ball lost within 12 s' ? `${Math.round(v * 100)}%` : v.toFixed(2));
+  const f = (r, v) => (r.what.startsWith('Threat') || r.what === 'Max threat' ? `${pct(v)}%` : (r.what === 'Ball lost within 12 s' || r.what === 'Time on the ball') ? `${Math.round(v * 100)}%` : v.toFixed(2));
   $('cbCard').innerHTML = `<div class="what">${c.what} · ${c.runs} runs each · ${c.team_on_board} on the board (${c.attacking ? 'attacking' : 'defending'})</div>
     <table><tr><th></th><th>No change</th><th>Your board</th><th>Diff</th></tr>${c.rows.map((r) => `<tr><td>${r.what}</td><td>${f(r, r.no_change)}</td>
     <td>${f(r, r.board)}</td><td class="${r.verdict === 'better' ? 'better' : r.verdict === 'worse' ? 'worse' : ''}">${r.diff >= 0 ? '+' : ''}${f(r, r.diff)} ${r.verdict === 'better' ? '✅' : r.verdict === 'worse' ? '❌' : '·'}</td></tr>`).join('')}</table>

@@ -4,12 +4,12 @@
  "attacking": true,
  "rows": [
   {
-   "what": "Max threat",
-   "no_change": 0.24299999999999997,
-   "board": 0.3277,
-   "diff": 0.0847,
-   "ci95": 0.0,
-   "verdict": "better"
+   "what": "Threat (from 1 s)",
+   "no_change": 0.32706,
+   "board": 0.13434000000000001,
+   "diff": -0.19271999999999997,
+   "ci95": 0.16674246772238652,
+   "verdict": "worse"
   },
   {
    "what": "xG",
@@ -28,12 +28,12 @@
    "verdict": "worse"
   },
   {
-   "what": "Ball lost within 12 s",
-   "no_change": 1.0,
-   "board": 1.0,
-   "diff": 0.0,
-   "ci95": 0.0,
-   "verdict": "no clear effect"
+   "what": "Time on the ball",
+   "no_change": 0.34759999999999996,
+   "board": 0.17140000000000002,
+   "diff": -0.1762,
+   "ci95": 0.09478774713127334,
+   "verdict": "worse"
   }
  ],
  "id": "20261118_211506",

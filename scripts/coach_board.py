@@ -12,7 +12,8 @@ Two ways to play it:
 The board file (JSON, written by the viewer or by hand):
     {"match": "J03WOH", "t": 3610.0, "board": "defence", "mode": "hold", "team": "away",
      "moves": [{"side": "away", "shirt": 4, "x": 80.0, "y": 30.0}, ...]}        metres, same frame as the viewer
-Each run: 'no change' + 'board', same seeds, 12 s, scored with the threat model, xG, shots and lost balls.
+Each run: 'no change' + 'board', same seeds, 12 s, scored with the threat model (max from 1 s after the start while the team
+has the ball, so the dragged starting picture itself does not count), xG, shots and time on the ball.
 Result: a viewer file with the real moment + 'no change' + 'your board' ghosts and a result card.
 
 Usage : .venv\\Scripts\\python.exe scripts\\coach_board.py --board outputs\\coach_board\\board.json
@@ -125,9 +126,37 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
         self.board_on = scen == "board"
     team_agent.Brain.__init__ = init_on
     try:
-        return _play(seg, start_s, scen, shift, seed, seconds, models, video=video, move=move)
+        res, pl, bl, mirrored = _play(seg, start_s, scen, shift, seed, seconds, models, video=video, move=move)
     finally:
         team_agent.Brain.__init__ = init
+    res["threat_play"], res["on_ball"] = threat_from(pl, bl, _moment(seg, start_s, "baseline", shift)[3])
+    return res, pl, bl, mirrored
+
+
+def threat_from(pl, bl, att, from_s=1.0, hold_m=3.0):
+    """The run judged after the dragged starting picture: from 1 s on, who has the ball is the team of the player nearest
+    to it (within 3 m; otherwise the last team that had it). Returns (max threat of the attacking team while it has the
+    ball, share of the time it has the ball). GRF's own 'ball lost' fires on the first brief touch, so it is not used.
+    pl (22, T, 2), bl (T, 2) in GRF orientation (home on the left)."""
+    import value_models
+    T = min(pl.shape[1], len(bl))
+    P, B = pl[:, :T].transpose(1, 0, 2), bl[:T]
+    if att == "home":
+        A, D = P[:, :11], P[:, 11:]
+    else:
+        A, D, B = WI.flip(P[:, 11:]), WI.flip(P[:, :11]), WI.flip(B)
+    own, ours, th = 1, [], []
+    for t in range(T):
+        da, dd = np.nanmin(np.hypot(*(A[t] - B[t]).T)), np.nanmin(np.hypot(*(D[t] - B[t]).T))
+        if min(da, dd) < hold_m:
+            own = 1 if da <= dd else 0
+        if t >= from_s * WI.FPS:
+            ours.append(own)
+            if own and t % 5 == 0:
+                x = value_models.threat(B[t], A[t], D[t])
+                if x is not None and np.isfinite(x):
+                    th.append(x)
+    return (round(float(max(th)), 4) if th else 0.0), (round(float(np.mean(ours)), 3) if ours else np.nan)
 
 
 WI.play = play
@@ -169,16 +198,13 @@ def card(df, att, team):
     base, brd = df[df.scenario == "baseline"].set_index("seed"), df[df.scenario == "board"].set_index("seed")
     common = base.index.intersection(brd.index)
     rows = []
-    for k, label in (("max_threat", "Max threat"), ("xg", "xG"), ("shots", "Shots per run"), ("lost", "Ball lost within 12 s")):
-        if k == "lost":
-            a, b_ = base.loc[common, "lost_ball_s"].notna().astype(float), brd.loc[common, "lost_ball_s"].notna().astype(float)
-        else:
-            a, b_ = base.loc[common, k].astype(float), brd.loc[common, k].astype(float)
+    for k, label in (("threat_play", "Threat (from 1 s)"), ("xg", "xG"), ("shots", "Shots per run"), ("on_ball", "Time on the ball")):
+        a, b_ = base.loc[common, k].astype(float), brd.loc[common, k].astype(float)
         d = b_ - a
         rows.append({"what": label, "no_change": float(a.mean()), "board": float(b_.mean()), "diff": float(d.mean()), "ci95": float(WI.ci(d))})
     attacking = team == att                                    # the team on the board has the ball: up is good; else down is good
     for r in rows:
-        good = r["diff"] > 0 if (attacking != (r["what"] == "Ball lost within 12 s")) else r["diff"] < 0
+        good = r["diff"] > 0 if attacking else r["diff"] < 0
         r["verdict"] = "no clear effect" if not np.isfinite(r["ci95"]) or abs(r["diff"]) <= r["ci95"] else ("better" if good else "worse")
     return {"runs": int(len(common)), "team_on_board": team, "attacking": bool(attacking), "rows": rows}
 
