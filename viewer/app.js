@@ -6,14 +6,16 @@
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { loadThreat, threatOf } from './threat.js';
 
 const L = 105, W = 68, DM = 10;
 const HOME = 0xe0473c, AWAY = 0x3a7bd5, HOME_GK = 0xff9f1c, AWAY_GK = 0x8fd14f;
 const LAYER_COLORS = [0xf2c14e, 0xc77dff, 0x5ce1e6, 0xff7aa2, 0x9be564, 0xff9f43, 0xffffff];
 
 const $ = (id) => document.getElementById(id);
+const pct = (p) => (100 * p).toFixed(p < 0.1 ? 1 : 0);
 const S = { data: null, t: 0, t0: 0, t1: 1, playing: false, speed: 1, cam: 'broadcast', roster: null, rosterIdx: -1,
-            showNumbers: true, showNames: false, showTrail: true, layers: [] };
+            showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {} };
 
 // ---------- scene ----------
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -212,7 +214,7 @@ async function loadFile(name) {
   const d = await r.json();
   S.data = d;
   S.t0 = d.t[0]; S.t1 = d.t[d.t.length - 1]; S.t = S.t0;
-  S.rosterIdx = -1;
+  S.rosterIdx = -1; S.threatState = {};
   $('home').textContent = d.home; $('away').textContent = d.away;
   $('seek').min = S.t0; $('seek').max = S.t1; $('seek').value = S.t0;
   for (const l of S.layers) { l.meshes.forEach((m) => scene.remove(m)); scene.remove(l.ball); scene.remove(l.links); }
@@ -230,7 +232,7 @@ async function loadFile(name) {
     const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(23 * 2 * 3), 3));
     const links = new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: 0.7 }));
     scene.add(links);
-    return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null };     // many layers: the first two shown
+    return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null, threatState: {} };     // many layers: the first two shown
   });
   buildLayerPanel();
   msg(null);
@@ -326,6 +328,9 @@ function update() {
   const live = d.live[i] === 1;
   $('live').textContent = live ? 'in play' : 'ball out';
   $('live').className = 'pill' + (live ? '' : ' dead');
+  const th = threatOf(real, [bx, by], S.threatState);
+  $('threat').textContent = th ? `threat ${pct(th.p)}% (${d[th.team] || th.team})` : 'threat –';
+  $('threat').className = 'pill threat' + (th && th.p >= 0.2 ? ' hot' : '');
   $('tlabel').textContent = `${fmt(S.t - S.t0)} / ${fmt(S.t1 - S.t0)}`;
   if (document.activeElement !== $('seek')) $('seek').value = S.t;
   // ghost layers
@@ -340,11 +345,14 @@ function update() {
     const gj = Math.min(gi + 1, ld.t.length - 1);
     const lp = l.links.geometry.attributes.position;
     let sum = 0, cnt = 0, seg = 0;
+    const gpts = Array(22).fill(null);
     for (let k = 0; k < 22; k++) {
       const a = gi * 22 + k, b = gj * 22 + k;
       if (ld.px[a] < 0) continue;
       const xx = lerp(ld.px[a], ld.px[b], gf) / DM, yy = lerp(ld.py[a], ld.py[b], gf) / DM;
       const m = l.meshes[k];
+      const s0 = l.pair ? l.pair[k] : k;
+      if (s0 >= 0) gpts[s0] = [xx, yy];
       m.visible = on; m.position.set(X(xx), 0, Z(yy));
       const gdt = ld.t[gj] - ld.t[gi];
       if (on) animate(m, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
@@ -362,7 +370,9 @@ function update() {
     lp.needsUpdate = true;
     l.links.geometry.setDrawRange(0, seg);
     l.links.visible = on && l.showLinks;
-    $('err' + li).textContent = `now: players ${cnt ? (sum / cnt).toFixed(1) : '–'} m, ball ${Math.hypot(gbx - bx, gby - by).toFixed(1)} m from the real ones`;
+    const gt = threatOf(gpts, [gbx, gby], l.threatState);
+    $('err' + li).textContent = `now: players ${cnt ? (sum / cnt).toFixed(1) : '–'} m, ball ${Math.hypot(gbx - bx, gby - by).toFixed(1)} m from the real ones`
+      + (gt ? ` · threat ${pct(gt.p)}% (${d[gt.team] || gt.team})` : '');
   });
 }
 
@@ -450,5 +460,5 @@ function loop(now) {
 }
 window.__viewer = S;                                     // for debugging in the browser console
 window.__viewerStep = () => { update(); placeCamera(0.016, false); renderer.render(scene, camera); };
-loadIndex().then(() => setCam('broadcast')).catch(fail);
+loadThreat().then(loadIndex).then(() => setCam('broadcast')).catch(fail);
 requestAnimationFrame(loop);

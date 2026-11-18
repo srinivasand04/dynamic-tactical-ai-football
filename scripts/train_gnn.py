@@ -312,6 +312,9 @@ def main():
                     help="also train on the first N matches of another dataset (e.g. pff:12 skillcorner:8); they are never held out "
                          "or scored, so the held-out score stays comparable")
     ap.add_argument("--tag", default="", help="name of this run; with --save-embeddings it is added to the file names")
+    ap.add_argument("--only-extra", action="store_true", help="train on the --extra-train matches only (pre-training for --init-model)")
+    ap.add_argument("--init-model", default="", help="start from these weights (.pt) instead of random ones: fine-tuning after pre-training")
+    ap.add_argument("--lr", type=float, default=None, help="learning rate (default: gnn.lr in settings.json); lower it when fine-tuning")
     ap.add_argument("--graphs", choices=["radius", "delaunay"], default=settings.get("graph", "mode", default="radius"), help="which edge definition to use (default: graph.mode in settings.json)")
     ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
     a = ap.parse_args()
@@ -334,7 +337,7 @@ def main():
             PATH[m] = settings.base(m)
         extra += ms
     data = {m: load(m) for m in REALS + SIMS + extra}
-    train = [m for m in REALS if m != a.holdout] + extra
+    train = extra if a.only_extra else [m for m in REALS if m != a.holdout] + extra
     vf = settings.get("gnn", "val_fraction", default=0.1)
     tr_idx, va_idx = {}, {}
     for m in train:                                                        # the last part of each training match is for early stopping
@@ -347,7 +350,10 @@ def main():
     model = Net(data[REALS[0]]["feat"].shape[2], a.dim, a.arch, data[REALS[0]]["pfeat"].shape[-1] if PASS_KEY else 0)
     n_params = sum(p.numel() for p in model.parameters())
     print(f"architecture: {a.arch}  ({n_params:,} parameters)")
-    opt = torch.optim.Adam(model.parameters(), lr=settings.get("gnn", "lr", default=2e-3))
+    if a.init_model:
+        model.load_state_dict(torch.load(a.init_model))
+        print("starting from", a.init_model)
+    opt = torch.optim.Adam(model.parameters(), lr=a.lr or settings.get("gnn", "lr", default=2e-3))
     bs = settings.get("gnn", "batch", default=128)
     pool = [(m, k) for m in train for k in tr_idx[m]]
     best, best_state, best_ep, stale = 1e9, None, 0, 0

@@ -1,0 +1,5 @@
+metric,real_mean,grf_mean,bias_grf_minus_real,rank_corr,real_inside_grf_range
+max_threat,0.301,0.2914,-0.0097,0.7368,9/20
+max_xt,0.0956,0.0808,-0.0148,0.7267,5/20
+furthest_m,89.323,98.781,9.458,0.7263,10/20
+lost,0.95,0.95,0.0,0.1423,20/20

@@ -1,0 +1,4 @@
+dataset,matches,key_states,gap_s_median,gap_s_p90,move_per_step_m_median,move_per_step_m_p90,speed_ms_median,speed_ms_p90,players_seen_median
+Bundesliga (test set),7,23852,1.1,3.4,2.5001,5.356,2.0125,4.8374,22.0
+World Cup (extra),12,35198,1.2,2.4,2.2445,5.0414,1.8381,4.0327,22.0
+A-League (extra),8,24951,1.2,2.5,2.5015,5.1793,2.0587,4.4569,22.0

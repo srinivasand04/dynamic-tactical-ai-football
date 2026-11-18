@@ -27,6 +27,8 @@ select option { background: #1b2420; }
 #clock { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 18px; color: var(--accent); }
 .pill { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: #2f7d4f; }
 .pill.dead { background: #6b4b2a; }
+.pill.threat { background: rgba(255, 255, 255, 0.1); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pill.threat.hot { background: #b8452f; }
 
 #panel { position: fixed; top: 64px; right: 12px; width: 250px; max-height: calc(100vh - 140px); overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
 #panel.hidden { display: none; }

@@ -209,12 +209,13 @@ def moment(seg, start_s, scen, shift, move=None):
     pos = P[idx].transpose(1, 0, 2).copy()     # (22, 3, 2)
     prev = P[[j - 1 for j in idx]].transpose(1, 0, 2).copy()
     ball, bprev = B[idx].copy(), B[[j - 1 for j in idx]].copy()
-    if scen in ("line_deeper", "line_higher"):
+    parts = scen.split("+")                                                # "a+b" = two changes at once (whatif_pairs.py)
+    for part in [p for p in parts if p in ("line_deeper", "line_higher")]:
         d0 = 11 if att == "home" else 0                                    # the defending team's slots
         own_goal_x = L if att == "home" else 0.0
         out = np.arange(d0 + 1, d0 + 11)                                   # outfield players
         back = out[np.argsort(abs(pos[out, -1, 0] - own_goal_x))[:4]]      # the four nearest to their own goal
-        sign = np.sign(own_goal_x - L / 2) * (1 if scen == "line_deeper" else -1)
+        sign = np.sign(own_goal_x - L / 2) * (1 if part == "line_deeper" else -1)
         for arr in (pos, prev):
             arr[back, :, 0] = np.clip(arr[back, :, 0] + sign * shift, 0.5, L - 0.5)
     if scen == "move":
@@ -223,8 +224,9 @@ def moment(seg, start_s, scen, shift, move=None):
         for arr in (pos, prev):
             arr[k, :, 0] = np.clip(arr[k, :, 0] + d * fwd, 0.5, L - 0.5)
             arr[k, :, 1] = np.clip(arr[k, :, 1] + d * left, 0.5, W - 0.5)
-    if scen in SHAPE:
-        change_shape(pos, prev, ball, att, scen)
+    for part in parts:
+        if part in SHAPE:
+            change_shape(pos, prev, ball, att, part)
     vel = np.concatenate([(pos - prev) * FPS, ((ball - bprev) * FPS)[None]], axis=0)
     return pos, ball, vel, att, mirrored, i
 
