@@ -428,6 +428,12 @@ function realNow() {                                   // real positions (m) at 
   const d = S.data, [i] = frameAt(d.t, CB.t);
   return Array.from({ length: 22 }, (_, k) => (d.px[i * 22 + k] < 0 ? null : [d.px[i * 22 + k] / DM, d.py[i * 22 + k] / DM]));
 }
+function rosterNow() {                                 // shirt numbers per slot at the board's frame (no drawn frame needed)
+  const d = S.data, [i] = frameAt(d.t, CB.t);
+  let ro = d.rosters[0][1];
+  for (const r of d.rosters) if (r[0] <= i) ro = r[1];
+  return ro;
+}
 function boardUnits(pts, team) {
   const s0 = team === 'home' ? 0 : 11, keeper = pts[s0];
   const ownGoal = keeper && keeper[0] > L / 2 ? L : 0;
@@ -459,7 +465,8 @@ function boardOverride(real) {
 function boardStatus(extra) {
   const moved = Object.keys(CB.moves).length;
   const names = (S.data && S.data.names && S.data.names[CB.team]) || {};
-  const who = CB.allowed.map((k) => names[String(S.roster ? S.roster[k] : '')] || `#${S.roster ? S.roster[k] : k}`).join(', ');
+  const ro = S.data && CB.on ? rosterNow() : [];
+  const who = CB.allowed.map((k) => names[String(ro[k])] || `#${ro[k]}`).join(', ');
   let t = CB.on ? `Board at ${matchClock(CB.t)}: drag a ringed player (${who}). ${moved} moved.` : 'Pick a team and board, pause at the moment, then Start board here.';
   if (CB.on && moved) {
     const th = threatOf(realNow().map((p, k) => (CB.moves[k] || p)), ballNow(), { team: null });
@@ -508,7 +515,8 @@ renderer.domElement.addEventListener('pointermove', (e) => {
 renderer.domElement.addEventListener('pointerup', () => { CB.drag = -1; });
 async function boardPlay() {
   const d = S.data;
-  const moves = Object.entries(CB.moves).map(([k, xy]) => ({ side: +k < 11 ? 'home' : 'away', shirt: S.roster[+k], x: +xy[0].toFixed(2), y: +xy[1].toFixed(2) }));
+  const ro = rosterNow();
+  const moves = Object.entries(CB.moves).map(([k, xy]) => ({ side: +k < 11 ? 'home' : 'away', shirt: ro[+k], x: +xy[0].toFixed(2), y: +xy[1].toFixed(2) }));
   const board = { match: d.match, t: CB.t, board: CB.board, mode: $('cbMode').value, team: CB.team, moves };
   let r;
   try { r = await fetch('api/board', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(board) }); } catch (e) { r = null; }

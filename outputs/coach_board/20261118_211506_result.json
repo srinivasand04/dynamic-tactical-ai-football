@@ -1,0 +1,69 @@
+{
+ "runs": 10,
+ "team_on_board": "home",
+ "attacking": true,
+ "rows": [
+  {
+   "what": "Max threat",
+   "no_change": 0.24299999999999997,
+   "board": 0.3277,
+   "diff": 0.0847,
+   "ci95": 0.0,
+   "verdict": "better"
+  },
+  {
+   "what": "xG",
+   "no_change": 0.15930000000000002,
+   "board": 0.029100000000000004,
+   "diff": -0.1302,
+   "ci95": 0.18374279576988406,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "Shots per run",
+   "no_change": 4.7,
+   "board": 1.0,
+   "diff": -3.7,
+   "ci95": 2.445422390235819,
+   "verdict": "worse"
+  },
+  {
+   "what": "Ball lost within 12 s",
+   "no_change": 1.0,
+   "board": 1.0,
+   "diff": 0.0,
+   "ci95": 0.0,
+   "verdict": "no clear effect"
+  }
+ ],
+ "id": "20261118_211506",
+ "what": "forward board (hold): Peterson 8 m, Kownacki 9 m, Ginczek 7 m",
+ "board": {
+  "match": "J03WOH",
+  "t": 3610,
+  "board": "forward",
+  "mode": "hold",
+  "team": "home",
+  "moves": [
+   {
+    "side": "home",
+    "shirt": 7,
+    "x": 89,
+    "y": 50
+   },
+   {
+    "side": "home",
+    "shirt": 9,
+    "x": 92,
+    "y": 38
+   },
+   {
+    "side": "home",
+    "shirt": 10,
+    "x": 94,
+    "y": 30
+   }
+  ],
+  "id": "20261118_211506"
+ }
+}
