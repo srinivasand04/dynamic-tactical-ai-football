@@ -1,0 +1,8 @@
+role,rows,mean_blame_best,mean_share,mean_blame_typical,most_to_blame
+keeper,999,1.12,17.6,-0.03,211
+centre-back,2012,1.38,13.24,-0.04,239
+full-back,1470,1.22,10.92,-0.03,143
+central mid,2809,1.18,8.93,-0.01,254
+wide mid,1439,0.8,5.01,-0.01,79
+attacking mid,714,0.8,4.46,0.01,29
+striker,1456,0.59,2.84,0.01,44
