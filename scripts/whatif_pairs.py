@@ -105,9 +105,11 @@ def main():
                     print(f"  {k + 1}/{len(jobs)} runs ({el:.1f} min, about {el / (k + 1) * (len(jobs) - k - 1):.0f} min left)", flush=True)
     df = pd.read_csv(runs_p)
     sm = synergy(df, B.summary(df))
+    # all changes here are defensive: threat going up in a moment means the change made it worse there
+    sm = sm.rename(columns={"max_threat_helped_in": "made_worse_in"})
     sm.round(4).to_csv(os.path.join(OUT, "pairs_summary.csv"), index=False)
     pd.set_option("display.width", 250)
-    cols = ["what_changed", "verdict", "moments", "runs", "d_max_threat", "d_max_threat_ci95", "max_threat_helped_in",
+    cols = ["what_changed", "verdict", "moments", "runs", "d_max_threat", "d_max_threat_ci95", "made_worse_in",
             "pair_minus_sum", "pair_minus_sum_ci95"]
     print(sm[[c for c in cols if c in sm]].round(4).to_string(index=False))
     try:
