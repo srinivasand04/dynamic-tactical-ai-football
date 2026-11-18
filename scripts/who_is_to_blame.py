@@ -6,7 +6,7 @@ For each defender (all 11 of the defending team), only HE is put somewhere else,
 is computed again:
     typical ghost  where our movement model (3-seed ensemble, held-out predictions) expected him one Key State
                    (~1.1 s) earlier: "did he do what a normal defender does here?"
-    best ghost     the spot he could have reached in the same time (7 m/s from where he was a Key State earlier, 1 m
+    best ghost     the spot he could have reached in the same time (7 m/s for at most 1.5 s from where he was a Key State earlier, 1 m
                    grid) that makes the moment least dangerous: "could he have stopped it?"
 Blame = real threat - threat with his ghost   (in %-points; > 0: his real spot made the moment more dangerous).
 
@@ -110,7 +110,7 @@ def match_blame(m):
         now, before = xy[k], xy[k - 1]
         b, a, df, f = oriented(now, team)
         d0 = 11 if team == 0 else 0
-        dt = max(float(t[k] - t[k - 1]), 0.3)
+        dt = min(max(float(t[k] - t[k - 1]), 0.3), 1.5)                   # a gap over a stoppage is not 'reachable time'
         ghost_typ = f(before[d0:d0 + 11] + pred[i][d0:d0 + 11])            # typical: model's spot from Key State k-1
         start_pos = f(before[d0:d0 + 11])
         side = "away" if d0 == 11 else "home"
@@ -215,11 +215,12 @@ def main():
         df, pl = report(pd.read_csv(os.path.join(OUT, "blame_moments.csv")))
         chart(df, pl, os.path.join(OUT, "blame_chart.png"))
         return
+    from multiprocessing import Pool
+    ms = [m for m in settings.available(settings.REAL) if all(os.path.exists(os.path.join(PREDS, f"{s}_{m}.npz")) for s in ENSEMBLE)]
+    with Pool(min(len(ms), int(os.environ.get("BLAME_PROCS", "4")))) as pool:      # one match per process
+        res = pool.map(match_blame, ms)
     parts = []
-    for m in settings.available(settings.REAL):
-        if not all(os.path.exists(os.path.join(PREDS, f"{s}_{m}.npz")) for s in ENSEMBLE):
-            continue
-        df, n = match_blame(m)
+    for m, (df, n) in zip(ms, res):
         parts.append(df)
         print(f"  {m}: {n} dangerous moments, {len(df)} defender rows", flush=True)
     df = pd.concat(parts, ignore_index=True)
