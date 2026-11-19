@@ -1,0 +1,4 @@
+measure,fix_blamed,fix_blamed_ci95,fix_random,fix_random_ci95,blamed_minus_random,ci95,blamed_better_in
+threat from 1 s (pp),-0.912,1.523,-0.937,1.092,0.025,1.551,41/90
+shots per run,-0.217,0.179,-0.14,0.232,-0.076,0.223,31/90
+xG per run,-0.045,0.051,-0.014,0.042,-0.03,0.057,32/90

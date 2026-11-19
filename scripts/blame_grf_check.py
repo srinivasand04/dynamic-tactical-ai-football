@@ -232,7 +232,7 @@ def report(seeds_note=""):
         ax[1].legend()
         fig.tight_layout()
         fig.savefig(os.path.join(OUT, f"grf_chart{TAG}.png"), dpi=110)
-        print("wrote outputs/blame/grf_summary.csv, grf_per_moment.csv, grf_chart.png")
+        print(f"wrote outputs/blame/grf_summary{TAG}.csv, grf_per_moment{TAG}.csv, grf_chart{TAG}.png")
     except ImportError:
         print("chart: run --report in .venv-analysis (matplotlib)")
 
