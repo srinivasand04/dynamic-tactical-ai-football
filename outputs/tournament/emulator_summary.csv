@@ -1,0 +1,4 @@
+predictor,mean_abs_error_pp,rank_corr_in_moment,best_defence_hit,best_defence_within_ci,ms_per_moment_35_pairs
+emulator,2.9401,0.0154,0.3929,0.9643,1.0023
+table,2.428,0.042,0.3929,0.9643,
+zero,2.3519,0.0,0.2143,0.8571,

@@ -1,0 +1,13 @@
+if attack plays,best defence,danger,vs no change,if defence plays,best attack
+no change,team press,0.162,-0.052,,
+wide attack,compact,0.192,-0.007,,
+overload ball side,team press,0.148,-0.059,,
+extra runner,team press,0.175,-0.036,,
+quick play,team press,0.164,-0.016,,
+long balls,team press,0.171,-0.043,,
+,,0.215,0.0,no change,no change
+,,0.242,0.0,double team,no change
+,,0.226,0.063,team press,wide attack
+,,0.278,0.067,low block,extra runner
+,,0.212,0.022,compact,quick play
+,,0.276,0.031,keeper off line,extra runner

@@ -130,8 +130,50 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
         res, pl, bl, mirrored = _play(seg, start_s, scen, shift, seed, seconds, models, video=video, move=move)
     finally:
         team_agent.Brain.__init__ = init
-    res["threat_play"], res["on_ball"] = threat_from(pl, bl, _moment(seg, start_s, "baseline", shift)[3])
+    att = _moment(seg, start_s, "baseline", shift)[3]
+    res["threat_play"], res["on_ball"] = threat_from(pl, bl, att)
+    res.update(extra_metrics(pl, bl, att))
     return res, pl, bl, mirrored
+
+
+def extra_metrics(pl, bl, att, from_s=1.0, hold_m=3.0, regain_s=1.0):
+    """Metrics over the whole run, not one instant (less noisy than a maximum):
+        threat_auc   mean threat of the attacking team over the run from 1 s (0 while it does not have the ball), pp-ready 0-1
+        box_ctrl     share of the defending penalty area nearer to a defender than to an attacker (1 m grid, every 1 s)
+        t_regain     first time (s) the defence holds the ball for 1 s (nearest player within 3 m); the run length if never
+    pl (22, T, 2), bl (T, 2) in GRF orientation (home on the left)."""
+    import value_models
+    T = min(pl.shape[1], len(bl))
+    P, B = pl[:, :T].transpose(1, 0, 2), bl[:T]
+    if att == "home":
+        A, D = P[:, :11], P[:, 11:]
+    else:
+        A, D, B = WI.flip(P[:, 11:]), WI.flip(P[:, :11]), WI.flip(B)
+    gx, gy = np.meshgrid(np.arange(L - 16.0, L, 1.0), np.arange(W / 2 - 19.66, W / 2 + 20.16, 1.0))
+    box = np.c_[gx.ravel(), gy.ravel()]
+    own, th, ctrl, run, regain = 1, [], [], 0, np.nan
+    start = int(from_s * WI.FPS)
+    for t in range(T):
+        da, dd = np.nanmin(np.hypot(*(A[t] - B[t]).T)), np.nanmin(np.hypot(*(D[t] - B[t]).T))
+        if min(da, dd) < hold_m:
+            own = 1 if da <= dd else 0
+        if t < start:
+            continue
+        run = run + 1 if own == 0 else 0
+        if np.isnan(regain) and run >= regain_s * WI.FPS:
+            regain = (t - run + 1) / WI.FPS
+        if t % 5 == 0:
+            x = value_models.threat(B[t], A[t], D[t]) if own else 0.0
+            th.append(float(x) if x is not None and np.isfinite(x) else 0.0)
+        if t % 10 == 0:
+            a_ok, d_ok = A[t][np.isfinite(A[t][:, 0])], D[t][np.isfinite(D[t][:, 0])]
+            if len(a_ok) and len(d_ok):
+                na = np.min(np.hypot(*(box[:, None] - a_ok[None]).transpose(2, 0, 1)), 1)
+                nd = np.min(np.hypot(*(box[:, None] - d_ok[None]).transpose(2, 0, 1)), 1)
+                ctrl.append(float((nd < na).mean()))
+    return {"threat_auc": round(float(np.mean(th)), 4) if th else np.nan,
+            "box_ctrl": round(float(np.mean(ctrl)), 4) if ctrl else np.nan,
+            "t_regain": round(float(regain if np.isfinite(regain) else T / WI.FPS), 1)}
 
 
 def threat_from(pl, bl, att, from_s=1.0, hold_m=3.0):
