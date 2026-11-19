@@ -40,10 +40,15 @@ TAG = ""                                       # "_hold" with --hold: separate f
 
 # ---------------------------------------------------------------- picking the moments (no GRF needed)
 
+_SEG = {}                                                           # file -> (start, end) or None, read once
+
+
 def find_segment(match, t):
     for f in sorted(glob.glob(os.path.join(ROOT, "data", "real", "processed", f"{match}_segment_*.npz"))):
-        z = np.load(f, allow_pickle=True)
-        if "name_home" in z.files and z["time_s"][0] + 2.2 <= t <= z["time_s"][-1] - 12.5:
+        if f not in _SEG:
+            z = np.load(f, allow_pickle=True)
+            _SEG[f] = (float(z["time_s"][0]), float(z["time_s"][-1])) if "name_home" in z.files else None
+        if _SEG[f] and _SEG[f][0] + 2.2 <= t <= _SEG[f][1] - 12.5:
             return f
     return None
 
@@ -115,13 +120,19 @@ def pick(n, per_match, seed=0):
 HOLD = False
 
 
+class _FixScens(set):
+    """'hold' for the coach board and for every fix_* scenario."""
+    def __contains__(self, s):
+        return s == "board" or str(s).startswith("fix_")
+
+
 def _patch():
     import coach_board  # noqa: F401   (adds threat_play / on_ball to every run, keeps other scenarios as they are)
     import whatif as WI
     inner = WI.moment
 
     def moment(seg, start_s, scen, shift, move=None):
-        if scen in ("fix_blamed", "fix_random"):
+        if str(scen).startswith("fix_"):                                  # fix_blamed, fix_random, fix_<slot> (blame_grf_true.py)
             pos, ball, vel, att, mirrored, i = inner(seg, start_s, "baseline", shift, None)
             k, d = move
             d = -np.asarray(d) if mirrored else np.asarray(d)          # GRF frame: home on the left
@@ -168,7 +179,7 @@ def init(dataset, hold):
     _patch()
     if hold:
         import coach_board as CB
-        CB.HOLD_SCENS.update({"fix_blamed", "fix_random"})
+        CB.HOLD_SCENS = _FixScens()
     import whatif as WI
     WI._init(dataset)
 

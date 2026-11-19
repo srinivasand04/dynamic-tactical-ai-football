@@ -1,0 +1,5 @@
+predictor,rank_corr_in_moment,picks_true_top
+fast blame model (CV),0.033,0.286
+still-picture blame,-0.032,0.143
+nearest to the ball,0.009,0.171
+random guess,0.0,0.144

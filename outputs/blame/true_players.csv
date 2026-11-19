@@ -1,0 +1,135 @@
+name,team,chances,mean_blame_fast,mean_share_fast,mean_blame_still,main_role
+Y. Sommer,FC Bayern München,81,1.23,23.92,1.23,keeper
+M. Schwäbe,1. FC Köln,66,1.02,23.83,1.01,keeper
+Manuel Riemann,VfL Bochum 1848,69,1.87,22.87,1.05,keeper
+D. Stojanovic,SSV Jahn Regensburg,91,1.21,17.96,1.4,keeper
+M. Diaby,Bayer 04 Leverkusen,69,5.09,16.62,0.16,wide mid
+M. Kolke,F.C. Hansa Rostock,75,2.48,16.09,0.96,keeper
+Terrence Boyd,1. FC Kaiserslautern,64,5.67,15.84,0.03,striker
+D. Ginczek,Fortuna Düsseldorf,47,6.33,15.56,0.5,striker
+M. Hartel,FC St. Pauli,68,2.8,15.25,1.01,central mid
+J. Verhoek,F.C. Hansa Rostock,71,5.73,15.14,0.27,striker
+Florian Wirtz,Bayer 04 Leverkusen,69,5.14,14.99,0.32,attacking mid
+Kwadwo Baah,Fortuna Düsseldorf,38,4.85,14.88,0.28,striker
+Kwadwo Duah,1. FC Nürnberg,56,3.92,14.74,0.18,striker
+Lukas Daschner,FC St. Pauli,60,3.59,14.38,0.64,striker
+Jeremie Frimpong,Bayer 04 Leverkusen,69,4.4,14.19,0.51,full-back
+F. Kastenmeier,Fortuna Düsseldorf,312,1.57,14.11,0.83,keeper
+F. Nürnberger,1. FC Nürnberg,63,1.0,13.99,1.06,full-back
+Manuel Wintzheimer,1. FC Nürnberg,27,3.25,13.96,0.51,central mid
+L. Schleimer,1. FC Nürnberg,34,3.1,13.74,1.38,striker
+J. Mees,SSV Jahn Regensburg,84,3.31,13.63,0.6,wide mid
+T. Müller,FC Bayern München,46,3.14,13.53,0.59,attacking mid
+C. Mathenia,1. FC Nürnberg,90,-0.07,13.44,0.99,keeper
+D. Selke,1. FC Köln,37,6.3,13.28,0.52,striker
+M. Saliakas,FC St. Pauli,60,1.77,13.28,0.94,central mid
+E. Amenyido,FC St. Pauli,68,3.7,13.17,0.55,striker
+K. Stöger,VfL Bochum 1848,63,3.07,12.99,0.95,central mid
+F. Klaus,Fortuna Düsseldorf,176,4.66,12.89,0.66,wide mid
+Dawid Kownacki,Fortuna Düsseldorf,262,4.78,12.78,0.4,striker
+R. Hennings,Fortuna Düsseldorf,170,4.23,12.45,0.46,striker
+S. Azmoun,Bayer 04 Leverkusen,69,4.94,12.36,0.36,striker
+P. Hofmann,VfL Bochum 1848,60,3.25,12.32,0.3,striker
+Andreas Albers,SSV Jahn Regensburg,84,3.48,12.17,1.07,attacking mid
+Anderson Lucoqui,F.C. Hansa Rostock,75,3.45,12.01,0.79,central mid
+A. Luthe,1. FC Kaiserslautern,76,1.3,11.77,0.67,keeper
+M. Wunderlich,1. FC Kaiserslautern,57,4.43,11.76,0.37,attacking mid
+C. Daferner,1. FC Nürnberg,90,3.08,11.67,0.52,striker
+Kingsley Coman,FC Bayern München,50,1.89,11.64,0.51,wide mid
+Shinta Appelkamp,Fortuna Düsseldorf,180,3.61,11.59,0.6,attacking mid
+A. Yildirim,SSV Jahn Regensburg,80,3.6,11.48,0.46,striker
+M. Møller Dæhli,1. FC Nürnberg,56,3.48,11.46,0.39,wide mid
+D. Ljubicic,1. FC Köln,49,4.12,11.36,0.42,wide mid
+Marlon Ritter,1. FC Kaiserslautern,76,3.97,11.31,0.7,central mid
+C. Antwi-Adjei,VfL Bochum 1848,69,3.49,11.26,0.64,wide mid
+Aaron Opoku,1. FC Kaiserslautern,34,4.31,11.15,0.43,wide mid
+N. Vasilj,FC St. Pauli,70,0.88,10.97,0.71,keeper
+E. Fernandes Neto,Fortuna Düsseldorf,26,5.2,10.82,0.23,attacking mid
+Benedikt Gimber,SSV Jahn Regensburg,91,2.93,10.57,1.75,central mid
+Kenny Prince Redondo,1. FC Kaiserslautern,68,3.38,10.5,0.39,wide mid
+K. Pröger,F.C. Hansa Rostock,71,4.44,10.5,0.29,striker
+F. Kainz,1. FC Köln,37,5.24,10.46,0.28,attacking mid
+L. Maina,1. FC Köln,49,4.21,10.28,0.4,wide mid
+Jonas Hector,1. FC Köln,66,1.5,10.26,0.87,full-back
+P. Breier,F.C. Hansa Rostock,39,4.12,10.07,0.41,wide mid
+Leroy Sané,FC Bayern München,81,2.77,10.03,0.41,wide mid
+A. Bodzek,Fortuna Düsseldorf,22,4.85,10.02,0.9,central mid
+Kristoffer Peterson,Fortuna Düsseldorf,215,2.72,9.97,0.61,wide mid
+Serge Gnabry,FC Bayern München,81,2.42,9.96,0.37,striker
+J. Zimmer,1. FC Kaiserslautern,76,2.28,9.79,0.89,wide mid
+P. Osterhage,VfL Bochum 1848,27,4.41,9.71,1.24,central mid
+Exequiel Palacios,Bayer 04 Leverkusen,69,3.92,9.71,0.92,central mid
+Jackson Irvine,FC St. Pauli,70,2.53,9.53,0.92,central mid
+J. Castrop,1. FC Nürnberg,90,0.8,9.44,0.85,wide mid
+J. Geis,1. FC Nürnberg,72,1.8,9.4,1.01,central mid
+Ryan Gravenberch,FC Bayern München,50,1.82,9.13,1.04,central mid
+Jan Thielmann,1. FC Köln,29,1.34,8.85,0.05,striker
+E. Iyoha,Fortuna Düsseldorf,201,2.31,8.83,0.75,central mid
+P. Förster,VfL Bochum 1848,42,3.23,8.81,0.66,attacking mid
+M. Karbownik,Fortuna Düsseldorf,261,2.45,8.6,0.94,full-back
+T. Asano,VfL Bochum 1848,60,2.4,8.47,0.5,wide mid
+M. Sobottka,Fortuna Düsseldorf,205,4.3,8.46,0.68,central mid
+D. Lee,F.C. Hansa Rostock,45,3.9,8.37,0.2,central mid
+L. Guwara,SSV Jahn Regensburg,72,0.9,8.33,1.07,full-back
+B. Schmitz,1. FC Köln,37,2.15,8.3,1.29,full-back
+E. Wekesser,1. FC Nürnberg,34,-0.51,7.9,1.55,wide mid
+Svante Ingelsson,F.C. Hansa Rostock,36,3.24,7.89,0.36,central mid
+A. Tanaka,Fortuna Düsseldorf,91,3.93,7.88,0.57,central mid
+N. Mazraoui,FC Bayern München,74,-0.38,7.85,1.13,full-back
+E. Martel,1. FC Köln,66,2.94,7.54,0.88,central mid
+N. Amiri,Bayer 04 Leverkusen,61,2.86,7.51,0.82,central mid
+Dominik Schad,1. FC Kaiserslautern,42,1.02,7.33,0.64,full-back
+L. Hrádecký,Bayer 04 Leverkusen,69,0.04,7.29,0.62,keeper
+Afeez Aremu,FC St. Pauli,60,1.62,7.13,1.16,central mid
+D. Dressel,F.C. Hansa Rostock,75,3.16,7.08,0.87,central mid
+Jorrit Hendrix,Fortuna Düsseldorf,216,2.43,7.04,1.0,central mid
+N. Shipnoski,SSV Jahn Regensburg,80,1.19,6.88,1.36,wide mid
+D. Huseinbašić,1. FC Köln,29,0.94,6.67,0.06,attacking mid
+Joshua Kimmich,FC Bayern München,81,1.45,6.63,1.41,central mid
+Matthias Zimmermann,Fortuna Düsseldorf,312,1.24,6.54,1.05,full-back
+S. Thill,F.C. Hansa Rostock,30,2.19,6.54,0.58,central mid
+N. Neidhart,F.C. Hansa Rostock,75,0.18,6.52,0.77,central mid
+M. Bakker,Bayer 04 Leverkusen,69,0.48,6.4,0.97,full-back
+E. Choupo-Moting,FC Bayern München,31,2.73,6.36,0.67,striker
+A. Losilla,VfL Bochum 1848,69,2.18,6.32,0.86,central mid
+L. Tempelmann,1. FC Nürnberg,90,0.94,6.31,1.0,attacking mid
+R. van Drongelen,F.C. Hansa Rostock,75,1.93,6.28,1.03,centre-back
+E. Durm,1. FC Kaiserslautern,76,0.53,6.27,1.14,full-back
+Joao Cancelo,FC Bayern München,35,0.89,6.26,1.53,central mid
+M. Thalhammer,SSV Jahn Regensburg,91,1.81,6.22,1.73,central mid
+Lukas Fröde,F.C. Hansa Rostock,75,2.38,6.11,1.02,central mid
+L. Paqarada,FC St. Pauli,70,-0.56,6.04,0.99,central mid
+H. Çiftçi,1. FC Kaiserslautern,42,1.68,6.02,1.02,central mid
+Ellyes Skhiri,1. FC Köln,66,2.26,5.87,0.8,central mid
+Edmond Tapsoba,Bayer 04 Leverkusen,69,0.8,5.51,0.93,centre-back
+B. Tomiak,1. FC Kaiserslautern,76,1.19,5.51,1.22,centre-back
+N. Gavory,Fortuna Düsseldorf,68,1.14,5.43,0.86,full-back
+A. Dźwigała,FC St. Pauli,70,0.29,5.43,1.22,centre-back
+D. Heintz,VfL Bochum 1848,42,1.23,5.41,0.78,full-back
+K. Schindler,1. FC Köln,29,-2.21,5.39,0.93,full-back
+Jonathan Tah,Bayer 04 Leverkusen,69,1.01,5.03,1.04,centre-back
+S. Janko,VfL Bochum 1848,69,0.32,4.97,1.32,full-back
+Benjamin Pavard,FC Bayern München,81,-0.96,4.95,1.39,full-back
+M. de Ligt,FC Bayern München,81,-0.15,4.77,1.65,centre-back
+K. Schlotterbeck,VfL Bochum 1848,27,1.17,4.67,1.13,full-back
+J. Elvedi,SSV Jahn Regensburg,91,0.27,4.63,2.22,centre-back
+Jan Gyamerah,1. FC Nürnberg,72,-1.19,4.61,0.94,full-back
+K. Faber,SSV Jahn Regensburg,91,-0.64,4.32,2.04,full-back
+C. Klarer,Fortuna Düsseldorf,274,0.75,4.3,1.04,centre-back
+Eric Smith,FC St. Pauli,70,-0.33,4.28,1.44,central mid
+Tim Oberdorf,Fortuna Düsseldorf,261,0.47,4.25,1.02,centre-back
+Dayot Upamecano,FC Bayern München,81,-0.47,4.1,1.56,centre-back
+K. Kraus,1. FC Kaiserslautern,34,0.53,3.81,1.26,centre-back
+R. Bormuth,1. FC Kaiserslautern,76,0.44,3.75,0.89,centre-back
+James Lawrence,1. FC Nürnberg,90,-0.71,3.75,1.49,centre-back
+E. Mašović,VfL Bochum 1848,69,0.59,3.7,1.32,centre-back
+Jordy de Wijs,Fortuna Düsseldorf,51,0.32,3.61,1.24,centre-back
+Leon Goretzka,FC Bayern München,24,0.29,3.45,1.66,central mid
+A. Hoffmann,Fortuna Düsseldorf,42,-0.41,3.31,1.28,centre-back
+Frederic Ananou,F.C. Hansa Rostock,71,-0.98,3.29,1.16,centre-back
+S. Breitkreuz,SSV Jahn Regensburg,91,-0.29,3.24,2.15,centre-back
+B. Fazliji,FC St. Pauli,46,-2.92,3.15,1.34,centre-back
+I. Ordets,VfL Bochum 1848,69,0.33,3.02,1.5,centre-back
+Christopher Schindler,1. FC Nürnberg,90,-1.63,2.91,1.18,centre-back
+Jeff Chabot,1. FC Köln,66,-0.18,2.9,1.15,centre-back
+Timo Hübers,1. FC Köln,66,-0.84,2.68,1.02,centre-back
