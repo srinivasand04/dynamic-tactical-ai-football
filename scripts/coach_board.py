@@ -40,6 +40,7 @@ OUT = os.path.join(ROOT, "outputs", "coach_board")
 L, W = WI.L, WI.W
 BOARDS = ("forward", "midfield", "defence")
 _B = {"delta": {}, "hold": False}          # this run's moves (GRF frame, slot -> [dx, dy]); filled in every process
+HOLD_SCENS = {"board"}                     # scenarios whose moved players hold their offset (other scripts may add theirs)
 
 
 # ---------------------------------------------------------------- which players are on each board
@@ -123,7 +124,7 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
 
     def init_on(self, *a, **k):
         init(self, *a, **k)
-        self.board_on = scen == "board"
+        self.board_on = scen in HOLD_SCENS
     team_agent.Brain.__init__ = init_on
     try:
         res, pl, bl, mirrored = _play(seg, start_s, scen, shift, seed, seconds, models, video=video, move=move)

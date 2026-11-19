@@ -1,0 +1,91 @@
+moment,match,time_s,segment,side,threat,blamed,blamed_shirt,blamed_role,blame_blamed,blamed_dx,blamed_dy,random,random_shirt,random_role,blame_random,random_dx,random_dy
+J03WMX_3088,J03WMX,4936.0,data\real\processed\J03WMX_segment_4916.npz,away,0.6926,Y. Sommer,27,keeper,11.26,-0.12,-10.19,Joao Cancelo,22,central mid,3.63,5.91,-2.44
+J03WOY_1423,J03WOY,2240.4,data\real\processed\J03WOY_segment_2220.npz,away,0.3135,Anderson Lucoqui,21,central mid,9.26,7.39,3.66,K. Pröger,19,striker,0.0,-2.71,-8.12
+J03WOH_968,J03WOH,1609.9,data\real\processed\J03WOH_segment_1589.npz,away,0.4303,S. Breitkreuz,23,centre-back,8.0,-1.13,9.08,A. Yildirim,18,striker,0.0,-5.11,-7.59
+J03WOH_156,J03WOH,322.7,data\real\processed\J03WOH_segment_302.npz,home,0.648,Jordy de Wijs,30,centre-back,7.86,1.92,-0.94,Dawid Kownacki,9,attacking mid,0.0,2.79,2.6
+J03WOH_1272,J03WOH,2150.0,data\real\processed\J03WOH_segment_2130.npz,home,0.4139,Jorrit Hendrix,29,central mid,7.59,-2.78,-5.11,A. Hoffmann,3,centre-back,5.77,3.26,0.35
+J03WMX_910,J03WMX,1273.6,data\real\processed\J03WMX_segment_1253.npz,away,0.503,M. de Ligt,4,centre-back,6.85,4.23,4.92,Dayot Upamecano,2,centre-back,0.17,1.92,-9.68
+J03WR9_53,J03WR9,60.4,data\real\processed\J03WR9_segment_40.npz,away,0.3857,R. Bormuth,32,centre-back,6.53,2.54,4.16,M. Wunderlich,28,attacking mid,0.0,-6.25,-2.86
+J03WQQ_1622,J03WQQ,2354.3,data\real\processed\J03WQQ_segment_2334.npz,home,0.3841,C. Klarer,5,central mid,6.41,-8.68,-1.2,Shinta Appelkamp,23,attacking mid,0.0,3.26,9.65
+J03WMX_3004,J03WMX,4709.4,data\real\processed\J03WMX_segment_4689.npz,home,0.495,K. Schindler,17,full-back,6.27,-2.02,2.23,L. Maina,37,wide mid,0.0,4.95,6.56
+J03WQQ_469,J03WQQ,665.3,data\real\processed\J03WQQ_segment_524.npz,home,0.3708,Dawid Kownacki,9,striker,6.22,-1.91,4.4,E. Iyoha,19,central mid,0.0,4.83,2.08
+J03WQQ_1745,J03WQQ,2522.7,data\real\processed\J03WQQ_segment_2502.npz,home,0.611,E. Iyoha,19,central mid,6.16,-2.21,2.29,Shinta Appelkamp,23,attacking mid,0.0,0.55,3.07
+J03WPY_1230,J03WPY,1756.6,data\real\processed\J03WPY_segment_1736.npz,away,0.4415,J. Castrop,17,wide mid,6.1,1.34,1.05,C. Daferner,33,striker,0.0,-2.8,-2.78
+J03WR9_3053,J03WR9,4904.3,data\real\processed\J03WR9_segment_4884.npz,away,0.4386,J. Zimmer,8,wide mid,6.09,1.01,-1.97,L. Lobinger,27,striker,0.0,-3.05,-3.28
+J03WR9_1396,J03WR9,2090.0,data\real\processed\J03WR9_segment_2070.npz,away,0.3972,E. Durm,37,full-back,6.01,0.91,1.74,Terrence Boyd,13,striker,0.0,-2.54,-3.7
+J03WOY_1930,J03WOY,3100.9,data\real\processed\J03WOY_segment_3080.npz,home,0.518,F. Kastenmeier,33,keeper,5.84,6.93,-1.73,F. Klaus,11,wide mid,0.0,4.21,6.76
+J03WMX_1777,J03WMX,2601.7,data\real\processed\J03WMX_segment_2581.npz,home,0.3914,B. Schmitz,2,full-back,5.82,-1.97,-1.5,Jeff Chabot,24,centre-back,3.86,1.45,1.08
+J03WMX_1641,J03WMX,2421.3,data\real\processed\J03WMX_segment_2401.npz,away,0.3483,Joshua Kimmich,6,central mid,5.63,3.09,0.15,Ryan Gravenberch,38,central mid,0.32,4.28,-0.07
+J03WQQ_395,J03WQQ,544.5,data\real\processed\J03WQQ_segment_524.npz,home,0.3103,F. Kastenmeier,33,keeper,5.6,-0.37,-3.23,Shinta Appelkamp,23,attacking mid,0.0,1.35,5.27
+J03WR9_593,J03WR9,912.7,data\real\processed\J03WR9_segment_892.npz,home,0.3579,Jorrit Hendrix,29,central mid,5.57,-3.71,1.6,C. Klarer,5,centre-back,0.32,4.62,-1.54
+J03WOH_676,J03WOH,1136.1,data\real\processed\J03WOH_segment_1116.npz,away,0.3186,M. Thalhammer,8,central mid,5.45,3.04,-0.15,A. Yildirim,18,striker,0.0,-2.84,-5.11
+J03WQQ_928,J03WQQ,1332.1,data\real\processed\J03WQQ_segment_1312.npz,away,0.2828,Eric Smith,8,central mid,5.42,6.68,3.22,L. Paqarada,23,central mid,0.0,-5.49,-9.88
+J03WQQ_790,J03WQQ,1135.2,data\real\processed\J03WQQ_segment_1115.npz,home,0.4533,F. Kastenmeier,33,keeper,5.28,2.32,-6.66,C. Klarer,5,central mid,2.32,-1.88,6.83
+J03WPY_2921,J03WPY,4871.1,data\real\processed\J03WPY_segment_4851.npz,away,0.3028,L. Tempelmann,6,attacking mid,5.23,0.47,-1.05,Jan Gyamerah,28,full-back,0.0,-0.94,-0.55
+J03WOH_2528,J03WOH,4102.5,data\real\processed\J03WOH_segment_4082.npz,home,0.3409,Matthias Zimmermann,25,full-back,5.19,-1.4,1.26,Jordy de Wijs,30,centre-back,0.15,-3.31,-1.1
+J03WMX_1096,J03WMX,1588.9,data\real\processed\J03WMX_segment_1568.npz,away,0.3152,Kingsley Coman,11,wide mid,5.18,7.33,-5.37,Ryan Gravenberch,38,central mid,1.85,3.22,-0.85
+J03WOH_3253,J03WOH,5388.6,data\real\processed\J03WOH_segment_5368.npz,home,0.4679,F. Kastenmeier,33,keeper,5.14,4.35,-3.07,Kwadwo Baah,14,wide mid,0.0,3.74,7.29
+J03WOY_2835,J03WOY,4621.5,data\real\processed\J03WOY_segment_4601.npz,away,0.2961,D. Dressel,6,central mid,4.98,0.47,2.0,R. van Drongelen,5,centre-back,3.33,-2.27,-0.1
+J03WQQ_1462,J03WQQ,2033.5,data\real\processed\J03WQQ_segment_2013.npz,home,0.2925,Jorrit Hendrix,29,central mid,4.94,-1.76,-3.28,Matthias Zimmermann,25,centre-back,0.1,-0.57,-1.07
+J03WMX_2428,J03WMX,3651.2,data\real\processed\J03WMX_segment_3631.npz,away,0.2855,Dayot Upamecano,2,centre-back,4.86,0.65,1.32,M. de Ligt,4,centre-back,1.57,-4.89,-2.7
+J03WOH_3042,J03WOH,4993.8,data\real\processed\J03WOH_segment_4973.npz,home,0.2541,Matthias Zimmermann,25,full-back,4.84,-0.06,2.33,Shinta Appelkamp,23,wide mid,0.0,3.63,3.14
+J03WN1_41,J03WN1,52.7,data\real\processed\J03WN1_segment_32.npz,home,0.4964,E. Mašović,4,centre-back,4.44,3.9,7.0,T. Asano,11,wide mid,2.72,-1.29,2.13
+J03WOH_2319,J03WOH,3613.5,data\real\processed\J03WOH_segment_3500.npz,away,0.4104,L. Guwara,20,full-back,4.35,0.35,-1.9,Benedikt Gimber,5,central mid,0.0,-2.2,-2.84
+J03WMX_3343,J03WMX,5408.3,data\real\processed\J03WMX_segment_5388.npz,home,0.487,K. Schindler,17,full-back,4.27,2.22,-6.56,Kristian Pedersen,3,full-back,0.16,1.3,1.93
+J03WOY_835,J03WOY,1283.2,data\real\processed\J03WOY_segment_1263.npz,home,0.2592,Tim Oberdorf,15,centre-back,4.23,-7.6,6.72,C. Klarer,5,centre-back,3.05,1.15,8.54
+J03WOY_1985,J03WOY,3165.3,data\real\processed\J03WOY_segment_3080.npz,home,0.4486,M. Sobottka,31,central mid,4.2,1.28,6.07,A. Tanaka,4,central mid,2.14,-0.57,8.98
+J03WMX_788,J03WMX,1106.7,data\real\processed\J03WMX_segment_995.npz,home,0.5308,Jonas Hector,14,full-back,4.13,-0.54,5.32,D. Selke,27,striker,0.0,3.07,3.65
+J03WQQ_1135,J03WQQ,1592.1,data\real\processed\J03WQQ_segment_1572.npz,away,0.4237,Eric Smith,8,central mid,4.13,-1.38,-4.75,Lukas Daschner,13,striker,0.0,-2.96,-3.34
+J03WOH_1511,J03WOH,2471.7,data\real\processed\J03WOH_segment_2451.npz,away,0.5205,K. Faber,11,full-back,4.13,-5.19,-5.18,L. Guwara,20,full-back,0.0,-4.18,-5.23
+J03WPY_1910,J03WPY,2848.0,data\real\processed\J03WPY_segment_2828.npz,home,0.5176,M. Karbownik,8,full-back,4.13,3.99,3.39,Dawid Kownacki,9,striker,0.0,2.96,3.14
+J03WOH_1575,J03WOH,2548.7,data\real\processed\J03WOH_segment_2451.npz,away,0.4948,K. Faber,11,full-back,4.12,5.31,1.62,L. Guwara,20,full-back,0.0,-0.16,-4.78
+J03WOY_707,J03WOY,1044.0,data\real\processed\J03WOY_segment_1024.npz,home,0.5496,Matthias Zimmermann,25,full-back,4.12,3.55,-2.54,Tim Oberdorf,15,centre-back,2.43,-0.69,1.17
+J03WMX_2102,J03WMX,3183.6,data\real\processed\J03WMX_segment_3163.npz,away,0.5524,N. Mazraoui,40,full-back,4.12,0.88,-3.18,Joshua Kimmich,6,central mid,0.17,0.82,-4.67
+J03WOY_2496,J03WOY,4008.9,data\real\processed\J03WOY_segment_3988.npz,away,0.5568,P. Breier,39,wide mid,4.11,-0.45,-2.13,J. Verhoek,18,striker,0.0,-2.07,-2.43
+J03WMX_965,J03WMX,1351.5,data\real\processed\J03WMX_segment_1253.npz,away,0.5718,Dayot Upamecano,2,centre-back,4.09,-2.21,4.17,Ryan Gravenberch,38,central mid,0.0,-4.25,-4.32
+J03WR9_3333,J03WR9,5566.2,data\real\processed\J03WR9_segment_5546.npz,away,0.4704,B. Tomiak,2,centre-back,4.09,-0.41,-5.67,E. Durm,37,full-back,0.0,-4.92,-5.06
+J03WR9_1869,J03WR9,2871.4,data\real\processed\J03WR9_segment_2851.npz,away,0.4671,K. Kraus,5,centre-back,4.09,-0.61,-2.99,Kenny Prince Redondo,11,wide mid,0.0,-2.14,-2.59
+J03WPY_2068,J03WPY,3192.7,data\real\processed\J03WPY_segment_3172.npz,home,0.4565,Shinta Appelkamp,23,attacking mid,4.07,2.12,4.7,E. Iyoha,19,wide mid,0.0,1.99,4.47
+J03WOY_18,J03WOY,30.3,data\real\processed\J03WOY_segment_10.npz,home,0.1981,Shinta Appelkamp,23,attacking mid,4.06,-4.56,-2.77,M. Sobottka,31,central mid,0.0,2.74,7.47
+J03WR9_2363,J03WR9,3674.7,data\real\processed\J03WR9_segment_3654.npz,away,0.4474,J. Zimmer,8,wide mid,4.05,-2.83,1.09,R. Bormuth,32,centre-back,0.29,-0.75,-0.96
+J03WN1_185,J03WN1,310.5,data\real\processed\J03WN1_segment_290.npz,home,0.422,E. Mašović,4,centre-back,4.03,-5.67,-7.18,S. Janko,23,full-back,0.0,-0.8,5.75
+J03WMX_1255,J03WMX,1821.4,data\real\processed\J03WMX_segment_1801.npz,away,0.4394,Benjamin Pavard,5,full-back,4.02,-0.5,-2.01,T. Müller,25,attacking mid,0.0,-3.69,-3.56
+J03WOH_3277,J03WOH,5453.8,data\real\processed\J03WOH_segment_5368.npz,away,0.3921,K. Faber,11,full-back,4.01,-3.3,-4.96,K. Caliskaner,10,striker,1.85,-5.5,-1.52
+J03WOH_1616,J03WOH,2617.9,data\real\processed\J03WOH_segment_2451.npz,away,0.3502,J. Elvedi,33,centre-back,4.0,0.53,1.54,S. Breitkreuz,23,centre-back,0.0,-1.55,-2.68
+J03WOY_1858,J03WOY,3003.9,data\real\processed\J03WOY_segment_2983.npz,home,0.4268,Matthias Zimmermann,25,full-back,3.99,2.52,-4.01,C. Klarer,5,centre-back,0.15,1.98,-0.85
+J03WOH_2572,J03WOH,4150.3,data\real\processed\J03WOH_segment_4082.npz,away,0.2123,J. Elvedi,33,centre-back,3.92,3.81,-0.26,S. Breitkreuz,23,centre-back,2.63,1.46,-7.09
+J03WQQ_712,J03WQQ,1020.5,data\real\processed\J03WQQ_segment_1000.npz,away,0.2051,Lukas Daschner,13,striker,3.91,0.63,-5.0,M. Hartel,10,central mid,2.57,4.04,6.84
+J03WQQ_46,J03WQQ,42.3,data\real\processed\J03WQQ_segment_22.npz,away,0.3574,M. Hartel,10,central mid,3.84,-1.3,-1.99,Eric Smith,8,central mid,0.0,-2.6,-2.24
+J03WOH_934,J03WOH,1575.2,data\real\processed\J03WOH_segment_1555.npz,away,0.3512,M. Thalhammer,8,central mid,3.81,-4.14,-4.89,K. Faber,11,full-back,2.0,1.52,-5.85
+J03WOY_2189,J03WOY,3519.3,data\real\processed\J03WOY_segment_3499.npz,away,0.3758,D. Dressel,6,central mid,3.79,-2.74,-3.98,J. Verhoek,18,striker,0.02,-0.56,-0.62
+J03WMX_1199,J03WMX,1750.7,data\real\processed\J03WMX_segment_1730.npz,home,0.2693,Jeff Chabot,24,centre-back,3.79,3.88,0.94,F. Kainz,11,attacking mid,0.0,5.04,8.79
+J03WOH_3099,J03WOH,5120.5,data\real\processed\J03WOH_segment_4973.npz,away,0.381,K. Faber,11,full-back,3.66,-0.91,4.81,J. Elvedi,33,centre-back,2.03,0.84,-3.8
+J03WOY_252,J03WOY,314.0,data\real\processed\J03WOY_segment_294.npz,away,0.1931,N. Neidhart,7,central mid,3.63,0.95,7.2,K. Pröger,19,striker,0.0,-3.18,-6.92
+J03WR9_676,J03WR9,1016.5,data\real\processed\J03WR9_segment_892.npz,home,0.4106,C. Klarer,5,centre-back,3.62,-5.77,-6.64,Tim Oberdorf,15,centre-back,0.0,1.32,8.69
+J03WQQ_843,J03WQQ,1198.1,data\real\processed\J03WQQ_segment_1115.npz,away,0.327,L. Paqarada,23,central mid,3.53,-4.38,-6.19,E. Amenyido,14,striker,0.0,-4.06,-4.82
+J03WQQ_1038,J03WQQ,1473.2,data\real\processed\J03WQQ_segment_1312.npz,away,0.3245,M. Saliakas,2,central mid,3.52,-4.34,5.96,E. Amenyido,14,striker,0.0,-6.84,-7.06
+J03WR9_380,J03WR9,549.3,data\real\processed\J03WR9_segment_529.npz,away,0.3496,A. Luthe,1,keeper,3.5,9.44,-2.43,Marlon Ritter,7,central mid,0.0,3.37,-9.98
+J03WPY_2898,J03WPY,4848.1,data\real\processed\J03WPY_segment_4828.npz,home,0.321,F. Kastenmeier,33,keeper,3.49,2.91,0.83,M. Sobottka,31,central mid,0.0,0.93,3.87
+J03WMX_3057,J03WMX,4792.5,data\real\processed\J03WMX_segment_4689.npz,away,0.1838,Joao Cancelo,22,central mid,3.49,0.63,2.19,Leon Goretzka,8,central mid,1.27,1.69,-6.62
+J03WOY_1819,J03WOY,2958.0,data\real\processed\J03WOY_segment_2938.npz,away,0.3138,Frederic Ananou,27,centre-back,3.45,-0.88,0.64,J. Verhoek,18,striker,0.0,-0.99,-2.74
+J03WOY_1003,J03WOY,1526.6,data\real\processed\J03WOY_segment_1506.npz,away,0.2916,Lukas Fröde,34,central mid,3.43,-0.62,-3.79,Svante Ingelsson,14,central mid,0.0,-0.47,-2.1
+J03WPY_1999,J03WPY,3021.9,data\real\processed\J03WPY_segment_3001.npz,home,0.3203,F. Klaus,11,wide mid,3.35,5.77,-5.88,M. Sobottka,31,central mid,1.96,-5.47,-1.47
+J03WQQ_1523,J03WQQ,2197.3,data\real\processed\J03WQQ_segment_2072.npz,home,0.2592,R. Hennings,28,striker,3.33,0.25,-1.72,M. Karbownik,8,central mid,0.0,1.34,2.73
+J03WOY_2675,J03WOY,4356.4,data\real\processed\J03WOY_segment_4336.npz,away,0.2795,R. van Drongelen,5,centre-back,3.21,-2.79,1.4,Anderson Lucoqui,21,central mid,0.0,-3.95,-4.19
+J03WR9_517,J03WR9,776.3,data\real\processed\J03WR9_segment_756.npz,away,0.2667,J. Zimmer,8,wide mid,3.11,-4.61,-0.96,B. Tomiak,2,centre-back,0.37,-0.74,-3.1
+J03WPY_3464,J03WPY,5739.5,data\real\processed\J03WPY_segment_5719.npz,away,0.2584,J. Castrop,17,wide mid,3.04,0.99,10.93,E. Wekesser,13,wide mid,0.04,-1.09,3.27
+J03WOY_2733,J03WOY,4459.0,data\real\processed\J03WOY_segment_4336.npz,home,0.2332,F. Kastenmeier,33,keeper,3.03,3.84,-2.05,Jorrit Hendrix,29,central mid,0.77,-5.34,-1.13
+J03WMX_722,J03WMX,1037.4,data\real\processed\J03WMX_segment_995.npz,home,0.2419,F. Kainz,11,attacking mid,2.9,2.76,1.7,D. Ljubicic,7,wide mid,0.0,2.31,2.49
+J03WR9_1594,J03WR9,2404.1,data\real\processed\J03WR9_segment_2384.npz,away,0.5172,A. Luthe,1,keeper,2.76,3.64,1.82,M. Wunderlich,28,attacking mid,0.0,-3.47,-5.25
+J03WQQ_2322,J03WQQ,3358.6,data\real\processed\J03WQQ_segment_3338.npz,home,0.2206,Matthias Zimmermann,25,centre-back,2.71,3.45,0.54,M. Karbownik,8,central mid,0.0,6.6,6.59
+J03WPY_2118,J03WPY,3272.8,data\real\processed\J03WPY_segment_3172.npz,home,0.2168,M. Karbownik,8,full-back,2.68,2.81,6.65,Dawid Kownacki,9,striker,0.0,4.53,6.4
+J03WQQ_1980,J03WQQ,2882.0,data\real\processed\J03WQQ_segment_2862.npz,away,0.3047,A. Dźwigała,25,centre-back,2.46,1.87,-3.24,Afeez Aremu,20,central mid,0.15,3.25,-9.34
+J03WR9_1427,J03WR9,2154.1,data\real\processed\J03WR9_segment_2070.npz,home,0.4102,M. Karbownik,8,full-back,2.38,-0.82,1.36,C. Klarer,5,centre-back,0.0,4.11,3.84
+J03WPY_3128,J03WPY,5265.0,data\real\processed\J03WPY_segment_5245.npz,home,0.3604,Tim Oberdorf,15,centre-back,2.33,-1.32,-1.77,C. Klarer,5,centre-back,0.0,0.42,2.71
+J03WPY_2824,J03WPY,4735.8,data\real\processed\J03WPY_segment_4651.npz,away,0.1705,E. Wekesser,13,wide mid,2.3,-0.77,1.25,Jan Gyamerah,28,full-back,0.0,-3.05,-2.3
+J03WPY_76,J03WPY,89.7,data\real\processed\J03WPY_segment_69.npz,home,0.3963,A. Tanaka,4,central mid,2.21,-4.96,-0.31,E. Iyoha,19,wide mid,0.0,-0.66,3.01
+J03WR9_2377,J03WR9,3698.8,data\real\processed\J03WR9_segment_3654.npz,home,0.3064,Matthias Zimmermann,25,full-back,2.19,-0.43,-2.61,Kristoffer Peterson,7,wide mid,0.0,6.2,5.86
+J03WR9_650,J03WR9,984.9,data\real\processed\J03WR9_segment_892.npz,away,0.4446,R. Bormuth,32,centre-back,2.14,0.79,-0.88,M. Wunderlich,28,attacking mid,0.0,-4.4,-1.26
+J03WPY_2463,J03WPY,3900.1,data\real\processed\J03WPY_segment_3880.npz,away,0.4039,Jan Gyamerah,28,full-back,2.08,0.62,-1.05,F. Nürnberger,15,full-back,0.0,-4.68,-3.59
+J03WPY_733,J03WPY,1104.1,data\real\processed\J03WPY_segment_1093.npz,home,0.3381,Tim Oberdorf,15,centre-back,2.07,-9.54,2.75,M. Sobottka,31,central mid,0.15,-5.96,1.54
+J03WPY_3340,J03WPY,5556.1,data\real\processed\J03WPY_segment_5536.npz,home,0.3803,Matthias Zimmermann,25,full-back,2.03,-3.86,3.93,N. Gavory,34,full-back,0.0,2.57,3.37

@@ -35,6 +35,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "outputs", "blame")
 L, W = 105.0, 68.0
 SCEN = ["baseline", "fix_blamed", "fix_random"]
+TAG = ""                                       # "_hold" with --hold: separate files, the first test stays as it is
 
 
 # ---------------------------------------------------------------- picking the moments (no GRF needed)
@@ -111,6 +112,9 @@ def pick(n, per_match, seed=0):
 
 # ---------------------------------------------------------------- GRF (patched what-if engine)
 
+HOLD = False
+
+
 def _patch():
     import coach_board  # noqa: F401   (adds threat_play / on_ball to every run, keeps other scenarios as they are)
     import whatif as WI
@@ -145,14 +149,26 @@ def jobs_for(mo, seeds, seconds, done):
 
 def job(j):
     import whatif as WI
+    import coach_board as CB
     moment_id, *rest = j
+    seg, start_s, scen, shift, seed, seconds, mv = rest
+    CB._B["delta"], CB._B["hold"] = {}, False
+    if HOLD and mv is not None:                     # the fixed player keeps his better spot for the whole run
+        mirrored = WI.moment(seg, start_s, "baseline", shift)[4]
+        d = -np.asarray(mv[1]) if mirrored else np.asarray(mv[1])
+        CB._B["delta"], CB._B["hold"] = {str(mv[0]): d.tolist()}, True
     r = WI._job(tuple(rest))
     r["moment"] = moment_id
     return r
 
 
-def init(dataset):
+def init(dataset, hold):
+    global HOLD
+    HOLD = hold
     _patch()
+    if hold:
+        import coach_board as CB
+        CB.HOLD_SCENS.update({"fix_blamed", "fix_random"})
     import whatif as WI
     WI._init(dataset)
 
@@ -166,9 +182,9 @@ def ci(x):
 
 
 def report(seeds_note=""):
-    runs = pd.read_csv(os.path.join(OUT, "grf_runs.csv"))
+    runs = pd.read_csv(os.path.join(OUT, f"grf_runs{TAG}.csv"))
     runs = runs[runs["error"].isna()] if "error" in runs else runs
-    mo = pd.read_csv(os.path.join(OUT, "grf_moments.csv")).set_index("moment")
+    mo = pd.read_csv(os.path.join(OUT, f"grf_moments{TAG}.csv")).set_index("moment")
     per = runs.groupby(["moment", "scenario"])[["threat_play", "shots", "xg", "on_ball"]].mean()
     rows = []
     for m in per.index.get_level_values(0).unique():
@@ -179,7 +195,7 @@ def report(seeds_note=""):
         rows.append({"moment": m, "blame_blamed": mo.loc[m, "blame_blamed"], "blame_random": mo.loc[m, "blame_random"],
                      **{f"d_{k}_{s[4:]}": p.loc[s, k] - b[k] for s in SCEN[1:] for k in ("threat_play", "shots", "xg")}})
     d = pd.DataFrame(rows)
-    d.round(4).to_csv(os.path.join(OUT, "grf_per_moment.csv"), index=False)
+    d.round(4).to_csv(os.path.join(OUT, f"grf_per_moment{TAG}.csv"), index=False)
     out = []
     for k, lab in (("threat_play", "threat from 1 s (pp)"), ("shots", "shots per run"), ("xg", "xG per run")):
         sc = 100 if k == "threat_play" else 1
@@ -191,7 +207,7 @@ def report(seeds_note=""):
     both = pd.concat([d[["blame_blamed", "d_threat_play_blamed"]].set_axis(["blame", "d"], axis=1),
                       d[["blame_random", "d_threat_play_random"]].set_axis(["blame", "d"], axis=1)])
     rho = both.corr("spearman").iat[0, 1]
-    sm.round(3).to_csv(os.path.join(OUT, "grf_summary.csv"), index=False)
+    sm.round(3).to_csv(os.path.join(OUT, f"grf_summary{TAG}.csv"), index=False)
     pd.set_option("display.width", 220)
     print(f"\n{len(d)} moments played out in GRF{seeds_note}; change vs 'no change' (same seeds), mean over moments +- 95%:\n")
     print(sm.round(3).to_string(index=False))
@@ -215,7 +231,7 @@ def report(seeds_note=""):
         ax[1].set_title(f"Does blame predict the GRF effect? rank corr. {rho:.2f}")
         ax[1].legend()
         fig.tight_layout()
-        fig.savefig(os.path.join(OUT, "grf_chart.png"), dpi=110)
+        fig.savefig(os.path.join(OUT, f"grf_chart{TAG}.png"), dpi=110)
         print("wrote outputs/blame/grf_summary.csv, grf_per_moment.csv, grf_chart.png")
     except ImportError:
         print("chart: run --report in .venv-analysis (matplotlib)")
@@ -231,11 +247,14 @@ def main():
     ap.add_argument("--dataset", default="pff")
     ap.add_argument("--only", help="play only this moment id (smoke test)")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--hold", action="store_true", help="the fixed player keeps his offset for the whole run (files *_hold)")
     a = ap.parse_args()
+    global TAG
+    TAG = "_hold" if a.hold else ""
     if a.report:
-        report()
+        report(" (hold)" if a.hold else "")
         return
-    mp = os.path.join(OUT, "grf_moments.csv")
+    mp = os.path.join(OUT, f"grf_moments{TAG}.csv")
     if os.path.exists(mp):
         mo = pd.read_csv(mp)
     else:
@@ -246,13 +265,13 @@ def main():
         mo = mo[mo.moment == a.only]
     print(f"{len(mo)} moments, {len(SCEN)} scenarios, {a.seeds} seeds", flush=True)
     _patch()
-    runs_p = os.path.join(OUT, "grf_runs.csv")
+    runs_p = os.path.join(OUT, f"grf_runs{TAG}.csv")
     done_df = pd.read_csv(runs_p) if os.path.exists(runs_p) else pd.DataFrame(columns=["moment", "scenario", "seed"])
     done = set(zip(done_df["moment"], done_df["scenario"], done_df["seed"].astype(int)))
     jobs = jobs_for(mo, a.seeds, a.seconds, done)
     print(f"{len(jobs)} runs to play ({len(done)} already done), {a.procs} at a time", flush=True)
     t0, rows = time.time(), []
-    with Pool(a.procs, initializer=init, initargs=(a.dataset,)) as pool:
+    with Pool(a.procs, initializer=init, initargs=(a.dataset, a.hold)) as pool:
         for k, r in enumerate(pool.imap_unordered(job, jobs, chunksize=2)):
             rows.append(r)
             if (k + 1) % 24 == 0 or k + 1 == len(jobs):
