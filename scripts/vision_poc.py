@@ -72,6 +72,34 @@ class RFDETR:
         return out
 
 
+class RFDETRSoccerNet:
+    """RF-DETR Large fine-tuned on SoccerNet-Tracking (julianzu9612/RFDETR-Soccernet, Apache 2.0), classes ball / player /
+    referee / goalkeeper. Loaded with torch weights_only=True; the only non-tensor object allowed is argparse.Namespace.
+    Note: SoccerNet-Tracking and our SoccerNet GSR test clips come from the same broadcast source, so it may have seen them."""
+    PATH = "data/external/hf/rfdetr_soccernet/weights/checkpoint_best_regular.pth"
+    NAMES = ["ball", "player", "referee", "goalkeeper"]
+
+    def __init__(self, threshold=0.35):
+        import argparse
+        import torch
+        from rfdetr import RFDETRLargeDeprecated
+        with torch.serialization.safe_globals([argparse.Namespace]):
+            sd = torch.load(self.PATH, map_location="cpu", weights_only=True)["model"]
+        self.m = RFDETRLargeDeprecated(num_classes=3, pretrain_weights=None)    # 3 + 1 internal = the 4 trained classes
+        r = self.m.model.model.load_state_dict(sd, strict=False)
+        assert not r.unexpected_keys and all(k == "_kp_active_mask" for k in r.missing_keys), r
+        self.m.model.model.eval()
+        self.th = threshold
+
+    def __call__(self, img):
+        d = self.m.predict(img, threshold=self.th)
+        out = []
+        for box, c, s in zip(d.xyxy, d.class_id, d.confidence):
+            n = self.NAMES[int(c)] if 0 <= int(c) < len(self.NAMES) else str(c)
+            out.append(dict(label="ball" if n == "ball" else "person", role=n, box=[float(v) for v in box], score=float(s)))
+        return out
+
+
 class Florence:
     def __init__(self):
         import torch
@@ -140,7 +168,7 @@ class Qwen:
         return out
 
 
-MODELS = {"rfdetr": RFDETR, "florence": Florence, "qwen": Qwen}
+MODELS = {"rfdetr": RFDETR, "rfdetr_sn": RFDETRSoccerNet, "florence": Florence, "qwen": Qwen}
 
 
 def team_accuracy(crops_rgb, teams):

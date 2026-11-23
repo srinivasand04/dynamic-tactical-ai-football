@@ -1,0 +1,4 @@
+model,recall,precision,ball_found,pitch_m,team_acc,seconds,frames
+florence,0.862,0.588,0.65,0.376,0.962,15.034,20
+rfdetr,0.871,0.894,0.6,0.382,0.978,0.564,20
+rfdetr_sn,0.918,0.929,0.8,0.339,0.952,3.391,20
