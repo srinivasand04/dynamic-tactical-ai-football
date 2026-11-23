@@ -231,8 +231,9 @@ def moment(seg, start_s, scen, shift, move=None):
     return pos, ball, vel, att, mirrored, i
 
 
-def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None):
-    """One GRF run of a scenario. Returns the scores and the tracks (22, T, 2), ball (T, 2) in GRF orientation."""
+def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None, defender="ours"):
+    """One GRF run of a scenario. defender='tizero': the defending team is played by TiZero (open GRF agent,
+    scripts/tizero_eval.py) instead of our team model; the attack is still our team model. Returns the scores and the tracks (22, T, 2), ball (T, 2) in GRF orientation."""
     import gfootball.env as football_env
     from grf_replay import register_scenario, to_metres
     from team_agent import Brain, SNAP_EVERY, THINK_EVERY, xg_proxy
@@ -256,6 +257,13 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
     brains = {"left": Brain(names["home"], names["away"], "left", cfg, net, dec, rng),
               "right": Brain(names["away"], names["home"], "right", cfg, net, dec, rng)}
     att_side = "left" if att == "home" else "right"
+    tz = None
+    if defender == "tizero":
+        from tizero_eval import TiZero
+        if "tz" not in _M:
+            _M["tz"] = TiZero()
+        tz = _M["tz"]
+        tz.reset()
     brains[att_side].early_pass = scen in ("early_pass", "switch_play")
     brains[att_side].early_kind = "switch" if scen == "switch_play" else "advanced"
     if scen == "long_ball":
@@ -302,6 +310,9 @@ def play(seg, start_s, scen, shift, seed, seconds, models, video=None, move=None
             break
         acts = []
         for side, br in brains.items():
+            if tz is not None and side != att_side:                       # TiZero defends (its own mirrored view on the right)
+                acts += tz.act(obs[:11] if side == "left" else obs[11:])
+                continue
             own, opp, bl = br.view(lt, rt, b)
             pown, popp, pbl = br.view(*prev)
             if t % SNAP_EVERY == 0:
@@ -350,9 +361,9 @@ def _init(dataset):
 
 
 def _job(j):
-    seg, start_s, scen, shift, seed, seconds, move = j
+    seg, start_s, scen, shift, seed, seconds, move, *rest = j
     try:
-        return play(seg, start_s, scen, shift, seed, seconds, _M["models"], move=move)[0]
+        return play(seg, start_s, scen, shift, seed, seconds, _M["models"], move=move, defender=rest[0] if rest else "ours")[0]
     except Exception as e:                                                # one broken run must not stop the rest
         return {"scenario": scen, "seed": seed, "error": repr(e)}
 
@@ -425,6 +436,8 @@ def main():
     ap.add_argument("--video-seed", type=int, default=0)
     ap.add_argument("--video-only", action="store_true")
     ap.add_argument("--no-video", action="store_true")
+    ap.add_argument("--defender", choices=["ours", "tizero"], default="ours",
+                    help="who plays the defending team: our team model (default) or TiZero; files get _tzdef")
     ap.add_argument("--report", action="store_true", help="only the chart of an earlier run (system Python, matplotlib)")
     ap.add_argument("--move", nargs=3, metavar=("PLAYER", "FORWARD", "LEFT"),
                     help="coach what-if: move one player (part of the name or side:shirt) FORWARD and LEFT metres; runs baseline + move")
@@ -453,6 +466,8 @@ def main():
         pos, ball, *_ = moment(a.segment, a.start_s, "move", a.shift, move)
         print(f"coach what-if: {move_text(move)} -> starts at x {pos[k, -1, 0]:.1f}, y {pos[k, -1, 1]:.1f} "
               f"({np.hypot(*(pos[k, -1] - ball[-1])):.1f} m from the ball)", flush=True)
+    if a.defender == "tizero":
+        key += "_tzdef"
     if a.report:
         chart(key)
         return
@@ -460,7 +475,7 @@ def main():
         a.scenarios = ["baseline"] + a.scenarios
 
     if not a.video_only:
-        jobs = [(a.segment, a.start_s, s, a.shift, seed, a.seconds, move) for s in a.scenarios for seed in range(a.seeds)]
+        jobs = [(a.segment, a.start_s, s, a.shift, seed, a.seconds, move, a.defender) for s in a.scenarios for seed in range(a.seeds)]
         print(f"{len(jobs)} runs ({len(a.scenarios)} scenarios x {a.seeds} seeds, {a.seconds:g} s each), {a.procs} at a time", flush=True)
         t0, rows = time.time(), []
         with Pool(a.procs, initializer=_init, initargs=(a.dataset,)) as pool:

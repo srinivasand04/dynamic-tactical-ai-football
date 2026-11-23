@@ -1,0 +1,4 @@
+scenario,what_changed,runs,goal_rate,shots,xg,max_xt,max_threat,furthest_m,lost_ball_rate,d_goal,d_goal_ci95,d_shots,d_shots_ci95,d_xg,d_xg_ci95,d_max_xt,d_max_xt_ci95,d_furthest_m,d_furthest_m_ci95
+baseline,no change,20,0.0,0.0,0.0,0.022,,87.67,1.0,,,,,,,,,,
+line_deeper,back four 3 m deeper,20,0.15,0.0,0.0,0.022,,91.55,1.0,0.15,0.161,0.0,0.0,0.0,0.0,0.0,0.0,3.88,4.32
+line_higher,back four 3 m higher,20,0.1,0.0,0.0,0.022,,91.685,1.0,0.1,0.135,0.0,0.0,0.0,0.0,-0.0,0.0,4.015,4.286

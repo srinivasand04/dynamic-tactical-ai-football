@@ -1,0 +1,8 @@
+scenario,what_changed,runs,goal_rate,shots,xg,max_xt,max_threat,furthest_m,lost_ball_rate,d_goal,d_goal_ci95,d_shots,d_shots_ci95,d_xg,d_xg_ci95,d_max_xt,d_max_xt_ci95,d_max_threat,d_max_threat_ci95,d_furthest_m,d_furthest_m_ci95
+att_as_Argentina,attack plays as Argentina,20,0.0,0.0,0.0,0.022,0.245,82.9,1.0,0.0,0.0,-0.25,0.399,-0.001,0.001,0.0,0.0,0.0,0.0,-0.705,1.382
+att_as_Croatia,attack plays as Croatia,20,0.0,0.35,0.001,0.022,0.245,84.04,1.0,0.0,0.0,0.1,0.53,0.0,0.002,0.0,0.0,-0.0,0.0,0.435,0.539
+att_as_France,attack plays as France,20,0.0,0.0,0.0,0.022,0.245,82.9,1.0,0.0,0.0,-0.25,0.399,-0.001,0.001,0.0,0.0,-0.0,0.0,-0.705,1.382
+baseline,no change,20,0.0,0.25,0.001,0.022,0.245,83.605,1.0,,,,,,,,,,,,
+early_pass,carrier passes forward at once,20,0.0,0.15,0.001,0.022,0.245,83.605,1.0,0.0,0.0,-0.1,0.135,-0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+line_deeper,back four 3 m deeper,20,0.0,2.15,0.023,0.038,0.265,86.785,0.95,0.0,0.0,1.9,1.054,0.022,0.017,0.016,0.026,0.02,0.029,3.18,3.506
+line_higher,back four 3 m higher,20,0.0,1.5,0.019,0.022,0.289,89.0,1.0,0.0,0.0,1.25,0.723,0.018,0.01,0.0,0.0,0.043,0.001,5.395,4.088
