@@ -1,0 +1,57 @@
+{
+ "runs": 10,
+ "team_on_board": "away",
+ "attacking": false,
+ "rows": [
+  {
+   "what": "Threat (from 1 s)",
+   "no_change": 0.32706,
+   "board": 0.43689999999999996,
+   "diff": 0.10984000000000002,
+   "ci95": 0.08858752002438669,
+   "verdict": "worse"
+  },
+  {
+   "what": "xG",
+   "no_change": 0.15930000000000002,
+   "board": 0.2703,
+   "diff": 0.11099999999999999,
+   "ci95": 0.2192158726613259,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "Shots per run",
+   "no_change": 4.7,
+   "board": 4.6,
+   "diff": -0.1,
+   "ci95": 2.345639547946122,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "Time on the ball",
+   "no_change": 0.34759999999999996,
+   "board": 0.4162,
+   "diff": 0.06860000000000001,
+   "ci95": 0.08707695686000975,
+   "verdict": "no clear effect"
+  }
+ ],
+ "id": "slide7_def5",
+ "what": "defence board (hold): Elvedi 5 m",
+ "board": {
+  "match": "J03WOH",
+  "t": 3610,
+  "board": "defence",
+  "mode": "hold",
+  "team": "away",
+  "moves": [
+   {
+    "side": "away",
+    "shirt": 33,
+    "x": 82.0,
+    "y": 37.4
+   }
+  ],
+  "id": "slide7_def5"
+ }
+}

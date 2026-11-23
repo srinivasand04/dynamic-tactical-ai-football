@@ -23,7 +23,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="+", default=None)
     ap.add_argument("--seed", type=int, default=0)
-    ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="graph layer to use (everything except ours does not save embeddings; pass_* need build_pass_edges.py)")
+    ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle", "gatv2", "gat_typed", "gat_dist", "gatv2_td"], default="ours", help="graph layer to use (everything except ours does not save embeddings; pass_* need build_pass_edges.py)")
     ap.add_argument("--extra", nargs=argparse.REMAINDER, default=[], help="anything else to pass to train_gnn.py")
     a = ap.parse_args()
     folds = a.only or settings.available(settings.REAL)

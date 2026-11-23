@@ -32,7 +32,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "outputs", "tournament")
+OUT = os.environ.get("TOURNAMENT_OUT") or os.path.join(ROOT, "outputs", "tournament")   # v2 (hold fix + GRF_PACE=1): outputs/tournament_v2
 ATTACK = ["none", "wide_attack", "overload_ball_side", "extra_runner", "quick_play", "long_ball"]
 DEFENCE = ["none", "double_team", "team_press", "low_block", "compact", "keeper_off_line"]
 BRAIN = ("quick_play", "long_ball")                                   # decision plans (the rest are shape plans)
@@ -221,7 +221,7 @@ def main():
     if a.report:
         M, E, V, VE = report(a.metric)
         chart(M, V, VE, a.metric)
-        print(f"wrote outputs/tournament/payoff_{a.metric}.csv, best_responses_{a.metric}.csv, robust_{a.metric}.csv, chart_{a.metric}.png")
+        print(f"wrote {os.path.relpath(OUT, ROOT)}/payoff_{a.metric}.csv, best_responses_{a.metric}.csv, robust_{a.metric}.csv, chart_{a.metric}.png")
     else:
         run(a)
 

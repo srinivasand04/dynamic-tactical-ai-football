@@ -28,14 +28,24 @@ MIRROR = {a: DIR_ACTION[(DIR_ACTION.index(a) + 4) % 8] for a in DIR_ACTION}
 SPRINT, RELEASE_DIR, RELEASE_SPRINT = 13, 14, 15
 STOP_M, SPRINT_M = 1.0, 6.0                 # stop within 1 m of the target, sprint when more than 6 m away
 LAST = {"scored": False}                    # set by window(): did a goal happen in the last window
+# Realistic pace (opt-in, environment GRF_PACE=1, inherited by worker processes). GRF has no walk: a direction key always
+# runs. With pace on, a player whose target (where to be ~PACE_H s from now) needs less than running speed presses the
+# direction only on part of the steps (duty = needed speed / GRF running speed), so he walks or jogs like a real player;
+# he sprints only when the needed speed is above PACE_SPRINT. Off by default: earlier results stay as they were.
+import os as _os
+PACE = _os.environ.get("GRF_PACE", "0") == "1"
+PACE_H, PACE_RUN, PACE_SPRINT = 2.0, float(_os.environ.get("GRF_PACE_RUN", "3.0")), 6.0
 
 
 class Walker:
     """Turns 'go to this point' into GRF's sticky actions (a direction stays on until it is released)."""
     def __init__(self):
         self.moving, self.sprinting = False, False
+        self.acc = 0.0                                          # pace: share of a step owed to running
 
     def act(self, pos, target):
+        if PACE:
+            return self.act_paced(pos, target)
         d = target - pos
         r = float(np.hypot(*d))
         if r < STOP_M:
@@ -53,6 +63,37 @@ class Walker:
         if self.sprinting and not want_sprint:
             self.sprinting = False
             return RELEASE_SPRINT
+        self.moving = True
+        return DIR_ACTION[int(round(np.degrees(np.arctan2(d[1], d[0])) / 45.0)) % 8]
+
+    def act_paced(self, pos, target):
+        d = target - pos
+        r = float(np.hypot(*d))
+        v = r / PACE_H                                          # the speed this target needs
+        if r < 0.5 or v < 0.15:                             # close enough: stand (real players drift, so the bar is low)
+            self.acc = 0.0
+            if self.sprinting:
+                self.sprinting = False
+                return RELEASE_SPRINT
+            if self.moving:
+                self.moving = False
+                return RELEASE_DIR
+            return 0
+        want_sprint = v > PACE_SPRINT
+        if want_sprint and not self.sprinting:
+            self.sprinting = True
+            return SPRINT
+        if self.sprinting and not want_sprint:
+            self.sprinting = False
+            return RELEASE_SPRINT
+        if not self.sprinting:
+            self.acc += min(1.0, v / PACE_RUN)
+            if self.acc < 1.0:                                  # walk / jog: skip this step
+                if self.moving:
+                    self.moving = False
+                    return RELEASE_DIR
+                return 0
+            self.acc -= 1.0
         self.moving = True
         return DIR_ACTION[int(round(np.degrees(np.arctan2(d[1], d[0])) / 45.0)) % 8]
 

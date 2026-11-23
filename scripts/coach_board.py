@@ -100,15 +100,38 @@ def _patch_hold():
     think = team_agent.Brain.think
 
     def think_hold(self):
-        think(self)
-        if self.targets is None or not _B["hold"] or not getattr(self, "board_on", False):
+        # The model's target is (where the player is now) + (the move it predicts). Adding the offset to that target at
+        # every think made it pile up: a held player kept running further and further (about 5 m/s, straight on).
+        # Now the model plans for his 'shadow', the player put back where he would be without the instruction, and the
+        # player keeps the coach's offset from the shadow's target: target = shadow + move + offset = now + move.
+        if not _B["hold"] or not getattr(self, "board_on", False):
+            think(self)
             return
+        shifts = {}
         for k, d in _B["delta"].items():
             k = int(k)
             own = k if self.side == "left" else k - 11
             if 0 <= own < 11:
-                dd = np.asarray(d) if self.side == "left" else -np.asarray(d)        # the right brain sees the pitch turned round
-                self.targets[own] = np.clip(self.targets[own] + dd, [0.5, 0.5], [L - 0.5, W - 0.5])
+                shifts[own] = np.asarray(d, float) if self.side == "left" else -np.asarray(d, float)   # the right brain sees the pitch turned round
+        if not shifts:
+            think(self)
+            return
+        saved = self.snaps
+        snaps = []
+        for xy, vel, role in saved:
+            xy = xy.copy()
+            for own, dd in shifts.items():
+                xy[own] = xy[own] - dd
+            snaps.append((xy, vel, role))
+        self.snaps = snaps
+        try:
+            think(self)
+        finally:
+            self.snaps = saved
+        if self.targets is None:
+            return
+        for own, dd in shifts.items():
+            self.targets[own] = np.clip(self.targets[own] + dd, [0.5, 0.5], [L - 0.5, W - 0.5])
     team_agent.Brain.think = think_hold
     team_agent.Brain._board_patched = True
 
@@ -260,7 +283,13 @@ def main():
     ap.add_argument("--seconds", type=float, default=12.0)
     ap.add_argument("--procs", type=int, default=4)
     ap.add_argument("--dataset", default="pff")
+    ap.add_argument("--pace", action="store_true", help="realistic pace: players walk/jog when their target needs it and sprint "
+                    "only above 6 m/s (grf_follow.py, GRF_PACE); both 'no change' and the board use it")
     a = ap.parse_args()
+    if a.pace:
+        os.environ["GRF_PACE"] = "1"                          # the worker processes read it when they import grf_follow
+        import grf_follow
+        grf_follow.PACE = True
     if a.units:
         m, t, team = a.units[0], float(a.units[1]), a.units[2]
         seg = ensure_segment(m, t)
@@ -295,7 +324,7 @@ def main():
     df = pd.DataFrame(rows)
     df.to_csv(os.path.join(OUT, f"{bid}_runs.csv"), index=False)
     res = card(df, att, team)
-    res.update({"id": bid, "what": what, "board": b})
+    res.update({"id": bid, "what": what, "board": b, "pace": bool(a.pace)})
     print(pd.DataFrame(res["rows"]).round(3).to_string(index=False), flush=True)
 
     # ghosts: one run of each with seed 0, in the viewer's frame
@@ -323,6 +352,9 @@ def main():
     p = os.path.join(ROOT, "viewer", "data", vf)
     d = json.load(open(p, encoding="utf-8"))
     d["card"] = res
+    for lay in d.get("layers", []):                       # the viewer marks these players (arrow + ring) in the what-if run
+        if lay.get("name") == "Your board":
+            lay["moved"] = [{"side": m["side"], "shirt": int(m["shirt"])} for m in b["moves"]]
     json.dump(d, open(p, "w", encoding="utf-8"), separators=(",", ":"))
     json.dump(res, open(os.path.join(OUT, f"{bid}_result.json"), "w", encoding="utf-8"), indent=1)
     print(f"\nOpen: http://localhost:8765/?file={vf}")

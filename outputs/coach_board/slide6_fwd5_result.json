@@ -1,0 +1,57 @@
+{
+ "runs": 10,
+ "team_on_board": "home",
+ "attacking": true,
+ "rows": [
+  {
+   "what": "Threat (from 1 s)",
+   "no_change": 0.32706,
+   "board": 0.31278000000000006,
+   "diff": -0.014279999999999987,
+   "ci95": 0.19477763191569106,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "xG",
+   "no_change": 0.15930000000000002,
+   "board": 0.1995,
+   "diff": 0.0402,
+   "ci95": 0.13984318808977114,
+   "verdict": "no clear effect"
+  },
+  {
+   "what": "Shots per run",
+   "no_change": 4.7,
+   "board": 1.9,
+   "diff": -2.8,
+   "ci95": 2.4235056334895435,
+   "verdict": "worse"
+  },
+  {
+   "what": "Time on the ball",
+   "no_change": 0.34759999999999996,
+   "board": 0.33490000000000003,
+   "diff": -0.012700000000000006,
+   "ci95": 0.24433671797928544,
+   "verdict": "no clear effect"
+  }
+ ],
+ "id": "slide6_fwd5",
+ "what": "forward board (hold): Kownacki 5 m",
+ "board": {
+  "match": "J03WOH",
+  "t": 3610,
+  "board": "forward",
+  "mode": "hold",
+  "team": "home",
+  "moves": [
+   {
+    "side": "home",
+    "shirt": 9,
+    "x": 88.0,
+    "y": 40.0
+   }
+  ],
+  "id": "slide6_fwd5"
+ }
+}
