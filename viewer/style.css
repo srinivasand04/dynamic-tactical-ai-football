@@ -65,3 +65,23 @@ button[disabled] { opacity: 0.45; cursor: default; }
 #cbCard th:first-child, #cbCard td:first-child { text-align: left; }
 #cbCard .better { color: #6fdc8c; } #cbCard .worse { color: #ff7a6b; }
 #cbCard .what { color: var(--muted); font-size: 12px; margin-top: 6px; }
+
+/* compare views: split screen real | what-if, the coach's moved player marked */
+#viewLayer { max-width: 22vw; }
+#viewLayer.hidden, #viewMode.hidden { display: none; }
+#splitLine { position: fixed; top: 0; bottom: 0; left: 50%; width: 3px; margin-left: -1px; background: var(--accent); pointer-events: none; }
+.splitcap { position: fixed; top: 66px; transform: translateX(-50%); background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+            border-radius: 6px; padding: 5px 12px; font-weight: 700; font-size: 14px; pointer-events: none; white-space: nowrap; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; }
+#capL { left: 25%; } #capR { left: 75%; }
+#capR .mv { color: #ffd84d; }
+#splitLine.hidden, .splitcap.hidden { display: none; }
+
+/* pressing meter (press.js) and player cards (FootballBERT) */
+.pill.threat.press-hot { background: #7a3fb8; }
+#pressWrap { flex: 1 1 100%; display: flex; align-items: center; gap: 8px; }
+#pressLine { flex: 1; height: 34px; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--line); border-radius: 6px; }
+#pcard .pname { font-weight: 600; margin-top: 4px; }
+#pcard .prole { color: var(--accent); font-size: 13px; margin: 2px 0 6px; }
+#pcard table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 4px; }
+#pcard td { padding: 2px 4px; border-bottom: 1px solid var(--line); }
+#pcard td:last-child { text-align: right; font-variant-numeric: tabular-nums; }

@@ -50,5 +50,33 @@
  {
   "file": "board_20261118_203941.json",
   "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
+ },
+ {
+  "file": "board_slide6_fwd5.json",
+  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
+ },
+ {
+  "file": "board_slide7_def5.json",
+  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
+ },
+ {
+  "file": "board_slide6_pace.json",
+  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
+ },
+ {
+  "file": "board_slide7_pace.json",
+  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
+ },
+ {
+  "file": "video_SNGS-116.json",
+  "title": "Video to board  |  SoccerNet clip SNGS-116 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 10)"
+ },
+ {
+  "file": "video_SNGS-117.json",
+  "title": "Video to board  |  SoccerNet clip SNGS-117 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 3)"
+ },
+ {
+  "file": "video_SNGS-118.json",
+  "title": "Video to board  |  SoccerNet clip SNGS-118 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 12)"
  }
 ]

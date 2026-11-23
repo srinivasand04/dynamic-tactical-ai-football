@@ -18,6 +18,13 @@
 <header id="top">
   <select id="file" title="Match or stretch (viewer/data/index.json)"></select>
   <button id="togglePanel" title="Show / hide the side panel (H)">Panel</button>
+  <select id="viewMode" title="How to compare the real match with a what-if run (V cycles)">
+    <option value="split">Split: real | what-if</option>
+    <option value="sim">What-if only</option>
+    <option value="real">Real only</option>
+    <option value="overlay">Overlay (ghosts)</option>
+  </select>
+  <select id="viewLayer" title="Which what-if run to show as solid players"></select>
   <div id="board">
     <span id="home" class="team home">Home</span>
     <span id="score">0 - 0</span>
@@ -25,6 +32,7 @@
     <span id="clock">00:00</span>
     <span id="live" class="pill">in play</span>
     <span id="threat" class="pill threat" title="Chance the team with the ball shoots within 10 s (threat model, value_models.py)">threat –</span>
+    <span id="press" class="pill threat" title="Pressing intensity of the team without the ball (unravelsports formula, press.js): mean chance its players reach an opponent within 1.5 s">press –</span>
   </div>
 </header>
 
@@ -47,11 +55,15 @@
     <div id="cbStatus" class="hint"></div>
     <div id="cbCard"></div>
   </div>
+  <h2>Player card <span class="hint">(FootballBERT)</span></h2>
+  <div id="pcard"><p class="hint">Click a player on the pitch.</p></div>
   <h2>Keys</h2>
   <p class="hint">Space play/pause &middot; &larr; &rarr; 1 s &middot; Shift+&larr; &rarr; 10 s &middot; , . one frame &middot; 1-5 cameras &middot; H panel &middot; drag/scroll in Free camera</p>
 </aside>
 
 <footer id="bar">
+  <div id="pressWrap" title="Pressing of the team without the ball (unravelsports formula). Real match: red = home pressing, blue = away pressing. Thin lines in layer colours = shown what-if runs. Grey line = 50%">
+    <span class="hint">press</span><canvas id="pressLine"></canvas></div>
   <button id="play" title="Play / pause (Space)">&#9654;</button>
   <input id="seek" type="range" min="0" max="1" step="0.1" value="0">
   <span id="tlabel">0:00 / 0:00</span>
@@ -68,6 +80,9 @@
   </div>
 </footer>
 
+<div id="splitLine" class="hidden"></div>
+<div id="capL" class="splitcap hidden">REAL MATCH</div>
+<div id="capR" class="splitcap hidden">WHAT-IF</div>
 <div id="msg">Loading&hellip;</div>
 <script type="module" src="app.js"></script>
 </body>

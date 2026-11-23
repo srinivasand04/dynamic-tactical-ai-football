@@ -7,6 +7,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { loadThreat, threatOf } from './threat.js';
+import { pressOf, pressSeries } from './press.js';
 
 const L = 105, W = 68, DM = 10;
 const HOME = 0xe0473c, AWAY = 0x3a7bd5, HOME_GK = 0xff9f1c, AWAY_GK = 0x8fd14f;
@@ -15,7 +16,8 @@ const LAYER_COLORS = [0xf2c14e, 0xc77dff, 0x5ce1e6, 0xff7aa2, 0x9be564, 0xff9f43
 const $ = (id) => document.getElementById(id);
 const pct = (p) => (100 * p).toFixed(p < 0.1 ? 1 : 0);
 const S = { data: null, t: 0, t0: 0, t1: 1, playing: false, speed: 1, cam: 'broadcast', roster: null, rosterIdx: -1,
-            showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {},
+            showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {}, pressState: {}, press: null, cards: null, animDt: 0,
+            view: { mode: 'overlay', layer: -1, inside: false },
             cb: { on: false, t: 0, team: 'home', board: 'defence', allowed: [], moves: {}, start: {}, drag: -1, threat0: null } };
 
 // ---------- scene ----------
@@ -117,6 +119,13 @@ const G = {
   upper: new THREE.CapsuleGeometry(0.055, 0.24, 4, 8), fore: new THREE.CapsuleGeometry(0.045, 0.22, 4, 8),
 };
 const SKIN = 0xd9a77f, HAIR = 0x2b1d14, SHOE = 0x111111;
+// the marker of a player the coach moved: a yellow arrow above his head and a ring at his feet
+const MARK = { cone: new THREE.ConeGeometry(0.55, 1.2, 18), mat: new THREE.MeshBasicMaterial({ color: 0xffd84d, depthTest: false, transparent: true }),
+               ring: new THREE.RingGeometry(1.1, 1.5, 32), ringMat: new THREE.MeshBasicMaterial({ color: 0xffd84d, side: THREE.DoubleSide, transparent: true, opacity: 0.95 }) };
+function setMark(p, on) {
+  p.userData.mark.visible = on; p.userData.ring.visible = on;
+  if (on) p.userData.mark.position.y = 4.4 + 0.35 * Math.sin(performance.now() * 0.006);
+}
 function makePlayer(color, ghost) {
   const g = new THREE.Group();
   const M = (c) => ghost ? new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: 0.42, depthWrite: false }) : new THREE.MeshLambertMaterial({ color: c });
@@ -142,7 +151,10 @@ function makePlayer(color, ghost) {
   if (!ghost) { const sh = new THREE.Mesh(shadowGeo, shadowMat); sh.rotation.x = -Math.PI / 2; sh.position.y = 0.02; g.add(sh); }
   g.userData.num = makeSprite(false); g.userData.num.position.y = 2.45; g.add(g.userData.num);
   g.userData.name = makeSprite(true); g.userData.name.position.y = 3.2; g.add(g.userData.name);
-  body.scale.setScalar(1.3);                                    // a little larger than life, so players read well from the broadcast camera
+  const mark = new THREE.Mesh(MARK.cone, MARK.mat); mark.rotation.x = Math.PI; mark.position.y = 4.4; mark.visible = false; mark.renderOrder = 11; g.add(mark);
+  const ring = new THREE.Mesh(MARK.ring, MARK.ringMat); ring.rotation.x = -Math.PI / 2; ring.position.y = 0.06; ring.visible = false; g.add(ring);
+  g.userData.mark = mark; g.userData.ring = ring;
+  body.scale.setScalar(1.3);                                   // a little larger than life, so players read well from the broadcast camera
   scene.add(g);
   return g;
 }
@@ -165,6 +177,13 @@ function animate(p, vx, vy, dt) {
   u.body.position.y = Math.abs(Math.cos(u.phase)) * amp * 0.06;
 }
 const players = Array.from({ length: 22 }, (_, k) => makePlayer(k < 11 ? HOME : AWAY, false));
+// the chosen what-if run drawn as solid players (views 'What-if only' and 'Split'), so nobody appears twice
+const simPlayers = Array.from({ length: 22 }, (_, k) => {
+  const p = makePlayer(k === 0 ? HOME_GK : k === 11 ? AWAY_GK : k < 11 ? HOME : AWAY, false);
+  p.visible = false; p.userData.valid = false; p.userData.lbl = null; return p;
+});
+const simBall = new THREE.Mesh(new THREE.SphereGeometry(0.35, 20, 14), new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0x333333 }));
+simBall.visible = false; scene.add(simBall);
 const ball = new THREE.Mesh(new THREE.SphereGeometry(0.35, 20, 14), new THREE.MeshLambertMaterial({ color: 0xffffff, emissive: 0x333333 }));
 scene.add(ball);
 const ballShadow = new THREE.Mesh(shadowGeo, shadowMat); ballShadow.rotation.x = -Math.PI / 2; ballShadow.scale.setScalar(0.6); scene.add(ballShadow);
@@ -235,9 +254,77 @@ async function loadFile(name) {
     scene.add(links);
     return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null, threatState: {} };     // many layers: the first two shown
   });
+  S.pressState = {};
+  const pstep = Math.max(1, Math.round((d.fps || 10) / 2));          // pressing timeline at about 2 values per second
+  S.press = pressSeries(d, pstep);
+  S.layers.forEach((l) => { l.press = pressSeries(l.d, pstep); });
   buildLayerPanel();
+  setupView(d);
   boardOnLoad(d);
+  cardFor(-1);
   msg(null);
+}
+
+// ---------- compare views ----------
+// Who the coach moved in a layer: the layer's own 'moved' list, else the coach board's moves (layer 'Your board'), else
+// the names in a 'Coach: <name> ...' layer title. Returned as [{side, shirt}].
+function movedFor(ld, d) {
+  if (Array.isArray(ld.moved)) return ld.moved;
+  const bm = d.card && d.card.board && d.card.board.moves;
+  if (bm && ld.name !== 'No change' && /board/i.test(ld.name)) return bm.map((m) => ({ side: m.side, shirt: +m.shirt }));
+  const out = [];
+  if (/^coach:/i.test(ld.name || '')) {
+    for (const side of ['home', 'away']) {
+      for (const [shirt, name] of Object.entries((d.names && d.names[side]) || {})) {
+        const sur = String(name).trim().split(/\s+/).pop();
+        if (sur.length > 2 && ld.name.includes(sur)) out.push({ side, shirt: +shirt });
+      }
+    }
+  }
+  return out;
+}
+function setupView(d) {
+  S.layers.forEach((l) => {
+    // GRF puts everybody back in one step at a restart (ball out, goal): the run's open play ends there, so the views
+    // stop at the frame before instead of showing players jumping tens of metres
+    const ld = l.d; l.tStop = ld.t.length ? ld.t[ld.t.length - 1] : 0;
+    for (let i = 0; i + 1 < ld.t.length; i++) {
+      const dt = ld.t[i + 1] - ld.t[i]; let jumps = 0;
+      if (dt <= 0 || dt > 1) continue;
+      for (let k = 0; k < 22; k++) {
+        const a = i * 22 + k, b = a + 22;
+        if (ld.px[a] >= 0 && ld.px[b] >= 0 && Math.hypot(ld.px[b] - ld.px[a], ld.py[b] - ld.py[a]) / DM / dt > 15) jumps++;
+      }
+      if (jumps >= 6) { l.tStop = ld.t[i]; break; }
+    }
+    l.moved = movedFor(l.d, d);
+    l.movedSlots = new Set();
+    l.moved.forEach((m) => {
+      const s0 = m.side === 'home' ? 0 : 11;
+      for (let k = s0; k < s0 + 11; k++) if (l.d.jerseys && +l.d.jerseys[k] === m.shirt) l.movedSlots.add(k);
+    });
+  });
+  const vl = $('viewLayer'), vm = $('viewMode');
+  vl.innerHTML = S.layers.map((l, i) => `<option value="${i}">${l.d.name}</option>`).join('');
+  vl.classList.toggle('hidden', S.layers.length < 2);
+  vm.classList.toggle('hidden', !S.layers.length);
+  let pick = S.layers.findIndex((l) => l.moved.length);
+  if (pick < 0) pick = S.layers.length - 1;
+  S.view.layer = pick;
+  vl.value = String(Math.max(pick, 0));
+  S.view.mode = !S.layers.length ? 'real' : (pick >= 0 && S.layers[pick].moved.length) || d.card ? 'split' : 'overlay';
+  vm.value = S.view.mode === 'real' && !S.layers.length ? 'real' : S.view.mode;
+  simPlayers.forEach((p) => { p.userData.lbl = null; });
+}
+// the real players the chosen what-if moved (slots in the real roster), so they can be marked too
+function realMovedSlots() {
+  const vl = S.layers[S.view.layer], out = new Set();
+  if (!vl || !S.roster) return out;
+  vl.moved.forEach((m) => {
+    const s0 = m.side === 'home' ? 0 : 11;
+    for (let k = s0; k < s0 + 11; k++) if (+S.roster[k] === m.shirt) out.add(k);
+  });
+  return out;
 }
 
 function buildLayerPanel() {
@@ -294,20 +381,23 @@ function update() {
       });
     });
   }
-  const real = [];
+  const real = [], realVel = [];
+  const rm = realMovedSlots();
   for (let k = 0; k < 22; k++) {
     const a = i * 22 + k, b = j * 22 + k;
     const x = d.px[a], y = d.py[a];
     const p = players[k];
-    if (x < 0) { p.visible = false; real.push(null); continue; }
-    p.visible = true;
+    if (x < 0) { p.visible = false; p.userData.valid = false; real.push(null); realVel.push(null); continue; }
+    p.visible = true; p.userData.valid = true;
+    setMark(p, rm.has(k) && !S.cb.on);
     const xx = lerp(x, d.px[b], f) / DM, yy = lerp(y, d.py[b], f) / DM;
     p.position.set(X(xx), 0, Z(yy));
     const dtd = d.t[j] - d.t[i];
     animate(p, dtd > 0 && dtd < 1 && d.px[b] >= 0 ? (d.px[b] - x) / DM / dtd : 0, dtd > 0 && dtd < 1 && d.px[b] >= 0 ? (d.py[b] - y) / DM / dtd : 0, S.animDt);
     real.push([xx, yy]);
+    realVel.push(dtd > 0 && dtd < 1 && d.px[b] >= 0 ? [(d.px[b] - x) / DM / dtd, (d.py[b] - y) / DM / dtd] : [0, 0]);
     p.userData.num.visible = S.showNumbers;
-    p.userData.name.visible = S.showNames;
+    p.userData.name.visible = S.showNames || (rm.has(k) && !S.cb.on);
   }
   if (S.cb.on) boardOverride(real);
   const bx = lerp(d.bx[i], d.bx[j], f) / DM, by = lerp(d.by[i], d.by[j], f) / DM, bz = Math.max(0, lerp(d.bz[i], d.bz[j], f) / DM);
@@ -334,13 +424,18 @@ function update() {
   const th = threatOf(real, [bx, by], S.threatState);
   $('threat').textContent = th ? `threat ${pct(th.p)}% (${d[th.team] || th.team})` : 'threat –';
   $('threat').className = 'pill threat' + (th && th.p >= 0.2 ? ' hot' : '');
+  const bdt = d.t[j] - d.t[i];
+  const pr = pressOf(real, realVel, [bx, by], bdt > 0 && bdt < 1 ? [(d.bx[j] - d.bx[i]) / DM / bdt, (d.by[j] - d.by[i]) / DM / bdt] : [0, 0], S.pressState);
+  $('press').textContent = pr ? `press ${Math.round(100 * pr.p)}% (${d[pr.team] || pr.team})` : 'press –';
+  $('press').className = 'pill threat' + (pr && pr.p >= 0.5 ? ' press-hot' : '');
+  drawPressLine();
   $('tlabel').textContent = `${fmt(S.t - S.t0)} / ${fmt(S.t1 - S.t0)}`;
   if (document.activeElement !== $('seek')) $('seek').value = S.t;
   // ghost layers
   S.layers.forEach((l, li) => {
     const ld = l.d;
-    const inside = ld.t.length && S.t >= ld.t[0] - 0.05 && S.t <= ld.t[ld.t.length - 1] + 0.05;
-    const on = l.show && inside && !S.cb.on;                 // the board shows the real players only
+    const inside = ld.t.length && S.t >= ld.t[0] - 0.05 && S.t <= (l.tStop ?? ld.t[ld.t.length - 1]) + 0.05;
+    const on = l.show && inside && !S.cb.on && S.view.mode === 'overlay';   // the board shows the real players only; other views draw no ghosts
     l.meshes.forEach((m) => { m.visible = false; });
     l.ball.visible = false; l.links.visible = false;
     if (!inside) { $('err' + li).textContent = 'not in this part of the match'; return; }
@@ -359,7 +454,8 @@ function update() {
       m.visible = on; m.position.set(X(xx), 0, Z(yy));
       const gdt = ld.t[gj] - ld.t[gi];
       if (on) animate(m, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
-      m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = on && S.showNames;
+      setMark(m, on && l.movedSlots.has(k));
+      m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = on && (S.showNames || l.movedSlots.has(k));
       const s = l.pair ? l.pair[k] : k;
       if (s >= 0 && real[s]) {
         sum += Math.hypot(xx - real[s][0], yy - real[s][1]); cnt++;
@@ -374,13 +470,150 @@ function update() {
     l.links.geometry.setDrawRange(0, seg);
     l.links.visible = on && l.showLinks;
     const gt = threatOf(gpts, [gbx, gby], l.threatState);
+    const gp = seriesAt(l.press, S.t);
     $('err' + li).textContent = `now: players ${cnt ? (sum / cnt).toFixed(1) : '–'} m, ball ${Math.hypot(gbx - bx, gby - by).toFixed(1)} m from the real ones`
-      + (gt ? ` · threat ${pct(gt.p)}% (${d[gt.team] || gt.team})` : '');
+      + (gt ? ` · threat ${pct(gt.p)}% (${d[gt.team] || gt.team})` : '')
+      + (gp ? ` · press ${Math.round(100 * gp.p)}% (${d[gp.team] || gp.team})` : '');
   });
+  updateSim(d);
+}
+
+// ---------- pressing meter (press.js): timeline of the real match and of the shown what-if runs ----------
+function seriesAt(s, t) {
+  if (!s || !s.length || t < s[0].t - 1 || t > s[s.length - 1].t + 1) return null;
+  let lo = 0, hi = s.length - 1;
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (s[m].t <= t) lo = m; else hi = m; }
+  return s[lo];
+}
+const hex = (c) => '#' + c.toString(16).padStart(6, '0');
+function drawPressLine() {
+  const cv = $('pressLine'), d = S.data;
+  if (!cv || !d || !S.press) return;
+  const w = cv.clientWidth, h = cv.clientHeight, dpr = Math.min(window.devicePixelRatio, 2);
+  if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+  const g = cv.getContext('2d');
+  g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, h);
+  const span = Math.max(S.t1 - S.t0, 1e-6), X_ = (t) => ((t - S.t0) / span) * w, Y_ = (p) => h - 2 - p * (h - 4);
+  g.strokeStyle = 'rgba(255,255,255,0.12)'; g.beginPath(); g.moveTo(0, Y_(0.5)); g.lineTo(w, Y_(0.5)); g.stroke();
+  // mean per 2-pixel column, so a full match stays readable; byTeam colours each piece by the pressing team (home red, away blue)
+  const line = (s, col, width, byTeam) => {
+    if (!s || !s.length) return;
+    const nb = Math.max(1, Math.floor(w / 2)), sum = new Float32Array(nb), cnt = new Uint16Array(nb), home = new Uint16Array(nb);
+    for (const q of s) {
+      const b = Math.min(nb - 1, Math.max(0, Math.floor(((q.t - S.t0) / span) * nb)));
+      sum[b] += q.p; cnt[b]++; if (q.team === 'home') home[b]++;
+    }
+    g.lineWidth = width;
+    let prev = null, prevB = -1;
+    const gapBins = Math.max(2, Math.ceil((3 / span) * nb));        // break the line only at holes longer than 3 s
+    for (let b = 0; b < nb; b++) {
+      if (!cnt[b]) continue;
+      const pt = [(b + 0.5) * (w / nb), Y_(sum[b] / cnt[b])];
+      if (prev && b - prevB > gapBins) prev = null;
+      prevB = b;
+      if (prev) {
+        g.strokeStyle = byTeam ? (home[b] * 2 >= cnt[b] ? '#ff6b5e' : '#5d9bff') : col;
+        g.beginPath(); g.moveTo(prev[0], prev[1]); g.lineTo(pt[0], pt[1]); g.stroke();
+      }
+      prev = pt;
+    }
+  };
+  S.layers.forEach((l, li) => { if (l.show || li === S.view.layer) line(l.press, hex(l.col), 1.2); });
+  line(S.press, null, 1.6, true);
+  g.fillStyle = '#f2c14e'; g.fillRect(X_(S.t) - 1, 0, 2, h);
+}
+
+// the chosen what-if run as solid players with real shirt colours and numbers; its moved players carry the marker
+function updateSim(d) {
+  const vl = S.layers[S.view.layer];
+  const ld = vl && vl.d;
+  // from its start to the end of its data the run is shown; after a restart (tStop) it stays on its last open-play frame
+  S.view.inside = !!ld && ld.t.length > 0 && S.t >= ld.t[0] - 0.05 && S.t <= ld.t[ld.t.length - 1] + 0.05;
+  S.view.ended = S.view.inside && S.t > vl.tStop;
+  simPlayers.forEach((p) => { p.userData.valid = false; });
+  if (!S.view.inside || S.view.mode === 'overlay' || S.view.mode === 'real') return;
+  const tt = Math.min(S.t, vl.tStop), still = S.view.ended;
+  const [gi, gf] = frameAt(ld.t, tt);
+  const gj = Math.min(gi + 1, ld.t.length - 1), gdt = ld.t[gj] - ld.t[gi];
+  for (let k = 0; k < 22; k++) {
+    const a = gi * 22 + k, b = gj * 22 + k, p = simPlayers[k];
+    if (ld.px[a] < 0) continue;
+    p.userData.valid = true;
+    const xx = lerp(ld.px[a], ld.px[b], gf) / DM, yy = lerp(ld.py[a], ld.py[b], gf) / DM;
+    p.position.set(X(xx), 0, Z(yy));
+    const ok = !still && gdt > 0 && gdt < 1 && ld.px[b] >= 0;
+    animate(p, ok ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, ok ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
+    const shirt = ld.jerseys && ld.jerseys.length === 22 ? ld.jerseys[k] : (S.roster ? S.roster[k] : -1);
+    const side = k < 11 ? 'home' : 'away', moved = vl.movedSlots.has(k);
+    const key = `${shirt}|${side}`;
+    if (p.userData.lbl !== key) {
+      p.userData.lbl = key;
+      p.userData.num.material.map = labelTexture(shirt >= 0 ? String(shirt) : '');
+      p.userData.name.material.map = labelTexture(((d.names && d.names[side]) || {})[String(shirt)] || '', true);
+      p.userData.num.material.needsUpdate = p.userData.name.material.needsUpdate = true;
+    }
+    p.userData.num.visible = S.showNumbers;
+    p.userData.name.visible = S.showNames || moved;
+    setMark(p, moved);
+  }
+  simBall.position.set(X(lerp(ld.bx[gi], ld.bx[gj], gf) / DM), 0.35, Z(lerp(ld.by[gi], ld.by[gj], gf) / DM));
+}
+
+// which set of people a picture shows: 'real' (the data), 'sim' (the chosen what-if run) or 'overlay' (real + ghosts)
+function showSet(which) {
+  const sim = which === 'sim';
+  players.forEach((p) => { p.visible = !sim && p.userData.valid; });
+  ball.visible = ballShadow.visible = !sim;
+  trail.visible = !sim && S.showTrail;
+  simPlayers.forEach((p) => { p.visible = sim && p.userData.valid; });
+  simBall.visible = sim;
+}
+function renderView() {
+  const w = window.innerWidth, h = window.innerHeight;
+  const mode = S.cb.on ? 'real' : S.view.mode;
+  const split = mode === 'split' && S.layers.length > 0;
+  const rightSim = S.view.inside;
+  $('splitLine').classList.toggle('hidden', !split);
+  $('capL').classList.toggle('hidden', !split);
+  $('capR').classList.toggle('hidden', !split);
+  if (split) {
+    const vl = S.layers[S.view.layer];
+    const names = vl ? vl.moved.map((m) => ((S.data.names && S.data.names[m.side]) || {})[String(m.shirt)] || `#${m.shirt}`) : [];
+    const mv = names.length ? ` · <span class="mv">&#9660; moved: ${names.join(', ')}</span>` : '';
+    const wait = vl && !rightSim && vl.d.t.length && S.t < vl.d.t[0] ? ` · starts in ${(vl.d.t[0] - S.t).toFixed(1)} s` : '';
+    const end = S.view.ended ? ` · <span class="mv">ball out / restart: run ends here</span>` : '';
+    $('capR').innerHTML = `WHAT-IF · ${vl ? vl.d.name : ''}${mv}${wait}${end}`;
+    $('capL').innerHTML = `REAL MATCH${names.length ? ` · <span class="mv" style="color:#ffd84d">&#9660; ${names.join(', ')}</span>` : ''}`;
+    renderer.setScissorTest(true);
+    camera.aspect = (w / 2) / h; camera.updateProjectionMatrix();
+    showSet('real'); renderer.setViewport(0, 0, w / 2, h); renderer.setScissor(0, 0, w / 2, h); renderer.render(scene, camera);
+    const now = performance.now(), dt = Math.min((now - (S.cam2t || now)) / 1000, 0.1); S.cam2t = now;
+    if (rightSim && S.cam !== 'free') {
+      placeCameraOn(simBall.position.clone().setY(ballPos.y), camPos2, camLook2, S.cam2dt ?? dt, false);
+      camera.position.copy(camPos2); camera.lookAt(camLook2);
+    } else { camPos2.copy(camPos); camLook2.copy(camLook); }
+    showSet(rightSim ? 'sim' : 'real'); renderer.setViewport(w / 2, 0, w / 2, h); renderer.setScissor(w / 2, 0, w / 2, h); renderer.render(scene, camera);
+    camera.position.copy(camPos); camera.lookAt(camLook);
+    renderer.setScissorTest(false);
+    showSet('real');
+  } else {
+    camera.aspect = w / h; camera.updateProjectionMatrix();
+    showSet(mode === 'sim' && rightSim ? 'sim' : 'real');
+    renderer.setViewport(0, 0, w, h); renderer.render(scene, camera);
+  }
 }
 
 // ---------- cameras ----------
 const camPos = new THREE.Vector3(0, 40, 60), camLook = new THREE.Vector3();
+// the right half of the split view has its own smooth camera that follows the what-if ball (its play can go elsewhere)
+const camPos2 = new THREE.Vector3(0, 40, 60), camLook2 = new THREE.Vector3();
+function placeCameraOn(bp, cp, cl, dt, snap) {
+  const keep = ballPos.clone(), p0 = camPos.clone(), l0 = camLook.clone();
+  ballPos.copy(bp); camPos.copy(cp); camLook.copy(cl);
+  placeCamera(dt, snap);
+  cp.copy(camPos); cl.copy(camLook);
+  ballPos.copy(keep); camPos.copy(p0); camLook.copy(l0);
+}
 function placeCamera(dt, snap) {
   if (S.cam === 'free') { controls.update(); return; }
   const target = new THREE.Vector3(), pos = new THREE.Vector3();
@@ -513,6 +746,49 @@ renderer.domElement.addEventListener('pointermove', (e) => {
   const p = pitchPoint(e); if (p) { CB.moves[CB.drag] = p; boardStatus(); }
 });
 renderer.domElement.addEventListener('pointerup', () => { CB.drag = -1; });
+
+// ---------- player cards (FootballBERT, viewer/data/player_cards.json from scripts/export_fbert.py) ----------
+const normName = (s) => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').trim();
+async function loadCards() {
+  try {
+    const r = await fetch('data/player_cards.json', { cache: 'no-store' });
+    if (!r.ok) return;
+    S.cards = await r.json();
+    S.cards.byName = {};
+    for (const [id, c] of Object.entries(S.cards.cards)) S.cards.byName[normName(c.name)] = id;
+  } catch (e) { S.cards = null; }
+}
+function cardFor(k) {
+  const box = $('pcard'); if (!box) return;
+  const d = S.data;
+  if (k < 0 || !d || !S.roster) { box.innerHTML = '<p class="hint">Click a player on the pitch.</p>'; return; }
+  const side = k < 11 ? 'home' : 'away', shirt = S.roster[k];
+  const name = ((d.names || {})[side] || {})[String(shirt)] || `#${shirt}`;
+  const C = S.cards;
+  const id = C && ((((C.matches || {})[d.match] || {})[side] || {})[String(shirt)] || C.byName[normName(name)]);
+  const c = id && C.cards[id];
+  if (!c) {
+    box.innerHTML = `<div class="pname">${name} <span class="hint">#${shirt} · ${d[side] || side}</span></div>
+      <p class="hint">FootballBERT knows World Cup 2022 players by name; this player is not matched (Bundesliga files only carry short names).</p>`;
+    return;
+  }
+  box.innerHTML = `<div class="pname">${c.name} <span class="hint">#${shirt} · ${c.team}</span></div>
+    <div class="prole">${c.role || '?'} · ${c.line || ''}</div>
+    <div class="hint">Most similar World Cup 2022 players (FootballBERT):</div>
+    <table>${c.similar.map((s) => `<tr><td>${s.name}</td><td class="hint">${s.team}</td><td>${s.sim.toFixed(2)}</td></tr>`).join('')}</table>`;
+}
+let downAt = null;
+renderer.domElement.addEventListener('pointerdown', (e) => { downAt = [e.clientX, e.clientY]; });
+renderer.domElement.addEventListener('click', (e) => {
+  if (CB.on || !downAt || Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 5) return;   // a drag, not a click
+  const p = pitchPoint(e); if (!p) return;
+  let best = -1, bd = 2.5;
+  players.forEach((q, k) => {
+    if (!q.visible || !q.userData.valid) return;
+    const dd = Math.hypot(q.position.x + L / 2 - p[0], W / 2 - q.position.z - p[1]); if (dd < bd) { bd = dd; best = k; }
+  });
+  if (best >= 0) { cardFor(best); if ($('panel').classList.contains('hidden')) togglePanel(); }
+});
 async function boardPlay() {
   const d = S.data;
   const ro = rosterNow();
@@ -572,6 +848,9 @@ $('file').addEventListener('change', (e) => loadFile(e.target.value).catch(fail)
 $('optNumbers').addEventListener('change', (e) => { S.showNumbers = e.target.checked; });
 $('optNames').addEventListener('change', (e) => { S.showNames = e.target.checked; });
 $('optTrail').addEventListener('change', (e) => { S.showTrail = e.target.checked; });
+$('viewMode').addEventListener('change', (e) => { S.view.mode = e.target.value; });
+$('viewLayer').addEventListener('change', (e) => { S.view.layer = +e.target.value; });
+const VIEW_MODES = ['split', 'sim', 'real', 'overlay'];
 document.querySelectorAll('#cams button').forEach((b) => b.addEventListener('click', () => setCam(b.dataset.cam)));
 const togglePanel = () => { $('panel').classList.toggle('hidden'); $('togglePanel').classList.toggle('on', !$('panel').classList.contains('hidden')); };
 $('togglePanel').addEventListener('click', togglePanel);
@@ -585,6 +864,9 @@ window.addEventListener('keydown', (e) => {
   else if (e.key === '.') { S.playing = false; setPlayIcon(); seek(S.t + step); }
   else if (e.key === ',') { S.playing = false; setPlayIcon(); seek(S.t - step); }
   else if (e.key === 'h' || e.key === 'H') togglePanel();
+  else if ((e.key === 'v' || e.key === 'V') && S.layers.length) {
+    S.view.mode = VIEW_MODES[(VIEW_MODES.indexOf(S.view.mode) + 1) % VIEW_MODES.length]; $('viewMode').value = S.view.mode;
+  }
   else if ('12345'.includes(e.key) && e.key.length === 1) setCam(['broadcast', 'top', 'behind', 'follow', 'free'][+e.key - 1]);
 });
 function resize() {
@@ -608,11 +890,12 @@ function loop(now) {
   const w0 = performance.now();
   update();
   placeCamera(dt, false);
-  renderer.render(scene, camera);
+  renderView();
   S.frameMs = 0.95 * (S.frameMs || 0) + 0.05 * (performance.now() - w0);   // work per frame (ms), for checking speed
   requestAnimationFrame(loop);
 }
 window.__viewer = S;                                     // for debugging in the browser console
-window.__viewerStep = () => { update(); placeCamera(0.016, false); renderer.render(scene, camera); };
-loadThreat().then(loadIndex).then(() => setCam('broadcast')).catch(fail);
+window.__viewerPlayers = players;
+window.__viewerStep = () => { update(); placeCamera(0.016, false); renderView(); };
+Promise.all([loadThreat(), loadCards()]).then(() => loadIndex()).then(() => setCam('broadcast')).catch(fail);
 requestAnimationFrame(loop);
