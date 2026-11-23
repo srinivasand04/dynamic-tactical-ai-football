@@ -1,0 +1,5 @@
+quartile,frames,press_mean,shot_next_10s_%
+Q1 low,12283,0.218,2.71
+Q2,12283,0.309,3.16
+Q3,12283,0.381,4.05
+Q4 high,12283,0.509,8.64

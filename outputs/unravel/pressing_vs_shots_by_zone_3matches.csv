@@ -1,0 +1,4 @@
+zone,frames,shot_%_all,shot_%_low_press,shot_%_high_press,high_minus_low,ci95_±
+1 own third,17318,0.25,0.37,0.07,-0.3,0.2
+2 middle third,21508,2.48,3.5,1.97,-1.53,0.62
+3 final third,10306,16.51,12.38,20.84,8.46,2.02

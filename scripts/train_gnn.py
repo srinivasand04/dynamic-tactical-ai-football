@@ -52,6 +52,7 @@ D_MOVE = 5.0          # metres: scale of the movement we predict
 SUFFIX = settings.graph_suffix()   # "" = radius graphs (_graphs.npz)   "_delaunay" = Delaunay graphs; set by graph.mode in settings.json
 PASS_KEY = None       # None = no pass edges;  "pscore" / "praw" = which numbers ride on the pass edges (build_pass_edges.py)
 PASS_ARCH = {"pass_score": "pscore", "pass_raw": "praw", "pass_shuffle": "praw"}
+PLAYER_EMB = ""       # "" = off; "on" = FootballBERT player vectors (<match>_fbert.npz from export_fbert.py) added to each node; "shuffle" = control
 PASS_SHUFFLE = False  # pass_shuffle: the same pass edges, but the numbers on them are shuffled between teammates and Key States of a match
 
 
@@ -68,6 +69,15 @@ def load(match):
     team1 = np.eye(3)[team][None].repeat(K, 0)
     role1 = np.eye(11)[np.clip(role + 1, 0, 10)]
     feat = np.concatenate([pos, vel, db[..., None], team1, role1, present[..., None]], axis=2)
+    if PLAYER_EMB:                                                         # FootballBERT vectors; zeros where unknown (and for matches without a file)
+        fp = PATH[match] + "_fbert.npz"
+        emb = np.load(fp)["emb"] if os.path.exists(fp) else np.zeros((K, N, 17), np.float32)
+        if PLAYER_EMB == "shuffle":                                        # control: every player gets another player's vector (same for the whole match)
+            known = emb[..., -1] > 0
+            uniq, inv = np.unique(emb[known], axis=0, return_inverse=True)
+            perm = np.random.default_rng(zlib.crc32(match.encode())).permutation(len(uniq))
+            emb = emb.copy(); emb[known] = uniq[perm][inv.ravel()]
+        feat = np.concatenate([feat, emb], axis=2)
     feat = feat * present[..., None]                                       # empty slots are all zeros
     adj = np.stack([g["adj_team"], g["adj_opp"], g["adj_ball"]], axis=1)   # (K, 3, N, N) yes/no
     dist = np.nan_to_num(np.linalg.norm(xy[:, :, None] - xy[:, None], axis=3), nan=60.0)
@@ -223,6 +233,55 @@ class GATLayer(nn.Module):
         return self.norm(h + torch.relu(out.reshape(BT, n, d)))
 
 
+class GATPlusLayer(nn.Module):
+    """Graph attention variants (opt-in, new in Nov 2026):
+       v2    : GATv2 scoring, a . LeakyReLU(W_l h_i + W_r h_j): the attention can depend on both players together
+       typed : the link type (teammate / opponent / ball / itself) enters the attention score and the message
+       dist  : the distance between the two players enters the attention score and the message
+    Still one shared message map, so far fewer weights than 'ours' (three message MLPs)."""
+
+    def __init__(self, d, heads=2, v2=False, typed=False, use_dist=False):
+        super().__init__()
+        self.heads, self.dk, self.v2, self.typed, self.use_dist = heads, d // heads, v2, typed, use_dist
+        self.lin_r = nn.Linear(d, d, bias=False)                           # message / neighbour side
+        self.lin_l = nn.Linear(d, d, bias=False) if v2 else None           # listener side (GATv2 only)
+        self.att = nn.Parameter(torch.randn(heads, self.dk) * 0.1)
+        if not v2:
+            self.att_i = nn.Parameter(torch.randn(heads, self.dk) * 0.1)
+        self.type_emb = nn.Embedding(4, d) if typed else None
+        self.dist_lin = nn.Linear(1, d) if use_dist else None
+        self.norm = nn.LayerNorm(d)
+
+    def forward(self, h, edges, dist):
+        bi, i, j, etype = edges
+        BT, n, d = h.shape
+        H, dk = self.heads, self.dk
+        wj = self.lin_r(h)[bi, j]                                           # (E, d)
+        extra = 0
+        if self.typed:
+            extra = extra + self.type_emb(etype)
+        if self.use_dist:
+            extra = extra + self.dist_lin(dist[bi, i, j][:, None])
+        msg = (wj + extra).view(-1, H, dk)
+        if self.v2:
+            z = nn.functional.leaky_relu(self.lin_l(h)[bi, i] + wj + extra, 0.2).view(-1, H, dk)
+            e = (z * self.att).sum(-1)
+        else:
+            wi = self.lin_r(h)[bi, i].view(-1, H, dk)
+            e = nn.functional.leaky_relu((wi * self.att_i).sum(-1) + (msg * self.att).sum(-1), 0.2)
+        grp = bi * n + i
+        peak = e.new_full((BT * n, H), -1e9).scatter_reduce(0, grp[:, None].expand(-1, H), e.detach(), reduce="amax", include_self=True)
+        ex = torch.exp(e - peak[grp])
+        den = e.new_zeros(BT * n, H).index_add(0, grp, ex)
+        alpha = ex / (den[grp] + 1e-9)
+        out = e.new_zeros(BT * n, H, dk).index_add(0, grp, alpha[..., None] * msg)
+        return self.norm(h + torch.relu(out.reshape(BT, n, d)))
+
+
+GAT_PLUS = {"gatv2": dict(v2=True), "gat_typed": dict(typed=True), "gat_dist": dict(use_dist=True),
+            "gatv2_td": dict(v2=True, typed=True, use_dist=True)}
+
+
 class Net(nn.Module):
     def __init__(self, f_in, d=48, arch="ours", f_pass=0):
         super().__init__()
@@ -231,6 +290,8 @@ class Net(nn.Module):
         self.inp = nn.Sequential(nn.Linear(f_in, d), nn.ReLU())
         if self.with_pass:
             self.layers = nn.ModuleList([PassLayer(d, f_pass), PassLayer(d, f_pass)])
+        elif arch in GAT_PLUS:
+            self.layers = nn.ModuleList([GATPlusLayer(d, **GAT_PLUS[arch]), GATPlusLayer(d, **GAT_PLUS[arch])])
         else:
             kind = {"ours": Layer, "gcn": GCNLayer, "gat": GATLayer, "mlp": NoGraphLayer}[arch]
             self.layers = nn.ModuleList([kind(d), kind(d)])
@@ -253,6 +314,11 @@ class Net(nn.Module):
             edges = [torch.nonzero(adj[:, e], as_tuple=True) for e in range(3)]    # three edge types, found once, used by both layers
         else:                                                                       # plain GCN / GAT: one edge type = any link, plus a link to itself
             edges = torch.nonzero(adj.any(dim=1) | torch.eye(n, dtype=torch.bool)[None], as_tuple=True)
+            if self.arch in GAT_PLUS:                                               # link type per edge: 0-2 from adj, 3 = itself
+                bi, i, j = edges
+                etype = adj[bi, :, i, j].float().argmax(dim=1)
+                etype = torch.where(i == j, torch.full_like(etype, 3), etype)
+                edges = (bi, i, j, etype)
         for layer in self.layers:
             h = layer(h, edges, dist, pedges) if self.with_pass else layer(h, edges, dist)
         h = h.reshape(B, T, n, -1)
@@ -311,14 +377,16 @@ def main():
     ap.add_argument("--extra-train", nargs="*", default=[], metavar="DATASET:N",
                     help="also train on the first N matches of another dataset (e.g. pff:12 skillcorner:8); they are never held out "
                          "or scored, so the held-out score stays comparable")
+    ap.add_argument("--player-emb", choices=["on", "shuffle"], default="", help="add FootballBERT player vectors to each node (World Cup / PFF matches; export_fbert.py); shuffle = control")
     ap.add_argument("--tag", default="", help="name of this run; with --save-embeddings it is added to the file names")
     ap.add_argument("--only-extra", action="store_true", help="train on the --extra-train matches only (pre-training for --init-model)")
     ap.add_argument("--init-model", default="", help="start from these weights (.pt) instead of random ones: fine-tuning after pre-training")
     ap.add_argument("--lr", type=float, default=None, help="learning rate (default: gnn.lr in settings.json); lower it when fine-tuning")
     ap.add_argument("--graphs", choices=["radius", "delaunay"], default=settings.get("graph", "mode", default="radius"), help="which edge definition to use (default: graph.mode in settings.json)")
-    ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
+    ap.add_argument("--arch", choices=["ours", "gcn", "gat", "mlp", "pass_score", "pass_raw", "pass_shuffle", "gatv2", "gat_typed", "gat_dist", "gatv2_td"], default="ours", help="ours = edge-type aware messages; gcn = plain graph convolution; gat = graph attention; mlp = no graph at all (control); pass_score / pass_raw = ours + the pass edges of the ball-owner graph (learned scores / plain numbers on the edge); pass_shuffle = the same with the numbers shuffled (control for extra capacity)")
     a = ap.parse_args()
-    global SUFFIX, PASS_KEY, PASS_SHUFFLE, L, SIMS
+    global SUFFIX, PASS_KEY, PASS_SHUFFLE, L, SIMS, PLAYER_EMB
+    PLAYER_EMB = a.player_emb
     L = a.window
     if a.no_sims:
         SIMS = []
@@ -338,6 +406,7 @@ def main():
         extra += ms
     data = {m: load(m) for m in REALS + SIMS + extra}
     train = extra if a.only_extra else [m for m in REALS if m != a.holdout] + extra
+    train = [m for m in train if m != a.holdout]                           # the held-out match may also be one of the --extra-train matches
     vf = settings.get("gnn", "val_fraction", default=0.1)
     tr_idx, va_idx = {}, {}
     for m in train:                                                        # the last part of each training match is for early stopping
@@ -400,7 +469,7 @@ def main():
         if keep:
             np.savez_compressed(a.save_preds, pred=np.concatenate([k[0] for k in keep]), target=np.concatenate([k[1] for k in keep]),
                                 ok=np.concatenate([k[2] for k in keep]))
-        rows.append((m, "held-out real" if m in REALS else "simulated", p, p0, pv, pb, pb0, pbv))
+        rows.append((m, "held-out real" if m == a.holdout else "simulated", p, p0, pv, pb, pb0, pbv))
     print(f"{'match':10s} {'kind':14s} | players: model  still  keep-vel | ball: model  still  keep-vel")
     for r in rows:
         print(f"{r[0]:10s} {r[1]:14s} |          {r[2]:5.2f}  {r[3]:5.2f}  {r[4]:5.2f}   |       {r[5]:5.2f}  {r[6]:5.2f}  {r[7]:5.2f}")

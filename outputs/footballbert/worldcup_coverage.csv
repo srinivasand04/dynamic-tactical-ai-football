@@ -1,0 +1,830 @@
+match,pff_id,name,pos,started,team,full,tok,how
+10502,3861,Xavi Simons,AM,False,Netherlands,Xavi Simons,80167.0,unique
+10502,8326,Teun Koopmeiners,DM,False,Netherlands,Teun Koopmeiners,59472.0,unique
+10502,940,Matt Turner,GK,True,United States,Matt Turner,27330.0,unique
+10502,11241,Andries Noppert,GK,True,Netherlands,Andries Noppert,16737.0,unique
+10502,687,Kellyn Acosta,DM,False,United States,Kellyn Acosta,86954.0,unique
+10502,37,Virgil van Dijk,MCB,True,Netherlands,Virgil van Dijk,82405.0,unique
+10502,328,DeAndre Yedlin,RB,False,United States,DeAndre Yedlin,63718.0,unique
+10502,8022,Jurrien Timber,RCB,True,Netherlands,Jurrien Timber,23932.0,unique
+10502,12183,Haji Wright,CF,False,United States,Haji Wright,53492.0,unique
+10502,8020,Remko Pasveer,GK,False,Netherlands,Remko Pasveer,18933.0,unique
+10502,84,Steven Bergwijn,LW,False,Netherlands,Steven Bergwijn,59539.0,unique
+10502,8123,Stefan De Vrij,RCB,False,Netherlands,Stefan De Vrij,76626.0,unique
+10502,1340,Shaq Moore,RB,False,United States,Shaquell Moore,21986.0,unique
+10502,1812,Luuk de Jong,CF,False,Netherlands,Luuk de Jong,62850.0,unique
+10502,8343,Sergiño Dest,RB,True,United States,Sergiño Dest,32978.0,unique
+10502,1973,Antonee Robinson,LB,True,United States,Antonee Robinson,14807.0,unique
+10502,5009,Wout Weghorst,CF,False,Netherlands,Wout Weghorst,72206.0,unique
+10502,3315,Vincent Janssen,CF,False,Netherlands,Vincent Janssen,18307.0,unique
+10502,11099,Justin Bijlow,GK,False,Netherlands,Justin Bijlow,30858.0,unique
+10502,284,Nathan Aké,LCB,True,Netherlands,Nathan Aké,86221.0,unique
+10502,70,Cameron Carter-Vickers,RCB,False,United States,Cameron Carter-Vickers,50159.0,unique
+10502,1522,Frenkie de Jong,CM,True,Netherlands,Frenkie de Jong,10095.0,unique
+10502,11094,Cody Gakpo,CF,True,Netherlands,Cody Gakpo,9268.0,unique
+10502,1067,Brenden Aaronson,AM,False,United States,Brenden Aaronson,33832.0,unique
+10502,8045,Matthijs De Ligt,RCB,False,Netherlands,Matthijs De Ligt,78836.0,unique
+10502,8342,Memphis Depay,CF,True,Netherlands,Memphis Depay,,missing
+10502,7015,Ethan Horvath,GK,False,United States,Ethan Horvath,23356.0,unique
+10502,968,Sean Johnson,GK,False,United States,Sean Johnson,70846.0,unique
+10502,8033,Davy Klaassen,AM,True,Netherlands,Davy Klaassen,8018.0,unique
+10502,1184,Jordan Morris,LW,False,United States,Jordan Morris,69272.0,unique
+10502,8134,Denzel Dumfries,RWB,True,Netherlands,Denzel Dumfries,26542.0,unique
+10502,13008,Luca De La Torre,CM,False,United States,Luca De La Torre,85543.0,unique
+10502,8327,Marten De Roon,CM,True,Netherlands,Marten De Roon,15388.0,unique
+10502,1174,Cristian Roldán,CM,False,United States,Cristian Roldán,26690.0,unique
+10502,107,Christian Pulisic,LW,True,United States,Christian Pulisic,10209.0,unique
+10502,1334,Weston McKennie,CM,True,United States,Weston McKennie,668.0,unique
+10502,8034,Steven Berghuis,AM,False,Netherlands,Steven Berghuis,41536.0,unique
+10502,4586,Jeremie Frimpong,RB,False,Netherlands,Jeremie Frimpong,42891.0,unique
+10502,10703,Tyrell Malacia,LB,False,Netherlands,Tyrell Malacia,39482.0,unique
+10502,802,Jesús Ferreira,CF,True,United States,Jesús Ferreira,90324.0,unique
+10502,13121,Yunus Musah,CM,True,United States,Yunus Musah,66363.0,unique
+10502,1971,Tim Ream,LCB,True,United States,Tim Ream,14853.0,unique
+10502,977,Joe Scally,RB,False,United States,Joe Scally,12918.0,unique
+10502,8032,Kenneth Taylor,CM,False,Netherlands,Kenneth Taylor,63559.0,unique
+10502,8026,Daley Blind,LWB,True,Netherlands,Daley Blind,38668.0,unique
+10502,997,Aaron Long,RCB,False,United States,Aaron Long,26042.0,unique
+10502,1339,Tyler Adams,CM,True,United States,Tyler Adams,15718.0,unique
+10502,916,Walker Zimmerman,RCB,True,United States,Walker Zimmerman,12405.0,unique
+10502,4681,Giovanni Reyna,AM,False,United States,Giovanni Reyna,,missing
+10502,1336,Timothy Weah,RW,True,United States,Timothy Weah,52429.0,unique
+10502,9093,Noa Lang,LW,False,Netherlands,Noa Lang,52086.0,unique
+10503,1531,Lionel Messi,CF,True,Argentina,Lionel Messi,78905.0,unique
+10503,13826,Cammy Devlin,DM,False,Australia,Cammy Devlin,,missing
+10503,1877,Guido Rodríguez,DM,False,Argentina,Guido Rodríguez,19461.0,unique
+10503,6895,Rodrigo de Paul,CM,True,Argentina,Rodrigo de Paul,8102.0,unique
+10503,13827,Danny Vukovic,GK,False,Australia,Danny Vukovic,20960.0,unique
+10503,11856,Enzo Fernandez,CM,True,Argentina,Enzo Fernandez,,ambiguous
+10503,13825,Garang Kuol,CF,False,Australia,Garang Kuol,61754.0,unique
+10503,68,Juan Foyth,RB,False,Argentina,Juan Foyth,39856.0,unique
+10503,8138,Lautaro Martinez,CF,False,Argentina,Lautaro Martinez,90637.0,unique
+10503,13222,Nahuel Molina,RB,True,Argentina,Nahuel Molina,12900.0,unique
+10503,13823,Craig Goodwin,LW,False,Australia,Craig Goodwin,65357.0,unique
+10503,453,Alexis Mac Allister,CM,True,Argentina,Alexis MacAllister,48295.0,unique
+10503,5116,Cristian Romero,RCB,True,Argentina,Cristian Romero,,ambiguous
+10503,8420,Papu Gómez,LW,True,Argentina,Papu Gómez,40517.0,unique
+10503,13903,Franco Armani,GK,False,Argentina,Franco Armani,65910.0,unique
+10503,13226,German Pezzella,RCB,False,Argentina,German Pezzella,51462.0,unique
+10503,13820,Aziz Behich,LB,True,Australia,Aziz Behich,66875.0,unique
+10503,4739,Ajdin Hrustic,CM,False,Australia,Ajdin Hrustic,11369.0,unique
+10503,6967,Riley McGree,LM,True,Australia,Riley McGree,33116.0,unique
+10503,13815,Mathew Leckie,RM,True,Australia,Mathew Leckie,67849.0,unique
+10503,8854,Jackson Irvine,CF,True,Australia,Jackson Irvine,25850.0,unique
+10503,13822,Jason Cummings,CF,False,Australia,Jason Cummings,83141.0,unique
+10503,13824,Kye Rowles,LCB,True,Australia,Kye Rowles,51559.0,unique
+10503,13816,Thomas Deng,RCB,False,Australia,Thomas Deng,81007.0,unique
+10503,14054,Marco Tilio,RW,False,Australia,Marco Tilio,8936.0,unique
+10503,13818,Andrew Redmayne,GK,False,Australia,Andrew Redmayne,1646.0,unique
+10503,4590,Exequiel Palacios,CM,False,Argentina,Exequiel Palacios,85201.0,unique
+10503,3856,Leandro Paredes,DM,False,Argentina,Leandro Paredes,82237.0,unique
+10503,8257,Harry Souttar,RCB,True,Australia,Harry Souttar,3839.0,unique
+10503,8025,Nicolas Tagliafico,LB,False,Argentina,Nicolas Tagliafico,88212.0,unique
+10503,3868,Ángel Di María,RW,False,Argentina,Angel Di Maria,9406.0,unique
+10503,7757,Thiago Almada,AM,False,Argentina,Thiago Almada,14588.0,unique
+10503,1706,Geronimo Rulli,GK,False,Argentina,Gerónimo Rulli,36266.0,unique
+10503,13819,Mitchell Duke,CF,True,Australia,Mitchell Duke,15063.0,unique
+10503,9290,Bailey Wright,RCB,False,Australia,Bailey Wright,27937.0,unique
+10503,7478,Milos Degenek,RB,True,Australia,Milos Degenek,73681.0,unique
+10503,11,Nicolás Otamendi,LCB,True,Argentina,Nicolás Otamendi,4827.0,unique
+10503,13811,Nathaniel Atkinson,RB,False,Australia,Nathaniel Atkinson,30096.0,unique
+10503,435,Mathew Ryan,GK,True,Australia,Mathew Ryan,25491.0,unique
+10503,10715,Julian Alvarez,RW,True,Argentina,Julian Alvarez,7909.0,unique
+10503,13109,Awer Mabil,LW,False,Australia,Awer Mabil,53624.0,unique
+10503,13817,Jamie Maclaren,CF,False,Australia,Jamie Maclaren,15527.0,unique
+10503,8419,Gonzalo Montiel,RB,False,Argentina,Gonzalo Montiel,20397.0,unique
+10503,9178,Marcos Acuña,LB,True,Argentina,Marcos Acuña,47375.0,unique
+10503,13812,Joel King,LB,False,Australia,Joel King,18913.0,unique
+10503,1389,Angel Correa,CF,False,Argentina,Angel Correa,732.0,unique
+10503,8058,Paulo Dybala,CF,False,Argentina,Paulo Dybala,82460.0,unique
+10503,8023,Lisandro Martinez,LCB,False,Argentina,Lisandro Martinez,68404.0,unique
+10503,13821,Keanu Baccus,CM,True,Australia,Keanu Baccus,9428.0,unique
+10503,449,Aaron Mooy,CM,True,Australia,Aaron Mooy,26390.0,unique
+10503,144,Emiliano Martínez,GK,True,Argentina,Emiliano Martínez,,ambiguous
+10503,13813,Fran Karacic,RB,False,Australia,Fran Karacic,83261.0,unique
+10504,11113,Sebastian Szymanski,CM,True,Poland,Sebastian Szymanski,68650.0,unique
+10504,1965,Alphonse Areola,GK,False,France,Alphonse Areola,17438.0,unique
+10504,4625,Robert Lewandowski,CF,True,Poland,Robert Lewandowski,51866.0,unique
+10504,385,Jan Bednarek,RCB,False,Poland,Jan Bednarek,23946.0,unique
+10504,13848,Kamil Glik,RCB,True,Poland,Kamil Glik,72627.0,unique
+10504,4012,Eduardo Camavinga,CM,False,France,Eduardo Camavinga,45362.0,unique
+10504,12820,Jakub Kiwior,LCB,True,Poland,Jakub Kiwior,80877.0,unique
+10504,4194,Randal Kolo Muani,CF,False,France,Randal Kolo Muani,70612.0,unique
+10504,61,Hugo Lloris,GK,True,France,Hugo Lloris,52576.0,unique
+10504,1895,William Saliba,RCB,False,France,William Saliba,55401.0,unique
+10504,13849,Artur Jedrzejczyk,RCB,False,Poland,Artur Jedrzejczyk,76868.0,unique
+10504,10756,Jordan Veretout,CM,False,France,Jordan Veretout,27338.0,unique
+10504,1896,Matty Cash,RB,True,Poland,Matthew Cash,12955.0,unique
+10504,8054,Adrien Rabiot,CM,True,France,Adrien Rabiot,49719.0,unique
+10504,1532,Ousmane Dembele,RW,True,France,Ousmane Dembele,65032.0,unique
+10504,3968,Steve Mandanda,GK,False,France,Steve Mandanda,10647.0,unique
+10504,8583,Theo Hernandez,LB,True,France,Theo Hernandez,78050.0,unique
+10504,12766,Bartosz Bereszynski,LB,True,Poland,Bartosz Bereszynski,36023.0,unique
+10504,4851,Krzysztof Piatek,CF,False,Poland,Krzysztof Piatek,8727.0,unique
+10504,4622,Kingsley Coman,RW,False,France,Kingsley Coman,1585.0,unique
+10504,3994,Arkadiusz Milik,CF,False,Poland,Arkadiusz Milik,48869.0,unique
+10504,4613,Benjamin Pavard,RB,False,France,Benjamin Pavard,25628.0,unique
+10504,13850,Grzegorz Krychowiak,DM,True,Poland,Grzegorz Krychowiak,32469.0,unique
+10504,12514,Piotr Zielinski,CM,True,Poland,Piotr Zielinski,60465.0,unique
+10504,4606,Dayot Upamecano,LCB,True,France,Dayot Upamecano,77133.0,unique
+10504,13851,Michal Skoras,RW,False,Poland,Michal Skoras,,missing
+10504,12589,Szymon Zurkowski,CM,False,Poland,Szymon Zurkowski,28784.0,unique
+10504,7535,Karol Swiderski,CF,False,Poland,Karol Swiderski,24089.0,unique
+10504,3890,Youssouf Fofana,CM,False,France,Youssouf Fofana,,ambiguous
+10504,8042,Wojciech Szczesny,GK,True,Poland,Wojciech Szczesny,656.0,unique
+10504,1534,Antoine Griezmann,AM,True,France,Antoine Griezmann,82047.0,unique
+10504,12537,Nicola Zalewski,LM,False,Poland,Nicola Zalewski,25449.0,unique
+10504,5097,Ibrahima Konaté,RCB,False,France,Ibrahima Konaté,,ambiguous
+10504,1675,Raphael Varane,RCB,True,France,Raphael Varane,58430.0,unique
+10504,4557,Robert Gumny,RB,False,Poland,Robert Gumny,10904.0,unique
+10504,1789,Jules Kounde,RB,True,France,Jules Kounde,28358.0,unique
+10504,13986,Kamil Grabara,GK,False,Poland,Kamil Grabara,36176.0,unique
+10504,9939,Jakub Kaminski,RM,True,Poland,Jakub Kaminski,11731.0,unique
+10504,13852,Damian Szymanski,CM,False,Poland,Damian Szymanski,85575.0,unique
+10504,113,Olivier Giroud,CF,True,France,Olivier Giroud,8329.0,unique
+10504,12729,Lukasz Skorupski,GK,False,Poland,Lukasz Skorupski,,missing
+10504,668,Przemyslaw Frankowski,LM,True,Poland,Przemyslaw Frankowski,,missing
+10504,7419,Krystian Bielik,CM,False,Poland,Krystian Bielik,52109.0,unique
+10504,3888,Aurélien Tchouaméni,CM,True,France,Aurélien Tchouaméni,29138.0,unique
+10504,3870,Kylian Mbappé,LW,True,France,Kylian Mbappé,24686.0,unique
+10504,2042,Kamil Grosicki,LW,False,Poland,Kamil Grosicki,47576.0,unique
+10504,4712,Marcus Thuram,LW,False,France,Marcus Thuram,40937.0,unique
+10504,3878,Axel Disasi,RCB,False,France,Axel Disasi,63523.0,unique
+10504,9871,Mateusz Wieteska,RCB,False,Poland,Mateusz Wieteska,23123.0,unique
+10504,158,Mattéo Guendouzi,CM,False,France,Mattéo Guendouzi,34912.0,unique
+10505,47,Jordan Henderson,CM,True,England,Jordan Henderson,54060.0,unique
+10505,6919,Timothy Dieng,GK,False,Senegal,Timothy Dieng,,missing
+10505,13032,Pathe Ciss,CM,True,Senegal,Pathe Ciss,56420.0,unique
+10505,3903,Krépin Diatta,RW,True,Senegal,Krepin Diatta,47284.0,unique
+10505,3848,Abdou Diallo,LCB,True,Senegal,Abdou Diallo,92613.0,unique
+10505,4677,Jude Bellingham,CM,True,England,Jude Bellingham,32388.0,unique
+10505,169,Jordan Pickford,GK,True,England,Jordan Pickford,26510.0,unique
+10505,3998,Alfred Gomis,GK,False,Senegal,Alfred Gomis,75859.0,unique
+10505,42,Trent Alexander-Arnold,RB,False,England,Trent Alexander-Arnold,75210.0,unique
+10505,163,Bukayo Saka,RW,True,England,Bukayo Saka,69056.0,unique
+10505,16,Kyle Walker,RB,True,England,Kyle Walker,49452.0,unique
+10505,4152,Pape Sarr,CM,False,Senegal,Pape Sarr,,missing
+10505,1377,Kieran Trippier,RB,False,England,Kieran Trippier,12143.0,unique
+10505,214,Nampalys Mendy,CM,True,Senegal,Nampalys Mendy,7880.0,unique
+10505,9700,Moustapha Name,CM,False,Senegal,Moustapha Name,20962.0,unique
+10505,281,Aaron Ramsdale,GK,False,England,Aaron Ramsdale,25930.0,unique
+10505,118,Harry Maguire,LCB,True,England,Harry Maguire,79490.0,unique
+10505,3996,Bamba Dieng,CF,False,Senegal,Bamba Dieng,23733.0,unique
+10505,10,John Stones,RCB,True,England,John Stones,35018.0,unique
+10505,13228,Youssouf Sabaly,RB,True,Senegal,Youssouf Sabaly,92386.0,unique
+10505,9545,Formose Mendy,RCB,False,Senegal,Formose Mendy,,ambiguous
+10505,21,Phil Foden,LW,True,England,Phil Foden,87034.0,unique
+10505,105,Mason Mount,AM,False,England,Mason Mount,55146.0,unique
+10505,220,James Maddison,AM,False,England,James Maddison,87439.0,unique
+10505,485,Nick Pope,GK,False,England,Nick Pope,27678.0,unique
+10505,9993,Kalidou Koulibaly,RCB,True,Senegal,Kalidou Koulibaly,80267.0,unique
+10505,3978,Pape Gueye,DM,False,Senegal,Pape Gueye,41581.0,unique
+10505,3895,Ismail Jakobs,LB,True,Senegal,Ismail Jakobs,58690.0,unique
+10505,428,Ismaïla Sarr,LW,True,Senegal,Ismaïla Sarr,70268.0,unique
+10505,13055,Nicolas Jackson,RW,False,Senegal,Nicolas Jackson,57227.0,unique
+10505,311,Callum Wilson,CF,False,England,Callum Wilson,,ambiguous
+10505,13901,Pape Abou Cissé,RCB,False,Senegal,Pape Abou Cissé,51233.0,unique
+10505,123,Luke Shaw,LB,True,England,Luke Shaw,,ambiguous
+10505,8552,Mamadou Loum,DM,False,Senegal,Mamadou Loum,69216.0,unique
+10505,12154,Famara Diedhiou,CF,False,Senegal,Famara Diedhiou,83768.0,unique
+10505,14046,Moussa N'Diaye,LB,False,Senegal,Moussa N'Diaye,65393.0,unique
+10505,136,Marcus Rashford,LW,False,England,Marcus Rashford,59249.0,unique
+10505,265,Declan Rice,CM,True,England,Declan Rice,10391.0,unique
+10505,8584,Fode Ballo-Toure,LB,False,Senegal,Fode Ballo-Toure,89686.0,unique
+10505,2005,Kalvin Phillips,DM,False,England,Kalvin Phillips,29219.0,unique
+10505,2052,Conor Gallagher,CM,False,England,Conor Gallagher,71248.0,unique
+10505,2059,Edouard Mendy,GK,True,Senegal,Edouard Mendy,18920.0,unique
+10505,74,Eric Dier,RCB,False,England,Eric Dier,63153.0,unique
+10505,2144,Iliman Ndiaye,AM,True,Senegal,Iliman Ndiaye,34993.0,unique
+10505,1,Harry Kane,CF,True,England,Harry Kane,12262.0,unique
+10505,231,Conor Coady,RCB,False,England,Conor Coady,15030.0,unique
+10505,371,Jack Grealish,LW,False,England,Jack Grealish,64712.0,unique
+10505,7988,Boulaye Dia,CF,True,Senegal,Boulaye Dia,13240.0,unique
+10506,13861,Bruno Petkovic,CF,True,Croatia,Bruno Petkovic,13175.0,unique
+10506,8107,Luka Sucic,CM,False,Croatia,Luka Sucic,10952.0,unique
+10506,13854,Dominik Livakovic,GK,True,Croatia,Dominik Livakovic,32778.0,unique
+10506,1687,Luka Modric,CM,True,Croatia,Luka Modric,35435.0,unique
+10506,13802,Daizen Maeda,CF,True,Japan,Daizen Maeda,21150.0,unique
+10506,5199,Ivo Grbic,GK,False,Croatia,Ivo Grbic,23193.0,unique
+10506,8136,Ivan Perisic,LW,True,Croatia,Ivan Perisic,41070.0,unique
+10506,13858,Josip Juranovic,RB,True,Croatia,Josip Juranovic,3704.0,unique
+10506,9981,Ritsu Doan,RW,True,Japan,Ritsu Doan,76368.0,unique
+10506,10704,Kaoru Mitoma,LW,False,Japan,Kaoru Mitoma,42688.0,unique
+10506,2086,Daniel Schmidt,GK,False,Japan,Daniel Schmidt,61576.0,unique
+10506,13796,Miki Yamane,RB,False,Japan,Miki Yamane,67086.0,unique
+10506,8927,Ao Tanaka,CM,False,Japan,Ao Tanaka,10657.0,unique
+10506,55,Takumi Minamino,LW,False,Japan,Takumi Minamino,91078.0,unique
+10506,40,Dejan Lovren,RCB,True,Croatia,Dejan Lovren,9537.0,unique
+10506,2095,Daichi Kamada,LW,True,Japan,Daichi Kamada,7920.0,unique
+10506,13797,Shogo Taniguchi,LCB,True,Japan,Shogo Taniguchi,47816.0,unique
+10506,4928,Wataru Endo,CM,True,Japan,Wataru Endo,70808.0,unique
+10506,9106,Domagoj Vida,RCB,False,Croatia,Domagoj Vida,23277.0,unique
+10506,8330,Mario Pasalic,AM,False,Croatia,Mario Pasalic,84228.0,unique
+10506,2094,Junya Ito,RWB,True,Japan,Junya Ito,80719.0,unique
+10506,2099,Takuma Asano,RW,False,Japan,Takuma Asano,7224.0,unique
+10506,6019,Nikola Vlasic,AM,False,Croatia,Nikola Vlasic,62442.0,unique
+10506,2088,Maya Yoshida,MCB,True,Japan,Maya Yoshida,74483.0,unique
+10506,13855,Ivica Ivusic,GK,False,Croatia,Ivica Ivusic,40055.0,unique
+10506,2092,Gaku Shibasaki,CM,False,Japan,Gaku Shibasaki,77272.0,unique
+10506,4230,Eiji Kawashima,GK,False,Japan,Eiji Kawashima,60162.0,unique
+10506,13799,Shuichi Gonda,GK,True,Japan,Shuichi Gonda,79617.0,unique
+10506,11841,Hidemasa Morita,CM,True,Japan,Hidemasa Morita,60906.0,unique
+10506,13856,Josip Sutalo,RCB,False,Croatia,Josip Sutalo,18971.0,unique
+10506,1665,Ante Budimir,CF,False,Croatia,Ante Budimir,52521.0,unique
+10506,13798,Yuto Nagatomo,LWB,True,Japan,Yuto Nagatomo,27736.0,unique
+10506,4883,Andrej Kramaric,RW,True,Croatia,Andrej Kramaric,35464.0,unique
+10506,13860,Marko Livaja,CF,False,Croatia,Marko Livaja,40529.0,unique
+10506,13801,Yuki Soma,LW,False,Japan,Yuki Soma,85720.0,unique
+10506,13828,Shuto Machino,CF,False,Japan,Shuto Machino,55084.0,unique
+10506,12604,Martin Erlic,RCB,False,Croatia,Martin Erlic,5802.0,unique
+10506,13857,Borna Barisic,LB,True,Croatia,Borna Barisic,41513.0,unique
+10506,6029,Kristijan Jakic,DM,False,Croatia,Kristijan Jakic,61851.0,unique
+10506,13800,Ayase Ueda,CF,False,Japan,Ayase Ueda,70401.0,unique
+10506,100,Mateo Kovacic,CM,True,Croatia,Mateo Kovacic,44620.0,unique
+10506,4892,Josko Gvardiol,LCB,True,Croatia,Josko Gvardiol,33488.0,unique
+10506,2090,Hiroki Sakai,RB,False,Japan,Hiroki Sakai,78601.0,unique
+10506,8129,Marcelo Brozovic,CM,True,Croatia,Marcelo Brozovic,19001.0,unique
+10506,4925,Hiroki Ito,LCB,False,Japan,Hiroki Ito,11768.0,unique
+10506,2087,Takehiro Tomiyasu,RCB,True,Japan,Takehiro Tomiyasu,65825.0,unique
+10506,13859,Mislav Orsic,LW,False,Croatia,Mislav Orsic,87555.0,unique
+10506,5968,Lovro Majer,AM,False,Croatia,Lovro Majer,92560.0,unique
+10507,132,Fred,CM,False,Brazil,Frederico Rodrigues de Paula Santos,,ambiguous
+10507,8061,Danilo,LB,True,Brazil,Danilo Luiz da Silva,,ambiguous
+10507,1830,Kang-in Lee,AM,False,South Korea,Kang-in Lee,,missing
+10507,13919,Seung-ho Paik,CM,False,South Korea,Seung-ho Paik,,missing
+10507,83,Heung-min Son,CF,True,South Korea,Heung-min Son,,missing
+10507,13830,Pedro,CF,False,Brazil,Pedro Guilherme,,ambiguous
+10507,13915,Yu-min Cho,RCB,False,South Korea,Yu-min Cho,,missing
+10507,195,Richarlison,CF,True,Brazil,Richarlison de Andrade,91749.0,unique
+10507,13908,Bum-keun Song,GK,False,South Korea,Bum-keun Song,,missing
+10507,13911,Young-gwon Kim,LCB,True,South Korea,Young-gwon Kim,,missing
+10507,13913,Tae-hwan Kim,RB,False,South Korea,Tae-hwan Kim,,missing
+10507,4915,Hee-chan Hwang,LM,True,South Korea,Hee-chan Hwang,,missing
+10507,3930,Lucas Paquetá,CM,True,Brazil,Lucas Paquetá,56941.0,unique
+10507,13920,Jun-ho Son,DM,False,South Korea,Jun-ho Son,,missing
+10507,8039,Antony,RW,False,Brazil,Antony Matheus dos Santos,,ambiguous
+10507,13907,Seun-gyu Kim,GK,True,South Korea,Seun-gyu Kim,,missing
+10507,13831,Everton Ribeiro,CM,False,Brazil,Everton Ribeiro,38632.0,unique
+10507,13921,Min-kyu Song,LW,False,South Korea,Min-kyu Song,,missing
+10507,13829,Weverton,GK,False,Brazil,Weverton Pereira da Silva,,ambiguous
+10507,4795,Woo-yeong Jeong,CF,False,South Korea,Woo-yeong Jeong,,missing
+10507,9330,Dani Alves,RB,False,Brazil,Dani Alves,74037.0,unique
+10507,13917,Chang-hoon Kwon,RW,False,South Korea,Chang-hoon Kwon,,missing
+10507,12502,Min Jae Kim,RCB,True,South Korea,Min-Jae Kim,,missing
+10507,13912,Jin-su Kim,LB,True,South Korea,Jin-su Kim,,missing
+10507,2443,Moon-hwan Kim,RB,True,South Korea,Moon-hwan Kim,,missing
+10507,13922,Woo-young Jung,CM,True,South Korea,Woo-young Jung,,missing
+10507,5038,Jae-sung Lee,RM,True,South Korea,Jae-sung Lee,,missing
+10507,3865,Neymar,AM,True,Brazil,Neymar da Silva Santos Junior,,missing
+10507,4280,Ui-jo Hwang,CF,False,South Korea,Ui-jo Hwang,,missing
+10507,1697,Rodrygo,RW,False,Brazil,Rodrygo de Goes,52572.0,unique
+10507,1257,In-beom Hwang,CM,True,South Korea,In-beom Hwang,,missing
+10507,162,Gabriel Martinelli,LW,False,Brazil,Gabriel Martinelli,26735.0,unique
+10507,32,Alisson,GK,True,Brazil,Alisson Ramses Becker,,ambiguous
+10507,13909,Hyeon-woo Jo,GK,False,South Korea,Hyeon-woo Jo,,missing
+10507,1926,Thiago Silva,LCB,True,Brazil,Thiago Silva,,ambiguous
+10507,13910,Kyung-won Kwon,LCB,False,South Korea,Kyung-won Kwon,,missing
+10507,1676,Eder Militao,RB,True,Brazil,Eder Militao,14432.0,unique
+10507,13918,Sang-ho Na,LW,False,South Korea,Sang-ho Na,,missing
+10507,2074,Raphinha,RW,True,Brazil,Raphael Dias Belloli,,ambiguous
+10507,13914,Jong-gyu Yoon,RB,False,South Korea,Jong-gyu Yoon,,missing
+10507,6,Ederson,GK,False,Brazil,Ederson Santana de Moraes,,ambiguous
+10507,1695,Vinícius Junior,LW,True,Brazil,Vinícius Junior,41474.0,unique
+10507,1683,Casemiro,CM,True,Brazil,Carlos Casemiro,28381.0,unique
+10507,13916,Chul Hong,LB,False,South Korea,Chul Hong,,missing
+10507,3924,Bruno Guimarães,DM,False,Brazil,Bruno Guimaraes,47719.0,unique
+10507,13923,Gue-sung Cho,CF,True,South Korea,Gue-sung Cho,,missing
+10507,44,Fabinho,DM,False,Brazil,Fabio Henrique Tavares,,ambiguous
+10507,12945,Bremer,RCB,False,Brazil,Gleison Bremer,35343.0,unique
+10507,3846,Marquinhos,RCB,True,Brazil,Marcos Aoas Corréa,,ambiguous
+10508,13865,Badr Benoun,RCB,False,Morocco,Badr Benoun,,missing
+10508,9865,Zakaria Aboukhlal,RW,False,Morocco,Zakaria Aboukhlal,71328.0,unique
+10508,1341,Unai Simon,GK,True,Spain,Unai Simon,34616.0,unique
+10508,4002,Nayef Aguerd,RCB,True,Morocco,Nayef Aguerd,14794.0,unique
+10508,1529,Ansu Fati,LW,False,Spain,Ansu Fati,4271.0,unique
+10508,8341,Gavi,CM,True,Spain,Pablo Gavira,9401.0,unique
+10508,12586,Sofyan Amrabat,CM,True,Morocco,Sofyan Amrabat,33238.0,unique
+10508,96,César Azpilicueta,RB,False,Spain,César Azpilicueta,30834.0,unique
+10508,4324,Azzedine Ounahi,CM,True,Morocco,Azzedine Ounahi,48047.0,unique
+10508,8014,Yeremi Pino,RW,False,Spain,Yeremi Pino,30955.0,unique
+10508,1519,Sergio Busquets,CM,True,Spain,Sergio Busquets,33440.0,unique
+10508,13560,Anass Zaroury,LW,False,Morocco,Anass Zaroury,2917.0,unique
+10508,1530,Pedri,CM,True,Spain,Pedro Lopez,5006.0,unique
+10508,9820,Achraf Dari,RCB,False,Morocco,Achraf Dari,29610.0,unique
+10508,8027,Noussair Mazraoui,LB,True,Morocco,Noussair Mazraoui,67137.0,unique
+10508,401,Sofiane Boufal,LW,True,Morocco,Sofiane Boufal,64739.0,unique
+10508,3867,Pablo Sarabia,RW,False,Spain,Pablo Sarabia,55437.0,unique
+10508,8344,Alex Balde,LB,False,Spain,Alex Balde,,missing
+10508,13021,Abde Ezzalzouli,LW,False,Morocco,Abde Ezzalzouli,69898.0,unique
+10508,1513,Jordi Alba,LB,True,Spain,Jordi Alba,25784.0,unique
+10508,13870,Abderrazak Hamdallah,CF,False,Morocco,Abderrazak Hamdallah,93380.0,unique
+10508,4908,Dani Olmo,LW,True,Spain,Dani Olmo,63788.0,unique
+10508,13178,Nico Williams,RW,False,Spain,Nico Williams,64384.0,unique
+10508,13867,Bilal El Khannouss,AM,False,Morocco,Bilal El Khannouss,90638.0,unique
+10508,233,Romain Saïss,LCB,True,Morocco,Romain Saïss,58483.0,unique
+10508,12,Eric García,RCB,False,Spain,Eric García,16032.0,unique
+10508,1810,Youssef En-Nesyri,CF,True,Morocco,Youssef En-Nesyri,1864.0,unique
+10508,1819,Hugo Guillamon,DM,False,Spain,Hugo Guillamon,90916.0,unique
+10508,13862,Munir,GK,False,Morocco,Munir El Kajoui,92654.0,unique
+10508,1394,Alvaro Morata,CF,False,Spain,Alvaro Morata,6753.0,unique
+10508,1681,Achraf Hakimi,RB,True,Morocco,Achraf Hakimi,83711.0,unique
+10508,1950,Ferran Torres,RW,True,Spain,Ferran Torres Garcia,57871.0,unique
+10508,13868,Yahya Jabrane,DM,False,Morocco,Yahya Jabrane,7360.0,unique
+10508,1903,Robert Sánchez,GK,False,Spain,Robert Sánchez,39132.0,unique
+10508,1785,Bono,GK,True,Morocco,Yassine Bounou,90463.0,unique
+10508,13863,Ahmed Reda Tagnaouti,GK,False,Morocco,Ahmed Reda Tagnaouti,,missing
+10508,18,Rodri,RCB,True,Spain,Rodrigo Hernández Cascante,,ambiguous
+10508,13869,Walid Cheddira,CF,False,Morocco,Walid Cheddira,1997.0,unique
+10508,13866,Selim Amallah,CM,True,Morocco,Selim Amallah,360.0,unique
+10508,1829,Carlos Soler,CM,False,Spain,Carlos Soler,93509.0,unique
+10508,13864,Yahia Attiat-Allah,LB,False,Morocco,Yahia Attiat-Allah,,missing
+10508,6925,Ilias Chair,AM,False,Morocco,Ilias Chair,63508.0,unique
+10508,12777,Abdelhamid Sabiri,AM,False,Morocco,Abdelhamid Sabiri,26568.0,unique
+10508,9,Aymeric Laporte,LCB,True,Spain,Aymeric Laporte,6387.0,unique
+10508,1696,Marco Asensio,CF,True,Spain,Marco Asensio,25659.0,unique
+10508,1682,Daniel Carvajal,RB,False,Spain,Daniel Carvajal,,missing
+10508,1841,Pau Torres,LCB,False,Spain,Pau Torres,,ambiguous
+10508,1938,Hakim Ziyech,RW,True,Morocco,Hakim Ziyech,37641.0,unique
+10508,5048,David Raya,GK,False,Spain,David Raya,56023.0,unique
+10508,1383,Koke,CM,False,Spain,Jorge Merodio,,ambiguous
+10508,13044,Jawad El Yamiq,RCB,False,Morocco,Jawad El Yamiq,90622.0,unique
+10508,1381,Marcos Llorente,RB,True,Spain,Marcos Llorente,1030.0,unique
+10509,8077,Joao Palhinha,DM,False,Portugal,Joao Palhinha,61360.0,unique
+10509,8593,Rafael Leao,LW,False,Portugal,Rafael Leao,11838.0,unique
+10509,4691,Yann Sommer,GK,True,Switzerland,Yann Sommer,24332.0,unique
+10509,5131,José Sá,GK,False,Portugal,José Sá,52888.0,unique
+10509,4566,Rubén Vargas,LWB,True,Switzerland,Rubén Vargas,40696.0,unique
+10509,5035,Edimilson Fernandes,RWB,True,Switzerland,Edimilson Fernandes,22017.0,unique
+10509,4661,Manuel Akanji,RCB,True,Switzerland,Manuel Akanji,50473.0,unique
+10509,8555,Otavio,CM,True,Portugal,Otavio da Silva,,ambiguous
+10509,8089,Philipp Kohn,GK,False,Switzerland,Philipp Kohn,93728.0,unique
+10509,4732,Djibril Sow,CM,True,Switzerland,Djibril Sow,28135.0,unique
+10509,8538,Diogo Costa,GK,True,Portugal,Diogo Costa,54282.0,unique
+10509,57,Xherdan Shaqiri,CF,True,Switzerland,Xherdan Shaqiri,36923.0,unique
+10509,1876,William Carvalho,CM,True,Portugal,William Carvalho,81866.0,unique
+10509,13881,Ardon Jashari,DM,False,Switzerland,Ardon Jashari,50085.0,unique
+10509,8564,Pepe,RCB,True,Portugal,Képler Ferreira,,ambiguous
+10509,8011,Haris Seferovic,CF,False,Switzerland,Haris Seferovic,60180.0,unique
+10509,320,Fabian Schär,MCB,True,Switzerland,Fabian Schär,73591.0,unique
+10509,8416,Michel Aebischer,CM,False,Switzerland,Michel Aebischer,91670.0,unique
+10509,11853,Antonio Silva,RCB,False,Portugal,Antonio Silva,52458.0,unique
+10509,17,João Cancelo,RB,False,Portugal,João Cancelo,69357.0,unique
+10509,4666,Raphaël Guerreiro,LB,True,Portugal,Raphaël Guerreiro,1724.0,unique
+10509,4703,Denis Zakaria,DM,False,Switzerland,Denis Zakaria,20767.0,unique
+10509,6020,Cristiano Ronaldo,CF,False,Portugal,Cristiano Ronaldo,81757.0,unique
+10509,8400,Christian Fassnacht,RM,False,Switzerland,Christian Fassnacht,4024.0,unique
+10509,133,Bruno Fernandes,RW,True,Portugal,Bruno Fernandes,,ambiguous
+10509,8113,Noah Okafor,CF,False,Switzerland,Noah Okafor,74222.0,unique
+10509,240,Rúben Neves,DM,False,Portugal,Rúben Neves,25302.0,unique
+10509,8079,Matheus Nunes,CM,False,Portugal,Matheus Nunes,84639.0,unique
+10509,8000,Joao Mario,CM,False,Portugal,Joao Mario,,ambiguous
+10509,11488,Ricardo Horta,LW,False,Portugal,Ricardo Horta,37597.0,unique
+10509,4912,André Silva,CF,False,Portugal,André Silva,,ambiguous
+10509,1907,Vitinha,CM,False,Portugal,Vitor Machado Ferrira,,ambiguous
+10509,227,Rui Patrício,GK,False,Portugal,Rui Patrício,44588.0,unique
+10509,1393,Joao Felix,LW,True,Portugal,Joao Felix,50830.0,unique
+10509,13880,Fabian Frei,DM,False,Switzerland,Fabian Frei,58479.0,unique
+10509,8328,Remo Freuler,CM,True,Switzerland,Remo Freuler,55987.0,unique
+10509,4056,Jonas Omlin,GK,False,Switzerland,Jonas Omlin,72696.0,unique
+10509,12960,Ricardo Rodriguez,LCB,True,Switzerland,Ricardo Rodriguez2,46764.0,unique
+10509,2066,Ruben Dias,LCB,True,Portugal,Ruben Dias,18265.0,unique
+10509,4717,Breel Embolo,CF,True,Switzerland,Breel Embolo,4171.0,unique
+10509,13118,Eray Comert,RCB,False,Switzerland,Eray Comert,7871.0,unique
+10509,127,Diogo Dalot,RB,True,Portugal,Diogo Dalot,79794.0,unique
+10509,4695,Nico Elvedi,RCB,False,Switzerland,Nico Elvedi,26503.0,unique
+10509,27,Bernardo Silva,CM,True,Portugal,Bernardo Silva,23091.0,unique
+10509,8397,Fabian Rieder,CM,False,Switzerland,Fabian Rieder,71368.0,unique
+10509,157,Granit Xhaka,DM,True,Switzerland,Granit Xhaka,84431.0,unique
+10509,5006,Renato Steffen,LW,False,Switzerland,Renato Steffen,81284.0,unique
+10509,8008,Goncalo Ramos,CF,True,Portugal,Goncalo Ramos,90383.0,unique
+10509,4656,Gregor Kobel,GK,False,Switzerland,Gregor Kobel,75287.0,unique
+10510,4926,Borna Sosa,LB,True,Croatia,Borna Sosa,64092.0,unique
+10510,4615,Josip Stanisic,RB,False,Croatia,Josip Stanisic,46497.0,unique
+10510,8050,Alex Sandro,LB,False,Brazil,Alex Sandro,,ambiguous
+10513,25,Raheem Sterling,LW,False,England,Raheem Sterling,65962.0,unique
+3812,3858,Idrissa Gueye,AM,True,Senegal,Idrissa Gueye,94065.0,unique
+3812,474,Cheikhou Kouyaté,CM,True,Senegal,Cheikhou Kouyaté,51761.0,unique
+3813,13975,Milad Mohammadi,LWB,True,Iran,Milad Mohammadi,42558.0,unique
+3813,13982,Ahmad Nourollahi,CM,True,Iran,Ahmad Nourollahi,16185.0,unique
+3813,13971,Ehsan Hajsafi,LW,True,Iran,Ehsan Hajsafi,64586.0,unique
+3813,457,Alireza Jahanbakhsh,RW,True,Iran,Alireza Jahanbakhsh,3074.0,unique
+3813,13980,Saeid Ezatolahi,DM,False,Iran,Saeid Ezatolahi,18075.0,unique
+3813,13974,Shoja Khalilzadeh,RCB,False,Iran,Shoja Khalilzadeh,4021.0,unique
+3813,13972,Abolfazl Jalali,LB,False,Iran,Abolfazl Jalali,79741.0,unique
+3813,13969,Hossein Hosseini,GK,False,Iran,Hossein Hosseini,,ambiguous
+3813,13968,Alireza Beiranvand,GK,True,Iran,Alireza Beiranvand,39906.0,unique
+3813,13981,Ali Gholizadeh,RW,False,Iran,Ali Gholizadeh,58487.0,unique
+3813,5070,Saman Ghoddos,AM,False,Iran,Saman Ghoddos,90892.0,unique
+3813,12222,Majid Hosseini,LCB,True,Iran,Majid Hosseini,77064.0,unique
+3813,11633,Payam Niazmand,GK,False,Iran,Payam Niazmand,45187.0,unique
+3813,1916,Ben White,RCB,False,England,Ben White,19844.0,unique
+3813,13984,Karim Ansarifard,CF,False,Iran,Karim Ansarifard,29766.0,unique
+3813,13977,Morteza Pouraliganji,RCB,True,Iran,Morteza Pouraliganji,16112.0,unique
+3813,12235,Ali Karimi,CM,True,Iran,Ali Karimi,20753.0,unique
+3813,8561,Mehdi Taremi,CF,True,Iran,Mehdi Taremi,28035.0,unique
+3813,13967,Amir Abedzadeh,GK,False,Iran,Amir Abedzadeh,20427.0,unique
+3813,13970,Roozbeh Cheshmi,MCB,True,Iran,Roozbeh Cheshmi,49776.0,unique
+3813,13976,Sadegh Moharrami,RWB,True,Iran,Sadegh Moharrami,13764.0,unique
+3813,13978,Ramin Rezaeian,RB,False,Iran,Ramin Rezaeian,70604.0,unique
+3813,7441,Sardar Azmoun,CF,False,Iran,Sardar Azmoun,5943.0,unique
+3813,13983,Mehdi Torabi,LW,False,Iran,Mehdi Torabi,42670.0,unique
+3813,13973,Hossein Kanaani,RCB,False,Iran,Hossein Kanaani,,missing
+3813,13979,Vahid Amiri,LW,False,Iran,Vahid Amiri,42926.0,unique
+3814,13941,Saad Al-Sheeb,GK,True,Qatar,Saad Al-Sheeb,82269.0,unique
+3814,1287,José Cifuentes,CM,False,Ecuador,José Cifuentes,51499.0,unique
+3814,13945,Boualem Khoukhi,MCB,True,Qatar,Boualem Khoukhi,45470.0,unique
+3814,13936,Robert Arboleda,RCB,False,Ecuador,Robert Arboleda,14102.0,unique
+3814,13944,Abdelkarim Hassan,LCB,True,Qatar,Abdelkarim Hassan,42360.0,unique
+3814,13940,Kevin Rodriguez,CF,False,Ecuador,Kevin Rodriguez,,ambiguous
+3814,13948,Bassam Al-Rawi,RCB,True,Qatar,Bassam Al-Rawi,78357.0,unique
+3814,9837,Jackson Porozo,RCB,False,Ecuador,Jackson Porozo,46017.0,unique
+3814,13951,Homam Ahmed,LWB,True,Qatar,Homam Ahmed,60866.0,unique
+3814,13939,Djorkaeff Reasco,CF,False,Ecuador,Djorkaeff Reasco,34479.0,unique
+3814,13946,Pedro Miguel,RWB,True,Qatar,Pedro Miguel,,missing
+3814,13934,Alexander Dominguez,GK,False,Ecuador,Alexander Dominguez,48649.0,unique
+3814,13953,Karim Boudiaf,CM,True,Qatar,Karim Boudiaf,59875.0,unique
+3814,7571,Alan Franco,CM,False,Ecuador,Alan Franco,,ambiguous
+3814,13954,Abdulaziz Hatem,CM,True,Qatar,Abdulaziz Hatem,72247.0,unique
+3814,1279,Diego Palacios,LB,False,Ecuador,Diego Palacios,40677.0,unique
+3814,13960,Hasan Al-Haydos,CM,True,Qatar,Hasan Al-Haydos,,missing
+3814,6596,Jeremy Sarmiento,AM,False,Ecuador,Jeremy Sarmiento,62978.0,unique
+3814,13961,Akram Afif,CF,True,Qatar,Akram Afif,92962.0,unique
+3814,3441,Ángel Mena,RW,False,Ecuador,Ángel Mena,86070.0,unique
+3814,13962,Almoez Ali,CF,True,Qatar,Almoez Ali,68451.0,unique
+3814,1166,Xavier Arreaga,LCB,False,Ecuador,Xavier Arreaga,46644.0,unique
+3814,13963,Mohammed Muntari,CF,False,Qatar,Mohammed Muntari,80137.0,unique
+3814,13933,Moises Ramirez,GK,False,Ecuador,Moises Ramirez,87334.0,unique
+3814,13955,Ali Asad,AM,False,Qatar,Ali Asad,,missing
+3814,13964,Ahmed Alaaeldin,CF,False,Qatar,Ahmed Alaaeldin,42908.0,unique
+3814,13949,Tarek Salman,RCB,False,Qatar,Tarek Salman,24337.0,unique
+3814,13958,Mohammed Waad,DM,False,Qatar,Mohammed Waad,54589.0,unique
+3814,13959,Mustafa Mashaal,CM,False,Qatar,Mustafa Mashaal,,missing
+3814,13952,Jassem Gaber Abdulsallam,RCB,False,Qatar,Jassem Gaber Abdulsallam,,missing
+3814,13966,Naif Al-Hadhrami,RW,False,Qatar,Naif Al-Hadhrami,,missing
+3814,13956,Assim Madibo,DM,False,Qatar,Assim Madibo,15751.0,unique
+3814,13942,Meshaal Barsham,GK,False,Qatar,Meshaal Barsham,51766.0,unique
+3814,13943,Yousef Hassan,GK,False,Qatar,Yousef Hassan,,missing
+3814,13957,Salem Al-Hajri,DM,False,Qatar,Salem Al-Hajri,76620.0,unique
+3814,13965,Khalid Muneer Mazeed,LW,False,Qatar,Khalid Muneer Mazeed,,missing
+3814,13947,Ismaeel Mohammed,RW,False,Qatar,Ismaeel Mohammed,,missing
+3814,13950,Musab Khoder,RB,False,Qatar,Musab Khoder,,missing
+3814,13935,Hernan Galindez,GK,True,Ecuador,Hernan Galindez,50505.0,unique
+3814,5195,Piero Hincapie,LCB,True,Ecuador,Piero Hincapie,4576.0,unique
+3814,3734,Félix Torres,RCB,True,Ecuador,Félix Torres,,missing
+3814,1406,Pervis Estupinan,LB,True,Ecuador,Pervis Estupinan,77601.0,unique
+3814,13937,Angelo Preciado,RB,True,Ecuador,Angelo Preciado,86191.0,unique
+3814,2134,Moises Caicedo,CM,True,Ecuador,Moises Caicedo,8083.0,unique
+3814,1034,Jhegson Méndez,CM,True,Ecuador,Jhegson Méndez,80439.0,unique
+3814,3460,Romario Ibarra,LM,True,Ecuador,Romario Ibarra,66167.0,unique
+3814,13049,Gonzalo Plata,RM,True,Ecuador,Gonzalo Plata,31226.0,unique
+3814,3519,Michael Estrada,CF,True,Ecuador,Michael Estrada,43722.0,unique
+3814,11960,Enner Valencia,CF,True,Ecuador,Enner Valencia,92211.0,unique
+3814,3750,Ayrton Preciado,LW,False,Ecuador,Ayrton Preciado,34656.0,unique
+3814,4560,Carlos Gruezo,DM,False,Ecuador,Carlos Gruezo,,ambiguous
+3814,13938,William Pacho,LCB,False,Ecuador,William Pacho,,missing
+3815,7138,Matt Smith,DM,False,Wales,Matt Smith,,ambiguous
+3815,1698,Gareth Bale,CF,True,Wales,Gareth Bale,60618.0,unique
+3815,6930,Adam Davies,GK,False,Wales,Adam Davies,41661.0,unique
+3815,6935,Joe Allen,CM,False,Wales,Joe Allen,58555.0,unique
+3815,462,Wayne Hennessey,GK,True,Wales,Wayne Hennessey,43612.0,unique
+3815,8062,Aaron Ramsey,CM,True,Wales,Aaron Ramsey,,ambiguous
+3815,10039,Joe Morrell,CM,False,Wales,Joe Morrell,21972.0,unique
+3815,2083,Joe Rodon,MCB,True,Wales,Joe Rodon,51826.0,unique
+3815,13847,Dylan Levitt,CM,False,Wales,Dylan Levitt,64876.0,unique
+3815,7955,Rubin Colwill,AM,False,Wales,Rubin Colwill,88602.0,unique
+3815,589,Neco Williams,LWB,True,Wales,Neco Williams,81230.0,unique
+3815,7399,Ben Cabango,RCB,False,Wales,Ben Cabango,41267.0,unique
+3815,6018,Connor Roberts,RWB,True,Wales,Connor Roberts,,ambiguous
+3815,7008,Brennan Johnson,CF,False,Wales,Brennan Johnson,4717.0,unique
+3815,308,Harry Wilson,CM,True,Wales,Harry Wilson,72939.0,unique
+3815,7714,Mark Harris,CF,False,Wales,Mark Harris,92750.0,unique
+3815,7966,Kieffer Moore,CF,False,Wales,Kieffer Moore,684.0,unique
+3815,286,Chris Mepham,RCB,True,Wales,Chris Mepham,93525.0,unique
+3815,1931,Ethan Ampadu,CM,True,Wales,Ethan Ampadu,6066.0,unique
+3815,11018,Chris Gunter,RB,False,Wales,Chris Gunter,17680.0,unique
+3815,71,Ben Davies,LCB,True,Wales,Ben Davies,,ambiguous
+3815,10642,Jonathan Williams,AM,False,Wales,Jonathan Williams,,missing
+3815,7175,Sorba Thomas,RW,False,Wales,Sorba Thomas,49554.0,unique
+3815,5135,Josh Sargent,CF,True,United States,Josh Sargent,61819.0,unique
+3815,201,Danny Ward,GK,False,Wales,Danny Ward,,ambiguous
+3815,137,Daniel James,CF,True,Wales,Daniel James,73795.0,unique
+3815,7654,Tom Lockyer,RCB,False,Wales,Tom Lockyer,20304.0,unique
+3816,14011,Saleh Al-Shehri,CF,True,Saudi Arabia,Saleh Al-Shehri,89657.0,unique
+3816,13993,Sultan Al-Ghannam,RB,False,Saudi Arabia,Sultan Al-Ghannam,,missing
+3816,13989,Nawaf Al-Aqidi,GK,False,Saudi Arabia,Nawaf Al-Aqidi,,missing
+3816,13992,Ali Al-Bulayhi,LCB,True,Saudi Arabia,Ali Al-Bulayhi,,missing
+3816,14001,Abdullah Otayf,DM,False,Saudi Arabia,Abdullah Otayf,29670.0,unique
+3816,13995,Abdulelah Al-Amri,RCB,False,Saudi Arabia,Abdulelah Al-Amri,92856.0,unique
+3816,13998,Salem Al-Dawsari,LM,True,Saudi Arabia,Salem Al-Dawsari,35747.0,unique
+3816,14009,Abdulrahman Al-Oboud,RW,False,Saudi Arabia,Abdulrahman Al-Oboud,,missing
+3816,14003,Mohamed Kanno,CM,True,Saudi Arabia,Mohamed Kanno,42828.0,unique
+3816,13987,Mohammed Al-Owais,GK,True,Saudi Arabia,Mohammed Al-Owais,89112.0,unique
+3816,14002,Hattan Bahebri,RW,False,Saudi Arabia,Hattan Bahebri,66309.0,unique
+3816,14007,Nasser Al-Dawsari,LB,False,Saudi Arabia,Nasser Al-Dawsari,43647.0,unique
+3816,13996,Hassan Tambakti,RCB,True,Saudi Arabia,Hassan Tambakti,,missing
+3816,13990,Yasser Al-Shahrani,LB,True,Saudi Arabia,Yasser Al-Shahrani,13549.0,unique
+3816,14000,Nawaf Al-Abed,AM,False,Saudi Arabia,Nawaf Al-Abed,70300.0,unique
+3816,14012,Haitham Asiri,CF,False,Saudi Arabia,Haitham Asiri,,missing
+3816,13988,Mohammed Al-Rubaie,GK,False,Saudi Arabia,Mohammed Al-Rubaie,,missing
+3816,14005,Sami Al-Najei,AM,False,Saudi Arabia,Sami Al-Najei,55524.0,unique
+3816,13999,Salman Al-Faraj,CM,True,Saudi Arabia,Salman Al-Faraj,81933.0,unique
+3816,14006,Ali Al-Hassan,DM,False,Saudi Arabia,Ali Al-Hassan,38539.0,unique
+3816,14004,Abdulelah Al-Malki,DM,True,Saudi Arabia,Abdulelah Al-Malki,,missing
+3816,13994,Saud Abdulhamid,RB,True,Saudi Arabia,Saud Abdulhamid,74334.0,unique
+3816,14010,Firas Al-Buraikan,RM,True,Saudi Arabia,Firas Al-Buraikan,63119.0,unique
+3816,13991,Mohammed Al-Burayk,RB,False,Saudi Arabia,Mohammed Al-Burayk,,missing
+3816,13997,Abdullah Madu,LCB,False,Saudi Arabia,Abdullah Madu,57223.0,unique
+3817,4737,Jesper Lindström,AM,False,Denmark,Jesper Lindström,,missing
+3817,8099,Rasmus Kristensen,RWB,True,Denmark,Rasmus Kristensen,21219.0,unique
+3817,14024,Ferjani Sassi,CM,False,Tunisia,Ferjani Sassi,19790.0,unique
+3817,5063,Mathias Jensen,CM,False,Denmark,Mathias Jensen,5506.0,unique
+3817,14016,Aymen Balbouli,GK,False,Tunisia,Aymen Balbouli,,missing
+3817,14019,Yassine Meriah,MCB,True,Tunisia,Yassine Meriah,20002.0,unique
+3817,11854,Alexander Bah,RB,False,Denmark,Alexander Bah,44326.0,unique
+3817,7580,Jonas Wind,CF,False,Denmark,Jonas Wind,11844.0,unique
+3817,7443,Christian Eriksen,CM,True,Denmark,Christian Eriksen,55682.0,unique
+3817,14020,Bilel Ifa,RCB,False,Tunisia,Bilel Ifa,81446.0,unique
+3817,4053,Kasper Dolberg,CF,True,Denmark,Kasper Dolberg,74988.0,unique
+3817,14017,Ali Maaloul,LB,False,Tunisia,Ali Maaloul,72872.0,unique
+3817,200,Kasper Schmeichel,GK,True,Denmark,Kasper Schmeichel,30803.0,unique
+3817,14014,Mouez Hassen,GK,False,Tunisia,Mouez Hassen,92940.0,unique
+3817,1536,Martin Braithwaite,CF,False,Denmark,Martin Braithwaite,93012.0,unique
+3817,4105,Wahbi Khazri,CF,False,Tunisia,Wahbi Khazri,14050.0,unique
+3817,14018,Nader Ghandri,RCB,False,Tunisia,Nader Ghandri,46612.0,unique
+3817,4758,Ellyes Skhiri,CM,True,Tunisia,Ellyes Skhiri,71114.0,unique
+3817,4142,Dylan Bronn,RCB,True,Tunisia,Dylan Bronn,87301.0,unique
+3817,11967,Victor Nelsson,RCB,False,Denmark,Victor Nelsson,84094.0,unique
+3817,4673,Thomas Delaney,CM,True,Denmark,Thomas Delaney,93356.0,unique
+3817,14021,Ghaylen Chaaleli,CM,False,Tunisia,Ghaylen Chaaleli,,missing
+3817,4913,Yussuf Poulsen,CF,False,Denmark,Yussuf Poulsen,77122.0,unique
+3817,3263,Hannibal Mejbri,AM,False,Tunisia,Hannibal Mejbri,74128.0,unique
+3817,14022,Aissa Laidouni,CM,True,Tunisia,Aissa Laidouni,12579.0,unique
+3817,395,Pierre-Emile Höjbjerg,CM,True,Denmark,Pierre-Emile Höjbjerg,,missing
+3817,14026,Seifeddine Jaziri,CF,False,Tunisia,Seifeddine Jaziri,41510.0,unique
+3817,14025,Youssef Msakni,LW,True,Tunisia,Youssef Msakni,205.0,unique
+3817,8578,Simon Kjaer,MCB,True,Denmark,Simon Kjaer,,missing
+3817,14027,Naim Sliti,LW,False,Tunisia,Naim Sliti,16816.0,unique
+3817,9824,Montassar Talbi,LCB,True,Tunisia,Montassar Talbi,60294.0,unique
+3817,12009,Jens Stryger Larsen,RB,False,Denmark,Jens Stryger Larsen,91399.0,unique
+3817,12779,Mikkel Damsgaard,LW,False,Denmark,Mikkel Damsgaard,12156.0,unique
+3817,14030,Anis Slimane,RW,True,Tunisia,Anis Slimane,,missing
+3817,1823,Daniel Wass,CM,False,Denmark,Daniel Wass,79359.0,unique
+3817,14013,Aymen Dahmen,GK,True,Tunisia,Aymen Dahmen,51294.0,unique
+3817,12022,Andreas Cornelius,CF,False,Denmark,Andreas Cornelius,72852.0,unique
+3817,9089,Andreas Skov Olsen,CF,True,Denmark,Andreas Skov Olsen,72254.0,unique
+3817,14029,Taha Yassine Khenissi,CF,False,Tunisia,Taha Yassine Khenissi,25348.0,unique
+3817,8324,Joakim Maehle,LWB,True,Denmark,Joakim Maehle,,missing
+3817,14023,Mohamed Ali Ben Romdhane,CM,False,Tunisia,Mohamed Ali Ben Romdhane,66267.0,unique
+3817,5065,Christian Nörgaard,DM,False,Denmark,Christian Nörgaard,,missing
+3817,9598,Ali Abdi,LWB,True,Tunisia,Ali Abdi,63515.0,unique
+3817,7649,Mohamed Drager,RWB,True,Tunisia,Mohamed Drager,50345.0,unique
+3817,5962,Oliver Christensen,GK,False,Denmark,Oliver Christensen,64098.0,unique
+3817,2073,Joachim Andersen,RCB,True,Denmark,Joachim Andersen,83387.0,unique
+3817,12862,Wajdi Kechrida,RM,False,Tunisia,Wajdi Kechrida,6377.0,unique
+3817,4948,Frederik Rönnow,GK,False,Denmark,Frederik Rönnow,,missing
+3817,92,Andreas Christensen,LCB,True,Denmark,Andreas Christensen,10492.0,unique
+3817,14015,Bechir Ben Said,GK,False,Tunisia,Bechir Ben Said,61920.0,unique
+3817,4882,Robert Skov,RW,False,Denmark,Robert Skov,93778.0,unique
+3817,14028,Issam Jebali,CF,True,Tunisia,Issam Jebali,27752.0,unique
+3818,3526,Johan Vásquez,LCB,False,Mexico,Johan Vásquez,34928.0,unique
+3818,3352,Jorge Sánchez,RB,True,Mexico,Jorge Sánchez,,ambiguous
+3818,3314,Rogelio Funes Mori,CF,False,Mexico,Rogelio Funes Mori,70159.0,unique
+3818,2104,Luis Romo,CM,False,Mexico,Luis Romo,84214.0,unique
+3818,3343,Guillermo Ochoa,GK,True,Mexico,Guillermo Ochoa,11140.0,unique
+3818,2111,Hirving Lozano,RW,True,Mexico,Hirving Lozano,61032.0,unique
+3818,3367,Henry Martín,CF,True,Mexico,Henry Martín,66505.0,unique
+3818,1880,Andres Guardado,CM,False,Mexico,Andres Guardado,87772.0,unique
+3818,2106,Edson Alvarez,CM,True,Mexico,Edson Alvarez,51016.0,unique
+3818,1384,Hector Herrera,CM,True,Mexico,Hector Herrera,61631.0,unique
+3818,3309,Carlos Rodríguez,CM,False,Mexico,Carlos Rodríguez,,ambiguous
+3818,3455,Luis Chávez,CM,True,Mexico,Luis Chávez,,ambiguous
+3818,252,Raúl Jiménez,CF,False,Mexico,Raúl Jiménez,66447.0,unique
+3818,2110,Roberto Alvarado,RW,False,Mexico,Roberto Alvarado,93756.0,unique
+3818,3420,Rodolfo Cota,GK,False,Mexico,Rodolfo Cota,60296.0,unique
+3818,3523,Alfredo Talavera,GK,False,Mexico,Alfredo Talavera,34104.0,unique
+3818,3303,Jesús Gallardo,LB,True,Mexico,Jesús Gallardo,76532.0,unique
+3818,3387,Orbelín Pineda,CM,False,Mexico,Orbelín Pineda,23964.0,unique
+3818,3301,Héctor Moreno,LCB,True,Mexico,Héctor Moreno,34370.0,unique
+3818,3299,César Montes,RCB,True,Mexico,César Montes,14935.0,unique
+3818,2108,Uriel Antuna,RW,False,Mexico,Uriel Antuna,59820.0,unique
+3818,11090,Erick Gutierrez,CM,False,Mexico,Erick Gutierrez,73180.0,unique
+3818,3452,Kevin Álvarez,RB,False,Mexico,Kevin Álvarez,,ambiguous
+3818,3414,Alexis Vega,LW,True,Mexico,Alexis Vega,89598.0,unique
+3818,1452,Nestor Araujo,RCB,False,Mexico,Nestor Araujo,14475.0,unique
+3818,13985,Gerardo Arteaga,LB,False,Mexico,Gerardo Arteaga,51040.0,unique
+3819,4607,Lucas Hernández,LB,True,France,Lucas Hernández,,ambiguous
+3821,3849,Thilo Kehrer,RCB,False,Germany,Thilo Kehrer,30123.0,unique
+3821,4694,Matthias Ginter,RCB,False,Germany,Matthias Ginter,89989.0,unique
+3821,9918,Mario Götze,AM,False,Germany,Mario Götze,58197.0,unique
+3821,1860,Takefusa Kubo,LW,True,Japan,Takefusa Kubo,8278.0,unique
+3821,8112,Karim Adeyemi,CF,False,Germany,Karim Adeyemi,29494.0,unique
+3821,1937,Kai Havertz,CF,True,Germany,Kai Havertz,93522.0,unique
+3821,4602,Manuel Neuer,GK,True,Germany,Manuel Neuer,49670.0,unique
+3821,4718,Kevin Trapp,GK,False,Germany,Kevin Trapp,75565.0,unique
+3821,4779,Nico Schlotterbeck,LCB,True,Germany,Nico Schlotterbeck,19457.0,unique
+3821,20,Ilkay Gündogan,CM,True,Germany,Ilkay Gündogan,47495.0,unique
+3821,1505,Marc-Andre ter Stegen,GK,False,Germany,Marc-Andre  ter Stegen,40864.0,unique
+3821,4616,Joshua Kimmich,CM,True,Germany,Joshua Kimmich,26912.0,unique
+3821,26,Leroy Sané,LW,False,Germany,Leroy Sané,15728.0,unique
+3821,4623,Serge Gnabry,RW,True,Germany,Serge Gnabry,50185.0,unique
+3821,4785,Christian Günter,LB,False,Germany,Christian Günter,48955.0,unique
+3821,4630,Armel Bella-Kotchap,RCB,False,Germany,Armel Bella-Kotchap,59897.0,unique
+3821,4618,Leon Goretzka,CM,False,Germany,Leon Goretzka,74993.0,unique
+3821,4608,Niklas Süle,RB,True,Germany,Niklas Süle,83354.0,unique
+3821,4713,Jonas Hofmann,AM,False,Germany,Jonas Hofmann,,ambiguous
+3821,4624,Thomas Müller,AM,True,Germany,Thomas Müller,,ambiguous
+3821,5098,Ko Itakura,RCB,True,Japan,Ko Itakura,55616.0,unique
+3821,4868,David Raum,LB,True,Germany,David Raum,45957.0,unique
+3821,4689,Youssoufa Moukoko,CF,False,Germany,Youssoufa Moukoko,40005.0,unique
+3821,4897,Lukas Klostermann,RCB,False,Germany,Lukas Klostermann,74276.0,unique
+3821,4621,Jamal Musiala,LW,True,Germany,Jamal Musiala,16075.0,unique
+3821,90,Antonio Rüdiger,RCB,True,Germany,Antonio Rüdiger,9007.0,unique
+3821,4682,Julian Brandt,AM,False,Germany,Julian Brandt,59111.0,unique
+3821,9963,Niclas Fullkrug,CF,False,Germany,Niclas Fullkrug,29109.0,unique
+3822,13779,Juan Pablo Vargas,LCB,False,Costa Rica,Juan Pablo Vargas,,ambiguous
+3822,13795,Alvaro Zamora,LM,False,Costa Rica,Alvaro Zamora,76439.0,unique
+3822,649,Francisco Calvo,LCB,True,Costa Rica,Francisco Calvo,41262.0,unique
+3822,13778,Daniel Chacon,DM,False,Costa Rica,Daniel Chacon,2390.0,unique
+3822,13784,Johan Venegas,CF,False,Costa Rica,Johan Venegas,34925.0,unique
+3822,13782,Anthony Contreras,CF,True,Costa Rica,Anthony Contreras,76458.0,unique
+3822,13563,Jewison Bennette,LM,True,Costa Rica,Jewison Bennette,32789.0,unique
+3822,13787,Youstin Salas,DM,False,Costa Rica,Youstin Salas,2026.0,unique
+3822,13788,Yeltsin Tejeda,CM,True,Costa Rica,Yeltsin Tejeda,42617.0,unique
+3822,3316,Joel Campbell,CF,True,Costa Rica,Joel Campbell,50361.0,unique
+3822,13792,Patrick Sequeira,GK,False,Costa Rica,Patrick Sequeira,40803.0,unique
+3822,13794,Anthony Hernandez,RW,False,Costa Rica,Anthony Hernandez,17736.0,unique
+3822,975,Ronald Matarrita,LB,False,Costa Rica,Ronald Matarrita,26892.0,unique
+3822,13793,Douglas Lopez,DM,False,Costa Rica,Douglas Lopez,,missing
+3822,13371,Bryan Oviedo,LB,True,Costa Rica,Bryan Oviedo,18345.0,unique
+3822,3841,Keylor Navas,GK,True,Costa Rica,Keylor Navas,86869.0,unique
+3822,1593,Óscar Duarte,RCB,True,Costa Rica,Óscar Duarte,62267.0,unique
+3822,754,Kendall Waston,RCB,False,Costa Rica,Kendall Waston,1083.0,unique
+3822,13786,Carlos Martinez,RB,True,Costa Rica,Carlos Martinez,,ambiguous
+3822,13781,Celso Borges,CM,True,Costa Rica,Celso Borges,67599.0,unique
+3822,13783,Bryan Ruiz,AM,False,Costa Rica,Bryan Ruiz,,ambiguous
+3822,13791,Roan Wilson,CM,False,Costa Rica,Roan Wilson,41676.0,unique
+3822,13790,Brandon Aguilera,AM,False,Costa Rica,Brandon Aguilera,54125.0,unique
+3822,13785,Gerson Torres,RM,False,Costa Rica,Gerson Torres,78277.0,unique
+3822,13789,Esteban Alvarado,GK,False,Costa Rica,Esteban Alvarado,21887.0,unique
+3822,13780,Keysher Fuller,RM,True,Costa Rica,Keysher Fuller,43988.0,unique
+3823,1267,Lucas Cavallini,CF,False,Canada,Lucas Cavallini,81349.0,unique
+3823,12315,Sam Adekugbe,LB,False,Canada,Sam Adekugbe,46624.0,unique
+3823,6916,Junior Hoilett,LW,True,Canada,Junior Hoilett,18987.0,unique
+3823,1226,Liam Fraser,DM,False,Canada,Liam Fraser,79097.0,unique
+3823,898,Samuel Piette,DM,False,Canada,Samuel Piette,68939.0,unique
+3823,11994,Dries Mertens,CF,False,Belgium,Dries Mertens,50485.0,unique
+3823,9090,Charles De Ketelaere,AM,False,Belgium,Charles De Ketelaere,17205.0,unique
+3823,4674,Axel Witsel,CM,True,Belgium,Axel Witsel,34670.0,unique
+3823,1228,Jonathan Osorio,CM,False,Canada,Jonathan Osorio,41138.0,unique
+3823,4611,Alphonso Davies,LWB,True,Canada,Alphonso Davies,79090.0,unique
+3823,4021,Jérémy Doku,RW,False,Belgium,Jeremy Doku,93919.0,unique
+3823,112,Michy Batshuayi,CF,True,Belgium,Michy Batshuayi,15152.0,unique
+3823,1289,Mark-Anthony Kaye,CM,False,Canada,Mark-Anthony Kaye,20134.0,unique
+3823,4498,Amadou Onana,DM,False,Belgium,Amadou Onana,47807.0,unique
+3823,926,Alistair Johnston,RCB,True,Canada,Alistair Johnston,29370.0,unique
+3823,9806,Lois Openda,CF,False,Belgium,Lois Openda,49240.0,unique
+3823,8551,Stephen Eustaquio,CM,True,Canada,Stephen Eustaquio,32259.0,unique
+3823,963,Tajon Buchanan,RW,True,Canada,Tajon Buchanan,21695.0,unique
+3823,1672,Thibaut Courtois,GK,True,Belgium,Thibaut Courtois,8819.0,unique
+3823,888,Joel Waterman,RCB,False,Canada,Joel Waterman,26450.0,unique
+3823,9071,Simon Mignolet,GK,False,Belgium,Simon Mignolet,77828.0,unique
+3823,9091,Hans Vanaken,AM,False,Belgium,Hans Vanaken,21092.0,unique
+3823,241,Leander Dendoncker,RCB,True,Belgium,Leander Dendoncker,33348.0,unique
+3823,14033,Liam Millar,LW,False,Canada,Liam Millar,55756.0,unique
+3823,8627,Atiba Hutchinson,CM,True,Canada,Atiba Hutchinson,88698.0,unique
+3823,3965,Jonathan David,CF,True,Canada,Jonathan David,75662.0,unique
+3823,22,Kevin De Bruyne,RW,True,Belgium,Kevin De Bruyne,83807.0,unique
+3823,861,Dayne St Clair,GK,False,Canada,Dayne St Clair,23301.0,unique
+3823,4684,Thorgan Hazard,LW,False,Belgium,Thorgan Hazard,29657.0,unique
+3823,455,Leandro Trossard,LW,False,Belgium,Leandro Trossard,20963.0,unique
+3823,11790,Steven Vitoria,MCB,True,Canada,Steven Vitoria,57058.0,unique
+3823,1960,Timothy Castagne,RWB,True,Belgium,Timothy Castagne,9280.0,unique
+3823,4112,Wout Faes,RCB,False,Belgium,Wout Faes,57199.0,unique
+3823,66,Toby Alderweireld,MCB,True,Belgium,Toby Alderweireld,90953.0,unique
+3823,1249,Derek Cornelius,LCB,False,Canada,Derek Cornelius,32248.0,unique
+3823,13853,Zeno Debast,RCB,False,Belgium,Zeno Debast,2358.0,unique
+3823,14031,Milan Borjan,GK,True,Canada,Milan Borjan,34868.0,unique
+3823,1025,Kamal Miller,LCB,True,Canada,Kamal Miller,2361.0,unique
+3823,1387,Yannick Carrasco,LWB,True,Belgium,Yannick Carrasco,81596.0,unique
+3823,2368,James Pantemis,GK,False,Canada,James Pantemis,52824.0,unique
+3823,9796,Arthur Theate,LCB,False,Belgium,Arthur Theate,82107.0,unique
+3823,67,Jan Vertonghen,LCB,True,Belgium,Jan Vertonghen,68196.0,unique
+3823,14032,David Wotherspoon,AM,False,Canada,David Wotherspoon,85756.0,unique
+3823,4979,Koen Casteels,GK,False,Belgium,Koen Casteels,80513.0,unique
+3823,4669,Thomas Meunier,RB,False,Belgium,Thomas Meunier,82751.0,unique
+3823,1694,Eden Hazard,LW,True,Belgium,Eden Hazard,59896.0,unique
+3823,7575,Iké Ugbo,CF,False,Canada,Iké Ugbo,50711.0,unique
+3823,1225,Richie Laryea,RWB,True,Canada,Richie Laryea,14401.0,unique
+3823,215,Youri Tielemans,CM,True,Belgium,Youri Tielemans,32066.0,unique
+3823,9094,Cyle Larin,LW,False,Canada,Cyle Larin,85012.0,unique
+3823,5173,Ismael Kone,CM,False,Canada,Ismael Kone,82305.0,unique
+3824,4174,Jean-Charles Castelletto,RCB,True,Cameroon,Jean-Charles Castelletto,82609.0,unique
+3824,13871,Devis Epassy,GK,False,Cameroon,Devis Epassy,82771.0,unique
+3824,13873,Pierre Kunde,CM,False,Cameroon,Pierre Kunde,57458.0,unique
+3824,4316,Enzo Ebosse,LB,False,Cameroon,Enzo Ebosse,57016.0,unique
+3824,5029,Silvan Widmer,RB,True,Switzerland,Silvan Widmer,90488.0,unique
+3824,13878,Jerome Mbekeli,LW,False,Cameroon,Jerome Mbekeli,,missing
+3824,13872,Collins Fai,RB,True,Cameroon,Collins Fai,26100.0,unique
+3824,13876,Christian Bassogog,RW,False,Cameroon,Christian Bassogog,21169.0,unique
+3824,1058,Olivier Mbaizo,RB,False,Cameroon,Olivier Mbaizo,90371.0,unique
+3824,1977,André Zambo Anguissa,CM,True,Cameroon,André Zambo Zambo,,missing
+3824,3970,Simon Ngapandouetnbu,GK,False,Cameroon,Simon Ngapandouetnbu,,missing
+3824,3934,Karl Toko Ekambi,LW,True,Cameroon,Karl Toko Ekambi,34264.0,unique
+3824,1168,Nouhou Tolo,LB,True,Cameroon,Nouhou Tolo,2830.0,unique
+3824,6655,Nicolas N'Koulou,LCB,True,Cameroon,Nicolas N'Koulou,54222.0,unique
+3824,8402,Nicolas Ngamaleu,LW,False,Cameroon,Nicolas Ngamaleu,,missing
+3824,8741,Gael Ondoua,DM,False,Cameroon,Gael Ondoua,45615.0,unique
+3824,12640,Martin Hongla,CM,True,Cameroon,Martin Hongla,67538.0,unique
+3824,13877,Souaibou Marou,CF,False,Cameroon,Souaibou Marou,,missing
+3824,13879,Jean Pierre Nsame,CF,False,Cameroon,Jean Pierre Nsame,6863.0,unique
+3824,5074,Bryan Mbeumo,RW,True,Cameroon,Bryan Mbeumo,39319.0,unique
+3824,13875,Vincent Aboubakar,CF,False,Cameroon,Vincent Aboubakar,49204.0,unique
+3824,4626,Eric Maxim Choupo-Moting,CF,True,Cameroon,Eric Maxim Choupo-Moting,5289.0,unique
+3824,13874,Samuel Oum Gouet,CM,True,Cameroon,Samuel Oum Gouet,67458.0,unique
+3824,8018,Andre Onana,GK,True,Cameroon,Andre Onana,85783.0,unique
+3824,8631,Georges-Kevin N'Koudou,LW,False,Cameroon,Georges-Kevin N'Koudou,43555.0,unique
+3824,4207,Christopher Wooh,RCB,False,Cameroon,Christopher Wooh,64441.0,unique
+3824,7605,Olivier Ntcham,CM,False,Cameroon,Olivier Ntcham,37342.0,unique
+3825,2075,Facundo Pellistri,RW,True,Uruguay,Facundo Pellistri,63141.0,unique
+3825,7469,Facundo Torres,LW,False,Uruguay,Facundo Torres,28695.0,unique
+3825,11961,Fernando Muslera,GK,False,Uruguay,Fernando Muslera,59569.0,unique
+3825,13926,Diego Godin,RCB,True,Uruguay,Diego Godin,92578.0,unique
+3825,13925,Sebastian Sosa,GK,False,Uruguay,Sebastian Sosa,,ambiguous
+3825,8133,Matias Vecino,CM,True,Uruguay,Matias Vecino,25269.0,unique
+3825,2077,Edinson Cavani,CF,False,Uruguay,Edinson Cavani,30340.0,unique
+3825,1368,Jose Gimenez,LCB,True,Uruguay,Jose Gimenez,,missing
+3825,13929,Nicolas De La Cruz,CM,False,Uruguay,Nicolas De La Cruz,52744.0,unique
+3825,8071,Sebastian Coates,RCB,False,Uruguay,Sebastian Coates,11566.0,unique
+3825,1836,Maxi Gomez,CF,False,Uruguay,Maxi Gomez,28041.0,unique
+3825,13462,Martín Cáceres,RB,True,Uruguay,Martín Cáceres,85599.0,unique
+3825,13930,Giorgian De Arrascaeta,AM,False,Uruguay,Giorgian De Arrascaeta,69785.0,unique
+3825,1535,Luis Suarez,CF,True,Uruguay,Luis Suarez,60829.0,unique
+3825,1684,Federico Valverde,CM,True,Uruguay,Federico Valverde,3452.0,unique
+3825,8078,Manuel Ugarte,DM,False,Uruguay,Manuel Ugarte,,missing
+3825,156,Lucas Torreira,DM,False,Uruguay,Lucas Torreira,30290.0,unique
+3825,7584,Rodrigo Bentancur,CM,True,Uruguay,Rodrigo Bentancur,21952.0,unique
+3825,8009,Darwin Nunez,LW,True,Uruguay,Darwin Nunez,28519.0,unique
+3825,13927,Guillermo Varela,RB,False,Uruguay,Guillermo Varela,34137.0,unique
+3825,1545,Mathí­as Olivera,LB,True,Uruguay,Mathí­as Olivera,24221.0,unique
+3825,13931,José Luis Rodríguez,RB,False,Uruguay,José Luis Rodríguez,65625.0,unique
+3825,13928,Agustin Canobbio,RW,False,Uruguay,Agustin Canobbio,29227.0,unique
+3825,13924,Sergio Rochet,GK,True,Uruguay,Sergio Rochet,47541.0,unique
+3825,12529,Matias Vina,LB,False,Uruguay,Matias Vina,3290.0,unique
+3826,11843,Issahaku Fatawu,AM,False,Ghana,Issahaku Fatawu,,missing
+3826,1363,Inaki Williams,CF,True,Ghana,Inaki Williams,39189.0,unique
+3826,9980,Daniel-Kofi Kyereh,AM,False,Ghana,Daniel-Kofi Kyereh,,missing
+3826,4404,Alidu Seidu,RWB,True,Ghana,Alidu Seidu,75795.0,unique
+3826,4408,Salis Abdul Samed,CM,True,Ghana,Salis Abdul Samed,47708.0,unique
+3826,1910,Mohammed Salisu,LCB,True,Ghana,Mohammed Salisu,4126.0,unique
+3826,213,Daniel Amartey,RCB,True,Ghana,Daniel Amartey,9595.0,unique
+3826,14039,Daniel Afriyie,LW,False,Ghana,Daniel Afriyie,5049.0,unique
+3826,4231,Alexander Djiku,MCB,True,Ghana,Alexander Djiku,25014.0,unique
+3826,14040,Andre Ayew,CF,True,Ghana,Andre Ayew,34595.0,unique
+3826,1453,Joseph Aidoo,RCB,False,Ghana,Joseph Aidoo,8989.0,unique
+3826,5085,Abdul Rahman Baba,LWB,True,Ghana,Abdul Rahman Baba,,missing
+3826,8031,Mohammed Kudus,CM,True,Ghana,Mohammed Kudus,66738.0,unique
+3826,4265,Gideon Mensah,LB,False,Ghana,Gideon Mensah,,ambiguous
+3826,14036,Abdul Nurudeen,GK,False,Ghana,Abdul Nurudeen,,missing
+3826,5178,Osman Bukari,RW,False,Ghana,Osman Bukari,86132.0,unique
+3826,3857,Danilo Pereira,LCB,True,Portugal,Danilo Pereira,52741.0,unique
+3826,7192,Antoine Semenyo,CF,False,Ghana,Antoine Semenyo,87997.0,unique
+3826,1975,Denis Odoi,RB,False,Ghana,Denis Odoi,90805.0,unique
+3826,1380,Thomas Partey,CM,True,Ghana,Thomas Partey,30383.0,unique
+3826,14034,Lawrence Ati Zigi,GK,True,Ghana,Lawrence Ati Zigi,59020.0,unique
+3826,14035,Ibrahim Danlad,GK,False,Ghana,Ibrahim Danlad,,missing
+3826,14038,Elisha Owusu,DM,False,Ghana,Elisha Owusu,83102.0,unique
+3826,444,Tariq Lamptey,RB,False,Ghana,Tariq Lamptey,89908.0,unique
+3826,483,Jordan Ayew,CF,False,Ghana,Jordan Ayew,80045.0,unique
+3826,9096,Kamal Sowah,RW,False,Ghana,Kamal Sowah,42800.0,unique
+3826,4020,Kamaldeen Sulemana,LW,False,Ghana,Kamaldeen Sulemana,60865.0,unique
+3827,3989,Nemanja Radonjic,LW,False,Serbia,Nemanja Radonjic,2325.0,unique
+3827,1550,Nemanja Maksimovic,DM,False,Serbia,Nemanja Maksimovic,280.0,unique
+3827,13216,Stefan Mitrović,RCB,False,Serbia,Stefan Mitrovic,,ambiguous
+3827,13906,Andrija Zivkovic,RWB,True,Serbia,Andrija Zivkovic,18395.0,unique
+3827,12643,Darko Lazović,LM,False,Serbia,Darko Lazović,29877.0,unique
+3827,12776,Filip Djuricic,AM,False,Serbia,Filip Djuricic,,missing
+3827,12653,Vanja Milinković-Savić,GK,True,Serbia,Vanja Milinković-Savić,58460.0,unique
+3827,12561,Sergej Milinković-Savić,LW,True,Serbia,Sergej Milinković-Savić,28881.0,unique
+3827,13904,Filip Mladenovic,LWB,True,Serbia,Filip Mladenovic,60018.0,unique
+3827,12576,Nikola Milenkovic,RCB,True,Serbia,Nikola Milenkovic,69919.0,unique
+3827,2071,Alex Telles,LB,False,Brazil,Alex Telles,84836.0,unique
+3827,12642,Ivan Ilić,CM,False,Serbia,Ivan Ilić,68582.0,unique
+3827,13151,Srdjan Babic,LCB,False,Serbia,Srdjan Babic,,missing
+3827,8059,Dušan Vlahović,CF,False,Serbia,Dušan Vlahović,44431.0,unique
+3827,1702,Luka Jovic,CF,False,Serbia,Luka Jovic,28560.0,unique
+3827,3880,Strahinja Pavlovic,LCB,True,Serbia,Strahinja Pavlovic,13537.0,unique
+3827,4109,Predrag Rajkovic,GK,False,Serbia,Predrag Rajkovic,32695.0,unique
+3827,9947,Milos Veljkovic,MCB,True,Serbia,Milos Veljkovic,60679.0,unique
+3827,30,Gabriel Jesus,CF,False,Brazil,Gabriel Jesus,66823.0,unique
+3827,13905,Strahinja Erakovic,RCB,False,Serbia,Strahinja Erakovic,86050.0,unique
+3827,1799,Nemanja Gudelj,CM,True,Serbia,Nemanja Gudelj,177.0,unique
+3827,12664,Saša Lukić,CM,True,Serbia,Saša Lukić,72963.0,unique
+3827,1991,Aleksandar Mitrovic,CF,True,Serbia,Aleksandar Mitrovic,21084.0,unique
+3827,8037,Dusan Tadić,RW,True,Serbia,Dusan Tadić,13294.0,unique
+3827,1957,Marko Grujic,CM,False,Serbia,Marko Grujic,51145.0,unique
+3827,1763,Marko Dmitrovic,GK,False,Serbia,Marko Dmitrovic,63013.0,unique
+3827,1827,Uros Racic,DM,False,Serbia,Uros Racic,92065.0,unique
+3827,4734,Filip Kostic,LM,False,Serbia,Filip Kostic,65100.0,unique
+3837,5139,Romelu Lukaku,CF,False,Belgium,Romelu Lukaku,34927.0,unique
+3843,6038,Nuno Mendes,LB,True,Portugal,Nuno Mendes,88845.0,unique
+3851,14008,Riad Sharahili,DM,False,Saudi Arabia,Riad Sharahili,,missing

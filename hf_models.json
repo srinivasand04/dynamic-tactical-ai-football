@@ -1,0 +1,41 @@
+{
+  "_about": "Open models used by the tactics AI. Each Hugging Face model is pinned to one commit and its big files to a sha256, stored under local_dir, and run on this machine only (no match data is sent anywhere). Add a model = add one entry, then: python scripts/hf_models.py fetch <name>.",
+  "models": {
+    "rfdetr_soccernet": {
+      "source": "huggingface",
+      "repo": "julianzu9612/RFDETR-Soccernet",
+      "revision": "1e388b922a64f2be39cbf1925e5fd5fc4f7dd771",
+      "license": "apache-2.0",
+      "local_dir": "data/external/hf/rfdetr_soccernet",
+      "files": ["README.md", "config.json", "model_metadata.json", "weights/checkpoint_best_regular.pth"],
+      "sha256": {"weights/checkpoint_best_regular.pth": "b9ade4bcc2316259582674ebeebbd27bb2e956480428c54114ace567237eb5f9"},
+      "env": ".venv-vision",
+      "used_by": ["scripts/vision_poc.py (RFDETRSoccerNet)", "scripts/track_eval.py --detector rfdetr_sn"],
+      "app_feature": "Video to board",
+      "load": "torch.load(weights_only=True) with only argparse.Namespace allowed"
+    },
+    "footballbert": {
+      "source": "huggingface",
+      "repo": "achadj/footballbert-base",
+      "revision": "2f9107d36a65cf5f1709ef71d0dd35fa0b6c08d7",
+      "license": "apache-2.0",
+      "local_dir": "data/external/hf/footballbert",
+      "files": ["README.md", "config.json", "model.safetensors", "player_vocab.json", "position_vocab.json", "season_vocab.json",
+                "special_tokens_map.json", "baller_id2player_names_99316p.pkl"],
+      "sha256": {"model.safetensors": "da22f95e1773df3bfca9273dff7de80796de4021c466b14b9a3bb317708b1c7b",
+                 "baller_id2player_names_99316p.pkl": "85c8d29a0ae749cf40d3289db9785b87aabe64f09a5e5efdc9ea20b2f7b0c2c8"},
+      "env": ".venv-vision",
+      "used_by": ["scripts/footballbert_trial.py", "scripts/export_player_cards.py", "scripts/train_gnn.py --player-emb"],
+      "app_feature": "Player cards",
+      "load": "safetensors weights in plain torch; the pickle is read with an unpickler that refuses every class"
+    },
+    "unravelsports": {
+      "source": "pypi",
+      "package": "unravelsports==1.2.1",
+      "license": "BSD-3-Clause",
+      "env": ".venv-unravel",
+      "used_by": ["scripts/unravel_trial.py", "scripts/pressing_from_csv.py", "scripts/export_pressing.py"],
+      "app_feature": "Pressing meter"
+    }
+  }
+}

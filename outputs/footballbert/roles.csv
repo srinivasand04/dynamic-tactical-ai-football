@@ -1,0 +1,3 @@
+task,players,majority,random_embedding,footballbert_fixed,footballbert_input
+line (4 classes),690,0.316,0.274,0.877,0.346
+role (13 classes),690,0.172,0.149,0.694,0.168
