@@ -1,6 +1,7 @@
 # Python environments and caches
 .venv/
 .venv-analysis/
+.venv-unravel/
 __pycache__/
 *.pyc
 
