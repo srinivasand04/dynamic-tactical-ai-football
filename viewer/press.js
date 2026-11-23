@@ -56,7 +56,7 @@ export function pressSeries(d, step = 5) {
     const pts = [], vel = [];
     for (let k = 0; k < 22; k++) {
       const a = i * 22 + k, b = j * 22 + k;
-      if (d.px[a] < 0) { pts.push(null); vel.push(null); continue; }
+      if (d.px[a] < 0 || (d.imp && d.imp[a])) { pts.push(null); vel.push(null); continue; }   // guessed players don't press
       pts.push([d.px[a] / 10, d.py[a] / 10]);
       vel.push(dt > 0 && dt < 1 && d.px[b] >= 0 ? [(d.px[b] - d.px[a]) / 10 / dt, (d.py[b] - d.py[a]) / 10 / dt] : [0, 0]);
     }

@@ -8,6 +8,8 @@ Shirt numbers are unknown from video: the label is the track number.
 
 Input : outputs/vision/tracks_sn/<clip>_positions.csv, <clip>_ball.csv
 Output: viewer/data/video_<clip>.json + its entry in viewer/data/index.json
+--fill: off-camera players are filled in by centroid voting (impute_offscreen.py, open method offscreen-impute) and
+        drawn as see-through ghosts (field "imp"); written as video_<clip>_filled.json, the plain files are kept.
 Usage : python scripts\\export_video_board.py SNGS-116 SNGS-117 SNGS-118
 """
 import argparse
@@ -24,7 +26,26 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DM = 10.0
 
 
-def export(clip, src="outputs/vision/tracks_sn", dry=False):
+def fill_offscreen(t, px, py, max_gap=20.0):
+    """Fill empty slots of players seen before (within max_gap s) with the centroid-voting guess. Returns the imp flags."""
+    from impute_offscreen import OffscreenImputer
+    imp = np.zeros(px.shape, int)
+    oi = OffscreenImputer()
+    for fi in range(len(t)):
+        vis = {tm: {s: (px[fi, s] / DM, py[fi, s] / DM) for s in range(11 * tm, 11 * tm + 11) if px[fi, s] >= 0} for tm in (0, 1)}
+        oi.update(float(t[fi]), vis)
+        for tm in (0, 1):
+            for s in range(11 * tm, 11 * tm + 11):
+                ls = oi.last_seen.get((tm, s))
+                if px[fi, s] >= 0 or ls is None or t[fi] - ls[1] > max_gap:
+                    continue
+                g = oi.guess(tm, s, float(t[fi]), vis[tm])
+                if g is not None:
+                    px[fi, s] = int(round(np.clip(g[0], 0, 105) * DM)); py[fi, s] = int(round(np.clip(g[1], 0, 68) * DM)); imp[fi, s] = 1
+    return imp
+
+
+def export(clip, src="outputs/vision/tracks_sn", dry=False, fill=False):
     os.chdir(ROOT)
     P = pd.read_csv(f"{src}/{clip}_positions.csv")
     Bf = f"{src}/{clip}_ball.csv"
@@ -78,6 +99,8 @@ def export(clip, src="outputs/vision/tracks_sn", dry=False):
                     a[i] = a[i - 1]
         else:
             a[:] = int(52.5 * DM) if a is bx else int(34 * DM)
+    seen_raw = (px >= 0).sum(1)
+    imp = fill_offscreen(t, px, py) if fill else None
     rosters, prev = [], None
     for fi in range(len(frames)):
         r = [int(x) for x in ids[fi]]
@@ -89,10 +112,16 @@ def export(clip, src="outputs/vision/tracks_sn", dry=False):
            "px": px.ravel().tolist(), "py": py.ravel().tolist(), "bx": bx.tolist(), "by": by.tolist(), "bz": [0] * F,
            "live": [1] * F, "sh": [0] * F, "sa": [0] * F, "rosters": rosters, "names": {"home": {}, "away": {}},
            "clock": [[float(t[0]), 0.0]], "layers": []}
+    if fill:
+        out["imp"] = imp.ravel().tolist()
     seen = (px >= 0).sum(1)
     if dry:
-        print(clip, F, "frames, players on board per frame", round(seen.mean(), 1), "ball frames", int((bx >= 0).sum()), "roster changes", len(rosters))
+        print(clip, F, "frames, players on board per frame", round(seen_raw.mean(), 1), "->", round(seen.mean(), 1), "ball frames", int((bx >= 0).sum()), "roster changes", len(rosters))
         return out
+    if fill:
+        write(out, f"video_{clip}_filled.json", f"Video to board, filled  |  SoccerNet clip {clip} (RF-DETR SoccerNet tracking; {seen_raw.mean():.0f} "
+                                                f"players in camera on average, off-camera players guessed by centroid voting -> {seen.mean():.0f}; guesses are ghosts)")
+        return
     write(out, f"video_{clip}.json", f"Video to board  |  SoccerNet clip {clip} (broadcast video, RF-DETR SoccerNet tracking; "
                                      f"only players in camera, on average {seen.mean():.0f})")
 
@@ -102,9 +131,10 @@ def main():
     ap.add_argument("clips", nargs="+")
     ap.add_argument("--src", default="outputs/vision/tracks_sn")
     ap.add_argument("--dry", action="store_true", help="check only, write nothing")
+    ap.add_argument("--fill", action="store_true", help="fill off-camera players (centroid voting), write video_<clip>_filled.json")
     a = ap.parse_args()
     for c in a.clips:
-        export(c, a.src, a.dry)
+        export(c, a.src, a.dry, a.fill)
 
 
 if __name__ == "__main__":

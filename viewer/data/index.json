@@ -78,5 +78,17 @@
  {
   "file": "video_SNGS-118.json",
   "title": "Video to board  |  SoccerNet clip SNGS-118 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 12)"
+ },
+ {
+  "file": "video_SNGS-116_filled.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-116 (RF-DETR SoccerNet tracking; 10 players in camera on average, off-camera players guessed by centroid voting -> 20; guesses are ghosts)"
+ },
+ {
+  "file": "video_SNGS-117_filled.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-117 (RF-DETR SoccerNet tracking; 3 players in camera on average, off-camera players guessed by centroid voting -> 16; guesses are ghosts)"
+ },
+ {
+  "file": "video_SNGS-118_filled.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-118 (RF-DETR SoccerNet tracking; 12 players in camera on average, off-camera players guessed by centroid voting -> 19; guesses are ghosts)"
  }
 ]

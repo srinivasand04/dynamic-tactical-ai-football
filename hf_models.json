@@ -1,41 +1,111 @@
 {
-  "_about": "Open models used by the tactics AI. Each Hugging Face model is pinned to one commit and its big files to a sha256, stored under local_dir, and run on this machine only (no match data is sent anywhere). Add a model = add one entry, then: python scripts/hf_models.py fetch <name>.",
-  "models": {
-    "rfdetr_soccernet": {
-      "source": "huggingface",
-      "repo": "julianzu9612/RFDETR-Soccernet",
-      "revision": "1e388b922a64f2be39cbf1925e5fd5fc4f7dd771",
-      "license": "apache-2.0",
-      "local_dir": "data/external/hf/rfdetr_soccernet",
-      "files": ["README.md", "config.json", "model_metadata.json", "weights/checkpoint_best_regular.pth"],
-      "sha256": {"weights/checkpoint_best_regular.pth": "b9ade4bcc2316259582674ebeebbd27bb2e956480428c54114ace567237eb5f9"},
-      "env": ".venv-vision",
-      "used_by": ["scripts/vision_poc.py (RFDETRSoccerNet)", "scripts/track_eval.py --detector rfdetr_sn"],
-      "app_feature": "Video to board",
-      "load": "torch.load(weights_only=True) with only argparse.Namespace allowed"
-    },
-    "footballbert": {
-      "source": "huggingface",
-      "repo": "achadj/footballbert-base",
-      "revision": "2f9107d36a65cf5f1709ef71d0dd35fa0b6c08d7",
-      "license": "apache-2.0",
-      "local_dir": "data/external/hf/footballbert",
-      "files": ["README.md", "config.json", "model.safetensors", "player_vocab.json", "position_vocab.json", "season_vocab.json",
-                "special_tokens_map.json", "baller_id2player_names_99316p.pkl"],
-      "sha256": {"model.safetensors": "da22f95e1773df3bfca9273dff7de80796de4021c466b14b9a3bb317708b1c7b",
-                 "baller_id2player_names_99316p.pkl": "85c8d29a0ae749cf40d3289db9785b87aabe64f09a5e5efdc9ea20b2f7b0c2c8"},
-      "env": ".venv-vision",
-      "used_by": ["scripts/footballbert_trial.py", "scripts/export_player_cards.py", "scripts/train_gnn.py --player-emb"],
-      "app_feature": "Player cards",
-      "load": "safetensors weights in plain torch; the pickle is read with an unpickler that refuses every class"
-    },
-    "unravelsports": {
-      "source": "pypi",
-      "package": "unravelsports==1.2.1",
-      "license": "BSD-3-Clause",
-      "env": ".venv-unravel",
-      "used_by": ["scripts/unravel_trial.py", "scripts/pressing_from_csv.py", "scripts/export_pressing.py"],
-      "app_feature": "Pressing meter"
-    }
+ "_about": "Open models used by the tactics AI. Each Hugging Face model is pinned to one commit and its big files to a sha256, stored under local_dir, and run on this machine only (no match data is sent anywhere). Add a model = add one entry, then: python scripts/hf_models.py fetch <name>.",
+ "models": {
+  "rfdetr_soccernet": {
+   "source": "huggingface",
+   "repo": "julianzu9612/RFDETR-Soccernet",
+   "revision": "1e388b922a64f2be39cbf1925e5fd5fc4f7dd771",
+   "license": "apache-2.0",
+   "local_dir": "data/external/hf/rfdetr_soccernet",
+   "files": [
+    "README.md",
+    "config.json",
+    "model_metadata.json",
+    "weights/checkpoint_best_regular.pth"
+   ],
+   "sha256": {
+    "weights/checkpoint_best_regular.pth": "b9ade4bcc2316259582674ebeebbd27bb2e956480428c54114ace567237eb5f9"
+   },
+   "env": ".venv-vision",
+   "used_by": [
+    "scripts/vision_poc.py (RFDETRSoccerNet)",
+    "scripts/track_eval.py --detector rfdetr_sn"
+   ],
+   "app_feature": "Video to board",
+   "load": "torch.load(weights_only=True) with only argparse.Namespace allowed"
+  },
+  "footballbert": {
+   "source": "huggingface",
+   "repo": "achadj/footballbert-base",
+   "revision": "2f9107d36a65cf5f1709ef71d0dd35fa0b6c08d7",
+   "license": "apache-2.0",
+   "local_dir": "data/external/hf/footballbert",
+   "files": [
+    "README.md",
+    "config.json",
+    "model.safetensors",
+    "player_vocab.json",
+    "position_vocab.json",
+    "season_vocab.json",
+    "special_tokens_map.json",
+    "baller_id2player_names_99316p.pkl"
+   ],
+   "sha256": {
+    "model.safetensors": "da22f95e1773df3bfca9273dff7de80796de4021c466b14b9a3bb317708b1c7b",
+    "baller_id2player_names_99316p.pkl": "85c8d29a0ae749cf40d3289db9785b87aabe64f09a5e5efdc9ea20b2f7b0c2c8"
+   },
+   "env": ".venv-vision",
+   "used_by": [
+    "scripts/footballbert_trial.py",
+    "scripts/export_player_cards.py",
+    "scripts/train_gnn.py --player-emb"
+   ],
+   "app_feature": "Player cards",
+   "load": "safetensors weights in plain torch; the pickle is read with an unpickler that refuses every class"
+  },
+  "unravelsports": {
+   "source": "pypi",
+   "package": "unravelsports==1.2.1",
+   "license": "BSD-3-Clause",
+   "env": ".venv-unravel",
+   "used_by": [
+    "scripts/unravel_trial.py",
+    "scripts/pressing_from_csv.py",
+    "scripts/export_pressing.py"
+   ],
+   "app_feature": "Pressing meter"
+  },
+  "tizero": {
+   "source": "huggingface",
+   "repo": "OpenRL/tizero",
+   "revision": "53ce96d7b8001936dd9e4efffb4a775d6397a076",
+   "license": "apache-2.0",
+   "local_dir": "models/tizero",
+   "files": [
+    "README.md",
+    "actor.pt",
+    "goal_keeper.py",
+    "openrl_policy.py",
+    "openrl_utils.py",
+    "submission.py"
+   ],
+   "sha256": {
+    "actor.pt": "f8baa698eddb42ea2bb30d6d748e6e6a508db87ecd7d7034b8ea09339b4ada76"
+   },
+   "env": ".venv",
+   "used_by": [
+    "scripts/tizero_eval.py (TiZero)",
+    "scripts/tizero_whatif.py",
+    "scripts/whatif.py --defender tizero"
+   ],
+   "app_feature": "GRF agent",
+   "result": "vs GRF built-in hard AI, 20 full games: won 75%, goal difference +1.55 +-0.70; as defender in what-if our attack scores 0 in 140 runs"
+  },
+  "offscreen_impute": {
+   "source": "github",
+   "repo": "nowayfootball/offscreen-impute",
+   "revision": "bddca37da7958456c340e540898ef59cc1fb1e16",
+   "license": "MIT",
+   "local_dir": "models/offscreen_impute",
+   "archive_sha256": "6beb25f22079a66796c056bb2bee349081429d465ef1bc59fd53427e06c7be61",
+   "fetch": "curl -L https://codeload.github.com/nowayfootball/offscreen-impute/tar.gz/<revision> | tar -xz --strip-components=1 -C models/offscreen_impute",
+   "env": ".venv-analysis",
+   "used_by": [
+    "scripts/impute_offscreen.py (centroid voting B4, pitch_control)",
+    "scripts/export_video_board.py --fill"
+   ],
+   "app_feature": "off-camera players",
+   "result": "DFL 7 matches, 44 m camera: hidden players 9.1 m median (B1 15.9, B2 12.2); with our learned correction 3.3 m; team pitch-control share error 11.2 -> 3.9 points"
   }
+ }
 }

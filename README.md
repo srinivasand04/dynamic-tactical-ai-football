@@ -84,7 +84,7 @@ flowchart TD
 | 2 Key States | frames where play moved by at least 3 m, sequences and their types | done |
 | 3 Graphs | Delaunay / radius graphs, ball-owner pass graph, GNN + GRU over Key States | done |
 | 4 Tactics | what-if in GRF, coach board, blame, tactics tournament (6 x 6 plans, 6,048 runs), what-if emulator | done |
-| 5 Agents | team models playing full GRF matches, team-vs-team league | first version (lose to GRF's own AI) |
+| 5 Agents | team models playing full GRF matches, team-vs-team league; TiZero (open agent) as strong player / defender | first version (our models lose to GRF's AI; TiZero beats it, +1.55 goals) |
 | App | 3-D viewer: replay, what-if ghosts, coach board, threat, pressing meter, player cards, video to board | done |
 
 ## Key results
@@ -108,6 +108,9 @@ Pinned in `hf_models.json` (repo, exact revision, sha256, licence); `scripts/hf_
 | RF-DETR SoccerNet | Hugging Face `julianzu9612/RFDETR-Soccernet` | `track_eval.py --detector rfdetr_sn`, `export_video_board.py` (video → 3-D board) | player coverage 0.85-0.92 → 0.93-0.95; ball now tracked (34-78% of frames); ID switches still high on one clip |
 | FootballBERT | Hugging Face `achadj/footballbert-base` | `export_fbert.py`: player cards (690 World Cup players, 5 most similar); `train_gnn.py --player-emb` | scouting: Messi → Suárez, Griezmann, Di María, Dybala, Cavani. Movement GNN: no gain (0.95 m without, 0.97 m with, shuffled 0.99 m, 3 held-out matches) |
 | unravelsports Pressing Intensity | PyPI `unravelsports==1.2.1` (BSD-3) | `unravel_trial.py`, `pressing_from_csv.py`, live in the viewer (`viewer/press.js`) | 7 DFL matches: high middle-third pressing → 2.1 pp fewer opponent shots (± 0.4); CSV port matches the package (r = 0.997) |
+| TiZero | Hugging Face `OpenRL/tizero` (Apache-2.0) | `tizero_eval.py`, `tizero_whatif.py`, `whatif.py --defender tizero` | vs GRF hard built-in AI (20 full games): won 75%, goals 2.70 - 1.15, GD +1.55 ± 0.70 (our team agents: about -9). As the defence in what-if, our attack scores 0 in 140 runs: earlier what-if gains (early pass +0.40) only hold against a weak defence |
+| offscreen-impute (centroid voting) | GitHub `nowayfootball/offscreen-impute` (MIT) | `impute_offscreen.py`, `export_video_board.py --fill` (off-camera players as ghosts) | DFL 7 matches, simulated 44 m camera (15 of 22 visible): hidden players 9.1 m median (last seen 15.9 m); team pitch-control share error 11.2 → 3.9 points; video boards 3-12 → 16-20 players |
+| Our learned filler (on top of centroid voting) | own model, UniTraj-style masking | `impute_offscreen.py learn` | hidden players **3.3 m** median (held-out matches): 1.0 m if hidden < 2 s, 3.5 m for 2-9.6 s, 6.1 m beyond |
 
 ## The viewer
 

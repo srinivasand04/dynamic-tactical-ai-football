@@ -387,6 +387,13 @@ function update() {
     const a = i * 22 + k, b = j * 22 + k;
     const x = d.px[a], y = d.py[a];
     const p = players[k];
+    const ig = impGhosts[k];
+    if (d.imp && d.imp[a] && x >= 0) {                  // a guessed (off-camera) player: ghost only
+      p.visible = false; p.userData.valid = false; ig.visible = !S.cb.on;
+      ig.position.set(X(lerp(x, d.px[b], f) / DM), 0, Z(lerp(y, d.py[b], f) / DM));
+      real.push(null); realVel.push(null); continue;
+    }
+    ig.visible = false;
     if (x < 0) { p.visible = false; p.userData.valid = false; real.push(null); realVel.push(null); continue; }
     p.visible = true; p.userData.valid = true;
     setMark(p, rm.has(k) && !S.cb.on);
@@ -655,6 +662,8 @@ const cbRings = players.map((p) => {
 const cbLinesGeo = new THREE.BufferGeometry(); cbLinesGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(22 * 2 * 3), 3));
 const cbLines = new THREE.LineSegments(cbLinesGeo, new THREE.LineDashedMaterial({ color: 0xffffff, dashSize: 0.8, gapSize: 0.5 }));
 cbLines.visible = false; scene.add(cbLines);
+// players filled in off camera (video boards with --fill, impute_offscreen.py): see-through, not used for pressing
+const impGhosts = players.map((p, k) => { const g = makePlayer(k < 11 ? HOME : AWAY, true); g.visible = false; return g; });
 const cbGhosts = players.map((p, k) => { const g = makePlayer(k < 11 ? HOME : AWAY, true); g.visible = false; return g; });   // where he really was
 
 function realNow() {                                   // real positions (m) at the board's frame, from the data
