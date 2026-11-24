@@ -507,14 +507,16 @@ def main():
     frames, tracks = {}, {}
     for scen in a.scenarios:
         fr = []
-        res, pl, bl, mirrored = play(a.segment, a.start_s, scen, a.shift, a.video_seed, a.seconds, models, video=fr, move=move)
+        res, pl, bl, mirrored = play(a.segment, a.start_s, scen, a.shift, a.video_seed, a.seconds, models, video=fr, move=move,
+                                     defender=a.defender)
         frames[scen] = fr
         if mirrored:
             pl, bl = flip(pl), flip(bl)
         n = pl.shape[1]
         sl = slice(i0, min(i0 + n, len(t_seg)))
         m = sl.stop - sl.start
-        path = f"{OUT}/grf_whatif_{base}_{scen}.npz" if scen != "move" else f"{OUT}/grf_whatif_{key}.npz"
+        tz = "_tzdef" if a.defender == "tizero" else ""                  # never overwrite the runs with our own defence
+        path = f"{OUT}/grf_whatif_{base}_{scen}{tz}.npz" if scen != "move" else f"{OUT}/grf_whatif_{key}.npz"
         np.savez_compressed(path, grf=pl[:, :m], ball_grf=bl[:m], real=real[:, sl], ball_real=z["ball"][sl], time_s=t_seg[sl],
                             live=z["live"][sl], scenario=scen, what_changed=describe(scen, a.shift, move), result=str(res))
         tracks[scen] = path

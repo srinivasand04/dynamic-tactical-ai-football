@@ -18,6 +18,7 @@
 <header id="top">
   <select id="file" title="Match or stretch (viewer/data/index.json)"></select>
   <button id="togglePanel" title="Show / hide the side panel (H)">Panel</button>
+  <button id="demoBtn" title="Guided demo: one real case, every model at work">&#9733; Demo</button>
   <select id="viewMode" title="How to compare the real match with a what-if run (V cycles)">
     <option value="split">Split: real | what-if</option>
     <option value="sim">What-if only</option>
@@ -83,7 +84,18 @@
 <div id="splitLine" class="hidden"></div>
 <div id="capL" class="splitcap hidden">REAL MATCH</div>
 <div id="capR" class="splitcap hidden">WHAT-IF</div>
+<div id="demo" class="hidden">
+  <div class="dhead"><span id="demoStep"></span><button id="demoClose" title="Close the demo">&times;</button></div>
+  <h3 id="demoTitle"></h3>
+  <p id="demoStory"></p>
+  <p id="demoResult"></p>
+  <div id="demoCard"></div>
+  <div id="demoBadges"></div>
+  <div class="dlegend"><span class="dbadge open">open model</span><span class="dbadge own">own_ model</span></div>
+  <div class="dnav"><button id="demoPrev">&larr; Back</button><button id="demoNext">Next &rarr;</button></div>
+</div>
 <div id="msg">Loading&hellip;</div>
 <script type="module" src="app.js"></script>
+<script type="module" src="demo.js"></script>
 </body>
 </html>

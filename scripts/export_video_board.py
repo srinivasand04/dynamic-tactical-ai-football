@@ -26,26 +26,39 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DM = 10.0
 
 
-def fill_offscreen(t, px, py, max_gap=20.0):
-    """Fill empty slots of players seen before (within max_gap s) with the centroid-voting guess. Returns the imp flags."""
-    from impute_offscreen import OffscreenImputer
+def fill_offscreen(t, px, py, bx=None, by=None, max_gap=20.0, learned=False):
+    """Fill empty slots of players seen before (within max_gap s): centroid-voting guess (open offscreen-impute), and with
+    learned=True corrected by own_LearnedFiller (impute_offscreen.py learn). Returns the imp flags."""
+    from impute_offscreen import OffscreenImputer, LearnedFiller
+    lf = LearnedFiller() if learned else None
     imp = np.zeros(px.shape, int)
     oi = OffscreenImputer()
     for fi in range(len(t)):
         vis = {tm: {s: (px[fi, s] / DM, py[fi, s] / DM) for s in range(11 * tm, 11 * tm + 11) if px[fi, s] >= 0} for tm in (0, 1)}
         oi.update(float(t[fi]), vis)
+        allv = [p for tm in (0, 1) for p in vis[tm].values()]
+        camx = float(np.mean([p[0] for p in allv])) if allv else 52.5
+        ball = (bx[fi] / DM, by[fi] / DM) if bx is not None and bx[fi] >= 0 else (camx, 34.0)
+        todo, rows = [], []
         for tm in (0, 1):
+            cen = np.mean(list(vis[tm].values()), axis=0) if vis[tm] else np.array([52.5, 34.0])
             for s in range(11 * tm, 11 * tm + 11):
                 ls = oi.last_seen.get((tm, s))
                 if px[fi, s] >= 0 or ls is None or t[fi] - ls[1] > max_gap:
                     continue
-                g = oi.guess(tm, s, float(t[fi]), vis[tm])
-                if g is not None:
-                    px[fi, s] = int(round(np.clip(g[0], 0, 105) * DM)); py[fi, s] = int(round(np.clip(g[1], 0, 68) * DM)); imp[fi, s] = 1
+                g = {m: oi.guess(tm, s, float(t[fi]), vis[tm], m) for m in ("b4", "b1", "b2")}
+                if g["b4"] is None:
+                    continue
+                lv = oi.vels.get((tm, s), (0.0, 0.0))
+                todo.append(s)
+                rows.append([*g["b4"], *g["b1"], *g["b2"], *ls[0], min(float(t[fi] - ls[1]), 30.0), *lv, *cen, *ball, camx, len(vis[tm])])
+        est = lf.correct(rows) if lf is not None else np.array([r[:2] for r in rows]).reshape(-1, 2)
+        for s, (x, y) in zip(todo, est):
+            px[fi, s] = int(round(np.clip(x, 0, 105) * DM)); py[fi, s] = int(round(np.clip(y, 0, 68) * DM)); imp[fi, s] = 1
     return imp
 
 
-def export(clip, src="outputs/vision/tracks_sn", dry=False, fill=False):
+def export(clip, src="outputs/vision/tracks_sn", dry=False, fill=False, learned=False):
     os.chdir(ROOT)
     P = pd.read_csv(f"{src}/{clip}_positions.csv")
     Bf = f"{src}/{clip}_ball.csv"
@@ -100,7 +113,9 @@ def export(clip, src="outputs/vision/tracks_sn", dry=False, fill=False):
         else:
             a[:] = int(52.5 * DM) if a is bx else int(34 * DM)
     seen_raw = (px >= 0).sum(1)
-    imp = fill_offscreen(t, px, py) if fill else None
+    imp = None
+    if fill:                                                           # after the ball is known (used by the learned filler)
+        imp = fill_offscreen(t, px, py, bx, by, learned=learned)
     rosters, prev = [], None
     for fi in range(len(frames)):
         r = [int(x) for x in ids[fi]]
@@ -119,8 +134,9 @@ def export(clip, src="outputs/vision/tracks_sn", dry=False, fill=False):
         print(clip, F, "frames, players on board per frame", round(seen_raw.mean(), 1), "->", round(seen.mean(), 1), "ball frames", int((bx >= 0).sum()), "roster changes", len(rosters))
         return out
     if fill:
-        write(out, f"video_{clip}_filled.json", f"Video to board, filled  |  SoccerNet clip {clip} (RF-DETR SoccerNet tracking; {seen_raw.mean():.0f} "
-                                                f"players in camera on average, off-camera players guessed by centroid voting -> {seen.mean():.0f}; guesses are ghosts)")
+        how = "own_LearnedFiller" if learned else "centroid voting"
+        write(out, f"video_{clip}_filled{'_learned' if learned else ''}.json", f"Video to board, filled  |  SoccerNet clip {clip} (RF-DETR SoccerNet tracking; "
+              f"{seen_raw.mean():.0f} players in camera on average, off-camera players by {how} -> {seen.mean():.0f}; guesses are ghosts)")
         return
     write(out, f"video_{clip}.json", f"Video to board  |  SoccerNet clip {clip} (broadcast video, RF-DETR SoccerNet tracking; "
                                      f"only players in camera, on average {seen.mean():.0f})")
@@ -132,9 +148,10 @@ def main():
     ap.add_argument("--src", default="outputs/vision/tracks_sn")
     ap.add_argument("--dry", action="store_true", help="check only, write nothing")
     ap.add_argument("--fill", action="store_true", help="fill off-camera players (centroid voting), write video_<clip>_filled.json")
+    ap.add_argument("--learned", action="store_true", help="with --fill: correct the guesses with own_LearnedFiller (video_<clip>_filled_learned.json)")
     a = ap.parse_args()
     for c in a.clips:
-        export(c, a.src, a.dry, a.fill)
+        export(c, a.src, a.dry, a.fill, a.learned)
 
 
 if __name__ == "__main__":

@@ -90,5 +90,21 @@
  {
   "file": "video_SNGS-118_filled.json",
   "title": "Video to board, filled  |  SoccerNet clip SNGS-118 (RF-DETR SoccerNet tracking; 12 players in camera on average, off-camera players guessed by centroid voting -> 19; guesses are ghosts)"
+ },
+ {
+  "file": "video_SNGS-116_filled_learned.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-116 (RF-DETR SoccerNet tracking; 10 players in camera on average, off-camera players by own_LearnedFiller -> 20; guesses are ghosts)"
+ },
+ {
+  "file": "video_SNGS-117_filled_learned.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-117 (RF-DETR SoccerNet tracking; 3 players in camera on average, off-camera players by own_LearnedFiller -> 16; guesses are ghosts)"
+ },
+ {
+  "file": "video_SNGS-118_filled_learned.json",
+  "title": "Video to board, filled  |  SoccerNet clip SNGS-118 (RF-DETR SoccerNet tracking; 12 players in camera on average, off-camera players by own_LearnedFiller -> 19; guesses are ghosts)"
+ },
+ {
+  "file": "J03WOH_demo_tzdef.json",
+  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Early pass, our model defends (goal at 10.3 s), Early pass, TiZero defends (0 shots)"
  }
 ]

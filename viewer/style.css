@@ -85,3 +85,23 @@ button[disabled] { opacity: 0.45; cursor: default; }
 #pcard table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 4px; }
 #pcard td { padding: 2px 4px; border-bottom: 1px solid var(--line); }
 #pcard td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Demo mode (demo.js) */
+#demoBtn { background: #F2A541; color: #1a1406; font-weight: 600; }
+#demo { position: fixed; left: 16px; bottom: 96px; width: 440px; max-width: calc(100vw - 32px); background: rgba(12, 22, 18, 0.94);
+  border: 1px solid #2C4538; border-radius: 14px; padding: 14px 16px; color: #F4F6F1; z-index: 30; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+#demo.hidden { display: none; }
+#demo .dhead { display: flex; justify-content: space-between; color: #8FA89B; font-size: 13px; }
+#demo .dhead button { background: none; border: none; color: #8FA89B; font-size: 20px; cursor: pointer; }
+#demo h3 { margin: 4px 0 6px; font-size: 18px; }
+#demo p { margin: 4px 0; font-size: 14px; line-height: 1.4; color: #C9D8CF; }
+#demoResult { color: #9BE3BD !important; }
+#demoCard { font-size: 13px; }
+#demoCard table { width: 100%; font-size: 13px; }
+#demoBadges, .dlegend { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.dlegend { opacity: .7; }
+.dbadge { font-size: 12px; padding: 3px 9px; border-radius: 999px; font-weight: 600; }
+.dbadge.open { background: #F2A541; color: #1a1406; }
+.dbadge.own { background: #3CC985; color: #06160d; }
+#demo .dnav { display: flex; justify-content: space-between; margin-top: 10px; }
+#demo .dnav button { padding: 6px 14px; }

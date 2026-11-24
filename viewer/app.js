@@ -905,6 +905,7 @@ function loop(now) {
 }
 window.__viewer = S;                                     // for debugging in the browser console
 window.__viewerPlayers = players;
+window.__cardFor = cardFor;                               // used by demo.js (opens a FootballBERT card)
 window.__viewerStep = () => { update(); placeCamera(0.016, false); renderView(); };
 Promise.all([loadThreat(), loadCards()]).then(() => loadIndex()).then(() => setCam('broadcast')).catch(fail);
 requestAnimationFrame(loop);

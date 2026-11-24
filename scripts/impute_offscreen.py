@@ -239,6 +239,27 @@ def features(P):
     return np.c_[X, X[:, 0] / L, X[:, 1] / W]
 
 
+class LearnedFiller:
+    """own_LearnedFiller: the trained correction (impute_model.pt) applied to centroid-voting guesses.
+    rows: list of dicts with the FEAT keys (b4/b1/b2 guesses, last seen spot, gap, last speed, team centre, ball, camera x, n visible)."""
+
+    def __init__(self, path=os.path.join(OUT, "impute_model.pt")):
+        import torch
+        M = torch.load(path, weights_only=False)
+        self.torch, self.mu, self.sd = torch, M["mu"], M["sd"]
+        self.net = torch.nn.Sequential(torch.nn.Linear(len(self.mu), 64), torch.nn.ReLU(), torch.nn.Linear(64, 64), torch.nn.ReLU(),
+                                       torch.nn.Linear(64, 2))
+        self.net.load_state_dict(M["state"]); self.net.eval()
+
+    def correct(self, rows):
+        if not rows:
+            return np.zeros((0, 2))
+        P = pd.DataFrame(rows, columns=FEAT)
+        with self.torch.no_grad():
+            c = self.net(self.torch.tensor((features(P) - self.mu) / self.sd, dtype=self.torch.float32)).numpy()
+        return P[["b4x", "b4y"]].to_numpy() + c
+
+
 def learn(a):
     import torch
     torch.manual_seed(0)
