@@ -36,6 +36,7 @@ LATEST = {"Argentina": "10517", "France": "10515", "Croatia": "10516"}     # the
 # GRF's team names (long name, 3-letter code) for the left and the right team, compiled into the engine like the players
 GRF_TEAMS = [("Frequentists United", "FRQ"), ("Real Bayesians", "RBA")]
 MATCHES = os.path.join(ROOT, "data", "real", "matches.csv")
+_LOADED = None                                 # labels of the engine copy already put on sys.path in this run
 
 
 def ascii_name(s):
@@ -125,6 +126,9 @@ def use_names(left=None, right=None, teams=None):
     """left/right: (names, shirts) for GRF's left/right team in slot order, or None to keep GRF's names.
     teams: (left club, right club), a name or None each, for the score board and the goal banner.
     Call before gfootball is imported. Returns the labels written."""
+    global _LOADED
+    if _LOADED is not None:                    # a second call in the same run (grf_match imports grf_goal): keep the first
+        return _LOADED
     if "gfootball_engine" in sys.modules:
         print("grf_names: GRF is already loaded in this process; names unchanged")
         return None
@@ -159,6 +163,7 @@ def use_names(left=None, right=None, teams=None):
     os.environ.setdefault("GFOOTBALL_DATA_DIR", os.path.join(src, "data"))          # GRF's own data and font, from the install
     os.environ.setdefault("GFOOTBALL_FONT", os.path.join(src, "fonts", "AlegreyaSansSC-ExtraBold.ttf"))
     sys.path.insert(0, os.path.dirname(dst))
+    _LOADED = labels
     return labels
 
 

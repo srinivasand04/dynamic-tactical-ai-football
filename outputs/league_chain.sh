@@ -1,4 +1,4 @@
-cd /c/Users/Srinivasan/grf-prototype
+cd /d/grf-prototype
 until grep -q "^finished in" outputs/team_policy_log.txt && [ -f outputs/team_policy/pff_decisions.json ] && grep -q "^wrote outputs/team_policy/pff_decisions.json" outputs/team_decisions_log.txt; do sleep 30; done
 echo "== $(date) models ready, league starts"
 .venv/Scripts/python.exe scripts/team_league.py --teams Argentina France Croatia --games 6 --ai-games 4 --procs 5 > outputs/team_league_log.txt 2>&1

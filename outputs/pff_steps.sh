@@ -1,4 +1,4 @@
-cd /c/Users/Srinivasan/grf-prototype
+cd /d/grf-prototype
 while ! grep -q "^converted" outputs/convert_pff_log.txt; do sleep 20; done
 echo "== conversion finished"; grep "^converted" outputs/convert_pff_log.txt
 for g in $(grep -o "'match_id': '[0-9]*', 'error'" outputs/convert_pff_log.txt | grep -o "[0-9]\{4,5\}"); do echo "== redo $g"; python scripts/convert_pff.py $g; done

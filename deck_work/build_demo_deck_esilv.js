@@ -310,7 +310,7 @@ function rows(s, x, y, widths, data, o = {}) {
 {
   const s = pres.addSlide();
   frame(s, 10, "Demo commands: scores, GRF, Three.js and videos");
-  txt(s, "Run every command from:  cd C:\\Users\\Srinivasan\\grf-prototype", 1.12, 1.48, 11.2, 0.3, { size: 11.5, bold: true, color: C.gray, font: MONO });
+  txt(s, "Run every command from:  cd D:\\grf-prototype", 1.12, 1.48, 11.2, 0.3, { size: 11.5, bold: true, color: C.gray, font: MONO });
   const g = [
     ["1  SCORES", [["League table (models vs models)", "python scripts\\team_league.py --report"],
       ["What-if results table", "type outputs\\whatif\\J03WOH_3500_3610_summary.csv"], ["What-if chart", "start outputs\\whatif\\J03WOH_3500_3610_chart.png"]]],

@@ -26,6 +26,10 @@ def sha256(path):
 
 def verify(name):
     m = REG[name]
+    if m["source"] == "github":                                           # code pinned to a commit, unpacked in local_dir
+        here = os.path.isdir(os.path.join(ROOT, m["local_dir"]))
+        print(f"{name}: {m['repo']} @{m['revision'][:7]} {'present' if here else 'missing (see its fetch line)'}")
+        return here
     if m["source"] != "huggingface":
         try:
             from importlib.metadata import version

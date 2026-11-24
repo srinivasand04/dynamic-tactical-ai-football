@@ -1,4 +1,4 @@
-cd /c/Users/Srinivasan/grf-prototype
+cd /d/grf-prototype
 PYA=.venv-analysis/Scripts/python.exe
 waitpid() { while powershell -NoProfile -Command "if (Get-Process -Id $1 -ErrorAction SilentlyContinue) {exit 0} else {exit 1}"; do sleep 30; done; }
 echo "== $(date) waiting for the running team-model jobs (pff 22276, skillcorner 19528)"
