@@ -1,0 +1,33 @@
+C2. Match phase x score: 6488 minutes on the pitch, 9136 actions, 71 club matches; minutes leading 42%, drawing 41%, trailing 17%
+  by bucket:
+    0-15        1035 min  threat/90 0.064  actions/90 132.9  forward 42.3%  loss 10.3%  long 10.6%  height 53.6 m
+    15-30       1035 min  threat/90 0.129  actions/90 136.9  forward 44.6%  loss  8.0%  long 11.8%  height 55.9 m
+    30-45+      1035 min  threat/90 0.118  actions/90 131.6  forward 45.2%  loss  8.1%  long  9.6%  height 57.1 m
+    45-60       1035 min  threat/90 0.109  actions/90 128.4  forward 47.2%  loss 11.7%  long 11.6%  height 55.3 m
+    60-75       1028 min  threat/90 0.148  actions/90 118.5  forward 48.3%  loss  8.1%  long 11.7%  height 55.4 m
+    75-90+      1320 min  threat/90 0.140  actions/90 115.2  forward 49.2%  loss 10.8%  long  9.8%  height 55.5 m
+  by state:
+    drawing     2659 min  threat/90 0.123  actions/90 131.8  forward 47.1%  loss 10.3%  long 11.6%  height 56.5 m
+    leading     2729 min  threat/90 0.096  actions/90 130.1  forward 42.9%  loss  8.5%  long  9.4%  height 53.9 m
+    trailing    1100 min  threat/90 0.164  actions/90 106.1  forward 51.5%  loss 10.1%  long 12.5%  height 57.2 m
+  held out (5 folds by match), forward pass: log-loss location only 0.6872 -> + minute and score 0.6852 (+0.30%)
+  held out (5 folds by match), pass loss   : log-loss location only 0.3142 -> + minute and score 0.3151 (-0.30%)
+  what-if (his model, average club context):  minute  state     forward  loss   threat/90
+     10  trailing   44.5%   7.4%  0.128
+     10  drawing    43.9%  10.2%  0.098
+     10  leading    38.5%   7.6%  0.050
+     30  trailing   47.4%   8.0%  0.149
+     30  drawing    47.5%  10.2%  0.121
+     30  leading    41.1%   8.0%  0.071
+     50  trailing   49.9%   8.8%  0.169
+     50  drawing    50.6%  10.4%  0.141
+     50  leading    43.3%   8.5%  0.090
+     70  trailing   52.1%  10.0%  0.187
+     70  drawing    53.4%  10.9%  0.160
+     70  leading    45.1%   9.2%  0.107
+     85  trailing   53.4%  11.1%  0.199
+     85  drawing    55.2%  11.4%  0.174
+     85  leading    46.3%   9.9%  0.119
+  -> Last 15 minutes vs first 15: threat per 90 0.064 -> 0.140, pass loss 10.3% -> 10.8%, height 54 -> 56 m.
+  -> Minute 70, leading: forward passes 45% vs drawing 53% and trailing 52%.
+  -> Minute 85, trailing: pass loss 11.1% vs 11.4% drawing; threat per 90 0.199 vs 0.174.

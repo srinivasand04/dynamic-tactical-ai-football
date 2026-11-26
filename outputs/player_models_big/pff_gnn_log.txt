@@ -1,0 +1,36 @@
+fold 0: 48 training matches loaded (7s)
+  Bundesliga start: validation error 1.261 m
+  epoch 1: validation error 1.037 m (161s)
+  epoch 2: validation error 1.039 m (173s)
+  epoch 3: validation error 0.989 m (185s)
+  epoch 4: validation error 0.989 m (175s)
+  epoch 5: validation error 1.038 m (180s)
+saved D:\grf-prototype\outputs\player_models_big\pff_gnn_fold0.pt; best validation 0.989 m (start 1.261); 15 min
+fold 1: 48 training matches loaded (9s)
+  Bundesliga start: validation error 1.269 m
+  epoch 1: validation error 1.046 m (313s)
+  epoch 2: validation error 1.060 m (287s)
+  epoch 3: validation error 1.030 m (277s)
+  epoch 4: validation error 0.960 m (287s)
+  epoch 5: validation error 0.978 m (297s)
+  epoch 6: validation error 1.006 m (285s)
+saved D:\grf-prototype\outputs\player_models_big\pff_gnn_fold1.pt; best validation 0.960 m (start 1.269); 29 min
+fold 2: 48 training matches loaded (11s)
+  Bundesliga start: validation error 1.267 m
+  epoch 1: validation error 1.083 m (272s)
+  epoch 2: validation error 1.062 m (271s)
+  epoch 3: validation error 0.988 m (273s)
+  epoch 4: validation error 0.997 m (275s)
+  epoch 5: validation error 1.006 m (284s)
+saved D:\grf-prototype\outputs\player_models_big\pff_gnn_fold2.pt; best validation 0.988 m (start 1.267); 23 min
+fold 3: 48 training matches loaded (11s)
+  Bundesliga start: validation error 1.266 m
+  epoch 1: validation error 1.027 m (290s)
+  epoch 2: validation error 1.082 m (290s)
+  epoch 3: validation error 1.010 m (294s)
+  epoch 4: validation error 0.994 m (293s)
+  epoch 5: validation error 0.998 m (226s)
+  epoch 6: validation error 0.945 m (199s)
+  epoch 7: validation error 0.965 m (220s)
+  epoch 8: validation error 0.975 m (218s)
+saved D:\grf-prototype\outputs\player_models_big\pff_gnn_fold3.pt; best validation 0.945 m (start 1.266); 34 min

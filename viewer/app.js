@@ -18,6 +18,7 @@ const pct = (p) => (100 * p).toFixed(p < 0.1 ? 1 : 0);
 const S = { data: null, t: 0, t0: 0, t1: 1, playing: false, speed: 1, cam: 'broadcast', roster: null, rosterIdx: -1,
             showNumbers: true, showNames: false, showTrail: true, layers: [], threatState: {}, pressState: {}, press: null, cards: null, animDt: 0,
             view: { mode: 'overlay', layer: -1, inside: false },
+            focus: { all: false, real: -1 },     // compare views: only the focus player gets a ghost and paths (all = every ghost + lines)
             cb: { on: false, t: 0, team: 'home', board: 'defence', allowed: [], moves: {}, start: {}, drag: -1, threat0: null } };
 
 // ---------- scene ----------
@@ -237,7 +238,8 @@ async function loadFile(name) {
   S.rosterIdx = -1; S.threatState = {};
   $('home').textContent = d.home; $('away').textContent = d.away;
   $('seek').min = S.t0; $('seek').max = S.t1; $('seek').value = S.t0;
-  for (const l of S.layers) { l.meshes.forEach((m) => scene.remove(m)); scene.remove(l.ball); scene.remove(l.links); }
+  for (const l of S.layers) { l.meshes.forEach((m) => scene.remove(m)); scene.remove(l.ball); scene.remove(l.links); scene.remove(l.pathReal); scene.remove(l.pathSim); }
+  S.focus.real = -1;
   S.layers = d.layers.map((ld, li) => {
     const col = LAYER_COLORS[li % LAYER_COLORS.length];
     const meshes = Array.from({ length: 22 }, (_, k) => {
@@ -252,7 +254,15 @@ async function loadFile(name) {
     const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(23 * 2 * 3), 3));
     const links = new THREE.LineSegments(lg, new THREE.LineBasicMaterial({ color: col, transparent: true, opacity: 0.7 }));
     scene.add(links);
-    return { d: ld, col, meshes, ball: b, links, show: li < 2, showLinks: true, pair: null, threatState: {} };     // many layers: the first two shown
+    // focus paths: where the focus player really ran (white) and where he ran in this what-if (dashed, gold)
+    const path = (mat) => {
+      const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(PATH_N * 3), 3));
+      const ln = new THREE.Line(g, mat); ln.visible = false; ln.frustumCulled = false; ln.renderOrder = 5; scene.add(ln); return ln;
+    };
+    const pathReal = path(new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.9 }));
+    const pathSim = path(new THREE.LineDashedMaterial({ color: 0xffc83d, dashSize: 0.9, gapSize: 0.45 }));
+    return { d: ld, col, meshes, ball: b, links, pathReal, pathSim, pathOn: false, show: li < 2, showLinks: true, pair: null, auto: null,
+             threatState: {} };     // many layers: the first two shown
   });
   S.pressState = {};
   const pstep = Math.max(1, Math.round((d.fps || 10) / 2));          // pressing timeline at about 2 values per second
@@ -316,6 +326,83 @@ function setupView(d) {
   vm.value = S.view.mode === 'real' && !S.layers.length ? 'real' : S.view.mode;
   simPlayers.forEach((p) => { p.userData.lbl = null; });
 }
+// ---------- focus player: the one player whose run the what-if changed ----------
+const PATH_N = 400;
+// ghost slots of layer l to show: the player clicked on the pitch, else the players the coach moved, else the player whose
+// run differs most from the real one over the run (keepers left out)
+// One focus player for every layer (a real-roster slot), so all runs show the same man.
+function focusReal() {
+  if (S.focus.real >= 0) return S.focus.real;
+  const ml = S.layers.find((l) => l.moved && l.moved.length);
+  if (ml && S.roster) {
+    const m = ml.moved[0], s0 = m.side === 'home' ? 0 : 11;
+    for (let k = s0; k < s0 + 11; k++) if (+S.roster[k] === m.shirt) return k;
+  }
+  const l = S.layers[S.view.layer] || S.layers[0];
+  if (!l || !l.pair) return -1;
+  if (!l.auto) l.auto = autoFocus(l);
+  const k = [...l.auto][0];
+  return k >= 0 ? l.pair[k] : -1;
+}
+function focusGhosts(l) {
+  if (!l || !l.pair) return new Set();
+  const s = focusReal(), k = s >= 0 ? l.pair.indexOf(s) : -1;
+  return new Set(k >= 0 ? [k] : []);
+}
+function autoFocus(l) {
+  const d = S.data, ld = l.d, sum = new Float64Array(22), n = new Uint32Array(22);
+  const stop = l.tStop ?? ld.t[ld.t.length - 1];
+  for (let gi = 0; gi < ld.t.length && ld.t[gi] <= stop; gi += 2) {
+    const [ri] = frameAt(d.t, ld.t[gi]);
+    for (let k = 0; k < 22; k++) {
+      const s = l.pair[k], a = gi * 22 + k, b = ri * 22 + s;
+      if (k === 0 || k === 11 || s < 0 || ld.px[a] < 0 || d.px[b] < 0) continue;
+      sum[k] += Math.hypot(ld.px[a] - d.px[b], ld.py[a] - d.py[b]) / DM; n[k]++;
+    }
+  }
+  let best = -1, bv = -1;
+  for (let k = 0; k < 22; k++) if (n[k] && sum[k] / n[k] > bv) { bv = sum[k] / n[k]; best = k; }
+  return new Set(best >= 0 ? [best] : []);
+}
+// the layer the focus note talks about: the chosen what-if in split / what-if views, else the first shown layer
+function focusLayer() { return S.layers[S.view.layer]; }   // the run chosen in the top bar
+// real slots of the focus players (marked with the yellow arrow and ring on the real pitch)
+function realFocusSlots() {
+  const s = S.layers.length ? focusReal() : -1;
+  return new Set(s >= 0 ? [s] : []);
+}
+// the two paths of the focus player of layer l from the start of the run to now, and the gap between his two spots now
+function drawPaths(l, tNow) {
+  const d = S.data, ld = l.d, fg = [...focusGhosts(l)];
+  l.pathOn = false;
+  if (!fg.length || !ld.t.length) return null;
+  const k = fg[0], s = l.pair[k];
+  if (s < 0) return null;
+  const pr = l.pathReal.geometry.attributes.position, ps = l.pathSim.geometry.attributes.position;
+  const stop = Math.min(tNow, l.tStop ?? ld.t[ld.t.length - 1]);
+  let n = 0, last = null;
+  const step = Math.max(1, Math.ceil(ld.t.length / PATH_N));
+  for (let gi = 0; gi < ld.t.length && ld.t[gi] <= stop + 1e-6 && n < PATH_N; gi += step) {
+    const a = gi * 22 + k, [ri] = frameAt(d.t, ld.t[gi]), b = ri * 22 + s;
+    if (ld.px[a] < 0 || d.px[b] < 0) continue;
+    ps.setXYZ(n, X(ld.px[a] / DM), 0.12, Z(ld.py[a] / DM));
+    pr.setXYZ(n, X(d.px[b] / DM), 0.12, Z(d.py[b] / DM));
+    last = [ld.px[a] / DM, ld.py[a] / DM, d.px[b] / DM, d.py[b] / DM];
+    n++;
+  }
+  pr.needsUpdate = ps.needsUpdate = true;
+  l.pathReal.geometry.setDrawRange(0, n); l.pathSim.geometry.setDrawRange(0, n);
+  l.pathSim.computeLineDistances();
+  l.pathOn = n > 1;
+  if (!last) return null;
+  const dir = s < 11 ? 1 : -1;                                     // home attacks towards x = 105
+  return { slot: s, gap: Math.hypot(last[0] - last[2], last[1] - last[3]), fwd: (last[0] - last[2]) * dir };
+}
+function focusName(s) {
+  const side = s < 11 ? 'home' : 'away', n = S.roster ? S.roster[s] : -1;
+  return ((S.data.names && S.data.names[side]) || {})[String(n)] || `#${n}`;
+}
+
 // the real players the chosen what-if moved (slots in the real roster), so they can be marked too
 function realMovedSlots() {
   const vl = S.layers[S.view.layer], out = new Set();
@@ -373,7 +460,7 @@ function update() {
       p.userData.shirt.setHex(k === 0 ? HOME_GK : k === 11 ? AWAY_GK : k < 11 ? HOME : AWAY);
     });
     S.layers.forEach((l) => {                       // each ghost carries the name of the real player it is paired with
-      l.pair = pairing(l, S.roster);
+      l.pair = pairing(l, S.roster); l.auto = null;
       l.meshes.forEach((m, k) => {
         const s = l.pair[k], n = s >= 0 ? S.roster[s] : -1;
         m.userData.name.material.map = labelTexture(n >= 0 ? ((d.names[s < 11 ? 'home' : 'away'] || {})[String(n)] || '') : '', true);
@@ -382,7 +469,7 @@ function update() {
     });
   }
   const real = [], realVel = [];
-  const rm = realMovedSlots();
+  const rm = S.focus.all ? realMovedSlots() : realFocusSlots();
   for (let k = 0; k < 22; k++) {
     const a = i * 22 + k, b = j * 22 + k;
     const x = d.px[a], y = d.py[a];
@@ -442,10 +529,12 @@ function update() {
   S.layers.forEach((l, li) => {
     const ld = l.d;
     const inside = ld.t.length && S.t >= ld.t[0] - 0.05 && S.t <= (l.tStop ?? ld.t[ld.t.length - 1]) + 0.05;
-    const on = l.show && inside && !S.cb.on && S.view.mode === 'overlay';   // the board shows the real players only; other views draw no ghosts
+    // the board shows the real players only; other views draw no ghosts; focus mode draws only the run chosen at the top
+    const on = l.show && inside && !S.cb.on && S.view.mode === 'overlay' && (S.focus.all || li === S.view.layer);
     l.meshes.forEach((m) => { m.visible = false; });
-    l.ball.visible = false; l.links.visible = false;
+    l.ball.visible = false; l.links.visible = false; l.pathOn = false;
     if (!inside) { $('err' + li).textContent = 'not in this part of the match'; return; }
+    const fg = S.focus.all ? null : focusGhosts(l);              // focus: only these ghosts, no lines between pairs
     const [gi, gf] = frameAt(ld.t, S.t);
     const gj = Math.min(gi + 1, ld.t.length - 1);
     const lp = l.links.geometry.attributes.position;
@@ -458,24 +547,26 @@ function update() {
       const m = l.meshes[k];
       const s0 = l.pair ? l.pair[k] : k;
       if (s0 >= 0) gpts[s0] = [xx, yy];
-      m.visible = on; m.position.set(X(xx), 0, Z(yy));
+      const isF = fg ? fg.has(k) : l.movedSlots.has(k);
+      const vis = on && (!fg || fg.has(k));
+      m.visible = vis; m.position.set(X(xx), 0, Z(yy));
       const gdt = ld.t[gj] - ld.t[gi];
-      if (on) animate(m, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
-      setMark(m, on && l.movedSlots.has(k));
-      m.userData.num.visible = on && S.showNumbers; m.userData.name.visible = on && (S.showNames || l.movedSlots.has(k));
+      if (vis) animate(m, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, gdt > 0 && gdt < 1 && ld.px[b] >= 0 ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
+      setMark(m, vis && isF);
+      m.userData.num.visible = vis && S.showNumbers; m.userData.name.visible = vis && (S.showNames || isF);
       const s = l.pair ? l.pair[k] : k;
       if (s >= 0 && real[s]) {
         sum += Math.hypot(xx - real[s][0], yy - real[s][1]); cnt++;
-        lp.setXYZ(seg++, X(xx), 0.1, Z(yy)); lp.setXYZ(seg++, X(real[s][0]), 0.1, Z(real[s][1]));
+        if (!fg) { lp.setXYZ(seg++, X(xx), 0.1, Z(yy)); lp.setXYZ(seg++, X(real[s][0]), 0.1, Z(real[s][1])); }
       }
     }
     const gbx = lerp(ld.bx[gi], ld.bx[gj], gf) / DM, gby = lerp(ld.by[gi], ld.by[gj], gf) / DM;
     l.ball.visible = on; l.ball.position.set(X(gbx), 0.35, Z(gby));
-    lp.setXYZ(seg++, X(gbx), 0.35, Z(gby)); lp.setXYZ(seg++, X(bx), 0.35, Z(by));
+    if (!fg) { lp.setXYZ(seg++, X(gbx), 0.35, Z(gby)); lp.setXYZ(seg++, X(bx), 0.35, Z(by)); }
     for (let n = seg; n < 46; n++) lp.setXYZ(n, 0, -10, 0);
     lp.needsUpdate = true;
     l.links.geometry.setDrawRange(0, seg);
-    l.links.visible = on && l.showLinks;
+    l.links.visible = on && l.showLinks && !fg;
     const gt = threatOf(gpts, [gbx, gby], l.threatState);
     const gp = seriesAt(l.press, S.t);
     $('err' + li).textContent = `now: players ${cnt ? (sum / cnt).toFixed(1) : '–'} m, ball ${Math.hypot(gbx - bx, gby - by).toFixed(1)} m from the real ones`
@@ -483,6 +574,33 @@ function update() {
       + (gp ? ` · press ${Math.round(100 * gp.p)}% (${d[gp.team] || gp.team})` : '');
   });
   updateSim(d);
+  updateFocus();
+}
+
+// focus paths and the note: in the overlay for every shown layer, in split / what-if views for the chosen run
+function updateFocus() {
+  const note = $('focusNote'), box = $('focusName');
+  let info = null, fl = null;
+  if (!S.focus.all && !S.cb.on && S.layers.length && S.view.mode !== 'real') {
+    S.layers.forEach((l, li) => {
+      const ld = l.d, inside = ld.t.length && S.t >= ld.t[0] - 0.05 && S.t <= ld.t[ld.t.length - 1] + 0.05;
+      const want = inside && li === S.view.layer;
+      if (!want) { l.pathOn = false; return; }
+      const r = drawPaths(l, S.t);
+      l.pathSim.material.color.setHex(l === focusLayer() ? 0xffc83d : l.col);   // gold = the chosen run, other runs in their colour
+      if (r && !info && l === focusLayer()) { info = r; fl = l; }
+    });
+  } else S.layers.forEach((l) => { l.pathOn = false; });
+  S.layers.forEach((l) => { l.pathReal.visible = l.pathSim.visible = l.pathOn; });
+  const fs = S.layers.length ? focusReal() : -1;
+  if (box) box.textContent = S.focus.all ? 'every player (old view)' : fs >= 0 ? `${focusName(fs)}${S.focus.real >= 0 ? ' (clicked)'
+    : S.layers.some((l) => l.moved && l.moved.length) ? ' (moved by the coach)' : ' (run changed most)'}` : '–';
+  if (!note) return;
+  if (!info || info.gap < 0.05) { note.classList.add('hidden'); return; }
+  const fw = Math.abs(info.fwd) >= 0.5 ? `, ${Math.abs(info.fwd).toFixed(1)} m ${info.fwd > 0 ? 'further forward' : 'further back'}` : '';
+  note.innerHTML = `<b>${focusName(info.slot)}</b>: <span class="fr">white = real run</span> · <span class="fs">gold dashed = what-if run</span>`
+    + ` · now ${info.gap.toFixed(1)} m apart${fw}`;
+  note.classList.remove('hidden');
 }
 
 // ---------- pressing meter (press.js): timeline of the real match and of the shown what-if runs ----------
@@ -551,7 +669,7 @@ function updateSim(d) {
     const ok = !still && gdt > 0 && gdt < 1 && ld.px[b] >= 0;
     animate(p, ok ? (ld.px[b] - ld.px[a]) / DM / gdt : 0, ok ? (ld.py[b] - ld.py[a]) / DM / gdt : 0, S.animDt);
     const shirt = ld.jerseys && ld.jerseys.length === 22 ? ld.jerseys[k] : (S.roster ? S.roster[k] : -1);
-    const side = k < 11 ? 'home' : 'away', moved = vl.movedSlots.has(k);
+    const side = k < 11 ? 'home' : 'away', moved = S.focus.all ? vl.movedSlots.has(k) : focusGhosts(vl).has(k);
     const key = `${shirt}|${side}`;
     if (p.userData.lbl !== key) {
       p.userData.lbl = key;
@@ -574,6 +692,9 @@ function showSet(which) {
   trail.visible = !sim && S.showTrail;
   simPlayers.forEach((p) => { p.visible = sim && p.userData.valid; });
   simBall.visible = sim;
+  // focus paths: the real run with the real players, the what-if run with the what-if players, both in the overlay
+  const both = S.view.mode === 'overlay';
+  S.layers.forEach((l) => { l.pathReal.visible = l.pathOn && (!sim || both); l.pathSim.visible = l.pathOn && (sim || both); });
 }
 function renderView() {
   const w = window.innerWidth, h = window.innerHeight;
@@ -636,10 +757,14 @@ function placeCamera(dt, snap) {
   } else if (S.cam === 'behind') {
     target.set(0, 0, 0); pos.set(-L / 2 - 30, 26, 0);
   } else if (S.cam === 'follow') {
-    target.copy(ballPos).setY(0);
-    pos.set(ballPos.x - 18, 16, ballPos.z + 22);
+    const fp = S.followSlot >= 0 && players[S.followSlot] && players[S.followSlot].visible ? players[S.followSlot].position : null;
+    const c = fp ? fp.clone().lerp(ballPos, 0.35) : ballPos;      // follow a chosen player (pom.js), keeping the ball in view
+    target.copy(c).setY(0);
+    pos.set(c.x - 18, 16, c.z + 22);
   }
   const k = snap ? 1 : 1 - Math.exp(-dt * 3);           // smooth camera, no jumps
+  if (!Number.isFinite(pos.x + pos.y + pos.z)) return;   // a 0-size window (hidden tab) gives no aspect: keep the camera
+  if (!Number.isFinite(camPos.x + camPos.y + camPos.z + camLook.x + camLook.y + camLook.z)) { camPos.copy(pos); camLook.copy(target); }
   camPos.lerp(pos, k); camLook.lerp(target, k);
   camera.position.copy(camPos); camera.lookAt(camLook);
 }
@@ -796,8 +921,13 @@ renderer.domElement.addEventListener('click', (e) => {
     if (!q.visible || !q.userData.valid) return;
     const dd = Math.hypot(q.position.x + L / 2 - p[0], W / 2 - q.position.z - p[1]); if (dd < bd) { bd = dd; best = k; }
   });
-  if (best >= 0) { cardFor(best); if ($('panel').classList.contains('hidden')) togglePanel(); }
+  if (best >= 0) {
+    if (S.layers.length) S.focus.real = S.focus.real === best ? -1 : best;   // compare views: this player becomes the focus (click again: back to auto)
+    cardFor(best); if ($('panel').classList.contains('hidden')) togglePanel();
+  }
 });
+$('focusAll').addEventListener('change', (e) => { S.focus.all = e.target.checked; });
+$('focusAuto').addEventListener('click', () => { S.focus.real = -1; });
 async function boardPlay() {
   const d = S.data;
   const ro = rosterNow();
@@ -906,6 +1036,7 @@ function loop(now) {
 window.__viewer = S;                                     // for debugging in the browser console
 window.__viewerPlayers = players;
 window.__cardFor = cardFor;                               // used by demo.js (opens a FootballBERT card)
+window.__scene = scene;                                   // used by pom.js (player-of-the-match ring and ghost)
 window.__viewerStep = () => { update(); placeCamera(0.016, false); renderView(); };
 Promise.all([loadThreat(), loadCards()]).then(() => loadIndex()).then(() => setCam('broadcast')).catch(fail);
 requestAnimationFrame(loop);

@@ -1,0 +1,21 @@
+M1. Granit Xhaka: choice mix per context (real share minus a typical DM/CM in the same situations, pts)
+  context                n         shot      dribble        carry    long pass forward pass    safe pass
+  Arsenal 17/18       3049         +0.4         -1.3         -1.1         +2.2         +1.8         -2.0
+  Euro 2016            400         +0.5         -0.4         -0.3         +6.9         -3.2         -3.5
+  World Cup 2018       340         +0.5         -0.6         +0.0         +4.7        -10.3         +5.6
+  Euro 2020            347         -0.1         +0.1         -4.3         +2.1         +6.5         -4.3
+  World Cup 2022       264         +0.6         -0.5         +3.4         +3.4         -8.7         +1.6
+  Leverkusen 23/24    3264         -0.3         -0.4         +2.0         -1.0         +0.7         -1.0
+  Euro 2024            445         -0.1         -0.3         +0.5         -2.1         +0.5         +1.6
+  style vectors (real - role) correlate across his 7 contexts: mean r = -0.10
+  held-out: StatsBomb 5 folds (43 matches)                gain over role model +0.23%  (unclear)
+  held-out: Wyscout Arsenal, last quarter of the season   gain over role model +0.90%  (unclear)
+  held-out: Arsenal style used at World Cup 2018          gain over role model +1.51%  (player better)
+  held-out: Arsenal style used at Euro 2016               gain over role model +2.00%  (player better)
+  most alike in 2017/18 (Wyscout, same role): Adri\u00e1n (M\u00e1laga) 0.94; Y. Cabaye (Crystal Palace) 0.91; G. Barry (West Bromwich Albion) 0.86; Dani Garc\u00eda (Eibar) 0.84; C. Borges (Deportivo La Coru\u00f1a) 0.83
+  what-if own third    pressed=0: his shot 0% dribble 0% carry 20% long pass 8% forward pass 26% safe pass 46% | DM 0% 0% 16% 8% 29% 47%
+  what-if own third    pressed=1: his shot 0% dribble 4% carry 44% long pass 4% forward pass 16% safe pass 32% | DM 0% 6% 44% 4% 17% 30%
+  what-if middle third pressed=0: his shot 0% dribble 0% carry 14% long pass 6% forward pass 32% safe pass 48% | DM 0% 0% 12% 7% 31% 50%
+  what-if middle third pressed=1: his shot 0% dribble 3% carry 34% long pass 3% forward pass 21% safe pass 39% | DM 0% 5% 37% 3% 19% 36%
+  what-if final third  pressed=0: his shot 6% dribble 0% carry 9% long pass 5% forward pass 34% safe pass 45% | DM 7% 0% 9% 6% 31% 47%
+  what-if final third  pressed=1: his shot 2% dribble 4% carry 26% long pass 3% forward pass 25% safe pass 41% | DM 3% 6% 30% 3% 20% 38%

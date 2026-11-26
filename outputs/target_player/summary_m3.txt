@@ -1,0 +1,12 @@
+M3. Granit Xhaka: threat lanes (successful passes / carries that add xT, zone -> zone), 2929 actions
+  final third, left-centre       -> opp. box, left-centre           0.5/90  xT 0.015/90 ( 6.9%)  14.3 m  left foot  82%  carries  14%  Florian Wirtz 6, Alejandro Grimaldo García 4, Victor Okoh Boniface 2
+  opp. half, left-centre         -> final third, left-centre        1.3/90  xT 0.008/90 ( 3.9%)  12.5 m  left foot  70%  carries  23%  Florian Wirtz 14, Jonas Hofmann 6, Breel-Donald Embolo 5
+  final third, left-centre       -> final third, left-centre        1.3/90  xT 0.008/90 ( 3.7%)   7.3 m  left foot  39%  carries  51%  Florian Wirtz 10, Exequiel Alejandro Palacios 3, Alejandro Grimaldo García 3
+  final third, right-centre      -> final third, right-centre       1.2/90  xT 0.007/90 ( 3.5%)   6.1 m  left foot  41%  carries  56%  Florian Wirtz 8, Jonas Hofmann 7, Exequiel Alejandro Palacios 4
+  opp. half, left wing           -> final third, left wing          1.5/90  xT 0.006/90 ( 2.9%)  13.5 m  left foot  79%  carries   7%  Alejandro Grimaldo García 16, Michel Aebischer 7, Florian Wirtz 6
+  final third, left-centre       -> opp. box, right-centre          0.1/90  xT 0.006/90 ( 2.8%)  20.2 m  left foot 100%  carries   0%  Patrik Schick 3, Jeremie Frimpong 2, Admir Mehmedi 1
+  opp. half, right-centre        -> final third, right-centre       1.0/90  xT 0.006/90 ( 2.8%)  11.1 m  left foot  65%  carries  21%  Florian Wirtz 10, Jonas Hofmann 6, Exequiel Alejandro Palacios 3
+  final third, right-centre      -> opp. box, right-centre          0.3/90  xT 0.005/90 ( 2.5%)  13.4 m  left foot  75%  carries   8%  Jeremie Frimpong 5, Alejandro Grimaldo García 2, Jonas Hofmann 2
+  top 8 lanes = 29% of his added xT; left foot on 84% of his completed passes; switches (25+ m across) 5.6 / 90
+  who he feeds (xT added): Florian Wirtz (Leverkusen 23/24) 1.40; Alejandro Grimaldo García (Leverkusen 23/24) 0.99; Jonas Hofmann (Leverkusen 23/24) 0.66; Victor Okoh Boniface (Leverkusen 23/24) 0.43; Patrik Schick (Leverkusen 23/24) 0.40; Jeremie Frimpong (Leverkusen 23/24) 0.40; Exequiel Alejandro Palacios (Leverkusen 23/24) 0.34; Piero Martín Hincapié Reyna (Leverkusen 23/24) 0.25
+  completed passes to his left 37%, to his right 38%

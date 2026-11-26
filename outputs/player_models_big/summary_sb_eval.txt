@@ -1,0 +1,20 @@
+B eval: 221949 decisions, 197 matches, 1401 players; 411 players with 3+ matches and 150+ decisions
+  Euro 2020           51 matches   57230 decisions  458 players
+  Euro 2024           51 matches   56692 decisions  458 players
+  Leverkusen 23/24    31 matches   37051 decisions  326 players
+  World Cup 2022      64 matches   70976 decisions  636 players
+B1. Player model vs role model, held-out matches (5 folds by match)
+  pooled held-out log-loss: role 1.1070  player 1.0995  (+0.68% )
+  players: 410  player model better 103  unclear 255  role better 52  | gain > 0 on average: 53%  median gain +0.06%
+    Euro 2020              players  137  better  31  median gain +0.10%  mean +0.63%
+    Euro 2024              players  115  better  28  median gain -0.03%  mean +0.40%
+    Leverkusen 23/24       players   22  better  12  median gain +1.24%  mean +1.19%
+    World Cup 2022         players  136  better  32  median gain -0.02%  mean +0.20%
+    role AM  players   26  better   8  median gain +0.08%
+    role CB  players  116  better  33  median gain +0.13%
+    role CM  players   38  better   7  median gain +0.07%
+    role DM  players   77  better  16  median gain -0.05%
+    role FB  players   76  better  18  median gain -0.01%
+    role ST  players   25  better   6  median gain +0.05%
+    role W   players   52  better  15  median gain +0.39%
+  top 8: Tomáš Kalas (CB, Euro 2020) +25.4%; Dan Ndoye (AM, Euro 2024) +9.0%; Abdou Diallo (CB, World Cup 2022) +6.7%; Alphonso Davies (FB, World Cup 2022) +6.6%; Thomas Müller (AM, Euro 2020) +6.3%; Ondrej Celustka (CB, Euro 2020) +5.9%; Riccardo Calafiori (CB, Euro 2024) +5.8%; Jonathan Tah (CB, Leverkusen 23/24) +5.8%

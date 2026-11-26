@@ -24,6 +24,10 @@ const STEPS = [
   { title: '5 · Scouting: who could replace him?', file: '10517_full.json', view: 'real', cam: 'follow', t: null, player: 'Messi',
     story: 'World Cup 2022 final, Argentina v France (PFF tracking), a moment with Messi near the ball; his player card opens.',
     result: '', models: ['FootballBERT', 'unravelsports-PressingIntensity', 'own_Threat'] },
+  { title: '6 · Who was the best player of the match?', file: 'J03WOH_full.json', view: 'real', cam: 'follow', t: null, pom: 0,
+    story: 'Düsseldorf 4-0 Regensburg, full match. Every player is valued with the ball (goal chance added by passes, carries, shots) and without it: each run is compared with a ghost of where an average player would have gone.',
+    result: 'Player of the match: D. Ginczek (1 goal, 1 assist), almost all from his runs. The pale ghost shows where own_MovementGNN expected him; he went to the gold ring instead.',
+    models: ['own_PlayerOfMatch', 'own_MovementGNN', 'own_Threat', 'own_xG'] },
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -85,6 +89,12 @@ async function go(n) {
   }
   S.t = t == null ? S.t0 : Math.min(Math.max(t, S.t0), S.t1);
   S.playing = true;
+  if (st.pom == null) { $('pom').classList.add('hidden'); S.followSlot = -1; }
+  else {                                                         // player of the match: open the panel, pick the #1, watch his best run
+    $('pom').classList.remove('hidden');
+    for (let i = 0; i < 50 && !(window.__pom && window.__pom.state.data); i++) { if (window.__pom) window.__pom.step(); await sleep(100); }
+    if (window.__pom && window.__pom.state.data) window.__pom.pick(st.pom);
+  }
 }
 
 export function startDemo() {

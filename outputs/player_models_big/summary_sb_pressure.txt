@@ -1,0 +1,5 @@
+B4. Pressure profile: 121 players with 400+ decisions (change in choice share when pressed, beyond his role)
+  split-half reliability (odd vs even matches) per choice: shot: r=0.26  dribble: r=0.10  carry: r=0.28  long pass: r=0.37  forward pass: r=0.31  safe pass: r=0.41
+  most goes safe when pressed (more sideways / back passes than his role): Toni Kroos (DM) +18.6 pts; Bruno Miguel Borges Fernandes (AM) +10.9 pts; Daley Blind (CB) +10.6 pts; Kevin De Bruyne (AM) +10.4 pts; Luka Modrić (CM) +10.2 pts
+  most takes players on when pressed: João Pedro Cavaco Cancelo (FB) +7.1 pts; Joško Gvardiol (CB) +6.3 pts; Kylian Mbappé Lottin (W) +6.3 pts; Victor Okoh Boniface (ST) +5.9 pts; Daniel Olmo Carvajal (W) +4.9 pts
+  least (keeps playing forward when pressed): Jan Vertonghen (CB) -13.1 pts; Leroy Sané (W) -11.3 pts; Jeremie Frimpong (FB) -9.4 pts; Jamal Musiala (W) -9.1 pts; Stefan de Vrij (CB) -8.1 pts

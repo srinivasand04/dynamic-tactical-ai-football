@@ -1,0 +1,33 @@
+  Premier League: 380 matches, 643150 events -> 348381 decisions (16s)
+  Ligue 1: 380 matches, 632807 events -> 340641 decisions (15s)
+  Bundesliga: 306 matches, 519407 events -> 277863 decisions (13s)
+  Serie A: 380 matches, 647372 events -> 357781 decisions (16s)
+  La Liga: 380 matches, 628659 events -> 339214 decisions (14s)
+  World Cup 2018: 64 matches, 101759 events -> 59830 decisions (2s)
+  Euro 2016: 51 matches, 78140 events -> 46087 decisions (2s)
+A data: 1708497 decisions, 1941 matches, 2796 players
+  Bundesliga        306 matches   265195 decisions   440 players
+  Euro 2016          51 matches    44645 decisions   422 players
+  La Liga           380 matches   327559 decisions   506 players
+  Ligue 1           380 matches   329956 decisions   499 players
+  Premier League    380 matches   336761 decisions   475 players
+  Serie A           380 matches   346258 decisions   494 players
+  World Cup 2018     64 matches    58123 decisions   559 players
+  base model fitted on 1162054 decisions (357s)
+A1. Season split (train first ~3/4 of match days, test the rest): 1086 players with 10+ train and 3+ test matches
+  pooled held-out log-loss: role 1.1362  player 1.1234  (+1.12% )
+  players: 1086  player model better 423  unclear 605  role better 58  | gain > 0 on average: 77%  median gain +0.71%
+    Bundesliga             players  199  better  73  median gain +0.62%  mean +0.93%
+    La Liga                players  236  better  88  median gain +0.63%  mean +1.10%
+    Ligue 1                players  221  better  90  median gain +0.80%  mean +1.09%
+    Premier League         players  210  better  85  median gain +0.77%  mean +1.19%
+    Serie A                players  220  better  87  median gain +0.70%  mean +1.07%
+    role AM  players   70  better   36  median gain +0.81%
+    role CB  players  237  better   83  median gain +0.55%
+    role CM  players  199  better   71  median gain +0.69%
+    role DM  players  108  better   38  median gain +0.32%
+    role FB  players  211  better   96  median gain +0.96%
+    role ST  players  155  better   52  median gain +0.96%
+    role W   players  106  better   47  median gain +1.12%
+  lambda chosen (how strongly the player model is pulled to his role): 1: 262, 3: 306, 10: 239, 30: 122, 100: 46, 300: 111
+  top 10: F. Mattiello (CB, SPAL) +13.0%; D. Aogo (CB, Stuttgart) +12.2%; Antunes (FB, Getafe) +9.9%; W. Rooney (ST, Everton) +9.5%; V. Rosier (CB, Dijon) +9.0%; J. Hector (CB, K\u00f6ln) +8.1%; Som\u00e1lia (CM, Toulouse) +7.9%; L. San\u00e9 (W, Manchester City) +7.8%; R. Durmisi (FB, Real Betis) +7.8%; I. Sarr (AM, Rennes) +7.8%

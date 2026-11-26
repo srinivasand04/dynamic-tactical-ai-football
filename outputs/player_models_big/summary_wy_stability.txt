@@ -1,0 +1,8 @@
+A3. Style stability, 938 league players with 20+ matches: correlation of style vectors (log ratio vs role)
+  choice          first vs second half of season   odd vs even matches (noise ceiling)
+  shot            r = 0.53                         r = 0.58
+  dribble         r = 0.65                         r = 0.66
+  carry           r = 0.67                         r = 0.70
+  long pass       r = 0.73                         r = 0.81
+  forward pass    r = 0.68                         r = 0.75
+  safe pass       r = 0.72                         r = 0.80

@@ -1,0 +1,48 @@
+C3. Teammates: 38 teammates with 270+ min both with and without him on the pitch together
+  A. Lacazette             (Arsenal) with 2261 / without 1194 min: threat/90 0.135 vs 0.078 (+0.057, 90% +0.017 .. +0.100)  forward 51% vs 48%  loss 11.6% vs 11.1%  height 56 vs 52 m
+  D. Ospina                (Arsenal) with  329 / without 3126 min: threat/90 0.158 vs 0.111 (+0.046, 90% -0.037 .. +0.164)  forward 55% vs 50%  loss 6.7% vs 11.8%  height 50 vs 55 m
+  A. Maitland-Niles        (Arsenal) with  984 / without 2471 min: threat/90 0.147 vs 0.103 (+0.044, 90% -0.002 .. +0.103)  forward 54% vs 49%  loss 11.5% vs 11.4%  height 53 vs 55 m
+  Robert Andrich           (Leverkusen) with 1583 / without 1450 min: threat/90 0.142 vs 0.102 (+0.040, 90% -0.023 .. +0.092)  forward 43% vs 41%  loss 9.0% vs 6.7%  height 57 vs 55 m
+  Nathan Tella             (Leverkusen) with  871 / without 2162 min: threat/90 0.149 vs 0.112 (+0.038, 90% -0.019 .. +0.093)  forward 42% vs 43%  loss 7.2% vs 8.1%  height 57 vs 55 m
+  O. Giroud                (Arsenal) with  354 / without 3101 min: threat/90 0.149 vs 0.112 (+0.037, 90% -0.024 .. +0.087)  forward 51% vs 50%  loss 14.9% vs 10.9%  height 56 vs 54 m
+  Florian Wirtz            (Leverkusen) with 2471 / without  562 min: threat/90 0.129 vs 0.093 (+0.037, 90% -0.011 .. +0.101)  forward 43% vs 39%  loss 8.1% vs 6.5%  height 56 vs 54 m
+  C. Chambers              (Arsenal) with  832 / without 2623 min: threat/90 0.140 vs 0.108 (+0.032, 90% -0.003 .. +0.077)  forward 51% vs 50%  loss 10.2% vs 11.8%  height 54 vs 55 m
+  Nacho Monreal            (Arsenal) with 2209 / without 1246 min: threat/90 0.127 vs 0.095 (+0.032, 90% -0.006 .. +0.064)  forward 51% vs 49%  loss 11.7% vs 10.7%  height 55 vs 53 m
+  Patrik Schick            (Leverkusen) with 1052 / without 1981 min: threat/90 0.140 vs 0.113 (+0.027, 90% -0.025 .. +0.077)  forward 45% vs 41%  loss 8.6% vs 7.4%  height 59 vs 54 m
+  J. Wilshere              (Arsenal) with 1149 / without 2306 min: threat/90 0.132 vs 0.107 (+0.025, 90% -0.013 .. +0.066)  forward 52% vs 50%  loss 11.7% vs 11.3%  height 54 vs 55 m
+  P. Mertesacker           (Arsenal) with  390 / without 3065 min: threat/90 0.136 vs 0.113 (+0.023, 90% -0.054 .. +0.129)  forward 48% vs 51%  loss 12.0% vs 11.3%  height 56 vs 54 m
+  A. S\u00e1nchez          (Arsenal) with 1499 / without 1956 min: threat/90 0.126 vs 0.108 (+0.019, 90% -0.029 .. +0.061)  forward 49% vs 51%  loss 11.8% vs 11.1%  height 56 vs 54 m
+  Josip Stanišić           (Leverkusen) with 1310 / without 1723 min: threat/90 0.131 vs 0.117 (+0.014, 90% -0.042 .. +0.083)  forward 43% vs 42%  loss 7.8% vs 7.9%  height 57 vs 55 m
+  L. Koscielny             (Arsenal) with 2280 / without 1175 min: threat/90 0.120 vs 0.108 (+0.011, 90% -0.024 .. +0.049)  forward 49% vs 53%  loss 11.6% vs 11.0%  height 55 vs 53 m
+  Alejandro Grimaldo García (Leverkusen) with 2751 / without  282 min: threat/90 0.124 vs 0.113 (+0.011, 90% -0.057 .. +0.093)  forward 42% vs 42%  loss 7.8% vs 8.3%  height 56 vs 57 m
+  Amine Adli               (Leverkusen) with  788 / without 2245 min: threat/90 0.127 vs 0.121 (+0.006, 90% -0.052 .. +0.059)  forward 42% vs 42%  loss 8.1% vs 7.8%  height 55 vs 56 m
+  Adam Hložek              (Leverkusen) with  483 / without 2550 min: threat/90 0.121 vs 0.123 (-0.002, 90% -0.089 .. +0.089)  forward 41% vs 43%  loss 7.5% vs 7.9%  height 54 vs 56 m
+  Beller\u00edn            (Arsenal) with 3059 / without  396 min: threat/90 0.115 vs 0.118 (-0.002, 90% -0.067 .. +0.061)  forward 50% vs 55%  loss 11.4% vs 11.1%  height 55 vs 50 m
+  A. Ramsey                (Arsenal) with 1790 / without 1665 min: threat/90 0.114 vs 0.117 (-0.003, 90% -0.043 .. +0.039)  forward 49% vs 51%  loss 10.8% vs 12.1%  height 55 vs 54 m
+  D. Welbeck               (Arsenal) with 1159 / without 2296 min: threat/90 0.111 vs 0.118 (-0.006, 90% -0.037 .. +0.029)  forward 53% vs 49%  loss 14.2% vs 9.9%  height 54 vs 55 m
+  J. Ward                  (Leverkusen) with 2643 / without  390 min: threat/90 0.122 vs 0.128 (-0.006, 90% -0.081 .. +0.069)  forward 42% vs 44%  loss 7.5% vs 9.7%  height 56 vs 58 m
+  Piero Martín Hincapié Reyna (Leverkusen) with 1534 / without 1499 min: threat/90 0.115 vs 0.130 (-0.015, 90% -0.076 .. +0.044)  forward 42% vs 43%  loss 7.8% vs 7.9%  height 57 vs 55 m
+  M. \u00d6zil             (Arsenal) with 2117 / without 1338 min: threat/90 0.109 vs 0.125 (-0.016, 90% -0.059 .. +0.027)  forward 50% vs 51%  loss 11.6% vs 11.0%  height 55 vs 54 m
+  Odilon Kossonou          (Leverkusen) with 1719 / without 1314 min: threat/90 0.115 vs 0.133 (-0.018, 90% -0.080 .. +0.047)  forward 42% vs 43%  loss 7.6% vs 8.1%  height 55 vs 57 m
+  A. Iwobi                 (Arsenal) with 1877 / without 1578 min: threat/90 0.107 vs 0.126 (-0.018, 90% -0.063 .. +0.024)  forward 51% vs 50%  loss 10.2% vs 12.7%  height 53 vs 56 m
+  Victor Okoh Boniface     (Leverkusen) with 1525 / without 1508 min: threat/90 0.113 vs 0.132 (-0.019, 90% -0.078 .. +0.044)  forward 42% vs 43%  loss 7.6% vs 8.1%  height 54 vs 58 m
+  R. Holding               (Arsenal) with  870 / without 2585 min: threat/90 0.100 vs 0.121 (-0.021, 90% -0.056 .. +0.011)  forward 52% vs 50%  loss 11.5% vs 11.4%  height 53 vs 55 m
+  P. Aubameyang            (Arsenal) with 1034 / without 2421 min: threat/90 0.099 vs 0.123 (-0.023, 90% -0.068 .. +0.022)  forward 50% vs 50%  loss 8.9% vs 12.4%  height 51 vs 56 m
+  S. Kola\u0161inac        (Arsenal) with 2217 / without 1238 min: threat/90 0.107 vs 0.132 (-0.025, 90% -0.070 .. +0.025)  forward 49% vs 53%  loss 12.2% vs 10.0%  height 55 vs 54 m
+  Edmond Fayçal Tapsoba    (Leverkusen) with 1991 / without 1042 min: threat/90 0.113 vs 0.141 (-0.028, 90% -0.088 .. +0.035)  forward 42% vs 42%  loss 7.6% vs 8.2%  height 56 vs 56 m
+  S. Mustafi               (Arsenal) with 2296 / without 1159 min: threat/90 0.102 vs 0.143 (-0.041, 90% -0.097 .. +0.001)  forward 50% vs 51%  loss 11.7% vs 10.8%  height 55 vs 54 m
+  Mohamed Elneny           (Arsenal) with  829 / without 2626 min: threat/90 0.083 vs 0.126 (-0.042, 90% -0.078 .. -0.008)  forward 48% vs 51%  loss 10.8% vs 11.6%  height 56 vs 54 m
+  Jonas Hofmann            (Leverkusen) with 2106 / without  927 min: threat/90 0.109 vs 0.153 (-0.044, 90% -0.114 .. +0.023)  forward 41% vs 44%  loss 7.6% vs 8.4%  height 56 vs 57 m
+  P. \u010cech             (Arsenal) with 3126 / without  329 min: threat/90 0.111 vs 0.158 (-0.046, 90% -0.156 .. +0.036)  forward 50% vs 55%  loss 11.8% vs 6.7%  height 55 vs 50 m
+  H. Mkhitaryan            (Arsenal) with  833 / without 2622 min: threat/90 0.080 vs 0.127 (-0.047, 90% -0.093 .. -0.003)  forward 50% vs 50%  loss 6.8% vs 12.7%  height 50 vs 56 m
+  Jeremie Frimpong         (Leverkusen) with 2176 / without  857 min: threat/90 0.107 vs 0.163 (-0.056, 90% -0.119 .. +0.007)  forward 42% vs 43%  loss 8.2% vs 6.9%  height 56 vs 57 m
+  Exequiel Alejandro Palacios (Leverkusen) with 1710 / without 1323 min: threat/90 0.098 vs 0.154 (-0.056, 90% -0.110 .. -0.005)  forward 41% vs 44%  loss 6.9% vs 9.1%  height 55 vs 57 m
+  joint model penalty -> leave-one-match-out error: 0.01: 0.1731  0.1: 0.1636  1.0: 0.1612  10.0: 0.1610  (his average 0.1610); the penalty is chosen on the same test, so read the best one as an upper bound
+  joint model on 214 segments: leave-one-match-out error of threat/90 0.1610 (his average) -> 0.1610 (-0.0%)
+  joint effect on his threat/90 (all teammates together): A. Lacazette +0.001; A. Maitland-Niles +0.000; Robert Andrich +0.000; Nacho Monreal +0.000; Nathan Tella +0.000; C. Chambers +0.000; J. Wilshere +0.000; Patrik Schick +0.000; Florian Wirtz +0.000; A. S\u00e1nchez +0.000; D. Ospina +0.000; O. Giroud +0.000; Josip Stanišić +0.000; P. Mertesacker +0.000; L. Koscielny +0.000; Amine Adli +0.000; Alejandro Grimaldo García +0.000; Adam Hložek -0.000; Beller\u00edn -0.000; J. Ward -0.000; A. Ramsey -0.000; D. Welbeck -0.000; R. Holding -0.000; Piero Martín Hincapié Reyna -0.000; Odilon Kossonou -0.000; Victor Okoh Boniface -0.000; A. Iwobi -0.000; P. \u010cech -0.000; M. \u00d6zil -0.000; P. Aubameyang -0.000; Edmond Fayçal Tapsoba -0.000; S. Kola\u0161inac -0.000; Mohamed Elneny -0.000; Jonas Hofmann -0.000; H. Mkhitaryan -0.000; S. Mustafi -0.000; Jeremie Frimpong -0.001; Exequiel Alejandro Palacios -0.001
+  clear with/without differences (90% interval excludes 0): 1 up, 3 down of 38; 4 expected by chance alone
+  -> With A. Lacazette on the pitch his threat per 90 is 0.135 vs 0.078 without; without him his best zone moves from final third, right-centre to own half, left-centre.
+  -> With Mohamed Elneny his threat per 90 is lower (0.083 vs 0.126); forward passes 48% vs 51%, height 56 vs 54 m.
+  -> With H. Mkhitaryan his threat per 90 is lower (0.080 vs 0.127); forward passes 50% vs 50%, height 50 vs 56 m.
+  -> With Exequiel Alejandro Palacios his threat per 90 is lower (0.098 vs 0.154); forward passes 41% vs 44%, height 55 vs 57 m.
+  -> Careful: with / without also splits the season (arrivals, injuries, rotation against weaker opponents), so these are leads to check on video, not proof.

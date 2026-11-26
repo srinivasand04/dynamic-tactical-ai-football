@@ -1,0 +1,8 @@
+  M2 threat        He is a real threat: 0.113 xT per 90 (percentile 87 of 85 DM / CM; Arsenal 17/18 percentile 82); most of it starts in final third, left-centre (2.6x a typical DM / CM there).
+  M3 lanes         Close the lane final third, left-centre -> opp. box, left-centre: alone 7% of the threat he adds (top 8 lanes 29%); 84% of his completed passes are left-footed; main receivers Florian Wirtz, Alejandro Grimaldo García.
+  M4 pressure      Pressure does not make him lose the ball, it makes him play safe: completion holds (87% pressed from behind vs 92% free, better than a typical DM / CM) but forward passes fall 35 pts and his threat per pass 3.0 -> 0.4 e-3. Press from behind costs him most.
+  M5 ball loss     Hunt the ball in own half, left-centre (his own half = our high press): 9.2 touches per 90, loss risk 9% free -> 17% pressed from behind; a regain there is worth 0.015 xT to us.
+  M6 movement      Off the ball he holds his side: wherever the ball is, he stands about 4.4 m wider to his side and 1.6 m deeper than a typical DM / CM (World Cup 2022 tracking), so the space is on his far side and in front of him.
+  M7 counter plan  Best plan: press from behind (on the receive): his threat -53% vs letting him play, loss risk 21% (free 11%), net -0.21 xT per 100 actions in our favour.
+  M1 decisions     His choices are close to a typical DM (player model +0.2%, unclear) and his small deviations change from context to context (style r -0.10 across his 7 contexts): prepare for a typical DM; the danger is where and how well he does it (M2, M3), not surprise choices.
+viewer data: D:\grf-prototype\viewer\data\target_player.json (35 KB)

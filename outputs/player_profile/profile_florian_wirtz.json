@@ -1,0 +1,544 @@
+{
+ "model": "own_PlayerProfile",
+ "player": "Florian Wirtz",
+ "team": "Bayer Leverkusen",
+ "role": "AM",
+ "matches": 30,
+ "minutes": 2402,
+ "peers": "players in role AM with 150+ minutes in the 34 Leverkusen matches 2023/24 (both teams)",
+ "strengths": [
+  {
+   "metric": "actions_p90",
+   "area": "Involvement",
+   "what": "on-ball actions per 90",
+   "value": "139.0",
+   "interval_90": [
+    "131.4",
+    "148.0"
+   ],
+   "role_median": "82.0",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "receipts_p90",
+   "area": "Involvement",
+   "what": "balls received per 90",
+   "value": "79.4",
+   "interval_90": [
+    "75.8",
+    "84.1"
+   ],
+   "role_median": "47.5",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "threat_added_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added per 90 (own_Threat)",
+   "value": "0.409",
+   "interval_90": [
+    "0.332",
+    "0.478"
+   ],
+   "role_median": "0.160",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "pass_threat_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added by passes per 90",
+   "value": "0.095",
+   "interval_90": [
+    "0.059",
+    "0.128"
+   ],
+   "role_median": "0.048",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "carry_threat_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added by carries per 90",
+   "value": "0.274",
+   "interval_90": [
+    "0.230",
+    "0.310"
+   ],
+   "role_median": "0.105",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "progressive_p90",
+   "area": "Progression and creation",
+   "what": "progressive passes and carries per 90",
+   "value": "13.3",
+   "interval_90": [
+    "11.7",
+    "14.8"
+   ],
+   "role_median": "7.2",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "box_entries_p90",
+   "area": "Progression and creation",
+   "what": "passes and carries into the box per 90",
+   "value": "5.2",
+   "interval_90": [
+    "4.4",
+    "6.0"
+   ],
+   "role_median": "2.7",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "key_passes_p90",
+   "area": "Progression and creation",
+   "what": "passes that lead to a shot per 90",
+   "value": "2.1",
+   "interval_90": [
+    "1.9",
+    "2.4"
+   ],
+   "role_median": "1.8",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "shots_p90",
+   "area": "Shooting",
+   "what": "shots per 90",
+   "value": "2.3",
+   "interval_90": [
+    "2.2",
+    "2.3"
+   ],
+   "role_median": "2.2",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "pressures_p90",
+   "area": "Defending and pressing",
+   "what": "pressures per 90 (possession-adjusted)",
+   "value": "30.9",
+   "interval_90": [
+    "29.0",
+    "32.9"
+   ],
+   "role_median": "27.0",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "counterpress_p90",
+   "area": "Defending and pressing",
+   "what": "counter-pressures per 90 (possession-adjusted)",
+   "value": "8.5",
+   "interval_90": [
+    "7.5",
+    "9.4"
+   ],
+   "role_median": "6.5",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "recoveries_p90",
+   "area": "Defending and pressing",
+   "what": "ball recoveries and interceptions per 90 (possession-adjusted)",
+   "value": "7.9",
+   "interval_90": [
+    "6.9",
+    "9.0"
+   ],
+   "role_median": "5.4",
+   "percentile": 94,
+   "label": "strength"
+  }
+ ],
+ "weaknesses": [
+  {
+   "metric": "threat_lost_p90",
+   "area": "Ball security",
+   "what": "goal chance lost by failed actions per 90",
+   "value": "0.362",
+   "interval_90": [
+    "0.322",
+    "0.407"
+   ],
+   "role_median": "0.282",
+   "percentile": 6,
+   "label": "weakness"
+  }
+ ],
+ "metrics": [
+  {
+   "metric": "actions_p90",
+   "area": "Involvement",
+   "what": "on-ball actions per 90",
+   "value": "139.0",
+   "interval_90": [
+    "131.4",
+    "148.0"
+   ],
+   "role_median": "82.0",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "receipts_p90",
+   "area": "Involvement",
+   "what": "balls received per 90",
+   "value": "79.4",
+   "interval_90": [
+    "75.8",
+    "84.1"
+   ],
+   "role_median": "47.5",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "final_third_share",
+   "area": "Involvement",
+   "what": "share of actions in the final third",
+   "value": "53%",
+   "interval_90": [
+    "47%",
+    "58%"
+   ],
+   "role_median": "48%",
+   "percentile": 83,
+   "label": "unclear"
+  },
+  {
+   "metric": "threat_added_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added per 90 (own_Threat)",
+   "value": "0.409",
+   "interval_90": [
+    "0.332",
+    "0.478"
+   ],
+   "role_median": "0.160",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "pass_threat_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added by passes per 90",
+   "value": "0.095",
+   "interval_90": [
+    "0.059",
+    "0.128"
+   ],
+   "role_median": "0.048",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "carry_threat_p90",
+   "area": "Progression and creation",
+   "what": "goal chance added by carries per 90",
+   "value": "0.274",
+   "interval_90": [
+    "0.230",
+    "0.310"
+   ],
+   "role_median": "0.105",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "progressive_p90",
+   "area": "Progression and creation",
+   "what": "progressive passes and carries per 90",
+   "value": "13.3",
+   "interval_90": [
+    "11.7",
+    "14.8"
+   ],
+   "role_median": "7.2",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "box_entries_p90",
+   "area": "Progression and creation",
+   "what": "passes and carries into the box per 90",
+   "value": "5.2",
+   "interval_90": [
+    "4.4",
+    "6.0"
+   ],
+   "role_median": "2.7",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "key_passes_p90",
+   "area": "Progression and creation",
+   "what": "passes that lead to a shot per 90",
+   "value": "2.1",
+   "interval_90": [
+    "1.9",
+    "2.4"
+   ],
+   "role_median": "1.8",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "xa_p90",
+   "area": "Progression and creation",
+   "what": "expected assists per 90",
+   "value": "0.216",
+   "interval_90": [
+    "0.209",
+    "0.225"
+   ],
+   "role_median": "0.210",
+   "percentile": 94,
+   "label": "unclear"
+  },
+  {
+   "metric": "pass_completion",
+   "area": "Passing",
+   "what": "pass completion",
+   "value": "83%",
+   "interval_90": [
+    "83%",
+    "84%"
+   ],
+   "role_median": "83%",
+   "percentile": 94,
+   "label": "unclear"
+  },
+  {
+   "metric": "pressed_completion",
+   "area": "Passing",
+   "what": "pass completion under pressure",
+   "value": "80%",
+   "interval_90": [
+    "79%",
+    "80%"
+   ],
+   "role_median": "79%",
+   "percentile": 94,
+   "label": "unclear"
+  },
+  {
+   "metric": "long_completion",
+   "area": "Passing",
+   "what": "long pass completion (30 m+)",
+   "value": "64%",
+   "interval_90": [
+    "58%",
+    "69%"
+   ],
+   "role_median": "68%",
+   "percentile": 17,
+   "label": "unclear"
+  },
+  {
+   "metric": "shots_p90",
+   "area": "Shooting",
+   "what": "shots per 90",
+   "value": "2.3",
+   "interval_90": [
+    "2.2",
+    "2.3"
+   ],
+   "role_median": "2.2",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "xg_p90",
+   "area": "Shooting",
+   "what": "expected goals per 90",
+   "value": "0.254",
+   "interval_90": [
+    "0.243",
+    "0.264"
+   ],
+   "role_median": "0.243",
+   "percentile": 94,
+   "label": "unclear"
+  },
+  {
+   "metric": "xg_per_shot",
+   "area": "Shooting",
+   "what": "expected goals per shot (chance quality)",
+   "value": "0.118",
+   "interval_90": [
+    "0.094",
+    "0.145"
+   ],
+   "role_median": "0.112",
+   "percentile": 61,
+   "label": "unclear"
+  },
+  {
+   "metric": "goals_minus_xg_p90",
+   "area": "Shooting",
+   "what": "goals minus expected goals per 90 (finishing)",
+   "value": "0.027",
+   "interval_90": [
+    "0.014",
+    "0.042"
+   ],
+   "role_median": "0.021",
+   "percentile": 94,
+   "label": "unclear (unreliable metric)"
+  },
+  {
+   "metric": "loss_rate",
+   "area": "Ball security",
+   "what": "share of on-ball actions that lose the ball",
+   "value": "14%",
+   "interval_90": [
+    "13%",
+    "14%"
+   ],
+   "role_median": "13%",
+   "percentile": 28,
+   "label": "unclear"
+  },
+  {
+   "metric": "threat_lost_p90",
+   "area": "Ball security",
+   "what": "goal chance lost by failed actions per 90",
+   "value": "0.362",
+   "interval_90": [
+    "0.322",
+    "0.407"
+   ],
+   "role_median": "0.282",
+   "percentile": 6,
+   "label": "weakness"
+  },
+  {
+   "metric": "dribble_success",
+   "area": "Ball security",
+   "what": "dribble success",
+   "value": "55%",
+   "interval_90": [
+    "54%",
+    "55%"
+   ],
+   "role_median": "54%",
+   "percentile": 94,
+   "label": "unclear (unreliable metric)"
+  },
+  {
+   "metric": "pressures_p90",
+   "area": "Defending and pressing",
+   "what": "pressures per 90 (possession-adjusted)",
+   "value": "30.9",
+   "interval_90": [
+    "29.0",
+    "32.9"
+   ],
+   "role_median": "27.0",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "counterpress_p90",
+   "area": "Defending and pressing",
+   "what": "counter-pressures per 90 (possession-adjusted)",
+   "value": "8.5",
+   "interval_90": [
+    "7.5",
+    "9.4"
+   ],
+   "role_median": "6.5",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "high_press_share",
+   "area": "Defending and pressing",
+   "what": "share of pressures in the opponent half",
+   "value": "68%",
+   "interval_90": [
+    "64%",
+    "72%"
+   ],
+   "role_median": "60%",
+   "percentile": 72,
+   "label": "unclear"
+  },
+  {
+   "metric": "recoveries_p90",
+   "area": "Defending and pressing",
+   "what": "ball recoveries and interceptions per 90 (possession-adjusted)",
+   "value": "7.9",
+   "interval_90": [
+    "6.9",
+    "9.0"
+   ],
+   "role_median": "5.4",
+   "percentile": 94,
+   "label": "strength"
+  },
+  {
+   "metric": "tackle_success",
+   "area": "Defending and pressing",
+   "what": "tackles won",
+   "value": "66%",
+   "interval_90": [
+    "65%",
+    "66%"
+   ],
+   "role_median": "65%",
+   "percentile": 94,
+   "label": "unclear"
+  },
+  {
+   "metric": "aerial_success",
+   "area": "Defending and pressing",
+   "what": "aerial duels won",
+   "value": "32%",
+   "interval_90": [
+    "27%",
+    "37%"
+   ],
+   "role_median": "35%",
+   "percentile": 6,
+   "label": "unclear"
+  },
+  {
+   "metric": "dribbled_past_p90",
+   "area": "Defending and pressing",
+   "what": "times dribbled past per 90",
+   "value": "0.666",
+   "interval_90": [
+    "0.483",
+    "0.846"
+   ],
+   "role_median": "0.731",
+   "percentile": 83,
+   "label": "unclear"
+  }
+ ],
+ "areas": {
+  "Involvement": 90.0,
+  "Progression and creation": 94.0,
+  "Passing": 68.0,
+  "Shooting": 86.0,
+  "Ball security": 43.0,
+  "Defending and pressing": 77.0
+ },
+ "source": "StatsBomb open data (Bayer Leverkusen 2023/24); own_Threat and own_xG from value_models.py"
+}

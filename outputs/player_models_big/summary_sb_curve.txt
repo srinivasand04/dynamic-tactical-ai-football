@@ -1,0 +1,7 @@
+B2. Learning curve, Leverkusen players (360 features): 11 players, test = last 8 matches
+  matches  players  mean gain %  (90% CI)        share of players with gain > 0
+        1       11     +0.04    (+0.01 .. +0.08)      73%
+        2       11     +0.94    (-0.46 .. +2.41)      64%
+        4       11     +1.38    (+0.20 .. +2.69)      64%
+        8       10     +1.69    (+0.25 .. +3.28)      60%
+       16        8     +2.64    (+0.99 .. +4.35)     100%

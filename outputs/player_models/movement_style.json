@@ -1,0 +1,485 @@
+{
+ "players": {
+  "DFL-OBJ-00008K": {
+   "name": "R. Hennings",
+   "team": "Fortuna Düsseldorf",
+   "position": "Striker",
+   "matches": 4,
+   "steps": 6844,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 3648,
+     "forward_m": -0.01,
+     "wide_m": -0.0,
+     "gnn_forward_m": 0.74,
+     "real_forward_m": 0.78
+    },
+    "without ball": {
+     "n": 3196,
+     "forward_m": 0.0,
+     "wide_m": -0.0,
+     "gnn_forward_m": -0.72,
+     "real_forward_m": -0.64
+    }
+   },
+   "test": {
+    "matches": 4,
+    "err_gnn_m": 0.942,
+    "err_role_m": 0.938,
+    "err_player_m": 0.939,
+    "gain_pct": -0.13,
+    "gain_ci90_m": [
+     -0.002,
+     -0.0
+    ],
+    "matches_better": 0,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-0000F8": {
+   "name": "F. Klaus",
+   "team": "Fortuna Düsseldorf",
+   "position": "Right Midfield",
+   "matches": 5,
+   "steps": 8703,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 4720,
+     "forward_m": -0.01,
+     "wide_m": 0.03,
+     "gnn_forward_m": 0.79,
+     "real_forward_m": 0.87
+    },
+    "without ball": {
+     "n": 3983,
+     "forward_m": -0.01,
+     "wide_m": 0.04,
+     "gnn_forward_m": -0.91,
+     "real_forward_m": -0.95
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 1.018,
+    "err_role_m": 1.017,
+    "err_player_m": 1.017,
+    "gain_pct": -0.08,
+    "gain_ci90_m": [
+     -0.004,
+     0.002
+    ],
+    "matches_better": 2,
+    "verdict": "no clear difference"
+   }
+  },
+  "DFL-OBJ-0000NZ": {
+   "name": "Matthias Zimmermann",
+   "team": "Fortuna Düsseldorf",
+   "position": "Right Back",
+   "matches": 5,
+   "steps": 14456,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 7826,
+     "forward_m": 0.01,
+     "wide_m": 0.03,
+     "gnn_forward_m": 0.92,
+     "real_forward_m": 0.94
+    },
+    "without ball": {
+     "n": 6630,
+     "forward_m": 0.01,
+     "wide_m": 0.03,
+     "gnn_forward_m": -0.81,
+     "real_forward_m": -0.93
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 0.944,
+    "err_role_m": 0.94,
+    "err_player_m": 0.941,
+    "gain_pct": -0.07,
+    "gain_ci90_m": [
+     -0.002,
+     0.001
+    ],
+    "matches_better": 2,
+    "verdict": "no clear difference"
+   }
+  },
+  "DFL-OBJ-00028V": {
+   "name": "M. Sobottka",
+   "team": "Fortuna Düsseldorf",
+   "position": "Right Defensive Midfield",
+   "matches": 4,
+   "steps": 11398,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 6463,
+     "forward_m": 0.0,
+     "wide_m": -0.0,
+     "gnn_forward_m": 0.72,
+     "real_forward_m": 0.73
+    },
+    "without ball": {
+     "n": 4935,
+     "forward_m": 0.03,
+     "wide_m": 0.0,
+     "gnn_forward_m": -0.84,
+     "real_forward_m": -0.87
+    }
+   },
+   "test": {
+    "matches": 4,
+    "err_gnn_m": 0.952,
+    "err_role_m": 0.954,
+    "err_player_m": 0.956,
+    "gain_pct": -0.16,
+    "gain_ci90_m": [
+     -0.002,
+     -0.001
+    ],
+    "matches_better": 1,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-0026RH": {
+   "name": "E. Iyoha",
+   "team": "Fortuna Düsseldorf",
+   "position": "Center Attacking Midfield",
+   "matches": 5,
+   "steps": 8386,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 4460,
+     "forward_m": -0.0,
+     "wide_m": 0.02,
+     "gnn_forward_m": 0.88,
+     "real_forward_m": 0.97
+    },
+    "without ball": {
+     "n": 3926,
+     "forward_m": -0.01,
+     "wide_m": 0.01,
+     "gnn_forward_m": -1.04,
+     "real_forward_m": -1.08
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 1.035,
+    "err_role_m": 1.043,
+    "err_player_m": 1.043,
+    "gain_pct": -0.08,
+    "gain_ci90_m": [
+     -0.002,
+     -0.0
+    ],
+    "matches_better": 1,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-0028FW": {
+   "name": "F. Kastenmeier",
+   "team": "Fortuna Düsseldorf",
+   "position": "Goalkeeper",
+   "matches": 5,
+   "steps": 14456,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 7826,
+     "forward_m": 0.04,
+     "wide_m": -0.0,
+     "gnn_forward_m": 0.3,
+     "real_forward_m": 0.33
+    },
+    "without ball": {
+     "n": 6630,
+     "forward_m": 0.04,
+     "wide_m": 0.0,
+     "gnn_forward_m": -0.52,
+     "real_forward_m": -0.51
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 0.57,
+    "err_role_m": 0.57,
+    "err_player_m": 0.568,
+    "gain_pct": 0.37,
+    "gain_ci90_m": [
+     -0.001,
+     0.005
+    ],
+    "matches_better": 3,
+    "verdict": "no clear difference"
+   }
+  },
+  "DFL-OBJ-002FXT": {
+   "name": "Dawid Kownacki",
+   "team": "Fortuna Düsseldorf",
+   "position": "Center Attacking Midfield",
+   "matches": 5,
+   "steps": 12943,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 7232,
+     "forward_m": -0.0,
+     "wide_m": -0.0,
+     "gnn_forward_m": 0.64,
+     "real_forward_m": 0.71
+    },
+    "without ball": {
+     "n": 5711,
+     "forward_m": 0.01,
+     "wide_m": -0.0,
+     "gnn_forward_m": -0.67,
+     "real_forward_m": -0.6
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 0.889,
+    "err_role_m": 0.889,
+    "err_player_m": 0.89,
+    "gain_pct": -0.13,
+    "gain_ci90_m": [
+     -0.002,
+     -0.0
+    ],
+    "matches_better": 1,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-002G5J": {
+   "name": "Shinta Appelkamp",
+   "team": "Fortuna Düsseldorf",
+   "position": "Left Midfield",
+   "matches": 5,
+   "steps": 7982,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 4283,
+     "forward_m": 0.01,
+     "wide_m": -0.0,
+     "gnn_forward_m": 0.73,
+     "real_forward_m": 0.83
+    },
+    "without ball": {
+     "n": 3699,
+     "forward_m": 0.01,
+     "wide_m": -0.0,
+     "gnn_forward_m": -0.82,
+     "real_forward_m": -0.79
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 1.055,
+    "err_role_m": 1.053,
+    "err_player_m": 1.055,
+    "gain_pct": -0.16,
+    "gain_ci90_m": [
+     -0.003,
+     -0.0
+    ],
+    "matches_better": 2,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-002GM1": {
+   "name": "Kristoffer Peterson",
+   "team": "Fortuna Düsseldorf",
+   "position": "Left Midfield",
+   "matches": 5,
+   "steps": 10004,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 5367,
+     "forward_m": 0.01,
+     "wide_m": 0.01,
+     "gnn_forward_m": 0.83,
+     "real_forward_m": 0.92
+    },
+    "without ball": {
+     "n": 4637,
+     "forward_m": 0.01,
+     "wide_m": 0.01,
+     "gnn_forward_m": -0.91,
+     "real_forward_m": -0.92
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 0.942,
+    "err_role_m": 0.957,
+    "err_player_m": 0.963,
+    "gain_pct": -0.64,
+    "gain_ci90_m": [
+     -0.011,
+     -0.002
+    ],
+    "matches_better": 0,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-002GM9": {
+   "name": "C. Klarer",
+   "team": "Fortuna Düsseldorf",
+   "position": "Right Center Back",
+   "matches": 5,
+   "steps": 12420,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 6720,
+     "forward_m": -0.0,
+     "wide_m": 0.01,
+     "gnn_forward_m": 0.68,
+     "real_forward_m": 0.65
+    },
+    "without ball": {
+     "n": 5700,
+     "forward_m": -0.01,
+     "wide_m": 0.0,
+     "gnn_forward_m": -0.71,
+     "real_forward_m": -0.82
+    }
+   },
+   "test": {
+    "matches": 5,
+    "err_gnn_m": 0.858,
+    "err_role_m": 0.863,
+    "err_player_m": 0.865,
+    "gain_pct": -0.21,
+    "gain_ci90_m": [
+     -0.004,
+     0.0
+    ],
+    "matches_better": 2,
+    "verdict": "no clear difference"
+   }
+  },
+  "DFL-OBJ-002GMO": {
+   "name": "Tim Oberdorf",
+   "team": "Fortuna Düsseldorf",
+   "position": "Unknown",
+   "matches": 4,
+   "steps": 11763,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 6350,
+     "forward_m": -0.0,
+     "wide_m": 0.0,
+     "gnn_forward_m": 0.76,
+     "real_forward_m": 0.71
+    },
+    "without ball": {
+     "n": 5413,
+     "forward_m": 0.0,
+     "wide_m": 0.0,
+     "gnn_forward_m": -0.74,
+     "real_forward_m": -0.86
+    }
+   },
+   "test": {
+    "matches": 4,
+    "err_gnn_m": 0.982,
+    "err_role_m": 0.977,
+    "err_player_m": 0.981,
+    "gain_pct": -0.44,
+    "gain_ci90_m": [
+     -0.008,
+     -0.0
+    ],
+    "matches_better": 0,
+    "verdict": "role model better"
+   }
+  },
+  "DFL-OBJ-J0130T": {
+   "name": "Jorrit Hendrix",
+   "team": "Fortuna Düsseldorf",
+   "position": "Left Defensive Midfield",
+   "matches": 4,
+   "steps": 9261,
+   "lam": 300,
+   "phases": {
+    "with ball": {
+     "n": 4817,
+     "forward_m": -0.06,
+     "wide_m": -0.03,
+     "gnn_forward_m": 0.83,
+     "real_forward_m": 0.8
+    },
+    "without ball": {
+     "n": 4444,
+     "forward_m": -0.02,
+     "wide_m": -0.03,
+     "gnn_forward_m": -0.69,
+     "real_forward_m": -0.77
+    }
+   },
+   "test": {
+    "matches": 4,
+    "err_gnn_m": 0.993,
+    "err_role_m": 0.991,
+    "err_player_m": 0.992,
+    "gain_pct": -0.05,
+    "gain_ci90_m": [
+     -0.002,
+     0.001
+    ],
+    "matches_better": 2,
+    "verdict": "no clear difference"
+   }
+  },
+  "DFL-OBJ-J01KJ5": {
+   "name": "M. Karbownik",
+   "team": "Fortuna Düsseldorf",
+   "position": "Unknown",
+   "matches": 4,
+   "steps": 11763,
+   "lam": 10000,
+   "phases": {
+    "with ball": {
+     "n": 6350,
+     "forward_m": 0.01,
+     "wide_m": -0.01,
+     "gnn_forward_m": 0.87,
+     "real_forward_m": 0.9
+    },
+    "without ball": {
+     "n": 5413,
+     "forward_m": 0.01,
+     "wide_m": -0.01,
+     "gnn_forward_m": -0.88,
+     "real_forward_m": -0.99
+    }
+   },
+   "test": {
+    "matches": 4,
+    "err_gnn_m": 0.974,
+    "err_role_m": 0.971,
+    "err_player_m": 0.972,
+    "gain_pct": -0.06,
+    "gain_ci90_m": [
+     -0.001,
+     0.0
+    ],
+    "matches_better": 1,
+    "verdict": "no clear difference"
+   }
+  }
+ }
+}

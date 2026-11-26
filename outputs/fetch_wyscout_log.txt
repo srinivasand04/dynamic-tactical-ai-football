@@ -1,0 +1,7 @@
+  events.zip: 77 MB
+  matches.zip: 1 MB
+  players.json: 2 MB
+  teams.json: 0 MB
+  competitions.json: 0 MB
+  events: ['events_England.json', 'events_European_Championship.json', 'events_France.json', 'events_Germany.json', 'events_Italy.json', 'events_Spain.json', 'events_World_Cup.json']
+  matches: ['matches_England.json', 'matches_European_Championship.json', 'matches_France.json', 'matches_Germany.json', 'matches_Italy.json', 'matches_Spain.json', 'matches_World_Cup.json']

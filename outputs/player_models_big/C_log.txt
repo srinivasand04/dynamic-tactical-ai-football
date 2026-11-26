@@ -1,0 +1,79 @@
+  1/64 10502: 2869 Key States, 23751 visible player steps
+  2/64 10503: 3062 Key States, 37945 visible player steps
+  3/64 10504: 2751 Key States, 27545 visible player steps
+  4/64 10505: 2772 Key States, 31477 visible player steps
+  5/64 10506: 3593 Key States, 39325 visible player steps
+  6/64 10507: 2940 Key States, 36906 visible player steps
+  7/64 10508: 3680 Key States, 43842 visible player steps
+  8/64 10509: 2702 Key States, 33683 visible player steps
+  9/64 10510: 2805 Key States, 24885 visible player steps
+  10/64 10511: 2755 Key States, 36029 visible player steps
+  11/64 10512: 2618 Key States, 24987 visible player steps
+  12/64 10513: 2591 Key States, 25165 visible player steps
+  13/64 10514: 2830 Key States, 33569 visible player steps
+  14/64 10515: 2705 Key States, 29797 visible player steps
+  15/64 10516: 2708 Key States, 29379 visible player steps
+  16/64 10517: 3404 Key States, 40586 visible player steps
+  17/64 3812: 2654 Key States, 32588 visible player steps
+  18/64 3813: 2737 Key States, 26564 visible player steps
+  19/64 3814: 2468 Key States, 24755 visible player steps
+  20/64 3815: 2953 Key States, 36957 visible player steps
+  21/64 3816: 2447 Key States, 25314 visible player steps
+  22/64 3817: 2719 Key States, 20207 visible player steps
+  23/64 3818: 2629 Key States, 32176 visible player steps
+  24/64 3819: 3069 Key States, 37995 visible player steps
+  25/64 3820: 2737 Key States, 29593 visible player steps
+  26/64 3821: 2831 Key States, 30621 visible player steps
+  27/64 3822: 3122 Key States, 37769 visible player steps
+  28/64 3823: 2986 Key States, 38334 visible player steps
+  29/64 3824: 2918 Key States, 30385 visible player steps
+  30/64 3825: 2634 Key States, 23511 visible player steps
+  31/64 3826: 2752 Key States, 31030 visible player steps
+  32/64 3827: 2878 Key States, 38161 visible player steps
+  33/64 3828: 2691 Key States, 31006 visible player steps
+  34/64 3829: 2912 Key States, 28297 visible player steps
+  35/64 3830: 2565 Key States, 24377 visible player steps
+  36/64 3831: 2826 Key States, 28433 visible player steps
+  37/64 3832: 2681 Key States, 25830 visible player steps
+  38/64 3833: 2484 Key States, 24649 visible player steps
+  39/64 3834: 2902 Key States, 35867 visible player steps
+  40/64 3835: 2503 Key States, 27783 visible player steps
+  41/64 3836: 2712 Key States, 33668 visible player steps
+  42/64 3837: 2739 Key States, 30575 visible player steps
+  43/64 3838: 2893 Key States, 28359 visible player steps
+  44/64 3839: 2808 Key States, 33472 visible player steps
+  45/64 3840: 2554 Key States, 24927 visible player steps
+  46/64 3841: 2618 Key States, 19339 visible player steps
+  47/64 3842: 2877 Key States, 36553 visible player steps
+  48/64 3843: 2678 Key States, 27964 visible player steps
+  49/64 3844: 2311 Key States, 23076 visible player steps
+  50/64 3845: 2875 Key States, 27327 visible player steps
+  51/64 3846: 2581 Key States, 32152 visible player steps
+  52/64 3847: 3004 Key States, 27616 visible player steps
+  53/64 3848: 2965 Key States, 30762 visible player steps
+  54/64 3849: 2680 Key States, 28540 visible player steps
+  55/64 3850: 2952 Key States, 41743 visible player steps
+  56/64 3851: 2516 Key States, 29094 visible player steps
+  57/64 3852: 3204 Key States, 32765 visible player steps
+  58/64 3853: 2667 Key States, 24089 visible player steps
+  59/64 3854: 2992 Key States, 38480 visible player steps
+  60/64 3855: 2992 Key States, 32697 visible player steps
+  61/64 3856: 2522 Key States, 25973 visible player steps
+  62/64 3857: 2761 Key States, 27991 visible player steps
+  63/64 3858: 2700 Key States, 31116 visible player steps
+  64/64 3859: 2620 Key States, 28072 visible player steps
+C. PFF World Cup 2022: 1957423 visible player steps, 64 matches, 676 players
+C1. own_MovementGNN on held-out World Cup matches (error per player step, m):
+  nobody moves 2.836   Bundesliga-trained GNN 0.849   World Cup fine-tuned GNN (4 folds) 0.641
+D:\grf-prototype\scripts\player_models_big.py:881: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  per = M.groupby("match").apply(lambda g: pd.Series({
+  World Cup GNN better in 64 of 64 matches
+C2. Player movement model vs role (leave one match out): 374 players with 3+ matches of 150+ steps (max matches per player 7)
+  fold 16/64
+  fold 32/64
+  fold 48/64
+  fold 64/64
+  pooled error (m): GNN 0.6386  + role 0.6396  + player 0.6408
+  players: player model better 33, unclear 250, role better 91; median gain -0.15 cm
+  by number of training matches: 2: -0.18 cm  3: -0.15 cm  4: +0.00 cm  5: -0.06 cm  6: -0.04 cm
+  top 5: Neymar +1.6 cm (3/3); Brennan Johnson +1.2 cm (3/3); Chris Mepham +1.2 cm (3/3); Hidemasa Morita +1.1 cm (3/3); Mason Mount +1.0 cm (3/4)

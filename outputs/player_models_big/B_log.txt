@@ -1,0 +1,235 @@
+  Euro 2020 1/51: 954 decisions
+  Euro 2020 2/51: 1187 decisions
+  Euro 2020 3/51: 1128 decisions
+  Euro 2020 4/51: 1085 decisions
+  Euro 2020 5/51: 939 decisions
+  Euro 2020 6/51: 1420 decisions
+  Euro 2020 7/51: 1183 decisions
+  Euro 2020 8/51: 767 decisions
+  Euro 2020 9/51: 1526 decisions
+  Euro 2020 10/51: 1570 decisions
+  Euro 2020 11/51: 952 decisions
+  Euro 2020 12/51: 1023 decisions
+  Euro 2020 13/51: 1429 decisions
+  Euro 2020 14/51: 1395 decisions
+  Euro 2020 15/51: 1437 decisions
+  Euro 2020 16/51: 1052 decisions
+  Euro 2020 17/51: 1503 decisions
+  Euro 2020 18/51: 790 decisions
+  Euro 2020 19/51: 970 decisions
+  Euro 2020 20/51: 1071 decisions
+  Euro 2020 21/51: 934 decisions
+  Euro 2020 22/51: 1192 decisions
+  Euro 2020 23/51: 1044 decisions
+  Euro 2020 24/51: 990 decisions
+  Euro 2020 25/51: 1118 decisions
+  Euro 2020 26/51: 848 decisions
+  Euro 2020 27/51: 1245 decisions
+  Euro 2020 28/51: 1064 decisions
+  Euro 2020 29/51: 1073 decisions
+  Euro 2020 30/51: 1113 decisions
+  Euro 2020 31/51: 1033 decisions
+  Euro 2020 32/51: 1263 decisions
+  Euro 2020 33/51: 1117 decisions
+  Euro 2020 34/51: 1071 decisions
+  Euro 2020 35/51: 1090 decisions
+  Euro 2020 36/51: 1153 decisions
+  Euro 2020 37/51: 1071 decisions
+  Euro 2020 38/51: 1501 decisions
+  Euro 2020 39/51: 1293 decisions
+  Euro 2020 40/51: 1391 decisions
+  Euro 2020 41/51: 1084 decisions
+  Euro 2020 42/51: 1031 decisions
+  Euro 2020 43/51: 1198 decisions
+  Euro 2020 44/51: 902 decisions
+  Euro 2020 45/51: 1174 decisions
+  Euro 2020 46/51: 980 decisions
+  Euro 2020 47/51: 1019 decisions
+  Euro 2020 48/51: 1098 decisions
+  Euro 2020 49/51: 754 decisions
+  Euro 2020 50/51: 1048 decisions
+  Euro 2020 51/51: 957 decisions
+  World Cup 2022 1/64: 976 decisions
+  World Cup 2022 2/64: 1181 decisions
+  World Cup 2022 3/64: 1358 decisions
+  World Cup 2022 4/64: 1052 decisions
+  World Cup 2022 5/64: 1444 decisions
+  World Cup 2022 6/64: 1118 decisions
+  World Cup 2022 7/64: 1046 decisions
+  World Cup 2022 8/64: 1131 decisions
+  World Cup 2022 9/64: 965 decisions
+  World Cup 2022 10/64: 1109 decisions
+  World Cup 2022 11/64: 1037 decisions
+  World Cup 2022 12/64: 1117 decisions
+  World Cup 2022 13/64: 1223 decisions
+  World Cup 2022 14/64: 910 decisions
+  World Cup 2022 15/64: 1094 decisions
+  World Cup 2022 16/64: 967 decisions
+  World Cup 2022 17/64: 1437 decisions
+  World Cup 2022 18/64: 1187 decisions
+  World Cup 2022 19/64: 1174 decisions
+  World Cup 2022 20/64: 1032 decisions
+  World Cup 2022 21/64: 955 decisions
+  World Cup 2022 22/64: 1014 decisions
+  World Cup 2022 23/64: 1016 decisions
+  World Cup 2022 24/64: 1171 decisions
+  World Cup 2022 25/64: 1290 decisions
+  World Cup 2022 26/64: 1220 decisions
+  World Cup 2022 27/64: 1193 decisions
+  World Cup 2022 28/64: 1230 decisions
+  World Cup 2022 29/64: 1061 decisions
+  World Cup 2022 30/64: 899 decisions
+  World Cup 2022 31/64: 1153 decisions
+  World Cup 2022 32/64: 1042 decisions
+  World Cup 2022 33/64: 1083 decisions
+  World Cup 2022 34/64: 968 decisions
+  World Cup 2022 35/64: 741 decisions
+  World Cup 2022 36/64: 1122 decisions
+  World Cup 2022 37/64: 976 decisions
+  World Cup 2022 38/64: 745 decisions
+  World Cup 2022 39/64: 1314 decisions
+  World Cup 2022 40/64: 890 decisions
+  World Cup 2022 41/64: 957 decisions
+  World Cup 2022 42/64: 1091 decisions
+  World Cup 2022 43/64: 1044 decisions
+  World Cup 2022 44/64: 1031 decisions
+  World Cup 2022 45/64: 1050 decisions
+  World Cup 2022 46/64: 1607 decisions
+  World Cup 2022 47/64: 1627 decisions
+  World Cup 2022 48/64: 1445 decisions
+  World Cup 2022 49/64: 1247 decisions
+  World Cup 2022 50/64: 1111 decisions
+  World Cup 2022 51/64: 1182 decisions
+  World Cup 2022 52/64: 1054 decisions
+  World Cup 2022 53/64: 1101 decisions
+  World Cup 2022 54/64: 982 decisions
+  World Cup 2022 55/64: 1028 decisions
+  World Cup 2022 56/64: 1099 decisions
+  World Cup 2022 57/64: 953 decisions
+  World Cup 2022 58/64: 972 decisions
+  World Cup 2022 59/64: 1008 decisions
+  World Cup 2022 60/64: 1343 decisions
+  World Cup 2022 61/64: 1122 decisions
+  World Cup 2022 62/64: 898 decisions
+  World Cup 2022 63/64: 1344 decisions
+  World Cup 2022 64/64: 1039 decisions
+  Euro 2024 1/51: 1027 decisions
+  Euro 2024 2/51: 1017 decisions
+  Euro 2024 3/51: 1129 decisions
+  Euro 2024 4/51: 1147 decisions
+  Euro 2024 5/51: 1166 decisions
+  Euro 2024 6/51: 1066 decisions
+  Euro 2024 7/51: 1061 decisions
+  Euro 2024 8/51: 1096 decisions
+  Euro 2024 9/51: 932 decisions
+  Euro 2024 10/51: 1023 decisions
+  Euro 2024 11/51: 1154 decisions
+  Euro 2024 12/51: 1050 decisions
+  Euro 2024 13/51: 1135 decisions
+  Euro 2024 14/51: 985 decisions
+  Euro 2024 15/51: 1094 decisions
+  Euro 2024 16/51: 1276 decisions
+  Euro 2024 17/51: 1543 decisions
+  Euro 2024 18/51: 1100 decisions
+  Euro 2024 19/51: 1097 decisions
+  Euro 2024 20/51: 1097 decisions
+  Euro 2024 21/51: 895 decisions
+  Euro 2024 22/51: 1057 decisions
+  Euro 2024 23/51: 980 decisions
+  Euro 2024 24/51: 999 decisions
+  Euro 2024 25/51: 954 decisions
+  Euro 2024 26/51: 1727 decisions
+  Euro 2024 27/51: 818 decisions
+  Euro 2024 28/51: 1208 decisions
+  Euro 2024 29/51: 1376 decisions
+  Euro 2024 30/51: 1128 decisions
+  Euro 2024 31/51: 807 decisions
+  Euro 2024 32/51: 1055 decisions
+  Euro 2024 33/51: 959 decisions
+  Euro 2024 34/51: 1260 decisions
+  Euro 2024 35/51: 1299 decisions
+  Euro 2024 36/51: 1393 decisions
+  Euro 2024 37/51: 1213 decisions
+  Euro 2024 38/51: 1175 decisions
+  Euro 2024 39/51: 1110 decisions
+  Euro 2024 40/51: 1146 decisions
+  Euro 2024 41/51: 980 decisions
+  Euro 2024 42/51: 1117 decisions
+  Euro 2024 43/51: 1144 decisions
+  Euro 2024 44/51: 1178 decisions
+  Euro 2024 45/51: 1251 decisions
+  Euro 2024 46/51: 1130 decisions
+  Euro 2024 47/51: 1020 decisions
+  Euro 2024 48/51: 1296 decisions
+  Euro 2024 49/51: 843 decisions
+  Euro 2024 50/51: 868 decisions
+  Euro 2024 51/51: 1111 decisions
+B eval: 221949 decisions, 197 matches, 1401 players; 411 players with 3+ matches and 150+ decisions
+  Euro 2020           51 matches   57230 decisions  458 players
+  Euro 2024           51 matches   56692 decisions  458 players
+  Leverkusen 23/24    31 matches   37051 decisions  326 players
+  World Cup 2022      64 matches   70976 decisions  636 players
+  fold 1/5 (79s)
+  fold 2/5 (85s)
+  fold 3/5 (94s)
+  fold 4/5 (98s)
+  fold 5/5 (99s)
+B1. Player model vs role model, held-out matches (5 folds by match)
+  pooled held-out log-loss: role 1.1070  player 1.0995  (+0.68% )
+  players: 410  player model better 103  unclear 255  role better 52  | gain > 0 on average: 53%  median gain +0.06%
+    Euro 2020              players  137  better  31  median gain +0.10%  mean +0.63%
+    Euro 2024              players  115  better  28  median gain -0.03%  mean +0.40%
+    Leverkusen 23/24       players   22  better  12  median gain +1.24%  mean +1.19%
+    World Cup 2022         players  136  better  32  median gain -0.02%  mean +0.20%
+    role AM  players   26  better   8  median gain +0.08%
+    role CB  players  116  better  33  median gain +0.13%
+    role CM  players   38  better   7  median gain +0.07%
+    role DM  players   77  better  16  median gain -0.05%
+    role FB  players   76  better  18  median gain -0.01%
+    role ST  players   25  better   6  median gain +0.05%
+    role W   players   52  better  15  median gain +0.39%
+  top 8: Tomáš Kalas (CB, Euro 2020) +25.4%; Dan Ndoye (AM, Euro 2024) +9.0%; Abdou Diallo (CB, World Cup 2022) +6.7%; Alphonso Davies (FB, World Cup 2022) +6.6%; Thomas Müller (AM, Euro 2020) +6.3%; Ondrej Celustka (CB, Euro 2020) +5.9%; Riccardo Calafiori (CB, Euro 2024) +5.8%; Jonathan Tah (CB, Leverkusen 23/24) +5.8%
+B2. Learning curve, Leverkusen players (360 features): 11 players, test = last 8 matches
+  matches  players  mean gain %  (90% CI)        share of players with gain > 0
+        1       11     +0.04    (+0.01 .. +0.08)      73%
+        2       11     +0.94    (-0.46 .. +2.41)      64%
+        4       11     +1.38    (+0.20 .. +2.69)      64%
+        8       10     +1.69    (+0.25 .. +3.28)      60%
+       16        8     +2.64    (+0.99 .. +4.35)     100%
+  transfer -> Euro 2020: 121 pairs so far
+  transfer -> Euro 2024: 249 pairs so far
+  transfer -> Leverkusen 23/24: 278 pairs so far
+  transfer -> World Cup 2022: 408 pairs so far
+B3. Style learned in one context, tested in another (gain of player model over role model on the new context)
+  train -> test                          players  mean gain %  (90% CI)       gain > 0
+  Euro 2020          -> Euro 2024             63     -0.00   (-0.32 .. +0.32)     60%
+  Euro 2020          -> Leverkusen 23/24       7     -0.33   (-1.44 .. +0.70)     43%
+  Euro 2020          -> World Cup 2022        65     +0.16   (-0.23 .. +0.62)     57%
+  Euro 2024          -> Euro 2020             63     -0.03   (-0.47 .. +0.41)     60%
+  Euro 2024          -> Leverkusen 23/24      12     +0.39   (-0.43 .. +1.21)     67%
+  Euro 2024          -> World Cup 2022        61     -0.10   (-0.42 .. +0.21)     46%
+  Leverkusen 23/24   -> Euro 2024              8     -0.13   (-1.18 .. +0.78)     62%
+  World Cup 2022     -> Euro 2020             56     +0.19   (-0.18 .. +0.53)     62%
+  World Cup 2022     -> Euro 2024             57     +0.04   (-0.33 .. +0.40)     61%
+  World Cup 2022     -> Leverkusen 23/24      10     -1.34   (-3.42 .. +0.88)     30%
+  all pairs: 408  mean gain +0.00% (-0.16 .. +0.15), gain > 0 in 57%
+  style carries? correlation of style (log ratio vs role) learned in context 1 vs context 2, per choice:
+   shot: r=0.07  dribble: r=0.10  carry: r=0.35  long pass: r=0.23  forward pass: r=0.28  safe pass: r=0.35
+  Leverkusen players, club 23/24 -> tournament:
+    Josip Stanišić               -> Euro 2024       ( 112 decisions)  gain +1.10%
+    Alejandro Grimaldo García    -> Euro 2024       ( 108 decisions)  gain +0.74%
+    Florian Wirtz                -> Euro 2024       ( 268 decisions)  gain +0.73%
+    Patrik Schick                -> Euro 2020       ( 126 decisions)  gain +0.66%
+    Granit Xhaka                 -> Euro 2024       ( 445 decisions)  gain +0.38%
+    Granit Xhaka                 -> World Cup 2022  ( 264 decisions)  gain -0.12%
+    Robert Andrich               -> Euro 2024       ( 266 decisions)  gain -0.38%
+    Granit Xhaka                 -> Euro 2020       ( 347 decisions)  gain -0.76%
+    Jonathan Tah                 -> Euro 2024       ( 319 decisions)  gain -1.39%
+    Piero Martín Hincapié Reyna  -> World Cup 2022  ( 238 decisions)  gain -3.80%
+    Patrik Schick                -> Euro 2024       (  50 decisions)  gain -3.99%
+  pressure 100/121
+B4. Pressure profile: 121 players with 400+ decisions (change in choice share when pressed, beyond his role)
+  split-half reliability (odd vs even matches) per choice: shot: r=0.26  dribble: r=0.10  carry: r=0.28  long pass: r=0.37  forward pass: r=0.31  safe pass: r=0.41
+  most goes safe when pressed (more sideways / back passes than his role): Toni Kroos (DM) +18.6 pts; Bruno Miguel Borges Fernandes (AM) +10.9 pts; Daley Blind (CB) +10.6 pts; Kevin De Bruyne (AM) +10.4 pts; Luka Modrić (CM) +10.2 pts
+  most takes players on when pressed: João Pedro Cavaco Cancelo (FB) +7.1 pts; Joško Gvardiol (CB) +6.3 pts; Kylian Mbappé Lottin (W) +6.3 pts; Victor Okoh Boniface (ST) +5.9 pts; Daniel Olmo Carvajal (W) +4.9 pts
+  least (keeps playing forward when pressed): Jan Vertonghen (CB) -13.1 pts; Leroy Sané (W) -11.3 pts; Jeremie Frimpong (FB) -9.4 pts; Jamal Musiala (W) -9.1 pts; Stefan de Vrij (CB) -8.1 pts

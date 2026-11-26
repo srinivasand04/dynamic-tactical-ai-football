@@ -1,0 +1,10 @@
+A4. Similar players: 5 nearest by style (same role, all 5 leagues), 938 players
+  share of the 5 nearest from the SAME TEAM  : 1.2%  (chance 0.7%)
+  share of the 5 nearest from the SAME LEAGUE: 21.9%  (chance 20.2%)
+  Jorginho (CM, Napoli): B. Andr\u00e9 (Rennes) 0.90; B. Nivet (Troyes) 0.88; K. Strootman (Roma) 0.88
+  N. Otamendi (CB, Manchester City): G. Cahill (Chelsea) 0.98; K. Manolas (Roma) 0.90; N. S\u00fcle (Bayern M\u00fcnchen) 0.89
+  K. De Bruyne (AM, Manchester City): D. Payet (Olympique Marseille) 0.95; C. Eriksen (Tottenham Hotspur) 0.86; Ra\u00fal Garc\u00eda (Athletic Club) 0.86
+  L. Insigne (W, Napoli): T. Inui (Eibar) 0.89; F. Kamano (Bordeaux) 0.86; L. San\u00e9 (Manchester City) 0.85
+  Azpilicueta (FB, Chelsea): M. Nastasi\u0107 (Schalke 04) 0.98; G. Mercado (Sevilla) 0.94; E. Moretti (Torino) 0.93
+  J. Seri (DM, Nice): L. Tousart (Olympique Lyonnais) 0.97; S. Ascac\u00edbar (Stuttgart) 0.97; M. Meyer (Schalke 04) 0.91
+  L. Messi (ST, Barcelona): Neymar (PSG) 0.97; \u00c1. Correa (Atl\u00e9tico Madrid) 0.90; G. Pandev (Genoa) 0.90

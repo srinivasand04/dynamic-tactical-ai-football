@@ -1,0 +1,4 @@
+A6. Club season 2017/18 style -> national team tournament (player model from his league season only)
+  -> Euro 2016      players  110  mean gain +0.82% (+0.48 .. +1.17)  gain > 0 in 65%
+  -> World Cup 2018 players  183  mean gain +0.87% (+0.60 .. +1.18)  gain > 0 in 64%
+  biggest gains: J. Hector (Germany) +14.9%; Nacho (Spain) +9.6%; J. Hector (Germany) +9.3%; Jordi Alba (Spain) +8.7%; T. M\u00fcller (Germany) +8.0%; M. Mand\u017euki\u0107 (Croatia) +7.7%

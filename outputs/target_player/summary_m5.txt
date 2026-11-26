@@ -1,0 +1,11 @@
+M5. Ball-loss model: 50478 passes / dribbles / miscontrols of DM / CM with a 360 frame; Granit Xhaka: 3598 (loss rate 10.1%, typical 16.6%)
+  held-out (43 matches, 5 folds): log-loss typical 0.3078  his model 0.3015 (+2.04%, 90% per match +0.0031 .. +0.0093); AUC 0.658 -> 0.662
+  calibration on his held-out matches: predicted loss 10.3%, real 10.1%
+  where to win the ball (his touches pressed from the best side; value = our xT where we win it):
+    own half, left-centre             9.2 touches/90  risk free  8.6%  pressed (behind) 17.3% (typical 20.7%)  regain value 0.024 xT/90
+    own third, left-centre            4.0 touches/90  risk free 11.4%  pressed (behind) 22.9% (typical 29.3%)  regain value 0.022 xT/90
+    opp. half, left-centre           11.1 touches/90  risk free  9.3%  pressed (behind) 17.8% (typical 19.4%)  regain value 0.021 xT/90
+    own half, right-centre            6.7 touches/90  risk free  8.6%  pressed (behind) 17.6% (typical 21.0%)  regain value 0.018 xT/90
+    own third, right-centre           2.8 touches/90  risk free 11.1%  pressed (behind) 23.1% (typical 29.7%)  regain value 0.017 xT/90
+    opp. half, right-centre           8.8 touches/90  risk free  9.0%  pressed (behind) 17.8% (typical 19.3%)  regain value 0.017 xT/90
+  his loss risk on all his touches: none 11.4% (typ 11.8%)  front 11.4% (typ 18.1%)  left 13.1% (typ 21.0%)  right 13.1% (typ 19.6%)  behind 21.3% (typ 23.8%)

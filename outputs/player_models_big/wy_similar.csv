@@ -1,0 +1,939 @@
+player,team,league,role,nn1,nn2,nn3,nn4,nn5
+C. Eriksen,Tottenham Hotspur,Premier League,AM,P. Gro\u00df (Brighton & Hove Albion) 0.88,K. De Bruyne (Manchester City) 0.86,Ra\u00fal Garc\u00eda (Athletic Club) 0.75,E. \u00c7olak (Deportivo La Coru\u00f1a) 0.72,D. Payet (Olympique Marseille) 0.70
+J. Gu\u00f0munds\u00adson,Burnley,Premier League,AM,X. Shaqiri (Stoke City) 0.85,\u00c1. di Mar\u00eda (PSG) 0.80,Canales (Real Sociedad) 0.76,Kwon Chang-Hoon (Dijon) 0.72,F. Kosti\u0107 (Hamburger SV) 0.70
+D. Tadi\u0107,Southampton,Premier League,AM,M. \u00d6zil (Arsenal) 0.82,Juan Mata (Manchester United) 0.72,M. G\u00f6tze (Borussia Dortmund) 0.68,Isco (Real Madrid) 0.63,David Silva (Manchester City) 0.63
+Canales,Real Sociedad,La Liga,AM,D. Gray (Leicester City) 0.93,N. Redmond (Southampton) 0.85,X. Shaqiri (Stoke City) 0.78,J. Gu\u00f0munds\u00adson (Burnley) 0.76,Kwon Chang-Hoon (Dijon) 0.73
+\u00c1. di Mar\u00eda,PSG,Ligue 1,AM,A. Oxlade-Chamberlain (Arsenal) 0.92,X. Shaqiri (Stoke City) 0.91,R. de Paul (Udinese) 0.82,N. Redmond (Southampton) 0.80,J. Gu\u00f0munds\u00adson (Burnley) 0.80
+M. \u00d6zil,Arsenal,Premier League,AM,M. G\u00f6tze (Borussia Dortmund) 0.95,David Silva (Manchester City) 0.84,Isco (Real Madrid) 0.84,D. Tadi\u0107 (Southampton) 0.82,Juan Mata (Manchester United) 0.82
+Susaeta,Athletic Club,La Liga,AM,Jo\u00e3o M\u00e1rio (West Ham United) 0.94,A. Taarabt (Genoa) 0.93,Mikel Oyarzabal (Real Sociedad) 0.88,G. Ram\u00edrez (Sampdoria) 0.85,C. Pulisic (Borussia Dortmund) 0.82
+Luis Alberto,Lazio,Serie A,AM,D. Payet (Olympique Marseille) 0.86,F. Kainz (Werder Bremen) 0.84,T. Lemar (Monaco) 0.83,N. Sliti (Dijon) 0.76,K. De Bruyne (Manchester City) 0.72
+Ra\u00fal Garc\u00eda,Athletic Club,La Liga,AM,V. Birsa (Chievo) 0.92,Z. Junuzovi\u0107 (Werder Bremen) 0.88,K. De Bruyne (Manchester City) 0.86,D. Payet (Olympique Marseille) 0.77,R. Fraser (AFC Bournemouth) 0.76
+Isco,Real Madrid,La Liga,AM,A. Iwobi (Arsenal) 0.93,David Silva (Manchester City) 0.93,M. G\u00f6tze (Borussia Dortmund) 0.88,M. \u00d6zil (Arsenal) 0.84,Juan Mata (Manchester United) 0.73
+Joaqu\u00edn,Real Betis,La Liga,AM,J. Brandt (Bayer Leverkusen) 0.87,G. Ram\u00edrez (Sampdoria) 0.85,Jo\u00e3o M\u00e1rio (West Ham United) 0.72,Susaeta (Athletic Club) 0.72,Juan Mata (Manchester United) 0.68
+Pablo Sarabia,Sevilla,La Liga,AM,P. Gro\u00df (Brighton & Hove Albion) 0.86,Z. Junuzovi\u0107 (Werder Bremen) 0.71,C. Eriksen (Tottenham Hotspur) 0.70,Ra\u00fal Garc\u00eda (Athletic Club) 0.65,A. Iwobi (Arsenal) 0.64
+A. Oxlade-Chamberlain,Arsenal,Premier League,AM,X. Shaqiri (Stoke City) 0.94,R. de Paul (Udinese) 0.93,\u00c1. di Mar\u00eda (PSG) 0.92,N. Redmond (Southampton) 0.89,R. Mahrez (Leicester City) 0.87
+Juan Mata,Manchester United,Premier League,AM,David Silva (Manchester City) 0.90,M. \u00d6zil (Arsenal) 0.82,A. Iwobi (Arsenal) 0.79,M. G\u00f6tze (Borussia Dortmund) 0.75,Isco (Real Madrid) 0.73
+J. Lingard,Manchester United,Premier League,AM,Mikel Oyarzabal (Real Sociedad) 0.91,Jo\u00e3o M\u00e1rio (West Ham United) 0.86,J. Brandt (Bayer Leverkusen) 0.75,A. Taarabt (Genoa) 0.72,C. Pulisic (Borussia Dortmund) 0.72
+N. Redmond,Southampton,Premier League,AM,A. Oxlade-Chamberlain (Arsenal) 0.89,X. Shaqiri (Stoke City) 0.89,D. Gray (Leicester City) 0.88,Canales (Real Sociedad) 0.85,\u00c1. di Mar\u00eda (PSG) 0.80
+David Silva,Manchester City,Premier League,AM,A. Iwobi (Arsenal) 0.96,Isco (Real Madrid) 0.93,Juan Mata (Manchester United) 0.90,M. \u00d6zil (Arsenal) 0.84,M. G\u00f6tze (Borussia Dortmund) 0.84
+W. Zaha,Crystal Palace,Premier League,AM,S. Gnabry (Hoffenheim) 0.85,A. Harit (Schalke 04) 0.82,I. Sarr (Rennes) 0.76,R. Loftus-Cheek (Crystal Palace) 0.75,M. Dossevi (Metz) 0.72
+A. Townsend,Crystal Palace,Premier League,AM,M. Dossevi (Metz) 0.87,Jos\u00e9 Luis Morales (Levante) 0.82,F. Chiesa (Fiorentina) 0.80,F. Kosti\u0107 (Hamburger SV) 0.79,R. de Paul (Udinese) 0.78
+A. Taarabt,Genoa,Serie A,AM,C. Pulisic (Borussia Dortmund) 0.95,Susaeta (Athletic Club) 0.93,Mikel Oyarzabal (Real Sociedad) 0.93,Jo\u00e3o M\u00e1rio (West Ham United) 0.90,A. Harit (Schalke 04) 0.83
+J. Ibe,AFC Bournemouth,Premier League,AM,I. Sarr (Rennes) 0.80,N. Fekir (Olympique Lyonnais) 0.80,F. Klaus (Hannover 96) 0.74,S. Gnabry (Hoffenheim) 0.67,J. Lingard (Manchester United) 0.56
+D. Alli,Tottenham Hotspur,Premier League,AM,A. Harit (Schalke 04) 0.90,R. Loftus-Cheek (Crystal Palace) 0.88,S. Gnabry (Hoffenheim) 0.77,C. Pulisic (Borussia Dortmund) 0.75,A. Taarabt (Genoa) 0.73
+Z. Junuzovi\u0107,Werder Bremen,Bundesliga,AM,R. Fraser (AFC Bournemouth) 0.96,Ra\u00fal Garc\u00eda (Athletic Club) 0.88,V. Birsa (Chievo) 0.87,F. V\u00e1zquez (Sevilla) 0.72,Pablo Sarabia (Sevilla) 0.71
+M. G\u00f6tze,Borussia Dortmund,Bundesliga,AM,M. \u00d6zil (Arsenal) 0.95,Isco (Real Madrid) 0.88,David Silva (Manchester City) 0.84,A. Iwobi (Arsenal) 0.80,Juan Mata (Manchester United) 0.75
+F. Klaus,Hannover 96,Bundesliga,AM,Rony Lopes (Monaco) 0.85,F. Chiesa (Fiorentina) 0.76,J. Ibe (AFC Bournemouth) 0.74,Kwon Chang-Hoon (Dijon) 0.67,I. Sarr (Rennes) 0.64
+P. Gro\u00df,Brighton & Hove Albion,Premier League,AM,C. Eriksen (Tottenham Hotspur) 0.88,Pablo Sarabia (Sevilla) 0.86,K. De Bruyne (Manchester City) 0.76,David Silva (Manchester City) 0.74,A. Iwobi (Arsenal) 0.69
+Caiuby,Augsburg,Bundesliga,AM,Kwon Chang-Hoon (Dijon) 0.78,\u00c1. di Mar\u00eda (PSG) 0.75,J. Gu\u00f0munds\u00adson (Burnley) 0.68,A. Oxlade-Chamberlain (Arsenal) 0.59,V. Birsa (Chievo) 0.59
+G. Ram\u00edrez,Sampdoria,Serie A,AM,Susaeta (Athletic Club) 0.85,Joaqu\u00edn (Real Betis) 0.85,A. Taarabt (Genoa) 0.77,Douglas Costa (Juventus) 0.77,Jo\u00e3o M\u00e1rio (West Ham United) 0.74
+F. V\u00e1zquez,Sevilla,La Liga,AM,R. Fraser (AFC Bournemouth) 0.80,Z. Junuzovi\u0107 (Werder Bremen) 0.72,N. Fekir (Olympique Lyonnais) 0.66,H. Mkhitaryan (Manchester United) 0.66,Luis Alberto (Lazio) 0.64
+V. Birsa,Chievo,Serie A,AM,Ra\u00fal Garc\u00eda (Athletic Club) 0.92,Z. Junuzovi\u0107 (Werder Bremen) 0.87,R. Fraser (AFC Bournemouth) 0.79,K. De Bruyne (Manchester City) 0.69,Luis Alberto (Lazio) 0.68
+D. Payet,Olympique Marseille,Ligue 1,AM,K. De Bruyne (Manchester City) 0.95,T. Lemar (Monaco) 0.90,Luis Alberto (Lazio) 0.86,Ra\u00fal Garc\u00eda (Athletic Club) 0.77,E. \u00c7olak (Deportivo La Coru\u00f1a) 0.76
+W. Khazri,Rennes,Ligue 1,AM,R. Mahrez (Leicester City) 0.87,F. Chiesa (Fiorentina) 0.79,A. Oxlade-Chamberlain (Arsenal) 0.79,R. de Paul (Udinese) 0.78,A. Townsend (Crystal Palace) 0.78
+N. Sliti,Dijon,Ligue 1,AM,Jos\u00e9 Luis Morales (Levante) 0.93,M. Dossevi (Metz) 0.86,J. Brekalo (Stuttgart) 0.84,Luis Alberto (Lazio) 0.76,R. Mahrez (Leicester City) 0.70
+R. Mahrez,Leicester City,Premier League,AM,R. de Paul (Udinese) 0.94,A. Oxlade-Chamberlain (Arsenal) 0.87,W. Khazri (Rennes) 0.87,Jos\u00e9 Luis Morales (Levante) 0.86,J. Brekalo (Stuttgart) 0.78
+M. Dossevi,Metz,Ligue 1,AM,Jos\u00e9 Luis Morales (Levante) 0.89,A. Townsend (Crystal Palace) 0.87,N. Sliti (Dijon) 0.86,R. Mahrez (Leicester City) 0.76,W. Zaha (Crystal Palace) 0.72
+N. Benezet,Guingamp,Ligue 1,AM,H. Mkhitaryan (Manchester United) 0.90,M. Sanson (Olympique Marseille) 0.71,R. Loftus-Cheek (Crystal Palace) 0.62,A. Taarabt (Genoa) 0.59,D. Alli (Tottenham Hotspur) 0.58
+N. Fekir,Olympique Lyonnais,Ligue 1,AM,J. Ibe (AFC Bournemouth) 0.80,F. V\u00e1zquez (Sevilla) 0.66,R. Loftus-Cheek (Crystal Palace) 0.51,N. Benezet (Guingamp) 0.50,H. Mkhitaryan (Manchester United) 0.50
+T. Lemar,Monaco,Ligue 1,AM,D. Payet (Olympique Marseille) 0.90,F. Kainz (Werder Bremen) 0.84,Luis Alberto (Lazio) 0.83,\u00c1. di Mar\u00eda (PSG) 0.80,K. De Bruyne (Manchester City) 0.76
+E. \u00c7olak,Deportivo La Coru\u00f1a,La Liga,AM,K. De Bruyne (Manchester City) 0.76,D. Payet (Olympique Marseille) 0.76,Ra\u00fal Garc\u00eda (Athletic Club) 0.75,C. Eriksen (Tottenham Hotspur) 0.72,V. Birsa (Chievo) 0.59
+K. De Bruyne,Manchester City,Premier League,AM,D. Payet (Olympique Marseille) 0.95,C. Eriksen (Tottenham Hotspur) 0.86,Ra\u00fal Garc\u00eda (Athletic Club) 0.86,P. Gro\u00df (Brighton & Hove Albion) 0.76,E. \u00c7olak (Deportivo La Coru\u00f1a) 0.76
+X. Shaqiri,Stoke City,Premier League,AM,A. Oxlade-Chamberlain (Arsenal) 0.94,\u00c1. di Mar\u00eda (PSG) 0.91,N. Redmond (Southampton) 0.89,J. Gu\u00f0munds\u00adson (Burnley) 0.85,F. Kosti\u0107 (Hamburger SV) 0.82
+R. Fraser,AFC Bournemouth,Premier League,AM,Z. Junuzovi\u0107 (Werder Bremen) 0.96,F. V\u00e1zquez (Sevilla) 0.80,V. Birsa (Chievo) 0.79,Ra\u00fal Garc\u00eda (Athletic Club) 0.76,Luis Alberto (Lazio) 0.70
+F. Kainz,Werder Bremen,Bundesliga,AM,F. Kosti\u0107 (Hamburger SV) 0.87,T. Lemar (Monaco) 0.84,Luis Alberto (Lazio) 0.84,R. de Paul (Udinese) 0.79,\u00c1. di Mar\u00eda (PSG) 0.74
+Jo\u00e3o M\u00e1rio,West Ham United,Premier League,AM,Mikel Oyarzabal (Real Sociedad) 0.96,Susaeta (Athletic Club) 0.94,A. Taarabt (Genoa) 0.90,J. Lingard (Manchester United) 0.86,J. Brandt (Bayer Leverkusen) 0.82
+Willian,Chelsea,Premier League,AM,C. Pulisic (Borussia Dortmund) 0.82,A. Taarabt (Genoa) 0.81,Susaeta (Athletic Club) 0.81,Jo\u00e3o M\u00e1rio (West Ham United) 0.74,A. Harit (Schalke 04) 0.73
+Douglas Costa,Juventus,Serie A,AM,D. Gray (Leicester City) 0.83,Susaeta (Athletic Club) 0.79,G. Ram\u00edrez (Sampdoria) 0.77,Willian (Chelsea) 0.71,Canales (Real Sociedad) 0.70
+H. Mkhitaryan,Manchester United,Premier League,AM,N. Benezet (Guingamp) 0.90,M. Sanson (Olympique Marseille) 0.82,F. V\u00e1zquez (Sevilla) 0.66,R. Loftus-Cheek (Crystal Palace) 0.51,N. Fekir (Olympique Lyonnais) 0.50
+F. Kosti\u0107,Hamburger SV,Bundesliga,AM,R. de Paul (Udinese) 0.89,F. Kainz (Werder Bremen) 0.87,X. Shaqiri (Stoke City) 0.82,A. Oxlade-Chamberlain (Arsenal) 0.81,A. Townsend (Crystal Palace) 0.79
+S. Gnabry,Hoffenheim,Bundesliga,AM,A. Harit (Schalke 04) 0.88,W. Zaha (Crystal Palace) 0.85,I. Sarr (Rennes) 0.84,R. Loftus-Cheek (Crystal Palace) 0.81,C. Pulisic (Borussia Dortmund) 0.81
+Rony Lopes,Monaco,Ligue 1,AM,F. Chiesa (Fiorentina) 0.91,F. Klaus (Hannover 96) 0.85,I. Sarr (Rennes) 0.76,A. Townsend (Crystal Palace) 0.74,D. Gray (Leicester City) 0.69
+J. Brandt,Bayer Leverkusen,Bundesliga,AM,Joaqu\u00edn (Real Betis) 0.87,Jo\u00e3o M\u00e1rio (West Ham United) 0.82,A. Iwobi (Arsenal) 0.76,J. Lingard (Manchester United) 0.75,Mikel Oyarzabal (Real Sociedad) 0.71
+M. Sanson,Olympique Marseille,Ligue 1,AM,H. Mkhitaryan (Manchester United) 0.82,N. Benezet (Guingamp) 0.71,J. Brekalo (Stuttgart) 0.61,W. Khazri (Rennes) 0.61,M. Dossevi (Metz) 0.61
+R. de Paul,Udinese,Serie A,AM,R. Mahrez (Leicester City) 0.94,A. Oxlade-Chamberlain (Arsenal) 0.93,F. Kosti\u0107 (Hamburger SV) 0.89,Jos\u00e9 Luis Morales (Levante) 0.86,J. Brekalo (Stuttgart) 0.86
+Jos\u00e9 Luis Morales,Levante,La Liga,AM,N. Sliti (Dijon) 0.93,M. Dossevi (Metz) 0.89,J. Brekalo (Stuttgart) 0.87,R. de Paul (Udinese) 0.86,R. Mahrez (Leicester City) 0.86
+A. Iwobi,Arsenal,Premier League,AM,David Silva (Manchester City) 0.96,Isco (Real Madrid) 0.93,M. G\u00f6tze (Borussia Dortmund) 0.80,Juan Mata (Manchester United) 0.79,J. Brandt (Bayer Leverkusen) 0.76
+R. Loftus-Cheek,Crystal Palace,Premier League,AM,A. Harit (Schalke 04) 0.90,D. Alli (Tottenham Hotspur) 0.88,S. Gnabry (Hoffenheim) 0.81,W. Zaha (Crystal Palace) 0.75,C. Pulisic (Borussia Dortmund) 0.65
+Kwon Chang-Hoon,Dijon,Ligue 1,AM,Caiuby (Augsburg) 0.78,F. Chiesa (Fiorentina) 0.78,W. Khazri (Rennes) 0.77,X. Shaqiri (Stoke City) 0.76,D. Gray (Leicester City) 0.74
+A. Januzaj,Real Sociedad,La Liga,AM,F. Chiesa (Fiorentina) 0.89,W. Khazri (Rennes) 0.77,W. Zaha (Crystal Palace) 0.71,Jos\u00e9 Luis Morales (Levante) 0.71,Kwon Chang-Hoon (Dijon) 0.71
+D. Gray,Leicester City,Premier League,AM,Canales (Real Sociedad) 0.93,N. Redmond (Southampton) 0.88,Douglas Costa (Juventus) 0.83,X. Shaqiri (Stoke City) 0.78,W. Khazri (Rennes) 0.77
+J. Brekalo,Stuttgart,Bundesliga,AM,Jos\u00e9 Luis Morales (Levante) 0.87,R. de Paul (Udinese) 0.86,N. Sliti (Dijon) 0.84,F. Kosti\u0107 (Hamburger SV) 0.79,R. Mahrez (Leicester City) 0.78
+Marco Asensio,Real Madrid,La Liga,AM,J. Lingard (Manchester United) 0.65,J. Brandt (Bayer Leverkusen) 0.51,Jo\u00e3o M\u00e1rio (West Ham United) 0.51,Canales (Real Sociedad) 0.49,Willian (Chelsea) 0.47
+Mikel Oyarzabal,Real Sociedad,La Liga,AM,Jo\u00e3o M\u00e1rio (West Ham United) 0.96,A. Taarabt (Genoa) 0.93,J. Lingard (Manchester United) 0.91,C. Pulisic (Borussia Dortmund) 0.90,Susaeta (Athletic Club) 0.88
+A. Harit,Schalke 04,Bundesliga,AM,C. Pulisic (Borussia Dortmund) 0.91,R. Loftus-Cheek (Crystal Palace) 0.90,D. Alli (Tottenham Hotspur) 0.90,S. Gnabry (Hoffenheim) 0.88,A. Taarabt (Genoa) 0.83
+C. Pulisic,Borussia Dortmund,Bundesliga,AM,A. Taarabt (Genoa) 0.95,A. Harit (Schalke 04) 0.91,Mikel Oyarzabal (Real Sociedad) 0.90,I. Sarr (Rennes) 0.83,Susaeta (Athletic Club) 0.82
+F. Chiesa,Fiorentina,Serie A,AM,Rony Lopes (Monaco) 0.91,A. Januzaj (Real Sociedad) 0.89,A. Townsend (Crystal Palace) 0.80,W. Khazri (Rennes) 0.79,Kwon Chang-Hoon (Dijon) 0.78
+I. Sarr,Rennes,Ligue 1,AM,S. Gnabry (Hoffenheim) 0.84,C. Pulisic (Borussia Dortmund) 0.83,J. Ibe (AFC Bournemouth) 0.80,A. Harit (Schalke 04) 0.79,Mikel Oyarzabal (Real Sociedad) 0.77
+N. Moisander,Werder Bremen,Bundesliga,CB,F. Lejeune (Newcastle United) 0.99,W. Hoedt (Southampton) 0.98,Diego Carlos (Nantes) 0.98,I. Traor\u00e9 (Angers) 0.98,Ahmed Hegazy (West Bromwich Albion) 0.95
+Marcelo,Olympique Lyonnais,Ligue 1,CB,N. Burdisso (Torino) 0.98,M. J\u00f8rgensen (Huddersfield Town) 0.96,T. Baumgartl (Stuttgart) 0.96,Bernardo Espinosa (Girona) 0.96,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.95
+S. de Vrij,Lazio,Serie A,CB,L. Klostermann (RB Leipzig) 0.97,C. Smalling (Manchester United) 0.97,Jordi Amat (Real Betis) 0.94,P. Jones (Manchester United) 0.93,K. Akpoguma (Hoffenheim) 0.93
+J. Gouweleeuw,Augsburg,Bundesliga,CB,Ahmed Hegazy (West Bromwich Albion) 0.97,Hilton (Montpellier) 0.97,F. Diagne (Metz) 0.97,S. Bell (Mainz 05) 0.96,Pedro Mendes (Montpellier) 0.96
+Cuco Martina,Everton,Premier League,CB,D. Aogo (Stuttgart) 0.87,K. Vogt (Hoffenheim) 0.84,R. Koch (Freiburg) 0.83,Sergi G\u00f3mez (Celta de Vigo) 0.83,Rafinha (Bayern M\u00fcnchen) 0.82
+V. van Dijk,Southampton,Premier League,CB,Alexis (Deportivo Alav\u00e9s) 0.99,D. Upamecano (RB Leipzig) 0.97,V\u00edctor Ru\u00edz (Villarreal) 0.97,M. Hummels (Bayern M\u00fcnchen) 0.95,A. Djiku (Caen) 0.94
+B. Nuytinck,Udinese,Serie A,CB,S. Mustafi (Arsenal) 0.99,E. Garay (Valencia) 0.99,Jemerson (Monaco) 0.98,M. Yoshida (Southampton) 0.96,Marquinhos (PSG) 0.95
+M. Yoshida,Southampton,Premier League,CB,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.97,N. Burdisso (Torino) 0.96,B. Nuytinck (Udinese) 0.96,K. Glik (Monaco) 0.96,T. Baumgartl (Stuttgart) 0.95
+A. Rami,Olympique Marseille,Ligue 1,CB,Gabriel (Valencia) 0.99,Alexis (Deportivo Alav\u00e9s) 0.96,A. Djiku (Caen) 0.95,V. van Dijk (Southampton) 0.93,V\u00edctor Ru\u00edz (Villarreal) 0.92
+V\u00edctor Ru\u00edz,Villarreal,La Liga,CB,Sergio Ramos (Real Madrid) 0.99,M. Hummels (Bayern M\u00fcnchen) 0.99,A. Djiku (Caen) 0.98,D. Upamecano (RB Leipzig) 0.98,J. Alonso (Lille) 0.98
+Albiol,Napoli,Serie A,CB,C. Kabasele (Watford) 0.97,F. Fern\u00e1ndez (Swansea City) 0.96,K. Papadopoulos (Hamburger SV) 0.96,Danilo (Udinese) 0.95,J. Giraudon (Troyes) 0.92
+Nacho,Real Madrid,La Liga,CB,P. Retsos (Bayer Leverkusen) 0.94,P. Jones (Manchester United) 0.93,C. Smalling (Manchester United) 0.93,M. Benatia (Juventus) 0.93,A. Romagnoli (Milan) 0.92
+Sergio Ramos,Real Madrid,La Liga,CB,M. Hummels (Bayern M\u00fcnchen) 0.99,V\u00edctor Ru\u00edz (Villarreal) 0.99,J. Alonso (Lille) 0.98,D. Upamecano (RB Leipzig) 0.97,A. Djiku (Caen) 0.97
+Pedro Mendes,Montpellier,Ligue 1,CB,F. Diagne (Metz) 0.98,S. Bell (Mainz 05) 0.96,B. Salamon (SPAL) 0.96,J. Gouweleeuw (Augsburg) 0.96,Hilton (Montpellier) 0.96
+R. Varane,Real Madrid,La Liga,CB,J. Lascelles (Newcastle United) 0.90,P. Kimpembe (PSG) 0.85,M. \u0160kriniar (Internazionale) 0.84,J. Palomino (Atalanta) 0.83,D. D'Ambrosio (Internazionale) 0.83
+Bartra,Borussia Dortmund,Bundesliga,CB,J. Stephens (Southampton) 0.89,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.89,J. Tomkins (Crystal Palace) 0.88,I. Diop (Toulouse) 0.88,Sidnei (Deportivo La Coru\u00f1a) 0.82
+Sergi G\u00f3mez,Celta de Vigo,La Liga,CB,K. Vogt (Hoffenheim) 0.98,G. Cabral (Celta de Vigo) 0.97,C. Schindler (Huddersfield Town) 0.84,M. J\u00f8rgensen (Huddersfield Town) 0.84,Cuco Martina (Everton) 0.83
+Piqu\u00e9,Barcelona,La Liga,CB,T. Kehrer (Schalke 04) 0.95,A. R\u00fcdiger (Chelsea) 0.94,P. Jones (Manchester United) 0.92,H. Sakai (Olympique Marseille) 0.91,Rafinha (Bayern M\u00fcnchen) 0.89
+Jo\u00e3o Miranda,Internazionale,Serie A,CB,W. Morgan (Leicester City) 0.99,Thiago Silva (PSG) 0.95,S. Bender (Bayer Leverkusen) 0.94,K. Koulibaly (Napoli) 0.93,Marlon (Nice) 0.93
+D. God\u00edn,Atl\u00e9tico Madrid,La Liga,CB,N. Ak\u00e9 (AFC Bournemouth) 0.91,D. Congr\u00e9 (Montpellier) 0.90,L. Perrin (Saint-\u00c9tienne) 0.88,Dante (Nice) 0.88,J. Sorbon (Guingamp) 0.87
+F. Fazio,Roma,Serie A,CB,B. Kon\u00e9 (Strasbourg) 0.88,M. Silvestre (Sampdoria) 0.78,K. Ad\u00e9non (Amiens SC) 0.72,A. Caracciolo (Hellas Verona) 0.72,M. Lemos (Sassuolo) 0.70
+Alexis,Deportivo Alav\u00e9s,La Liga,CB,V. van Dijk (Southampton) 0.99,A. Rami (Olympique Marseille) 0.96,D. Upamecano (RB Leipzig) 0.96,V\u00edctor Ru\u00edz (Villarreal) 0.96,Gabriel (Valencia) 0.95
+Sergio Postigo,Levante,La Liga,CB,G. Gonz\u00e1lez (Bologna) 0.99,L. Ceppitelli (Cagliari) 0.98,Diego Carlos (Nantes) 0.97,R. Shawcross (Stoke City) 0.97,F. Pisacane (Cagliari) 0.92
+F. Lejeune,Newcastle United,Premier League,CB,N. Moisander (Werder Bremen) 0.99,I. Traor\u00e9 (Angers) 0.99,W. Hoedt (Southampton) 0.97,Ahmed Hegazy (West Bromwich Albion) 0.97,Diego Carlos (Nantes) 0.96
+Bernardo Espinosa,Girona,La Liga,CB,Juanpe (Girona) 0.97,Paulo Oliveira (Eibar) 0.97,Marcelo (Olympique Lyonnais) 0.96,N. Burdisso (Torino) 0.95,K. Glik (Monaco) 0.94
+\u00c1lvaro Gonz\u00e1lez,Villarreal,La Liga,CB,C. H\u00e9relle (Troyes) 0.99,M. Yoshida (Southampton) 0.97,N. Burdisso (Torino) 0.96,N. Tomovi\u0107 (Fiorentina) 0.95,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.95
+Jordi Amat,Real Betis,La Liga,CB,K. Akpoguma (Hoffenheim) 0.96,S. de Vrij (Lazio) 0.94,M. Ginter (Borussia M'gladbach) 0.93,L. Klostermann (RB Leipzig) 0.91,R. Koch (Freiburg) 0.91
+Ra\u00fal Navas,Real Sociedad,La Liga,CB,H. Badstuber (Stuttgart) 0.99,F. Ceccherini (Crotone) 0.97,W. Anton (Hannover 96) 0.93,J. Evans (West Bromwich Albion) 0.92,D. Siovas (Legan\u00e9s) 0.90
+G. Cabral,Celta de Vigo,La Liga,CB,Sergi G\u00f3mez (Celta de Vigo) 0.97,K. Vogt (Hoffenheim) 0.93,M. J\u00f8rgensen (Huddersfield Town) 0.89,L. Rossettini (Genoa) 0.88,C. Schindler (Huddersfield Town) 0.85
+G\u00e1lvez,Eibar,La Liga,CB,S. Duffy (Brighton & Hove Albion) 0.99,D. Abraham (Eintracht Frankfurt) 0.98,D. Siovas (Legan\u00e9s) 0.92,M. Keane (Everton) 0.90,M. Caldara (Atalanta) 0.89
+Ximo Navarro,Las Palmas,La Liga,CB,A. Smith (AFC Bournemouth) 0.87,E. Seka (Strasbourg) 0.86,J. Lascelles (Newcastle United) 0.85,F. Mattiello (SPAL) 0.85,J. Ikoko (Guingamp) 0.85
+David L\u00f3pez,Espanyol,La Liga,CB,K. Djidji (Nantes) 0.98,J. Vestergaard (Borussia M'gladbach) 0.97,N. Stark (Hertha BSC) 0.92,J. Tomkins (Crystal Palace) 0.87,Unai N\u00fa\u00f1ez (Athletic Club) 0.85
+Juanpe,Girona,La Liga,CB,Bernardo Espinosa (Girona) 0.97,M. Veljkovic (Werder Bremen) 0.96,Paulo Oliveira (Eibar) 0.95,M. Andreolli (Cagliari) 0.92,Marcelo (Olympique Lyonnais) 0.91
+Arbilla,Eibar,La Liga,CB,W. Hoedt (Southampton) 0.91,N. Pallois (Nantes) 0.89,B. Salamon (SPAL) 0.88,M. Niakhat\u00e9 (Metz) 0.88,Hilton (Montpellier) 0.87
+Luis Hern\u00e1ndez,M\u00e1laga,La Liga,CB,C. H\u00e9relle (Troyes) 0.94,C. Kerbrat (Guingamp) 0.94,Albentosa (Deportivo La Coru\u00f1a) 0.94,J. Giraudon (Troyes) 0.92,R. Thomas (Angers) 0.92
+Aday,Girona,La Liga,CB,V. Rosier (Dijon) 0.93,F. Acerbi (Sassuolo) 0.93,G. Letizia (Benevento) 0.89,F. Mattiello (SPAL) 0.89,William (Wolfsburg) 0.83
+Albentosa,Deportivo La Coru\u00f1a,La Liga,CB,Paulo Oliveira (Eibar) 0.97,C. Jullien (Toulouse) 0.96,J. Gelin (Rennes) 0.94,Luis Hern\u00e1ndez (M\u00e1laga) 0.94,R. Thomas (Angers) 0.92
+L. Koscielny,Arsenal,Premier League,CB,K. Ad\u00e9non (Amiens SC) 0.91,G. Ferrari (Sampdoria) 0.90,W. Orban (RB Leipzig) 0.89,A. Mariappa (Watford) 0.84,D. God\u00edn (Atl\u00e9tico Madrid) 0.83
+G. Cahill,Chelsea,Premier League,CB,N. Otamendi (Manchester City) 0.98,Rolando (Olympique Marseille) 0.88,D. Lovren (Liverpool) 0.85,N. S\u00fcle (Bayern M\u00fcnchen) 0.82,K. Manolas (Roma) 0.82
+J. Evans,West Bromwich Albion,Premier League,CB,F. Ceccherini (Crotone) 0.97,M. Ginter (Borussia M'gladbach) 0.96,H. Badstuber (Stuttgart) 0.95,Ra\u00fal Navas (Real Sociedad) 0.92,K. Akpoguma (Hoffenheim) 0.91
+P. Jones,Manchester United,Premier League,CB,C. Smalling (Manchester United) 0.95,T. Kehrer (Schalke 04) 0.95,A. R\u00fcdiger (Chelsea) 0.95,H. Sakai (Olympique Marseille) 0.94,Nacho (Real Madrid) 0.93
+M. Keane,Everton,Premier League,CB,K. Rekik (Hertha BSC) 0.92,P. Jagielka (Everton) 0.90,G\u00e1lvez (Eibar) 0.90,S. Duffy (Brighton & Hove Albion) 0.90,Mario Hermoso (Espanyol) 0.89
+C. Smalling,Manchester United,Premier League,CB,A. Romagnoli (Milan) 0.97,S. de Vrij (Lazio) 0.97,L. Klostermann (RB Leipzig) 0.96,P. Jones (Manchester United) 0.95,P. Retsos (Bayer Leverkusen) 0.93
+J. Stephens,Southampton,Premier League,CB,I. Diop (Toulouse) 0.97,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.95,Jorge Mer\u00e9 (K\u00f6ln) 0.93,Bartra (Borussia Dortmund) 0.89,H. Maguire (Leicester City) 0.89
+S. Duffy,Brighton & Hove Albion,Premier League,CB,G\u00e1lvez (Eibar) 0.99,D. Abraham (Eintracht Frankfurt) 0.96,D. Siovas (Legan\u00e9s) 0.90,M. Keane (Everton) 0.90,P. Jagielka (Everton) 0.89
+P. Jagielka,Everton,Premier League,CB,D. Da Silva (Caen) 0.91,K. Rekik (Hertha BSC) 0.91,M. Keane (Everton) 0.90,S. Duffy (Brighton & Hove Albion) 0.89,Rodrigo Ely (Deportivo Alav\u00e9s) 0.86
+K. Rekik,Hertha BSC,Bundesliga,CB,Mario Hermoso (Espanyol) 0.95,Rodrigo Ely (Deportivo Alav\u00e9s) 0.95,M. Keane (Everton) 0.92,P. Jagielka (Everton) 0.91,M. Veljkovic (Werder Bremen) 0.82
+S. Savi\u0107,Atl\u00e9tico Madrid,La Liga,CB,M. J\u00f8rgensen (Huddersfield Town) 0.98,C. Schindler (Huddersfield Town) 0.97,Marcelo (Olympique Lyonnais) 0.95,N. Burdisso (Torino) 0.95,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.95
+A. Smith,AFC Bournemouth,Premier League,CB,J. Ikoko (Guingamp) 0.93,F. Mattiello (SPAL) 0.93,V. Rosier (Dijon) 0.92,N. Elvedi (Borussia M'gladbach) 0.91,Ximo Navarro (Las Palmas) 0.87
+W. Morgan,Leicester City,Premier League,CB,Jo\u00e3o Miranda (Internazionale) 0.99,D. S\u00e1nchez (Tottenham Hotspur) 0.96,Marlon (Nice) 0.95,S. Bender (Bayer Leverkusen) 0.95,Thiago Silva (PSG) 0.94
+J. Tomkins,Crystal Palace,Premier League,CB,Bartra (Borussia Dortmund) 0.88,J. Stephens (Southampton) 0.87,David L\u00f3pez (Espanyol) 0.87,I. Diop (Toulouse) 0.86,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.84
+H. Maguire,Leicester City,Premier League,CB,I. Diop (Toulouse) 0.97,Jorge Mer\u00e9 (K\u00f6ln) 0.94,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.94,F. Lejeune (Newcastle United) 0.92,I. Traor\u00e9 (Angers) 0.92
+R. Shawcross,Stoke City,Premier League,CB,G. Gonz\u00e1lez (Bologna) 0.98,Sergio Postigo (Levante) 0.97,Diego Carlos (Nantes) 0.93,L. Bonucci (Milan) 0.92,F. Pisacane (Cagliari) 0.92
+J. Lascelles,Newcastle United,Premier League,CB,N. Stark (Hertha BSC) 0.93,R. Varane (Real Madrid) 0.90,Ximo Navarro (Las Palmas) 0.85,A. R\u00fcdiger (Chelsea) 0.79,K. Djidji (Nantes) 0.78
+A. Mariappa,Watford,Premier League,CB,\u00d6. Toprak (Borussia Dortmund) 0.94,W. Orban (RB Leipzig) 0.91,M. Andreolli (Cagliari) 0.89,G. Ferrari (Sampdoria) 0.89,C. Schindler (Huddersfield Town) 0.88
+B. Mee,Burnley,Premier League,CB,Chema (Levante) 0.96,J. Gelin (Rennes) 0.90,Paulo Oliveira (Eibar) 0.88,C. Jullien (Toulouse) 0.86,J. Tarkowski (Burnley) 0.86
+L. Dunk,Brighton & Hove Albion,Premier League,CB,A. Mawson (Swansea City) 0.97,S. De Maio (Bologna) 0.93,B. Salamon (SPAL) 0.91,D. Abraham (Eintracht Frankfurt) 0.89,G\u00e1lvez (Eibar) 0.89
+S. Cook,AFC Bournemouth,Premier League,CB,R. Thomas (Angers) 0.89,C. H\u00e9relle (Troyes) 0.81,J. Giraudon (Troyes) 0.79,Luis Hern\u00e1ndez (M\u00e1laga) 0.78,C. Kabasele (Watford) 0.78
+J. Tarkowski,Burnley,Premier League,CB,J. Gelin (Rennes) 0.97,S. Bell (Mainz 05) 0.91,C. Jullien (Toulouse) 0.90,K. Papadopoulos (Hamburger SV) 0.87,Mario Hermoso (Espanyol) 0.87
+M. Veljkovic,Werder Bremen,Bundesliga,CB,Juanpe (Girona) 0.96,Paulo Oliveira (Eibar) 0.95,Rodrigo Ely (Deportivo Alav\u00e9s) 0.93,Albentosa (Deportivo La Coru\u00f1a) 0.92,Bernardo Espinosa (Girona) 0.91
+S. Papastathopoulos,Borussia Dortmund,Bundesliga,CB,J. Palomino (Atalanta) 0.91,Alexis (Deportivo Alav\u00e9s) 0.89,Jorge Mer\u00e9 (K\u00f6ln) 0.88,V. van Dijk (Southampton) 0.88,J. Stephens (Southampton) 0.83
+Naldo,Schalke 04,Bundesliga,CB,N. N'Koulou (Torino) 0.85,B. Pavard (Stuttgart) 0.84,Diego Llorente (Real Sociedad) 0.83,Jordi Amat (Real Betis) 0.81,Rober (Levante) 0.80
+H. Badstuber,Stuttgart,Bundesliga,CB,Ra\u00fal Navas (Real Sociedad) 0.99,F. Ceccherini (Crotone) 0.99,J. Evans (West Bromwich Albion) 0.95,W. Anton (Hannover 96) 0.94,M. Ginter (Borussia M'gladbach) 0.87
+Rafinha,Bayern M\u00fcnchen,Bundesliga,CB,Piqu\u00e9 (Barcelona) 0.89,H. Sakai (Olympique Marseille) 0.83,T. Kehrer (Schalke 04) 0.83,Cuco Martina (Everton) 0.82,R. Koch (Freiburg) 0.81
+A. R\u00fcdiger,Chelsea,Premier League,CB,T. Kehrer (Schalke 04) 0.97,P. Jones (Manchester United) 0.95,Piqu\u00e9 (Barcelona) 0.94,M. Ginter (Borussia M'gladbach) 0.93,H. Sakai (Olympique Marseille) 0.90
+G. Sakai,Hamburger SV,Bundesliga,CB,Unai N\u00fa\u00f1ez (Athletic Club) 0.96,William (Wolfsburg) 0.94,K. Lala (Strasbourg) 0.94,G. Letizia (Benevento) 0.92,K. Zouma (Stoke City) 0.90
+\u00d6. Toprak,Borussia Dortmund,Bundesliga,CB,A. Mariappa (Watford) 0.94,W. Orban (RB Leipzig) 0.93,S. Mustafi (Arsenal) 0.92,B. Nuytinck (Udinese) 0.92,E. Garay (Valencia) 0.92
+M. Hummels,Bayern M\u00fcnchen,Bundesliga,CB,Sergio Ramos (Real Madrid) 0.99,V\u00edctor Ru\u00edz (Villarreal) 0.99,D. Upamecano (RB Leipzig) 0.97,J. Alonso (Lille) 0.97,A. Djiku (Caen) 0.96
+S. Bender,Bayer Leverkusen,Bundesliga,CB,Thiago Silva (PSG) 0.97,D. S\u00e1nchez (Tottenham Hotspur) 0.96,J. Matip (Liverpool) 0.95,W. Morgan (Leicester City) 0.95,Jo\u00e3o Miranda (Internazionale) 0.94
+K. Vogt,Hoffenheim,Bundesliga,CB,Sergi G\u00f3mez (Celta de Vigo) 0.98,G. Cabral (Celta de Vigo) 0.93,Cuco Martina (Everton) 0.84,M. J\u00f8rgensen (Huddersfield Town) 0.84,D. Aogo (Stuttgart) 0.82
+K. Papadopoulos,Hamburger SV,Bundesliga,CB,Albiol (Napoli) 0.96,J. Gelin (Rennes) 0.95,C. Kabasele (Watford) 0.92,C. Jullien (Toulouse) 0.92,F. Fern\u00e1ndez (Swansea City) 0.91
+J. Matip,Liverpool,Premier League,CB,D. S\u00e1nchez (Tottenham Hotspur) 0.96,S. Bender (Bayer Leverkusen) 0.95,A. Rami (Olympique Marseille) 0.91,W. Morgan (Leicester City) 0.87,Gabriel (Valencia) 0.87
+D. Aogo,Stuttgart,Bundesliga,CB,R. Koch (Freiburg) 0.91,Cuco Martina (Everton) 0.87,D. Da Silva (Caen) 0.86,K. Vogt (Hoffenheim) 0.82,Sergi G\u00f3mez (Celta de Vigo) 0.80
+R. Knoche,Wolfsburg,Bundesliga,CB,M. Andreolli (Cagliari) 0.89,C. Schindler (Huddersfield Town) 0.83,A. Mariappa (Watford) 0.82,M. J\u00f8rgensen (Huddersfield Town) 0.79,Juanpe (Girona) 0.78
+F. Diagne,Metz,Ligue 1,CB,S. Bell (Mainz 05) 0.98,Pedro Mendes (Montpellier) 0.98,J. Gouweleeuw (Augsburg) 0.97,Hilton (Montpellier) 0.96,Ahmed Hegazy (West Bromwich Albion) 0.95
+M. Ginter,Borussia M'gladbach,Bundesliga,CB,K. Akpoguma (Hoffenheim) 0.98,T. Kehrer (Schalke 04) 0.97,J. Evans (West Bromwich Albion) 0.96,Jordi Amat (Real Betis) 0.93,A. R\u00fcdiger (Chelsea) 0.93
+Dante,Nice,Ligue 1,CB,Jo\u00e3o Miranda (Internazionale) 0.91,D. God\u00edn (Atl\u00e9tico Madrid) 0.88,K. Ad\u00e9non (Amiens SC) 0.88,K. Koulibaly (Napoli) 0.87,S. Bender (Bayer Leverkusen) 0.87
+W. Orban,RB Leipzig,Bundesliga,CB,G. Ferrari (Sampdoria) 0.95,\u00d6. Toprak (Borussia Dortmund) 0.93,K. Glik (Monaco) 0.92,C. Kerbrat (Guingamp) 0.91,A. Mariappa (Watford) 0.91
+T. Chandler,Eintracht Frankfurt,Bundesliga,CB,D. Brosinski (Mainz 05) 0.92,G. Letizia (Benevento) 0.87,B. Henrichs (Bayer Leverkusen) 0.86,S. San\u00e9 (Hannover 96) 0.85,G. Chiellini (Juventus) 0.81
+S. Bell,Mainz 05,Bundesliga,CB,F. Diagne (Metz) 0.98,Pedro Mendes (Montpellier) 0.96,J. Gouweleeuw (Augsburg) 0.96,Hilton (Montpellier) 0.95,Ahmed Hegazy (West Bromwich Albion) 0.92
+C. Schindler,Huddersfield Town,Premier League,CB,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.97,M. J\u00f8rgensen (Huddersfield Town) 0.96,N. Tomovi\u0107 (Fiorentina) 0.92,M. Andreolli (Cagliari) 0.90,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.89
+D. Brosinski,Mainz 05,Bundesliga,CB,T. Chandler (Eintracht Frankfurt) 0.92,K. Amian (Toulouse) 0.90,G. Letizia (Benevento) 0.89,J. Rivierez (Metz) 0.88,B. Henrichs (Bayer Leverkusen) 0.82
+J. Vestergaard,Borussia M'gladbach,Bundesliga,CB,K. Djidji (Nantes) 0.99,David L\u00f3pez (Espanyol) 0.97,N. Stark (Hertha BSC) 0.87,C. Yamber\u00e9 (Dijon) 0.85,D. Siovas (Legan\u00e9s) 0.84
+J. Hector,K\u00f6ln,Bundesliga,CB,K. Akpoguma (Hoffenheim) 0.92,H. Sakai (Olympique Marseille) 0.88,Jordi Amat (Real Betis) 0.88,L. Klostermann (RB Leipzig) 0.87,S. de Vrij (Lazio) 0.86
+Thiago Silva,PSG,Ligue 1,CB,S. Bender (Bayer Leverkusen) 0.97,M. Pavlovi\u0107 (Angers) 0.96,K. Koulibaly (Napoli) 0.96,Jo\u00e3o Miranda (Internazionale) 0.95,W. Morgan (Leicester City) 0.94
+N. Burdisso,Torino,Serie A,CB,Marcelo (Olympique Lyonnais) 0.98,C. H\u00e9relle (Troyes) 0.96,M. Yoshida (Southampton) 0.96,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.96,Bernardo Espinosa (Girona) 0.95
+L. Bonucci,Milan,Serie A,CB,G. Gonz\u00e1lez (Bologna) 0.94,A. Masiello (Atalanta) 0.93,R. Shawcross (Stoke City) 0.92,C. Kabasele (Watford) 0.92,Sergio Postigo (Levante) 0.92
+G. Chiellini,Juventus,Serie A,CB,T. Chandler (Eintracht Frankfurt) 0.81,F. Acerbi (Sassuolo) 0.78,S. San\u00e9 (Hannover 96) 0.76,G. Sakai (Hamburger SV) 0.72,Aday (Girona) 0.70
+M. Benatia,Juventus,Serie A,CB,P. Retsos (Bayer Leverkusen) 0.99,J. Gnagnon (Rennes) 0.98,S. Umtiti (Barcelona) 0.97,B. Djimsiti (Benevento) 0.94,A. Romagnoli (Milan) 0.93
+Danilo,Udinese,Serie A,CB,F. Fern\u00e1ndez (Swansea City) 0.97,C. Kabasele (Watford) 0.96,Albiol (Napoli) 0.95,J. Giraudon (Troyes) 0.93,R. Thomas (Angers) 0.91
+S. Mustafi,Arsenal,Premier League,CB,B. Nuytinck (Udinese) 0.99,E. Garay (Valencia) 0.99,Marquinhos (PSG) 0.98,J. Sorbon (Guingamp) 0.97,Jemerson (Monaco) 0.96
+F. Acerbi,Sassuolo,Serie A,CB,V. Rosier (Dijon) 0.94,Aday (Girona) 0.93,F. Mattiello (SPAL) 0.92,G. Sakai (Hamburger SV) 0.86,J. Ikoko (Guingamp) 0.85
+M. Andreolli,Cagliari,Serie A,CB,M. J\u00f8rgensen (Huddersfield Town) 0.95,Marcelo (Olympique Lyonnais) 0.94,Bernardo Espinosa (Girona) 0.92,Juanpe (Girona) 0.92,T. Baumgartl (Stuttgart) 0.91
+S. De Maio,Bologna,Serie A,CB,B. Salamon (SPAL) 0.95,A. Mawson (Swansea City) 0.94,L. Dunk (Brighton & Hove Albion) 0.93,D. Abraham (Eintracht Frankfurt) 0.87,Pedro Mendes (Montpellier) 0.87
+B. Salamon,SPAL,Serie A,CB,A. Mawson (Swansea City) 0.98,Pedro Mendes (Montpellier) 0.96,S. De Maio (Bologna) 0.95,F. Diagne (Metz) 0.94,J. Gouweleeuw (Augsburg) 0.92
+N. Tomovi\u0107,Fiorentina,Serie A,CB,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.95,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.94,C. Schindler (Huddersfield Town) 0.92,M. Yoshida (Southampton) 0.91,C. H\u00e9relle (Troyes) 0.91
+L. Rossettini,Genoa,Serie A,CB,D. Lovren (Liverpool) 0.93,T. Baumgartl (Stuttgart) 0.93,M. J\u00f8rgensen (Huddersfield Town) 0.92,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.92,E. Garay (Valencia) 0.92
+M. Silvestre,Sampdoria,Serie A,CB,P. Gouano (Amiens SC) 0.91,A. Caracciolo (Hellas Verona) 0.88,K. Ad\u00e9non (Amiens SC) 0.87,G. Pezzella (Fiorentina) 0.85,B. Kon\u00e9 (Strasbourg) 0.79
+A. Masiello,Atalanta,Serie A,CB,L. Bonucci (Milan) 0.93,Danilo (Udinese) 0.86,C. Kabasele (Watford) 0.84,F. Pisacane (Cagliari) 0.83,R. Shawcross (Stoke City) 0.83
+D. Astori,Fiorentina,Serie A,CB,C. Lenglet (Sevilla) 0.78,L. Koscielny (Arsenal) 0.75,Dante (Nice) 0.71,N. Ak\u00e9 (AFC Bournemouth) 0.69,F. Fazio (Roma) 0.66
+D. D'Ambrosio,Internazionale,Serie A,CB,N. Elvedi (Borussia M'gladbach) 0.93,J. Tah (Bayer Leverkusen) 0.87,Nacho (Real Madrid) 0.86,M. Benatia (Juventus) 0.84,P. Retsos (Bayer Leverkusen) 0.84
+K. Glik,Monaco,Ligue 1,CB,M. Yoshida (Southampton) 0.96,Bernardo Espinosa (Girona) 0.94,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.92,W. Orban (RB Leipzig) 0.92,C. H\u00e9relle (Troyes) 0.92
+A. Ogbonna,West Ham United,Premier League,CB,Juanpe (Girona) 0.88,M. Andreolli (Cagliari) 0.85,Bernardo Espinosa (Girona) 0.80,A. Caracciolo (Hellas Verona) 0.80,T. Baumgartl (Stuttgart) 0.79
+F. Fern\u00e1ndez,Swansea City,Premier League,CB,C. Kabasele (Watford) 0.97,Danilo (Udinese) 0.97,J. Giraudon (Troyes) 0.96,Albiol (Napoli) 0.96,C. Kerbrat (Guingamp) 0.93
+F. Ceccherini,Crotone,Serie A,CB,H. Badstuber (Stuttgart) 0.99,J. Evans (West Bromwich Albion) 0.97,Ra\u00fal Navas (Real Sociedad) 0.97,W. Anton (Hannover 96) 0.95,M. Ginter (Borussia M'gladbach) 0.92
+L. Ceppitelli,Cagliari,Serie A,CB,Sergio Postigo (Levante) 0.98,Diego Carlos (Nantes) 0.97,G. Gonz\u00e1lez (Bologna) 0.95,N. Moisander (Werder Bremen) 0.93,F. Lejeune (Newcastle United) 0.92
+A. Caracciolo,Hellas Verona,Serie A,CB,B. Kon\u00e9 (Strasbourg) 0.91,Rober (Levante) 0.90,M. Silvestre (Sampdoria) 0.88,P. Gouano (Amiens SC) 0.83,A. Ogbonna (West Ham United) 0.80
+G. Ferrari,Sampdoria,Serie A,CB,G. Pezzella (Fiorentina) 0.95,K. Ad\u00e9non (Amiens SC) 0.95,W. Orban (RB Leipzig) 0.95,\u00d6. Toprak (Borussia Dortmund) 0.91,B. Nuytinck (Udinese) 0.91
+F. Pisacane,Cagliari,Serie A,CB,Diego Carlos (Nantes) 0.97,N. Moisander (Werder Bremen) 0.94,G. Gonz\u00e1lez (Bologna) 0.92,Sergio Postigo (Levante) 0.92,R. Shawcross (Stoke City) 0.92
+G. Letizia,Benevento,Serie A,CB,K. Zouma (Stoke City) 0.92,G. Sakai (Hamburger SV) 0.92,William (Wolfsburg) 0.91,K. Lala (Strasbourg) 0.91,D. Brosinski (Mainz 05) 0.89
+B. Kon\u00e9,Strasbourg,Ligue 1,CB,A. Caracciolo (Hellas Verona) 0.91,F. Fazio (Roma) 0.88,M. Lemos (Sassuolo) 0.85,M. Silvestre (Sampdoria) 0.79,F. Vicari (SPAL) 0.78
+D. Lovren,Liverpool,Premier League,CB,E. Garay (Valencia) 0.96,Marquinhos (PSG) 0.95,S. Mustafi (Arsenal) 0.94,B. Nuytinck (Udinese) 0.93,Jemerson (Monaco) 0.93
+S. Umtiti,Barcelona,La Liga,CB,B. Djimsiti (Benevento) 0.99,M. Benatia (Juventus) 0.97,Marlon (Nice) 0.96,M. \u0160kriniar (Internazionale) 0.95,P. Retsos (Bayer Leverkusen) 0.94
+K. Djidji,Nantes,Ligue 1,CB,J. Vestergaard (Borussia M'gladbach) 0.99,David L\u00f3pez (Espanyol) 0.98,N. Stark (Hertha BSC) 0.91,G. Sakai (Hamburger SV) 0.88,C. Yamber\u00e9 (Dijon) 0.85
+P. Djilobodji,Dijon,Ligue 1,CB,Ahmed Hegazy (West Bromwich Albion) 0.90,Pedro Mendes (Montpellier) 0.89,J. Gouweleeuw (Augsburg) 0.89,Hilton (Montpellier) 0.88,S. Bell (Mainz 05) 0.88
+J. Morel,Olympique Lyonnais,Ligue 1,CB,D. Congr\u00e9 (Montpellier) 0.96,C. Lenglet (Sevilla) 0.94,A. Djiku (Caen) 0.92,Gabriel (Valencia) 0.90,V\u00edctor Ru\u00edz (Villarreal) 0.88
+N. N'Koulou,Torino,Serie A,CB,Diego Llorente (Real Sociedad) 0.90,C. S\u00f6y\u00fcnc\u00fc (Freiburg) 0.88,M. Ginter (Borussia M'gladbach) 0.88,K. Akpoguma (Hoffenheim) 0.87,Naldo (Schalke 04) 0.85
+K. Th\u00e9ophile Catherine,Saint-\u00c9tienne,Ligue 1,CB,Sidnei (Deportivo La Coru\u00f1a) 0.85,Djen\u00e9 (Getafe) 0.83,M. Caldara (Atalanta) 0.78,C. Yamber\u00e9 (Dijon) 0.73,C. S\u00f6y\u00fcnc\u00fc (Freiburg) 0.70
+K. Koulibaly,Napoli,Serie A,CB,Thiago Silva (PSG) 0.96,M. Pavlovi\u0107 (Angers) 0.95,L. Perrin (Saint-\u00c9tienne) 0.94,Jo\u00e3o Miranda (Internazionale) 0.93,S. Bender (Bayer Leverkusen) 0.93
+D. Congr\u00e9,Montpellier,Ligue 1,CB,J. Morel (Olympique Lyonnais) 0.96,D. God\u00edn (Atl\u00e9tico Madrid) 0.90,J. Sorbon (Guingamp) 0.90,C. Lenglet (Sevilla) 0.89,M. Pavlovi\u0107 (Angers) 0.88
+K. Zouma,Stoke City,Premier League,CB,William (Wolfsburg) 0.95,G. Letizia (Benevento) 0.92,K. Lala (Strasbourg) 0.91,G. Sakai (Hamburger SV) 0.90,J. Rivierez (Metz) 0.87
+L. Perrin,Saint-\u00c9tienne,Ligue 1,CB,M. Pavlovi\u0107 (Angers) 0.98,K. Koulibaly (Napoli) 0.94,Thiago Silva (PSG) 0.93,J. Sorbon (Guingamp) 0.92,Jo\u00e3o Miranda (Internazionale) 0.90
+J. Sorbon,Guingamp,Ligue 1,CB,S. Mustafi (Arsenal) 0.97,B. Nuytinck (Udinese) 0.95,Marquinhos (PSG) 0.94,L. Perrin (Saint-\u00c9tienne) 0.92,E. Garay (Valencia) 0.92
+F. Bellugou,Troyes,Ligue 1,CB,J. Hector (K\u00f6ln) 0.86,B. Pavard (Stuttgart) 0.77,K. Vogt (Hoffenheim) 0.74,G. Jung (Hamburger SV) 0.73,D. Da Silva (Caen) 0.67
+C. Kerbrat,Guingamp,Ligue 1,CB,J. Giraudon (Troyes) 0.98,Luis Hern\u00e1ndez (M\u00e1laga) 0.94,F. Fern\u00e1ndez (Swansea City) 0.93,R. Thomas (Angers) 0.92,W. Orban (RB Leipzig) 0.91
+K. Ad\u00e9non,Amiens SC,Ligue 1,CB,G. Pezzella (Fiorentina) 0.97,G. Ferrari (Sampdoria) 0.95,L. Koscielny (Arsenal) 0.91,Dante (Nice) 0.88,M. Silvestre (Sampdoria) 0.87
+Hilton,Montpellier,Ligue 1,CB,J. Gouweleeuw (Augsburg) 0.97,F. Diagne (Metz) 0.96,Pedro Mendes (Montpellier) 0.96,S. Bell (Mainz 05) 0.95,A. Mawson (Swansea City) 0.94
+I. Traor\u00e9,Angers,Ligue 1,CB,F. Lejeune (Newcastle United) 0.99,N. Moisander (Werder Bremen) 0.98,W. Hoedt (Southampton) 0.95,Diego Carlos (Nantes) 0.93,Jorge Mer\u00e9 (K\u00f6ln) 0.93
+S. San\u00e9,Hannover 96,Bundesliga,CB,E. Seka (Strasbourg) 0.97,T. Chandler (Eintracht Frankfurt) 0.85,G. Sakai (Hamburger SV) 0.84,G. Letizia (Benevento) 0.83,B. Henrichs (Bayer Leverkusen) 0.83
+P. Gouano,Amiens SC,Ligue 1,CB,M. Silvestre (Sampdoria) 0.91,D. Lovren (Liverpool) 0.90,L. Rossettini (Genoa) 0.89,G. Pezzella (Fiorentina) 0.87,Jemerson (Monaco) 0.86
+J. Rivierez,Metz,Ligue 1,CB,K. Amian (Toulouse) 0.98,D. Brosinski (Mainz 05) 0.88,K. Zouma (Stoke City) 0.87,G. Letizia (Benevento) 0.83,E. Seka (Strasbourg) 0.81
+N. Pallois,Nantes,Ligue 1,CB,Pedro Mendes (Montpellier) 0.92,Hilton (Montpellier) 0.90,Arbilla (Eibar) 0.89,W. Hoedt (Southampton) 0.89,F. Diagne (Metz) 0.87
+D. Da Silva,Caen,Ligue 1,CB,P. Jagielka (Everton) 0.91,M. Keane (Everton) 0.88,D. Aogo (Stuttgart) 0.86,S. Duffy (Brighton & Hove Albion) 0.84,K. Vogt (Hoffenheim) 0.82
+K. Lala,Strasbourg,Ligue 1,CB,William (Wolfsburg) 0.94,G. Sakai (Hamburger SV) 0.94,Unai N\u00fa\u00f1ez (Athletic Club) 0.94,G. Letizia (Benevento) 0.91,K. Zouma (Stoke City) 0.91
+C. H\u00e9relle,Troyes,Ligue 1,CB,\u00c1lvaro Gonz\u00e1lez (Villarreal) 0.99,N. Burdisso (Torino) 0.96,Luis Hern\u00e1ndez (M\u00e1laga) 0.94,M. Yoshida (Southampton) 0.94,Bernardo Espinosa (Girona) 0.94
+J. Ikoko,Guingamp,Ligue 1,CB,F. Mattiello (SPAL) 0.94,A. Smith (AFC Bournemouth) 0.93,N. Elvedi (Borussia M'gladbach) 0.87,V. Rosier (Dijon) 0.87,E. Seka (Strasbourg) 0.85
+J. Giraudon,Troyes,Ligue 1,CB,C. Kerbrat (Guingamp) 0.98,R. Thomas (Angers) 0.97,F. Fern\u00e1ndez (Swansea City) 0.96,C. Kabasele (Watford) 0.95,Danilo (Udinese) 0.93
+R. Thomas,Angers,Ligue 1,CB,J. Giraudon (Troyes) 0.97,C. Kabasele (Watford) 0.95,F. Fern\u00e1ndez (Swansea City) 0.92,Albentosa (Deportivo La Coru\u00f1a) 0.92,C. Kerbrat (Guingamp) 0.92
+E. Seka,Strasbourg,Ligue 1,CB,S. San\u00e9 (Hannover 96) 0.97,B. Henrichs (Bayer Leverkusen) 0.86,Ximo Navarro (Las Palmas) 0.86,K. Amian (Toulouse) 0.86,J. Ikoko (Guingamp) 0.85
+Sidnei,Deportivo La Coru\u00f1a,La Liga,CB,C. Yamber\u00e9 (Dijon) 0.90,Djen\u00e9 (Getafe) 0.86,K. Th\u00e9ophile Catherine (Saint-\u00c9tienne) 0.85,G. Jung (Hamburger SV) 0.84,Bartra (Borussia Dortmund) 0.82
+Marquinhos,PSG,Ligue 1,CB,S. Mustafi (Arsenal) 0.98,E. Garay (Valencia) 0.95,B. Nuytinck (Udinese) 0.95,D. Lovren (Liverpool) 0.95,J. Sorbon (Guingamp) 0.94
+Gabriel,Valencia,La Liga,CB,A. Rami (Olympique Marseille) 0.99,A. Djiku (Caen) 0.98,Alexis (Deportivo Alav\u00e9s) 0.95,V\u00edctor Ru\u00edz (Villarreal) 0.94,M. Hummels (Bayern M\u00fcnchen) 0.93
+D. Abraham,Eintracht Frankfurt,Bundesliga,CB,G\u00e1lvez (Eibar) 0.98,D. Siovas (Legan\u00e9s) 0.97,S. Duffy (Brighton & Hove Albion) 0.96,M. Caldara (Atalanta) 0.94,L. Dunk (Brighton & Hove Albion) 0.89
+B. Djimsiti,Benevento,Serie A,CB,S. Umtiti (Barcelona) 0.99,Marlon (Nice) 0.97,K. Manolas (Roma) 0.96,M. Benatia (Juventus) 0.94,M. \u0160kriniar (Internazionale) 0.94
+F. Sch\u00e4r,Deportivo La Coru\u00f1a,La Liga,CB,I. Diop (Toulouse) 0.98,J. Stephens (Southampton) 0.95,H. Maguire (Leicester City) 0.94,Jorge Mer\u00e9 (K\u00f6ln) 0.92,Bartra (Borussia Dortmund) 0.89
+M. J\u00f8rgensen,Huddersfield Town,Premier League,CB,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.98,Marcelo (Olympique Lyonnais) 0.96,T. Baumgartl (Stuttgart) 0.96,C. Schindler (Huddersfield Town) 0.96,M. Andreolli (Cagliari) 0.95
+C. Kabasele,Watford,Premier League,CB,F. Fern\u00e1ndez (Swansea City) 0.97,Albiol (Napoli) 0.97,Danilo (Udinese) 0.96,R. Thomas (Angers) 0.95,J. Giraudon (Troyes) 0.95
+M. Pavlovi\u0107,Angers,Ligue 1,CB,L. Perrin (Saint-\u00c9tienne) 0.98,Thiago Silva (PSG) 0.96,K. Koulibaly (Napoli) 0.95,Jo\u00e3o Miranda (Internazionale) 0.91,S. Bender (Bayer Leverkusen) 0.90
+N. Otamendi,Manchester City,Premier League,CB,G. Cahill (Chelsea) 0.98,K. Manolas (Roma) 0.90,N. S\u00fcle (Bayern M\u00fcnchen) 0.89,D. Lovren (Liverpool) 0.88,Marquinhos (PSG) 0.85
+Rolando,Olympique Marseille,Ligue 1,CB,N. Tomovi\u0107 (Fiorentina) 0.90,G. Cahill (Chelsea) 0.88,D. Lovren (Liverpool) 0.84,Marquinhos (PSG) 0.84,N. Otamendi (Manchester City) 0.83
+E. Garay,Valencia,La Liga,CB,B. Nuytinck (Udinese) 0.99,S. Mustafi (Arsenal) 0.99,Jemerson (Monaco) 0.98,D. Lovren (Liverpool) 0.96,Marquinhos (PSG) 0.95
+Paulo Oliveira,Eibar,La Liga,CB,Albentosa (Deportivo La Coru\u00f1a) 0.97,Bernardo Espinosa (Girona) 0.97,Juanpe (Girona) 0.95,M. Veljkovic (Werder Bremen) 0.95,C. H\u00e9relle (Troyes) 0.91
+G. Pezzella,Fiorentina,Serie A,CB,K. Ad\u00e9non (Amiens SC) 0.97,G. Ferrari (Sampdoria) 0.95,Jemerson (Monaco) 0.88,P. Gouano (Amiens SC) 0.87,S. Mustafi (Arsenal) 0.87
+J. Palomino,Atalanta,Serie A,CB,S. Papastathopoulos (Borussia Dortmund) 0.91,R. Varane (Real Madrid) 0.83,J. Matip (Liverpool) 0.83,N. Stark (Hertha BSC) 0.77,J. Tomkins (Crystal Palace) 0.74
+K. Manolas,Roma,Serie A,CB,B. Djimsiti (Benevento) 0.96,S. Umtiti (Barcelona) 0.93,D. Rugani (Juventus) 0.92,N. Otamendi (Manchester City) 0.90,J. Gnagnon (Rennes) 0.90
+D. Siovas,Legan\u00e9s,La Liga,CB,M. Caldara (Atalanta) 0.98,D. Abraham (Eintracht Frankfurt) 0.97,G\u00e1lvez (Eibar) 0.92,S. Duffy (Brighton & Hove Albion) 0.90,Ra\u00fal Navas (Real Sociedad) 0.90
+H. Sakai,Olympique Marseille,Ligue 1,CB,L. Klostermann (RB Leipzig) 0.95,T. Kehrer (Schalke 04) 0.95,K. Akpoguma (Hoffenheim) 0.95,P. Jones (Manchester United) 0.94,N. Elvedi (Borussia M'gladbach) 0.92
+Ahmed Hegazy,West Bromwich Albion,Premier League,CB,J. Gouweleeuw (Augsburg) 0.97,F. Lejeune (Newcastle United) 0.97,N. Moisander (Werder Bremen) 0.95,F. Diagne (Metz) 0.95,Pedro Mendes (Montpellier) 0.93
+G. Gonz\u00e1lez,Bologna,Serie A,CB,Sergio Postigo (Levante) 0.99,R. Shawcross (Stoke City) 0.98,Diego Carlos (Nantes) 0.95,L. Ceppitelli (Cagliari) 0.95,L. Bonucci (Milan) 0.94
+N. Ak\u00e9,AFC Bournemouth,Premier League,CB,D. God\u00edn (Atl\u00e9tico Madrid) 0.91,S. Bender (Bayer Leverkusen) 0.89,Thiago Silva (PSG) 0.89,Dante (Nice) 0.87,W. Morgan (Leicester City) 0.85
+N. S\u00fcle,Bayern M\u00fcnchen,Bundesliga,CB,D. Rugani (Juventus) 0.90,K. Manolas (Roma) 0.89,N. Otamendi (Manchester City) 0.89,A. Romagnoli (Milan) 0.89,A. Christensen (Chelsea) 0.88
+K. Akpoguma,Hoffenheim,Bundesliga,CB,M. Ginter (Borussia M'gladbach) 0.98,T. Kehrer (Schalke 04) 0.97,Jordi Amat (Real Betis) 0.96,H. Sakai (Olympique Marseille) 0.95,L. Klostermann (RB Leipzig) 0.94
+D. Rugani,Juventus,Serie A,CB,K. Manolas (Roma) 0.92,B. Djimsiti (Benevento) 0.91,N. S\u00fcle (Bayern M\u00fcnchen) 0.90,A. Christensen (Chelsea) 0.88,Marlon (Nice) 0.87
+C. Lenglet,Sevilla,La Liga,CB,J. Morel (Olympique Lyonnais) 0.94,D. Congr\u00e9 (Montpellier) 0.89,M. Hummels (Bayern M\u00fcnchen) 0.87,Sergio Ramos (Real Madrid) 0.85,V\u00edctor Ru\u00edz (Villarreal) 0.83
+A. Christensen,Chelsea,Premier League,CB,N. S\u00fcle (Bayern M\u00fcnchen) 0.88,D. Rugani (Juventus) 0.88,K. Manolas (Roma) 0.86,W. Morgan (Leicester City) 0.85,B. Djimsiti (Benevento) 0.85
+M. \u0160kriniar,Internazionale,Serie A,CB,Marlon (Nice) 0.97,S. Umtiti (Barcelona) 0.95,B. Djimsiti (Benevento) 0.94,P. Kimpembe (PSG) 0.94,M. Benatia (Juventus) 0.91
+C. Jullien,Toulouse,Ligue 1,CB,J. Gelin (Rennes) 0.96,Albentosa (Deportivo La Coru\u00f1a) 0.96,C. Kabasele (Watford) 0.95,L. Bonucci (Milan) 0.92,K. Papadopoulos (Hamburger SV) 0.92
+A. Romagnoli,Milan,Serie A,CB,C. Smalling (Manchester United) 0.97,P. Retsos (Bayer Leverkusen) 0.96,M. Benatia (Juventus) 0.93,S. de Vrij (Lazio) 0.93,P. Jones (Manchester United) 0.93
+F. Mattiello,SPAL,Serie A,CB,V. Rosier (Dijon) 0.97,J. Ikoko (Guingamp) 0.94,A. Smith (AFC Bournemouth) 0.93,F. Acerbi (Sassuolo) 0.92,Aday (Girona) 0.89
+N. Stark,Hertha BSC,Bundesliga,CB,J. Lascelles (Newcastle United) 0.93,David L\u00f3pez (Espanyol) 0.92,K. Djidji (Nantes) 0.91,J. Vestergaard (Borussia M'gladbach) 0.87,Ximo Navarro (Las Palmas) 0.83
+Rodrigo Ely,Deportivo Alav\u00e9s,La Liga,CB,K. Rekik (Hertha BSC) 0.95,M. Veljkovic (Werder Bremen) 0.93,Mario Hermoso (Espanyol) 0.92,Juanpe (Girona) 0.89,M. Keane (Everton) 0.86
+Chema,Levante,La Liga,CB,B. Mee (Burnley) 0.96,C. Jullien (Toulouse) 0.89,Paulo Oliveira (Eibar) 0.89,J. Gelin (Rennes) 0.88,Albentosa (Deportivo La Coru\u00f1a) 0.86
+J. Alonso,Lille,Ligue 1,CB,Sergio Ramos (Real Madrid) 0.98,V\u00edctor Ru\u00edz (Villarreal) 0.98,D. Upamecano (RB Leipzig) 0.97,M. Hummels (Bayern M\u00fcnchen) 0.97,V. van Dijk (Southampton) 0.93
+C. Yamber\u00e9,Dijon,Ligue 1,CB,Sidnei (Deportivo La Coru\u00f1a) 0.90,L. Venuti (Benevento) 0.89,M. Caldara (Atalanta) 0.88,D. Siovas (Legan\u00e9s) 0.87,Unai N\u00fa\u00f1ez (Athletic Club) 0.85
+Diego Llorente,Real Sociedad,La Liga,CB,C. S\u00f6y\u00fcnc\u00fc (Freiburg) 0.99,N. N'Koulou (Torino) 0.90,W. Anton (Hannover 96) 0.86,Naldo (Schalke 04) 0.83,F. Ceccherini (Crotone) 0.80
+J. Tah,Bayer Leverkusen,Bundesliga,CB,D. D'Ambrosio (Internazionale) 0.87,Nacho (Real Madrid) 0.85,G. Jung (Hamburger SV) 0.84,N. Elvedi (Borussia M'gladbach) 0.81,P. Jones (Manchester United) 0.81
+A. Djiku,Caen,Ligue 1,CB,V\u00edctor Ru\u00edz (Villarreal) 0.98,Gabriel (Valencia) 0.98,Sergio Ramos (Real Madrid) 0.97,M. Hummels (Bayern M\u00fcnchen) 0.96,A. Rami (Olympique Marseille) 0.95
+P. Kimpembe,PSG,Ligue 1,CB,M. \u0160kriniar (Internazionale) 0.94,Marlon (Nice) 0.86,R. Varane (Real Madrid) 0.85,M. Benatia (Juventus) 0.82,S. Umtiti (Barcelona) 0.82
+T. Baumgartl,Stuttgart,Bundesliga,CB,Marcelo (Olympique Lyonnais) 0.96,M. J\u00f8rgensen (Huddersfield Town) 0.96,M. Yoshida (Southampton) 0.95,S. Savi\u0107 (Atl\u00e9tico Madrid) 0.95,N. Burdisso (Torino) 0.95
+T. Kehrer,Schalke 04,Bundesliga,CB,A. R\u00fcdiger (Chelsea) 0.97,M. Ginter (Borussia M'gladbach) 0.97,K. Akpoguma (Hoffenheim) 0.97,P. Jones (Manchester United) 0.95,Piqu\u00e9 (Barcelona) 0.95
+N. Elvedi,Borussia M'gladbach,Bundesliga,CB,D. D'Ambrosio (Internazionale) 0.93,H. Sakai (Olympique Marseille) 0.92,A. Smith (AFC Bournemouth) 0.91,J. Ikoko (Guingamp) 0.87,A. R\u00fcdiger (Chelsea) 0.87
+G. Jung,Hamburger SV,Bundesliga,CB,Sidnei (Deportivo La Coru\u00f1a) 0.84,L. Venuti (Benevento) 0.84,J. Tah (Bayer Leverkusen) 0.84,C. Yamber\u00e9 (Dijon) 0.81,F. Bellugou (Troyes) 0.73
+A. Mawson,Swansea City,Premier League,CB,B. Salamon (SPAL) 0.98,L. Dunk (Brighton & Hove Albion) 0.97,Pedro Mendes (Montpellier) 0.95,Hilton (Montpellier) 0.94,S. De Maio (Bologna) 0.94
+Djen\u00e9,Getafe,La Liga,CB,Sidnei (Deportivo La Coru\u00f1a) 0.86,K. Th\u00e9ophile Catherine (Saint-\u00c9tienne) 0.83,H. Maguire (Leicester City) 0.81,J. Gouweleeuw (Augsburg) 0.80,P. Djilobodji (Dijon) 0.79
+D. S\u00e1nchez,Tottenham Hotspur,Premier League,CB,J. Matip (Liverpool) 0.96,W. Morgan (Leicester City) 0.96,S. Bender (Bayer Leverkusen) 0.96,Jo\u00e3o Miranda (Internazionale) 0.92,Marlon (Nice) 0.92
+L. Klostermann,RB Leipzig,Bundesliga,CB,S. de Vrij (Lazio) 0.97,C. Smalling (Manchester United) 0.96,H. Sakai (Olympique Marseille) 0.95,T. Kehrer (Schalke 04) 0.94,K. Akpoguma (Hoffenheim) 0.94
+B. Henrichs,Bayer Leverkusen,Bundesliga,CB,E. Seka (Strasbourg) 0.86,T. Chandler (Eintracht Frankfurt) 0.86,S. San\u00e9 (Hannover 96) 0.83,D. Brosinski (Mainz 05) 0.82,J. Ikoko (Guingamp) 0.82
+F. Vicari,SPAL,Serie A,CB,M. Lemos (Sassuolo) 0.96,B. Kon\u00e9 (Strasbourg) 0.78,F. Fazio (Roma) 0.68,A. Masiello (Atalanta) 0.61,A. Caracciolo (Hellas Verona) 0.61
+Jemerson,Monaco,Ligue 1,CB,E. Garay (Valencia) 0.98,B. Nuytinck (Udinese) 0.98,S. Mustafi (Arsenal) 0.96,M. Yoshida (Southampton) 0.94,D. Lovren (Liverpool) 0.93
+Marlon,Nice,Ligue 1,CB,M. \u0160kriniar (Internazionale) 0.97,B. Djimsiti (Benevento) 0.97,S. Umtiti (Barcelona) 0.96,W. Morgan (Leicester City) 0.95,Jo\u00e3o Miranda (Internazionale) 0.93
+W. Hoedt,Southampton,Premier League,CB,N. Moisander (Werder Bremen) 0.98,F. Lejeune (Newcastle United) 0.97,I. Traor\u00e9 (Angers) 0.95,Diego Carlos (Nantes) 0.94,Ahmed Hegazy (West Bromwich Albion) 0.92
+Diego Carlos,Nantes,Ligue 1,CB,N. Moisander (Werder Bremen) 0.98,Sergio Postigo (Levante) 0.97,L. Ceppitelli (Cagliari) 0.97,F. Pisacane (Cagliari) 0.97,F. Lejeune (Newcastle United) 0.96
+W. Anton,Hannover 96,Bundesliga,CB,F. Ceccherini (Crotone) 0.95,H. Badstuber (Stuttgart) 0.94,Ra\u00fal Navas (Real Sociedad) 0.93,V. Rosier (Dijon) 0.89,J. Evans (West Bromwich Albion) 0.88
+Jorge Mer\u00e9,K\u00f6ln,Bundesliga,CB,I. Diop (Toulouse) 0.95,H. Maguire (Leicester City) 0.94,I. Traor\u00e9 (Angers) 0.93,J. Stephens (Southampton) 0.93,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.92
+Mario Hermoso,Espanyol,La Liga,CB,K. Rekik (Hertha BSC) 0.95,Rodrigo Ely (Deportivo Alav\u00e9s) 0.92,M. Keane (Everton) 0.89,J. Tarkowski (Burnley) 0.87,A. Mawson (Swansea City) 0.84
+L. Venuti,Benevento,Serie A,CB,C. Yamber\u00e9 (Dijon) 0.89,G. Jung (Hamburger SV) 0.84,A. Smith (AFC Bournemouth) 0.83,J. Ikoko (Guingamp) 0.80,F. Mattiello (SPAL) 0.79
+I. Diop,Toulouse,Ligue 1,CB,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.98,H. Maguire (Leicester City) 0.97,J. Stephens (Southampton) 0.97,Jorge Mer\u00e9 (K\u00f6ln) 0.95,I. Traor\u00e9 (Angers) 0.89
+M. Caldara,Atalanta,Serie A,CB,D. Siovas (Legan\u00e9s) 0.98,D. Abraham (Eintracht Frankfurt) 0.94,G\u00e1lvez (Eibar) 0.89,C. Yamber\u00e9 (Dijon) 0.88,S. Duffy (Brighton & Hove Albion) 0.85
+M. Niakhat\u00e9,Metz,Ligue 1,CB,Arbilla (Eibar) 0.88,J. Stephens (Southampton) 0.85,W. Hoedt (Southampton) 0.84,T. Chandler (Eintracht Frankfurt) 0.81,F. Sch\u00e4r (Deportivo La Coru\u00f1a) 0.81
+M. Lemos,Sassuolo,Serie A,CB,F. Vicari (SPAL) 0.96,B. Kon\u00e9 (Strasbourg) 0.85,F. Fazio (Roma) 0.70,A. Caracciolo (Hellas Verona) 0.69,B. Mee (Burnley) 0.66
+J. Gelin,Rennes,Ligue 1,CB,J. Tarkowski (Burnley) 0.97,C. Jullien (Toulouse) 0.96,K. Papadopoulos (Hamburger SV) 0.95,Albentosa (Deportivo La Coru\u00f1a) 0.94,B. Mee (Burnley) 0.90
+R. Koch,Freiburg,Bundesliga,CB,Jordi Amat (Real Betis) 0.91,D. Aogo (Stuttgart) 0.91,M. Ginter (Borussia M'gladbach) 0.88,K. Akpoguma (Hoffenheim) 0.88,L. Klostermann (RB Leipzig) 0.86
+B. Pavard,Stuttgart,Bundesliga,CB,Rober (Levante) 0.91,Naldo (Schalke 04) 0.84,A. Ogbonna (West Ham United) 0.78,F. Bellugou (Troyes) 0.77,A. Caracciolo (Hellas Verona) 0.77
+William,Wolfsburg,Bundesliga,CB,K. Zouma (Stoke City) 0.95,K. Lala (Strasbourg) 0.94,G. Sakai (Hamburger SV) 0.94,G. Letizia (Benevento) 0.91,Unai N\u00fa\u00f1ez (Athletic Club) 0.89
+Unai N\u00fa\u00f1ez,Athletic Club,La Liga,CB,G. Sakai (Hamburger SV) 0.96,K. Lala (Strasbourg) 0.94,William (Wolfsburg) 0.89,C. Yamber\u00e9 (Dijon) 0.85,David L\u00f3pez (Espanyol) 0.85
+P. Retsos,Bayer Leverkusen,Bundesliga,CB,M. Benatia (Juventus) 0.99,J. Gnagnon (Rennes) 0.97,A. Romagnoli (Milan) 0.96,S. Umtiti (Barcelona) 0.94,Nacho (Real Madrid) 0.94
+C. S\u00f6y\u00fcnc\u00fc,Freiburg,Bundesliga,CB,Diego Llorente (Real Sociedad) 0.99,N. N'Koulou (Torino) 0.88,W. Anton (Hannover 96) 0.86,Naldo (Schalke 04) 0.77,F. Ceccherini (Crotone) 0.77
+K. Amian,Toulouse,Ligue 1,CB,J. Rivierez (Metz) 0.98,D. Brosinski (Mainz 05) 0.90,E. Seka (Strasbourg) 0.86,S. San\u00e9 (Hannover 96) 0.82,G. Letizia (Benevento) 0.81
+D. Upamecano,RB Leipzig,Bundesliga,CB,V\u00edctor Ru\u00edz (Villarreal) 0.98,J. Alonso (Lille) 0.97,M. Hummels (Bayern M\u00fcnchen) 0.97,V. van Dijk (Southampton) 0.97,Sergio Ramos (Real Madrid) 0.97
+J. Gnagnon,Rennes,Ligue 1,CB,M. Benatia (Juventus) 0.98,P. Retsos (Bayer Leverkusen) 0.97,S. Umtiti (Barcelona) 0.93,B. Djimsiti (Benevento) 0.93,A. Romagnoli (Milan) 0.92
+V. Rosier,Dijon,Ligue 1,CB,F. Mattiello (SPAL) 0.97,F. Acerbi (Sassuolo) 0.94,Aday (Girona) 0.93,A. Smith (AFC Bournemouth) 0.92,W. Anton (Hannover 96) 0.89
+Rober,Levante,La Liga,CB,B. Pavard (Stuttgart) 0.91,A. Caracciolo (Hellas Verona) 0.90,Naldo (Schalke 04) 0.80,M. Silvestre (Sampdoria) 0.78,P. Gouano (Amiens SC) 0.76
+K. Strootman,Roma,Serie A,CM,R. Freuler (Atalanta) 0.98,B. Nivet (Troyes) 0.90,Jorginho (Napoli) 0.88,I. Rakiti\u0107 (Barcelona) 0.85,Borja Valero (Internazionale) 0.81
+G. Wijnaldum,Liverpool,Premier League,CM,P. Zieli\u0144ski (Napoli) 0.97,Fabi\u00e1n (Real Betis) 0.93,Daniel Bessa (Hellas Verona) 0.91,T. Davies (Everton) 0.91,J. Kurti\u010d (Atalanta) 0.90
+M. de Roon,Atalanta,Serie A,CM,A. Mooy (Huddersfield Town) 0.96,F\u00e0bregas (Chelsea) 0.95,L. Lerager (Bordeaux) 0.93,J. Milner (Liverpool) 0.93,T. Mangani (Angers) 0.91
+\u00c9. Banega,Sevilla,La Liga,CM,M. Bakalorz (Hannover 96) 0.95,M. Albrighton (Leicester City) 0.92,J. F\u00e9ret (Caen) 0.92,P. Pogba (Manchester United) 0.91,L. Modri\u0107 (Real Madrid) 0.90
+S. Khedira,Juventus,Serie A,CM,J. Martin (Strasbourg) 0.98,Fabi\u00e1n (Real Betis) 0.94,Eraso (Legan\u00e9s) 0.93,\u0130. G\u00fcndo\u011fan (Manchester City) 0.93,J. Hendrick (Burnley) 0.92
+F\u00e0bregas,Chelsea,Premier League,CM,J. Milner (Liverpool) 0.98,Jo\u00e3o Moutinho (Monaco) 0.95,M. de Roon (Atalanta) 0.95,T. Mangani (Angers) 0.95,L. Lerager (Bordeaux) 0.91
+A. Guardado,Real Betis,La Liga,CM,P. Lees Melou (Nice) 0.97,P. H\u00f8jbjerg (Southampton) 0.93,M. Joji\u0107 (K\u00f6ln) 0.92,Thiago Mendes (Lille) 0.90,J. Kurti\u010d (Atalanta) 0.89
+Ibai G\u00f3mez,Deportivo Alav\u00e9s,La Liga,CM,N. Barella (Cagliari) 0.98,P. Pogba (Manchester United) 0.95,J. Lea Siliki (Rennes) 0.94,R. Nainggolan (Roma) 0.93,L. Cook (AFC Bournemouth) 0.90
+Koke,Atl\u00e9tico Madrid,La Liga,CM,J. Henderson (Liverpool) 0.92,J. Cork (Burnley) 0.87,C. Borges (Deportivo La Coru\u00f1a) 0.87,J. Livermore (West Bromwich Albion) 0.85,B. Andr\u00e9 (Rennes) 0.84
+Campa\u00f1a,Levante,La Liga,CM,S. Padoin (Cagliari) 0.92,L. Deaux (Guingamp) 0.91,B. Cristante (Atalanta) 0.89,L. Modri\u0107 (Real Madrid) 0.87,C. Gentner (Stuttgart) 0.86
+I. Rakiti\u0107,Barcelona,La Liga,CM,D. Demme (RB Leipzig) 0.97,A. Barberis (Crotone) 0.91,R. Freuler (Atalanta) 0.90,Jo\u00e3o Moutinho (Monaco) 0.89,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.88
+Trigueros,Villarreal,La Liga,CM,J. Livermore (West Bromwich Albion) 0.81,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.81,J. Cork (Burnley) 0.79,Sergi Darder (Olympique Lyonnais) 0.78,M. Badelj (Fiorentina) 0.77
+Borja Valero,Internazionale,Serie A,CM,J. McArthur (Crystal Palace) 0.97,A. Doucour\u00e9 (Watford) 0.93,B. Nivet (Troyes) 0.90,J. Allen (Stoke City) 0.87,Zurutuza (Real Sociedad) 0.85
+Recio,M\u00e1laga,La Liga,CM,V. Darida (Hertha BSC) 0.98,C. Tolisso (Bayern M\u00fcnchen) 0.95,D. Cataldi (Benevento) 0.95,P. Schiattarella (SPAL) 0.87,L. Pellegrini (Roma) 0.86
+Zurutuza,Real Sociedad,La Liga,CM,B. Andr\u00e9 (Rennes) 0.93,M. Verratti (PSG) 0.88,B. Nivet (Troyes) 0.86,R. Gagliardini (Internazionale) 0.85,Borja Valero (Internazionale) 0.85
+Adri\u00e1n,M\u00e1laga,La Liga,CM,G. Xhaka (Arsenal) 0.94,Dani Garc\u00eda (Eibar) 0.91,A. Vidal (Bayern M\u00fcnchen) 0.90,G. Barry (West Bromwich Albion) 0.90,S. Rudy (Bayern M\u00fcnchen) 0.87
+Sergi Darder,Olympique Lyonnais,Ligue 1,CM,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.94,M. Badelj (Fiorentina) 0.92,T. Mangani (Angers) 0.90,Gabriel (Legan\u00e9s) 0.85,J. Milner (Liverpool) 0.83
+Jonathan Viera,Las Palmas,La Liga,CM,M. Lanzini (West Ham United) 0.89,Allan (Napoli) 0.88,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.83,Pere Pons (Girona) 0.82,B. Dabo (Saint-\u00c9tienne) 0.82
+Sa\u00fal,Atl\u00e9tico Madrid,La Liga,CM,Y. Bissouma (Lille) 0.83,S. Khaoui (Troyes) 0.82,L. Blas (Guingamp) 0.68,H. Aouar (Olympique Lyonnais) 0.68,S. Fofana (Udinese) 0.66
+Tana,Las Palmas,La Liga,CM,C. Kouyat\u00e9 (West Ham United) 0.98,Paulinho (Barcelona) 0.94,A. Ramsey (Arsenal) 0.90,M. Demb\u00e9l\u00e9 (Tottenham Hotspur) 0.90,S. \u00d6zcan (K\u00f6ln) 0.89
+Dani Garc\u00eda,Eibar,La Liga,CM,G. Barry (West Bromwich Albion) 0.97,Adri\u00e1n (M\u00e1laga) 0.91,T. Delaney (Werder Bremen) 0.87,G. Xhaka (Arsenal) 0.84,E. Skhiri (Montpellier) 0.76
+Eraso,Legan\u00e9s,La Liga,CM,Daniel Bessa (Hellas Verona) 0.96,S. Khedira (Juventus) 0.93,J. Hendrick (Burnley) 0.93,J. Draxler (PSG) 0.93,J. Martin (Strasbourg) 0.92
+A. Ramsey,Arsenal,Premier League,CM,J. Pastore (PSG) 0.93,Tana (Las Palmas) 0.90,C. Kouyat\u00e9 (West Ham United) 0.89,Allan (Napoli) 0.89,A. Ioni\u0163\u0103 (Cagliari) 0.87
+T. Cleverley,Watford,Premier League,CM,L. Lerager (Bordeaux) 0.91,J. Rodr\u00edguez (Bayern M\u00fcnchen) 0.89,M. de Roon (Atalanta) 0.82,J. McArthur (Crystal Palace) 0.81,A. Vidal (Bayern M\u00fcnchen) 0.79
+P. Pogba,Manchester United,Premier League,CM,N. Barella (Cagliari) 0.95,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.95,L. Cook (AFC Bournemouth) 0.93,M. Bakalorz (Hannover 96) 0.92,\u00c9. Banega (Sevilla) 0.91
+J. Henderson,Liverpool,Premier League,CM,J. Livermore (West Bromwich Albion) 0.95,Koke (Atl\u00e9tico Madrid) 0.92,T. Carroll (Swansea City) 0.85,G. Barry (West Bromwich Albion) 0.83,F\u00e0bregas (Chelsea) 0.80
+Y. Cabaye,Crystal Palace,Premier League,CM,G. Xhaka (Arsenal) 0.91,M. Badelj (Fiorentina) 0.88,A. Mooy (Huddersfield Town) 0.85,T. Mangani (Angers) 0.83,M. de Roon (Atalanta) 0.81
+M. Albrighton,Leicester City,Premier League,CM,\u00c9. Banega (Sevilla) 0.92,L. Cook (AFC Bournemouth) 0.91,P. Pogba (Manchester United) 0.90,R. Cohade (Metz) 0.89,\u00c1lex Granell (Girona) 0.88
+J. Cork,Burnley,Premier League,CM,Koke (Atl\u00e9tico Madrid) 0.87,D. Demme (RB Leipzig) 0.84,M. Verratti (PSG) 0.83,J. Livermore (West Bromwich Albion) 0.83,Trigueros (Villarreal) 0.79
+J. Livermore,West Bromwich Albion,Premier League,CM,J. Henderson (Liverpool) 0.95,F\u00e0bregas (Chelsea) 0.89,Jo\u00e3o Moutinho (Monaco) 0.89,T. Carroll (Swansea City) 0.86,Koke (Atl\u00e9tico Madrid) 0.85
+L. Modri\u0107,Real Madrid,La Liga,CM,J. F\u00e9ret (Caen) 0.92,M. Bakalorz (Hannover 96) 0.91,\u00c9. Banega (Sevilla) 0.90,C. Gentner (Stuttgart) 0.88,Campa\u00f1a (Levante) 0.87
+G. Barry,West Bromwich Albion,Premier League,CM,Dani Garc\u00eda (Eibar) 0.97,Adri\u00e1n (M\u00e1laga) 0.90,G. Xhaka (Arsenal) 0.86,T. Delaney (Werder Bremen) 0.84,J. Henderson (Liverpool) 0.83
+J. Milner,Liverpool,Premier League,CM,F\u00e0bregas (Chelsea) 0.98,T. Mangani (Angers) 0.96,Jo\u00e3o Moutinho (Monaco) 0.94,M. de Roon (Atalanta) 0.93,A. Mooy (Huddersfield Town) 0.92
+J. McArthur,Crystal Palace,Premier League,CM,Borja Valero (Internazionale) 0.97,A. Doucour\u00e9 (Watford) 0.93,J. Allen (Stoke City) 0.85,B. Andr\u00e9 (Rennes) 0.85,Zurutuza (Real Sociedad) 0.84
+T. Carroll,Swansea City,Premier League,CM,J. Livermore (West Bromwich Albion) 0.86,J. Henderson (Liverpool) 0.85,T. Delaney (Werder Bremen) 0.78,F\u00e0bregas (Chelsea) 0.77,G. Barry (West Bromwich Albion) 0.72
+J. Hendrick,Burnley,Premier League,CM,J. Draxler (PSG) 0.96,A. Poli (Bologna) 0.93,J. Martin (Strasbourg) 0.93,Eraso (Legan\u00e9s) 0.93,S. Khedira (Juventus) 0.92
+M. Ritchie,Newcastle United,Premier League,CM,P. Lasne (Montpellier) 0.86,B. Bourigeaud (Rennes) 0.83,J. Jankto (Udinese) 0.83,D. Latza (Mainz 05) 0.80,S. Fofana (Udinese) 0.79
+T. Ince,Huddersfield Town,Premier League,CM,G. Imbula (Toulouse) 0.96,P. Capelle (Angers) 0.96,F. Tait (Angers) 0.96,M. Lemina (Southampton) 0.94,H. Manzala (Amiens SC) 0.92
+S. Clucas,Swansea City,Premier League,CM,E. Can (Liverpool) 0.93,Eraso (Legan\u00e9s) 0.92,D. Geiger (Hoffenheim) 0.89,P. Lees Melou (Nice) 0.89,J. Kurti\u010d (Atalanta) 0.89
+M. Demb\u00e9l\u00e9,Tottenham Hotspur,Premier League,CM,Tana (Las Palmas) 0.90,A. Rabiot (PSG) 0.90,C. Kouyat\u00e9 (West Ham United) 0.88,R. Gagliardini (Internazionale) 0.82,Paulinho (Barcelona) 0.81
+A. Hunt,Hamburger SV,Bundesliga,CM,R. Boudebouz (Real Betis) 0.92,Thiago Mendes (Lille) 0.83,A. Ioni\u0163\u0103 (Cagliari) 0.82,Daniel Bessa (Hellas Verona) 0.80,E. Can (Liverpool) 0.78
+T. Kroos,Real Madrid,La Liga,CM,A. Mooy (Huddersfield Town) 0.96,S. Padoin (Cagliari) 0.91,M. de Roon (Atalanta) 0.89,T. Mangani (Angers) 0.85,L. Lerager (Bordeaux) 0.85
+C. Gentner,Stuttgart,Bundesliga,CM,J. F\u00e9ret (Caen) 0.97,L. Modri\u0107 (Real Madrid) 0.88,S. Padoin (Cagliari) 0.86,Campa\u00f1a (Levante) 0.86,\u00c1lex Granell (Girona) 0.84
+M. Bakalorz,Hannover 96,Bundesliga,CM,\u00c9. Banega (Sevilla) 0.95,P. Pogba (Manchester United) 0.92,L. Modri\u0107 (Real Madrid) 0.91,L. Cook (AFC Bournemouth) 0.91,J. F\u00e9ret (Caen) 0.89
+\u0130. G\u00fcndo\u011fan,Manchester City,Premier League,CM,Paulinho (Barcelona) 0.96,S. Khedira (Juventus) 0.93,C. Kouyat\u00e9 (West Ham United) 0.91,G. Wijnaldum (Liverpool) 0.89,Allan (Napoli) 0.89
+J. Draxler,PSG,Ligue 1,CM,J. Hendrick (Burnley) 0.96,Daniel Bessa (Hellas Verona) 0.94,J. Kurti\u010d (Atalanta) 0.94,Eraso (Legan\u00e9s) 0.93,P. H\u00f8jbjerg (Southampton) 0.91
+D. Didavi,Wolfsburg,Bundesliga,CM,G. Lo Celso (PSG) 0.93,P. Zieli\u0144ski (Napoli) 0.91,H. Manzala (Amiens SC) 0.88,Pablo Fornals (Villarreal) 0.87,P. Capelle (Angers) 0.86
+Y. Mall\u0131,Wolfsburg,Bundesliga,CM,R. Cabella (Olympique Marseille) 0.97,Som\u00e1lia (Toulouse) 0.92,N. Ke\u00efta (RB Leipzig) 0.91,G. Donsah (Bologna) 0.91,A. Bar\u00e1k (Udinese) 0.88
+J. Haberer,Freiburg,Bundesliga,CM,P. H\u00f8jbjerg (Southampton) 0.91,P. Lees Melou (Nice) 0.90,A. Guardado (Real Betis) 0.86,Daniel Bessa (Hellas Verona) 0.85,J. Draxler (PSG) 0.84
+Ja-Cheol Koo,Augsburg,Bundesliga,CM,J. Martin (Strasbourg) 0.90,Fabi\u00e1n (Real Betis) 0.89,J. Draxler (PSG) 0.88,J. Hendrick (Burnley) 0.86,S. Khedira (Juventus) 0.85
+S. Rudy,Bayern M\u00fcnchen,Bundesliga,CM,M. Parolo (Lazio) 0.91,A. Vidal (Bayern M\u00fcnchen) 0.89,Adri\u00e1n (M\u00e1laga) 0.87,C. Borges (Deportivo La Coru\u00f1a) 0.85,G. Xhaka (Arsenal) 0.83
+D. Demme,RB Leipzig,Bundesliga,CM,I. Rakiti\u0107 (Barcelona) 0.97,A. Barberis (Crotone) 0.94,Jo\u00e3o Moutinho (Monaco) 0.90,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.90,M. Badelj (Fiorentina) 0.89
+K. Kampl,Bayer Leverkusen,Bundesliga,CM,S. Missiroli (Sassuolo) 0.86,A. Zambo Anguissa (Olympique Marseille) 0.79,M. Eggestein (Werder Bremen) 0.79,Campa\u00f1a (Levante) 0.76,S. Padoin (Cagliari) 0.76
+D. Latza,Mainz 05,Bundesliga,CM,P. Lasne (Montpellier) 0.91,J. Lea Siliki (Rennes) 0.80,M. Ritchie (Newcastle United) 0.80,Y. Bissouma (Lille) 0.78,R. Cohade (Metz) 0.78
+E. Can,Liverpool,Premier League,CM,Daniel Bessa (Hellas Verona) 0.94,S. Clucas (Swansea City) 0.93,Eraso (Legan\u00e9s) 0.90,P. H\u00f8jbjerg (Southampton) 0.89,J. Kurti\u010d (Atalanta) 0.88
+K. Boateng,Eintracht Frankfurt,Bundesliga,CM,Joan Jord\u00e1n (Eibar) 0.89,J. Haberer (Freiburg) 0.65,A. Guardado (Real Betis) 0.63,Thiago Mendes (Lille) 0.62,Trigueros (Villarreal) 0.61
+B. Cristante,Atalanta,Serie A,CM,L. Deaux (Guingamp) 0.98,R. Freuler (Atalanta) 0.90,Campa\u00f1a (Levante) 0.89,I. Rakiti\u0107 (Barcelona) 0.84,A. Bertolacci (Genoa) 0.84
+S. Padoin,Cagliari,Serie A,CM,Campa\u00f1a (Levante) 0.92,T. Kroos (Real Madrid) 0.91,C. Gentner (Stuttgart) 0.86,A. Mooy (Huddersfield Town) 0.84,T. Mangani (Angers) 0.80
+A. Vidal,Bayern M\u00fcnchen,Bundesliga,CM,Adri\u00e1n (M\u00e1laga) 0.90,S. Rudy (Bayern M\u00fcnchen) 0.89,M. Parolo (Lazio) 0.86,T. Cleverley (Watford) 0.79,G. Xhaka (Arsenal) 0.78
+A. Poli,Bologna,Serie A,CM,J. Martin (Strasbourg) 0.95,J. Hendrick (Burnley) 0.93,S. Khedira (Juventus) 0.92,\u0130. G\u00fcndo\u011fan (Manchester City) 0.88,Tana (Las Palmas) 0.88
+R. Pereyra,Watford,Premier League,CM,B. Dabo (Saint-\u00c9tienne) 0.93,D. Praet (Sampdoria) 0.92,A. Fulgini (Angers) 0.92,G. Lo Celso (PSG) 0.91,T. Davies (Everton) 0.90
+P. Hetemaj,Chievo,Serie A,CM,P. Capelle (Angers) 0.94,M. Lemina (Southampton) 0.92,S. Serdar (Mainz 05) 0.91,H. Manzala (Amiens SC) 0.91,M. Joji\u0107 (K\u00f6ln) 0.89
+A. Bertolacci,Genoa,Serie A,CM,Jo\u00e3o Moutinho (Monaco) 0.98,L. Deaux (Guingamp) 0.88,F\u00e0bregas (Chelsea) 0.88,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.88,J. Milner (Liverpool) 0.87
+A. Barberis,Crotone,Serie A,CM,D. Demme (RB Leipzig) 0.94,I. Rakiti\u0107 (Barcelona) 0.91,C. Borges (Deportivo La Coru\u00f1a) 0.89,Fernandinho (Manchester City) 0.89,M. Badelj (Fiorentina) 0.88
+R. Nainggolan,Roma,Serie A,CM,J. Lea Siliki (Rennes) 0.97,N. Barella (Cagliari) 0.95,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.93,B. Pel\u00e9 (Troyes) 0.91,L. Cook (AFC Bournemouth) 0.87
+P. Schiattarella,SPAL,Serie A,CM,C. Tolisso (Bayern M\u00fcnchen) 0.97,D. Cataldi (Benevento) 0.93,G. Sigur\u00f0sson (Everton) 0.93,K. Azamoum (Troyes) 0.89,Recio (M\u00e1laga) 0.87
+Jorginho,Napoli,Serie A,CM,B. Andr\u00e9 (Rennes) 0.90,B. Nivet (Troyes) 0.88,K. Strootman (Roma) 0.88,A. Barberis (Crotone) 0.86,C. Borges (Deportivo La Coru\u00f1a) 0.86
+M. Parolo,Lazio,Serie A,CM,S. Rudy (Bayern M\u00fcnchen) 0.91,A. Vidal (Bayern M\u00fcnchen) 0.86,J. Rodr\u00edguez (Bayern M\u00fcnchen) 0.80,Koke (Atl\u00e9tico Madrid) 0.76,Adri\u00e1n (M\u00e1laga) 0.76
+M. Verratti,PSG,Ligue 1,CM,Zurutuza (Real Sociedad) 0.88,J. McArthur (Crystal Palace) 0.84,J. Cork (Burnley) 0.83,Borja Valero (Internazionale) 0.83,J. Allen (Stoke City) 0.81
+D. Baselli,Torino,Serie A,CM,T. Bakayoko (Chelsea) 0.90,T. Davies (Everton) 0.87,V. Darida (Hertha BSC) 0.86,D. Cataldi (Benevento) 0.85,S. Milinkovi\u0107-Savi\u0107 (Lazio) 0.83
+J. Kurti\u010d,Atalanta,Serie A,CM,P. H\u00f8jbjerg (Southampton) 0.96,P. Lees Melou (Nice) 0.94,D. Geiger (Hoffenheim) 0.94,J. Draxler (PSG) 0.94,Daniel Bessa (Hellas Verona) 0.91
+S. Missiroli,Sassuolo,Serie A,CM,K. Kampl (Bayer Leverkusen) 0.86,B. Cristante (Atalanta) 0.82,R. Freuler (Atalanta) 0.82,M. Eggestein (Werder Bremen) 0.79,Campa\u00f1a (Levante) 0.78
+Daniel Bessa,Hellas Verona,Serie A,CM,Eraso (Legan\u00e9s) 0.96,J. Draxler (PSG) 0.94,E. Can (Liverpool) 0.94,R. Boudebouz (Real Betis) 0.93,P. H\u00f8jbjerg (Southampton) 0.92
+J. Pastore,PSG,Ligue 1,CM,A. Ramsey (Arsenal) 0.93,J. Hendrick (Burnley) 0.87,A. Ioni\u0163\u0103 (Cagliari) 0.83,Allan (Napoli) 0.82,Pere Pons (Girona) 0.81
+R. Boudebouz,Real Betis,La Liga,CM,Daniel Bessa (Hellas Verona) 0.93,A. Ioni\u0163\u0103 (Cagliari) 0.92,A. Hunt (Hamburger SV) 0.92,K. Havertz (Bayer Leverkusen) 0.90,J. Draxler (PSG) 0.89
+J. Veretout,Fiorentina,Serie A,CM,R. Cohade (Metz) 0.93,\u00c1lex Granell (Girona) 0.93,J. F\u00e9ret (Caen) 0.90,L. Cook (AFC Bournemouth) 0.87,C. Gentner (Stuttgart) 0.84
+J. F\u00e9ret,Caen,Ligue 1,CM,C. Gentner (Stuttgart) 0.97,R. Cohade (Metz) 0.92,\u00c9. Banega (Sevilla) 0.92,L. Modri\u0107 (Real Madrid) 0.92,\u00c1lex Granell (Girona) 0.92
+I. Gueye,Everton,Premier League,CM,A. Thomasson (Nantes) 0.78,Fernandinho (Manchester City) 0.68,D. Kohr (Bayer Leverkusen) 0.61,G. Xhaka (Arsenal) 0.54,Y. Cabaye (Crystal Palace) 0.53
+B. Andr\u00e9,Rennes,Ligue 1,CM,Zurutuza (Real Sociedad) 0.93,C. Borges (Deportivo La Coru\u00f1a) 0.92,Jorginho (Napoli) 0.90,J. McArthur (Crystal Palace) 0.85,A. Barberis (Crotone) 0.84
+P. Lasne,Montpellier,Ligue 1,CM,D. Latza (Mainz 05) 0.91,B. Bourigeaud (Rennes) 0.91,S. Defour (Burnley) 0.88,M. Ritchie (Newcastle United) 0.86,F. Fajr (Getafe) 0.81
+F. Fajr,Getafe,La Liga,CM,M. Brozovi\u0107 (Internazionale) 0.92,T. Delaney (Werder Bremen) 0.92,\u00c1lex Granell (Girona) 0.90,M. Albrighton (Leicester City) 0.86,R. Cohade (Metz) 0.85
+B. Nivet,Troyes,Ligue 1,CM,R. Gagliardini (Internazionale) 0.93,Borja Valero (Internazionale) 0.90,K. Strootman (Roma) 0.90,A. Rabiot (PSG) 0.90,Jorginho (Napoli) 0.88
+G. Imbula,Toulouse,Ligue 1,CM,F. Tait (Angers) 0.97,G. Donsah (Bologna) 0.97,T. Ince (Huddersfield Town) 0.96,A. Fulgini (Angers) 0.94,A. Bar\u00e1k (Udinese) 0.92
+R. Cabella,Olympique Marseille,Ligue 1,CM,N. Ke\u00efta (RB Leipzig) 0.97,Y. Mall\u0131 (Wolfsburg) 0.97,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.93,G. Donsah (Bologna) 0.91,Som\u00e1lia (Toulouse) 0.90
+B. Dabo,Saint-\u00c9tienne,Ligue 1,CM,D. Praet (Sampdoria) 0.95,R. Pereyra (Watford) 0.93,Allan (Napoli) 0.87,H. Aouar (Olympique Lyonnais) 0.83,T. Davies (Everton) 0.82
+J. Martin,Strasbourg,Ligue 1,CM,S. Khedira (Juventus) 0.98,A. Poli (Bologna) 0.95,J. Hendrick (Burnley) 0.93,Eraso (Legan\u00e9s) 0.92,Fabi\u00e1n (Real Betis) 0.91
+T. Mangani,Angers,Ligue 1,CM,J. Milner (Liverpool) 0.96,F\u00e0bregas (Chelsea) 0.95,A. Mooy (Huddersfield Town) 0.93,M. de Roon (Atalanta) 0.91,Sergi Darder (Olympique Lyonnais) 0.90
+L. Deaux,Guingamp,Ligue 1,CM,B. Cristante (Atalanta) 0.98,Campa\u00f1a (Levante) 0.91,A. Bertolacci (Genoa) 0.88,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.86,R. Freuler (Atalanta) 0.82
+G. Kakuta,Amiens SC,Ligue 1,CM,M. Ga\u0107inovi\u0107 (Eintracht Frankfurt) 0.93,N. Barella (Cagliari) 0.92,P. Pogba (Manchester United) 0.89,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.87,F. Tait (Angers) 0.83
+Y. Sankhar\u00e9,Bordeaux,Ligue 1,CM,M. Eggestein (Werder Bremen) 0.94,K. Azamoum (Troyes) 0.91,L. Castro (Chievo) 0.91,L. Pellegrini (Roma) 0.81,S. Khaoui (Troyes) 0.75
+R. Cohade,Metz,Ligue 1,CM,L. Cook (AFC Bournemouth) 0.96,\u00c1lex Granell (Girona) 0.95,J. Veretout (Fiorentina) 0.93,J. F\u00e9ret (Caen) 0.92,M. Albrighton (Leicester City) 0.89
+P. Capelle,Angers,Ligue 1,CM,T. Ince (Huddersfield Town) 0.96,P. Hetemaj (Chievo) 0.94,M. Lemina (Southampton) 0.93,L. Blas (Guingamp) 0.92,G. Imbula (Toulouse) 0.91
+T. Bakayoko,Chelsea,Premier League,CM,D. Baselli (Torino) 0.90,D. Praet (Sampdoria) 0.86,G. Lo Celso (PSG) 0.84,T. Davies (Everton) 0.84,G. Sigur\u00f0sson (Everton) 0.82
+A. Doucour\u00e9,Watford,Premier League,CM,J. McArthur (Crystal Palace) 0.93,Borja Valero (Internazionale) 0.93,J. Allen (Stoke City) 0.82,J. Rodr\u00edguez (Bayern M\u00fcnchen) 0.81,A. Ioni\u0163\u0103 (Cagliari) 0.81
+K. Azamoum,Troyes,Ligue 1,CM,L. Castro (Chievo) 0.96,L. Pellegrini (Roma) 0.91,Y. Sankhar\u00e9 (Bordeaux) 0.91,G. Sigur\u00f0sson (Everton) 0.90,P. Schiattarella (SPAL) 0.89
+M. Lemina,Southampton,Premier League,CM,L. Blas (Guingamp) 0.95,S. Serdar (Mainz 05) 0.95,T. Ince (Huddersfield Town) 0.94,P. Capelle (Angers) 0.93,P. Hetemaj (Chievo) 0.92
+B. Pel\u00e9,Troyes,Ligue 1,CM,A. Bar\u00e1k (Udinese) 0.93,F. Tait (Angers) 0.93,R. Nainggolan (Roma) 0.91,T. Ince (Huddersfield Town) 0.90,G. Imbula (Toulouse) 0.89
+N. Kant\u00e9,Chelsea,Premier League,CM,J. Allen (Stoke City) 0.85,A. Doucour\u00e9 (Watford) 0.75,Borja Valero (Internazionale) 0.75,A. Ramsey (Arsenal) 0.73,A. Ioni\u0163\u0103 (Cagliari) 0.72
+C. Kouyat\u00e9,West Ham United,Premier League,CM,Tana (Las Palmas) 0.98,Paulinho (Barcelona) 0.97,S. \u00d6zcan (K\u00f6ln) 0.95,A. Rabiot (PSG) 0.92,V. Rongier (Nantes) 0.92
+D. Praet,Sampdoria,Serie A,CM,Allan (Napoli) 0.95,B. Dabo (Saint-\u00c9tienne) 0.95,R. Pereyra (Watford) 0.92,T. Davies (Everton) 0.91,A. Grassi (SPAL) 0.90
+Paulinho,Barcelona,La Liga,CM,C. Kouyat\u00e9 (West Ham United) 0.97,\u0130. G\u00fcndo\u011fan (Manchester City) 0.96,Tana (Las Palmas) 0.94,S. \u00d6zcan (K\u00f6ln) 0.90,V. Rongier (Nantes) 0.89
+Allan,Napoli,Serie A,CM,D. Praet (Sampdoria) 0.95,A. Ramsey (Arsenal) 0.89,\u0130. G\u00fcndo\u011fan (Manchester City) 0.89,Paulinho (Barcelona) 0.88,Jonathan Viera (Las Palmas) 0.88
+Thiago Mendes,Lille,Ligue 1,CM,P. Lees Melou (Nice) 0.92,A. Guardado (Real Betis) 0.90,Joan Jord\u00e1n (Eibar) 0.86,P. H\u00f8jbjerg (Southampton) 0.84,M. Joji\u0107 (K\u00f6ln) 0.83
+M. Lanzini,West Ham United,Premier League,CM,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.91,H. Aouar (Olympique Lyonnais) 0.90,Jonathan Viera (Las Palmas) 0.89,Allan (Napoli) 0.86,Som\u00e1lia (Toulouse) 0.85
+Gabriel,Legan\u00e9s,La Liga,CM,Sergi Darder (Olympique Lyonnais) 0.85,M. Badelj (Fiorentina) 0.73,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.70,Trigueros (Villarreal) 0.67,\u00c1lex Granell (Girona) 0.67
+Som\u00e1lia,Toulouse,Ligue 1,CM,G. Donsah (Bologna) 0.94,A. Fulgini (Angers) 0.92,Y. Mall\u0131 (Wolfsburg) 0.92,H. Aouar (Olympique Lyonnais) 0.91,R. Cabella (Olympique Marseille) 0.90
+G. Xhaka,Arsenal,Premier League,CM,Adri\u00e1n (M\u00e1laga) 0.94,Y. Cabaye (Crystal Palace) 0.91,G. Barry (West Bromwich Albion) 0.86,Dani Garc\u00eda (Eibar) 0.84,C. Borges (Deportivo La Coru\u00f1a) 0.83
+R. Freuler,Atalanta,Serie A,CM,K. Strootman (Roma) 0.98,B. Cristante (Atalanta) 0.90,I. Rakiti\u0107 (Barcelona) 0.90,S. Missiroli (Sassuolo) 0.82,L. Deaux (Guingamp) 0.82
+A. Ioni\u0163\u0103,Cagliari,Serie A,CM,R. Boudebouz (Real Betis) 0.92,J. Hendrick (Burnley) 0.90,Eraso (Legan\u00e9s) 0.90,Daniel Bessa (Hellas Verona) 0.90,A. Ramsey (Arsenal) 0.87
+C. Borges,Deportivo La Coru\u00f1a,La Liga,CM,B. Andr\u00e9 (Rennes) 0.92,A. Barberis (Crotone) 0.89,Fernandinho (Manchester City) 0.89,Koke (Atl\u00e9tico Madrid) 0.87,Jorginho (Napoli) 0.86
+T. Delaney,Werder Bremen,Bundesliga,CM,M. Brozovi\u0107 (Internazionale) 0.96,F. Fajr (Getafe) 0.92,Dani Garc\u00eda (Eibar) 0.87,G. Barry (West Bromwich Albion) 0.84,T. Carroll (Swansea City) 0.78
+L. Lerager,Bordeaux,Ligue 1,CM,M. de Roon (Atalanta) 0.93,F\u00e0bregas (Chelsea) 0.91,T. Cleverley (Watford) 0.91,J. Milner (Liverpool) 0.88,A. Mooy (Huddersfield Town) 0.87
+Sung-Yeung Ki,Swansea City,Premier League,CM,D. Geiger (Hoffenheim) 0.88,S. Clucas (Swansea City) 0.87,D. Kohr (Bayer Leverkusen) 0.87,E. Can (Liverpool) 0.83,A. Guardado (Real Betis) 0.79
+A. Mooy,Huddersfield Town,Premier League,CM,T. Kroos (Real Madrid) 0.96,M. de Roon (Atalanta) 0.96,T. Mangani (Angers) 0.93,J. Milner (Liverpool) 0.92,F\u00e0bregas (Chelsea) 0.91
+M. Badelj,Fiorentina,Serie A,CM,Sergi Darder (Olympique Lyonnais) 0.92,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.91,D. Demme (RB Leipzig) 0.89,A. Barberis (Crotone) 0.88,Y. Cabaye (Crystal Palace) 0.88
+M. Brozovi\u0107,Internazionale,Serie A,CM,T. Delaney (Werder Bremen) 0.96,F. Fajr (Getafe) 0.92,B. Bourigeaud (Rennes) 0.85,R. Cohade (Metz) 0.85,\u00c1lex Granell (Girona) 0.83
+S. Defour,Burnley,Premier League,CM,P. Lasne (Montpellier) 0.88,M. Ritchie (Newcastle United) 0.77,E. Skhiri (Montpellier) 0.77,D. Latza (Mainz 05) 0.77,T. Delaney (Werder Bremen) 0.75
+Jo\u00e3o Moutinho,Monaco,Ligue 1,CM,A. Bertolacci (Genoa) 0.98,F\u00e0bregas (Chelsea) 0.95,J. Milner (Liverpool) 0.94,D. Demme (RB Leipzig) 0.90,C. Ar\u00e1nguiz (Bayer Leverkusen) 0.89
+J. Rodr\u00edguez,Bayern M\u00fcnchen,Bundesliga,CM,T. Cleverley (Watford) 0.89,J. McArthur (Crystal Palace) 0.84,A. Doucour\u00e9 (Watford) 0.81,M. Parolo (Lazio) 0.80,J. Henderson (Liverpool) 0.79
+J. Allen,Stoke City,Premier League,CM,Borja Valero (Internazionale) 0.87,N. Kant\u00e9 (Chelsea) 0.85,J. McArthur (Crystal Palace) 0.85,A. Doucour\u00e9 (Watford) 0.82,M. Verratti (PSG) 0.81
+G. Sigur\u00f0sson,Everton,Premier League,CM,P. Schiattarella (SPAL) 0.93,K. Azamoum (Troyes) 0.90,C. Tolisso (Bayern M\u00fcnchen) 0.86,T. Bakayoko (Chelsea) 0.82,D. Cataldi (Benevento) 0.81
+V. Darida,Hertha BSC,Bundesliga,CM,Recio (M\u00e1laga) 0.98,D. Cataldi (Benevento) 0.98,C. Tolisso (Bayern M\u00fcnchen) 0.95,P. Schiattarella (SPAL) 0.87,D. Baselli (Torino) 0.86
+L. Castro,Chievo,Serie A,CM,L. Pellegrini (Roma) 0.97,K. Azamoum (Troyes) 0.96,Y. Sankhar\u00e9 (Bordeaux) 0.91,P. Schiattarella (SPAL) 0.87,C. Tolisso (Bayern M\u00fcnchen) 0.85
+C. Ar\u00e1nguiz,Bayer Leverkusen,Bundesliga,CM,Sergi Darder (Olympique Lyonnais) 0.94,M. Badelj (Fiorentina) 0.91,D. Demme (RB Leipzig) 0.90,Jo\u00e3o Moutinho (Monaco) 0.89,T. Mangani (Angers) 0.89
+P. Zieli\u0144ski,Napoli,Serie A,CM,G. Wijnaldum (Liverpool) 0.97,A. Grassi (SPAL) 0.94,G. Lo Celso (PSG) 0.91,D. Didavi (Wolfsburg) 0.91,Fabi\u00e1n (Real Betis) 0.90
+Fernandinho,Manchester City,Premier League,CM,C. Borges (Deportivo La Coru\u00f1a) 0.89,A. Barberis (Crotone) 0.89,Jorginho (Napoli) 0.85,B. Andr\u00e9 (Rennes) 0.79,G. Xhaka (Arsenal) 0.77
+M. Vecino,Internazionale,Serie A,CM,A. Zambo Anguissa (Olympique Marseille) 0.93,A. Rabiot (PSG) 0.83,M. Demb\u00e9l\u00e9 (Tottenham Hotspur) 0.79,S. Khaoui (Troyes) 0.76,S. \u00d6zcan (K\u00f6ln) 0.76
+M. Joji\u0107,K\u00f6ln,Bundesliga,CM,N. Amiri (Hoffenheim) 0.93,A. Guardado (Real Betis) 0.92,S. Milinkovi\u0107-Savi\u0107 (Lazio) 0.90,P. Hetemaj (Chievo) 0.89,H. Manzala (Amiens SC) 0.89
+L. Goretzka,Schalke 04,Bundesliga,CM,Pablo Fornals (Villarreal) 0.97,A. Bar\u00e1k (Udinese) 0.94,B. Pel\u00e9 (Troyes) 0.86,G. Imbula (Toulouse) 0.80,D. Didavi (Wolfsburg) 0.78
+A. Grassi,SPAL,Serie A,CM,P. Zieli\u0144ski (Napoli) 0.94,D. Praet (Sampdoria) 0.90,G. Wijnaldum (Liverpool) 0.89,Allan (Napoli) 0.88,\u0130. G\u00fcndo\u011fan (Manchester City) 0.87
+S. Fofana,Udinese,Serie A,CM,Y. Bissouma (Lille) 0.95,L. Blas (Guingamp) 0.85,B. Pel\u00e9 (Troyes) 0.84,F. Tait (Angers) 0.84,M. Lemina (Southampton) 0.83
+P. H\u00f8jbjerg,Southampton,Premier League,CM,P. Lees Melou (Nice) 0.97,J. Kurti\u010d (Atalanta) 0.96,T. Davies (Everton) 0.95,A. Guardado (Real Betis) 0.93,Daniel Bessa (Hellas Verona) 0.92
+M. Ga\u0107inovi\u0107,Eintracht Frankfurt,Bundesliga,CM,G. Kakuta (Amiens SC) 0.93,F. Tait (Angers) 0.90,N. Barella (Cagliari) 0.89,S. Milinkovi\u0107-Savi\u0107 (Lazio) 0.87,G. Imbula (Toulouse) 0.86
+D. Kohr,Bayer Leverkusen,Bundesliga,CM,Sung-Yeung Ki (Swansea City) 0.87,D. Geiger (Hoffenheim) 0.82,A. Thomasson (Nantes) 0.78,S. Clucas (Swansea City) 0.76,E. Can (Liverpool) 0.73
+V. Lazaro,Hertha BSC,Bundesliga,CM,K. Havertz (Bayer Leverkusen) 0.88,Y. Mall\u0131 (Wolfsburg) 0.85,A. Fulgini (Angers) 0.83,Jonathan Viera (Las Palmas) 0.82,R. Pereyra (Watford) 0.81
+A. Thomasson,Nantes,Ligue 1,CM,D. Geiger (Hoffenheim) 0.83,V. Rongier (Nantes) 0.80,S. Khedira (Juventus) 0.79,D. Kohr (Bayer Leverkusen) 0.78,I. Gueye (Everton) 0.78
+C. Tolisso,Bayern M\u00fcnchen,Bundesliga,CM,D. Cataldi (Benevento) 0.97,P. Schiattarella (SPAL) 0.97,Recio (M\u00e1laga) 0.95,V. Darida (Hertha BSC) 0.95,L. Pellegrini (Roma) 0.87
+A. Rabiot,PSG,Ligue 1,CM,R. Gagliardini (Internazionale) 0.97,S. \u00d6zcan (K\u00f6ln) 0.94,C. Kouyat\u00e9 (West Ham United) 0.92,B. Nivet (Troyes) 0.90,M. Demb\u00e9l\u00e9 (Tottenham Hotspur) 0.90
+F. Tait,Angers,Ligue 1,CM,G. Imbula (Toulouse) 0.97,T. Ince (Huddersfield Town) 0.96,B. Pel\u00e9 (Troyes) 0.93,G. Donsah (Bologna) 0.91,M. Lemina (Southampton) 0.91
+\u00c1lex Granell,Girona,La Liga,CM,R. Cohade (Metz) 0.95,J. Veretout (Fiorentina) 0.93,J. F\u00e9ret (Caen) 0.92,F. Fajr (Getafe) 0.90,L. Cook (AFC Bournemouth) 0.88
+B. Bourigeaud,Rennes,Ligue 1,CM,P. Lasne (Montpellier) 0.91,R. Cohade (Metz) 0.87,M. Brozovi\u0107 (Internazionale) 0.85,L. Cook (AFC Bournemouth) 0.85,R. Nainggolan (Roma) 0.85
+H. Manzala,Amiens SC,Ligue 1,CM,G. Lo Celso (PSG) 0.93,S. Serdar (Mainz 05) 0.93,T. Ince (Huddersfield Town) 0.92,A. Fulgini (Angers) 0.92,P. Hetemaj (Chievo) 0.91
+Pere Pons,Girona,La Liga,CM,Jonathan Viera (Las Palmas) 0.82,B. Dabo (Saint-\u00c9tienne) 0.81,J. Pastore (PSG) 0.81,Allan (Napoli) 0.69,R. Pereyra (Watford) 0.67
+R. Gagliardini,Internazionale,Serie A,CM,A. Rabiot (PSG) 0.97,S. \u00d6zcan (K\u00f6ln) 0.95,V. Rongier (Nantes) 0.93,B. Nivet (Troyes) 0.93,C. Kouyat\u00e9 (West Ham United) 0.88
+E. Skhiri,Montpellier,Ligue 1,CM,S. Defour (Burnley) 0.77,Dani Garc\u00eda (Eibar) 0.76,D. Latza (Mainz 05) 0.74,P. Lasne (Montpellier) 0.72,G. Xhaka (Arsenal) 0.71
+Joan Jord\u00e1n,Eibar,La Liga,CM,K. Boateng (Eintracht Frankfurt) 0.89,Thiago Mendes (Lille) 0.86,A. Guardado (Real Betis) 0.78,P. Lees Melou (Nice) 0.73,N. Amiri (Hoffenheim) 0.70
+S. March,Brighton & Hove Albion,Premier League,CM,N. Amiri (Hoffenheim) 0.98,S. Milinkovi\u0107-Savi\u0107 (Lazio) 0.91,J. Lea Siliki (Rennes) 0.89,M. Lemina (Southampton) 0.88,F. Tait (Angers) 0.87
+D. Cataldi,Benevento,Serie A,CM,V. Darida (Hertha BSC) 0.98,C. Tolisso (Bayern M\u00fcnchen) 0.97,Recio (M\u00e1laga) 0.95,P. Schiattarella (SPAL) 0.93,D. Baselli (Torino) 0.85
+A. Fulgini,Angers,Ligue 1,CM,G. Lo Celso (PSG) 0.95,G. Imbula (Toulouse) 0.94,G. Donsah (Bologna) 0.93,Som\u00e1lia (Toulouse) 0.92,T. Ince (Huddersfield Town) 0.92
+V. Rongier,Nantes,Ligue 1,CM,S. \u00d6zcan (K\u00f6ln) 0.97,R. Gagliardini (Internazionale) 0.93,C. Kouyat\u00e9 (West Ham United) 0.92,A. Rabiot (PSG) 0.90,Paulinho (Barcelona) 0.89
+N. Amiri,Hoffenheim,Bundesliga,CM,S. March (Brighton & Hove Albion) 0.98,M. Joji\u0107 (K\u00f6ln) 0.93,S. Milinkovi\u0107-Savi\u0107 (Lazio) 0.90,P. Hetemaj (Chievo) 0.87,M. Lemina (Southampton) 0.87
+A. Bar\u00e1k,Udinese,Serie A,CM,L. Goretzka (Schalke 04) 0.94,B. Pel\u00e9 (Troyes) 0.93,G. Imbula (Toulouse) 0.92,Pablo Fornals (Villarreal) 0.90,P. Capelle (Angers) 0.89
+S. Milinkovi\u0107-Savi\u0107,Lazio,Serie A,CM,S. March (Brighton & Hove Albion) 0.91,N. Amiri (Hoffenheim) 0.90,M. Joji\u0107 (K\u00f6ln) 0.90,M. Ga\u0107inovi\u0107 (Eintracht Frankfurt) 0.87,F. Tait (Angers) 0.86
+M. Eggestein,Werder Bremen,Bundesliga,CM,Y. Sankhar\u00e9 (Bordeaux) 0.94,K. Kampl (Bayer Leverkusen) 0.79,L. Castro (Chievo) 0.79,S. Missiroli (Sassuolo) 0.79,L. Modri\u0107 (Real Madrid) 0.78
+S. Khaoui,Troyes,Ligue 1,CM,H. Aouar (Olympique Lyonnais) 0.85,N. Ke\u00efta (RB Leipzig) 0.82,Sa\u00fal (Atl\u00e9tico Madrid) 0.82,Som\u00e1lia (Toulouse) 0.81,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.80
+P. Lees Melou,Nice,Ligue 1,CM,P. H\u00f8jbjerg (Southampton) 0.97,A. Guardado (Real Betis) 0.97,J. Kurti\u010d (Atalanta) 0.94,Thiago Mendes (Lille) 0.92,J. Haberer (Freiburg) 0.90
+N. Barella,Cagliari,Serie A,CM,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.98,P. Pogba (Manchester United) 0.95,R. Nainggolan (Roma) 0.95,J. Lea Siliki (Rennes) 0.93,G. Kakuta (Amiens SC) 0.92
+N. Ke\u00efta,RB Leipzig,Bundesliga,CM,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.97,R. Cabella (Olympique Marseille) 0.97,Y. Mall\u0131 (Wolfsburg) 0.91,G. Donsah (Bologna) 0.91,Som\u00e1lia (Toulouse) 0.90
+T. Ndomb\u00e8l\u00e9,Amiens SC,Ligue 1,CM,N. Ke\u00efta (RB Leipzig) 0.97,H. Aouar (Olympique Lyonnais) 0.95,R. Cabella (Olympique Marseille) 0.93,M. Lanzini (West Ham United) 0.91,G. Donsah (Bologna) 0.89
+G. Donsah,Bologna,Serie A,CM,G. Imbula (Toulouse) 0.97,Som\u00e1lia (Toulouse) 0.94,A. Fulgini (Angers) 0.93,L. Blas (Guingamp) 0.91,R. Cabella (Olympique Marseille) 0.91
+L. Cook,AFC Bournemouth,Premier League,CM,R. Cohade (Metz) 0.96,P. Pogba (Manchester United) 0.93,M. Albrighton (Leicester City) 0.91,M. Bakalorz (Hannover 96) 0.91,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.90
+S. Serdar,Mainz 05,Bundesliga,CM,M. Lemina (Southampton) 0.95,H. Manzala (Amiens SC) 0.93,L. Blas (Guingamp) 0.93,P. Hetemaj (Chievo) 0.91,T. Ince (Huddersfield Town) 0.89
+J. Lea Siliki,Rennes,Ligue 1,CM,R. Nainggolan (Roma) 0.97,Ibai G\u00f3mez (Deportivo Alav\u00e9s) 0.94,N. Barella (Cagliari) 0.93,S. March (Brighton & Hove Albion) 0.89,B. Pel\u00e9 (Troyes) 0.86
+L. Pellegrini,Roma,Serie A,CM,L. Castro (Chievo) 0.97,K. Azamoum (Troyes) 0.91,M. Bakalorz (Hannover 96) 0.87,C. Tolisso (Bayern M\u00fcnchen) 0.87,Recio (M\u00e1laga) 0.86
+L. Blas,Guingamp,Ligue 1,CM,M. Lemina (Southampton) 0.95,S. Serdar (Mainz 05) 0.93,P. Capelle (Angers) 0.92,T. Ince (Huddersfield Town) 0.92,G. Donsah (Bologna) 0.91
+Fabi\u00e1n,Real Betis,La Liga,CM,S. Khedira (Juventus) 0.94,G. Wijnaldum (Liverpool) 0.93,T. Davies (Everton) 0.91,J. Martin (Strasbourg) 0.91,P. Zieli\u0144ski (Napoli) 0.90
+T. Davies,Everton,Premier League,CM,P. H\u00f8jbjerg (Southampton) 0.95,Fabi\u00e1n (Real Betis) 0.91,G. Wijnaldum (Liverpool) 0.91,G. Lo Celso (PSG) 0.91,D. Praet (Sampdoria) 0.91
+J. Jankto,Udinese,Serie A,CM,M. Ritchie (Newcastle United) 0.83,B. Pel\u00e9 (Troyes) 0.76,S. Fofana (Udinese) 0.76,A. Bar\u00e1k (Udinese) 0.75,L. Goretzka (Schalke 04) 0.67
+G. Lo Celso,PSG,Ligue 1,CM,A. Fulgini (Angers) 0.95,D. Didavi (Wolfsburg) 0.93,H. Manzala (Amiens SC) 0.93,R. Pereyra (Watford) 0.91,T. Davies (Everton) 0.91
+S. \u00d6zcan,K\u00f6ln,Bundesliga,CM,V. Rongier (Nantes) 0.97,C. Kouyat\u00e9 (West Ham United) 0.95,R. Gagliardini (Internazionale) 0.95,A. Rabiot (PSG) 0.94,Paulinho (Barcelona) 0.90
+A. Zambo Anguissa,Olympique Marseille,Ligue 1,CM,M. Vecino (Internazionale) 0.93,K. Kampl (Bayer Leverkusen) 0.79,M. Demb\u00e9l\u00e9 (Tottenham Hotspur) 0.79,A. Rabiot (PSG) 0.78,S. Khaoui (Troyes) 0.72
+D. Geiger,Hoffenheim,Bundesliga,CM,J. Kurti\u010d (Atalanta) 0.94,S. Clucas (Swansea City) 0.89,Sung-Yeung Ki (Swansea City) 0.88,P. H\u00f8jbjerg (Southampton) 0.87,Eraso (Legan\u00e9s) 0.85
+H. Aouar,Olympique Lyonnais,Ligue 1,CM,T. Ndomb\u00e8l\u00e9 (Amiens SC) 0.95,Som\u00e1lia (Toulouse) 0.91,M. Lanzini (West Ham United) 0.90,N. Ke\u00efta (RB Leipzig) 0.89,G. Donsah (Bologna) 0.88
+Pablo Fornals,Villarreal,La Liga,CM,L. Goretzka (Schalke 04) 0.97,A. Bar\u00e1k (Udinese) 0.90,D. Didavi (Wolfsburg) 0.87,G. Lo Celso (PSG) 0.83,P. Capelle (Angers) 0.83
+Y. Bissouma,Lille,Ligue 1,CM,S. Fofana (Udinese) 0.95,L. Blas (Guingamp) 0.88,M. Lemina (Southampton) 0.85,Sa\u00fal (Atl\u00e9tico Madrid) 0.83,D. Latza (Mainz 05) 0.78
+K. Havertz,Bayer Leverkusen,Bundesliga,CM,R. Boudebouz (Real Betis) 0.90,D. Praet (Sampdoria) 0.90,G. Wijnaldum (Liverpool) 0.89,T. Davies (Everton) 0.89,Daniel Bessa (Hellas Verona) 0.89
+D. Pr\u00f6pper,Brighton & Hove Albion,Premier League,DM,L. Milivojevi\u0107 (Crystal Palace) 0.96,M. Arambarri (Getafe) 0.93,E. Pulgar (Bologna) 0.88,Y. A\u00eft Bennasser (Caen) 0.88,J. Shelvey (Newcastle United) 0.85
+Dani Parejo,Valencia,La Liga,DM,Lucas Leiva (Lazio) 0.83,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.80,D. Gosling (AFC Bournemouth) 0.78,N. Mati\u0107 (Manchester United) 0.77,Sergio Busquets (Barcelona) 0.69
+Sergio Busquets,Barcelona,La Liga,DM,M. Schneiderlin (Everton) 0.90,R. Khedira (Augsburg) 0.77,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.77,Oriol Romeu (Southampton) 0.77,F. Magnanelli (Sassuolo) 0.77
+San Jos\u00e9,Athletic Club,La Liga,DM,T. Rinc\u00f3n (Torino) 0.97,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.90,Fabinho (Monaco) 0.89,P. Skjelbred (Hertha BSC) 0.88,M. H\u00f6ger (K\u00f6ln) 0.86
+Iturraspe,Athletic Club,La Liga,DM,M. Hasebe (Eintracht Frankfurt) 0.91,M. Schneiderlin (Everton) 0.88,R. Khedira (Augsburg) 0.83,D. Stephens (Brighton & Hove Albion) 0.83,Gabi (Atl\u00e9tico Madrid) 0.82
+Javi Mart\u00ednez,Bayern M\u00fcnchen,Bundesliga,DM,O. Seln\u00e6s (Saint-\u00c9tienne) 0.78,J. Hogg (Huddersfield Town) 0.76,Rodri (Villarreal) 0.66,Iturraspe (Athletic Club) 0.66,E. Dier (Tottenham Hotspur) 0.64
+Gabi,Atl\u00e9tico Madrid,La Liga,DM,Javi Fuego (Espanyol) 0.93,E. Dier (Tottenham Hotspur) 0.91,Iturraspe (Athletic Club) 0.82,R. Khedira (Augsburg) 0.79,D. De Rossi (Roma) 0.78
+J. Toulalan,Bordeaux,Ligue 1,DM,P. Bargfrede (Werder Bremen) 0.93,L. Cigarini (Cagliari) 0.90,Lucas Leiva (Lazio) 0.80,D. Fletcher (Stoke City) 0.72,D. Baier (Augsburg) 0.70
+Tom\u00e1s Pina,Deportivo Alav\u00e9s,La Liga,DM,N. Mati\u0107 (Manchester United) 0.94,D. Gosling (AFC Bournemouth) 0.86,Oriol Romeu (Southampton) 0.85,Lucas Leiva (Lazio) 0.83,Dani Parejo (Valencia) 0.80
+Illarramendi,Real Sociedad,La Liga,DM,I. Amadou (Lille) 0.84,D. Gosling (AFC Bournemouth) 0.83,M. H\u00f6ger (K\u00f6ln) 0.70,G. Pizarro (Sevilla) 0.70,Lucas Leiva (Lazio) 0.69
+Rub\u00e9n P\u00e9rez,Legan\u00e9s,La Liga,DM,J. Shelvey (Newcastle United) 0.90,A. Tour\u00e9 (Nantes) 0.89,M. Arambarri (Getafe) 0.80,Y. A\u00eft Bennasser (Caen) 0.80,I. Radovanovi\u0107 (Chievo) 0.79
+Javi Fuego,Espanyol,La Liga,DM,Gabi (Atl\u00e9tico Madrid) 0.93,M. Schneiderlin (Everton) 0.91,Oriol Romeu (Southampton) 0.89,R. Khedira (Augsburg) 0.88,E. Dier (Tottenham Hotspur) 0.84
+Manu Garc\u00eda,Deportivo Alav\u00e9s,La Liga,DM,P. Hern\u00e1ndez (Celta de Vigo) 0.99,T. Rinc\u00f3n (Torino) 0.95,San Jos\u00e9 (Athletic Club) 0.90,P. Skjelbred (Hertha BSC) 0.89,E. Pulgar (Bologna) 0.88
+Oriol Romeu,Southampton,Premier League,DM,R. Khedira (Augsburg) 0.96,M. Schneiderlin (Everton) 0.91,Javi Fuego (Espanyol) 0.89,N. Mati\u0107 (Manchester United) 0.86,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.85
+D. Fletcher,Stoke City,Premier League,DM,L. Milivojevi\u0107 (Crystal Palace) 0.86,M. Arambarri (Getafe) 0.80,J. Shelvey (Newcastle United) 0.79,D. Pr\u00f6pper (Brighton & Hove Albion) 0.72,J. Toulalan (Bordeaux) 0.72
+Lucas Leiva,Lazio,Serie A,DM,D. Gosling (AFC Bournemouth) 0.84,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.83,Dani Parejo (Valencia) 0.83,Oriol Romeu (Southampton) 0.82,N. Mati\u0107 (Manchester United) 0.81
+J. Shelvey,Newcastle United,Premier League,DM,M. Arambarri (Getafe) 0.96,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.90,L. Milivojevi\u0107 (Crystal Palace) 0.89,D. Pr\u00f6pper (Brighton & Hove Albion) 0.85,Y. A\u00eft Bennasser (Caen) 0.82
+D. Gosling,AFC Bournemouth,Premier League,DM,N. Mati\u0107 (Manchester United) 0.92,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.86,Lucas Leiva (Lazio) 0.84,Illarramendi (Real Sociedad) 0.83,Dani Parejo (Valencia) 0.78
+D. Stephens,Brighton & Hove Albion,Premier League,DM,F. Magnanelli (Sassuolo) 0.95,M. Hasebe (Eintracht Frankfurt) 0.92,Iturraspe (Athletic Club) 0.83,D. De Rossi (Roma) 0.76,M. Noble (West Ham United) 0.75
+M. Schneiderlin,Everton,Premier League,DM,R. Khedira (Augsburg) 0.94,Javi Fuego (Espanyol) 0.91,Oriol Romeu (Southampton) 0.91,Sergio Busquets (Barcelona) 0.90,Iturraspe (Athletic Club) 0.88
+S. N'Zonzi,Sevilla,La Liga,DM,J. Hogg (Huddersfield Town) 0.83,Javi Garc\u00eda (Real Betis) 0.81,G. Pizarro (Sevilla) 0.75,P. Schwegler (Hannover 96) 0.74,N. H\u00f6fler (Freiburg) 0.73
+A. Surman,AFC Bournemouth,Premier League,DM,P. Skjelbred (Hertha BSC) 0.99,M. H\u00f6ger (K\u00f6ln) 0.97,T. Rinc\u00f3n (Torino) 0.92,San Jos\u00e9 (Athletic Club) 0.85,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.82
+C. Brunt,West Bromwich Albion,Premier League,DM,I. Radovanovi\u0107 (Chievo) 0.90,F. Viviani (SPAL) 0.66,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.64,J. Shelvey (Newcastle United) 0.61,D. Fletcher (Stoke City) 0.57
+M. Noble,West Ham United,Premier League,DM,D. Stephens (Brighton & Hove Albion) 0.75,F. Magnanelli (Sassuolo) 0.75,M. B\u00fcchel (Hellas Verona) 0.74,Casemiro (Real Madrid) 0.71,M. Hasebe (Eintracht Frankfurt) 0.69
+M. Diam\u00e9,Newcastle United,Premier League,DM,D. Zakaria (Borussia M'gladbach) 0.93,J. Aholou (Strasbourg) 0.90,J. Lerma (Levante) 0.86,G. Kondogbia (Valencia) 0.83,J. Weigl (Borussia Dortmund) 0.83
+J. Hogg,Huddersfield Town,Premier League,DM,S. N'Zonzi (Sevilla) 0.83,Rodri (Villarreal) 0.77,M. Schneiderlin (Everton) 0.77,Javi Mart\u00ednez (Bayern M\u00fcnchen) 0.76,Javi Garc\u00eda (Real Betis) 0.70
+P. Bargfrede,Werder Bremen,Bundesliga,DM,L. Cigarini (Cagliari) 0.95,J. Toulalan (Bordeaux) 0.93,D. Baier (Augsburg) 0.83,I. Amadou (Lille) 0.83,Fabinho (Monaco) 0.82
+Luiz Gustavo,Olympique Marseille,Ligue 1,DM,A. Tour\u00e9 (Nantes) 0.84,R. Mandragora (Crotone) 0.81,B. Santamaria (Angers) 0.75,Miguel Veloso (Genoa) 0.74,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.69
+C. Kramer,Borussia M'gladbach,Bundesliga,DM,S. Lobotka (Celta de Vigo) 0.88,A. Tameze (Nice) 0.85,G. Poblete (Metz) 0.83,N. H\u00f6fler (Freiburg) 0.83,V. Koziello (Nice) 0.74
+M. H\u00f6ger,K\u00f6ln,Bundesliga,DM,A. Surman (AFC Bournemouth) 0.97,P. Skjelbred (Hertha BSC) 0.95,T. Rinc\u00f3n (Torino) 0.88,San Jos\u00e9 (Athletic Club) 0.86,Thiago Maia (Lille) 0.79
+T. Rinc\u00f3n,Torino,Serie A,DM,San Jos\u00e9 (Athletic Club) 0.97,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.95,P. Skjelbred (Hertha BSC) 0.95,A. Surman (AFC Bournemouth) 0.92,P. Hern\u00e1ndez (Celta de Vigo) 0.91
+P. Skjelbred,Hertha BSC,Bundesliga,DM,A. Surman (AFC Bournemouth) 0.99,T. Rinc\u00f3n (Torino) 0.95,M. H\u00f6ger (K\u00f6ln) 0.95,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.89,San Jos\u00e9 (Athletic Club) 0.88
+M. Hasebe,Eintracht Frankfurt,Bundesliga,DM,F. Magnanelli (Sassuolo) 0.92,D. Stephens (Brighton & Hove Albion) 0.92,Iturraspe (Athletic Club) 0.91,O. Seln\u00e6s (Saint-\u00c9tienne) 0.85,M. Schneiderlin (Everton) 0.72
+M. Arnold,Wolfsburg,Bundesliga,DM,J. Mari\u00e9 (Dijon) 0.97,F. Viviani (SPAL) 0.96,E. Capoue (Watford) 0.90,Zubeld\u00eda (Real Sociedad) 0.85,W. Ndidi (Leicester City) 0.84
+P. Schwegler,Hannover 96,Bundesliga,DM,N. H\u00f6fler (Freiburg) 0.89,Javi Garc\u00eda (Real Betis) 0.83,V. Koziello (Nice) 0.80,L. Torreira (Sampdoria) 0.79,A. Tameze (Nice) 0.79
+N. H\u00f6fler,Freiburg,Bundesliga,DM,A. Tameze (Nice) 0.95,P. Schwegler (Hannover 96) 0.89,M. Meyer (Schalke 04) 0.87,J. Seri (Nice) 0.85,L. Tousart (Olympique Lyonnais) 0.83
+D. Baier,Augsburg,Bundesliga,DM,L. Cigarini (Cagliari) 0.88,\u00c9. Didot (Guingamp) 0.88,P. Bargfrede (Werder Bremen) 0.83,Miguel Veloso (Genoa) 0.82,J. Shelvey (Newcastle United) 0.79
+R. Khedira,Augsburg,Bundesliga,DM,Oriol Romeu (Southampton) 0.96,M. Schneiderlin (Everton) 0.94,Javi Fuego (Espanyol) 0.88,D. De Rossi (Roma) 0.88,E. Dier (Tottenham Hotspur) 0.87
+D. De Rossi,Roma,Serie A,DM,E. Dier (Tottenham Hotspur) 0.90,R. Khedira (Augsburg) 0.88,Iturraspe (Athletic Club) 0.80,Gabi (Atl\u00e9tico Madrid) 0.78,Oriol Romeu (Southampton) 0.77
+M. Pjani\u0107,Juventus,Serie A,DM,J. Guilavogui (Wolfsburg) 0.98,J. Weigl (Borussia Dortmund) 0.98,B. Zungu (Amiens SC) 0.91,J. Lerma (Levante) 0.87,S. Ascac\u00edbar (Stuttgart) 0.84
+F. Viviani,SPAL,Serie A,DM,M. Arnold (Wolfsburg) 0.96,J. Mari\u00e9 (Dijon) 0.88,I. Radovanovi\u0107 (Chievo) 0.78,E. Capoue (Watford) 0.75,Zubeld\u00eda (Real Sociedad) 0.75
+L. Cigarini,Cagliari,Serie A,DM,P. Bargfrede (Werder Bremen) 0.95,J. Toulalan (Bordeaux) 0.90,\u00c9. Didot (Guingamp) 0.90,D. Baier (Augsburg) 0.88,J. Shelvey (Newcastle United) 0.69
+Miguel Veloso,Genoa,Serie A,DM,D. Baier (Augsburg) 0.82,Luiz Gustavo (Olympique Marseille) 0.74,B. Santamaria (Angers) 0.73,I. Radovanovi\u0107 (Chievo) 0.73,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.68
+I. Radovanovi\u0107,Chievo,Serie A,DM,C. Brunt (West Bromwich Albion) 0.90,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.79,F. Viviani (SPAL) 0.78,Miguel Veloso (Genoa) 0.73,J. Shelvey (Newcastle United) 0.61
+M. B\u00fcchel,Hellas Verona,Serie A,DM,Zubeld\u00eda (Real Sociedad) 0.77,M. Noble (West Ham United) 0.74,Casemiro (Real Madrid) 0.72,J. Mari\u00e9 (Dijon) 0.71,M. Arnold (Wolfsburg) 0.69
+F. Magnanelli,Sassuolo,Serie A,DM,D. Stephens (Brighton & Hove Albion) 0.95,M. Hasebe (Eintracht Frankfurt) 0.92,Iturraspe (Athletic Club) 0.79,Sergio Busquets (Barcelona) 0.77,M. Noble (West Ham United) 0.75
+N. Viola,Benevento,Serie A,DM,J. Aholou (Strasbourg) 0.91,R. Amalfitano (Dijon) 0.85,J. Gbamin (Mainz 05) 0.81,W. Ndidi (Leicester City) 0.80,B. Santamaria (Angers) 0.79
+T. Monconduit,Amiens SC,Ligue 1,DM,A. Tour\u00e9 (Nantes) 0.80,Y. A\u00eft Bennasser (Caen) 0.76,Thiago Maia (Lille) 0.75,San Jos\u00e9 (Athletic Club) 0.74,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.70
+G. Kondogbia,Valencia,La Liga,DM,F. Grillitsch (Hoffenheim) 0.94,J. Aholou (Strasbourg) 0.86,M. Diam\u00e9 (Newcastle United) 0.83,D. Zakaria (Borussia M'gladbach) 0.82,G. Poblete (Metz) 0.81
+E. Capoue,Watford,Premier League,DM,J. Mari\u00e9 (Dijon) 0.95,W. Ndidi (Leicester City) 0.93,B. Zungu (Amiens SC) 0.92,M. Arnold (Wolfsburg) 0.90,Zubeld\u00eda (Real Sociedad) 0.89
+\u00c9. Didot,Guingamp,Ligue 1,DM,L. Cigarini (Cagliari) 0.90,D. Baier (Augsburg) 0.88,P. Bargfrede (Werder Bremen) 0.78,J. Toulalan (Bordeaux) 0.66,Miguel Veloso (Genoa) 0.64
+J. Guilavogui,Wolfsburg,Bundesliga,DM,J. Weigl (Borussia Dortmund) 1.00,M. Pjani\u0107 (Juventus) 0.98,B. Zungu (Amiens SC) 0.93,J. Lerma (Levante) 0.89,W. Ndidi (Leicester City) 0.87
+R. Amalfitano,Dijon,Ligue 1,DM,F. Grillitsch (Hoffenheim) 0.86,N. Viola (Benevento) 0.85,E. Capoue (Watford) 0.84,J. Aholou (Strasbourg) 0.84,E. Pulgar (Bologna) 0.78
+A. Tameze,Nice,Ligue 1,DM,N. H\u00f6fler (Freiburg) 0.95,J. Seri (Nice) 0.88,S. Ascac\u00edbar (Stuttgart) 0.87,C. Kramer (Borussia M'gladbach) 0.85,M. Meyer (Schalke 04) 0.84
+I. Amadou,Lille,Ligue 1,DM,Illarramendi (Real Sociedad) 0.84,P. Bargfrede (Werder Bremen) 0.83,San Jos\u00e9 (Athletic Club) 0.78,Fabinho (Monaco) 0.75,D. Gosling (AFC Bournemouth) 0.70
+J. Mari\u00e9,Dijon,Ligue 1,DM,M. Arnold (Wolfsburg) 0.97,E. Capoue (Watford) 0.95,Zubeld\u00eda (Real Sociedad) 0.93,W. Ndidi (Leicester City) 0.93,F. Viviani (SPAL) 0.88
+L. Biglia,Milan,Serie A,DM,L. Torreira (Sampdoria) 0.81,P. Schwegler (Hannover 96) 0.76,Javi Garc\u00eda (Real Betis) 0.72,M. B\u00fcchel (Hellas Verona) 0.58,V. Koziello (Nice) 0.55
+Guilherme,Deportivo La Coru\u00f1a,La Liga,DM,A. Tour\u00e9 (Nantes) 0.86,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.78,T. Monconduit (Amiens SC) 0.68,Luiz Gustavo (Olympique Marseille) 0.66,Y. A\u00eft Bennasser (Caen) 0.62
+Casemiro,Real Madrid,La Liga,DM,B. Zungu (Amiens SC) 0.92,Zubeld\u00eda (Real Sociedad) 0.89,L. Tousart (Olympique Lyonnais) 0.85,S. Ascac\u00edbar (Stuttgart) 0.84,J. Seri (Nice) 0.82
+O. Seln\u00e6s,Saint-\u00c9tienne,Ligue 1,DM,M. Hasebe (Eintracht Frankfurt) 0.85,Javi Mart\u00ednez (Bayern M\u00fcnchen) 0.78,Iturraspe (Athletic Club) 0.76,D. Stephens (Brighton & Hove Albion) 0.65,M. Noble (West Ham United) 0.63
+Javi Garc\u00eda,Real Betis,La Liga,DM,Rodri (Villarreal) 0.90,P. Schwegler (Hannover 96) 0.83,N. H\u00f6fler (Freiburg) 0.81,S. N'Zonzi (Sevilla) 0.81,M. Meyer (Schalke 04) 0.75
+N. Mati\u0107,Manchester United,Premier League,DM,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.94,D. Gosling (AFC Bournemouth) 0.92,Oriol Romeu (Southampton) 0.86,Lucas Leiva (Lazio) 0.81,Dani Parejo (Valencia) 0.77
+G. Poblete,Metz,Ligue 1,DM,S. Lobotka (Celta de Vigo) 0.87,C. Kramer (Borussia M'gladbach) 0.83,G. Kondogbia (Valencia) 0.81,Thomas (Atl\u00e9tico Madrid) 0.75,F. Grillitsch (Hoffenheim) 0.72
+G. Pizarro,Sevilla,La Liga,DM,M. H\u00f6ger (K\u00f6ln) 0.76,S. N'Zonzi (Sevilla) 0.75,S. Lobotka (Celta de Vigo) 0.74,C. Kramer (Borussia M'gladbach) 0.72,D. Gosling (AFC Bournemouth) 0.70
+E. Pulgar,Bologna,Serie A,DM,P. Hern\u00e1ndez (Celta de Vigo) 0.91,D. Pr\u00f6pper (Brighton & Hove Albion) 0.88,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.88,Y. A\u00eft Bennasser (Caen) 0.81,R. Amalfitano (Dijon) 0.78
+L. Milivojevi\u0107,Crystal Palace,Premier League,DM,D. Pr\u00f6pper (Brighton & Hove Albion) 0.96,M. Arambarri (Getafe) 0.96,J. Shelvey (Newcastle United) 0.89,D. Fletcher (Stoke City) 0.86,Y. A\u00eft Bennasser (Caen) 0.78
+J. Seri,Nice,Ligue 1,DM,L. Tousart (Olympique Lyonnais) 0.97,S. Ascac\u00edbar (Stuttgart) 0.97,M. Meyer (Schalke 04) 0.91,A. Tameze (Nice) 0.88,V. Koziello (Nice) 0.86
+M. Meyer,Schalke 04,Bundesliga,DM,L. Tousart (Olympique Lyonnais) 0.94,S. Ascac\u00edbar (Stuttgart) 0.92,J. Seri (Nice) 0.91,N. H\u00f6fler (Freiburg) 0.87,A. Tameze (Nice) 0.84
+F. Grillitsch,Hoffenheim,Bundesliga,DM,G. Kondogbia (Valencia) 0.94,R. Amalfitano (Dijon) 0.86,J. Aholou (Strasbourg) 0.82,P. Hern\u00e1ndez (Celta de Vigo) 0.73,J. Gbamin (Mainz 05) 0.73
+J. Aholou,Strasbourg,Ligue 1,DM,N. Viola (Benevento) 0.91,M. Diam\u00e9 (Newcastle United) 0.90,G. Kondogbia (Valencia) 0.86,W. Ndidi (Leicester City) 0.85,R. Amalfitano (Dijon) 0.84
+S. Lobotka,Celta de Vigo,La Liga,DM,C. Kramer (Borussia M'gladbach) 0.88,G. Poblete (Metz) 0.87,G. Pizarro (Sevilla) 0.74,G. Kondogbia (Valencia) 0.65,A. Tameze (Nice) 0.59
+Fabinho,Monaco,Ligue 1,DM,San Jos\u00e9 (Athletic Club) 0.89,P. Bargfrede (Werder Bremen) 0.82,T. Rinc\u00f3n (Torino) 0.81,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.81,D. Pr\u00f6pper (Brighton & Hove Albion) 0.79
+E. Dier,Tottenham Hotspur,Premier League,DM,Gabi (Atl\u00e9tico Madrid) 0.91,D. De Rossi (Roma) 0.90,R. Khedira (Augsburg) 0.87,Javi Fuego (Espanyol) 0.84,Oriol Romeu (Southampton) 0.81
+Thomas,Atl\u00e9tico Madrid,La Liga,DM,A. Tameze (Nice) 0.82,M. Diam\u00e9 (Newcastle United) 0.81,D. Zakaria (Borussia M'gladbach) 0.81,Thiago Maia (Lille) 0.79,G. Poblete (Metz) 0.75
+A. Tour\u00e9,Nantes,Ligue 1,DM,Y. A\u00eft Bennasser (Caen) 0.89,Rub\u00e9n P\u00e9rez (Legan\u00e9s) 0.89,Guilherme (Deportivo La Coru\u00f1a) 0.86,Luiz Gustavo (Olympique Marseille) 0.84,B. Santamaria (Angers) 0.82
+J. Weigl,Borussia Dortmund,Bundesliga,DM,J. Guilavogui (Wolfsburg) 1.00,M. Pjani\u0107 (Juventus) 0.98,B. Zungu (Amiens SC) 0.93,J. Lerma (Levante) 0.89,E. Capoue (Watford) 0.86
+J. Gbamin,Mainz 05,Bundesliga,DM,Y. A\u00eft Bennasser (Caen) 0.86,B. Santamaria (Angers) 0.83,N. Viola (Benevento) 0.81,Thiago Maia (Lille) 0.80,E. Pulgar (Bologna) 0.77
+B. Zungu,Amiens SC,Ligue 1,DM,J. Weigl (Borussia Dortmund) 0.93,J. Guilavogui (Wolfsburg) 0.93,Casemiro (Real Madrid) 0.92,Zubeld\u00eda (Real Sociedad) 0.92,E. Capoue (Watford) 0.92
+J. Lerma,Levante,La Liga,DM,J. Guilavogui (Wolfsburg) 0.89,J. Weigl (Borussia Dortmund) 0.89,M. Pjani\u0107 (Juventus) 0.87,M. Diam\u00e9 (Newcastle United) 0.86,P. Skjelbred (Hertha BSC) 0.83
+Thiago Maia,Lille,Ligue 1,DM,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.88,P. Skjelbred (Hertha BSC) 0.86,P. Hern\u00e1ndez (Celta de Vigo) 0.86,T. Rinc\u00f3n (Torino) 0.85,San Jos\u00e9 (Athletic Club) 0.80
+W. Ndidi,Leicester City,Premier League,DM,E. Capoue (Watford) 0.93,J. Mari\u00e9 (Dijon) 0.93,B. Zungu (Amiens SC) 0.91,Zubeld\u00eda (Real Sociedad) 0.90,J. Guilavogui (Wolfsburg) 0.87
+P. Hern\u00e1ndez,Celta de Vigo,La Liga,DM,Manu Garc\u00eda (Deportivo Alav\u00e9s) 0.99,E. Pulgar (Bologna) 0.91,T. Rinc\u00f3n (Torino) 0.91,Thiago Maia (Lille) 0.86,P. Skjelbred (Hertha BSC) 0.84
+B. Santamaria,Angers,Ligue 1,DM,Y. A\u00eft Bennasser (Caen) 0.89,J. Gbamin (Mainz 05) 0.83,A. Tour\u00e9 (Nantes) 0.82,N. Viola (Benevento) 0.79,E. Pulgar (Bologna) 0.78
+V. Koziello,Nice,Ligue 1,DM,J. Seri (Nice) 0.86,N. H\u00f6fler (Freiburg) 0.82,P. Schwegler (Hannover 96) 0.80,A. Tameze (Nice) 0.79,M. Meyer (Schalke 04) 0.77
+M. Arambarri,Getafe,La Liga,DM,L. Milivojevi\u0107 (Crystal Palace) 0.96,J. Shelvey (Newcastle United) 0.96,D. Pr\u00f6pper (Brighton & Hove Albion) 0.93,Y. A\u00eft Bennasser (Caen) 0.85,D. Fletcher (Stoke City) 0.80
+Y. A\u00eft Bennasser,Caen,Ligue 1,DM,B. Santamaria (Angers) 0.89,A. Tour\u00e9 (Nantes) 0.89,D. Pr\u00f6pper (Brighton & Hove Albion) 0.88,J. Gbamin (Mainz 05) 0.86,M. Arambarri (Getafe) 0.85
+R. Mandragora,Crotone,Serie A,DM,Luiz Gustavo (Olympique Marseille) 0.81,Miguel Veloso (Genoa) 0.65,Rodri (Villarreal) 0.49,Illarramendi (Real Sociedad) 0.48,Javi Garc\u00eda (Real Betis) 0.44
+L. Torreira,Sampdoria,Serie A,DM,L. Biglia (Milan) 0.81,P. Schwegler (Hannover 96) 0.79,Tom\u00e1s Pina (Deportivo Alav\u00e9s) 0.70,Javi Fuego (Espanyol) 0.66,Gabi (Atl\u00e9tico Madrid) 0.60
+L. Tousart,Olympique Lyonnais,Ligue 1,DM,S. Ascac\u00edbar (Stuttgart) 0.98,J. Seri (Nice) 0.97,M. Meyer (Schalke 04) 0.94,Casemiro (Real Madrid) 0.85,N. H\u00f6fler (Freiburg) 0.83
+D. Zakaria,Borussia M'gladbach,Bundesliga,DM,M. Diam\u00e9 (Newcastle United) 0.93,A. Tameze (Nice) 0.83,M. Pjani\u0107 (Juventus) 0.82,S. Ascac\u00edbar (Stuttgart) 0.82,G. Kondogbia (Valencia) 0.82
+Rodri,Villarreal,La Liga,DM,Javi Garc\u00eda (Real Betis) 0.90,M. Meyer (Schalke 04) 0.82,J. Hogg (Huddersfield Town) 0.77,L. Tousart (Olympique Lyonnais) 0.75,N. H\u00f6fler (Freiburg) 0.70
+Zubeld\u00eda,Real Sociedad,La Liga,DM,J. Mari\u00e9 (Dijon) 0.93,B. Zungu (Amiens SC) 0.92,W. Ndidi (Leicester City) 0.90,Casemiro (Real Madrid) 0.89,E. Capoue (Watford) 0.89
+S. Ascac\u00edbar,Stuttgart,Bundesliga,DM,L. Tousart (Olympique Lyonnais) 0.98,J. Seri (Nice) 0.97,M. Meyer (Schalke 04) 0.92,A. Tameze (Nice) 0.87,B. Zungu (Amiens SC) 0.85
+J. Vertonghen,Tottenham Hotspur,Premier League,FB,A. Laporte (Manchester City) 0.88,E. Zukanovi\u0107 (Genoa) 0.85,R. Rosales (M\u00e1laga) 0.82,A. Mandi (Real Betis) 0.76,E. Moretti (Torino) 0.74
+E. Pieters,Stoke City,Premier League,FB,Ramalho (Girona) 0.83,L. Baines (Everton) 0.76,M. Lowton (Burnley) 0.73,S. Ward (Burnley) 0.73,R. Genevois (Caen) 0.62
+J. Willems,Eintracht Frankfurt,Bundesliga,FB,D. Biraschi (Genoa) 0.98,A. Ferrari (Hellas Verona) 0.98,R. Bensebaini (Rennes) 0.86,Luisinho (Deportivo La Coru\u00f1a) 0.85,Mart\u00edn (Deportivo Alav\u00e9s) 0.84
+D. Janmaat,Watford,Premier League,FB,P. Martinez (Strasbourg) 0.97,A. Cresswell (West Ham United) 0.94,F. Romagna (Cagliari) 0.91,Jos\u00e9 \u00c1ngel (Eibar) 0.90,M. Hinteregger (Augsburg) 0.89
+R. Rosales,M\u00e1laga,La Liga,FB,C. Dawson (West Bromwich Albion) 0.93,D. Heintz (K\u00f6ln) 0.91,Felipe (SPAL) 0.90,M. van der Hoorn (Swansea City) 0.89,A. Laporte (Manchester City) 0.88
+M. van der Hoorn,Swansea City,Premier League,FB,C. Dawson (West Bromwich Albion) 0.97,F. S\u00f8rensen (K\u00f6ln) 0.96,O. Sorg (Hannover 96) 0.94,D. Heintz (K\u00f6ln) 0.93,R. Genevois (Caen) 0.91
+P. van Aanholt,Crystal Palace,Premier League,FB,Mart\u00edn (Deportivo Alav\u00e9s) 0.96,J. Schlupp (Crystal Palace) 0.90,R. Bensebaini (Rennes) 0.86,Gabriel Silva (Saint-\u00c9tienne) 0.85,M. Plattenhardt (Hertha BSC) 0.83
+Jordi Alba,Barcelona,La Liga,FB,S. Kola\u0161inac (Arsenal) 0.99,Daniel Carvajal (Real Madrid) 0.97,Beller\u00edn (Arsenal) 0.96,K. Walker (Manchester City) 0.94,Barrag\u00e1n (Real Betis) 0.91
+Barrag\u00e1n,Real Betis,La Liga,FB,Jordi Alba (Barcelona) 0.91,Dani Alves (PSG) 0.87,S. Kola\u0161inac (Arsenal) 0.87,Daniel Carvajal (Real Madrid) 0.86,K. Walker (Manchester City) 0.80
+Bruno Saltor,Brighton & Hove Albion,Premier League,FB,F. Helander (Bologna) 0.93,P. Verhaegh (Wolfsburg) 0.82,S. Francis (AFC Bournemouth) 0.81,P. Zabaleta (West Ham United) 0.80,D. Simpson (Leicester City) 0.78
+Marcelo,Real Madrid,La Liga,FB,Luna (Levante) 0.87,Rafael Tol\u00f3i (Atalanta) 0.84,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.84,F. Moubandje (Toulouse) 0.81,M. Lowton (Burnley) 0.81
+Juanfran,Deportivo La Coru\u00f1a,La Liga,FB,N. Mukiele (Montpellier) 0.96,J. Holebas (Watford) 0.94,L. Dubois (Nantes) 0.93,C. Traor\u00e9 (Troyes) 0.93,G. Bong (Brighton & Hove Albion) 0.92
+Dani Alves,PSG,Ligue 1,FB,Barrag\u00e1n (Real Betis) 0.87,M\u00e1rio Rui (Napoli) 0.86,S. Kola\u0161inac (Arsenal) 0.83,K. Gibbs (West Bromwich Albion) 0.82,Jordi Alba (Barcelona) 0.80
+Montoya,Valencia,La Liga,FB,Jaume Costa (Villarreal) 0.98,Y. Andreu (Angers) 0.92,D. Yedlin (Newcastle United) 0.89,M. Plattenhardt (Hertha BSC) 0.88,S. Lichtsteiner (Juventus) 0.88
+Sergi Roberto,Barcelona,La Liga,FB,K. Walker (Manchester City) 0.96,K. Gibbs (West Bromwich Albion) 0.94,Aar\u00f3n (Espanyol) 0.94,N\u00e9lson Semedo (Barcelona) 0.93,J. Kimmich (Bayern M\u00fcnchen) 0.92
+Kiko Femen\u00eda,Watford,Premier League,FB,A. Valencia (Manchester United) 0.99,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.96,M\u00edchel (Las Palmas) 0.95,Beller\u00edn (Arsenal) 0.90,R. Durmisi (Real Betis) 0.90
+Ramalho,Girona,La Liga,FB,M. Lowton (Burnley) 0.95,M. van der Hoorn (Swansea City) 0.85,R. Genevois (Caen) 0.84,E. Pieters (Stoke City) 0.83,C. Dawson (West Bromwich Albion) 0.78
+Luna,Levante,La Liga,FB,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.95,S. Francis (AFC Bournemouth) 0.91,Felipe (SPAL) 0.90,Marcelo (Real Madrid) 0.87,J. Korb (Hannover 96) 0.86
+Mario,Villarreal,La Liga,FB,O. El Hajjam (Amiens SC) 0.90,Luisinho (Deportivo La Coru\u00f1a) 0.79,A. Kolarov (Roma) 0.75,Gabriel Silva (Saint-\u00c9tienne) 0.72,P. van Aanholt (Crystal Palace) 0.69
+Jaume Costa,Villarreal,La Liga,FB,Montoya (Valencia) 0.98,A. Valencia (Manchester United) 0.87,Kiko Femen\u00eda (Watford) 0.87,Jos\u00e9 Gay\u00e1 (Valencia) 0.87,D. Yedlin (Newcastle United) 0.86
+Nacho Monreal,Arsenal,Premier League,FB,G. Mercado (Sevilla) 0.89,M\u00e1rio Rui (Napoli) 0.85,Azpilicueta (Chelsea) 0.85,A. Mandi (Real Betis) 0.83,M. Nastasi\u0107 (Schalke 04) 0.82
+\u00cd\u00f1igo Mart\u00ednez,Real Sociedad,La Liga,FB,F. Peluso (Sassuolo) 0.96,Luna (Levante) 0.95,Rafael Tol\u00f3i (Atalanta) 0.94,Felipe (SPAL) 0.92,M. Sampirisi (Crotone) 0.91
+Hugo Mallo,Celta de Vigo,La Liga,FB,D. Janmaat (Watford) 0.89,P. Martinez (Strasbourg) 0.86,O. Sorg (Hannover 96) 0.84,P. Max (Augsburg) 0.82,Jos\u00e9 \u00c1ngel (Eibar) 0.80
+D. Su\u00e1rez,Getafe,La Liga,FB,A. Diallo (Mainz 05) 0.97,Lucas Lima (Nantes) 0.97,Danilo Avelar (Amiens SC) 0.97,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.93,J. Holebas (Watford) 0.91
+Ander Capa,Eibar,La Liga,FB,Iv\u00e1n Balliu (Metz) 0.82,M. Gobbi (Chievo) 0.75,B. Chilwell (Leicester City) 0.63,Marcelo (Real Madrid) 0.63,Luna (Levante) 0.62
+M\u00edchel,Las Palmas,La Liga,FB,A. Valencia (Manchester United) 0.99,Beller\u00edn (Arsenal) 0.97,Kiko Femen\u00eda (Watford) 0.95,A. Souquet (Nice) 0.94,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.93
+Dani Castellano,Las Palmas,La Liga,FB,F. Mendy (Olympique Lyonnais) 0.92,D. Yedlin (Newcastle United) 0.91,Rafael (Olympique Lyonnais) 0.89,Jonny (Celta de Vigo) 0.88,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.87
+Jonny,Celta de Vigo,La Liga,FB,N\u00e9lson Semedo (Barcelona) 0.88,Dani Castellano (Las Palmas) 0.88,D. Yedlin (Newcastle United) 0.86,Sergio Escudero (Sevilla) 0.85,Rafael (Olympique Lyonnais) 0.85
+Daniel Carvajal,Real Madrid,La Liga,FB,K. Walker (Manchester City) 0.97,Jordi Alba (Barcelona) 0.97,S. Kola\u0161inac (Arsenal) 0.96,Beller\u00edn (Arsenal) 0.94,M\u00edchel (Las Palmas) 0.92
+Iv\u00e1n Balliu,Metz,Ligue 1,FB,Ander Capa (Eibar) 0.82,B. Dibassy (Amiens SC) 0.71,K. Gibbs (West Bromwich Albion) 0.69,Marcelo (Real Madrid) 0.67,A. Masina (Bologna) 0.66
+Jos\u00e9 Gay\u00e1,Valencia,La Liga,FB,Alex Sandro (Juventus) 0.94,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.93,A. Valencia (Manchester United) 0.89,Kiko Femen\u00eda (Watford) 0.89,M\u00edchel (Las Palmas) 0.87
+A. Nyom,West Bromwich Albion,Premier League,FB,Pablo Maffeo (Girona) 0.88,R. Durmisi (Real Betis) 0.85,Jos\u00e9 Gay\u00e1 (Valencia) 0.83,Alex Sandro (Juventus) 0.82,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.76
+Zald\u00faa,Legan\u00e9s,La Liga,FB,Lekue (Athletic Club) 0.96,F. Guilbert (Caen) 0.95,C. G\u00fcnter (Freiburg) 0.93,J. Roussillon (Montpellier) 0.92,A. Masuaku (West Ham United) 0.90
+K. Gibbs,West Bromwich Albion,Premier League,FB,Sergi Roberto (Barcelona) 0.94,J. Kimmich (Bayern M\u00fcnchen) 0.92,K. Walker (Manchester City) 0.88,Aar\u00f3n (Espanyol) 0.84,Dani Alves (PSG) 0.82
+R. Bertrand,Southampton,Premier League,FB,Rafael (Olympique Lyonnais) 0.97,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.94,A. Souquet (Nice) 0.93,N\u00e9lson Semedo (Barcelona) 0.91,Wendell (Bayer Leverkusen) 0.90
+Rafael,Olympique Lyonnais,Ligue 1,FB,R. Bertrand (Southampton) 0.97,D. Yedlin (Newcastle United) 0.96,F. Mendy (Olympique Lyonnais) 0.96,A. Souquet (Nice) 0.95,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.94
+A. Valencia,Manchester United,Premier League,FB,Kiko Femen\u00eda (Watford) 0.99,M\u00edchel (Las Palmas) 0.99,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.95,Beller\u00edn (Arsenal) 0.95,A. Souquet (Nice) 0.91
+A. Young,Manchester United,Premier League,FB,H. Traor\u00e9 (Rennes) 0.98,R. Bensebaini (Rennes) 0.93,Pol Lirola (Sassuolo) 0.83,V. Manceau (Angers) 0.81,Mart\u00edn (Deportivo Alav\u00e9s) 0.81
+Marcos Alonso,Chelsea,Premier League,FB,R. Durmisi (Real Betis) 0.87,Kiko Femen\u00eda (Watford) 0.84,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.82,A. Valencia (Manchester United) 0.80,M\u00edchel (Las Palmas) 0.76
+M. Olsson,Swansea City,Premier League,FB,F. Guilbert (Caen) 0.87,C. G\u00fcnter (Freiburg) 0.86,A. Kolarov (Roma) 0.85,J. Mojica (Girona) 0.84,G. Donati (Mainz 05) 0.82
+L. Baines,Everton,Premier League,FB,K. Trippier (Tottenham Hotspur) 0.89,J. Kimmich (Bayern M\u00fcnchen) 0.80,E. Pieters (Stoke City) 0.76,P. Zabaleta (West Ham United) 0.76,D. Simpson (Leicester City) 0.75
+K. Walker,Manchester City,Premier League,FB,Daniel Carvajal (Real Madrid) 0.97,Sergi Roberto (Barcelona) 0.96,S. Kola\u0161inac (Arsenal) 0.96,Jordi Alba (Barcelona) 0.94,Aar\u00f3n (Espanyol) 0.92
+A. Kolarov,Roma,Serie A,FB,J. Amavi (Olympique Marseille) 0.96,Lekue (Athletic Club) 0.88,J. Mojica (Girona) 0.88,A. Masuaku (West Ham United) 0.87,M. Olsson (Swansea City) 0.85
+P. Zabaleta,West Ham United,Premier League,FB,P. Verhaegh (Wolfsburg) 0.99,S. Francis (AFC Bournemouth) 0.91,D. Simpson (Leicester City) 0.87,F. Helander (Bologna) 0.85,Bruno Saltor (Brighton & Hove Albion) 0.80
+K. Naughton,Swansea City,Premier League,FB,V. Laurini (Fiorentina) 0.98,Felipe (SPAL) 0.87,M. Deplagne (Troyes) 0.86,B. Dibassy (Amiens SC) 0.86,M. Capuano (Cagliari) 0.86
+C. Dawson,West Bromwich Albion,Premier League,FB,D. Heintz (K\u00f6ln) 0.97,M. van der Hoorn (Swansea City) 0.97,F. S\u00f8rensen (K\u00f6ln) 0.95,R. Rosales (M\u00e1laga) 0.93,O. Sorg (Hannover 96) 0.92
+S. Ward,Burnley,Premier League,FB,R. Genevois (Caen) 0.84,Ramalho (Girona) 0.77,M. van der Hoorn (Swansea City) 0.73,A. Beck (Stuttgart) 0.73,E. Pieters (Stoke City) 0.73
+J. Schlupp,Crystal Palace,Premier League,FB,M. Plattenhardt (Hertha BSC) 0.94,V. Manceau (Angers) 0.93,Mart\u00edn (Deportivo Alav\u00e9s) 0.92,S. Lichtsteiner (Juventus) 0.92,Y. Andreu (Angers) 0.91
+A. Cresswell,West Ham United,Premier League,FB,C. Fuchs (Leicester City) 0.97,D. Janmaat (Watford) 0.94,P. Martinez (Strasbourg) 0.94,P. Max (Augsburg) 0.91,F. Romagna (Cagliari) 0.89
+M. Lowton,Burnley,Premier League,FB,Ramalho (Girona) 0.95,M. van der Hoorn (Swansea City) 0.84,R. Genevois (Caen) 0.84,Luna (Levante) 0.83,S. Francis (AFC Bournemouth) 0.81
+K. Trippier,Tottenham Hotspur,Premier League,FB,L. Baines (Everton) 0.89,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.81,Daniel Carvajal (Real Madrid) 0.78,O. Wendt (Borussia M'gladbach) 0.77,A. Beck (Stuttgart) 0.77
+S. Francis,AFC Bournemouth,Premier League,FB,P. Verhaegh (Wolfsburg) 0.93,P. Zabaleta (West Ham United) 0.91,Luna (Levante) 0.91,F. Helander (Bologna) 0.88,D. Simpson (Leicester City) 0.83
+C. Daniels,AFC Bournemouth,Premier League,FB,Wendell (Bayer Leverkusen) 0.87,J. Gomez (Liverpool) 0.82,L. De Silvestri (Torino) 0.79,\u0141. Piszczek (Borussia Dortmund) 0.78,H. Hateboer (Atalanta) 0.78
+T. Smith,Huddersfield Town,Premier League,FB,C\u00e9dric Soares (Southampton) 0.95,C. Fuchs (Leicester City) 0.87,L. Augustinsson (Werder Bremen) 0.86,P. Max (Augsburg) 0.84,A. Cresswell (West Ham United) 0.80
+B. Oczipka,Schalke 04,Bundesliga,FB,J. Roussillon (Montpellier) 0.96,Jorge (Monaco) 0.96,Lekue (Athletic Club) 0.94,J. Mojica (Girona) 0.91,A. Masuaku (West Ham United) 0.91
+\u0141. Piszczek,Borussia Dortmund,Bundesliga,FB,Wendell (Bayer Leverkusen) 0.96,J. Gomez (Liverpool) 0.92,S. Kola\u0161inac (Arsenal) 0.92,M\u00e1rio Rui (Napoli) 0.91,B. Bereszy\u0144ski (Sampdoria) 0.91
+Sergio Escudero,Sevilla,La Liga,FB,S. Lichtsteiner (Juventus) 0.91,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.89,M. Plattenhardt (Hertha BSC) 0.86,Y. Andreu (Angers) 0.86,Jonny (Celta de Vigo) 0.85
+C. Fuchs,Leicester City,Premier League,FB,A. Cresswell (West Ham United) 0.97,P. Martinez (Strasbourg) 0.90,C\u00e9dric Soares (Southampton) 0.88,D. Janmaat (Watford) 0.87,P. Max (Augsburg) 0.87
+S. Kola\u0161inac,Arsenal,Premier League,FB,Jordi Alba (Barcelona) 0.99,Daniel Carvajal (Real Madrid) 0.96,K. Walker (Manchester City) 0.96,Beller\u00edn (Arsenal) 0.94,\u0141. Piszczek (Borussia Dortmund) 0.92
+R. Rodr\u00edguez,Milan,Serie A,FB,T. Smith (Huddersfield Town) 0.78,Marcos Alonso (Chelsea) 0.73,C. Biraghi (Fiorentina) 0.68,C\u00e9dric Soares (Southampton) 0.65,L. Augustinsson (Werder Bremen) 0.65
+O. Sorg,Hannover 96,Bundesliga,FB,M. Hinteregger (Augsburg) 0.97,F. S\u00f8rensen (K\u00f6ln) 0.96,M. van der Hoorn (Swansea City) 0.94,D. Heintz (K\u00f6ln) 0.93,C. Dawson (West Bromwich Albion) 0.92
+O. Wendt,Borussia M'gladbach,Bundesliga,FB,G. Mercado (Sevilla) 0.85,D. Simpson (Leicester City) 0.81,B. H\u00fcbner (Hoffenheim) 0.79,A. Beck (Stuttgart) 0.79,K. Trippier (Tottenham Hotspur) 0.77
+M. Plattenhardt,Hertha BSC,Bundesliga,FB,Y. Andreu (Angers) 0.99,S. Lichtsteiner (Juventus) 0.98,J. Schlupp (Crystal Palace) 0.94,Montoya (Valencia) 0.88,Sergio Escudero (Sevilla) 0.86
+B. H\u00fcbner,Hoffenheim,Bundesliga,FB,G. Mercado (Sevilla) 0.97,M. Nastasi\u0107 (Schalke 04) 0.95,E. Moretti (Torino) 0.95,Azpilicueta (Chelsea) 0.89,Nacho Monreal (Arsenal) 0.82
+M. Ostrzolek,Hannover 96,Bundesliga,FB,F. Romagna (Cagliari) 0.96,F. Peluso (Sassuolo) 0.93,Felipe (SPAL) 0.87,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.86,M. Sampirisi (Crotone) 0.86
+P. Verhaegh,Wolfsburg,Bundesliga,FB,P. Zabaleta (West Ham United) 0.99,S. Francis (AFC Bournemouth) 0.93,F. Helander (Bologna) 0.87,D. Simpson (Leicester City) 0.85,Bruno Saltor (Brighton & Hove Albion) 0.82
+A. Beck,Stuttgart,Bundesliga,FB,C. Biraghi (Fiorentina) 0.83,O. Wendt (Borussia M'gladbach) 0.79,K. Trippier (Tottenham Hotspur) 0.77,S. Ward (Burnley) 0.73,Marcos Alonso (Chelsea) 0.65
+D. Heintz,K\u00f6ln,Bundesliga,FB,C. Dawson (West Bromwich Albion) 0.97,M. van der Hoorn (Swansea City) 0.93,O. Sorg (Hannover 96) 0.93,R. Rosales (M\u00e1laga) 0.91,M. Hinteregger (Augsburg) 0.91
+J. Korb,Hannover 96,Bundesliga,FB,Felipe (SPAL) 0.92,M. Gobbi (Chievo) 0.88,Luna (Levante) 0.86,F. Peluso (Sassuolo) 0.86,K. Naughton (Swansea City) 0.86
+A. Rosi,Genoa,Serie A,FB,A. Masuaku (West Ham United) 0.96,R. Aguilar (Montpellier) 0.95,J. Mojica (Girona) 0.94,F. Chafik (Dijon) 0.94,Jorge (Monaco) 0.92
+Jos\u00e9 \u00c1ngel,Eibar,La Liga,FB,R. Genevois (Caen) 0.92,D. Janmaat (Watford) 0.90,D. Faraoni (Crotone) 0.86,P. Max (Augsburg) 0.86,O. Sorg (Hannover 96) 0.84
+S. Lichtsteiner,Juventus,Serie A,FB,Y. Andreu (Angers) 0.99,M. Plattenhardt (Hertha BSC) 0.98,J. Schlupp (Crystal Palace) 0.92,Sergio Escudero (Sevilla) 0.91,Montoya (Valencia) 0.88
+M. Gobbi,Chievo,Serie A,FB,F. Moubandje (Toulouse) 0.90,F. Peluso (Sassuolo) 0.90,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.89,J. Korb (Hannover 96) 0.88,Rafael Tol\u00f3i (Atalanta) 0.88
+D. Faraoni,Crotone,Serie A,FB,C. Ansaldi (Torino) 0.91,G. Donati (Mainz 05) 0.91,Pol Lirola (Sassuolo) 0.91,Douglas Santos (Hamburger SV) 0.89,Jos\u00e9 \u00c1ngel (Eibar) 0.86
+\u015e. Radu,Lazio,Serie A,FB,M. Capuano (Cagliari) 0.96,Pedro Rebocho (Guingamp) 0.93,B. Dibassy (Amiens SC) 0.90,A. Masina (Bologna) 0.88,V. Laurini (Fiorentina) 0.84
+F. S\u00f8rensen,K\u00f6ln,Bundesliga,FB,M. van der Hoorn (Swansea City) 0.96,O. Sorg (Hannover 96) 0.96,C. Dawson (West Bromwich Albion) 0.95,M. Hinteregger (Augsburg) 0.92,F. Romagna (Cagliari) 0.92
+F. Peluso,Sassuolo,Serie A,FB,M. Sampirisi (Crotone) 0.96,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.96,Felipe (SPAL) 0.95,F. Romagna (Cagliari) 0.94,Rafael Tol\u00f3i (Atalanta) 0.94
+L. De Silvestri,Torino,Serie A,FB,Y. Sabaly (Bordeaux) 0.88,C. Daniels (AFC Bournemouth) 0.79,B. Davies (Tottenham Hotspur) 0.76,T. Gebre Selassie (Werder Bremen) 0.68,J. Stryger Larsen (Udinese) 0.68
+Felipe,SPAL,Serie A,FB,F. Peluso (Sassuolo) 0.95,J. Korb (Hannover 96) 0.92,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.92,Luna (Levante) 0.90,R. Rosales (M\u00e1laga) 0.90
+M. Nastasi\u0107,Schalke 04,Bundesliga,FB,E. Moretti (Torino) 0.98,Azpilicueta (Chelsea) 0.98,G. Mercado (Sevilla) 0.97,B. H\u00fcbner (Hoffenheim) 0.95,D. Simpson (Leicester City) 0.87
+E. Hysaj,Napoli,Serie A,FB,L. Kurzawa (PSG) 0.99,F. Tour\u00e9 (Lille) 0.97,A. Souquet (Nice) 0.95,B. Bereszy\u0144ski (Sampdoria) 0.95,Beller\u00edn (Arsenal) 0.93
+E. Moretti,Torino,Serie A,FB,M. Nastasi\u0107 (Schalke 04) 0.98,B. H\u00fcbner (Hoffenheim) 0.95,Azpilicueta (Chelsea) 0.93,G. Mercado (Sevilla) 0.92,A. Laporte (Manchester City) 0.91
+M. Sampirisi,Crotone,Serie A,FB,F. Moubandje (Toulouse) 0.98,Rafael Tol\u00f3i (Atalanta) 0.97,F. Peluso (Sassuolo) 0.96,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.96,Lucas Lima (Nantes) 0.93
+M. Capuano,Cagliari,Serie A,FB,Pedro Rebocho (Guingamp) 0.98,\u015e. Radu (Lazio) 0.96,A. Masina (Bologna) 0.94,J. Stryger Larsen (Udinese) 0.90,B. Dibassy (Amiens SC) 0.90
+G. Donati,Mainz 05,Bundesliga,FB,C. Ansaldi (Torino) 0.94,D. Faraoni (Crotone) 0.91,P. Stenzel (Freiburg) 0.87,C. G\u00fcnter (Freiburg) 0.85,F. Guilbert (Caen) 0.85
+Gabriel Silva,Saint-\u00c9tienne,Ligue 1,FB,Pedro Rebocho (Guingamp) 0.88,D. Sidib\u00e9 (Monaco) 0.86,P. van Aanholt (Crystal Palace) 0.85,A. Masina (Bologna) 0.84,B. Dibassy (Amiens SC) 0.84
+F. Cacciatore,Chievo,Serie A,FB,E. Zukanovi\u0107 (Genoa) 0.92,E. Moretti (Torino) 0.89,S. Falette (Metz) 0.84,M. Nastasi\u0107 (Schalke 04) 0.83,F. S\u00f8rensen (K\u00f6ln) 0.82
+C. Biraghi,Fiorentina,Serie A,FB,C\u00e9dric Soares (Southampton) 0.87,P. Stenzel (Freiburg) 0.84,A. Beck (Stuttgart) 0.83,P. Max (Augsburg) 0.82,T. Smith (Huddersfield Town) 0.78
+M\u00e1rio Rui,Napoli,Serie A,FB,\u0141. Piszczek (Borussia Dortmund) 0.91,S. Kola\u0161inac (Arsenal) 0.86,Dani Alves (PSG) 0.86,Nacho Monreal (Arsenal) 0.85,J. Gomez (Liverpool) 0.85
+B. Martella,Crotone,Serie A,FB,J. Holebas (Watford) 0.95,Luisinho (Deportivo La Coru\u00f1a) 0.94,L. Dubois (Nantes) 0.93,Diego Rico (Legan\u00e9s) 0.93,N. Mukiele (Montpellier) 0.92
+V. Laurini,Fiorentina,Serie A,FB,K. Naughton (Swansea City) 0.98,C. Traor\u00e9 (Troyes) 0.90,G. Bong (Brighton & Hove Albion) 0.89,B. Dibassy (Amiens SC) 0.88,F. Moubandje (Toulouse) 0.87
+J. Roussillon,Montpellier,Ligue 1,FB,B. Oczipka (Schalke 04) 0.96,Lekue (Athletic Club) 0.94,Jorge (Monaco) 0.94,Zald\u00faa (Legan\u00e9s) 0.92,A. Masuaku (West Ham United) 0.88
+Azpilicueta,Chelsea,Premier League,FB,M. Nastasi\u0107 (Schalke 04) 0.98,G. Mercado (Sevilla) 0.94,E. Moretti (Torino) 0.93,B. H\u00fcbner (Hoffenheim) 0.89,D. Simpson (Leicester City) 0.87
+Y. Andreu,Angers,Ligue 1,FB,M. Plattenhardt (Hertha BSC) 0.99,S. Lichtsteiner (Juventus) 0.99,Montoya (Valencia) 0.92,J. Schlupp (Crystal Palace) 0.91,Sergio Escudero (Sevilla) 0.86
+M. Deplagne,Troyes,Ligue 1,FB,M. Capuano (Cagliari) 0.90,Pedro Rebocho (Guingamp) 0.89,J. Stryger Larsen (Udinese) 0.88,K. Naughton (Swansea City) 0.86,A. Masina (Bologna) 0.85
+S. Falette,Metz,Ligue 1,FB,F. Cacciatore (Chievo) 0.84,C. Dawson (West Bromwich Albion) 0.83,O. Sorg (Hannover 96) 0.79,D. Heintz (K\u00f6ln) 0.79,M. Hinteregger (Augsburg) 0.77
+M. Le Marchand,Nice,Ligue 1,FB,D. Sidib\u00e9 (Monaco) 0.97,T. Gebre Selassie (Werder Bremen) 0.96,J. Stryger Larsen (Udinese) 0.93,Pedro Rebocho (Guingamp) 0.88,A. Masina (Bologna) 0.80
+D. Sidib\u00e9,Monaco,Ligue 1,FB,T. Gebre Selassie (Werder Bremen) 0.97,M. Le Marchand (Nice) 0.97,J. Stryger Larsen (Udinese) 0.91,Pedro Rebocho (Guingamp) 0.87,Gabriel Silva (Saint-\u00c9tienne) 0.86
+V. Manceau,Angers,Ligue 1,FB,J. Schlupp (Crystal Palace) 0.93,Mart\u00edn (Deportivo Alav\u00e9s) 0.85,M. Plattenhardt (Hertha BSC) 0.83,A. Young (Manchester United) 0.81,R. Bensebaini (Rennes) 0.81
+A. Mandi,Real Betis,La Liga,FB,Edgar I\u00e9 (Lille) 0.93,Nacho Monreal (Arsenal) 0.83,M. Le Marchand (Nice) 0.79,B. H\u00fcbner (Hoffenheim) 0.79,J. Vertonghen (Tottenham Hotspur) 0.76
+G. Bong,Brighton & Hove Albion,Premier League,FB,C. Traor\u00e9 (Troyes) 1.00,Juanfran (Deportivo La Coru\u00f1a) 0.92,V. Laurini (Fiorentina) 0.89,D. Biraschi (Genoa) 0.88,N. Mukiele (Montpellier) 0.88
+A. Masuaku,West Ham United,Premier League,FB,J. Mojica (Girona) 0.98,A. Rosi (Genoa) 0.96,Lekue (Athletic Club) 0.94,Jorge (Monaco) 0.92,B. Oczipka (Schalke 04) 0.91
+R. Genevois,Caen,Ligue 1,FB,Jos\u00e9 \u00c1ngel (Eibar) 0.92,M. van der Hoorn (Swansea City) 0.91,O. Sorg (Hannover 96) 0.90,F. S\u00f8rensen (K\u00f6ln) 0.89,F. Romagna (Cagliari) 0.85
+A. Souquet,Nice,Ligue 1,FB,H. Hateboer (Atalanta) 0.96,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.95,Rafael (Olympique Lyonnais) 0.95,F. Tour\u00e9 (Lille) 0.95,E. Hysaj (Napoli) 0.95
+R. Aguilar,Montpellier,Ligue 1,FB,A. Rosi (Genoa) 0.95,F. Mendy (Olympique Lyonnais) 0.91,A. Masuaku (West Ham United) 0.90,Jorge (Monaco) 0.90,F. Chafik (Dijon) 0.89
+Y. Sabaly,Bordeaux,Ligue 1,FB,L. De Silvestri (Torino) 0.88,Sergio Escudero (Sevilla) 0.85,R. Bertrand (Southampton) 0.85,Jonny (Celta de Vigo) 0.78,Rafael (Olympique Lyonnais) 0.76
+F. Guilbert,Caen,Ligue 1,FB,C. G\u00fcnter (Freiburg) 0.98,Zald\u00faa (Legan\u00e9s) 0.95,Lekue (Athletic Club) 0.92,Douglas Santos (Hamburger SV) 0.90,C. Ansaldi (Torino) 0.88
+P. Martinez,Strasbourg,Ligue 1,FB,D. Janmaat (Watford) 0.97,Antunes (Getafe) 0.95,A. Cresswell (West Ham United) 0.94,C. Fuchs (Leicester City) 0.90,Diego Rico (Legan\u00e9s) 0.88
+F. Chafik,Dijon,Ligue 1,FB,Jorge (Monaco) 0.96,A. Rosi (Genoa) 0.94,J. Mojica (Girona) 0.90,A. Masuaku (West Ham United) 0.90,R. Aguilar (Montpellier) 0.89
+O. El Hajjam,Amiens SC,Ligue 1,FB,Luisinho (Deportivo La Coru\u00f1a) 0.92,Mario (Villarreal) 0.90,B. Martella (Crotone) 0.84,A. Kolarov (Roma) 0.77,L. Dubois (Nantes) 0.77
+E. Zukanovi\u0107,Genoa,Serie A,FB,F. Cacciatore (Chievo) 0.92,E. Moretti (Torino) 0.89,A. Laporte (Manchester City) 0.88,J. Vertonghen (Tottenham Hotspur) 0.85,M. Nastasi\u0107 (Schalke 04) 0.84
+Lucas Lima,Nantes,Ligue 1,FB,D. Su\u00e1rez (Getafe) 0.97,N. Mukiele (Montpellier) 0.96,F. Moubandje (Toulouse) 0.96,Danilo Avelar (Amiens SC) 0.95,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.94
+Wendell,Bayer Leverkusen,Bundesliga,FB,\u0141. Piszczek (Borussia Dortmund) 0.96,L. Kurzawa (PSG) 0.93,H. Hateboer (Atalanta) 0.92,E. Hysaj (Napoli) 0.91,A. Souquet (Nice) 0.91
+Rafael Tol\u00f3i,Atalanta,Serie A,FB,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.98,M. Sampirisi (Crotone) 0.97,F. Moubandje (Toulouse) 0.97,Danilo Avelar (Amiens SC) 0.95,\u00cd\u00f1igo Mart\u00ednez (Real Sociedad) 0.94
+F. Moubandje,Toulouse,Ligue 1,FB,M. Sampirisi (Crotone) 0.98,Rafael Tol\u00f3i (Atalanta) 0.97,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.96,Lucas Lima (Nantes) 0.96,Danilo Avelar (Amiens SC) 0.94
+F. Helander,Bologna,Serie A,FB,Bruno Saltor (Brighton & Hove Albion) 0.93,D. Simpson (Leicester City) 0.92,E. Moretti (Torino) 0.89,S. Francis (AFC Bournemouth) 0.88,P. Verhaegh (Wolfsburg) 0.87
+L. Augustinsson,Werder Bremen,Bundesliga,FB,T. Smith (Huddersfield Town) 0.86,C. Fuchs (Leicester City) 0.81,C\u00e9dric Soares (Southampton) 0.71,A. Cresswell (West Ham United) 0.70,M. Ostrzolek (Hannover 96) 0.67
+R. Durmisi,Real Betis,La Liga,FB,Kiko Femen\u00eda (Watford) 0.90,Marcos Alonso (Chelsea) 0.87,A. Nyom (West Bromwich Albion) 0.85,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.84,A. Valencia (Manchester United) 0.84
+J. Stryger Larsen,Udinese,Serie A,FB,Pedro Rebocho (Guingamp) 0.95,M. Le Marchand (Nice) 0.93,D. Sidib\u00e9 (Monaco) 0.91,M. Capuano (Cagliari) 0.90,M. Deplagne (Troyes) 0.88
+M. Hinteregger,Augsburg,Bundesliga,FB,O. Sorg (Hannover 96) 0.97,F. S\u00f8rensen (K\u00f6ln) 0.92,D. Heintz (K\u00f6ln) 0.91,D. Janmaat (Watford) 0.89,F. Romagna (Cagliari) 0.89
+\u0160. Vrsaljko,Atl\u00e9tico Madrid,La Liga,FB,Kiko Femen\u00eda (Watford) 0.96,A. Valencia (Manchester United) 0.95,Jos\u00e9 Gay\u00e1 (Valencia) 0.93,M\u00edchel (Las Palmas) 0.93,Daniel Carvajal (Real Madrid) 0.91
+Alex Sandro,Juventus,Serie A,FB,Jos\u00e9 Gay\u00e1 (Valencia) 0.94,O. Haddadi (Dijon) 0.91,Aar\u00f3n (Espanyol) 0.91,\u0160. Vrsaljko (Atl\u00e9tico Madrid) 0.90,Odriozola (Real Sociedad) 0.86
+E. Ins\u00faa,Stuttgart,Bundesliga,FB,F. Chafik (Dijon) 0.86,Jorge (Monaco) 0.85,J. Roussillon (Montpellier) 0.80,J. Mojica (Girona) 0.79,Zald\u00faa (Legan\u00e9s) 0.78
+C\u00e9dric Soares,Southampton,Premier League,FB,P. Max (Augsburg) 0.96,T. Smith (Huddersfield Town) 0.95,C. Fuchs (Leicester City) 0.88,A. Cresswell (West Ham United) 0.88,C. Biraghi (Fiorentina) 0.87
+Luisinho,Deportivo La Coru\u00f1a,La Liga,FB,B. Martella (Crotone) 0.94,O. El Hajjam (Amiens SC) 0.92,J. Holebas (Watford) 0.88,Diego Rico (Legan\u00e9s) 0.86,L. Dubois (Nantes) 0.85
+Edgar I\u00e9,Lille,Ligue 1,FB,A. Mandi (Real Betis) 0.93,M. Deplagne (Troyes) 0.83,A. Masina (Bologna) 0.81,M. Capuano (Cagliari) 0.78,M. Le Marchand (Nice) 0.78
+T. Gebre Selassie,Werder Bremen,Bundesliga,FB,D. Sidib\u00e9 (Monaco) 0.97,M. Le Marchand (Nice) 0.96,J. Stryger Larsen (Udinese) 0.86,B. Bereszy\u0144ski (Sampdoria) 0.85,\u0141. Piszczek (Borussia Dortmund) 0.82
+P. Kade\u0159\u00e1bek,Hoffenheim,Bundesliga,FB,A. Rosi (Genoa) 0.89,R. Aguilar (Montpellier) 0.80,A. Masuaku (West Ham United) 0.80,F. Chafik (Dijon) 0.79,J. Mojica (Girona) 0.77
+G. Mercado,Sevilla,La Liga,FB,B. H\u00fcbner (Hoffenheim) 0.97,M. Nastasi\u0107 (Schalke 04) 0.97,Azpilicueta (Chelsea) 0.94,E. Moretti (Torino) 0.92,Nacho Monreal (Arsenal) 0.89
+J. Mojica,Girona,La Liga,FB,A. Masuaku (West Ham United) 0.98,A. Rosi (Genoa) 0.94,Lekue (Athletic Club) 0.92,Jorge (Monaco) 0.92,Pablo Maffeo (Girona) 0.92
+J. Holebas,Watford,Premier League,FB,L. Dubois (Nantes) 0.97,N. Mukiele (Montpellier) 0.96,B. Martella (Crotone) 0.95,Lucas Lima (Nantes) 0.94,Juanfran (Deportivo La Coru\u00f1a) 0.94
+Antunes,Getafe,La Liga,FB,P. Martinez (Strasbourg) 0.95,Diego Rico (Legan\u00e9s) 0.91,D. Janmaat (Watford) 0.89,B. Martella (Crotone) 0.87,J. Holebas (Watford) 0.87
+B. Bereszy\u0144ski,Sampdoria,Serie A,FB,E. Hysaj (Napoli) 0.95,\u0141. Piszczek (Borussia Dortmund) 0.91,F. Tour\u00e9 (Lille) 0.91,L. Kurzawa (PSG) 0.91,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.88
+C. Ansaldi,Torino,Serie A,FB,Douglas Santos (Hamburger SV) 0.96,G. Donati (Mainz 05) 0.94,C. G\u00fcnter (Freiburg) 0.93,Pol Lirola (Sassuolo) 0.92,D. Faraoni (Crotone) 0.91
+Danilo Avelar,Amiens SC,Ligue 1,FB,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.98,D. Su\u00e1rez (Getafe) 0.97,Rafael Tol\u00f3i (Atalanta) 0.95,Lucas Lima (Nantes) 0.95,F. Moubandje (Toulouse) 0.94
+O. Haddadi,Dijon,Ligue 1,FB,Alex Sandro (Juventus) 0.91,Aar\u00f3n (Espanyol) 0.91,J. Kimmich (Bayern M\u00fcnchen) 0.86,Odriozola (Real Sociedad) 0.85,Sergi Roberto (Barcelona) 0.79
+A. Laporte,Manchester City,Premier League,FB,E. Moretti (Torino) 0.91,E. Zukanovi\u0107 (Genoa) 0.88,R. Rosales (M\u00e1laga) 0.88,J. Vertonghen (Tottenham Hotspur) 0.88,F. Helander (Bologna) 0.84
+L. Kurzawa,PSG,Ligue 1,FB,E. Hysaj (Napoli) 0.99,F. Tour\u00e9 (Lille) 0.95,A. Souquet (Nice) 0.94,Wendell (Bayer Leverkusen) 0.93,Beller\u00edn (Arsenal) 0.93
+Pedro Rebocho,Guingamp,Ligue 1,FB,M. Capuano (Cagliari) 0.98,A. Masina (Bologna) 0.95,J. Stryger Larsen (Udinese) 0.95,\u015e. Radu (Lazio) 0.93,M. Deplagne (Troyes) 0.89
+Jo\u00e3o Cancelo,Internazionale,Serie A,FB,K. Malcuit (Lille) 0.94,J. Willems (Eintracht Frankfurt) 0.78,Mart\u00edn (Deportivo Alav\u00e9s) 0.78,J. Roussillon (Montpellier) 0.76,Jonny (Celta de Vigo) 0.76
+B. Davies,Tottenham Hotspur,Premier League,FB,M\u00e1rio Rui (Napoli) 0.82,M. Deplagne (Troyes) 0.81,J. Stryger Larsen (Udinese) 0.81,M. Le Marchand (Nice) 0.78,Dani Alves (PSG) 0.77
+Douglas Santos,Hamburger SV,Bundesliga,FB,Pol Lirola (Sassuolo) 0.96,C. G\u00fcnter (Freiburg) 0.96,C. Ansaldi (Torino) 0.96,L. Dubois (Nantes) 0.90,F. Guilbert (Caen) 0.90
+K. Malcuit,Lille,Ligue 1,FB,Jo\u00e3o Cancelo (Internazionale) 0.94,P. van Aanholt (Crystal Palace) 0.78,Dani Castellano (Las Palmas) 0.78,J. Willems (Eintracht Frankfurt) 0.76,Mart\u00edn (Deportivo Alav\u00e9s) 0.76
+D. Simpson,Leicester City,Premier League,FB,F. Helander (Bologna) 0.92,P. Zabaleta (West Ham United) 0.87,M. Nastasi\u0107 (Schalke 04) 0.87,Azpilicueta (Chelsea) 0.87,E. Moretti (Torino) 0.86
+Beller\u00edn,Arsenal,Premier League,FB,M\u00edchel (Las Palmas) 0.97,Jordi Alba (Barcelona) 0.96,A. Valencia (Manchester United) 0.95,S. Kola\u0161inac (Arsenal) 0.94,Daniel Carvajal (Real Madrid) 0.94
+Diego Rico,Legan\u00e9s,La Liga,FB,B. Martella (Crotone) 0.93,Antunes (Getafe) 0.91,P. Martinez (Strasbourg) 0.88,Luisinho (Deportivo La Coru\u00f1a) 0.86,J. Holebas (Watford) 0.84
+D. Biraschi,Genoa,Serie A,FB,J. Willems (Eintracht Frankfurt) 0.98,A. Ferrari (Hellas Verona) 0.98,G. Bong (Brighton & Hove Albion) 0.88,C. Traor\u00e9 (Troyes) 0.85,R. Bensebaini (Rennes) 0.85
+J. Amavi,Olympique Marseille,Ligue 1,FB,A. Kolarov (Roma) 0.96,B. Oczipka (Schalke 04) 0.89,J. Mojica (Girona) 0.87,A. Masuaku (West Ham United) 0.86,A. Rosi (Genoa) 0.84
+B. Dibassy,Amiens SC,Ligue 1,FB,A. Masina (Bologna) 0.97,M. Capuano (Cagliari) 0.90,\u015e. Radu (Lazio) 0.90,Pedro Rebocho (Guingamp) 0.89,V. Laurini (Fiorentina) 0.88
+C. G\u00fcnter,Freiburg,Bundesliga,FB,F. Guilbert (Caen) 0.98,Douglas Santos (Hamburger SV) 0.96,Zald\u00faa (Legan\u00e9s) 0.93,C. Ansaldi (Torino) 0.93,Pol Lirola (Sassuolo) 0.91
+P. Max,Augsburg,Bundesliga,FB,C\u00e9dric Soares (Southampton) 0.96,A. Cresswell (West Ham United) 0.91,D. Janmaat (Watford) 0.89,C. Fuchs (Leicester City) 0.87,P. Martinez (Strasbourg) 0.87
+A. Robertson,Liverpool,Premier League,FB,J. Gomez (Liverpool) 0.94,S. Kola\u0161inac (Arsenal) 0.82,Jordi Alba (Barcelona) 0.79,Daniel Carvajal (Real Madrid) 0.79,Beller\u00edn (Arsenal) 0.78
+N\u00e9lson Semedo,Barcelona,La Liga,FB,Odriozola (Real Sociedad) 0.95,Sergi Roberto (Barcelona) 0.93,Aar\u00f3n (Espanyol) 0.91,R. Bertrand (Southampton) 0.91,Rafael (Olympique Lyonnais) 0.90
+J. Kimmich,Bayern M\u00fcnchen,Bundesliga,FB,Aar\u00f3n (Espanyol) 0.93,Sergi Roberto (Barcelona) 0.92,K. Gibbs (West Bromwich Albion) 0.92,O. Haddadi (Dijon) 0.86,K. Walker (Manchester City) 0.85
+Rub\u00e9n Duarte,Deportivo Alav\u00e9s,La Liga,FB,Danilo Avelar (Amiens SC) 0.98,Rafael Tol\u00f3i (Atalanta) 0.98,F. Moubandje (Toulouse) 0.96,M. Sampirisi (Crotone) 0.96,Lucas Lima (Nantes) 0.94
+H. Traor\u00e9,Rennes,Ligue 1,FB,A. Young (Manchester United) 0.98,R. Bensebaini (Rennes) 0.95,Juanfran (Deportivo La Coru\u00f1a) 0.87,J. Holebas (Watford) 0.83,A. Ferrari (Hellas Verona) 0.82
+Lekue,Athletic Club,La Liga,FB,Zald\u00faa (Legan\u00e9s) 0.96,J. Roussillon (Montpellier) 0.94,A. Masuaku (West Ham United) 0.94,B. Oczipka (Schalke 04) 0.94,F. Guilbert (Caen) 0.92
+A. Masina,Bologna,Serie A,FB,B. Dibassy (Amiens SC) 0.97,Pedro Rebocho (Guingamp) 0.95,M. Capuano (Cagliari) 0.94,\u015e. Radu (Lazio) 0.88,K. Naughton (Swansea City) 0.85
+A. Diallo,Mainz 05,Bundesliga,FB,D. Su\u00e1rez (Getafe) 0.97,Danilo Avelar (Amiens SC) 0.93,Lucas Lima (Nantes) 0.89,Rafael Tol\u00f3i (Atalanta) 0.87,Rub\u00e9n Duarte (Deportivo Alav\u00e9s) 0.87
+L. Dubois,Nantes,Ligue 1,FB,J. Holebas (Watford) 0.97,Juanfran (Deportivo La Coru\u00f1a) 0.93,B. Martella (Crotone) 0.93,N. Mukiele (Montpellier) 0.92,Douglas Santos (Hamburger SV) 0.90
+Samir,Udinese,Serie A,FB,Dani Castellano (Las Palmas) 0.79,B. Oczipka (Schalke 04) 0.76,Jorge (Monaco) 0.76,J. Roussillon (Montpellier) 0.73,Montoya (Valencia) 0.73
+D. Yedlin,Newcastle United,Premier League,FB,Rafael (Olympique Lyonnais) 0.96,F. Mendy (Olympique Lyonnais) 0.95,Dani Castellano (Las Palmas) 0.91,R. Bertrand (Southampton) 0.90,Montoya (Valencia) 0.89
+J. Gomez,Liverpool,Premier League,FB,A. Robertson (Liverpool) 0.94,\u0141. Piszczek (Borussia Dortmund) 0.92,Wendell (Bayer Leverkusen) 0.89,S. Kola\u0161inac (Arsenal) 0.88,M\u00e1rio Rui (Napoli) 0.85
+Pablo Maffeo,Girona,La Liga,FB,J. Mojica (Girona) 0.92,A. Nyom (West Bromwich Albion) 0.88,F. Chafik (Dijon) 0.84,A. Rosi (Genoa) 0.83,P. Stenzel (Freiburg) 0.83
+A. Ferrari,Hellas Verona,Serie A,FB,D. Biraschi (Genoa) 0.98,J. Willems (Eintracht Frankfurt) 0.98,R. Bensebaini (Rennes) 0.90,G. Bong (Brighton & Hove Albion) 0.84,Mart\u00edn (Deportivo Alav\u00e9s) 0.83
+P. Stenzel,Freiburg,Bundesliga,FB,G. Donati (Mainz 05) 0.87,C. Biraghi (Fiorentina) 0.84,Pablo Maffeo (Girona) 0.83,M. Olsson (Swansea City) 0.76,P. Max (Augsburg) 0.73
+F. Mendy,Olympique Lyonnais,Ligue 1,FB,Rafael (Olympique Lyonnais) 0.96,D. Yedlin (Newcastle United) 0.95,Dani Castellano (Las Palmas) 0.92,R. Aguilar (Montpellier) 0.91,H. Hateboer (Atalanta) 0.90
+Odriozola,Real Sociedad,La Liga,FB,N\u00e9lson Semedo (Barcelona) 0.95,Aar\u00f3n (Espanyol) 0.93,D. Yedlin (Newcastle United) 0.87,Sergi Roberto (Barcelona) 0.86,Alex Sandro (Juventus) 0.86
+L. Hern\u00e1ndez,Atl\u00e9tico Madrid,La Liga,FB,A. Souquet (Nice) 0.95,R. Bertrand (Southampton) 0.94,Rafael (Olympique Lyonnais) 0.94,H. Hateboer (Atalanta) 0.92,Wendell (Bayer Leverkusen) 0.91
+H. Hateboer,Atalanta,Serie A,FB,A. Souquet (Nice) 0.96,L. Kurzawa (PSG) 0.93,Rafael (Olympique Lyonnais) 0.93,L. Hern\u00e1ndez (Atl\u00e9tico Madrid) 0.92,Wendell (Bayer Leverkusen) 0.92
+Aar\u00f3n,Espanyol,La Liga,FB,Sergi Roberto (Barcelona) 0.94,Odriozola (Real Sociedad) 0.93,J. Kimmich (Bayern M\u00fcnchen) 0.93,K. Walker (Manchester City) 0.92,N\u00e9lson Semedo (Barcelona) 0.91
+F. Romagna,Cagliari,Serie A,FB,M. Ostrzolek (Hannover 96) 0.96,F. Peluso (Sassuolo) 0.94,M. Sampirisi (Crotone) 0.93,F. S\u00f8rensen (K\u00f6ln) 0.92,D. Janmaat (Watford) 0.91
+F. Tour\u00e9,Lille,Ligue 1,FB,E. Hysaj (Napoli) 0.97,A. Souquet (Nice) 0.95,L. Kurzawa (PSG) 0.95,Beller\u00edn (Arsenal) 0.91,B. Bereszy\u0144ski (Sampdoria) 0.91
+Jorge,Monaco,Ligue 1,FB,B. Oczipka (Schalke 04) 0.96,F. Chafik (Dijon) 0.96,J. Roussillon (Montpellier) 0.94,A. Masuaku (West Ham United) 0.92,A. Rosi (Genoa) 0.92
+R. Bensebaini,Rennes,Ligue 1,FB,Mart\u00edn (Deportivo Alav\u00e9s) 0.95,H. Traor\u00e9 (Rennes) 0.95,A. Young (Manchester United) 0.93,A. Ferrari (Hellas Verona) 0.90,J. Willems (Eintracht Frankfurt) 0.86
+N. Mukiele,Montpellier,Ligue 1,FB,Juanfran (Deportivo La Coru\u00f1a) 0.96,Lucas Lima (Nantes) 0.96,J. Holebas (Watford) 0.96,B. Martella (Crotone) 0.92,L. Dubois (Nantes) 0.92
+B. Chilwell,Leicester City,Premier League,FB,Odriozola (Real Sociedad) 0.81,Jonny (Celta de Vigo) 0.75,N\u00e9lson Semedo (Barcelona) 0.75,D. Yedlin (Newcastle United) 0.74,Aar\u00f3n (Espanyol) 0.73
+Pol Lirola,Sassuolo,Serie A,FB,Douglas Santos (Hamburger SV) 0.96,C. Ansaldi (Torino) 0.92,C. G\u00fcnter (Freiburg) 0.91,D. Faraoni (Crotone) 0.91,Zald\u00faa (Legan\u00e9s) 0.87
+C. Traor\u00e9,Troyes,Ligue 1,FB,G. Bong (Brighton & Hove Albion) 1.00,Juanfran (Deportivo La Coru\u00f1a) 0.93,V. Laurini (Fiorentina) 0.90,N. Mukiele (Montpellier) 0.89,D. Biraschi (Genoa) 0.85
+Mart\u00edn,Deportivo Alav\u00e9s,La Liga,FB,P. van Aanholt (Crystal Palace) 0.96,R. Bensebaini (Rennes) 0.95,J. Schlupp (Crystal Palace) 0.92,V. Manceau (Angers) 0.85,J. Willems (Eintracht Frankfurt) 0.84
+D. Mertens,Napoli,Serie A,ST,A. Finnbogason (Augsburg) 0.80,G. Caprari (Sampdoria) 0.74,M. Arnautovi\u0107 (West Ham United) 0.74,D. Rol\u00e1n (M\u00e1laga) 0.71,R. Hamouma (Saint-\u00c9tienne) 0.67
+K. Benzema,Real Madrid,La Liga,ST,M. G\u00f3mez (Wolfsburg) 0.86,S. Haller (Eintracht Frankfurt) 0.84,P. Aubameyang (Arsenal) 0.83,R. Lukaku (Manchester United) 0.82,A. Lacazette (Arsenal) 0.81
+Cristiano Ronaldo,Real Madrid,La Liga,ST,Son Heung-Min (Tottenham Hotspur) 0.79,S. El Shaarawy (Roma) 0.77,M. Antenucci (SPAL) 0.77,J. Briand (Guingamp) 0.65,M. Thuram (Guingamp) 0.65
+G. Higua\u00edn,Juventus,Serie A,ST,\u00c1lvaro Morata (Chelsea) 0.91,I. Mbenza (Montpellier) 0.89,P. Dybala (Juventus) 0.88,M. Balotelli (Nice) 0.88,Rodrigo (Valencia) 0.84
+\u00c1lvaro Morata,Chelsea,Premier League,ST,R. Palacio (Bologna) 0.93,G. Higua\u00edn (Juventus) 0.91,Rodrigo (Valencia) 0.87,D. Zapata (Sampdoria) 0.86,S. Man\u00e9 (Liverpool) 0.86
+Cristian Tello,Real Betis,La Liga,ST,M. Trotta (Crotone) 0.99,N. Roux (Metz) 0.84,G. Sio (Montpellier) 0.83,A. El Ghazi (Lille) 0.74,F. Quagliarella (Sampdoria) 0.70
+L. Messi,Barcelona,La Liga,ST,Neymar (PSG) 0.97,\u00c1. Correa (Atl\u00e9tico Madrid) 0.90,G. Pandev (Genoa) 0.90,E. Hazard (Chelsea) 0.87,Philippe Coutinho (Liverpool) 0.86
+A. S\u00e1nchez,Arsenal,Premier League,ST,Y. Benzia (Lille) 0.97,G. Pandev (Genoa) 0.95,Y. \u014csako (K\u00f6ln) 0.93,Lucas P\u00e9rez (Deportivo La Coru\u00f1a) 0.92,L. Messi (Barcelona) 0.86
+R. Falcao,Monaco,Ligue 1,ST,E. Rivi\u00e8re (Metz) 0.98,A. Niane (Troyes) 0.98,Kike Garc\u00eda (Eibar) 0.96,A. Ayew (West Ham United) 0.92,S. Rond\u00f3n (West Bromwich Albion) 0.90
+S. Rond\u00f3n,West Bromwich Albion,Premier League,ST,A. Niane (Troyes) 0.90,R. Falcao (Monaco) 0.90,N. F\u00fcllkrug (Hannover 96) 0.87,E. Rivi\u00e8re (Metz) 0.82,R. Lewandowski (Bayern M\u00fcnchen) 0.82
+Jorge Molina,Getafe,La Liga,ST,A. Ljaji\u0107 (Torino) 0.88,K. Monnet-Paquet (Saint-\u00c9tienne) 0.85,Y. Benzia (Lille) 0.83,S. Kalou (Hertha BSC) 0.81,Roberto Firmino (Liverpool) 0.76
+A. Griezmann,Atl\u00e9tico Madrid,La Liga,ST,R. Inglese (Chievo) 0.96,R. Hamouma (Saint-\u00c9tienne) 0.94,M. Arnautovi\u0107 (West Ham United) 0.92,G. Caprari (Sampdoria) 0.91,Munir (Deportivo Alav\u00e9s) 0.90
+Philippe Coutinho,Liverpool,Premier League,ST,G. Bale (Real Madrid) 0.94,E. Choupo-Moting (Stoke City) 0.92,G. Pandev (Genoa) 0.89,L. Ocampos (Olympique Marseille) 0.87,I. Bebou (Hannover 96) 0.87
+Iago Aspas,Celta de Vigo,La Liga,ST,Rodrigo (Valencia) 0.89,R. Palacio (Bologna) 0.88,M. Uth (Hoffenheim) 0.87,S. Man\u00e9 (Liverpool) 0.87,Maxi G\u00f3mez (Celta de Vigo) 0.86
+Kike Garc\u00eda,Eibar,La Liga,ST,E. Rivi\u00e8re (Metz) 0.99,R. Falcao (Monaco) 0.96,A. Ayew (West Ham United) 0.96,P. Aubameyang (Arsenal) 0.96,A. Niane (Troyes) 0.93
+Mariano D\u00edaz,Olympique Lyonnais,Ligue 1,ST,J. Ayew (Swansea City) 0.96,M. Rashford (Manchester United) 0.96,Diego Farias (Cagliari) 0.95,K. Toko Ekambi (Angers) 0.92,A. Belotti (Torino) 0.90
+Gerard Moreno,Espanyol,La Liga,ST,E. D\u017eeko (Roma) 0.91,W. Rooney (Everton) 0.87,M. Kruse (Werder Bremen) 0.87,J. Calleri (Las Palmas) 0.81,A. Delort (Toulouse) 0.75
+L\u00e9o Baptist\u00e3o,Espanyol,La Liga,ST,A. Saint-Maximin (Monaco) 0.93,Diego Farias (Cagliari) 0.84,G. Caprari (Sampdoria) 0.81,S. Ag\u00fcero (Manchester City) 0.80,T. Werner (RB Leipzig) 0.79
+S. Kalou,Hertha BSC,Bundesliga,ST,A. Ljaji\u0107 (Torino) 0.91,Philippe Coutinho (Liverpool) 0.83,\u00c1. Correa (Atl\u00e9tico Madrid) 0.82,Jorge Molina (Getafe) 0.81,D. Rol\u00e1n (M\u00e1laga) 0.79
+R. Lukaku,Manchester United,Premier League,ST,S. Haller (Eintracht Frankfurt) 0.84,K. Benzema (Real Madrid) 0.82,M. G\u00f3mez (Wolfsburg) 0.80,A. Lacazette (Arsenal) 0.67,A. Finnbogason (Augsburg) 0.65
+W. Rooney,Everton,Premier League,ST,E. D\u017eeko (Roma) 0.88,Gerard Moreno (Espanyol) 0.87,M. Kruse (Werder Bremen) 0.86,A. Delort (Toulouse) 0.79,Willian Jos\u00e9 (Real Sociedad) 0.77
+L. Su\u00e1rez,Barcelona,La Liga,ST,A. Finnbogason (Augsburg) 0.83,S. Haller (Eintracht Frankfurt) 0.73,A. Lacazette (Arsenal) 0.70,M. G\u00f3mez (Wolfsburg) 0.61,E. Cavani (PSG) 0.56
+G. Bale,Real Madrid,La Liga,ST,Philippe Coutinho (Liverpool) 0.94,E. Choupo-Moting (Stoke City) 0.91,L. Ocampos (Olympique Marseille) 0.90,D. Berardi (Sassuolo) 0.88,J. Ili\u010di\u0107 (Atalanta) 0.85
+S. Ag\u00fcero,Manchester City,Premier League,ST,Diego Farias (Cagliari) 0.92,R. Sterling (Manchester City) 0.92,M. Thuram (Guingamp) 0.84,L\u00e9o Baptist\u00e3o (Espanyol) 0.80,Mariano D\u00edaz (Olympique Lyonnais) 0.77
+M. Balotelli,Nice,Ligue 1,ST,P. Dybala (Juventus) 0.97,I. Mbenza (Montpellier) 0.89,G. Higua\u00edn (Juventus) 0.88,S. Verdi (Bologna) 0.85,M. Kruse (Werder Bremen) 0.80
+E. D\u017eeko,Roma,Serie A,ST,M. Kruse (Werder Bremen) 0.99,Gerard Moreno (Espanyol) 0.91,A. Delort (Toulouse) 0.89,W. Rooney (Everton) 0.88,S. Verdi (Bologna) 0.83
+G. Murray,Brighton & Hove Albion,Premier League,ST,E. Sala (Nantes) 0.86,Roberto Firmino (Liverpool) 0.85,I. Santini (Caen) 0.84,N. Petersen (Freiburg) 0.81,M. Harnik (Hannover 96) 0.74
+H. Kane,Tottenham Hotspur,Premier League,ST,S. Verdi (Bologna) 0.92,J. Ili\u010di\u0107 (Atalanta) 0.92,Ivi (Levante) 0.91,L. Bailey (Bayer Leverkusen) 0.85,M. Kruse (Werder Bremen) 0.79
+J. Rodriguez,West Bromwich Albion,Premier League,ST,J. Bamba (Saint-\u00c9tienne) 0.98,Raffael (Borussia M'gladbach) 0.94,L. Ocampos (Olympique Marseille) 0.93,R. Hamouma (Saint-\u00c9tienne) 0.93,E. Choupo-Moting (Stoke City) 0.89
+J. King,AFC Bournemouth,Premier League,ST,Bruma (RB Leipzig) 0.86,\u00c1. Correa (Atl\u00e9tico Madrid) 0.86,D. Rol\u00e1n (M\u00e1laga) 0.82,A. Ndiaye (Getafe) 0.73,Neymar (PSG) 0.70
+R. Sterling,Manchester City,Premier League,ST,S. Ag\u00fcero (Manchester City) 0.92,N. F\u00fcllkrug (Hannover 96) 0.78,M. Antenucci (SPAL) 0.78,A. Ayew (West Ham United) 0.76,R. Falcao (Monaco) 0.75
+M. Trotta,Crotone,Serie A,ST,Cristian Tello (Real Betis) 0.99,N. Roux (Metz) 0.85,G. Sio (Montpellier) 0.80,F. Quagliarella (Sampdoria) 0.73,A. El Ghazi (Lille) 0.71
+M. Arnautovi\u0107,West Ham United,Premier League,ST,G. Caprari (Sampdoria) 0.98,Munir (Deportivo Alav\u00e9s) 0.97,A. Griezmann (Atl\u00e9tico Madrid) 0.92,R. Hamouma (Saint-\u00c9tienne) 0.92,R. Inglese (Chievo) 0.89
+N. F\u00fcllkrug,Hannover 96,Bundesliga,ST,R. Lewandowski (Bayern M\u00fcnchen) 0.91,A. Ayew (West Ham United) 0.90,S. Rond\u00f3n (West Bromwich Albion) 0.87,P. Aubameyang (Arsenal) 0.87,R. Falcao (Monaco) 0.84
+M. G\u00f3mez,Wolfsburg,Bundesliga,ST,K. Benzema (Real Madrid) 0.86,A. Lacazette (Arsenal) 0.86,P. Aubameyang (Arsenal) 0.85,A. Ayew (West Ham United) 0.83,N. F\u00fcllkrug (Hannover 96) 0.82
+N. Petersen,Freiburg,Bundesliga,ST,L. Stindl (Borussia M'gladbach) 0.90,G. Murray (Brighton & Hove Albion) 0.81,I. Santini (Caen) 0.76,M. Harnik (Hannover 96) 0.75,K. Volland (Bayer Leverkusen) 0.69
+M. Harnik,Hannover 96,Bundesliga,ST,L. Pavoletti (Cagliari) 0.87,L. Stindl (Borussia M'gladbach) 0.81,Willian Jos\u00e9 (Real Sociedad) 0.80,N. Petersen (Freiburg) 0.75,G. Murray (Brighton & Hove Albion) 0.74
+R. Lewandowski,Bayern M\u00fcnchen,Bundesliga,ST,A. Belotti (Torino) 0.94,N. F\u00fcllkrug (Hannover 96) 0.91,G. Simeone (Fiorentina) 0.91,A. Pl\u00e9a (Nice) 0.88,M. Uth (Hoffenheim) 0.87
+Son Heung-Min,Tottenham Hotspur,Premier League,ST,J. Briand (Guingamp) 0.88,A. Ljaji\u0107 (Torino) 0.88,K. Monnet-Paquet (Saint-\u00c9tienne) 0.82,G. Burgstaller (Schalke 04) 0.82,Cristiano Ronaldo (Real Madrid) 0.79
+G. Sio,Montpellier,Ligue 1,ST,Cristian Tello (Real Betis) 0.83,M. Trotta (Crotone) 0.80,N. Roux (Metz) 0.72,M. Harnik (Hannover 96) 0.57,A. El Ghazi (Lille) 0.56
+I. Santini,Caen,Ligue 1,ST,G. Murray (Brighton & Hove Albion) 0.84,A. Lacazette (Arsenal) 0.82,E. Sala (Nantes) 0.77,E. Cavani (PSG) 0.76,N. Petersen (Freiburg) 0.76
+L. Stindl,Borussia M'gladbach,Bundesliga,ST,N. Petersen (Freiburg) 0.90,L. Pavoletti (Cagliari) 0.83,M. Harnik (Hannover 96) 0.81,J. Calleri (Las Palmas) 0.73,M. Gregoritsch (Augsburg) 0.70
+Raffael,Borussia M'gladbach,Bundesliga,ST,J. Rodriguez (West Bromwich Albion) 0.94,J. Bamba (Saint-\u00c9tienne) 0.93,L. Ocampos (Olympique Marseille) 0.92,E. Choupo-Moting (Stoke City) 0.90,R. Hamouma (Saint-\u00c9tienne) 0.85
+E. Choupo-Moting,Stoke City,Premier League,ST,L. Ocampos (Olympique Marseille) 0.99,I. Bebou (Hannover 96) 0.95,Philippe Coutinho (Liverpool) 0.92,G. Bale (Real Madrid) 0.91,Raffael (Borussia M'gladbach) 0.90
+K. Volland,Bayer Leverkusen,Bundesliga,ST,Y. Benzia (Lille) 0.81,Y. \u014csako (K\u00f6ln) 0.78,Lucas P\u00e9rez (Deportivo La Coru\u00f1a) 0.78,P. De Blasis (Mainz 05) 0.78,Roberto Firmino (Liverpool) 0.76
+M. Uth,Hoffenheim,Bundesliga,ST,C. Bacca (Villarreal) 0.94,S. Man\u00e9 (Liverpool) 0.93,G. Simeone (Fiorentina) 0.92,C. Immobile (Lazio) 0.91,Maxi G\u00f3mez (Celta de Vigo) 0.91
+Roberto Firmino,Liverpool,Premier League,ST,K. Monnet-Paquet (Saint-\u00c9tienne) 0.91,A. Ljaji\u0107 (Torino) 0.86,G. Murray (Brighton & Hove Albion) 0.85,J. Briand (Guingamp) 0.84,E. Sala (Nantes) 0.80
+M. Kruse,Werder Bremen,Bundesliga,ST,E. D\u017eeko (Roma) 0.99,Gerard Moreno (Espanyol) 0.87,W. Rooney (Everton) 0.86,A. Delort (Toulouse) 0.84,S. Verdi (Bologna) 0.82
+S. El Shaarawy,Roma,Serie A,ST,M. Antenucci (SPAL) 0.85,Cristiano Ronaldo (Real Madrid) 0.77,M. Thuram (Guingamp) 0.68,Son Heung-Min (Tottenham Hotspur) 0.67,S. Rond\u00f3n (West Bromwich Albion) 0.67
+F. Quagliarella,Sampdoria,Serie A,ST,N. Roux (Metz) 0.93,M. Gregoritsch (Augsburg) 0.89,A. Kramari\u0107 (Hoffenheim) 0.85,A. Delort (Toulouse) 0.85,W. Rooney (Everton) 0.73
+J. Ili\u010di\u0107,Atalanta,Serie A,ST,Ivi (Levante) 0.97,H. Kane (Tottenham Hotspur) 0.92,L. Bailey (Bayer Leverkusen) 0.91,R. Rodelin (Caen) 0.90,S. Verdi (Bologna) 0.87
+A. Ljaji\u0107,Torino,Serie A,ST,K. Monnet-Paquet (Saint-\u00c9tienne) 0.96,S. Kalou (Hertha BSC) 0.91,J. Briand (Guingamp) 0.89,Jorge Molina (Getafe) 0.88,Son Heung-Min (Tottenham Hotspur) 0.88
+M. Antenucci,SPAL,Serie A,ST,S. El Shaarawy (Roma) 0.85,R. Falcao (Monaco) 0.82,E. Rivi\u00e8re (Metz) 0.80,N. F\u00fcllkrug (Hannover 96) 0.79,R. Sterling (Manchester City) 0.78
+S. Verdi,Bologna,Serie A,ST,H. Kane (Tottenham Hotspur) 0.92,J. Ili\u010di\u0107 (Atalanta) 0.87,Ivi (Levante) 0.86,M. Balotelli (Nice) 0.85,E. D\u017eeko (Roma) 0.83
+E. Cavani,PSG,Ligue 1,ST,Kike Garc\u00eda (Eibar) 0.89,R. Falcao (Monaco) 0.87,E. Rivi\u00e8re (Metz) 0.86,A. Niane (Troyes) 0.83,P. Aubameyang (Arsenal) 0.82
+G. Pandev,Genoa,Serie A,ST,A. S\u00e1nchez (Arsenal) 0.95,L. Messi (Barcelona) 0.90,Y. Benzia (Lille) 0.90,Philippe Coutinho (Liverpool) 0.89,Y. \u014csako (K\u00f6ln) 0.89
+A. Belotti,Torino,Serie A,ST,G. Simeone (Fiorentina) 0.99,A. Pl\u00e9a (Nice) 0.97,R. Lewandowski (Bayern M\u00fcnchen) 0.94,J. Ayew (Swansea City) 0.93,K. Mbapp\u00e9 (Monaco) 0.92
+R. Palacio,Bologna,Serie A,ST,\u00c1lvaro Morata (Chelsea) 0.93,S. Man\u00e9 (Liverpool) 0.92,D. Zapata (Sampdoria) 0.89,Iago Aspas (Celta de Vigo) 0.88,Rodrigo (Valencia) 0.86
+G. Caprari,Sampdoria,Serie A,ST,M. Arnautovi\u0107 (West Ham United) 0.98,Munir (Deportivo Alav\u00e9s) 0.93,R. Hamouma (Saint-\u00c9tienne) 0.92,A. Griezmann (Atl\u00e9tico Madrid) 0.91,R. Inglese (Chievo) 0.91
+C. Immobile,Lazio,Serie A,ST,J. Ayew (Swansea City) 0.95,D. Zapata (Sampdoria) 0.94,Rodrigo (Valencia) 0.93,K. Toko Ekambi (Angers) 0.92,M. Uth (Hoffenheim) 0.91
+R. Inglese,Chievo,Serie A,ST,A. Griezmann (Atl\u00e9tico Madrid) 0.96,G. Caprari (Sampdoria) 0.91,M. Arnautovi\u0107 (West Ham United) 0.89,R. Hamouma (Saint-\u00c9tienne) 0.87,Munir (Deportivo Alav\u00e9s) 0.84
+L. Pavoletti,Cagliari,Serie A,ST,Willian Jos\u00e9 (Real Sociedad) 0.94,M. Harnik (Hannover 96) 0.87,L. Stindl (Borussia M'gladbach) 0.83,I. Santini (Caen) 0.73,N. Petersen (Freiburg) 0.68
+Diego Farias,Cagliari,Serie A,ST,Mariano D\u00edaz (Olympique Lyonnais) 0.95,S. Ag\u00fcero (Manchester City) 0.92,J. Ayew (Swansea City) 0.89,K. Mbapp\u00e9 (Monaco) 0.87,A. Belotti (Torino) 0.87
+A. Pl\u00e9a,Nice,Ligue 1,ST,G. Simeone (Fiorentina) 0.98,A. Belotti (Torino) 0.97,R. Lewandowski (Bayern M\u00fcnchen) 0.88,J. Ayew (Swansea City) 0.87,K. Toko Ekambi (Angers) 0.86
+J. Briand,Guingamp,Ligue 1,ST,E. Sala (Nantes) 0.93,K. Monnet-Paquet (Saint-\u00c9tienne) 0.93,G. Burgstaller (Schalke 04) 0.89,A. Ljaji\u0107 (Torino) 0.89,Son Heung-Min (Tottenham Hotspur) 0.88
+A. Lacazette,Arsenal,Premier League,ST,S. Haller (Eintracht Frankfurt) 0.90,M. G\u00f3mez (Wolfsburg) 0.86,I. Santini (Caen) 0.82,K. Benzema (Real Madrid) 0.81,E. Cavani (PSG) 0.79
+S. Haller,Eintracht Frankfurt,Bundesliga,ST,A. Lacazette (Arsenal) 0.90,R. Lukaku (Manchester United) 0.84,K. Benzema (Real Madrid) 0.84,M. G\u00f3mez (Wolfsburg) 0.79,L. Su\u00e1rez (Barcelona) 0.73
+J. Ayew,Swansea City,Premier League,ST,K. Toko Ekambi (Angers) 0.96,Mariano D\u00edaz (Olympique Lyonnais) 0.96,C. Immobile (Lazio) 0.95,A. Belotti (Torino) 0.93,K. Mbapp\u00e9 (Monaco) 0.91
+A. Ayew,West Ham United,Premier League,ST,P. Aubameyang (Arsenal) 0.99,Kike Garc\u00eda (Eibar) 0.96,E. Rivi\u00e8re (Metz) 0.96,R. Falcao (Monaco) 0.92,N. F\u00fcllkrug (Hannover 96) 0.90
+E. Sala,Nantes,Ligue 1,ST,J. Briand (Guingamp) 0.93,G. Murray (Brighton & Hove Albion) 0.86,Roberto Firmino (Liverpool) 0.80,K. Monnet-Paquet (Saint-\u00c9tienne) 0.79,G. Burgstaller (Schalke 04) 0.78
+T. Hazard,Borussia M'gladbach,Bundesliga,ST,J. Bamba (Saint-\u00c9tienne) 0.92,J. Rodriguez (West Bromwich Albion) 0.87,E. Choupo-Moting (Stoke City) 0.86,Raffael (Borussia M'gladbach) 0.85,L. Ocampos (Olympique Marseille) 0.83
+E. Hazard,Chelsea,Premier League,ST,L. Messi (Barcelona) 0.87,Neymar (PSG) 0.85,G. Pandev (Genoa) 0.83,A. S\u00e1nchez (Arsenal) 0.79,\u00c1. Correa (Atl\u00e9tico Madrid) 0.75
+R. Rodelin,Caen,Ligue 1,ST,Ivi (Levante) 0.95,A. Kramari\u0107 (Hoffenheim) 0.95,J. Ili\u010di\u0107 (Atalanta) 0.90,A. Delort (Toulouse) 0.90,D. Verde (Hellas Verona) 0.90
+N. Roux,Metz,Ligue 1,ST,F. Quagliarella (Sampdoria) 0.93,M. Trotta (Crotone) 0.85,Cristian Tello (Real Betis) 0.84,M. Gregoritsch (Augsburg) 0.77,A. Delort (Toulouse) 0.75
+A. Delort,Toulouse,Ligue 1,ST,A. Kramari\u0107 (Hoffenheim) 0.92,M. Gregoritsch (Augsburg) 0.91,R. Rodelin (Caen) 0.90,E. D\u017eeko (Roma) 0.89,Ivi (Levante) 0.87
+S. Man\u00e9,Liverpool,Premier League,ST,D. Zapata (Sampdoria) 0.96,M. Uth (Hoffenheim) 0.93,R. Palacio (Bologna) 0.92,C. Immobile (Lazio) 0.91,G. Simeone (Fiorentina) 0.90
+E. Rivi\u00e8re,Metz,Ligue 1,ST,Kike Garc\u00eda (Eibar) 0.99,R. Falcao (Monaco) 0.98,A. Ayew (West Ham United) 0.96,A. Niane (Troyes) 0.95,P. Aubameyang (Arsenal) 0.94
+P. Aubameyang,Arsenal,Premier League,ST,A. Ayew (West Ham United) 0.99,Kike Garc\u00eda (Eibar) 0.96,E. Rivi\u00e8re (Metz) 0.94,R. Falcao (Monaco) 0.89,N. F\u00fcllkrug (Hannover 96) 0.87
+R. Hamouma,Saint-\u00c9tienne,Ligue 1,ST,A. Griezmann (Atl\u00e9tico Madrid) 0.94,J. Rodriguez (West Bromwich Albion) 0.93,M. Arnautovi\u0107 (West Ham United) 0.92,G. Caprari (Sampdoria) 0.92,J. Bamba (Saint-\u00c9tienne) 0.90
+N. de Pr\u00e9ville,Lille,Ligue 1,ST,A. Ndiaye (Getafe) 0.94,N. Amrabat (Watford) 0.91,S. Grandsir (Troyes) 0.85,I. Bebou (Hannover 96) 0.85,M. Politano (Sassuolo) 0.81
+K. Monnet-Paquet,Saint-\u00c9tienne,Ligue 1,ST,A. Ljaji\u0107 (Torino) 0.96,J. Briand (Guingamp) 0.93,Roberto Firmino (Liverpool) 0.91,Jorge Molina (Getafe) 0.85,Son Heung-Min (Tottenham Hotspur) 0.82
+K. Toko Ekambi,Angers,Ligue 1,ST,J. Ayew (Swansea City) 0.96,C. Immobile (Lazio) 0.92,D. Zapata (Sampdoria) 0.92,Mariano D\u00edaz (Olympique Lyonnais) 0.92,K. Mbapp\u00e9 (Monaco) 0.90
+Y. Benzia,Lille,Ligue 1,ST,A. S\u00e1nchez (Arsenal) 0.97,Y. \u014csako (K\u00f6ln) 0.96,G. Pandev (Genoa) 0.90,Lucas P\u00e9rez (Deportivo La Coru\u00f1a) 0.86,P. De Blasis (Mainz 05) 0.83
+N. Amrabat,Watford,Premier League,ST,S. Grandsir (Troyes) 0.93,N. de Pr\u00e9ville (Lille) 0.91,M. Politano (Sassuolo) 0.91,L. Bailey (Bayer Leverkusen) 0.86,A. El Ghazi (Lille) 0.84
+C. Bacca,Villarreal,La Liga,ST,M. Uth (Hoffenheim) 0.94,M. Konat\u00e9 (Amiens SC) 0.93,Maxi G\u00f3mez (Celta de Vigo) 0.91,Rodrigo (Valencia) 0.90,C. Immobile (Lazio) 0.87
+A. Finnbogason,Augsburg,Bundesliga,ST,L. Su\u00e1rez (Barcelona) 0.83,D. Mertens (Napoli) 0.80,R. Lukaku (Manchester United) 0.65,S. Haller (Eintracht Frankfurt) 0.59,R. Palacio (Bologna) 0.57
+Willian Jos\u00e9,Real Sociedad,La Liga,ST,L. Pavoletti (Cagliari) 0.94,M. Harnik (Hannover 96) 0.80,W. Rooney (Everton) 0.77,L. Stindl (Borussia M'gladbach) 0.68,E. Cavani (PSG) 0.63
+Neymar,PSG,Ligue 1,ST,L. Messi (Barcelona) 0.97,\u00c1. Correa (Atl\u00e9tico Madrid) 0.92,D. Rol\u00e1n (M\u00e1laga) 0.87,E. Choupo-Moting (Stoke City) 0.86,E. Hazard (Chelsea) 0.85
+G. Burgstaller,Schalke 04,Bundesliga,ST,J. Briand (Guingamp) 0.89,Bruma (RB Leipzig) 0.88,M. Thuram (Guingamp) 0.87,Son Heung-Min (Tottenham Hotspur) 0.82,E. Sala (Nantes) 0.78
+M. Gregoritsch,Augsburg,Bundesliga,ST,P. De Blasis (Mainz 05) 0.94,A. Delort (Toulouse) 0.91,F. Quagliarella (Sampdoria) 0.89,A. Kramari\u0107 (Hoffenheim) 0.85,R. Rodelin (Caen) 0.82
+A. Kramari\u0107,Hoffenheim,Bundesliga,ST,R. Rodelin (Caen) 0.95,Ivi (Levante) 0.93,D. Verde (Hellas Verona) 0.92,A. Delort (Toulouse) 0.92,D. Berardi (Sassuolo) 0.89
+Rodrigo,Valencia,La Liga,ST,C. Immobile (Lazio) 0.93,M. Uth (Hoffenheim) 0.91,C. Bacca (Villarreal) 0.90,S. Man\u00e9 (Liverpool) 0.90,Iago Aspas (Celta de Vigo) 0.89
+Bruma,RB Leipzig,Bundesliga,ST,M. Thuram (Guingamp) 0.92,G. Burgstaller (Schalke 04) 0.88,J. King (AFC Bournemouth) 0.86,D. Rol\u00e1n (M\u00e1laga) 0.78,Son Heung-Min (Tottenham Hotspur) 0.76
+D. Zapata,Sampdoria,Serie A,ST,S. Man\u00e9 (Liverpool) 0.96,C. Immobile (Lazio) 0.94,K. Toko Ekambi (Angers) 0.92,K. Mbapp\u00e9 (Monaco) 0.92,G. Simeone (Fiorentina) 0.90
+L. Ocampos,Olympique Marseille,Ligue 1,ST,E. Choupo-Moting (Stoke City) 0.99,J. Rodriguez (West Bromwich Albion) 0.93,Raffael (Borussia M'gladbach) 0.92,I. Bebou (Hannover 96) 0.91,G. Bale (Real Madrid) 0.90
+P. De Blasis,Mainz 05,Bundesliga,ST,M. Gregoritsch (Augsburg) 0.94,Y. \u014csako (K\u00f6ln) 0.92,J. Calleri (Las Palmas) 0.87,A. Delort (Toulouse) 0.86,R. Rodelin (Caen) 0.84
+P. Dybala,Juventus,Serie A,ST,M. Balotelli (Nice) 0.97,G. Higua\u00edn (Juventus) 0.88,I. Mbenza (Montpellier) 0.82,S. Verdi (Bologna) 0.80,Rodrigo (Valencia) 0.69
+Y. \u014csako,K\u00f6ln,Bundesliga,ST,Y. Benzia (Lille) 0.96,A. S\u00e1nchez (Arsenal) 0.93,P. De Blasis (Mainz 05) 0.92,G. Pandev (Genoa) 0.89,Lucas P\u00e9rez (Deportivo La Coru\u00f1a) 0.83
+M. Konat\u00e9,Amiens SC,Ligue 1,ST,C. Bacca (Villarreal) 0.93,J. Ayew (Swansea City) 0.89,C. Immobile (Lazio) 0.89,M. Uth (Hoffenheim) 0.88,A. Niane (Troyes) 0.88
+Lucas P\u00e9rez,Deportivo La Coru\u00f1a,La Liga,ST,A. S\u00e1nchez (Arsenal) 0.92,Y. Benzia (Lille) 0.86,Y. \u014csako (K\u00f6ln) 0.83,P. De Blasis (Mainz 05) 0.81,G. Pandev (Genoa) 0.80
+D. Rol\u00e1n,M\u00e1laga,La Liga,ST,\u00c1. Correa (Atl\u00e9tico Madrid) 0.94,E. Choupo-Moting (Stoke City) 0.88,L. Ocampos (Olympique Marseille) 0.87,Neymar (PSG) 0.87,Raffael (Borussia M'gladbach) 0.85
+W. Sa\u00efd,Dijon,Ligue 1,ST,A. El Ghazi (Lille) 0.72,I. Bebou (Hannover 96) 0.59,N. de Pr\u00e9ville (Lille) 0.59,D. Verde (Hellas Verona) 0.58,S. Grandsir (Troyes) 0.58
+T. Werner,RB Leipzig,Bundesliga,ST,M. Rashford (Manchester United) 0.96,A. Saint-Maximin (Monaco) 0.92,Mariano D\u00edaz (Olympique Lyonnais) 0.87,J. Ayew (Swansea City) 0.81,L\u00e9o Baptist\u00e3o (Espanyol) 0.79
+M. Politano,Sassuolo,Serie A,ST,S. Grandsir (Troyes) 0.99,L. Bailey (Bayer Leverkusen) 0.95,D. Berardi (Sassuolo) 0.92,N. Amrabat (Watford) 0.91,I. Bebou (Hannover 96) 0.90
+D. Berardi,Sassuolo,Serie A,ST,L. Bailey (Bayer Leverkusen) 0.95,D. Verde (Hellas Verona) 0.95,M. Politano (Sassuolo) 0.92,A. Kramari\u0107 (Hoffenheim) 0.89,Ivi (Levante) 0.89
+A. Niane,Troyes,Ligue 1,ST,R. Falcao (Monaco) 0.98,E. Rivi\u00e8re (Metz) 0.95,Kike Garc\u00eda (Eibar) 0.93,S. Rond\u00f3n (West Bromwich Albion) 0.90,M. Konat\u00e9 (Amiens SC) 0.88
+I. Bebou,Hannover 96,Bundesliga,ST,E. Choupo-Moting (Stoke City) 0.95,L. Ocampos (Olympique Marseille) 0.91,S. Grandsir (Troyes) 0.90,A. Ndiaye (Getafe) 0.90,M. Politano (Sassuolo) 0.90
+J. Calleri,Las Palmas,La Liga,ST,P. De Blasis (Mainz 05) 0.87,Gerard Moreno (Espanyol) 0.81,Lucas P\u00e9rez (Deportivo La Coru\u00f1a) 0.79,Y. \u014csako (K\u00f6ln) 0.78,Y. Benzia (Lille) 0.77
+Ayoze P\u00e9rez,Newcastle United,Premier League,ST,R. Hamouma (Saint-\u00c9tienne) 0.80,J. Rodriguez (West Bromwich Albion) 0.77,N. de Pr\u00e9ville (Lille) 0.75,A. Ndiaye (Getafe) 0.75,J. Bamba (Saint-\u00c9tienne) 0.71
+Ivi,Levante,La Liga,ST,J. Ili\u010di\u0107 (Atalanta) 0.97,R. Rodelin (Caen) 0.95,L. Bailey (Bayer Leverkusen) 0.93,A. Kramari\u0107 (Hoffenheim) 0.93,H. Kane (Tottenham Hotspur) 0.91
+\u00c1. Correa,Atl\u00e9tico Madrid,La Liga,ST,D. Rol\u00e1n (M\u00e1laga) 0.94,Neymar (PSG) 0.92,L. Messi (Barcelona) 0.90,J. King (AFC Bournemouth) 0.86,S. Kalou (Hertha BSC) 0.82
+G. Simeone,Fiorentina,Serie A,ST,A. Belotti (Torino) 0.99,A. Pl\u00e9a (Nice) 0.98,M. Uth (Hoffenheim) 0.92,R. Lewandowski (Bayern M\u00fcnchen) 0.91,J. Ayew (Swansea City) 0.91
+A. Saint-Maximin,Monaco,Ligue 1,ST,L\u00e9o Baptist\u00e3o (Espanyol) 0.93,T. Werner (RB Leipzig) 0.92,M. Rashford (Manchester United) 0.90,Mariano D\u00edaz (Olympique Lyonnais) 0.83,Diego Farias (Cagliari) 0.80
+J. Bamba,Saint-\u00c9tienne,Ligue 1,ST,J. Rodriguez (West Bromwich Albion) 0.98,Raffael (Borussia M'gladbach) 0.93,T. Hazard (Borussia M'gladbach) 0.92,R. Hamouma (Saint-\u00c9tienne) 0.90,L. Ocampos (Olympique Marseille) 0.90
+I. Mbenza,Montpellier,Ligue 1,ST,G. Higua\u00edn (Juventus) 0.89,M. Balotelli (Nice) 0.89,P. Dybala (Juventus) 0.82,S. Verdi (Bologna) 0.81,H. Kane (Tottenham Hotspur) 0.79
+Munir,Deportivo Alav\u00e9s,La Liga,ST,M. Arnautovi\u0107 (West Ham United) 0.97,G. Caprari (Sampdoria) 0.93,A. Griezmann (Atl\u00e9tico Madrid) 0.90,R. Hamouma (Saint-\u00c9tienne) 0.88,R. Inglese (Chievo) 0.84
+A. El Ghazi,Lille,Ligue 1,ST,N. Amrabat (Watford) 0.84,Cristian Tello (Real Betis) 0.74,W. Sa\u00efd (Dijon) 0.72,M. Trotta (Crotone) 0.71,S. Grandsir (Troyes) 0.70
+S. Grandsir,Troyes,Ligue 1,ST,M. Politano (Sassuolo) 0.99,N. Amrabat (Watford) 0.93,I. Bebou (Hannover 96) 0.90,L. Bailey (Bayer Leverkusen) 0.89,D. Berardi (Sassuolo) 0.86
+M. Thuram,Guingamp,Ligue 1,ST,Bruma (RB Leipzig) 0.92,G. Burgstaller (Schalke 04) 0.87,S. Ag\u00fcero (Manchester City) 0.84,L\u00e9o Baptist\u00e3o (Espanyol) 0.78,R. Sterling (Manchester City) 0.73
+D. Verde,Hellas Verona,Serie A,ST,D. Berardi (Sassuolo) 0.95,L. Bailey (Bayer Leverkusen) 0.93,A. Kramari\u0107 (Hoffenheim) 0.92,Ivi (Levante) 0.91,R. Rodelin (Caen) 0.90
+A. Ndiaye,Getafe,La Liga,ST,N. de Pr\u00e9ville (Lille) 0.94,I. Bebou (Hannover 96) 0.90,S. Grandsir (Troyes) 0.85,Neymar (PSG) 0.83,N. Amrabat (Watford) 0.82
+K. Mbapp\u00e9,Monaco,Ligue 1,ST,D. Zapata (Sampdoria) 0.92,A. Belotti (Torino) 0.92,J. Ayew (Swansea City) 0.91,K. Toko Ekambi (Angers) 0.90,Mariano D\u00edaz (Olympique Lyonnais) 0.88
+L. Bailey,Bayer Leverkusen,Bundesliga,ST,D. Berardi (Sassuolo) 0.95,M. Politano (Sassuolo) 0.95,Ivi (Levante) 0.93,D. Verde (Hellas Verona) 0.93,J. Ili\u010di\u0107 (Atalanta) 0.91
+Maxi G\u00f3mez,Celta de Vigo,La Liga,ST,C. Bacca (Villarreal) 0.91,M. Uth (Hoffenheim) 0.91,S. Man\u00e9 (Liverpool) 0.90,Rodrigo (Valencia) 0.86,M. Konat\u00e9 (Amiens SC) 0.86
+M. Rashford,Manchester United,Premier League,ST,T. Werner (RB Leipzig) 0.96,Mariano D\u00edaz (Olympique Lyonnais) 0.96,J. Ayew (Swansea City) 0.90,A. Saint-Maximin (Monaco) 0.90,K. Toko Ekambi (Angers) 0.88
+M. Depay,Olympique Lyonnais,Ligue 1,W,Richarlison (Watford) 0.97,D. Perotti (Roma) 0.89,L. \u00d6ztunali (Mainz 05) 0.88,M. Lazzari (SPAL) 0.85,I\u00f1aki Williams (Athletic Club) 0.84
+R. van La Parra,Huddersfield Town,Premier League,W,M. Lazzari (SPAL) 0.96,Samu Castillejo (Villarreal) 0.93,A. Candreva (Internazionale) 0.75,A. G\u00f3mez (Atalanta) 0.74,Luiz Ara\u00fajo (Lille) 0.74
+Portu,Girona,La Liga,W,L. Bittencourt (K\u00f6ln) 0.95,L. \u00d6ztunali (Mainz 05) 0.90,Gon\u00e7alo Guedes (PSG) 0.84,A. G\u00f3mez (Atalanta) 0.84,Malcom (Bordeaux) 0.82
+P. Piatti,Espanyol,La Liga,W,N. Schulz (Hoffenheim) 0.94,Luiz Ara\u00fajo (Lille) 0.86,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.82,M. Fares (Hellas Verona) 0.79,M. Phillips (West Bromwich Albion) 0.77
+Jos\u00e9 Callej\u00f3n,Napoli,Serie A,W,M. Mand\u017euki\u0107 (Juventus) 0.97,Iago Falqu\u00e9 (Torino) 0.83,Lucas V\u00e1zquez (Real Madrid) 0.81,G. Bonaventura (Milan) 0.78,H. \u00c7alhano\u011flu (Milan) 0.77
+Iniesta,Barcelona,La Liga,W,Portillo (Getafe) 0.93,B. Stambouli (Schalke 04) 0.88,Xabi Prieto (Real Sociedad) 0.80,M. Weiser (Hertha BSC) 0.64,B. Matuidi (PSG) 0.62
+Adri\u00e1n L\u00f3pez,Deportivo La Coru\u00f1a,La Liga,W,B. Sarr (Olympique Marseille) 0.89,F. Kessi\u00e9 (Milan) 0.85,K. Linetty (Sampdoria) 0.77,A. Maru\u0161i\u0107 (Lazio) 0.76,Xabi Prieto (Real Sociedad) 0.73
+Jes\u00fas Navas,Sevilla,La Liga,W,A. Florenzi (Roma) 0.68,P. Farag\u00f2 (Cagliari) 0.67,M. Benassi (Fiorentina) 0.67,M. Weiser (Hertha BSC) 0.62,Chory Castro (M\u00e1laga) 0.61
+D. Perotti,Roma,Serie A,W,I\u00f1aki Williams (Athletic Club) 0.98,Richarlison (Watford) 0.92,L. \u00d6ztunali (Mainz 05) 0.89,M. Depay (Olympique Lyonnais) 0.89,L. Bittencourt (K\u00f6ln) 0.89
+Portillo,Getafe,La Liga,W,Iniesta (Barcelona) 0.93,Xabi Prieto (Real Sociedad) 0.90,B. Stambouli (Schalke 04) 0.83,B. Matuidi (PSG) 0.83,F. Kessi\u00e9 (Milan) 0.74
+Chory Castro,M\u00e1laga,La Liga,W,A. Stoian (Crotone) 0.96,A. Duncan (Sassuolo) 0.95,D. Caligiuri (Schalke 04) 0.94,P. Farag\u00f2 (Cagliari) 0.93,A. Florenzi (Roma) 0.92
+Xabi Prieto,Real Sociedad,La Liga,W,Portillo (Getafe) 0.90,Iniesta (Barcelona) 0.80,B. Matuidi (PSG) 0.78,F. Kessi\u00e9 (Milan) 0.76,Adri\u00e1n L\u00f3pez (Deportivo La Coru\u00f1a) 0.73
+V\u00edctor S\u00e1nchez,Espanyol,La Liga,W,M. Benassi (Fiorentina) 0.84,A. Florenzi (Roma) 0.76,P. Farag\u00f2 (Cagliari) 0.75,Suso (Milan) 0.74,A. Gon\u00e7alves (Strasbourg) 0.73
+N. El Zhar,Legan\u00e9s,La Liga,W,R\u00f4mulo (Hellas Verona) 0.89,B. Sarr (Olympique Marseille) 0.74,F. Thauvin (Olympique Marseille) 0.72,A. Rebi\u0107 (Eintracht Frankfurt) 0.68,M. Diouf (Stoke City) 0.63
+Borja Garc\u00eda,Girona,La Liga,W,D. Li\u00e9nard (Strasbourg) 0.72,H. \u00c7alhano\u011flu (Milan) 0.65,J. Cuadrado (Juventus) 0.60,Iago Falqu\u00e9 (Torino) 0.59,V\u00edctor S\u00e1nchez (Espanyol) 0.48
+Lucas V\u00e1zquez,Real Madrid,La Liga,W,M. Leckie (Hertha BSC) 0.94,Bernardo Silva (Manchester City) 0.91,L. San\u00e9 (Manchester City) 0.85,K. Linetty (Sampdoria) 0.84,M. Mand\u017euki\u0107 (Juventus) 0.82
+J. Ward-Prowse,Southampton,Premier League,W,M. Ham\u0161\u00edk (Napoli) 0.95,\u00c9. Barreto (Sampdoria) 0.94,D. Wass (Celta de Vigo) 0.93,F. Delph (Manchester City) 0.84,M. Benassi (Fiorentina) 0.82
+Iago Falqu\u00e9,Torino,Serie A,W,J. Cuadrado (Juventus) 0.95,Jos\u00e9 Callej\u00f3n (Napoli) 0.83,H. \u00c7alhano\u011flu (Milan) 0.82,P. Sisto (Celta de Vigo) 0.75,M. Mand\u017euki\u0107 (Juventus) 0.71
+F. Delph,Manchester City,Premier League,W,B. Matuidi (PSG) 0.93,\u00c9. Barreto (Sampdoria) 0.93,D. Wass (Celta de Vigo) 0.85,J. Ward-Prowse (Southampton) 0.84,M. Ham\u0161\u00edk (Napoli) 0.84
+V. Moses,Chelsea,Premier League,W,M. Ham\u0161\u00edk (Napoli) 0.82,J. Ward-Prowse (Southampton) 0.81,\u00c9. Barreto (Sampdoria) 0.73,F. Delph (Manchester City) 0.73,D. Wass (Celta de Vigo) 0.71
+M. Phillips,West Bromwich Albion,Premier League,W,Luiz Ara\u00fajo (Lille) 0.90,P. Sisto (Celta de Vigo) 0.87,Samu Castillejo (Villarreal) 0.80,Carlos Soler (Valencia) 0.79,A. G\u00f3mez (Atalanta) 0.77
+Suso,Milan,Serie A,W,D. Caligiuri (Schalke 04) 0.84,A. Florenzi (Roma) 0.82,A. Gon\u00e7alves (Strasbourg) 0.78,V\u00edctor S\u00e1nchez (Espanyol) 0.74,Chory Castro (M\u00e1laga) 0.72
+A. Robben,Bayern M\u00fcnchen,Bundesliga,W,R\u00f4mulo (Hellas Verona) 0.84,A. Knockaert (Brighton & Hove Albion) 0.68,A. Rebi\u0107 (Eintracht Frankfurt) 0.68,Gon\u00e7alo Guedes (PSG) 0.65,L. \u00d6ztunali (Mainz 05) 0.65
+T. M\u00fcller,Bayern M\u00fcnchen,Bundesliga,W,M. Mand\u017euki\u0107 (Juventus) 0.86,D. Wass (Celta de Vigo) 0.85,Lucas V\u00e1zquez (Real Madrid) 0.82,Bernardo Silva (Manchester City) 0.81,B. Matuidi (PSG) 0.77
+I. Peri\u0161i\u0107,Internazionale,Serie A,W,H. \u00c7alhano\u011flu (Milan) 0.87,D. Li\u00e9nard (Strasbourg) 0.74,V. Moses (Chelsea) 0.67,Jos\u00e9 Callej\u00f3n (Napoli) 0.64,M. Mand\u017euki\u0107 (Juventus) 0.64
+T. Inui,Eibar,La Liga,W,F. Kamano (Bordeaux) 0.93,L. Insigne (Napoli) 0.89,P. Sisto (Celta de Vigo) 0.79,J. Izquierdo (Brighton & Hove Albion) 0.72,A. Candreva (Internazionale) 0.70
+M. Mand\u017euki\u0107,Juventus,Serie A,W,Jos\u00e9 Callej\u00f3n (Napoli) 0.97,T. M\u00fcller (Bayern M\u00fcnchen) 0.86,Lucas V\u00e1zquez (Real Madrid) 0.82,Bernardo Silva (Manchester City) 0.76,G. Bonaventura (Milan) 0.75
+D. Caligiuri,Schalke 04,Bundesliga,W,A. Duncan (Sassuolo) 0.95,Chory Castro (M\u00e1laga) 0.94,A. Stoian (Crotone) 0.93,M. Fares (Hellas Verona) 0.92,D. Laxalt (Genoa) 0.90
+M. Leckie,Hertha BSC,Bundesliga,W,Lucas V\u00e1zquez (Real Madrid) 0.94,L. San\u00e9 (Manchester City) 0.91,K. Linetty (Sampdoria) 0.88,Bernardo Silva (Manchester City) 0.88,N. P\u00e9p\u00e9 (Lille) 0.83
+M. Diouf,Stoke City,Premier League,W,M. Weiser (Hertha BSC) 0.96,F. Thauvin (Olympique Marseille) 0.89,B. Sarr (Olympique Marseille) 0.79,A. Rebi\u0107 (Eintracht Frankfurt) 0.71,A. Stoian (Crotone) 0.69
+M. Weiser,Hertha BSC,Bundesliga,W,M. Diouf (Stoke City) 0.96,F. Thauvin (Olympique Marseille) 0.83,A. Stoian (Crotone) 0.82,Chory Castro (M\u00e1laga) 0.76,D. Caligiuri (Schalke 04) 0.73
+L. Bittencourt,K\u00f6ln,Bundesliga,W,Portu (Girona) 0.95,L. \u00d6ztunali (Mainz 05) 0.93,A. G\u00f3mez (Atalanta) 0.90,I\u00f1aki Williams (Athletic Club) 0.89,D. Perotti (Roma) 0.89
+H. \u00c7alhano\u011flu,Milan,Serie A,W,I. Peri\u0161i\u0107 (Internazionale) 0.87,D. Li\u00e9nard (Strasbourg) 0.84,Iago Falqu\u00e9 (Torino) 0.82,J. Cuadrado (Juventus) 0.79,Jos\u00e9 Callej\u00f3n (Napoli) 0.77
+N. Schulz,Hoffenheim,Bundesliga,W,P. Piatti (Espanyol) 0.94,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.80,Luiz Ara\u00fajo (Lille) 0.78,Carlos Soler (Valencia) 0.78,M. Phillips (West Bromwich Albion) 0.76
+A. Candreva,Internazionale,Serie A,W,R. van La Parra (Huddersfield Town) 0.75,T. Inui (Eibar) 0.70,M. Lazzari (SPAL) 0.68,Luiz Ara\u00fajo (Lille) 0.68,Samu Castillejo (Villarreal) 0.67
+S. Luli\u0107,Lazio,Serie A,W,M. Wolf (Eintracht Frankfurt) 0.67,N. Schulz (Hoffenheim) 0.59,P. Piatti (Espanyol) 0.58,M. Fares (Hellas Verona) 0.52,M. Gradel (Toulouse) 0.52
+J. Cuadrado,Juventus,Serie A,W,Iago Falqu\u00e9 (Torino) 0.95,P. Sisto (Celta de Vigo) 0.92,H. \u00c7alhano\u011flu (Milan) 0.79,T. Inui (Eibar) 0.68,M. Phillips (West Bromwich Albion) 0.67
+\u00c9. Barreto,Sampdoria,Serie A,W,D. Wass (Celta de Vigo) 0.94,M. Ham\u0161\u00edk (Napoli) 0.94,J. Ward-Prowse (Southampton) 0.94,F. Delph (Manchester City) 0.93,B. Matuidi (PSG) 0.86
+G. Bonaventura,Milan,Serie A,W,L. Insigne (Napoli) 0.79,Jos\u00e9 Callej\u00f3n (Napoli) 0.78,M. Leckie (Hertha BSC) 0.77,M. Mand\u017euki\u0107 (Juventus) 0.75,Lucas V\u00e1zquez (Real Madrid) 0.73
+R\u00f4mulo,Hellas Verona,Serie A,W,N. El Zhar (Legan\u00e9s) 0.89,A. Robben (Bayern M\u00fcnchen) 0.84,A. Rebi\u0107 (Eintracht Frankfurt) 0.81,Gon\u00e7alo Guedes (PSG) 0.72,B. Sarr (Olympique Marseille) 0.71
+A. G\u00f3mez,Atalanta,Serie A,W,Malcom (Bordeaux) 0.91,L. Bittencourt (K\u00f6ln) 0.90,Gon\u00e7alo Guedes (PSG) 0.86,M. Lazzari (SPAL) 0.85,D. Perotti (Roma) 0.85
+M. Ham\u0161\u00edk,Napoli,Serie A,W,J. Ward-Prowse (Southampton) 0.95,\u00c9. Barreto (Sampdoria) 0.94,F. Delph (Manchester City) 0.84,D. Wass (Celta de Vigo) 0.83,V. Moses (Chelsea) 0.82
+L. Insigne,Napoli,Serie A,W,T. Inui (Eibar) 0.89,F. Kamano (Bordeaux) 0.86,L. San\u00e9 (Manchester City) 0.85,J. Izquierdo (Brighton & Hove Albion) 0.82,G. Bonaventura (Milan) 0.79
+A. Stoian,Crotone,Serie A,W,A. Duncan (Sassuolo) 0.97,Chory Castro (M\u00e1laga) 0.96,D. Caligiuri (Schalke 04) 0.93,M. Wolf (Eintracht Frankfurt) 0.92,M. Fares (Hellas Verona) 0.91
+M. Benassi,Fiorentina,Serie A,W,V\u00edctor S\u00e1nchez (Espanyol) 0.84,J. Ward-Prowse (Southampton) 0.82,M. Ham\u0161\u00edk (Napoli) 0.77,A. Florenzi (Roma) 0.68,Suso (Milan) 0.68
+A. Duncan,Sassuolo,Serie A,W,M. Fares (Hellas Verona) 0.98,A. Stoian (Crotone) 0.97,D. Caligiuri (Schalke 04) 0.95,Chory Castro (M\u00e1laga) 0.95,M. Wolf (Eintracht Frankfurt) 0.95
+A. Florenzi,Roma,Serie A,W,P. Farag\u00f2 (Cagliari) 0.97,A. Gon\u00e7alves (Strasbourg) 0.92,Chory Castro (M\u00e1laga) 0.92,D. Caligiuri (Schalke 04) 0.89,A. Duncan (Sassuolo) 0.87
+B. Matuidi,PSG,Ligue 1,W,F. Delph (Manchester City) 0.93,\u00c9. Barreto (Sampdoria) 0.86,D. Wass (Celta de Vigo) 0.84,Portillo (Getafe) 0.83,F. Kessi\u00e9 (Milan) 0.80
+B. Sarr,Olympique Marseille,Ligue 1,W,Adri\u00e1n L\u00f3pez (Deportivo La Coru\u00f1a) 0.89,F. Kessi\u00e9 (Milan) 0.87,M. Diouf (Stoke City) 0.79,N. El Zhar (Legan\u00e9s) 0.74,R\u00f4mulo (Hellas Verona) 0.71
+F. Thauvin,Olympique Marseille,Ligue 1,W,M. Diouf (Stoke City) 0.89,M. Weiser (Hertha BSC) 0.83,D. Laxalt (Genoa) 0.83,A. Rebi\u0107 (Eintracht Frankfurt) 0.79,D. Caligiuri (Schalke 04) 0.77
+M. Gradel,Toulouse,Ligue 1,W,I\u00f1igo C\u00f3rdoba (Athletic Club) 0.96,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.92,D. Laxalt (Genoa) 0.88,M. Wolf (Eintracht Frankfurt) 0.87,M. Fares (Hellas Verona) 0.82
+A. Knockaert,Brighton & Hove Albion,Premier League,W,Mohamed Salah (Liverpool) 0.88,Malcom (Bordeaux) 0.87,D. Perotti (Roma) 0.81,A. G\u00f3mez (Atalanta) 0.80,Richarlison (Watford) 0.78
+B. Stambouli,Schalke 04,Bundesliga,W,Iniesta (Barcelona) 0.88,Portillo (Getafe) 0.83,Xabi Prieto (Real Sociedad) 0.71,M. Weiser (Hertha BSC) 0.70,P. Farag\u00f2 (Cagliari) 0.68
+A. Gon\u00e7alves,Strasbourg,Ligue 1,W,A. Florenzi (Roma) 0.92,P. Farag\u00f2 (Cagliari) 0.89,Chory Castro (M\u00e1laga) 0.82,Suso (Milan) 0.78,A. Duncan (Sassuolo) 0.76
+D. Wass,Celta de Vigo,La Liga,W,\u00c9. Barreto (Sampdoria) 0.94,J. Ward-Prowse (Southampton) 0.93,T. M\u00fcller (Bayern M\u00fcnchen) 0.85,F. Delph (Manchester City) 0.85,B. Matuidi (PSG) 0.84
+D. Li\u00e9nard,Strasbourg,Ligue 1,W,H. \u00c7alhano\u011flu (Milan) 0.84,I. Peri\u0161i\u0107 (Internazionale) 0.74,Borja Garc\u00eda (Girona) 0.72,P. Sisto (Celta de Vigo) 0.69,Luiz Ara\u00fajo (Lille) 0.68
+A. Rebi\u0107,Eintracht Frankfurt,Bundesliga,W,I\u00f1igo C\u00f3rdoba (Athletic Club) 0.84,R\u00f4mulo (Hellas Verona) 0.81,M. Gradel (Toulouse) 0.80,F. Thauvin (Olympique Marseille) 0.79,Gon\u00e7alo Guedes (PSG) 0.78
+A. Carrillo,Watford,Premier League,W,Carlos Soler (Valencia) 0.77,L. Bittencourt (K\u00f6ln) 0.75,A. G\u00f3mez (Atalanta) 0.73,Jason (Levante) 0.71,M. Depay (Olympique Lyonnais) 0.70
+J. Izquierdo,Brighton & Hove Albion,Premier League,W,B. Traor\u00e9 (Olympique Lyonnais) 0.84,Mohamed Salah (Liverpool) 0.83,L. Insigne (Napoli) 0.82,Richarlison (Watford) 0.78,A. Maru\u0161i\u0107 (Lazio) 0.73
+D. Laxalt,Genoa,Serie A,W,D. Caligiuri (Schalke 04) 0.90,M. Gradel (Toulouse) 0.88,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.85,A. Stoian (Crotone) 0.84,M. Fares (Hellas Verona) 0.83
+Mohamed Salah,Liverpool,Premier League,W,Richarlison (Watford) 0.93,N. P\u00e9p\u00e9 (Lille) 0.88,A. Knockaert (Brighton & Hove Albion) 0.88,D. Perotti (Roma) 0.86,A. Martial (Manchester United) 0.86
+Samu Castillejo,Villarreal,La Liga,W,R. van La Parra (Huddersfield Town) 0.93,M. Lazzari (SPAL) 0.89,Luiz Ara\u00fajo (Lille) 0.88,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.82,M. Phillips (West Bromwich Albion) 0.80
+A. Martial,Manchester United,Premier League,W,N. P\u00e9p\u00e9 (Lille) 0.95,Jason (Levante) 0.90,I\u00f1aki Williams (Athletic Club) 0.89,Mohamed Salah (Liverpool) 0.86,D. Perotti (Roma) 0.83
+K. Linetty,Sampdoria,Serie A,W,M. Leckie (Hertha BSC) 0.88,Lucas V\u00e1zquez (Real Madrid) 0.84,Bernardo Silva (Manchester City) 0.83,A. Martial (Manchester United) 0.82,A. Maru\u0161i\u0107 (Lazio) 0.82
+B. Traor\u00e9,Olympique Lyonnais,Ligue 1,W,A. Maru\u0161i\u0107 (Lazio) 0.90,J. Izquierdo (Brighton & Hove Albion) 0.84,L. San\u00e9 (Manchester City) 0.81,N. P\u00e9p\u00e9 (Lille) 0.80,L. Insigne (Napoli) 0.78
+P. Farag\u00f2,Cagliari,Serie A,W,A. Florenzi (Roma) 0.97,Chory Castro (M\u00e1laga) 0.93,A. Gon\u00e7alves (Strasbourg) 0.89,A. Duncan (Sassuolo) 0.88,A. Stoian (Crotone) 0.88
+L. \u00d6ztunali,Mainz 05,Bundesliga,W,L. Bittencourt (K\u00f6ln) 0.93,Portu (Girona) 0.90,Richarlison (Watford) 0.90,D. Perotti (Roma) 0.89,M. Depay (Olympique Lyonnais) 0.88
+M. Wolf,Eintracht Frankfurt,Bundesliga,W,M. Fares (Hellas Verona) 0.95,A. Duncan (Sassuolo) 0.95,A. Stoian (Crotone) 0.92,Chory Castro (M\u00e1laga) 0.87,M. Gradel (Toulouse) 0.87
+M. Lazzari,SPAL,Serie A,W,R. van La Parra (Huddersfield Town) 0.96,Samu Castillejo (Villarreal) 0.89,A. G\u00f3mez (Atalanta) 0.85,M. Depay (Olympique Lyonnais) 0.85,Richarlison (Watford) 0.80
+A. Maru\u0161i\u0107,Lazio,Serie A,W,B. Traor\u00e9 (Olympique Lyonnais) 0.90,K. Linetty (Sampdoria) 0.82,N. P\u00e9p\u00e9 (Lille) 0.76,Adri\u00e1n L\u00f3pez (Deportivo La Coru\u00f1a) 0.76,M. Leckie (Hertha BSC) 0.75
+Gon\u00e7alo Guedes,PSG,Ligue 1,W,I\u00f1igo C\u00f3rdoba (Athletic Club) 0.89,A. G\u00f3mez (Atalanta) 0.86,Portu (Girona) 0.84,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.84,L. \u00d6ztunali (Mainz 05) 0.83
+P. Sisto,Celta de Vigo,La Liga,W,J. Cuadrado (Juventus) 0.92,M. Phillips (West Bromwich Albion) 0.87,Luiz Ara\u00fajo (Lille) 0.83,T. Inui (Eibar) 0.79,F. Kamano (Bordeaux) 0.79
+L. San\u00e9,Manchester City,Premier League,W,N. P\u00e9p\u00e9 (Lille) 0.91,M. Leckie (Hertha BSC) 0.91,Lucas V\u00e1zquez (Real Madrid) 0.85,L. Insigne (Napoli) 0.85,Bernardo Silva (Manchester City) 0.81
+I\u00f1aki Williams,Athletic Club,La Liga,W,D. Perotti (Roma) 0.98,N. P\u00e9p\u00e9 (Lille) 0.92,Jason (Levante) 0.91,L. Bittencourt (K\u00f6ln) 0.89,A. Martial (Manchester United) 0.89
+Jason,Levante,La Liga,W,N. P\u00e9p\u00e9 (Lille) 0.91,I\u00f1aki Williams (Athletic Club) 0.91,A. Martial (Manchester United) 0.90,D. Perotti (Roma) 0.83,L. Bittencourt (K\u00f6ln) 0.81
+N. P\u00e9p\u00e9,Lille,Ligue 1,W,A. Martial (Manchester United) 0.95,I\u00f1aki Williams (Athletic Club) 0.92,L. San\u00e9 (Manchester City) 0.91,Jason (Levante) 0.91,Mohamed Salah (Liverpool) 0.88
+Luiz Ara\u00fajo,Lille,Ligue 1,W,M. Phillips (West Bromwich Albion) 0.90,Samu Castillejo (Villarreal) 0.88,P. Piatti (Espanyol) 0.86,P. Sisto (Celta de Vigo) 0.83,N. Schulz (Hoffenheim) 0.78
+Bernardo Silva,Manchester City,Premier League,W,Lucas V\u00e1zquez (Real Madrid) 0.91,M. Leckie (Hertha BSC) 0.88,K. Linetty (Sampdoria) 0.83,T. M\u00fcller (Bayern M\u00fcnchen) 0.81,L. San\u00e9 (Manchester City) 0.81
+F. Kessi\u00e9,Milan,Serie A,W,B. Sarr (Olympique Marseille) 0.87,Adri\u00e1n L\u00f3pez (Deportivo La Coru\u00f1a) 0.85,B. Matuidi (PSG) 0.80,Xabi Prieto (Real Sociedad) 0.76,F. Delph (Manchester City) 0.74
+Malcom,Bordeaux,Ligue 1,W,A. G\u00f3mez (Atalanta) 0.91,A. Knockaert (Brighton & Hove Albion) 0.87,D. Perotti (Roma) 0.87,Portu (Girona) 0.82,L. Bittencourt (K\u00f6ln) 0.82
+M. Fares,Hellas Verona,Serie A,W,A. Duncan (Sassuolo) 0.98,M. Wolf (Eintracht Frankfurt) 0.95,D. Caligiuri (Schalke 04) 0.92,Chory Castro (M\u00e1laga) 0.91,A. Stoian (Crotone) 0.91
+F. Kamano,Bordeaux,Ligue 1,W,T. Inui (Eibar) 0.93,L. Insigne (Napoli) 0.86,D. Perotti (Roma) 0.80,M. Lazzari (SPAL) 0.80,P. Sisto (Celta de Vigo) 0.79
+I\u00f1igo C\u00f3rdoba,Athletic Club,La Liga,W,M. Gradel (Toulouse) 0.96,Alfonso Pedraza (Deportivo Alav\u00e9s) 0.95,Gon\u00e7alo Guedes (PSG) 0.89,A. Rebi\u0107 (Eintracht Frankfurt) 0.84,D. Laxalt (Genoa) 0.80
+Alfonso Pedraza,Deportivo Alav\u00e9s,La Liga,W,I\u00f1igo C\u00f3rdoba (Athletic Club) 0.95,M. Gradel (Toulouse) 0.92,D. Laxalt (Genoa) 0.85,Gon\u00e7alo Guedes (PSG) 0.84,Samu Castillejo (Villarreal) 0.82
+Carlos Soler,Valencia,La Liga,W,M. Phillips (West Bromwich Albion) 0.79,N. Schulz (Hoffenheim) 0.78,A. Carrillo (Watford) 0.77,A. G\u00f3mez (Atalanta) 0.74,P. Piatti (Espanyol) 0.73
+Richarlison,Watford,Premier League,W,M. Depay (Olympique Lyonnais) 0.97,Mohamed Salah (Liverpool) 0.93,D. Perotti (Roma) 0.92,L. \u00d6ztunali (Mainz 05) 0.90,N. P\u00e9p\u00e9 (Lille) 0.87

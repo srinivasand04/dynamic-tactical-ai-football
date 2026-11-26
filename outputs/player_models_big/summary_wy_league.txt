@@ -1,0 +1,37 @@
+A5. League style per role: choice share predicted with the league x role correction / without (same situations)
+  role league                 shot    dribble      carry  long pass  forward p  safe pass
+  CB   Premier League        0.97       0.83       0.79       1.01       1.00       1.00
+  CB   Ligue 1               1.05       1.11       1.10       1.01       1.02       0.96
+  CB   Bundesliga            1.00       1.05       1.14       1.00       0.96       1.05
+  CB   Serie A               1.01       1.01       1.03       0.92       1.04       0.99
+  CB   La Liga               0.97       0.95       0.87       1.08       0.98       0.99
+  FB   Premier League        0.96       0.82       0.96       1.04       0.98       1.01
+  FB   Ligue 1               1.04       1.16       1.17       0.93       1.03       0.99
+  FB   Bundesliga            1.04       0.94       0.94       1.10       0.99       0.97
+  FB   Serie A               1.05       1.00       0.90       0.97       1.03       0.99
+  FB   La Liga               0.95       1.09       1.03       0.98       0.98       1.02
+  DM   Premier League        0.98       0.86       0.89       1.11       1.00       0.97
+  DM   Ligue 1               1.12       1.24       1.14       0.97       0.98       1.01
+  DM   Bundesliga            0.92       0.99       1.12       0.95       1.00       1.02
+  DM   Serie A               1.08       0.80       0.81       1.04       1.01       0.98
+  DM   La Liga               0.92       1.02       0.94       0.97       1.01       1.01
+  CM   Premier League        0.94       0.86       0.84       1.02       1.01       1.00
+  CM   Ligue 1               1.09       1.13       1.12       0.97       1.00       0.99
+  CM   Bundesliga            1.02       1.02       1.12       1.03       0.98       1.01
+  CM   Serie A               0.98       0.98       1.06       0.94       1.02       1.00
+  CM   La Liga               0.96       1.02       0.86       1.07       0.99       1.00
+  AM   Premier League        0.93       0.85       0.98       0.99       1.01       1.02
+  AM   Ligue 1               1.08       1.08       1.09       1.03       1.00       0.97
+  AM   Bundesliga            1.04       1.15       0.96       0.92       0.99       1.00
+  AM   Serie A               1.02       1.15       1.16       1.08       0.98       0.97
+  AM   La Liga               1.01       0.99       0.91       1.01       0.99       1.01
+  W    Premier League        0.94       0.97       1.06       0.80       0.96       1.08
+  W    Ligue 1               1.08       1.16       1.09       1.02       0.99       0.97
+  W    Bundesliga            0.92       1.00       1.01       1.02       1.08       0.95
+  W    Serie A               1.08       0.86       0.91       1.06       0.97       1.01
+  W    La Liga               0.94       1.12       1.06       0.99       1.01       0.98
+  ST   Premier League        0.94       0.93       0.98       0.96       1.01       1.02
+  ST   Ligue 1               1.08       1.07       1.04       0.97       0.98       0.99
+  ST   Bundesliga            0.99       0.99       0.91       1.01       1.03       0.99
+  ST   Serie A               1.02       0.97       1.03       1.06       0.98       1.00
+  ST   La Liga               0.97       1.04       1.04       1.00       1.00       1.00

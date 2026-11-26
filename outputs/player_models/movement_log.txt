@@ -1,0 +1,49 @@
+  J03WMX: 3545 Key State steps
+  J03WN1: 3011 Key State steps
+  J03WOH: 3279 Key State steps
+  J03WOY: 3436 Key State steps
+  J03WPY: 3533 Key State steps
+  J03WQQ: 3576 Key State steps
+  J03WR9: 3437 Key State steps
+434530 player steps, 7 matches; 13 players with 3+ matches
+  fold J03WMX
+  fold J03WN1
+  fold J03WOH
+  fold J03WOY
+  fold J03WPY
+  fold J03WQQ
+  fold J03WR9
+
+Held-out movement error per player step (m), pooled:
+  err_gnn     0.918
+  err_role    0.919
+  err_player  0.920
+               name  matches  steps  err_gnn_m  err_role_m  err_player_m  gain_pct  matches_better             verdict
+     F. Kastenmeier        5  14456      0.570       0.570         0.568     0.367               3 no clear difference
+     Jorrit Hendrix        4   9261      0.993       0.991         0.992    -0.054               2 no clear difference
+       M. Karbownik        4  11763      0.974       0.971         0.972    -0.062               1 no clear difference
+Matthias Zimmermann        5  14456      0.944       0.940         0.941    -0.075               2 no clear difference
+           F. Klaus        5   8703      1.018       1.017         1.017    -0.078               2 no clear difference
+           E. Iyoha        5   8386      1.035       1.043         1.043    -0.083               1   role model better
+     Dawid Kownacki        5  12943      0.889       0.889         0.890    -0.129               1   role model better
+        R. Hennings        4   6844      0.942       0.938         0.939    -0.133               0   role model better
+   Shinta Appelkamp        5   7982      1.055       1.053         1.055    -0.159               2   role model better
+        M. Sobottka        4  11398      0.952       0.954         0.956    -0.163               1   role model better
+          C. Klarer        5  12420      0.858       0.863         0.865    -0.212               2 no clear difference
+       Tim Oberdorf        4  11763      0.982       0.977         0.981    -0.437               0   role model better
+Kristoffer Peterson        5  10004      0.942       0.957         0.963    -0.637               0   role model better
+
+Movement style (beyond GNN and role, m per Key State step; + forward, + wide):
+  R. Hennings            with ball: fwd -0.01 wide -0.00  without ball: fwd +0.00 wide -0.00
+  F. Klaus               with ball: fwd -0.01 wide +0.03  without ball: fwd -0.01 wide +0.04
+  Matthias Zimmermann    with ball: fwd +0.01 wide +0.03  without ball: fwd +0.01 wide +0.03
+  M. Sobottka            with ball: fwd +0.00 wide -0.00  without ball: fwd +0.03 wide +0.00
+  E. Iyoha               with ball: fwd -0.00 wide +0.02  without ball: fwd -0.01 wide +0.01
+  F. Kastenmeier         with ball: fwd +0.04 wide -0.00  without ball: fwd +0.04 wide +0.00
+  Dawid Kownacki         with ball: fwd -0.00 wide -0.00  without ball: fwd +0.01 wide -0.00
+  Shinta Appelkamp       with ball: fwd +0.01 wide -0.00  without ball: fwd +0.01 wide -0.00
+  Kristoffer Peterson    with ball: fwd +0.01 wide +0.01  without ball: fwd +0.01 wide +0.01
+  C. Klarer              with ball: fwd -0.00 wide +0.01  without ball: fwd -0.01 wide +0.00
+  Tim Oberdorf           with ball: fwd -0.00 wide +0.00  without ball: fwd +0.00 wide +0.00
+  Jorrit Hendrix         with ball: fwd -0.06 wide -0.03  without ball: fwd -0.02 wide -0.03
+  M. Karbownik           with ball: fwd +0.01 wide -0.01  without ball: fwd +0.01 wide -0.01

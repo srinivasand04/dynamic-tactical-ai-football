@@ -1,0 +1,25 @@
+  StatsBomb 20/200: 43736 actions
+  StatsBomb 40/200: 87797 actions
+  StatsBomb 60/200: 129221 actions
+  StatsBomb 80/200: 169809 actions
+  StatsBomb 100/200: 208478 actions
+  StatsBomb 120/200: 248854 actions
+  StatsBomb 140/200: 289915 actions
+  StatsBomb 160/200: 329358 actions
+  StatsBomb 180/200: 369901 actions
+  StatsBomb 200/200: 410343 actions
+  Wyscout Premier League: 339519 passes / shots / carries (15s)
+  Wyscout World Cup 2018: 58388 passes / shots / carries (3s)
+  Wyscout Euro 2016: 45022 passes / shots / carries (2s)
+StatsBomb: 410343 on-ball actions, 200 matches; Granit Xhaka: 7934 actions in 46 matches, 6709 with a 360 frame
+  Euro 2020           4 matches   560 actions
+  Euro 2024           5 matches   743 actions
+  Leverkusen 23/24   33 matches  6189 actions
+  World Cup 2022      4 matches   442 actions
+Wyscout: 442929 passes / shots / carries; Granit Xhaka: 3769 in 46 matches
+  Euro 2016           4 matches   397 actions
+  Premier League     38 matches  3034 actions
+  World Cup 2018      4 matches   338 actions
+PFF World Cup 2022: 7897 visible tracking steps of Granit Xhaka in 4 matches
+(256s)
+[data done in 257s]

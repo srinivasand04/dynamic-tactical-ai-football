@@ -1,0 +1,18 @@
+M7. What-if counter plan on Granit Xhaka's 4320 real on-ball situations (StatsBomb 360)
+  value of a choice that comes off (xT, shots = xG), own / middle / final third:
+    shot         0.0000  0.0098  0.0478
+    dribble      0.0014  0.0014  0.0013
+    carry        0.0014  0.0014  0.0013
+    long pass    0.0023  0.0047  0.0075
+    forward pass 0.0015  0.0028  0.0094
+    safe pass    -0.0009  -0.0012  -0.0015
+  per 100 of his on-ball actions (xT): threat he creates, our counter value from balls we win, net = threat - counter
+    as played                            risk 10.4%  threat 0.148  counter 0.142  net +0.006 (his threat -19% vs letting him play)  mix 1 1 17 6 30 46
+    let him play: nobody within 8 m      risk 11.5%  threat 0.183  counter 0.153  net +0.030 (his threat +0% vs letting him play)  mix 1 0 41 5 25 28
+    press from the front                 risk 11.3%  threat 0.098  counter 0.154  net -0.056 (his threat -46% vs letting him play)  mix 0 2 19 4 25 49
+    press from his left                  risk 12.9%  threat 0.096  counter 0.177  net -0.081 (his threat -48% vs letting him play)  mix 0 2 19 4 25 49
+    press from his right                 risk 13.0%  threat 0.096  counter 0.177  net -0.082 (his threat -48% vs letting him play)  mix 0 2 19 4 25 49
+    press from behind (on the receive)   risk 21.1%  threat 0.086  counter 0.291  net -0.205 (his threat -53% vs letting him play)  mix 0 2 19 4 25 49
+    double him: 2 within 5 m             risk 13.7%  threat 0.084  counter 0.188  net -0.104 (his threat -54% vs letting him play)  mix 0 2 12 4 27 55
+    screen + press: 2 more goal-side     risk  9.2%  threat 0.089  counter 0.122  net -0.034 (his threat -52% vs letting him play)  mix 1 1 18 4 23 53
+  -> best plan: press from behind (on the receive) (net -0.205 per 100 actions, his threat -53% vs letting him play)

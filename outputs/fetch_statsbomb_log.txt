@@ -1,0 +1,10 @@
+Euro 2020: 51 matches
+World Cup 2022: 64 matches
+Euro 2024: 51 matches
+  50/332 files
+  100/332 files
+  150/332 files
+  200/332 files
+  250/332 files
+  300/332 files
+statsbomb: 332 files, 1.76 GB in D:\grf-prototype\data\external\statsbomb_360_tournaments

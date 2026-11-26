@@ -105,3 +105,142 @@ button[disabled] { opacity: 0.45; cursor: default; }
 .dbadge.own { background: #3CC985; color: #06160d; }
 #demo .dnav { display: flex; justify-content: space-between; margin-top: 10px; }
 #demo .dnav button { padding: 6px 14px; }
+
+/* Player of the match (pom.js) */
+#pomBtn { background: #ffc83d; color: #1a1406; font-weight: 600; }
+#pom { position: fixed; right: 16px; top: 70px; width: 420px; max-width: calc(100vw - 32px); max-height: calc(100vh - 190px); overflow: auto;
+  background: rgba(12, 22, 18, 0.95); border: 1px solid #2C4538; border-radius: 14px; padding: 12px 14px; color: #F4F6F1; z-index: 31;
+  box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+#pom.hidden, #pomNote.hidden { display: none; }
+#pom .dhead { display: flex; justify-content: space-between; color: #ffc83d; font-weight: 700; font-size: 15px; }
+#pom .dhead button { background: none; border: none; color: #8FA89B; font-size: 20px; cursor: pointer; }
+.pomsub { color: #8FA89B; font-size: 13px; margin: 2px 0 8px; }
+.pomt { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.pomt th, .pomt td { padding: 5px 4px; border-bottom: 1px solid #2C4538; text-align: right; }
+.pomt th:nth-child(2), .pomt td:nth-child(2) { text-align: left; }
+.pomt tr[data-i] { cursor: pointer; }
+.pomt tr[data-i]:hover { background: rgba(255, 200, 61, 0.08); }
+.pomt tr.on { background: rgba(255, 200, 61, 0.18); }
+.pteam { display: block; font-size: 11px; color: #8FA89B; }
+.pteam.home::before { content: '\25CF '; color: #e0473c; } .pteam.away::before { content: '\25CF '; color: #3a7bd5; }
+.ast { font-size: 11px; background: #3CC985; color: #06160d; border-radius: 4px; padding: 0 4px; margin-left: 2px; }
+.pomm { margin-top: 10px; font-size: 13px; display: flex; flex-direction: column; gap: 5px; }
+.pomm button { text-align: left; padding: 6px 10px; font-size: 13px; }
+.pomm button.on { border-color: #ffc83d; }
+.pomm button span { float: right; color: #9BE3BD; }
+#pom .hint { margin-top: 10px; font-size: 12px; line-height: 1.5; }
+#pomNote { position: fixed; left: 50%; top: 70px; transform: translateX(-50%); background: rgba(12, 22, 18, 0.92); border: 1px solid #ffc83d;
+  color: #F4F6F1; border-radius: 8px; padding: 6px 14px; font-size: 14px; z-index: 29; pointer-events: none; max-width: 60vw; }
+
+/* focus player in the compare views (app.js updateFocus) */
+#focusBox { font-size: 13px; }
+#focusBox button { padding: 2px 8px; font-size: 12px; margin-left: 6px; }
+#focusBox .hint { margin: 4px 0; }
+#focusNote { position: fixed; left: 50%; bottom: 104px; transform: translateX(-50%); background: rgba(12, 22, 18, 0.92); border: 1px solid #ffc83d;
+  color: #F4F6F1; border-radius: 8px; padding: 6px 14px; font-size: 14px; z-index: 28; pointer-events: none; white-space: nowrap; max-width: 92vw;
+  overflow: hidden; text-overflow: ellipsis; }
+#focusNote.hidden { display: none; }
+#focusNote .fr { color: #ffffff; } #focusNote .fs { color: #ffc83d; }
+
+/* Player report card (profile.js) */
+#profBtn { background: #3CC985; color: #06160d; font-weight: 600; }
+#prof { position: fixed; right: 16px; top: 70px; width: 440px; max-width: calc(100vw - 32px); max-height: calc(100vh - 100px); overflow: auto;
+  background: rgba(12, 22, 18, 0.96); border: 1px solid #2C4538; border-radius: 14px; padding: 12px 14px; color: #F4F6F1; z-index: 32;
+  box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+#prof.hidden { display: none; }
+#prof .dhead { display: flex; justify-content: space-between; align-items: baseline; color: #3CC985; font-weight: 700; font-size: 15px; }
+#prof .dhead .hint { font-weight: 400; font-size: 11px; }
+#prof .dhead button { background: none; border: none; color: #8FA89B; font-size: 20px; cursor: pointer; }
+#prof .hint { color: #8FA89B; font-size: 12px; line-height: 1.5; }
+#profPick { width: 100%; margin: 8px 0 2px; }
+.pfradar { width: 100%; max-width: 400px; display: block; margin: 0 auto; }
+.rgrid { fill: none; stroke: #2C4538; stroke-width: 1; }
+.rmed { stroke: #8FA89B; stroke-dasharray: 3 3; }
+.rshape { fill: rgba(60, 201, 133, 0.28); stroke: #3CC985; stroke-width: 2; }
+.rlab { fill: #C9D6CE; font-size: 11px; } .rval { fill: #F4F6F1; font-weight: 700; }
+.pfcap { text-align: center; margin: -2px 0 6px; }
+.pfh { font-size: 13px; margin: 12px 0 4px; color: #C9D6CE; display: flex; justify-content: space-between; align-items: center; }
+.pfh.good { color: #3CC985; } .pfh.bad { color: #ff8a7a; }
+.pfrow { padding: 5px 0; border-bottom: 1px solid #22372D; font-size: 13px; }
+.pfrow.unrel { opacity: .45; }
+.pfnums { font-variant-numeric: tabular-nums; display: flex; gap: 6px; align-items: baseline; }
+.pfnums .hint { flex: 1; font-size: 11px; }
+.pfpct { font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 5px; background: #2C4538; }
+.pfpct.strength { background: #3CC985; color: #06160d; } .pfpct.weakness { background: #ff8a7a; color: #2a0c08; }
+.pfbar { width: 100%; height: 12px; display: block; margin-top: 3px; }
+.bbase { stroke: #2C4538; stroke-width: 1; }
+.bint { fill: #8FA89B; opacity: .55; } .bint.strength { fill: #3CC985; } .bint.weakness { fill: #ff8a7a; }
+.bmed { stroke: #F4F6F1; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.bval { fill: #F4F6F1; }
+.pflegend { font-size: 11px; color: #8FA89B; margin-top: 6px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.lg { display: inline-block; width: 14px; height: 8px; }
+.lg.int { background: #3CC985; border-radius: 2px; } .lg.med { width: 2px; height: 12px; background: #F4F6F1; }
+.lg.val { width: 7px; height: 7px; border-radius: 50%; background: #F4F6F1; }
+.pftabs button { font-size: 12px; padding: 2px 10px; margin-left: 4px; }
+.pftabs button.on { border-color: #3CC985; color: #3CC985; }
+.pfpitch { width: 100%; display: block; margin: 4px 0; }
+.ppitch { fill: #1d4a33; } .pline { fill: none; stroke: rgba(255,255,255,.45); stroke-width: .35; }
+.pm line { stroke-width: .8; } .pm circle { stroke: #06160d; stroke-width: .3; } .pm text { font-size: 2.6px; font-weight: 700; fill: #06160d; pointer-events: none; }
+.pm.best line { stroke: #ffc83d; } .pm.best circle { fill: #ffc83d; }
+.pm.worst line { stroke: #ff8a7a; } .pm.worst circle { fill: #ff8a7a; }
+.pmarr.best { fill: #ffc83d; } .pmarr.worst { fill: #ff8a7a; }
+.pm { cursor: pointer; opacity: .9; } .pm.on line { stroke-width: 1.5; } .pm.on { opacity: 1; }
+.pfpitch:has(.pm.on) .pm:not(.on) { opacity: .25; }
+.pfms { display: flex; flex-direction: column; gap: 2px; font-size: 13px; }
+.pfm { padding: 4px 6px; border-radius: 6px; cursor: pointer; position: relative; }
+.pfm:hover { background: rgba(60, 201, 133, .08); } .pfm.on { background: rgba(60, 201, 133, .18); }
+.pfn { display: inline-block; width: 16px; height: 16px; border-radius: 50%; background: #ffc83d; color: #06160d; font-size: 11px;
+  font-weight: 700; text-align: center; line-height: 16px; margin-right: 4px; }
+.pfadd { position: absolute; right: 8px; top: 6px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pfadd.good { color: #3CC985; } .pfadd.bad { color: #ff8a7a; }
+.pftest { font-size: 12px; padding: 5px 8px; border-radius: 6px; background: rgba(143,168,155,.12); margin: 4px 0 6px; line-height: 1.5; }
+.pftest.good { background: rgba(60,201,133,.14); } .pftest.good b { color: #3CC985; }
+.pftest.bad b { color: #ff8a7a; }
+.pfct { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pfct td, .pfct th { padding: 3px 4px; border-bottom: 1px solid #22372D; text-align: right; }
+.pfct td:first-child, .pfct th:first-child { text-align: left; white-space: nowrap; }
+.pfct td:nth-child(2) { width: 38%; }
+.pfct td.up { color: #3CC985; font-weight: 700; } .pfct td.down { color: #ff8a7a; font-weight: 700; }
+.cbar { position: relative; height: 12px; }
+.cbar .cr { position: absolute; left: 0; top: 0; height: 12px; background: #3a5a4a; border-radius: 2px; }
+.cbar .cp { position: absolute; left: 0; top: 3px; height: 6px; background: #3CC985; border-radius: 2px; }
+.lg.cp { background: #3CC985; height: 6px; } .lg.cr { background: #3a5a4a; }
+.pfcls { font-size: 12px; color: #8FA89B; margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.pfcls button { font-size: 11px; padding: 2px 7px; }
+.pfcls button.on { border-color: #3CC985; color: #3CC985; }
+.ztxt { font-size: 4px; font-weight: 700; fill: #F4F6F1; } .ztxt2 { font-size: 2.8px; fill: #C9D6CE; }
+.pfmv { width: 100%; display: block; background: #1d4a33; border-radius: 8px; margin: 4px 0; }
+.mvdot { fill: #F4F6F1; } .mvarr { stroke-width: 3; } .mvarr.own { stroke: #ffc83d; } .mvarr.opp { stroke: #7fb8ff; }
+.hint2 { fill: #C9D6CE; font-size: 11px; }
+
+/* player card: 3 more datasets (player_models_big.json) */
+#prof .pfsub { margin: 8px 0 3px; font-size: 12px; opacity: .85; }
+#prof .dbar { position: relative; height: 8px; width: 90px; background: rgba(255,255,255,.06); border-radius: 2px; }
+#prof .dbar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: rgba(255,255,255,.35); }
+#prof .dbar span { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+#prof .dpos { background: #3CC985; }
+#prof .dneg { background: #FF8A7A; }
+#prof tr.unrel { opacity: .45; }
+#prof .pfcurve { width: 100%; display: block; margin: 2px 0; }
+#prof .cline { fill: none; stroke-width: 2; }
+#prof .cband { stroke: none; opacity: .18; }
+#prof .cline.wy, #prof .cdot.wy { stroke: #7FB8FF; fill: #7FB8FF; }
+#prof .cband.wy { fill: #7FB8FF; }
+#prof .cline.lv, #prof .cdot.lv { stroke: #F2C14E; fill: #F2C14E; }
+#prof .cband.lv { fill: #F2C14E; }
+#prof .cline.wy, #prof .cline.lv { fill: none; }
+#prof .lg.wy { background: #7FB8FF; }
+#prof .lg.lv { background: #F2C14E; }
+#prof .gnrow { display: grid; grid-template-columns: 150px 1fr 56px; gap: 8px; align-items: center; font-size: 12px; margin: 3px 0; }
+
+/* player card: target player, 7 opponent models (target_player.json) */
+#prof .tprec { margin: 4px 0 8px 18px; padding: 0; font-size: 12px; line-height: 1.45; }
+#prof .tprec li { margin: 3px 0; }
+#prof .tpitch { width: 100%; display: block; margin: 4px 0; background: rgba(60,201,133,.06); }
+#prof .tpl { fill: none; stroke: rgba(255,255,255,.3); stroke-width: 1; }
+#prof .tpz { fill: #F2C14E; }
+#prof .tpzt { fill: #fff; font-size: 9px; }
+#prof .tparr { stroke: #7FB8FF; fill: none; opacity: .85; }
+#prof .tpah { fill: #7FB8FF; }
+#prof tr.tpbest td { background: rgba(242,193,78,.14); }
+#prof .tpbestt { color: #F2C14E; font-weight: 600; }

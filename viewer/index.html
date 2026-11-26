@@ -19,6 +19,8 @@
   <select id="file" title="Match or stretch (viewer/data/index.json)"></select>
   <button id="togglePanel" title="Show / hide the side panel (H)">Panel</button>
   <button id="demoBtn" title="Guided demo: one real case, every model at work">&#9733; Demo</button>
+  <button id="pomBtn" title="Player of the match (own_PlayerOfMatch): on-ball and off-ball value">&#127942; Player of match</button>
+  <button id="profBtn" title="Player report card (own_PlayerProfile): strengths and weaknesses over a season">&#128203; Player profile</button>
   <select id="viewMode" title="How to compare the real match with a what-if run (V cycles)">
     <option value="split">Split: real | what-if</option>
     <option value="sim">What-if only</option>
@@ -42,6 +44,12 @@
   <label><input type="checkbox" id="optNumbers" checked> Shirt numbers</label>
   <label><input type="checkbox" id="optNames"> Player names</label>
   <label><input type="checkbox" id="optTrail" checked> Ball trail (3 s)</label>
+  <h2>Focus player <span class="hint">(compare views)</span></h2>
+  <div id="focusBox">
+    <div>Showing: <b id="focusName">–</b> <button id="focusAuto" title="Back to the automatic focus player">Auto</button></div>
+    <p class="hint">Only this player gets a ghost: white = his real run, gold dashed = his what-if run. Click any player on the pitch to follow him instead.</p>
+    <label><input type="checkbox" id="focusAll"> Show all players (every ghost + lines)</label>
+  </div>
   <h2>Layers <span class="hint">(ghosts, same stretch)</span></h2>
   <div id="layers"><p class="hint">This file has no layers.</p></div>
   <h2>Coach board <span class="hint">(drag players, then Play)</span></h2>
@@ -94,8 +102,20 @@
   <div class="dlegend"><span class="dbadge open">open model</span><span class="dbadge own">own_ model</span></div>
   <div class="dnav"><button id="demoPrev">&larr; Back</button><button id="demoNext">Next &rarr;</button></div>
 </div>
+<div id="pom" class="hidden">
+  <div class="dhead"><span>&#127942; Player of the match</span><button id="pomClose" title="Close">&times;</button></div>
+  <div id="pomBody"></div>
+</div>
+<div id="pomNote" class="hidden"></div>
+<div id="prof" class="hidden">
+  <div class="dhead"><span>&#128203; Player profile <span class="hint">own_PlayerProfile · Leverkusen 2023/24</span></span><button id="profClose" title="Close">&times;</button></div>
+  <div id="profBody"></div>
+</div>
+<div id="focusNote" class="hidden"></div>
 <div id="msg">Loading&hellip;</div>
 <script type="module" src="app.js"></script>
 <script type="module" src="demo.js"></script>
+<script type="module" src="pom.js"></script>
+<script type="module" src="profile.js"></script>
 </body>
 </html>

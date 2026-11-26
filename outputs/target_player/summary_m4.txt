@@ -1,0 +1,8 @@
+M4. Granit Xhaka: passes by the side of the nearest opponent (within 5 m) in the 360 frame; 3511 passes, population 44372 passes of DM / CM
+  none    n=  477 completion  92.2% (typ  92.6%)  forward 65.2%  xT/pass  3.01e-3  left foot  90%
+  front   n= 1680 completion  93.0% (typ  88.0%)  forward 37.7%  xT/pass  0.47e-3  left foot  84%  vs typical: completion +5.4 pts (90%: +3.3 .. +7.7), forward -9.8 pts, xT/pass -1.17 e-3
+  left    n=  526 completion  90.1% (typ  81.9%)  forward 39.5%  xT/pass  0.75e-3  left foot  82%  vs typical: completion +8.6 pts (90%: +6.5 .. +10.8), forward -15.8 pts, xT/pass -1.41 e-3
+  right   n=  550 completion  90.9% (typ  84.0%)  forward 42.2%  xT/pass  0.76e-3  left foot  80%  vs typical: completion +7.3 pts (90%: +4.0 .. +10.7), forward -10.2 pts, xT/pass -1.49 e-3
+  behind  n=  278 completion  87.1% (typ  79.4%)  forward 29.9%  xT/pass  0.39e-3  left foot  74%  vs typical: completion +8.0 pts (90%: +3.7 .. +11.6), forward -23.8 pts, xT/pass -1.55 e-3
+  -> pressing side that costs him most threat beyond a typical DM / CM: behind
+  StatsBomb 'under pressure' flag: completion 88.0% pressed vs 92.4% not (689 pressed passes, 17%)

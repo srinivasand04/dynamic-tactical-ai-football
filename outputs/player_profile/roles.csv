@@ -1,0 +1,1050 @@
+match,player_id,player,team,position,role,minutes
+3895052,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.8
+3895052,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,95.8
+3895052,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.8
+3895052,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.8
+3895052,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,77.4
+3895052,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.8
+3895052,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,95.8
+3895052,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,95.8
+3895052,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,88.3
+3895052,40724,Florian Wirtz,Bayer Leverkusen,Left Wing,W,74.6
+3895052,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,88.5
+3895052,15155,Janis Blaswich,RB Leipzig,Goalkeeper,GK,95.8
+3895052,8211,Benjamin Henrichs,RB Leipzig,Right Back,FB,95.8
+3895052,30360,Mohamed Simakan,RB Leipzig,Right Center Back,CB,95.8
+3895052,8509,Willi Orban,RB Leipzig,Left Center Back,CB,95.8
+3895052,12034,David Raum,RB Leipzig,Left Back,FB,95.8
+3895052,39460,Nicolas Seiwald,RB Leipzig,Right Defensive Midfield,DM,61.5
+3895052,8769,Xaver Schlager,RB Leipzig,Left Defensive Midfield,DM,83.0
+3895052,39167,Xavi Simons,RB Leipzig,Right Midfield,W,61.5
+3895052,5557,Timo Werner,RB Leipzig,Left Midfield,W,61.8
+3895052,16275,Ikoma Loïs Openda,RB Leipzig,Right Center Forward,ST,74.7
+3895052,16532,Daniel Olmo Carvajal,RB Leipzig,Left Center Forward,ST,95.8
+3895052,8222,Kevin Kampl,RB Leipzig,Right Defensive Midfield,DM,34.3
+3895052,40185,Junior Castello Lukeba,RB Leipzig,Left Center Back,CB,34.3
+3895052,5536,Yussuf Yurary Poulsen,RB Leipzig,Center Forward,ST,34.1
+3895052,9195,Robert Andrich,Bayer Leverkusen,Center Defensive Midfield,DM,21.2
+3895052,5625,Emil Peter Forsberg,RB Leipzig,Right Attacking Midfield,AM,21.1
+3895052,196651,Arthur Augusto de Matos Soares,Bayer Leverkusen,Right Wing Back,FB,18.4
+3895052,74659,Fabio Carvalho,RB Leipzig,Left Defensive Midfield,DM,12.8
+3895052,28239,Adam Hložek,Bayer Leverkusen,Right Center Forward,ST,7.5
+3895052,8403,Nadiem Amiri,Bayer Leverkusen,Left Center Forward,ST,7.3
+3895060,29003,Jonas Omlin,Borussia Mönchengladbach,Goalkeeper,GK,93.3
+3895060,9174,Marvin Friedrich,Borussia Mönchengladbach,Right Center Back,CB,93.3
+3895060,29595,Ko Itakura,Borussia Mönchengladbach,Center Back,CB,87.5
+3895060,8068,Maximilian Wöber,Borussia Mönchengladbach,Left Center Back,CB,93.3
+3895060,7198,Franck Honorat,Borussia Mönchengladbach,Right Wing Back,FB,78.9
+3895060,36830,Joseph Scally,Borussia Mönchengladbach,Left Wing Back,FB,93.3
+3895060,8816,Julian Weigl,Borussia Mönchengladbach,Right Defensive Midfield,DM,93.3
+3895060,12323,Florian Neuhaus,Borussia Mönchengladbach,Left Defensive Midfield,DM,66.5
+3895060,25039,Nathan Ngoumou Minpole,Borussia Mönchengladbach,Left Wing,W,66.7
+3895060,3230,Alassane Pléa,Borussia Mönchengladbach,Center Attacking Midfield,AM,93.3
+3895060,45567,Tomáš Čvančara,Borussia Mönchengladbach,Center Forward,ST,78.8
+3895060,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,93.3
+3895060,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,80.9
+3895060,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,93.3
+3895060,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,93.3
+3895060,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,69.0
+3895060,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,93.3
+3895060,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,69.1
+3895060,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,93.3
+3895060,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,80.9
+3895060,40724,Florian Wirtz,Bayer Leverkusen,Left Wing,W,93.3
+3895060,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,88.0
+3895060,48396,Rocco Reitz,Borussia Mönchengladbach,Left Defensive Midfield,DM,26.8
+3895060,11399,Robin Hack,Borussia Mönchengladbach,Right Wing,W,26.6
+3895060,196651,Arthur Augusto de Matos Soares,Bayer Leverkusen,Right Wing Back,FB,24.4
+3895060,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,24.2
+3895060,343893,Grant-Leon Ranos,Borussia Mönchengladbach,Center Attacking Midfield,AM,14.5
+3895060,135777,Yvandro Borges Sanches,Borussia Mönchengladbach,Left Wing,W,14.4
+3895060,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,12.4
+3895060,28239,Adam Hložek,Bayer Leverkusen,Right Wing,W,12.4
+3895060,369243,Lukas Ullrich,Borussia Mönchengladbach,Left Back,FB,5.9
+3895060,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Center Attacking Midfield,AM,5.3
+3895067,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.0
+3895067,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,94.0
+3895067,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,71.0
+3895067,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.0
+3895067,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,71.0
+3895067,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.0
+3895067,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,65.9
+3895067,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,79.7
+3895067,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,94.0
+3895067,40724,Florian Wirtz,Bayer Leverkusen,Left Wing,W,79.4
+3895067,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,94.0
+3895067,8919,Marcel Schuhen,Darmstadt 98,Goalkeeper,GK,94.0
+3895067,35578,Christoph Klarer,Darmstadt 98,Right Center Back,CB,94.0
+3895067,11814,Christoph Zimmermann,Darmstadt 98,Center Back,CB,68.3
+3895067,15869,Thomas Poppler Isherwood,Darmstadt 98,Left Center Back,CB,58.2
+3895067,15797,Matthias Bader,Darmstadt 98,Right Wing Back,FB,94.0
+3895067,30742,Fabian Nürnberger,Darmstadt 98,Left Wing Back,FB,25.3
+3895067,39160,Bartol Franjić,Darmstadt 98,Center Defensive Midfield,DM,94.0
+3895067,9225,Marvin Mehlem,Darmstadt 98,Right Center Midfield,CM,68.3
+3895067,9222,Fabian Holland,Darmstadt 98,Left Center Midfield,CM,94.0
+3895067,48655,Luca Pfeiffer,Darmstadt 98,Right Center Forward,ST,94.0
+3895067,42543,Oscar Vilhelmsson,Darmstadt 98,Left Center Forward,ST,58.2
+3895067,8606,Emir Karic,Darmstadt 98,Left Back,FB,68.7
+3895067,34612,Filip Stojilković,Darmstadt 98,Right Center Forward,ST,35.9
+3895067,9209,Tim Skarke,Darmstadt 98,Right Midfield,W,35.9
+3895067,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,28.2
+3895067,153361,Matej Maglica,Darmstadt 98,Left Center Back,CB,25.7
+3895067,9219,Tobias Kempe,Darmstadt 98,Left Defensive Midfield,DM,25.7
+3895067,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,23.1
+3895067,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,23.0
+3895067,114833,Noah Mbamba,Bayer Leverkusen,Right Defensive Midfield,DM,14.6
+3895067,28239,Adam Hložek,Bayer Leverkusen,Left Wing,W,14.3
+3895074,8208,Sven Ulreich,Bayern Munich,Goalkeeper,GK,98.4
+3895074,8506,Konrad Laimer,Bayern Munich,Right Back,FB,84.8
+3895074,8519,Dayotchanculle Upamecano,Bayern Munich,Right Center Back,CB,98.4
+3895074,43565,Min Jae Kim,Bayern Munich,Left Center Back,CB,98.4
+3895074,12365,Alphonso Davies,Bayern Munich,Left Back,FB,98.4
+3895074,5579,Joshua Kimmich,Bayern Munich,Right Defensive Midfield,DM,60.2
+3895074,6324,Leon Goretzka,Bayern Munich,Left Defensive Midfield,DM,98.4
+3895074,3053,Leroy Sané,Bayern Munich,Right Wing,W,98.4
+3895074,5562,Thomas Müller,Bayern Munich,Center Attacking Midfield,AM,60.0
+3895074,8400,Serge Gnabry,Bayern Munich,Left Wing,W,69.3
+3895074,10955,Harry Kane,Bayern Munich,Center Forward,ST,84.8
+3895074,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,98.4
+3895074,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,98.4
+3895074,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,98.4
+3895074,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,89.3
+3895074,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,81.1
+3895074,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Back,FB,98.4
+3895074,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,45.0
+3895074,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,98.4
+3895074,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,94.8
+3895074,40724,Florian Wirtz,Bayer Leverkusen,Center Attacking Midfield,AM,95.1
+3895074,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,98.4
+3895074,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,53.4
+3895074,39565,Jamal Musiala,Bayern Munich,Center Attacking Midfield,AM,38.4
+3895074,15890,Noussair Mazraoui,Bayern Munich,Right Back,FB,38.2
+3895074,44737,Mathys Tel,Bayern Munich,Left Wing,W,29.1
+3895074,33401,Amine Adli,Bayer Leverkusen,Right Midfield,W,17.3
+3895074,3499,Jean-Eric Maxim Choupo-Moting,Bayern Munich,Center Forward,ST,13.6
+3895074,8069,Matthijs de Ligt,Bayern Munich,Center Back,CB,13.6
+3895074,28239,Adam Hložek,Bayer Leverkusen,Right Center Forward,ST,9.1
+3895074,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,3.6
+3895074,8403,Nadiem Amiri,Bayer Leverkusen,Left Midfield,W,3.3
+3895086,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,96.0
+3895086,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,96.0
+3895086,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,96.0
+3895086,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,96.0
+3895086,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,78.3
+3895086,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,83.9
+3895086,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,70.3
+3895086,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,96.0
+3895086,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,96.0
+3895086,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,70.2
+3895086,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,84.0
+3895086,9205,Kevin Müller,FC Heidenheim,Goalkeeper,GK,96.0
+3895086,48959,Omar Haktab Traorè,FC Heidenheim,Right Back,FB,96.0
+3895086,10303,Patrick Mainka,FC Heidenheim,Right Center Back,CB,96.0
+3895086,46430,Tim Siersleben,FC Heidenheim,Left Center Back,CB,96.0
+3895086,9109,Jonas Föhrenbach,FC Heidenheim,Left Back,FB,96.0
+3895086,133483,Lennard Maloney,FC Heidenheim,Right Defensive Midfield,DM,96.0
+3895086,9203,Norman Theuerkauf,FC Heidenheim,Left Defensive Midfield,DM,69.0
+3895086,67007,Eren Sami Dinkçi,FC Heidenheim,Right Wing,W,81.2
+3895086,9201,Nikola Dovedan,FC Heidenheim,Center Attacking Midfield,AM,63.0
+3895086,31310,Jan-Niklas Beste,FC Heidenheim,Left Wing,W,81.0
+3895086,11382,Tim Kleindienst,FC Heidenheim,Center Forward,ST,81.0
+3895086,31744,Adrian Beck,FC Heidenheim,Center Attacking Midfield,AM,33.0
+3895086,48860,Florian Pick,FC Heidenheim,Right Defensive Midfield,DM,27.0
+3895086,33401,Amine Adli,Bayer Leverkusen,Left Wing,W,25.8
+3895086,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,25.7
+3895086,41411,Nathan Tella,Bayer Leverkusen,Right Wing,W,17.7
+3895086,74089,Marvin Pieringer,FC Heidenheim,Center Forward,ST,15.0
+3895086,15693,Denis Thomalla,FC Heidenheim,Left Wing,W,15.0
+3895086,24947,Kevin Sessa,FC Heidenheim,Right Wing,W,14.8
+3895086,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Back,FB,12.1
+3895086,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,12.0
+3895095,19405,Robin Zentner,FSV Mainz 05,Goalkeeper,GK,94.2
+3895095,15458,Sepp van den Berg,FSV Mainz 05,Right Center Back,CB,94.2
+3895095,8559,Stefan Bell,FSV Mainz 05,Center Back,CB,94.2
+3895095,3913,Edimilson Fernandes,FSV Mainz 05,Left Center Back,CB,94.2
+3895095,8676,Danny Vieira da Costa,FSV Mainz 05,Right Wing Back,FB,68.8
+3895095,10480,Anthony Caci,FSV Mainz 05,Left Wing Back,FB,94.2
+3895095,23402,Leandro Barreiro Martins,FSV Mainz 05,Right Defensive Midfield,DM,94.2
+3895095,8207,Dominik Kohr,FSV Mainz 05,Left Defensive Midfield,DM,69.0
+3895095,363583,Brajan Gruda,FSV Mainz 05,Right Wing,W,74.8
+3895095,5623,Jae-Sung Lee,FSV Mainz 05,Left Wing,W,68.7
+3895095,11278,Karim Onisiwo,FSV Mainz 05,Center Forward,ST,83.6
+3895095,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.2
+3895095,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,94.2
+3895095,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.2
+3895095,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.2
+3895095,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,85.6
+3895095,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.2
+3895095,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,94.2
+3895095,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,78.6
+3895095,40724,Florian Wirtz,Bayer Leverkusen,Right Attacking Midfield,AM,62.8
+3895095,8804,Jonas Hofmann,Bayer Leverkusen,Left Attacking Midfield,AM,85.7
+3895095,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,78.1
+3895095,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,31.4
+3895095,11818,Aymen Barkok,FSV Mainz 05,Right Wing Back,FB,25.5
+3895095,4381,Anwar El Ghazi,FSV Mainz 05,Left Attacking Midfield,AM,25.5
+3895095,38917,Tom Krauß,FSV Mainz 05,Left Defensive Midfield,DM,25.2
+3895095,7208,Ludovic Ajorque,FSV Mainz 05,Center Forward,ST,19.4
+3895095,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,16.1
+3895095,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,15.6
+3895095,11819,Marco Richter,FSV Mainz 05,Right Attacking Midfield,AM,10.6
+3895095,49337,Josip Stanišić,Bayer Leverkusen,Right Wing Back,FB,8.6
+3895095,8403,Nadiem Amiri,Bayer Leverkusen,Right Attacking Midfield,AM,8.5
+3895107,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,93.1
+3895107,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,93.1
+3895107,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,93.1
+3895107,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,70.6
+3895107,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,79.8
+3895107,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,93.1
+3895107,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,93.1
+3895107,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,93.1
+3895107,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,87.6
+3895107,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,70.8
+3895107,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,79.8
+3895107,7095,Marvin Schwäbe,FC Köln,Goalkeeper,GK,93.1
+3895107,29682,Rasmus Carstensen,FC Köln,Right Back,FB,90.8
+3895107,35637,Timo Hübers,FC Köln,Right Center Back,CB,93.1
+3895107,8352,Julian Chabot,FC Köln,Left Center Back,CB,93.1
+3895107,10016,Leart Paqarada,FC Köln,Left Back,FB,93.1
+3895107,38991,Eric Martel,FC Köln,Center Defensive Midfield,DM,74.4
+3895107,300704,Denis Huseinbašić,FC Köln,Right Center Midfield,CM,74.4
+3895107,8406,Florian Kainz,FC Köln,Left Center Midfield,CM,93.1
+3895107,8623,Dejan Ljubicic,FC Köln,Center Attacking Midfield,AM,93.1
+3895107,11279,Davie Selke,FC Köln,Right Center Forward,ST,91.0
+3895107,134880,Faride Alidou,FC Köln,Left Center Forward,ST,61.1
+3895107,405983,Max Finkgräfe,FC Köln,Left Wing,W,32.0
+3895107,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,22.5
+3895107,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,22.3
+3895107,55787,Mathias Flaga Olesen,FC Köln,Left Defensive Midfield,DM,18.7
+3895107,72768,Steffen Tigges,FC Köln,Center Attacking Midfield,AM,18.7
+3895107,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,13.3
+3895107,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,13.3
+3895107,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Right Attacking Midfield,AM,5.5
+3895107,32253,Luca Jannis Kilian,FC Köln,Right Back,FB,2.3
+3895107,382352,Damion Lamar Downs,FC Köln,Center Forward,ST,2.1
+3895113,13309,Pavao Pervan,Wolfsburg,Goalkeeper,GK,94.2
+3895113,20814,Sebastiaan Bornauw,Wolfsburg,Right Center Back,CB,77.6
+3895113,48500,Moritz Jenz,Wolfsburg,Center Back,CB,94.2
+3895113,22314,Maxence Lacroix,Wolfsburg,Left Center Back,CB,94.2
+3895113,12630,Ridle Bote Baku,Wolfsburg,Right Wing Back,FB,94.2
+3895113,16554,Joakim Mæhle,Wolfsburg,Left Wing Back,FB,94.2
+3895113,8235,Maximilian Arnold,Wolfsburg,Center Defensive Midfield,DM,94.2
+3895113,8231,Yannick Gerhardt,Wolfsburg,Right Center Midfield,CM,77.5
+3895113,15879,Mattias Svanberg,Wolfsburg,Left Center Midfield,CM,70.3
+3895113,21261,Jonas Older Wind,Wolfsburg,Right Center Forward,ST,94.2
+3895113,41783,Tiago Barreiros de Melo Tomás,Wolfsburg,Left Center Forward,ST,45.0
+3895113,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.2
+3895113,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,87.8
+3895113,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.2
+3895113,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.2
+3895113,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,87.6
+3895113,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.2
+3895113,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,94.2
+3895113,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,94.2
+3895113,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,87.3
+3895113,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,59.5
+3895113,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,94.2
+3895113,42754,Amin Sarr,Wolfsburg,Left Center Forward,ST,49.2
+3895113,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,34.7
+3895113,28914,Lovro Majer,Wolfsburg,Left Center Midfield,CM,23.9
+3895113,38009,Kevin Paredes,Wolfsburg,Right Center Midfield,CM,16.7
+3895113,31955,Jakub Kamiński,Wolfsburg,Right Wing,W,16.7
+3895113,8403,Nadiem Amiri,Bayer Leverkusen,Left Attacking Midfield,AM,6.9
+3895113,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,6.6
+3895113,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,6.4
+3895121,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.8
+3895121,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,95.8
+3895121,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.8
+3895121,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.8
+3895121,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,84.9
+3895121,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,90.2
+3895121,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,95.8
+3895121,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,95.8
+3895121,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,84.9
+3895121,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,90.2
+3895121,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,90.2
+3895121,48246,Noah Atubolu,Freiburg,Goalkeeper,GK,95.8
+3895121,79429,Kiliann Sildillia,Freiburg,Right Back,FB,95.8
+3895121,8808,Matthias Ginter,Freiburg,Right Center Back,CB,95.8
+3895121,8931,Philipp Lienhart,Freiburg,Left Center Back,CB,66.3
+3895121,11459,Lukas Kübler,Freiburg,Left Back,FB,95.8
+3895121,8939,Nicolas Höfler,Freiburg,Center Defensive Midfield,DM,95.8
+3895121,8361,Ritsu Doan,Freiburg,Right Midfield,W,95.8
+3895121,8401,Maximilian Eggestein,Freiburg,Right Center Midfield,CM,66.3
+3895121,48240,Merlin Röhl,Freiburg,Left Center Midfield,CM,80.4
+3895121,11282,Vincenzo Grifo,Freiburg,Left Midfield,W,80.3
+3895121,12418,Lucas Höler,Freiburg,Center Forward,ST,95.8
+3895121,12422,Manuel Gulde,Freiburg,Left Center Back,CB,29.6
+3895121,8309,Michael Gregoritsch,Freiburg,Center Forward,ST,29.6
+3895121,133161,Noah Weißhaupt,Freiburg,Left Midfield,W,15.5
+3895121,39126,Junior Chukwubuike Adamu,Freiburg,Left Center Midfield,CM,15.5
+3895121,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,10.9
+3895121,33401,Amine Adli,Bayer Leverkusen,Right Attacking Midfield,AM,10.9
+3895121,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,5.7
+3895121,28239,Adam Hložek,Bayer Leverkusen,Left Attacking Midfield,AM,5.7
+3895121,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,5.7
+3895134,8393,Oliver Baumann,Hoffenheim,Goalkeeper,GK,95.5
+3895134,20770,Ozan Muhammed Kabak,Hoffenheim,Right Center Back,CB,95.5
+3895134,8397,Kevin Vogt,Hoffenheim,Center Back,CB,95.5
+3895134,13292,Kevin Akpoguma,Hoffenheim,Left Center Back,CB,87.6
+3895134,16294,Robert Skov,Hoffenheim,Right Wing Back,FB,77.5
+3895134,9133,Marius Bülter,Hoffenheim,Left Wing Back,FB,95.5
+3895134,48644,Anton Stach,Hoffenheim,Center Defensive Midfield,DM,95.5
+3895134,24845,Finn Ole Becker,Hoffenheim,Right Center Midfield,CM,77.5
+3895134,9159,Grischa Prömel,Hoffenheim,Left Center Midfield,CM,95.5
+3895134,7829,Wout Weghorst,Hoffenheim,Right Center Forward,ST,95.5
+3895134,35242,Maximilian Beier,Hoffenheim,Left Center Forward,ST,87.6
+3895134,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.5
+3895134,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,45.0
+3895134,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.5
+3895134,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.5
+3895134,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,95.5
+3895134,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.5
+3895134,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,95.5
+3895134,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,95.5
+3895134,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,79.4
+3895134,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,90.3
+3895134,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,87.6
+3895134,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,50.5
+3895134,8962,Ihlas Bebou,Hoffenheim,Right Wing Back,FB,18.0
+3895134,5460,Andrej Kramarić,Hoffenheim,Right Center Midfield,CM,17.9
+3895134,9195,Robert Andrich,Bayer Leverkusen,Right Center Midfield,CM,16.0
+3895134,12088,Mërgim Berisha,Hoffenheim,Left Center Forward,ST,7.9
+3895134,201413,Bambasé Conté,Hoffenheim,Left Center Midfield,CM,7.9
+3895134,33401,Amine Adli,Bayer Leverkusen,Left Center Forward,ST,7.9
+3895134,28239,Adam Hložek,Bayer Leverkusen,Right Center Forward,ST,5.2
+3895139,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,92.0
+3895139,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,92.0
+3895139,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,92.0
+3895139,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,92.0
+3895139,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,79.6
+3895139,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,92.0
+3895139,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,92.0
+3895139,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,85.9
+3895139,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,79.7
+3895139,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,86.0
+3895139,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,86.0
+3895139,12420,Frederik Rønnow,Union Berlin,Goalkeeper,GK,92.0
+3895139,20606,Paul Jaeckel,Union Berlin,Right Center Back,CB,92.0
+3895139,7173,Leonardo Bonucci,Union Berlin,Center Back,CB,23.8
+3895139,11175,Diogo Filipe Monteiro Pinto Leite,Union Berlin,Left Center Back,CB,92.0
+3895139,29163,Josip Juranović,Union Berlin,Right Wing Back,FB,45.0
+3895139,3676,Jérôme Roussillon,Union Berlin,Left Wing Back,FB,78.0
+3895139,23452,Alex Král,Union Berlin,Right Defensive Midfield,DM,92.0
+3895139,44955,Aïssa Bilal Laïdouni,Union Berlin,Left Defensive Midfield,DM,92.0
+3895139,8938,Janik Haberer,Union Berlin,Right Wing,W,92.0
+3895139,8375,Sheraldo Becker,Union Berlin,Left Wing,W,63.0
+3895139,89326,David Datro Fofana,Union Berlin,Center Forward,ST,77.4
+3895139,8239,Robin Knoche,Union Berlin,Center Back,CB,68.2
+3895139,9164,Christopher Trimmel,Union Berlin,Right Wing Back,FB,47.0
+3895139,24243,Brenden Aaronson,Union Berlin,Left Wing,W,28.9
+3895139,10014,Kevin Behrens,Union Berlin,Center Forward,ST,14.6
+3895139,6985,Robin Gosens,Union Berlin,Left Wing Back,FB,14.0
+3895139,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,12.4
+3895139,33401,Amine Adli,Bayer Leverkusen,Right Attacking Midfield,AM,12.3
+3895139,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,6.0
+3895139,114833,Noah Mbamba,Bayer Leverkusen,Left Attacking Midfield,AM,6.0
+3895139,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,6.0
+3895153,23198,Michael Zetterer,Werder Bremen,Goalkeeper,GK,93.0
+3895153,6321,Milos Veljkovic,Werder Bremen,Right Center Back,CB,93.0
+3895153,15854,Marco Friedl,Werder Bremen,Center Back,CB,93.0
+3895153,7083,Anthony Jung,Werder Bremen,Left Center Back,CB,82.4
+3895153,8576,Mitchell Weiser,Werder Bremen,Right Wing Back,FB,93.0
+3895153,24179,Olivier Deman,Werder Bremen,Left Wing Back,FB,55.7
+3895153,24532,Jens Stage,Werder Bremen,Center Defensive Midfield,DM,93.0
+3895153,8826,Leonardo Bittencourt,Werder Bremen,Right Center Midfield,CM,71.2
+3895153,8784,Romano Schmid,Werder Bremen,Left Center Midfield,CM,82.5
+3895153,28266,Rafael Santos Borré Amaury,Werder Bremen,Right Center Forward,ST,71.1
+3895153,12299,Marvin Ducksch,Werder Bremen,Left Center Forward,ST,93.0
+3895153,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,93.0
+3895153,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,93.0
+3895153,9195,Robert Andrich,Bayer Leverkusen,Center Back,CB,93.0
+3895153,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,93.0
+3895153,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,80.1
+3895153,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,93.0
+3895153,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,88.8
+3895153,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,93.0
+3895153,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,88.7
+3895153,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,80.1
+3895153,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,71.0
+3895153,28573,Felix Agu,Werder Bremen,Left Wing Back,FB,37.3
+3895153,33401,Amine Adli,Bayer Leverkusen,Center Forward,ST,22.0
+3895153,34870,Nick Woltemade,Werder Bremen,Center Forward,ST,21.9
+3895153,185015,Justin Gideon Njinmah,Werder Bremen,Right Attacking Midfield,AM,21.9
+3895153,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,12.9
+3895153,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,12.9
+3895153,8570,Niklas Stark,Werder Bremen,Center Back,CB,10.6
+3895153,21865,Senne Lynen,Werder Bremen,Right Defensive Midfield,DM,10.5
+3895153,8403,Nadiem Amiri,Bayer Leverkusen,Left Attacking Midfield,AM,4.3
+3895153,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Right Defensive Midfield,DM,4.2
+3895158,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.7
+3895158,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,94.7
+3895158,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.7
+3895158,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.7
+3895158,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,94.7
+3895158,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.7
+3895158,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.7
+3895158,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,78.2
+3895158,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,63.5
+3895158,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,94.7
+3895158,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,94.7
+3895158,17974,Gregor Kobel,Borussia Dortmund,Goalkeeper,GK,94.7
+3895158,9410,Marius Wolf,Borussia Dortmund,Right Back,FB,94.7
+3895158,5572,Mats Hummels,Borussia Dortmund,Right Center Back,CB,94.7
+3895158,24118,Nico Schlotterbeck,Borussia Dortmund,Left Center Back,CB,63.5
+3895158,12387,Julian Ryerson,Borussia Dortmund,Left Back,FB,94.7
+3895158,3493,Emre Can,Borussia Dortmund,Right Defensive Midfield,DM,94.7
+3895158,8518,Marcel Sabitzer,Borussia Dortmund,Left Defensive Midfield,DM,94.7
+3895158,5559,Marco Reus,Borussia Dortmund,Right Wing,W,83.2
+3895158,5555,Julian Brandt,Borussia Dortmund,Center Attacking Midfield,AM,94.7
+3895158,161995,Jamie Jermaine Bynoe-Gittens,Borussia Dortmund,Left Wing,W,64.1
+3895158,8546,Niclas Füllkrug,Borussia Dortmund,Center Forward,ST,94.7
+3895158,33401,Amine Adli,Bayer Leverkusen,Left Wing Back,FB,31.2
+3895158,48820,Antonios Papadopoulos,Borussia Dortmund,Right Center Back,CB,31.2
+3895158,35609,Karim-David Adeyemi,Borussia Dortmund,Left Wing,W,30.5
+3895158,7044,Patrik Schick,Bayer Leverkusen,Right Attacking Midfield,AM,16.5
+3895158,3176,Thomas Meunier,Borussia Dortmund,Right Wing Back,FB,11.4
+3895167,20662,Alexander Nübel,VfB Stuttgart,Goalkeeper,GK,95.1
+3895167,8538,Waldemar Anton,VfB Stuttgart,Right Center Back,CB,95.1
+3895167,8226,Dan-Axel Zagadou,VfB Stuttgart,Left Center Back,CB,95.1
+3895167,12407,Maximilian Mittelstädt,VfB Stuttgart,Left Back,FB,75.7
+3895167,10012,Josha Mamadou Karaboue Vagnoman,VfB Stuttgart,Right Back,FB,84.9
+3895167,23614,Chris Führich,VfB Stuttgart,Left Midfield,W,76.4
+3895167,20947,Atakan Karazor,VfB Stuttgart,Right Defensive Midfield,DM,95.1
+3895167,39360,Angelo Stiller,VfB Stuttgart,Left Defensive Midfield,DM,95.1
+3895167,131243,Deniz Undav,VfB Stuttgart,Right Center Forward,ST,84.7
+3895167,45115,Enzo Millot,VfB Stuttgart,Right Midfield,W,65.2
+3895167,9102,Serhou Guirassy,VfB Stuttgart,Left Center Forward,ST,95.1
+3895167,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.1
+3895167,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,95.1
+3895167,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.1
+3895167,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.1
+3895167,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,95.1
+3895167,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.1
+3895167,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,95.1
+3895167,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,83.8
+3895167,40724,Florian Wirtz,Bayer Leverkusen,Right Wing,W,95.1
+3895167,33401,Amine Adli,Bayer Leverkusen,Left Wing,W,65.3
+3895167,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,72.7
+3895167,13329,Silas Katompa Mvumpa,VfB Stuttgart,Right Midfield,W,29.9
+3895167,8804,Jonas Hofmann,Bayer Leverkusen,Left Wing,W,29.8
+3895167,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,22.5
+3895167,29227,Leonidas Stergiou,VfB Stuttgart,Right Back,FB,19.4
+3895167,28805,Jamie Leweling,VfB Stuttgart,Left Midfield,W,18.7
+3895167,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Back,FB,11.4
+3895167,22067,Woo-Yeong Jeong,VfB Stuttgart,Right Center Forward,ST,10.5
+3895167,47619,Anthony Rouault,VfB Stuttgart,Right Back,FB,10.3
+3895180,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.9
+3895180,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,95.9
+3895180,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.9
+3895180,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.9
+3895180,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,82.0
+3895180,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.9
+3895180,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,95.9
+3895180,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,82.0
+3895180,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,82.5
+3895180,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,87.0
+3895180,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,71.4
+3895180,4440,Kevin Trapp,Eintracht Frankfurt,Goalkeeper,GK,95.9
+3895180,33088,Lucas Silva Melo,Eintracht Frankfurt,Right Center Back,CB,95.9
+3895180,13294,Robin Koch,Eintracht Frankfurt,Center Back,CB,63.0
+3895180,41593,Willian Joel Pacho Tenorio,Eintracht Frankfurt,Left Center Back,CB,95.9
+3895180,23658,Aurélio Gabriel Ulineia Buta,Eintracht Frankfurt,Right Wing Back,FB,95.9
+3895180,48031,Niels Nkounkou,Eintracht Frankfurt,Left Wing Back,FB,95.9
+3895180,143728,Hugo Larsson,Eintracht Frankfurt,Right Defensive Midfield,DM,72.0
+3895180,8227,Mario Götze,Eintracht Frankfurt,Left Defensive Midfield,DM,63.4
+3895180,28346,Eric Junior Dina Ebimbe,Eintracht Frankfurt,Right Wing,W,72.0
+3895180,39070,Ansgar Knauff,Eintracht Frankfurt,Left Wing,W,95.9
+3895180,217047,Fares Chaïbi,Eintracht Frankfurt,Center Forward,ST,82.5
+3895180,30047,Hrvoje Smolčić,Eintracht Frankfurt,Center Back,CB,32.9
+3895180,3767,Ellyes Joris Skhiri,Eintracht Frankfurt,Right Defensive Midfield,DM,32.5
+3895180,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,24.5
+3895180,29925,Jens Petter Hauge,Eintracht Frankfurt,Right Wing,W,24.0
+3895180,314756,Elias Niklas Baum,Eintracht Frankfurt,Left Defensive Midfield,DM,23.9
+3895180,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,13.9
+3895180,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,13.9
+3895180,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,13.5
+3895180,40707,Jessic Ngankam,Eintracht Frankfurt,Center Forward,ST,13.5
+3895180,8403,Nadiem Amiri,Bayer Leverkusen,Left Attacking Midfield,AM,9.0
+3895182,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.1
+3895182,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,94.1
+3895182,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,66.8
+3895182,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,72.6
+3895182,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,94.1
+3895182,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.1
+3895182,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.1
+3895182,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,94.1
+3895182,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,72.5
+3895182,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,86.7
+3895182,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,66.7
+3895182,9095,Manuel Riemann,Bochum,Goalkeeper,GK,94.1
+3895182,5602,Cristian Gamboa Luna,Bochum,Right Wing Back,FB,94.1
+3895182,29760,Erhan Mašović,Bochum,Right Center Back,CB,68.5
+3895182,23351,Keven Schlotterbeck,Bochum,Center Back,CB,94.1
+3895182,8960,Bernardo Fernandes da Silva Junior,Bochum,Left Center Back,CB,94.1
+3895182,133208,Patrick Osterhage,Bochum,Center Defensive Midfield,DM,94.1
+3895182,9089,Anthony Losilla,Bochum,Right Center Midfield,CM,86.7
+3895182,15546,Matúš Bero,Bochum,Left Center Midfield,CM,94.1
+3895182,8949,Takuma Asano,Bochum,Right Wing,W,45.0
+3895182,9230,Christopher Antwi-Adjej,Bochum,Left Wing,W,62.8
+3895182,23498,Gonçalo Mendes Paciencia,Bochum,Center Forward,ST,62.7
+3895182,9088,Danilo Teodoro Soares,Bochum,Left Wing Back,FB,49.1
+3895182,8906,Philipp Förster,Bochum,Center Attacking Midfield,AM,31.3
+3895182,151463,Moritz Broschinski,Bochum,Center Forward,ST,31.3
+3895182,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,27.4
+3895182,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,27.3
+3895182,48496,Noah Loosli,Bochum,Right Center Back,CB,25.6
+3895182,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,21.5
+3895182,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Left Defensive Midfield,DM,21.5
+3895182,297024,Tim Oermann,Bochum,Center Defensive Midfield,DM,7.4
+3895182,8403,Nadiem Amiri,Bayer Leverkusen,Left Attacking Midfield,AM,7.4
+3895194,37005,Finn Dahmen,Augsburg,Goalkeeper,GK,95.9
+3895194,16027,Kevin Mbabu,Augsburg,Right Back,FB,95.9
+3895194,8318,Jeffrey Gouweleeuw,Augsburg,Right Center Back,CB,95.9
+3895194,8245,Felix Uduokhai,Augsburg,Left Center Back,CB,95.9
+3895194,25118,Iago Amaral Borduchi,Augsburg,Left Back,FB,95.9
+3895194,9198,Niklas Dorsch,Augsburg,Center Defensive Midfield,DM,95.9
+3895194,8056,Fredrik Jensen,Augsburg,Right Center Midfield,CM,79.7
+3895194,18119,Elvis Rexhbeçaj,Augsburg,Left Center Midfield,CM,87.1
+3895194,30401,Ruben Vargas,Augsburg,Center Attacking Midfield,AM,61.4
+3895194,9221,Phillip Tietz,Augsburg,Right Center Forward,ST,79.9
+3895194,6874,Ermedin Demirović,Augsburg,Left Center Forward,ST,79.8
+3895194,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.9
+3895194,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,95.9
+3895194,9195,Robert Andrich,Bayer Leverkusen,Center Back,CB,95.9
+3895194,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,95.9
+3895194,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,95.9
+3895194,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.9
+3895194,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,95.9
+3895194,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,95.9
+3895194,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,95.9
+3895194,28239,Adam Hložek,Bayer Leverkusen,Left Attacking Midfield,AM,61.2
+3895194,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,95.9
+3895194,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,34.7
+3895194,12411,Arne Maier,Augsburg,Center Attacking Midfield,AM,34.5
+3895194,40167,Arne Engels,Augsburg,Right Center Midfield,CM,16.2
+3895194,40995,Dion Drena Beljo,Augsburg,Left Center Forward,ST,16.2
+3895194,9227,Sven Michel,Augsburg,Right Center Forward,ST,16.1
+3895194,4682,Robert Gumny,Augsburg,Left Wing Back,FB,8.8
+3895202,15155,Janis Blaswich,RB Leipzig,Goalkeeper,GK,94.4
+3895202,30360,Mohamed Simakan,RB Leipzig,Right Back,FB,74.2
+3895202,8507,Lukas Klostermann,RB Leipzig,Right Center Back,CB,94.4
+3895202,40185,Junior Castello Lukeba,RB Leipzig,Left Center Back,CB,94.4
+3895202,12034,David Raum,RB Leipzig,Left Back,FB,94.4
+3895202,39460,Nicolas Seiwald,RB Leipzig,Right Defensive Midfield,DM,74.2
+3895202,8769,Xaver Schlager,RB Leipzig,Left Defensive Midfield,DM,94.4
+3895202,39167,Xavi Simons,RB Leipzig,Right Attacking Midfield,AM,83.5
+3895202,16532,Daniel Olmo Carvajal,RB Leipzig,Left Attacking Midfield,AM,74.2
+3895202,38759,Benjamin Šeško,RB Leipzig,Right Center Forward,ST,73.2
+3895202,16275,Ikoma Loïs Openda,RB Leipzig,Left Center Forward,ST,94.4
+3895202,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.4
+3895202,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,94.4
+3895202,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.4
+3895202,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,94.4
+3895202,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,30.6
+3895202,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.4
+3895202,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.4
+3895202,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,87.1
+3895202,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,94.4
+3895202,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,94.4
+3895202,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,91.5
+3895202,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,63.7
+3895202,5536,Yussuf Yurary Poulsen,RB Leipzig,Right Center Forward,ST,21.2
+3895202,8211,Benjamin Henrichs,RB Leipzig,Right Back,FB,20.2
+3895202,24977,Christoph Baumgartner,RB Leipzig,Right Attacking Midfield,AM,20.2
+3895202,8222,Kevin Kampl,RB Leipzig,Right Defensive Midfield,DM,20.2
+3895202,16535,Eljif Elmas,RB Leipzig,Left Attacking Midfield,AM,10.9
+3895202,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,7.3
+3895202,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,2.9
+3895210,46046,Matěj Kovář,Bayer Leverkusen,Goalkeeper,GK,94.5
+3895210,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,94.5
+3895210,9195,Robert Andrich,Bayer Leverkusen,Center Back,CB,94.5
+3895210,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,94.5
+3895210,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,94.5
+3895210,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.5
+3895210,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.5
+3895210,8403,Nadiem Amiri,Bayer Leverkusen,Left Defensive Midfield,DM,66.9
+3895210,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,83.2
+3895210,40724,Florian Wirtz,Bayer Leverkusen,Left Wing,W,94.5
+3895210,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,94.5
+3895210,36811,Moritz Nicolas,Borussia Mönchengladbach,Goalkeeper,GK,94.5
+3895210,36830,Joseph Scally,Borussia Mönchengladbach,Right Center Back,CB,94.5
+3895210,9174,Marvin Friedrich,Borussia Mönchengladbach,Center Back,CB,94.5
+3895210,8814,Nico Elvedi,Borussia Mönchengladbach,Left Center Back,CB,94.5
+3895210,7198,Franck Honorat,Borussia Mönchengladbach,Right Wing Back,FB,69.6
+3895210,40943,Luca Netz,Borussia Mönchengladbach,Left Wing Back,FB,94.5
+3895210,8816,Julian Weigl,Borussia Mönchengladbach,Center Defensive Midfield,DM,94.5
+3895210,25040,Kouadio Emmanuel Koné,Borussia Mönchengladbach,Right Center Midfield,CM,79.0
+3895210,12323,Florian Neuhaus,Borussia Mönchengladbach,Left Center Midfield,CM,78.8
+3895210,7375,Theoson Jordan Siebatcheu,Borussia Mönchengladbach,Right Center Forward,ST,79.0
+3895210,11399,Robin Hack,Borussia Mönchengladbach,Left Center Forward,ST,61.5
+3895210,48396,Rocco Reitz,Borussia Mönchengladbach,Right Center Midfield,CM,33.0
+3895210,41411,Nathan Tella,Bayer Leverkusen,Left Wing Back,FB,27.5
+3895210,8779,Stefan Lainer,Borussia Mönchengladbach,Right Wing Back,FB,24.9
+3895210,394487,Shio Fukuda,Borussia Mönchengladbach,Left Center Forward,ST,15.7
+3895210,8805,Christoph Kramer,Borussia Mönchengladbach,Left Center Midfield,CM,15.5
+3895210,25039,Nathan Ngoumou Minpole,Borussia Mönchengladbach,Right Center Forward,ST,15.5
+3895210,28239,Adam Hložek,Bayer Leverkusen,Right Wing,W,11.3
+3895220,8919,Marcel Schuhen,Darmstadt 98,Goalkeeper,GK,94.1
+3895220,15797,Matthias Bader,Darmstadt 98,Right Back,FB,94.1
+3895220,11814,Christoph Zimmermann,Darmstadt 98,Right Center Back,CB,94.1
+3895220,153361,Matej Maglica,Darmstadt 98,Left Center Back,CB,80.4
+3895220,8606,Emir Karic,Darmstadt 98,Left Back,FB,94.1
+3895220,39160,Bartol Franjić,Darmstadt 98,Right Defensive Midfield,DM,80.4
+3895220,9222,Fabian Holland,Darmstadt 98,Left Defensive Midfield,DM,66.3
+3895220,9209,Tim Skarke,Darmstadt 98,Right Midfield,W,94.1
+3895220,12629,Gerrit Holtmann,Darmstadt 98,Left Midfield,W,64.8
+3895220,48655,Luca Pfeiffer,Darmstadt 98,Right Center Forward,ST,94.1
+3895220,42543,Oscar Vilhelmsson,Darmstadt 98,Left Center Forward,ST,66.2
+3895220,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.1
+3895220,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,94.1
+3895220,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.1
+3895220,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,94.1
+3895220,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,94.1
+3895220,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.1
+3895220,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,94.1
+3895220,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,88.1
+3895220,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,92.0
+3895220,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,76.0
+3895220,11391,Borja Iglesias Quintas,Bayer Leverkusen,Center Forward,ST,94.1
+3895220,17925,Sebastian Polter,Darmstadt 98,Left Center Forward,ST,29.4
+3895220,282348,Fabio Torsiello,Darmstadt 98,Right Midfield,W,28.0
+3895220,9225,Marvin Mehlem,Darmstadt 98,Left Defensive Midfield,DM,27.8
+3895220,8804,Jonas Hofmann,Bayer Leverkusen,Center Attacking Midfield,AM,18.2
+3895220,35578,Christoph Klarer,Darmstadt 98,Right Center Forward,ST,13.8
+3895220,48825,Andreas Müller,Darmstadt 98,Left Center Midfield,CM,13.7
+3895220,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,6.0
+3895220,114833,Noah Mbamba,Bayer Leverkusen,Left Wing,W,2.1
+3895232,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.7
+3895232,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Right Center Back,CB,95.7
+3895232,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.7
+3895232,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,95.7
+3895232,49337,Josip Stanišić,Bayer Leverkusen,Right Wing Back,FB,95.7
+3895232,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,89.3
+3895232,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,95.7
+3895232,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,95.7
+3895232,41411,Nathan Tella,Bayer Leverkusen,Right Attacking Midfield,AM,64.4
+3895232,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,82.4
+3895232,40724,Florian Wirtz,Bayer Leverkusen,Center Forward,ST,89.4
+3895232,5570,Manuel Neuer,Bayern Munich,Goalkeeper,GK,95.7
+3895232,8519,Dayotchanculle Upamecano,Bayern Munich,Right Center Back,CB,59.1
+3895232,10956,Eric Dier,Bayern Munich,Center Back,CB,95.7
+3895232,43565,Min Jae Kim,Bayern Munich,Left Center Back,CB,95.7
+3895232,15890,Noussair Mazraoui,Bayern Munich,Right Wing Back,FB,95.7
+3895232,24946,Sacha Boey,Bayern Munich,Left Wing Back,FB,80.7
+3895232,140589,Aleksandar Pavlović,Bayern Munich,Right Defensive Midfield,DM,59.2
+3895232,6324,Leon Goretzka,Bayern Munich,Left Defensive Midfield,DM,70.5
+3895232,3053,Leroy Sané,Bayern Munich,Right Attacking Midfield,AM,95.7
+3895232,39565,Jamal Musiala,Bayern Munich,Left Attacking Midfield,AM,80.6
+3895232,10955,Harry Kane,Bayern Munich,Center Forward,ST,95.7
+3895232,5579,Joshua Kimmich,Bayern Munich,Right Defensive Midfield,DM,36.6
+3895232,5562,Thomas Müller,Bayern Munich,Left Defensive Midfield,DM,36.5
+3895232,32712,Jeremie Frimpong,Bayer Leverkusen,Right Attacking Midfield,AM,31.2
+3895232,44737,Mathys Tel,Bayern Munich,Left Midfield,W,25.2
+3895232,3499,Jean-Eric Maxim Choupo-Moting,Bayern Munich,Right Center Forward,ST,15.1
+3895232,5209,Raphaël Adelino José Guerreiro,Bayern Munich,Right Back,FB,15.0
+3895232,8804,Jonas Hofmann,Bayer Leverkusen,Left Attacking Midfield,AM,13.3
+3895232,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Left Defensive Midfield,DM,6.4
+3895232,28239,Adam Hložek,Bayer Leverkusen,Center Forward,ST,6.3
+3895244,9205,Kevin Müller,FC Heidenheim,Goalkeeper,GK,95.3
+3895244,48959,Omar Haktab Traorè,FC Heidenheim,Right Back,FB,95.3
+3895244,10303,Patrick Mainka,FC Heidenheim,Right Center Back,CB,95.3
+3895244,9110,Benedikt Gimber,FC Heidenheim,Left Center Back,CB,81.9
+3895244,9109,Jonas Föhrenbach,FC Heidenheim,Left Back,FB,95.3
+3895244,133483,Lennard Maloney,FC Heidenheim,Center Defensive Midfield,DM,95.3
+3895244,67007,Eren Sami Dinkçi,FC Heidenheim,Right Midfield,W,75.2
+3895244,48863,Jan Schöppner,FC Heidenheim,Right Center Midfield,CM,62.7
+3895244,31744,Adrian Beck,FC Heidenheim,Left Center Midfield,CM,45.0
+3895244,31310,Jan-Niklas Beste,FC Heidenheim,Left Midfield,W,75.1
+3895244,11382,Tim Kleindienst,FC Heidenheim,Center Forward,ST,95.3
+3895244,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.3
+3895244,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,95.3
+3895244,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,95.3
+3895244,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,95.3
+3895244,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,88.2
+3895244,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,95.3
+3895244,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,95.3
+3895244,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,95.3
+3895244,40724,Florian Wirtz,Bayer Leverkusen,Center Attacking Midfield,AM,87.3
+3895244,7044,Patrik Schick,Bayer Leverkusen,Right Center Forward,ST,72.9
+3895244,33401,Amine Adli,Bayer Leverkusen,Left Center Forward,ST,87.3
+3895244,9201,Nikola Dovedan,FC Heidenheim,Left Center Midfield,CM,50.3
+3895244,24947,Kevin Sessa,FC Heidenheim,Center Defensive Midfield,DM,32.6
+3895244,11391,Borja Iglesias Quintas,Bayer Leverkusen,Right Center Forward,ST,22.4
+3895244,48860,Florian Pick,FC Heidenheim,Left Midfield,W,20.2
+3895244,9186,Marnon Busch,FC Heidenheim,Right Back,FB,20.1
+3895244,74089,Marvin Pieringer,FC Heidenheim,Left Center Midfield,CM,13.4
+3895244,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,8.0
+3895244,8804,Jonas Hofmann,Bayer Leverkusen,Center Attacking Midfield,AM,8.0
+3895244,41411,Nathan Tella,Bayer Leverkusen,Right Wing,W,7.1
+3895250,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.2
+3895250,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,94.2
+3895250,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.2
+3895250,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.2
+3895250,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,82.5
+3895250,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.2
+3895250,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.2
+3895250,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,94.2
+3895250,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,55.8
+3895250,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,89.2
+3895250,33401,Amine Adli,Bayer Leverkusen,Center Forward,ST,82.3
+3895250,19405,Robin Zentner,FSV Mainz 05,Goalkeeper,GK,94.2
+3895250,8207,Dominik Kohr,FSV Mainz 05,Right Center Back,CB,94.2
+3895250,15458,Sepp van den Berg,FSV Mainz 05,Center Back,CB,94.2
+3895250,10480,Anthony Caci,FSV Mainz 05,Left Center Back,CB,94.2
+3895250,7796,Silvan Widmer,FSV Mainz 05,Right Wing Back,FB,58.8
+3895250,13315,Philipp Mwene,FSV Mainz 05,Left Wing Back,FB,94.2
+3895250,23402,Leandro Barreiro Martins,FSV Mainz 05,Right Defensive Midfield,DM,94.2
+3895250,8403,Nadiem Amiri,FSV Mainz 05,Left Defensive Midfield,DM,94.2
+3895250,363583,Brajan Gruda,FSV Mainz 05,Right Attacking Midfield,AM,64.0
+3895250,5623,Jae-Sung Lee,FSV Mainz 05,Left Attacking Midfield,AM,94.2
+3895250,11278,Karim Onisiwo,FSV Mainz 05,Center Forward,ST,82.4
+3895250,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,38.4
+3895250,8230,Josuha Guilavogui,FSV Mainz 05,Center Back,CB,35.3
+3895250,40707,Jessic Ngankam,FSV Mainz 05,Right Attacking Midfield,AM,14.0
+3895250,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,11.8
+3895250,38917,Tom Krauß,FSV Mainz 05,Left Center Midfield,CM,11.7
+3895250,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,11.7
+3895250,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,5.0
+3895258,7095,Marvin Schwäbe,FC Köln,Goalkeeper,GK,93.0
+3895258,29682,Rasmus Carstensen,FC Köln,Right Back,FB,93.0
+3895258,35637,Timo Hübers,FC Köln,Right Center Back,CB,93.0
+3895258,8352,Julian Chabot,FC Köln,Left Center Back,CB,93.0
+3895258,405983,Max Finkgräfe,FC Köln,Left Back,FB,93.0
+3895258,38991,Eric Martel,FC Köln,Right Defensive Midfield,DM,82.2
+3895258,8623,Dejan Ljubicic,FC Köln,Left Defensive Midfield,DM,93.0
+3895258,134880,Faride Alidou,FC Köln,Right Midfield,W,82.0
+3895258,12318,Linton Maina,FC Köln,Left Midfield,W,82.0
+3895258,9125,Sargis Adamyan,FC Köln,Center Forward,ST,64.5
+3895258,33335,Jan Thielmann,FC Köln,Center Attacking Midfield,AM,11.8
+3895258,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,93.0
+3895258,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,93.0
+3895258,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,93.0
+3895258,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,78.2
+3895258,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,45.0
+3895258,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,93.0
+3895258,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,81.6
+3895258,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,93.0
+3895258,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,64.4
+3895258,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,93.0
+3895258,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,64.5
+3895258,41411,Nathan Tella,Bayer Leverkusen,Right Midfield,W,48.0
+3895258,33401,Amine Adli,Bayer Leverkusen,Left Midfield,W,28.6
+3895258,363595,Justin Diehl,FC Köln,Left Midfield,W,4.3
+3895258,11391,Borja Iglesias Quintas,Bayer Leverkusen,Right Center Forward,ST,28.5
+3895258,10016,Leart Paqarada,FC Köln,Left Back,FB,24.2
+3895258,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,14.8
+3895258,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Right Defensive Midfield,DM,11.4
+3895258,72768,Steffen Tigges,FC Köln,Center Forward,ST,11.0
+3895258,300704,Denis Huseinbašić,FC Köln,Left Defensive Midfield,DM,11.0
+3895258,11468,Benno Schmitz,FC Köln,Right Back,FB,10.8
+3895266,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,90.1
+3895266,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Right Center Back,CB,90.1
+3895266,8221,Jonathan Tah,Bayer Leverkusen,Left Center Back,CB,90.1
+3895266,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,58.5
+3895266,49337,Josip Stanišić,Bayer Leverkusen,Right Back,FB,90.1
+3895266,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,90.1
+3895266,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,90.1
+3895266,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,89.1
+3895266,41411,Nathan Tella,Bayer Leverkusen,Right Attacking Midfield,AM,75.3
+3895266,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,89.2
+3895266,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,75.5
+3895266,8240,Koen Casteels,Wolfsburg,Goalkeeper,GK,90.1
+3895266,22314,Maxence Lacroix,Wolfsburg,Right Center Back,CB,90.1
+3895266,48500,Moritz Jenz,Wolfsburg,Center Attacking Midfield,AM,27.1
+3895266,29353,Cédric Zesiger,Wolfsburg,Left Center Back,CB,87.2
+3895266,12630,Ridle Bote Baku,Wolfsburg,Right Wing Back,FB,90.1
+3895266,38009,Kevin Paredes,Wolfsburg,Left Wing Back,FB,90.1
+3895266,8231,Yannick Gerhardt,Wolfsburg,Center Defensive Midfield,DM,86.9
+3895266,8235,Maximilian Arnold,Wolfsburg,Left Center Midfield,CM,90.1
+3895266,28914,Lovro Majer,Wolfsburg,Right Center Midfield,CM,62.4
+3895266,41783,Tiago Barreiros de Melo Tomás,Wolfsburg,Center Forward,ST,61.8
+3895266,21261,Jonas Older Wind,Wolfsburg,Center Forward,ST,31.6
+3895266,20814,Sebastiaan Bornauw,Wolfsburg,Center Back,CB,58.5
+3895266,33401,Amine Adli,Bayer Leverkusen,Left Wing,W,31.6
+3895266,42754,Amin Sarr,Wolfsburg,Center Forward,ST,28.2
+3895266,29906,Aster Vranckx,Wolfsburg,Right Center Midfield,CM,27.6
+3895266,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,14.7
+3895266,11391,Borja Iglesias Quintas,Bayer Leverkusen,Center Forward,ST,14.5
+3895266,10014,Kevin Behrens,Wolfsburg,Center Forward,ST,3.2
+3895266,33297,Patrick Wimmer,Wolfsburg,Left Midfield,W,2.9
+3895266,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,1.0
+3895266,28239,Adam Hložek,Bayer Leverkusen,Center Attacking Midfield,AM,1.0
+3895275,48246,Noah Atubolu,Freiburg,Goalkeeper,GK,94.1
+3895275,79429,Kiliann Sildillia,Freiburg,Right Center Back,CB,94.1
+3895275,8808,Matthias Ginter,Freiburg,Center Back,CB,60.9
+3895275,12422,Manuel Gulde,Freiburg,Left Center Back,CB,94.1
+3895275,8361,Ritsu Doan,Freiburg,Right Wing Back,FB,94.1
+3895275,8945,Christian Günter,Freiburg,Left Wing Back,FB,94.1
+3895275,8939,Nicolas Höfler,Freiburg,Right Defensive Midfield,DM,94.1
+3895275,48240,Merlin Röhl,Freiburg,Left Defensive Midfield,DM,75.0
+3895275,12418,Lucas Höler,Freiburg,Right Wing,W,75.0
+3895275,11282,Vincenzo Grifo,Freiburg,Left Wing,W,60.8
+3895275,19316,Roland Sallai,Freiburg,Center Forward,ST,60.9
+3895275,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.1
+3895275,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,94.1
+3895275,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.1
+3895275,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,94.1
+3895275,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,82.3
+3895275,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,94.1
+3895275,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,94.1
+3895275,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,88.9
+3895275,28239,Adam Hložek,Bayer Leverkusen,Right Attacking Midfield,AM,82.5
+3895275,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,94.1
+3895275,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,75.5
+3895275,18417,Florent Muslija,Freiburg,Left Wing,W,33.3
+3895275,8931,Philipp Lienhart,Freiburg,Center Back,CB,33.3
+3895275,8309,Michael Gregoritsch,Freiburg,Center Forward,ST,33.2
+3895275,35713,Yannik Keitel,Freiburg,Left Defensive Midfield,DM,19.1
+3895275,8228,Maximilian Philipp,Freiburg,Right Wing,W,19.1
+3895275,33401,Amine Adli,Bayer Leverkusen,Center Forward,ST,18.6
+3895275,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,11.8
+3895275,9195,Robert Andrich,Bayer Leverkusen,Center Defensive Midfield,DM,11.7
+3895275,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,5.2
+3895286,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,96.2
+3895286,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Right Center Back,CB,85.9
+3895286,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,96.2
+3895286,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,72.5
+3895286,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,86.0
+3895286,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,96.2
+3895286,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,96.2
+3895286,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,96.2
+3895286,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,57.0
+3895286,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,96.2
+3895286,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,96.2
+3895286,8393,Oliver Baumann,Hoffenheim,Goalkeeper,GK,96.2
+3895286,20770,Ozan Muhammed Kabak,Hoffenheim,Right Center Back,CB,96.2
+3895286,11396,Florian Grillitsch,Hoffenheim,Center Back,CB,96.2
+3895286,426425,Tim Drexler,Hoffenheim,Left Center Back,CB,96.2
+3895286,9397,Pavel Kadeřábek,Hoffenheim,Right Wing Back,FB,96.2
+3895286,134272,David Jurásek,Hoffenheim,Left Wing Back,FB,96.2
+3895286,48644,Anton Stach,Hoffenheim,Center Defensive Midfield,DM,96.2
+3895286,5460,Andrej Kramarić,Hoffenheim,Right Center Midfield,CM,56.9
+3895286,251293,Umut Tohumcu,Hoffenheim,Left Center Midfield,CM,72.0
+3895286,7829,Wout Weghorst,Hoffenheim,Right Center Forward,ST,77.2
+3895286,35242,Maximilian Beier,Hoffenheim,Left Center Forward,ST,71.0
+3895286,9159,Grischa Prömel,Hoffenheim,Left Center Midfield,CM,39.3
+3895286,33401,Amine Adli,Bayer Leverkusen,Left Midfield,W,39.2
+3895286,8962,Ihlas Bebou,Hoffenheim,Left Center Forward,ST,25.2
+3895286,8391,Dennis Geiger,Hoffenheim,Right Center Midfield,CM,24.2
+3895286,11391,Borja Iglesias Quintas,Bayer Leverkusen,Left Center Forward,ST,23.6
+3895286,9133,Marius Bülter,Hoffenheim,Right Center Forward,ST,19.0
+3895286,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,10.3
+3895286,41411,Nathan Tella,Bayer Leverkusen,Right Back,FB,10.2
+3895292,12420,Frederik Rønnow,Union Berlin,Goalkeeper,GK,97.2
+3895292,18789,Danilho Doekhi,Union Berlin,Right Center Back,CB,97.2
+3895292,8397,Kevin Vogt,Union Berlin,Left Center Back,CB,97.2
+3895292,11175,Diogo Filipe Monteiro Pinto Leite,Union Berlin,Left Back,FB,97.2
+3895292,9164,Christopher Trimmel,Union Berlin,Right Wing Back,FB,62.1
+3895292,6985,Robin Gosens,Union Berlin,Left Wing Back,FB,47.5
+3895292,9402,Rani Khedira,Union Berlin,Center Defensive Midfield,DM,61.8
+3895292,3117,Lucas Tousart,Union Berlin,Right Center Midfield,CM,97.2
+3895292,42822,András Schäfer,Union Berlin,Left Center Midfield,CM,62.2
+3895292,24243,Brenden Aaronson,Union Berlin,Center Attacking Midfield,AM,78.0
+3895292,32537,Yorbe Vertessen,Union Berlin,Center Forward,ST,45.0
+3895292,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,97.2
+3895292,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,97.2
+3895292,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,97.2
+3895292,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,97.2
+3895292,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,78.5
+3895292,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,97.2
+3895292,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,97.2
+3895292,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,97.2
+3895292,40724,Florian Wirtz,Bayer Leverkusen,Right Attacking Midfield,AM,97.2
+3895292,28239,Adam Hložek,Bayer Leverkusen,Left Attacking Midfield,AM,32.0
+3895292,11391,Borja Iglesias Quintas,Bayer Leverkusen,Center Forward,ST,66.2
+3895292,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,65.2
+3895292,24849,Mikkel Kaufmann,Union Berlin,Right Center Forward,ST,52.2
+3895292,44955,Aïssa Bilal Laïdouni,Union Berlin,Left Center Midfield,CM,35.4
+3895292,29163,Josip Juranović,Union Berlin,Right Back,FB,35.1
+3895292,23452,Alex Král,Union Berlin,Right Center Midfield,CM,35.0
+3895292,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,31.0
+3895292,48543,Benedict Hollerbach,Union Berlin,Left Center Forward,ST,19.2
+3895292,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,18.7
+3895302,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,89.9
+3895302,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,89.9
+3895302,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,89.9
+3895302,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,89.9
+3895302,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,61.1
+3895302,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,76.0
+3895302,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,76.8
+3895302,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,89.9
+3895302,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,89.9
+3895302,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,45.0
+3895302,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,61.4
+3895302,23198,Michael Zetterer,Werder Bremen,Goalkeeper,GK,89.9
+3895302,51769,Julián Malatini,Werder Bremen,Right Center Back,CB,89.9
+3895302,31100,Christian Groß,Werder Bremen,Center Back,CB,89.9
+3895302,6321,Milos Veljkovic,Werder Bremen,Left Center Back,CB,89.9
+3895302,8576,Mitchell Weiser,Werder Bremen,Right Wing Back,FB,89.9
+3895302,28573,Felix Agu,Werder Bremen,Left Wing Back,FB,68.4
+3895302,21865,Senne Lynen,Werder Bremen,Center Defensive Midfield,DM,89.9
+3895302,8826,Leonardo Bittencourt,Werder Bremen,Right Center Midfield,CM,76.1
+3895302,8784,Romano Schmid,Werder Bremen,Left Center Midfield,CM,89.9
+3895302,34870,Nick Woltemade,Werder Bremen,Right Center Forward,ST,68.5
+3895302,12299,Marvin Ducksch,Werder Bremen,Left Center Forward,ST,89.9
+3895302,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,44.9
+3895302,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,28.7
+3895302,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,28.4
+3895302,24179,Olivier Deman,Werder Bremen,Left Wing Back,FB,21.4
+3895302,5666,Dawid Kownacki,Werder Bremen,Right Center Forward,ST,21.4
+3895302,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,13.9
+3895302,52124,Isak Hansen-Aarøen,Werder Bremen,Left Center Midfield,CM,13.8
+3895302,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,13.1
+3895309,17974,Gregor Kobel,Borussia Dortmund,Goalkeeper,GK,98.8
+3895309,12387,Julian Ryerson,Borussia Dortmund,Left Back,FB,98.8
+3895309,5572,Mats Hummels,Borussia Dortmund,Right Center Back,CB,98.8
+3895309,24118,Nico Schlotterbeck,Borussia Dortmund,Left Center Back,CB,98.8
+3895309,39092,Ian Maatsen,Borussia Dortmund,Left Back,FB,45.0
+3895309,3493,Emre Can,Borussia Dortmund,Center Defensive Midfield,DM,68.9
+3895309,12423,Jadon Sancho,Borussia Dortmund,Left Midfield,W,68.4
+3895309,8518,Marcel Sabitzer,Borussia Dortmund,Right Center Midfield,CM,98.8
+3895309,5555,Julian Brandt,Borussia Dortmund,Left Center Midfield,CM,82.5
+3895309,161995,Jamie Jermaine Bynoe-Gittens,Borussia Dortmund,Right Midfield,W,82.3
+3895309,8546,Niclas Füllkrug,Borussia Dortmund,Center Forward,ST,98.8
+3895309,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,98.8
+3895309,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Right Center Back,CB,98.8
+3895309,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,98.8
+3895309,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,83.2
+3895309,49337,Josip Stanišić,Bayer Leverkusen,Right Wing Back,FB,98.8
+3895309,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,98.8
+3895309,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,98.8
+3895309,9195,Robert Andrich,Bayer Leverkusen,Left Defensive Midfield,DM,98.8
+3895309,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing,W,98.8
+3895309,41411,Nathan Tella,Bayer Leverkusen,Left Wing,W,69.4
+3895309,8804,Jonas Hofmann,Bayer Leverkusen,Center Forward,ST,83.2
+3895309,9410,Marius Wolf,Borussia Dortmund,Right Back,FB,53.8
+3895309,5559,Marco Reus,Borussia Dortmund,Left Wing,W,30.4
+3895309,49665,Felix Kalu Nmecha,Borussia Dortmund,Left Defensive Midfield,DM,29.9
+3895309,40724,Florian Wirtz,Bayer Leverkusen,Center Attacking Midfield,AM,29.4
+3895309,256297,Julien Duranville,Borussia Dortmund,Right Wing,W,16.5
+3895309,9085,Salih Özcan,Borussia Dortmund,Right Defensive Midfield,DM,16.3
+3895309,32289,Victor Okoh Boniface,Bayer Leverkusen,Left Center Forward,ST,15.6
+3895309,7044,Patrik Schick,Bayer Leverkusen,Right Center Forward,ST,15.5
+3895320,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,97.7
+3895320,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,97.7
+3895320,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,45.0
+3895320,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,97.7
+3895320,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,88.1
+3895320,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,88.2
+3895320,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,97.7
+3895320,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,97.7
+3895320,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,73.0
+3895320,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,97.7
+3895320,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,73.1
+3895320,20662,Alexander Nübel,VfB Stuttgart,Goalkeeper,GK,97.7
+3895320,29227,Leonidas Stergiou,VfB Stuttgart,Right Back,FB,80.5
+3895320,8538,Waldemar Anton,VfB Stuttgart,Right Center Back,CB,97.7
+3895320,95272,Hiroki Ito,VfB Stuttgart,Left Center Back,CB,97.7
+3895320,12407,Maximilian Mittelstädt,VfB Stuttgart,Left Back,FB,97.7
+3895320,20947,Atakan Karazor,VfB Stuttgart,Right Defensive Midfield,DM,97.7
+3895320,45115,Enzo Millot,VfB Stuttgart,Left Defensive Midfield,DM,74.0
+3895320,28805,Jamie Leweling,VfB Stuttgart,Right Attacking Midfield,AM,91.0
+3895320,23614,Chris Führich,VfB Stuttgart,Left Attacking Midfield,AM,80.4
+3895320,131243,Deniz Undav,VfB Stuttgart,Right Center Forward,ST,74.0
+3895320,9102,Serhou Guirassy,VfB Stuttgart,Left Center Forward,ST,97.7
+3895320,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Center Back,CB,52.7
+3895320,40724,Florian Wirtz,Bayer Leverkusen,Right Attacking Midfield,AM,24.7
+3895320,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,24.6
+3895320,22067,Woo-Yeong Jeong,VfB Stuttgart,Center Attacking Midfield,AM,23.8
+3895320,8238,Mahmoud Dahoud,VfB Stuttgart,Left Defensive Midfield,DM,23.8
+3895320,47619,Anthony Rouault,VfB Stuttgart,Right Back,FB,17.3
+3895320,13329,Silas Katompa Mvumpa,VfB Stuttgart,Left Wing,W,17.3
+3895320,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,9.7
+3895320,49337,Josip Stanišić,Bayer Leverkusen,Right Center Back,CB,9.6
+3895320,8934,Pascal Stenzel,VfB Stuttgart,Right Wing Back,FB,6.7
+3895333,4440,Kevin Trapp,Eintracht Frankfurt,Goalkeeper,GK,95.0
+3895333,33088,Lucas Silva Melo,Eintracht Frankfurt,Right Back,FB,95.0
+3895333,13294,Robin Koch,Eintracht Frankfurt,Right Center Back,CB,95.0
+3895333,41593,Willian Joel Pacho Tenorio,Eintracht Frankfurt,Left Center Back,CB,95.0
+3895333,48031,Niels Nkounkou,Eintracht Frankfurt,Left Back,FB,69.0
+3895333,8227,Mario Götze,Eintracht Frankfurt,Right Defensive Midfield,DM,95.0
+3895333,3767,Ellyes Joris Skhiri,Eintracht Frankfurt,Left Defensive Midfield,DM,69.0
+3895333,28346,Eric Junior Dina Ebimbe,Eintracht Frankfurt,Right Attacking Midfield,AM,79.2
+3895333,217047,Fares Chaïbi,Eintracht Frankfurt,Left Attacking Midfield,AM,79.1
+3895333,50429,Hugo Ekitike,Eintracht Frankfurt,Right Center Forward,ST,79.3
+3895333,40761,Omar Marmoush,Eintracht Frankfurt,Left Center Forward,ST,95.0
+3895333,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,95.0
+3895333,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,95.0
+3895333,9195,Robert Andrich,Bayer Leverkusen,Center Back,CB,82.3
+3895333,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,95.0
+3895333,41411,Nathan Tella,Bayer Leverkusen,Right Wing Back,FB,72.0
+3895333,196651,Arthur Augusto de Matos Soares,Bayer Leverkusen,Left Wing Back,FB,60.6
+3895333,3500,Granit Xhaka,Bayer Leverkusen,Right Defensive Midfield,DM,71.4
+3895333,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,95.0
+3895333,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,95.0
+3895333,28239,Adam Hložek,Bayer Leverkusen,Left Attacking Midfield,AM,95.0
+3895333,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,60.7
+3895333,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,34.3
+3895333,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,34.3
+3895333,39070,Ansgar Knauff,Eintracht Frankfurt,Left Back,FB,25.9
+3895333,143728,Hugo Larsson,Eintracht Frankfurt,Left Defensive Midfield,DM,25.9
+3895333,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,23.6
+3895333,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,23.0
+3895333,291796,Jean-Mattéo Bahoya Négoce,Eintracht Frankfurt,Left Attacking Midfield,AM,15.8
+3895333,23658,Aurélio Gabriel Ulineia Buta,Eintracht Frankfurt,Right Attacking Midfield,AM,15.8
+3895333,314766,Ignacio Ferri Julià,Eintracht Frankfurt,Right Center Forward,ST,15.7
+3895333,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Left Defensive Midfield,DM,12.7
+3895340,9095,Manuel Riemann,Bochum,Goalkeeper,GK,94.1
+3895340,8241,Felix Passlack,Bochum,Center Attacking Midfield,AM,14.0
+3895340,44198,Ivan Ordets,Bochum,Center Back,CB,94.1
+3895340,23351,Keven Schlotterbeck,Bochum,Left Center Back,CB,94.1
+3895340,8960,Bernardo Fernandes da Silva Junior,Bochum,Left Back,FB,45.0
+3895340,9089,Anthony Losilla,Bochum,Center Defensive Midfield,DM,60.2
+3895340,133208,Patrick Osterhage,Bochum,Right Center Midfield,CM,94.1
+3895340,8949,Takuma Asano,Bochum,Right Wing,W,19.9
+3895340,12303,Kevin Stöger,Bochum,Left Center Midfield,CM,94.1
+3895340,8924,Maximilian Wittek,Bochum,Left Wing Back,FB,94.1
+3895340,28603,Philipp Hofmann,Bochum,Center Forward,ST,60.3
+3895340,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,94.1
+3895340,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,63.2
+3895340,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,94.1
+3895340,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,94.1
+3895340,49337,Josip Stanišić,Bayer Leverkusen,Right Wing Back,FB,94.1
+3895340,196651,Arthur Augusto de Matos Soares,Bayer Leverkusen,Left Wing Back,FB,94.1
+3895340,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,94.1
+3895340,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,78.7
+3895340,41411,Nathan Tella,Bayer Leverkusen,Right Wing,W,79.1
+3895340,32289,Victor Okoh Boniface,Bayer Leverkusen,Left Wing,W,68.4
+3895340,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,68.6
+3895340,297024,Tim Oermann,Bochum,Right Wing Back,FB,74.2
+3895340,29760,Erhan Mašović,Bochum,Right Center Back,CB,49.1
+3895340,15546,Matúš Bero,Bochum,Right Center Midfield,CM,33.9
+3895340,18129,Lukas Daschner,Bochum,Center Forward,ST,33.8
+3895340,8804,Jonas Hofmann,Bayer Leverkusen,Right Wing,W,30.9
+3895340,11391,Borja Iglesias Quintas,Bayer Leverkusen,Center Forward,ST,25.6
+3895340,33401,Amine Adli,Bayer Leverkusen,Left Wing,W,25.4
+3895340,261630,Gustavo Adolfo Puerta Molano,Bayer Leverkusen,Left Defensive Midfield,DM,15.3
+3895340,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,15.0
+3895348,8667,Lukáš Hrádecký,Bayer Leverkusen,Goalkeeper,GK,93.4
+3895348,27133,Odilon Kossonou,Bayer Leverkusen,Right Center Back,CB,93.4
+3895348,8221,Jonathan Tah,Bayer Leverkusen,Center Back,CB,93.4
+3895348,30606,Edmond Fayçal Tapsoba,Bayer Leverkusen,Left Center Back,CB,93.4
+3895348,32712,Jeremie Frimpong,Bayer Leverkusen,Right Wing Back,FB,82.0
+3895348,10336,Alejandro Grimaldo García,Bayer Leverkusen,Left Wing Back,FB,69.0
+3895348,9195,Robert Andrich,Bayer Leverkusen,Right Defensive Midfield,DM,93.4
+3895348,28268,Exequiel Alejandro Palacios,Bayer Leverkusen,Left Defensive Midfield,DM,69.0
+3895348,8804,Jonas Hofmann,Bayer Leverkusen,Right Attacking Midfield,AM,93.4
+3895348,33401,Amine Adli,Bayer Leverkusen,Left Attacking Midfield,AM,62.3
+3895348,32289,Victor Okoh Boniface,Bayer Leverkusen,Center Forward,ST,62.3
+3895348,3428,Tomáš Koubek,Augsburg,Goalkeeper,GK,93.4
+3895348,24442,Mads Pedersen,Augsburg,Right Back,FB,93.4
+3895348,8318,Jeffrey Gouweleeuw,Augsburg,Right Center Back,CB,93.4
+3895348,8245,Felix Uduokhai,Augsburg,Left Center Back,CB,93.4
+3895348,25118,Iago Amaral Borduchi,Augsburg,Left Back,FB,93.4
+3895348,51825,Tim Breithaupt,Augsburg,Center Defensive Midfield,DM,40.2
+3895348,12411,Arne Maier,Augsburg,Right Center Midfield,CM,90.3
+3895348,9198,Niklas Dorsch,Augsburg,Center Defensive Midfield,DM,93.4
+3895348,316237,Mert Kömür,Augsburg,Center Attacking Midfield,AM,73.6
+3895348,6874,Ermedin Demirović,Augsburg,Right Center Forward,ST,90.2
+3895348,9221,Phillip Tietz,Augsburg,Left Center Forward,ST,73.5
+3895348,40167,Arne Engels,Augsburg,Left Center Midfield,CM,53.2
+3895348,40724,Florian Wirtz,Bayer Leverkusen,Left Attacking Midfield,AM,31.2
+3895348,7044,Patrik Schick,Bayer Leverkusen,Center Forward,ST,31.1
+3895348,3500,Granit Xhaka,Bayer Leverkusen,Left Defensive Midfield,DM,24.4
+3895348,38004,Piero Martín Hincapié Reyna,Bayer Leverkusen,Left Wing Back,FB,24.4
+3895348,9227,Sven Michel,Augsburg,Left Center Forward,ST,19.9
+3895348,24319,Pep Biel Mas Jaume,Augsburg,Center Attacking Midfield,AM,19.8
+3895348,49337,Josip Stanišić,Bayer Leverkusen,Right Wing Back,FB,11.4
+3895348,40995,Dion Drena Beljo,Augsburg,Right Center Forward,ST,3.2
+3895348,316245,Mahmut Kücüksahin,Augsburg,Right Center Midfield,CM,3.2
