@@ -1,0 +1,33 @@
+  StatsBomb 25/200: 62913 actions
+  StatsBomb 50/200: 126057 actions
+  StatsBomb 75/200: 183803 actions
+  StatsBomb 100/200: 240056 actions
+  StatsBomb 125/200: 298067 actions
+  StatsBomb 150/200: 357155 actions
+  StatsBomb 175/200: 414866 actions
+  StatsBomb 200/200: 472723 actions
+sb: 472723 actions, 200 matches; scores within 10 actions 0.94%, concedes 0.21%
+    sb location scores fold 1/5
+    sb location scores fold 2/5
+    sb location scores fold 3/5
+    sb location scores fold 4/5
+    sb location scores fold 5/5
+    sb location concedes fold 1/5
+    sb location concedes fold 2/5
+    sb location concedes fold 3/5
+    sb location concedes fold 4/5
+    sb location concedes fold 5/5
+  location  scores: AUC 0.812  Brier skill +0.077  | concedes: AUC 0.832  Brier skill +0.065
+    sb full scores fold 1/5
+    sb full scores fold 2/5
+    sb full scores fold 3/5
+    sb full scores fold 4/5
+    sb full scores fold 5/5
+    sb full concedes fold 1/5
+    sb full concedes fold 2/5
+    sb full concedes fold 3/5
+    sb full concedes fold 4/5
+    sb full concedes fold 5/5
+  full      scores: AUC 0.827  Brier skill +0.147  | concedes: AUC 0.858  Brier skill +0.057
+  (108s)
+[sb done in 400s]

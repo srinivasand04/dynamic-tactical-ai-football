@@ -1,0 +1,13 @@
+loaded 472723 actions, 200 matches, 93 moment features (14s)
+
+Presets seeded with 3 of Granit Xhaka's own moments (and 1 he did not like):
+  Switch under pressure              found   1080  fits the idea (top 200)   60%  top player Jorge Resurrección Merodio (+0.007/90)  Xhaka rank 10 of 45
+  Line-breaking pass under pressure  found   1332  fits the idea (top 200)   52%  top player Fabian Lukas Schär (+0.017/90)  Xhaka rank 32 of 57
+  Progressive carry from own half    found   2642  fits the idea (top 200)   91%  top player Ruslan Malinovskiy (+0.054/90)  Xhaka rank 59 of 132
+  Counter start                      found   3466  fits the idea (top 200)   47%  top player Federico Santiago Valverde Dipetta (+0.019/90)  Xhaka rank 59 of 160
+  Switch of play                     found    955  fits the idea (top 200)   86%  top player Young-Gwon Kim (+0.021/90)  Xhaka rank 28 of 43
+  Long shot                          found   1297  fits the idea (top 200)   96%  top player Xherdan Shaqiri (+0.269/90)  Xhaka rank 22 of 55
+  Back pass under pressure           found   3034  fits the idea (top 200)   98%  top player Stefan Posch (+0.005/90)  Xhaka rank 94 of 161
+  High ball win                      found    753  fits the idea (top 200)  100%  top player Nathan Tella (+0.059/90)  Xhaka rank 21 of 24
+wrote D:\grf-prototype\viewer\data\moment_search.json (148 KB)
+[presets done in 28s]

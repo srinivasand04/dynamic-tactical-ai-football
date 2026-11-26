@@ -1,0 +1,4 @@
+sb: 472723 actions, 200 matches; scores within 10 actions 0.94%, concedes 0.21%
+  location  scores: AUC 0.812  Brier skill +0.077  | concedes: AUC 0.832  Brier skill +0.065
+  full      scores: AUC 0.827  Brier skill +0.147  | concedes: AUC 0.858  Brier skill +0.057
+  (108s)

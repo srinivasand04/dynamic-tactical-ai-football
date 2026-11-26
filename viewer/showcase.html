@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Player Models Showcase</title>
+<script type="importmap">
+  { "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+<style>
+  :root { --bg: #0a1222; --card: rgba(16, 28, 52, .86); --line: rgba(255,255,255,.14); --txt: #eef2f8; --mut: #96a2b8;
+          --gold: #f5be46; --green: #46c878; --red: #ff6f61; --blue: #6aa8ff; --teal: #28c8be; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--txt); font-family: "Segoe UI", Arial, sans-serif; overflow: hidden; }
+  #c { position: fixed; inset: 0; }
+  .ov { position: fixed; opacity: 0; transition: none; }
+  #kick { left: 56px; top: 44px; font-size: 22px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  #title { left: 56px; top: 78px; font-size: 52px; font-weight: 700; max-width: 1150px; line-height: 1.1; }
+  #sub { left: 58px; top: 150px; font-size: 24px; color: var(--mut); max-width: 1100px; }
+  #panel { right: 48px; top: 230px; width: 600px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 26px 30px; box-sizing: border-box; }
+  #panel h4 { margin: 0 0 14px; font-size: 20px; color: var(--mut); font-weight: 600; letter-spacing: .04em; }
+  .big { font-size: 64px; font-weight: 700; line-height: 1; }
+  .big small { font-size: 22px; color: var(--mut); font-weight: 400; margin-left: 10px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; font-size: 21px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row b { color: var(--gold); }
+  .bar { height: 14px; border-radius: 7px; background: rgba(255,255,255,.08); position: relative; margin: 4px 0 12px; }
+  .bar span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 7px; background: var(--gold); }
+  .bar.g span { background: var(--green); } .bar.b span { background: var(--blue); } .bar.r span { background: var(--red); }
+  .lab { display: flex; justify-content: space-between; font-size: 19px; }
+  .hi { color: var(--gold); font-weight: 700; }
+  .note { font-size: 17px; color: var(--mut); margin-top: 12px; line-height: 1.4; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { padding: 10px 16px; border-radius: 22px; border: 1px solid var(--line); background: var(--card); font-size: 20px; }
+  .chip b { color: var(--gold); margin-left: 6px; }
+  #cap { left: 56px; bottom: 46px; font-size: 24px; max-width: 1150px; background: rgba(10,18,34,.72); padding: 12px 18px; border-radius: 10px; border-left: 4px solid var(--gold); }
+  #step { right: 48px; bottom: 46px; font-size: 18px; color: var(--mut); letter-spacing: .1em; }
+  .cards { display: flex; gap: 18px; }
+  .rc { width: 182px; background: rgba(255,255,255,.05); border: 1px solid var(--line); border-radius: 10px; padding: 14px; font-size: 16px; }
+  .rc .n { font-size: 19px; font-weight: 700; margin-bottom: 4px; } .rc .v { font-size: 30px; color: var(--gold); font-weight: 700; margin-top: 8px; }
+  .flow { display: flex; gap: 14px; align-items: stretch; }
+  .flow div { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; font-size: 19px; line-height: 1.35; }
+  .flow b { display: block; color: var(--gold); font-size: 22px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="kick" class="ov"></div>
+<div id="title" class="ov"></div>
+<div id="sub" class="ov"></div>
+<div id="panel" class="ov"></div>
+<div id="cap" class="ov"></div>
+<div id="step" class="ov"></div>
+<script type="module" src="showcase.js"></script>
+</body>
+</html>

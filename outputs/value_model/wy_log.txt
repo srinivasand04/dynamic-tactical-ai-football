@@ -1,0 +1,32 @@
+  Wyscout Premier League: 593556 actions (18s)
+  Wyscout Ligue 1: 583971 actions (18s)
+  Wyscout Bundesliga: 480939 actions (15s)
+  Wyscout Serie A: 598963 actions (18s)
+  Wyscout La Liga: 580106 actions (17s)
+  Wyscout World Cup 2018: 101511 actions (3s)
+  Wyscout Euro 2016: 77879 actions (2s)
+wy: 3016925 actions, 1941 matches; scores within 10 actions 1.21%, concedes 0.52%
+    wy location scores fold 1/5
+    wy location scores fold 2/5
+    wy location scores fold 3/5
+    wy location scores fold 4/5
+    wy location scores fold 5/5
+    wy location concedes fold 1/5
+    wy location concedes fold 2/5
+    wy location concedes fold 3/5
+    wy location concedes fold 4/5
+    wy location concedes fold 5/5
+  location  scores: AUC 0.795  Brier skill +0.056  | concedes: AUC 0.804  Brier skill +0.044
+    wy full scores fold 1/5
+    wy full scores fold 2/5
+    wy full scores fold 3/5
+    wy full scores fold 4/5
+    wy full scores fold 5/5
+    wy full concedes fold 1/5
+    wy full concedes fold 2/5
+    wy full concedes fold 3/5
+    wy full concedes fold 4/5
+    wy full concedes fold 5/5
+  full      scores: AUC 0.812  Brier skill +0.096  | concedes: AUC 0.828  Brier skill +0.051
+  (594s)
+[wy done in 1123s]

@@ -4,7 +4,7 @@
 // Data: viewer/data/player_profiles.json. Standalone: it does not touch the 3D scene.
 
 const $ = (id) => document.getElementById(id);
-const R = { data: null, models: null, big: null, tp: null, view: null, k: 0, mv: null, list: 'best', hover: -1, cls: 2 };
+const R = { data: null, models: null, big: null, tp: null, rep: null, bt: null, rk: null, view: null, k: 0, mv: null, list: 'best', hover: -1, cls: 2 };
 const SHORT = { 'Involvement': 'Involvement', 'Progression and creation': 'Creation', 'Passing': 'Passing',
   'Shooting': 'Shooting', 'Ball security': 'Ball security', 'Defending and pressing': 'Defending' };
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -96,7 +96,32 @@ function render() {
   const opts = `<optgroup label="Leverkusen 2023/24: profile + on-ball model">${D.cards.map((q, k) => `<option value="c:${k}"${R.mv == null && R.view == null && k === R.k ? ' selected' : ''}>${esc(q.player)} · ${q.role} · ${q.minutes} min</option>`).join('')}</optgroup>`
     + (mvOpts ? `<optgroup label="Bundesliga 2 tracking: movement model">${mvOpts}</optgroup>` : '')
     + (R.big ? `<optgroup label="3 more datasets"><option value="f:0"${R.view === 'f' ? ' selected' : ''}>What we learned at scale</option></optgroup>` : '')
+    + `<optgroup label="Any player · accuracy"><option value="r:0"${R.view === 'r' ? ' selected' : ''}>Player report (search any player)</option><option value="b:0"${R.view === 'b' ? ' selected' : ''}>Accuracy: backtest of all models</option><option value="s:0"${R.view === 's' ? ' selected' : ''}>Show 3, find all (moment search)</option></optgroup>`
     + (R.tp ? `<optgroup label="Target player: 7 opponent models + 3 coach models"><option value="t:0"${R.view === 't' ? ' selected' : ''}>${esc(R.tp.name)} · game plan</option></optgroup>` : '');
+  if (R.view === 's') {
+    loadMs().then(() => {
+      box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + (R.ms ? msCard(R.ms) : '<div class="hint">Run scripts/moment_search.py all.</div>');
+      wirePick();
+      box.querySelectorAll('.mstabs button').forEach((el) => el.addEventListener('click', () => { R.msk = +el.dataset.k; R.msh = null; render(); }));
+      box.querySelectorAll('.pfm, .msm.mshit').forEach((el) => el.addEventListener('click', () => { const j = +el.dataset.j; R.msh = R.msh === j ? null : j; render(); }));
+    });
+    return;
+  }
+  if (R.view === 'r' || R.view === 'b') {
+    loadRep().then(() => {
+      if (R.view === 'b') { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + (R.bt ? backtestCard(R.bt) : '<div class="hint">Run scripts/player_report.py backtest.</div>'); wirePick(); return; }
+      if (!R.rep) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select><div class="hint">Run scripts/player_report.py reports.</div>`; wirePick(); return; }
+      if (!R.rk) R.rk = (R.rep.index.find((q) => q[1] === 'Granit Xhaka' && q[3].startsWith('Leverkusen')) || R.rep.index[0])[0];
+      const lab = (q) => `${q[1]} · ${q[2]} · ${q[3]} · ${q[4]}`;
+      box.innerHTML = `<select id="profPick" title="Player">${opts}</select>
+        <input id="repSearch" list="repList" placeholder="Search ${R.rep.index.length} players…" value="${esc(lab(R.rep.index.find((q) => q[0] === R.rk)))}">
+        <datalist id="repList">${R.rep.index.map((q) => `<option value="${esc(lab(q))}">`).join('')}</datalist>` + reportCard(R.rep, R.rk);
+      wirePick();
+      const inp = document.getElementById('repSearch');
+      if (inp) inp.addEventListener('change', () => { const q = R.rep.index.find((x) => lab(x) === inp.value); if (q) { R.rk = q[0]; render(); } });
+    });
+    return;
+  }
   if (R.view === 't' && R.tp) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + targetCard(R.tp); wirePick(); return; }
   if (R.view === 'f' && R.big) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + findingsCard(R.big); wirePick(); return; }
   if (R.mv != null && M) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + movementCard(M.movement[R.mv]); wirePick(); return; }
@@ -132,7 +157,7 @@ function wirePick() {
   $('profPick').addEventListener('change', (e) => {
     const [t, v] = e.target.value.split(':');
     R.view = null;
-    if (t === 'f' || t === 't') { R.view = t; R.mv = null; } else if (t === 'm') R.mv = v; else { R.mv = null; R.k = +v; }
+    if (t === 'f' || t === 't' || t === 'r' || t === 'b' || t === 's') { R.view = t; R.mv = null; } else if (t === 'm') R.mv = v; else { R.mv = null; R.k = +v; }
     R.hover = -1; render();
   });
 }
@@ -343,6 +368,14 @@ function targetCard(T) {
   h += `<h3 class="pfh">M7 · What-if counter plan <span class="hint">net threat per 100 of his actions</span></h3>
     ${T.m7.plans.map((p) => `<div class="gnrow"><span${p.plan === T.m7.best ? ' class="tpbestt"' : ''}>${esc(p.plan)}</span><div class="cbar"><span class="${p.plan === T.m7.best ? 'cp' : 'cr'}" style="width:${(100 * Math.max(p.net100, 0) / mx7).toFixed(1)}%"></span></div><b>${p.net100.toFixed(2)}</b></div>`).join('')}
     <div class="hint">Net = threat he still creates (choice mix × value × no loss) minus the counter value of balls we win. Model answers, not an experiment.</div>`;
+  if (T.vaep) {
+    const v = T.vaep;
+    h += `<h3 class="pfh">Upgrade · threat, lanes and what-if with VAEP <span class="hint">possession value model instead of the static xT grid</span></h3>
+      <div class="pftest good">VAEP per 90 ${v.sb_vaep90.toFixed(3)} · percentile ${v.sb_pct.toFixed(0)} of ${v.sb_n} DM / CM (StatsBomb) · Arsenal 17/18 percentile ${v.pl_pct.toFixed(0)} of ${v.pl_n}</div>
+      <table class="pfct"><tr><th>context</th><th>VAEP /90</th><th>attack</th><th>defence</th></tr>${v.contexts.map((c) => `<tr><td>${esc(c.context)}</td><td>${c.vaep90.toFixed(3)}</td><td>${c.off90.toFixed(3)}</td><td>${c.def90.toFixed(3)}</td></tr>`).join('')}</table>
+      ${laneMap(v.lanes.map((l) => ({ ...l, share: Math.abs(l.share) })))}
+      <table class="pfct"><tr><th>plan</th><th>his value /100 actions</th><th>vs letting him play</th></tr>${v.plans.map((p) => `<tr${p.plan === v.best ? ' class="tpbest"' : ''}><td>${esc(p.plan)}</td><td>${p.vaep100 >= 0 ? '+' : ''}${p.vaep100.toFixed(3)}</td><td>${p.vs_free >= 0 ? '+' : ''}${p.vs_free.toFixed(0)}%</td></tr>`).join('')}</table>`;
+  }
   if (T.coach) h += coachCard(T.coach);
   return h;
 }
@@ -375,6 +408,128 @@ function coachCard(C) {
     ${c3.mates.filter((m, i, a) => m.clear || i < 3 || i >= a.length - 3).map((m) => `<tr${m.clear ? ' class="tpbest"' : ''}><td>${esc(m.name)} <span class="hint">${m.league === 'Premier League' ? 'Arsenal' : 'Leverkusen'}</span></td><td>${m.with_min} / ${m.without_min}</td>
       <td class="${m.diff_xt90 > 0 ? 'up' : 'down'}">${m.with_xt90.toFixed(3)} vs ${m.without_xt90.toFixed(3)}</td><td class="hint">${s3(m.ci[0])} .. ${s3(m.ci[1])}</td></tr>`).join('')}</table>
     <div class="hint">Highlighted = 90% interval excludes 0 (${c3.mates.filter((m) => m.clear).length} of ${c3.mates.length}; about ${Math.round(0.1 * c3.mates.length)} expected by chance). Joint model of all teammates, held out by match: ${c3.tests.gain_pct.toFixed(1)}% vs his average. With / without also splits the season, so check on video.</div>`;
+  return h;
+}
+
+// ---- any-player report and backtest (scripts/player_report.py)
+async function loadRep() {
+  if (!R.rep) { try { const r = await fetch('data/reports.json', { cache: 'no-store' }); if (r.ok) R.rep = await r.json(); } catch (e) { R.rep = null; } }
+  if (!R.bt) { try { const r = await fetch('data/backtest.json', { cache: 'no-store' }); if (r.ok) R.bt = await r.json(); } catch (e) { R.bt = null; } }
+}
+
+function styleBars(st, classes) {
+  if (!st) return '<div class="hint">Not enough on-ball decisions for a style model (300+ needed).</div>';
+  return `<table class="pfct"><tr><th>choice</th><th>his share (90% band)</th><th>typical ${esc(st.role)}</th><th>when pressed</th></tr>${classes.map((c, k) => {
+    const d = st.his[k] - st.typical[k], sure = st.lo[k] > st.typical[k] || st.hi[k] < st.typical[k];
+    return `<tr><td>${c}</td><td class="${sure ? (d > 0 ? 'up' : 'down') : ''}">${(100 * st.his[k]).toFixed(1)}% <span class="hint">${(100 * st.lo[k]).toFixed(1)}-${(100 * st.hi[k]).toFixed(1)}</span></td>
+      <td>${(100 * st.typical[k]).toFixed(1)}%</td><td>${st.pressed_delta[k] >= 0 ? '+' : ''}${(100 * st.pressed_delta[k]).toFixed(1)} pts</td></tr>`; }).join('')}</table>
+    <div class="hint">Coloured = his 90% band does not include the typical value: a real habit, not noise. ${st.decisions} decisions.</div>`;
+}
+
+function reportCard(D, key) {
+  const p = D.players[key];
+  if (!p) return '<div class="hint">No report.</div>';
+  const pos = p.zones.map((v) => Math.max(v, 0));
+  let h = `<div class="pftest ${p.pct >= 75 ? 'good' : ''}"><b>${esc(p.name)}</b> · ${esc(p.team)} · ${esc(p.comp)} · ${esc(p.role)} · ${p.minutes} min · ${esc(p.data)}</div>
+    <h3 class="pfh">Value <span class="hint">VAEP: change in the chance to score minus the chance to concede, per action</span></h3>
+    <div class="gnrow"><span>VAEP per 90</span><div class="cbar"><span class="cp" style="width:${p.pct == null ? 0 : p.pct.toFixed(0)}%"></span></div><b>${p.vaep90.toFixed(3)}</b></div>
+    <div class="hint">${p.pct == null ? 'too few minutes for a percentile' : `percentile ${p.pct.toFixed(0)} of ${p.pct_n} ${esc(p.role)} (${esc(p.pct_group)})`} · attack ${p.off90.toFixed(3)} · defence ${p.def90.toFixed(3)} · location-only model ${p.loc90.toFixed(3)}</div>
+    ${zoneMap(pos, null, 'Where his value comes from')}
+    <div class="hint">Shade = VAEP per 90 from actions starting in each zone. Most valuable actions: ${p.kinds.map((k) => `${esc(k[0])} ${k[1] >= 0 ? '+' : ''}${k[1].toFixed(3)}`).join(' · ')}</div>
+    <h3 class="pfh">On-ball style <span class="hint">Bayesian player model</span></h3>${styleBars(p.style, D.classes)}`;
+  if (p.model) h += `<div class="hint">Player model vs role on matches it never saw: ${p.model.gain_pct >= 0 ? '+' : ''}${p.model.gain_pct.toFixed(2)}% (${esc(p.model.verdict)}, ${p.model.matches} matches).</div>`;
+  if (p.similar && p.similar.length) h += `<h3 class="pfh">Plays most like</h3><div class="hint">${p.similar.map(esc).join(' · ')}</div>`;
+  return h;
+}
+
+function calSvg(cal1, cal0) {
+  const w = 300, hh = 170, x0 = 34, y0 = 146, mx = Math.max(...cal1.map((c) => Math.max(c[0], c[1])), ...cal0.map((c) => Math.max(c[0], c[1])));
+  const X = (v) => x0 + (w - x0 - 10) * v / mx, Y = (v) => y0 - (y0 - 10) * v / mx;
+  const pl = (c, cls) => `<polyline points="${c.map((q) => `${X(q[0]).toFixed(1)},${Y(q[1]).toFixed(1)}`).join(' ')}" class="cline ${cls}"/>` + c.map((q) => `<circle cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="2.4" class="cdot ${cls}"/>`).join('');
+  return `<svg viewBox="0 0 ${w} ${hh}" class="pfcurve" role="img" aria-label="Calibration"><line x1="${X(0)}" y1="${Y(0)}" x2="${X(mx)}" y2="${Y(mx)}" class="rgrid rmed"/>${pl(cal0, 'wy')}${pl(cal1, 'lv')}
+    <text x="${(x0 + w) / 2}" y="${hh - 2}" text-anchor="middle" class="hint2">predicted chance to score (next 10 actions)</text><text x="${x0 - 4}" y="${Y(mx) + 4}" text-anchor="end" class="hint2">${(100 * mx).toFixed(0)}%</text></svg>
+    <div class="pflegend"><span class="lg lv"></span> full model <span class="lg wy"></span> location only · diagonal = perfect</div>`;
+}
+
+function backtestCard(B) {
+  const v = B.value, f = (x, d = 3) => x == null ? '-' : x.toFixed(d);
+  let h = `<div class="pomsub">Every number here comes from matches the model never saw while learning.</div>
+    <h3 class="pfh">1 · Possession value (VAEP) <span class="hint">does the team score within 10 actions?</span></h3>
+    <table class="pfct"><tr><th>data</th><th>model</th><th>AUC score</th><th>Brier skill</th><th>AUC concede</th></tr>
+    ${Object.entries(v).map(([t, q]) => ['location', 'full'].map((k) => `<tr${k === 'full' ? ' class="tpbest"' : ''}><td>${t === 'sb' ? 'StatsBomb 360' : 'Wyscout'}</td><td>${k === 'full' ? 'full (context' + (t === 'sb' ? ' + 360' : '') + ')' : 'location only (xT-like)'}</td><td>${f(q[k].scores.auc)}</td><td>${f(q[k].scores.brier_skill)}</td><td>${f(q[k].concedes.auc)}</td></tr>`).join('')).join('')}</table>
+    ${v.sb ? calSvg(v.sb.full.scores.calibration, v.sb.location.scores.calibration) : ''}`;
+  if (B.ratings) h += `<table class="pfct"><tr><th>rating reliability</th><th>VAEP</th><th>location only</th></tr>
+    ${Object.entries(B.ratings).map(([t, q]) => Object.keys(q.vaep || {}).map((s) => `<tr><td>${t === 'sb' ? 'StatsBomb' : 'Wyscout'} · ${s === 'odd_even' ? 'odd vs even matches' : '1st half of season → 2nd'}</td><td>r ${f(q.vaep[s].r, 2)} <span class="hint">${q.vaep[s].players}</span></td><td>r ${f((q.vaep_loc[s] || {}).r, 2)}</td></tr>`).join('')).join('')}</table>`;
+  const s = B.bayes.season, c = B.bayes.curve;
+  if (s) h += `<h3 class="pfh">2 · Bayesian player model <span class="hint">${s.players} players, last quarter of the season</span></h3>
+    <table class="pfct"><tr><th>model</th><th>log-loss</th><th>gain vs role</th><th>beats role for</th></tr>
+      <tr><td>role only</td><td>${f(s.logloss.role, 4)}</td><td></td><td></td></tr>
+      <tr><td>old player model</td><td>${f(s.logloss.old, 4)}</td><td>${s.gain_old_pct.toFixed(2)}%</td><td>${(100 * s.share_beats_role.old).toFixed(0)}%</td></tr>
+      <tr class="tpbest"><td>Bayesian player model</td><td>${f(s.logloss.bayes, 4)}</td><td>${s.gain_bayes_pct.toFixed(2)}%</td><td>${(100 * s.share_beats_role.bayes).toFixed(0)}%</td></tr></table>
+    <div class="hint">90% bands contain the real share: ${Object.entries(s.coverage).map(([k, x]) => `${k} ${(100 * x).toFixed(0)}%`).join(' · ')}</div>`;
+  if (c) h += `<table class="pfct"><tr><th>matches seen</th><th>old</th><th>Bayes</th><th>Bayes ≥ old</th></tr>${c.map((q) => `<tr><td>${q.n}</td><td>${q.old >= 0 ? '+' : ''}${q.old.toFixed(2)}%</td><td class="${q.bayes > q.old ? 'up' : ''}">${q.bayes >= 0 ? '+' : ''}${q.bayes.toFixed(2)}%</td><td>${(100 * q.share).toFixed(0)}%</td></tr>`).join('')}</table>`;
+  const bl = B.ball_loss;
+  h += `<h3 class="pfh">3 · Other models</h3><table class="pfct">
+    <tr><td>Ball-loss model (target player)</td><td>${bl.gain_pct.toFixed(1)}% log-loss · AUC ${bl.auc[1].toFixed(2)} · predicted ${(100 * bl.calib[0]).toFixed(1)}% vs real ${(100 * bl.calib[1]).toFixed(1)}%</td></tr>
+    ${B.movement ? `<tr><td>Movement GNN, World Cup 2022</td><td>${B.movement.still.toFixed(2)} m (nobody moves) → ${B.movement.bundesliga.toFixed(2)} → ${B.movement.worldcup.toFixed(2)} m</td></tr>` : ''}
+    <tr><td>Player vs role at scale (Wyscout)</td><td>${B.decision_eval.wyscout.better} better · ${B.decision_eval.wyscout.unclear} unclear · ${B.decision_eval.wyscout.worse} worse of ${B.decision_eval.wyscout.players}</td></tr></table>`;
+  return h;
+}
+
+// ---- show 3, find all: example-based moment search (scripts/moment_search.py presets)
+async function loadMs() {
+  if (R.ms === undefined) { try { const r = await fetch('data/moment_search.json', { cache: 'no-store' }); R.ms = r.ok ? await r.json() : null; } catch (e) { R.ms = null; } }
+}
+const MSW = { pressed: 'under pressure', dy_abs: 'goes across the pitch', len: 'long', dx: 'goes forward', ok: 'succeeds', ey: 'ends on one side',
+  ex: 'ends high up', x: 'starts high up', end_box: 'ends in the box', in_box: 'starts in the box', goal_d_end: 'ends near goal', gain3: 'team gains ground right after',
+  shot5: 'leads to a shot', lost3: 'ball lost right after', near_opp: 'space around him', opp5: 'opponents close', goal_side: 'opponents goal-side', mates_ahead: 'mates ahead' };
+function msWord(f) {
+  const n = f.feature, hi = f.dir === 'high';
+  if (n.startsWith('kind=')) return (hi ? '' : 'not a ') + n.slice(5).toLowerCase();
+  const m = n.match(/^(prev|next)(\d)_(\w+)$/);
+  if (m) {
+    const when = m[1] === 'prev' ? `${m[2]} before` : `${m[2]} after`, w = m[3];
+    const what = { same: 'own team on the ball', other: 'opponent on the ball', pass: 'a pass', carry: 'a carry', shot: 'a shot', win: 'a ball win', lose: 'a ball loss', set: 'a set piece', x: 'ball high up', dt: 'slow' }[w] || w;
+    return `${hi ? what : 'no ' + what.replace(/^an? /, '')} (${when})`;
+  }
+  return (hi ? '' : 'not ') + (MSW[n] || n);
+}
+function msPitch(list, on, ex) {
+  const X = (p) => (p[0] * PS).toFixed(1), Y = (p) => (p[1] * PS).toFixed(1);
+  let g = '';
+  list.forEach((m, j) => {
+    const sel = j === on, cls = ex ? (m.neg ? 'msneg' : 'mspos') : (sel ? 'mspos' : 'mshit');
+    if (sel || ex) g += m.ctx.map((c) => `<line x1="${X(c.a)}" y1="${Y(c.a)}" x2="${X(c.b)}" y2="${Y(c.b)}" class="msctx ${c.same ? 'own' : 'opp'}"${c.kind === 'Carry' ? ' stroke-dasharray="3 2"' : ''}/>`).join('');
+    g += `<g class="msm ${cls}${on >= 0 && !sel && !ex ? ' dim' : ''}" data-j="${j}"><line x1="${X(m.a)}" y1="${Y(m.a)}" x2="${X(m.b)}" y2="${Y(m.b)}"${m.kind === 'Carry' ? ' stroke-dasharray="4 3"' : ''}/>
+      <circle cx="${X(m.a)}" cy="${Y(m.a)}" r="${ex || sel ? 5 : 3}"/>${ex || sel ? `<text x="${X(m.a)}" y="${(+Y(m.a) + 2.6).toFixed(1)}" text-anchor="middle">${m.neg ? '✕' : j + 1}</text>` : ''}</g>`;
+  });
+  return pitchSvg(g, 'Moments');
+}
+function msCard(D) {
+  const pr = D.presets, k = Math.min(R.msk || 0, pr.length - 1), p = pr[k], t = p.test, pc = (x) => `${(100 * x).toFixed(0)}%`;
+  const exs = p.examples.concat(p.counter.map((m) => ({ ...m, neg: 1 })));
+  const on = R.msh == null ? -1 : R.msh;
+  let h = `<div class="pomsub">Show 3, find all: a coach marks 3 moments he likes (here 3 of Xhaka's own) and 1 he does not.
+      The search finds what they have in common and looks through all 472k StatsBomb actions (200 matches, 360 frames).</div>
+    <div class="mstabs">${pr.map((q, j) => `<button data-k="${j}" class="${j === k ? 'on' : ''}">${esc(q.name)}</button>`).join('')}</div>
+    <h3 class="pfh">The examples <span class="hint">gold = liked, red ✕ = not liked · faint = 2 actions before and 3 after</span></h3>
+    ${msPitch(exs, -1, true)}
+    <div class="hint">${exs.map((m, j) => `${m.neg ? '✕' : j + 1}: ${esc(m.player)} ${m.min}' · ${esc(m.source)} · ${m.kind}${m.pressed ? ' · pressed' : ''} · VAEP ${m.vaep >= 0 ? '+' : ''}${m.vaep.toFixed(3)}`).join('<br>')}</div>
+    <h3 class="pfh">What they have in common</h3><div class="mschips">${p.common.map((c) => `<span>${esc(msWord(c))}</span>`).join('')}</div>
+    <div class="pftest good"><b>${p.found.toLocaleString()}</b> moments found · ${pc(p.fit200)} of the top 200 fit the idea${t ? ` · on unseen matches ${pc(t.p50.full)} of the top 50 were right (plain distance ${pc(t.p50.proto)}, random ${pc(t.base)})` : ''}</div>
+    <h3 class="pfh">Top moments found <span class="hint">click one to see what happened before and after</span></h3>
+    ${msPitch(p.moments, on, false)}
+    <div class="pfms">${p.moments.slice(0, 10).map((m, j) => `<div class="pfm${j === on ? ' on' : ''}" data-j="${j}"><span class="pfn">${j + 1}</span>
+      ${esc(m.player)} <span class="hint">${esc(m.team)} · ${esc(m.source)} · ${m.min}'</span><br><span class="hint">${m.kind}${m.pressed ? ' · pressed' : ''}${m.ok ? '' : ' · failed'}</span>
+      <span class="pfadd ${m.vaep >= 0 ? 'good' : 'bad'}">${m.vaep >= 0 ? '+' : ''}${m.vaep.toFixed(3)}</span></div>`).join('')}</div>
+    <h3 class="pfh">Who does this best <span class="hint">270+ min, 5+ moments · VAEP per 90 from these moments</span></h3>
+    <table class="pfct"><tr><th>player</th><th>team</th><th>per 90</th><th>success</th><th>VAEP/90</th></tr>${p.players.slice(0, 10).map((q) => `<tr><td>${esc(q.player)}</td><td class="hint">${esc(q.team)}</td><td>${q.per90.toFixed(2)}</td><td>${pc(q.ok)}</td><td class="${q.vaep90 >= 0 ? 'up' : 'down'}">${q.vaep90 >= 0 ? '+' : ''}${q.vaep90.toFixed(3)}</td></tr>`).join('')}</table>
+    <div class="hint">Granit Xhaka: ${p.xhaka_rank ? `rank ${p.xhaka_rank} of ${p.ranked}` : 'not ranked (too few moments)'} on this kind of moment.</div>`;
+  const ev = D.eval;
+  if (ev && ev.rows) h += `<h3 class="pfh">Accuracy <span class="hint">examples from ${ev.matches_examples} matches, search on the other ${ev.matches_search}; share of the top 50 that are right</span></h3>
+    <table class="pfct"><tr><th>pattern</th><th>random</th><th>plain distance</th><th>our search</th></tr>${ev.rows.map((r) => `<tr><td>${esc(r.pattern)}</td><td>${pc(r.base)}</td><td>${pc(r.p50.proto)}</td><td class="${r.p50.full > r.p50.proto ? 'up' : ''}">${pc(r.p50.full)}</td></tr>`).join('')}
+    <tr class="tpbest"><td>average of 12</td><td>${pc(ev.avg_p50.random)}</td><td>${pc(ev.avg_p50.proto)}</td><td>${pc(ev.avg_p50.full)}</td></tr></table>
+    <div class="hint">Test patterns are written as rules so the answer is known; a coach's real idea is fuzzier. Your own search: python scripts/moment_search.py query --pos ID,ID,ID --neg ID</div>`;
   return h;
 }
 

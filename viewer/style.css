@@ -244,3 +244,20 @@ button[disabled] { opacity: 0.45; cursor: default; }
 #prof .tpah { fill: #7FB8FF; }
 #prof tr.tpbest td { background: rgba(242,193,78,.14); }
 #prof .tpbestt { color: #F2C14E; font-weight: 600; }
+
+/* player card: any-player report search (reports.json) */
+#prof #repSearch { width: 100%; box-sizing: border-box; margin: 6px 0 4px; padding: 6px 8px; font-size: 12px;
+  background: rgba(255,255,255,.06); color: inherit; border: 1px solid rgba(255,255,255,.18); border-radius: 4px; }
+
+/* show 3, find all */
+#prof .mstabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+#prof .mstabs button { font-size: 11px; padding: 3px 7px; border-radius: 10px; border: 1px solid #2c4a37; background: transparent; color: inherit; cursor: pointer; }
+#prof .mstabs button.on { background: #ffc83d; color: #06160d; border-color: #ffc83d; }
+#prof .mschips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 6px; }
+#prof .mschips span { font-size: 11px; padding: 2px 7px; border-radius: 10px; background: rgba(255, 200, 61, .14); border: 1px solid rgba(255, 200, 61, .4); }
+.msm line { stroke-width: 1.6; } .msm circle { stroke: #06160d; stroke-width: .6; } .msm text { font-size: 7px; font-weight: 700; fill: #06160d; pointer-events: none; }
+.msm.mspos line { stroke: #ffc83d; stroke-width: 2.4; } .msm.mspos circle { fill: #ffc83d; }
+.msm.msneg line { stroke: #ff8a7a; stroke-width: 2.4; } .msm.msneg circle { fill: #ff8a7a; }
+.msm.mshit line { stroke: #7fd3ff; opacity: .75; } .msm.mshit circle { fill: #7fd3ff; }
+.msm { cursor: pointer; } .msm.dim { opacity: .2; }
+.msctx { stroke-width: 1; opacity: .55; } .msctx.own { stroke: #e8f5ec; } .msctx.opp { stroke: #ff8a7a; }

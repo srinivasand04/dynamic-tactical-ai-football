@@ -1,0 +1,19 @@
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /showcase.html?record HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /showcase.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /data/target_player.json HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /data/backtest.json HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /data/reports.json HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /data/showcase_xhaka.json HTTP/1.1" 200 -
+127.0.0.1 - - [26/Nov/2026 15:28:45] code 404, message File not found
+127.0.0.1 - - [26/Nov/2026 15:28:45] "GET /favicon.ico HTTP/1.1" 404 -
+  250/2675 frames
+  500/2675 frames
+  750/2675 frames
+  1000/2675 frames
+  1250/2675 frames
+  1500/2675 frames
+  1750/2675 frames
+  2000/2675 frames
+  2250/2675 frames
+  2500/2675 frames
+D:\grf-prototype\outputs\showcase\player_models_showcase.mp4: 2675 frames, 107 s, 25 MB

@@ -1,0 +1,29 @@
+sb: 1313 player-competitions with 90+ min; top 10 by VAEP per 90 (min 270):
+D:\grf-prototype\scripts\value_model.py:346: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  for r in R[q].head(10).itertuples():
+    Kylian Mbappé Lottin         France                 World Cup 2022   W     656 min  VAEP/90 0.832 (attack 0.841, defence -0.010)
+    Emil Peter Forsberg          Sweden                 Euro 2020        W     377 min  VAEP/90 0.780 (attack 0.795, defence -0.015)
+    Karim Benzema                France                 Euro 2020        ST    352 min  VAEP/90 0.778 (attack 0.762, defence 0.016)
+    Patrik Schick                Czech Republic         Euro 2020        ST    405 min  VAEP/90 0.740 (attack 0.712, defence 0.028)
+    Robert Lewandowski           Poland                 Euro 2020        ST    284 min  VAEP/90 0.737 (attack 0.745, defence -0.008)
+    Kai Havertz                  Germany                Euro 2020        AM    307 min  VAEP/90 0.735 (attack 0.747, defence -0.012)
+    Ivan Schranz                 Slovakia               Euro 2024        W     335 min  VAEP/90 0.726 (attack 0.813, defence -0.087)
+    Xherdan Shaqiri              Switzerland            Euro 2020        AM    369 min  VAEP/90 0.692 (attack 0.701, defence -0.009)
+    Bukayo Saka                  England                World Cup 2022   W     291 min  VAEP/90 0.663 (attack 0.652, defence 0.011)
+    Cody Mathès Gakpo            Netherlands            World Cup 2022   AM    460 min  VAEP/90 0.651 (attack 0.651, defence 0.000)
+  rating reliability (sb): VAEP odd_even r=0.06 (15 players)  location-only odd_even r=0.62 (15 players)
+wy: 3198 player-competitions with 90+ min; top 10 by VAEP per 90 (min 900):
+D:\grf-prototype\scripts\value_model.py:346: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  for r in R[q].head(10).itertuples():
+    Nicolas                      Hellas Verona          Serie A               3240 min  VAEP/90 1.424 (attack 0.056, defence 1.368)
+    J. Butland                   Stoke City             Premier League        3150 min  VAEP/90 1.231 (attack 0.050, defence 1.181)
+    E. Kawashima                 Metz                   Ligue 1               2610 min  VAEP/90 1.182 (attack 0.050, defence 1.131)
+    A. Cordaz                    Crotone                Serie A               3420 min  VAEP/90 1.136 (attack 0.047, defence 1.089)
+    T. Horn                      K\u00f6ln              Bundesliga            3060 min  VAEP/90 1.129 (attack 0.057, defence 1.072)
+    E. Zelazny                   Troyes                 Ligue 1               1530 min  VAEP/90 1.127 (attack 0.050, defence 1.076)
+    R. Gurtner                   Amiens SC              Ligue 1               3330 min  VAEP/90 1.115 (attack 0.046, defence 1.069)
+    K. Darlow                    Newcastle United       Premier League         900 min  VAEP/90 1.106 (attack 0.045, defence 1.061)
+    P. Tschauner                 Hannover 96            Bundesliga            2790 min  VAEP/90 1.095 (attack 0.027, defence 1.068)
+    J. Pollersbeck               Hamburger SV           Bundesliga             900 min  VAEP/90 1.095 (attack 0.054, defence 1.041)
+  rating reliability (wy): VAEP odd_even r=0.81 (1533 players), season_halves r=0.83 (1207 players)  location-only odd_even r=0.86 (1533 players), season_halves r=0.89 (1207 players)
+[ratings done in 51s]

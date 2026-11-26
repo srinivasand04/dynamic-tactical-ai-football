@@ -1,0 +1,18 @@
+loaded 472723 actions, 200 matches, 93 moment features (15s)
+
+Held-out test: examples from 100 matches, search over the other 100 (237346 actions); 20 draws per pattern
+  pattern                              base | P@50: random  proto weighted   full | P@200 full | P@200 / recall at found size
+  Switch of play                       0.5% |         0.5%  76.3%    96.1%  79.8% |    81.3%   | 66.2% / 48.1%
+  Switch under pressure                0.1% |         0.1%  27.5%    35.5%  37.2% |    24.3%   | 12.1% / 55.4%
+  Carry into the box                   0.5% |         0.5%  96.1%    82.6%  96.5% |    85.8%   | 66.1% / 38.8%
+  Cut-back                             0.3% |         0.3%  33.2%    16.9%  25.6% |    25.2%   | 23.3% / 37.4%
+  Line-breaking pass under pressure    0.3% |         0.3%  34.8%    51.5%  54.8% |    39.6%   | 19.3% / 33.7%
+  High ball win                        1.3% |         1.3%  91.6%    91.8%  94.1% |    90.6%   | 81.1% / 23.0%
+  Long shot                            0.3% |         0.3%  85.4%    83.6%  83.4% |    82.6%   | 80.9% / 64.1%
+  Early cross                          0.3% |         0.3%  64.7%    53.4%  57.0% |    49.5%   | 44.4% / 40.7%
+  Counter start                        0.4% |         0.4%  58.2%    62.8%  74.7% |    66.2%   | 48.0% / 40.1%
+  Dribble in final third               0.3% |         0.3%  90.4%    88.7%  95.7% |    90.6%   | 71.7% / 62.3%
+  Back pass under pressure             1.1% |         1.1%  70.9%    53.8%  66.0% |    61.4%   | 45.0% / 34.3%
+  Progressive carry from own half      0.9% |         0.9%  70.4%    71.1%  80.9% |    70.2%   | 40.5% / 30.2%
+  average                                   |         0.5%  66.6%    65.7%  70.5% |    63.9%   | 49.9% / 42.3%
+[eval done in 443s]
