@@ -124,7 +124,15 @@ function render() {
   }
   if (R.view === 't' && R.tp) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + targetCard(R.tp); wirePick(); return; }
   if (R.view === 'f' && R.big) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + findingsCard(R.big); wirePick(); return; }
-  if (R.mv != null && M) { box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + movementCard(M.movement[R.mv]); wirePick(); return; }
+  if (R.mv != null && M) {
+    loadCr().then(() => {
+      const cr = R.cr && R.cr.player && R.cr.player.dfl_id === R.mv ? coachRunCard(R.cr) : '';
+      box.innerHTML = `<select id="profPick" title="Player">${opts}</select>` + movementCard(M.movement[R.mv]) + cr;
+      wirePick();
+      const b = document.getElementById('crWatch'); if (b) b.addEventListener('click', watchCoachRun);
+    });
+    return;
+  }
   const c = D.cards[R.k], unrel = new Set(D.unreliable || []);
   const ms = c[R.list] || [];
   const list = (arr, empty) => arr.length ? arr.map((i) => row(i, unrel.has(i.metric))).join('') : `<p class="hint">${empty}</p>`;
@@ -531,6 +539,34 @@ function msCard(D) {
     <tr class="tpbest"><td>average of 12</td><td>${pc(ev.avg_p50.random)}</td><td>${pc(ev.avg_p50.proto)}</td><td>${pc(ev.avg_p50.full)}</td></tr></table>
     <div class="hint">Test patterns are written as rules so the answer is known; a coach's real idea is fuzzier. Your own search: python scripts/moment_search.py query --pos ID,ID,ID --neg ID</div>`;
   return h;
+}
+
+
+// ---- player what-if: the coach's run for this player (scripts/coach_run.py -> data/coach_run.json, viewer mode 6)
+async function loadCr() {
+  if (R.cr === undefined) { try { const r = await fetch('data/coach_run.json', { cache: 'no-store' }); R.cr = r.ok ? await r.json() : null; } catch (e) { R.cr = null; } }
+}
+function coachRunCard(D) {
+  const p = D.player, rs = D.run_stats, who = D.who.split(' ').slice(-1)[0], pc = (x) => `${(100 * x).toFixed(0)}%`;
+  const row = (m) => { const r = D.summary.find((q) => q.metric === m); if (!r) return '';
+    return `<tr><td>${esc(r.what)}</td><td>${r.no_change.toFixed(3)}</td><td class="${r.verdict === 'up' ? 'up' : ''}">${r.coach_run.toFixed(3)}</td><td class="hint">${r.diff >= 0 ? '+' : ''}${r.diff.toFixed(3)} ± ${r.ci95.toFixed(3)}</td></tr>`; };
+  return `<h3 class="pfh">Player what-if: the coach's run <span class="hint">GRF + team models, ${D.seeds} paired runs</span></h3>
+    <div class="pftest good"><b>“${esc(D.instruction)}”</b> · ${esc(D.home)} v ${esc(D.away)}, ${D.clock}</div>
+    <div class="hint">His habit (real tracking, ${p.matches} matches, ${p.minutes} min): ${p.behind_runs} runs in behind, <b>${p.behind90.toFixed(1)} per 90</b>; wide midfielders median ${p.wide_median90.toFixed(1)} (${p.wide_n} players). So it is a run he makes; in the real moment he stayed wide and came no nearer than ${D.real.closest_to_spot_m} m.</div>
+    <table class="pfct"><tr><th></th><th>no change</th><th>coach run</th><th>difference</th></tr>${row('max_threat')}${row('max_xt')}${row('xg')}${row('shots')}</table>
+    <div class="hint">Reached the spot in ${pc(rs.arrived)} of runs (median ${rs.arrive_s.toFixed(1)} s); played the ball ${pc(rs.passed)}; the ball reached him in ${pc(rs.touched)}, so shots and xG stay within noise. Green = 95% interval above zero.</div>
+    <button id="crWatch" class="tpbtn">▶ Watch it: viewer mode 6 (real | what-if)</button>`;
+}
+async function watchCoachRun() {
+  const sel = document.getElementById('file'), S = window.__viewer;
+  if (!sel || !S) return;
+  const before = S.data;
+  sel.value = 'mode6_coach_run.json'; sel.dispatchEvent(new Event('change'));
+  for (let i = 0; i < 100 && (S.data === before || !S.data); i++) await new Promise((r) => setTimeout(r, 100));
+  const vm = document.getElementById('viewMode'); vm.value = 'split'; vm.dispatchEvent(new Event('change'));
+  const vl = document.getElementById('viewLayer'); vl.value = '1'; vl.dispatchEvent(new Event('change'));
+  $('prof').classList.add('hidden');
+  S.t = S.t0; S.playing = true;
 }
 
 async function open() {

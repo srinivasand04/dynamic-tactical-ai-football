@@ -1,0 +1,78 @@
+{
+ "instruction": "Karbownik: run into the box from (84, 59) to (94, 42); we play you there",
+ "summary": [
+  {
+   "metric": "max_threat",
+   "what": "Max threat",
+   "no_change": 0.2534,
+   "coach_run": 0.3961,
+   "diff": 0.1427,
+   "ci95": 0.1052,
+   "verdict": "up"
+  },
+  {
+   "metric": "xg",
+   "what": "xG",
+   "no_change": 0.1241,
+   "coach_run": 0.2752,
+   "diff": 0.151,
+   "ci95": 0.2318,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "shots",
+   "what": "Shots",
+   "no_change": 1.6667,
+   "coach_run": 3.1667,
+   "diff": 1.5,
+   "ci95": 1.1915,
+   "verdict": "up"
+  },
+  {
+   "metric": "goal",
+   "what": "Goals",
+   "no_change": 0.1667,
+   "coach_run": 0.3333,
+   "diff": 0.1667,
+   "ci95": 0.1899,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "touched",
+   "what": "Karbownik on the ball",
+   "no_change": 0.1,
+   "coach_run": 0.6667,
+   "diff": 0.5667,
+   "ci95": 0.2034,
+   "verdict": "up"
+  },
+  {
+   "metric": "max_xt",
+   "what": "Max xT",
+   "no_change": 0.0919,
+   "coach_run": 0.1605,
+   "diff": 0.0686,
+   "ci95": 0.0597,
+   "verdict": "up"
+  }
+ ],
+ "run_stats": {
+  "arrived": 0.5,
+  "arrive_s": 5.0,
+  "passed": 1.0,
+  "pass_s": 1.5,
+  "touched": 0.6666666666666666,
+  "closest_m": 3.55,
+  "keep_ball_s": [
+   5.7,
+   6.3
+  ]
+ },
+ "seeds": 30,
+ "video_seed": 101,
+ "real": {
+  "closest_to_spot_m": 20.2,
+  "run_m": 8.3,
+  "lost_ball_s": 8.1
+ }
+}

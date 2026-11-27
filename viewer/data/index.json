@@ -1,110 +1,54 @@
 [
  {
   "file": "mode1_normal.json",
-  "title": "1. Normal match  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 57' to 61'"
+  "title": "1 · Real match: Düsseldorf v Regensburg, 57'-61'"
  },
  {
   "file": "mode2_model_vs_real.json",
-  "title": "2. Model vs real  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Our team models (no change)"
+  "title": "2 · Real vs our model: same moment, 58'-60'"
  },
  {
   "file": "mode3_model_vs_model.json",
-  "title": "3. Model vs model  |  GRF model match: Argentina v France (2-0), team models, seed 7"
+  "title": "3 · Model vs model: Argentina v France (simulated)"
  },
  {
   "file": "mode4_whatif_top5.json",
-  "title": "4. What-if top 5  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, #1 2 nearest close the carrier, #2 whole team 3 m closer, #3 3 nearest 3 m closer, #4 each defender marks his attacker, #5 keeper 4 m off his line"
+  "title": "4 · What-if: 5 best defensive changes, 58'"
  },
  {
   "file": "mode5_coach.json",
-  "title": "5. Coach move  |  Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Coach: Klaus 6 m forward, 8 m left"
+  "title": "5 · Coach move: Klaus starts 6 m forward, 8 m left, 58'"
  },
  {
-  "file": "1886347_full.json",
-  "title": "Auckland FC v Newcastle (1886347), full match"
+  "file": "mode6_coach_run.json",
+  "title": "6 · Coach run: Klaus runs in behind, 27'"
  },
  {
-  "file": "J03WOH_3500.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 57' to 61' + GRF with real passes"
+  "file": "mode7_coach_goal_1.json",
+  "title": "7 · Coach run that scores: Karbownik into the box (v Kaiserslautern)"
  },
  {
-  "file": "J03WOH_full.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), full match"
+  "file": "mode8_coach_goal_2.json",
+  "title": "8 · Coach run that scores: Sobottka in behind (v Rostock)"
  },
  {
   "file": "J03WOH_whatif_3610.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Models, no change, What-if: carrier passes forward at once, What-if: back four 3 m deeper, What-if: back four 3 m higher, What-if: attack plays as Croatia, What-if: attack plays as Argentina, What-if: attack plays as France"
- },
- {
-  "file": "10517_full.json",
-  "title": "Argentina v France (10517), full match"
- },
- {
-  "file": "Argentina_vs_France.json",
-  "title": "GRF model match: Argentina v France (2-0), team models, seed 7"
- },
- {
-  "file": "board_20261118_211506.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "board_20261118_203941.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "board_slide6_fwd5.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "board_slide7_def5.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "board_slide6_pace.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "board_slide7_pace.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + No change, Your board"
- },
- {
-  "file": "video_SNGS-116.json",
-  "title": "Video to board  |  SoccerNet clip SNGS-116 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 10)"
- },
- {
-  "file": "video_SNGS-117.json",
-  "title": "Video to board  |  SoccerNet clip SNGS-117 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 3)"
- },
- {
-  "file": "video_SNGS-118.json",
-  "title": "Video to board  |  SoccerNet clip SNGS-118 (broadcast video, RF-DETR SoccerNet tracking; only players in camera, on average 12)"
- },
- {
-  "file": "video_SNGS-116_filled.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-116 (RF-DETR SoccerNet tracking; 10 players in camera on average, off-camera players guessed by centroid voting -> 20; guesses are ghosts)"
- },
- {
-  "file": "video_SNGS-117_filled.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-117 (RF-DETR SoccerNet tracking; 3 players in camera on average, off-camera players guessed by centroid voting -> 16; guesses are ghosts)"
- },
- {
-  "file": "video_SNGS-118_filled.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-118 (RF-DETR SoccerNet tracking; 12 players in camera on average, off-camera players guessed by centroid voting -> 19; guesses are ghosts)"
- },
- {
-  "file": "video_SNGS-116_filled_learned.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-116 (RF-DETR SoccerNet tracking; 10 players in camera on average, off-camera players by own_LearnedFiller -> 20; guesses are ghosts)"
- },
- {
-  "file": "video_SNGS-117_filled_learned.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-117 (RF-DETR SoccerNet tracking; 3 players in camera on average, off-camera players by own_LearnedFiller -> 16; guesses are ghosts)"
- },
- {
-  "file": "video_SNGS-118_filled_learned.json",
-  "title": "Video to board, filled  |  SoccerNet clip SNGS-118 (RF-DETR SoccerNet tracking; 12 players in camera on average, off-camera players by own_LearnedFiller -> 19; guesses are ghosts)"
+  "title": "Demo · What-if: early pass, 58'"
  },
  {
   "file": "J03WOH_demo_tzdef.json",
-  "title": "Fortuna D\u00fcsseldorf v SSV Jahn Regensburg (J03WOH), 58' to 60' + Early pass, our model defends (goal at 10.3 s), Early pass, TiZero defends (0 shots)"
+  "title": "Demo · What-if: early pass against TiZero's defence"
+ },
+ {
+  "file": "video_SNGS-116_filled_learned.json",
+  "title": "Demo · TV video to board (SoccerNet clip)"
+ },
+ {
+  "file": "10517_full.json",
+  "title": "Demo · Full match: Argentina v France, World Cup final"
+ },
+ {
+  "file": "J03WOH_full.json",
+  "title": "Demo · Full match: Düsseldorf v Regensburg (player of the match)"
  }
 ]

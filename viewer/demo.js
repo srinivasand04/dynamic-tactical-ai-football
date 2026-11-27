@@ -28,6 +28,10 @@ const STEPS = [
     story: 'Düsseldorf 4-0 Regensburg, full match. Every player is valued with the ball (goal chance added by passes, carries, shots) and without it: each run is compared with a ghost of where an average player would have gone.',
     result: 'Player of the match: D. Ginczek (1 goal, 1 assist), almost all from his runs. The pale ghost shows where own_MovementGNN expected him; he went to the gold ring instead.',
     models: ['own_PlayerOfMatch', 'own_MovementGNN', 'own_Threat', 'own_xG'] },
+  { title: '7 · Coach: “Klaus, run in behind”', file: 'mode6_coach_run.json', view: 'split', layer: 1, cam: 'broadcast', t: 1619,
+    story: 'Düsseldorf v Regensburg, 27:01. Hoffmann has the ball; Klaus stays wide (left, real). The coach tells him to sprint in behind the left-back and be played through; GRF plays it with our team models (right).',
+    result: 'Left: in the real match the ball went wide to Klaus and was lost after 5 s. Right: he arrives in the box and is played through. Over 20 paired runs the attack’s threat goes 0.20 → 0.36 (±0.07); the pass reaches him in 25% of runs, so xG stays within noise. His player model: 3.3 runs in behind per 90 (wide midfielders 2.6), a run he can make.',
+    models: ['own_PlayerModel', 'own_TeamAgent', 'own_MovementGNN', 'own_Threat'] },
 ];
 
 const $ = (id) => document.getElementById(id);

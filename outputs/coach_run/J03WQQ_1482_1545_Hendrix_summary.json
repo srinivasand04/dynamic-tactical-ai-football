@@ -1,0 +1,78 @@
+{
+ "instruction": "Hendrix: run in behind from (49, 38) to (75, 38); we play you there",
+ "summary": [
+  {
+   "metric": "max_threat",
+   "what": "Max threat",
+   "no_change": 0.0466,
+   "coach_run": 0.0851,
+   "diff": 0.0385,
+   "ci95": 0.0498,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "xg",
+   "what": "xG",
+   "no_change": 0.0,
+   "coach_run": 0.0052,
+   "diff": 0.0052,
+   "ci95": 0.0058,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "shots",
+   "what": "Shots",
+   "no_change": 0.0,
+   "coach_run": 0.2667,
+   "diff": 0.2667,
+   "ci95": 0.2962,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "goal",
+   "what": "Goals",
+   "no_change": 0.0,
+   "coach_run": 0.0667,
+   "diff": 0.0667,
+   "ci95": 0.0908,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "touched",
+   "what": "Hendrix on the ball",
+   "no_change": 0.4,
+   "coach_run": 0.1,
+   "diff": -0.3,
+   "ci95": 0.233,
+   "verdict": "down"
+  },
+  {
+   "metric": "max_xt",
+   "what": "Max xT",
+   "no_change": 0.0053,
+   "coach_run": 0.0332,
+   "diff": 0.0279,
+   "ci95": 0.0301,
+   "verdict": "no clear effect"
+  }
+ ],
+ "run_stats": {
+  "arrived": 0.36666666666666664,
+  "arrive_s": 5.0,
+  "passed": 0.3,
+  "pass_s": 4.9,
+  "touched": 0.1,
+  "closest_m": 3.3,
+  "keep_ball_s": [
+   6.4,
+   5.8
+  ]
+ },
+ "seeds": 30,
+ "video_seed": 117,
+ "real": {
+  "closest_to_spot_m": 26.1,
+  "run_m": 11.0,
+  "lost_ball_s": null
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "instruction": "Paqarada: run in behind from (57, 48) to (85, 48); we play you there",
+ "summary": [
+  {
+   "metric": "max_threat",
+   "what": "Max threat",
+   "no_change": 0.0458,
+   "coach_run": 0.1377,
+   "diff": 0.0918,
+   "ci95": 0.0602,
+   "verdict": "up"
+  },
+  {
+   "metric": "xg",
+   "what": "xG",
+   "no_change": 0.0007,
+   "coach_run": 0.0549,
+   "diff": 0.0542,
+   "ci95": 0.0589,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "shots",
+   "what": "Shots",
+   "no_change": 0.0333,
+   "coach_run": 1.7,
+   "diff": 1.6667,
+   "ci95": 1.3918,
+   "verdict": "up"
+  },
+  {
+   "metric": "goal",
+   "what": "Goals",
+   "no_change": 0.0,
+   "coach_run": 0.0,
+   "diff": 0.0,
+   "ci95": 0.0,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "touched",
+   "what": "Paqarada on the ball",
+   "no_change": 0.5,
+   "coach_run": 0.3333,
+   "diff": -0.1667,
+   "ci95": 0.1899,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "max_xt",
+   "what": "Max xT",
+   "no_change": 0.0063,
+   "coach_run": 0.0273,
+   "diff": 0.021,
+   "ci95": 0.0208,
+   "verdict": "up"
+  }
+ ],
+ "run_stats": {
+  "arrived": 0.9333333333333333,
+  "arrive_s": 5.0,
+  "passed": 0.6666666666666666,
+  "pass_s": 5.0,
+  "touched": 0.3333333333333333,
+  "closest_m": 1.9,
+  "keep_ball_s": [
+   8.1,
+   8.5
+  ]
+ },
+ "seeds": 30,
+ "video_seed": 116,
+ "real": {
+  "closest_to_spot_m": 18.0,
+  "run_m": 16.1,
+  "lost_ball_s": null
+ }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach Run What-If</title>
+<script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+</script>
+<style>
+  :root { --bg: #0a1222; --card: rgba(14, 24, 44, .88); --line: rgba(255,255,255,.14); --txt: #eef2f8; --mut: #9aa6bc;
+          --gold: #f5be46; --green: #46c878; --red: #ff6f61; --blue: #6aa8ff; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--txt); font-family: "Segoe UI", Arial, sans-serif; overflow: hidden; }
+  #c { position: fixed; inset: 0; }
+  .ov { position: fixed; opacity: 0; }
+  #kick { left: 56px; top: 40px; font-size: 21px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+  #title { left: 56px; top: 74px; font-size: 48px; font-weight: 700; max-width: 1300px; line-height: 1.1; }
+  #sub { left: 58px; top: 136px; font-size: 23px; color: var(--mut); max-width: 1250px; }
+  #panel { right: 44px; top: 150px; width: 700px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px 28px; box-sizing: border-box; }
+  #panel h4 { margin: 0 0 12px; font-size: 19px; color: var(--mut); font-weight: 600; letter-spacing: .04em; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; font-size: 20px; padding: 7px 0; border-bottom: 1px solid var(--line); gap: 14px; }
+  .row:last-child { border-bottom: 0; }
+  .row span:last-child { text-align: right; }
+  .up { color: var(--green); font-weight: 700; } .mut { color: var(--mut); } .gold { color: var(--gold); font-weight: 700; }
+  .note { font-size: 16px; color: var(--mut); margin-top: 12px; line-height: 1.4; }
+  #cap { left: 56px; bottom: 44px; font-size: 25px; max-width: 1180px; background: rgba(10,18,34,.78); padding: 12px 18px; border-radius: 10px; border-left: 5px solid var(--gold); }
+  .tag { position: fixed; top: 120px; font-size: 22px; font-weight: 700; letter-spacing: .12em; padding: 8px 16px; border-radius: 8px; opacity: 0; }
+  #tagL { left: 56px; background: rgba(255,255,255,.12); }
+  #tagR { left: calc(50% + 40px); background: rgba(245,190,70,.22); color: var(--gold); }
+  #clock { right: 44px; top: 40px; font-size: 22px; color: var(--mut); font-variant-numeric: tabular-nums; }
+  #legend { right: 44px; bottom: 44px; font-size: 18px; color: var(--mut); background: rgba(10,18,34,.7); padding: 10px 14px; border-radius: 8px; }
+  #legend i { display: inline-block; width: 14px; height: 14px; border-radius: 50%; margin: 0 6px -1px 14px; }
+  #split { position: fixed; left: 50%; top: 0; bottom: 0; width: 3px; background: rgba(255,255,255,.35); opacity: 0; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="kick" class="ov"></div>
+<div id="title" class="ov"></div>
+<div id="sub" class="ov"></div>
+<div id="panel" class="ov"></div>
+<div id="cap" class="ov"></div>
+<div id="clock" class="ov"></div>
+<div id="legend" class="ov"><i style="background:#6aa8ff"></i>Düsseldorf <i style="background:#ff6f61"></i>Regensburg <i style="background:#f5be46"></i>instructed player</div>
+<div id="tagL" class="tag">REAL MATCH</div>
+<div id="tagR" class="tag">MODEL WHAT-IF</div>
+<div id="split"></div>
+<script type="module" src="coach_run.js"></script>
+</body>
+</html>

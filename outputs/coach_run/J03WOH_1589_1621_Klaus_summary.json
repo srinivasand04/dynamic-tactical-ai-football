@@ -1,0 +1,78 @@
+{
+ "instruction": "Klaus: run from (77, 14) in behind to (95, 22); we play you as you pass their line",
+ "summary": [
+  {
+   "metric": "max_threat",
+   "what": "Max threat",
+   "no_change": 0.1972,
+   "coach_run": 0.3599,
+   "diff": 0.1627,
+   "ci95": 0.0677,
+   "verdict": "up"
+  },
+  {
+   "metric": "xg",
+   "what": "xG",
+   "no_change": 0.0196,
+   "coach_run": 0.0427,
+   "diff": 0.0231,
+   "ci95": 0.0444,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "shots",
+   "what": "Shots",
+   "no_change": 0.65,
+   "coach_run": 1.15,
+   "diff": 0.5,
+   "ci95": 0.6279,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "goal",
+   "what": "Goals",
+   "no_change": 0.05,
+   "coach_run": 0.05,
+   "diff": 0.0,
+   "ci95": 0.1422,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "touched",
+   "what": "Klaus on the ball",
+   "no_change": 0.2,
+   "coach_run": 0.25,
+   "diff": 0.05,
+   "ci95": 0.2237,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "max_xt",
+   "what": "Max xT",
+   "no_change": 0.0296,
+   "coach_run": 0.1093,
+   "diff": 0.0797,
+   "ci95": 0.0472,
+   "verdict": "up"
+  }
+ ],
+ "run_stats": {
+  "arrived": 0.95,
+  "arrive_s": 4.3,
+  "passed": 0.95,
+  "pass_s": 2.9,
+  "touched": 0.25,
+  "closest_m": 1.05,
+  "keep_ball_s": [
+   8.1,
+   8.9
+  ]
+ },
+ "seeds": 20,
+ "video_seed": 0,
+ "real": {
+  "closest_to_spot_m": 13.7,
+  "run_m": 13.9,
+  "lost_ball_s": 5.0
+ }
+}

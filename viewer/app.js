@@ -239,7 +239,7 @@ async function loadFile(name) {
   $('home').textContent = d.home; $('away').textContent = d.away;
   $('seek').min = S.t0; $('seek').max = S.t1; $('seek').value = S.t0;
   for (const l of S.layers) { l.meshes.forEach((m) => scene.remove(m)); scene.remove(l.ball); scene.remove(l.links); scene.remove(l.pathReal); scene.remove(l.pathSim); }
-  S.focus.real = -1;
+  S.focus.real = d.focus ?? -1;                           // a file may name its focus player (real slot), e.g. mode 6: the coach's runner
   S.layers = d.layers.map((ld, li) => {
     const col = LAYER_COLORS[li % LAYER_COLORS.length];
     const meshes = Array.from({ length: 22 }, (_, k) => {

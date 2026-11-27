@@ -1,0 +1,78 @@
+{
+ "instruction": "Sobottka: run in behind from (47, 32) to (78, 32); we play you there",
+ "summary": [
+  {
+   "metric": "max_threat",
+   "what": "Max threat",
+   "no_change": 0.1501,
+   "coach_run": 0.2258,
+   "diff": 0.0757,
+   "ci95": 0.0703,
+   "verdict": "up"
+  },
+  {
+   "metric": "xg",
+   "what": "xG",
+   "no_change": 0.0056,
+   "coach_run": 0.092,
+   "diff": 0.0864,
+   "ci95": 0.0721,
+   "verdict": "up"
+  },
+  {
+   "metric": "shots",
+   "what": "Shots",
+   "no_change": 0.3667,
+   "coach_run": 0.8333,
+   "diff": 0.4667,
+   "ci95": 0.7016,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "goal",
+   "what": "Goals",
+   "no_change": 0.0,
+   "coach_run": 0.2,
+   "diff": 0.2,
+   "ci95": 0.1456,
+   "verdict": "up"
+  },
+  {
+   "metric": "touched",
+   "what": "Sobottka on the ball",
+   "no_change": 0.1667,
+   "coach_run": 0.1,
+   "diff": -0.0667,
+   "ci95": 0.1307,
+   "verdict": "no clear effect"
+  },
+  {
+   "metric": "max_xt",
+   "what": "Max xT",
+   "no_change": 0.0246,
+   "coach_run": 0.0452,
+   "diff": 0.0206,
+   "ci95": 0.0328,
+   "verdict": "no clear effect"
+  }
+ ],
+ "run_stats": {
+  "arrived": 0.8,
+  "arrive_s": 5.0,
+  "passed": 0.5,
+  "pass_s": 5.0,
+  "touched": 0.1,
+  "closest_m": 0.35,
+  "keep_ball_s": [
+   6.9,
+   6.7
+  ]
+ },
+ "seeds": 30,
+ "video_seed": 101,
+ "real": {
+  "closest_to_spot_m": 22.1,
+  "run_m": 11.9,
+  "lost_ball_s": null
+ }
+}
